@@ -10,4 +10,4 @@ The blocks added here will be available to install in the block picker of Omnisc
 ### Javascript
 
 ## How to create a new block
-soon 
+soon to come
