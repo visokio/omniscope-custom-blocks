@@ -7,7 +7,7 @@ The blocks added here will be available to install in the block picker of Omnisc
 ### Connectors
 <table>
     <tr valign="top">
-        <td width="33%">Flightstats Airports (R)<br><a href="Connectors/Flightstats/Airports/R/README.md" title="Flightstats Airports (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/FLightstats/Airports/R/thumbnail.png"></a></td>
+        <td width="33%">Flightstats Airports (R)<br><a href="Connectors/Flightstats/Airports/R/README.md" title="Flightstats Airports (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airports/R/thumbnail.png"></a></td>
     </tr>
 </table>
 
