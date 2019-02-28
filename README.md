@@ -44,5 +44,5 @@ The blocks added here will be available to install in the block picker of Omnisc
   2. Network analysis
     1. [Attribute Analysis](Analytics/Network%20Analysis/Attribute%20Analysis/R/README.md)
 
-    
+
 ## How to create a new block
