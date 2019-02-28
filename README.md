@@ -11,6 +11,13 @@ The blocks added here will be available to install in the block picker of Omnisc
     </tr>
 </table>
 
+### Preparation
+<table>
+    <tr valign="top">
+        <td width="33%">Fuzzy Join (R)<br><a href="Preparation/Fuzzy%20Join/R/README.md" title="Flightstats Airports (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Fuzzy%20Join/R/thumbnail.png"></a></td>
+    </tr>
+</table>
+
 ### Analytics
 <table>
     <tr valign="top">
