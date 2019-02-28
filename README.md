@@ -27,6 +27,7 @@ The blocks added here will be available to install in the block picker of Omnisc
     </tr>
     <tr valign="top">
         <td width="33%">Attribute Analysis (R)<br><a href="Analytics/Network%20Analysis/Attribute%20Analysis/R/README.md" title="Attribute Analysis (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Attribute%20Analysis/R/thumbnail.png"></a></td>
+        <td width="33%">Relationship Analysis (R)<br><a href="Analytics/Network%20Analysis/Relationship%20Analysis/R/README.md" title="Attribute Analysis (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Relationship%20Analysis/R/thumbnail.png"></a></td>
     </tr>    
 </table>
 
@@ -43,6 +44,7 @@ The blocks added here will be available to install in the block picker of Omnisc
     3. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/R/README.md)
   2. Network analysis
     1. [Attribute Analysis](Analytics/Network%20Analysis/Attribute%20Analysis/R/README.md)
+    2. [Relationship Analysis](Analytics/Network%20Analysis/Relationship%20Analysis/R/README.md)
 
 
 ## How to create a new block
