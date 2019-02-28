@@ -14,7 +14,7 @@ The blocks added here will be available to install in the block picker of Omnisc
 ### Preparation
 <table>
     <tr valign="top">
-        <td width="33%">Fuzzy Join (R)<br><a href="Preparation/Fuzzy%20Join/R/README.md" title="Flightstats Airports (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Fuzzy%20Join/R/thumbnail.png"></a></td>
+        <td width="33%">Fuzzy Join (R)<br><a href="Preparation/Fuzzy%20Join/R/README.md" title="Fuzzy Join (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Fuzzy%20Join/R/thumbnail.png"></a></td>
     </tr>
 </table>
 
@@ -31,4 +31,18 @@ The blocks added here will be available to install in the block picker of Omnisc
 </table>
 
 
+1. Inputs
+2. Connectors
+  1. [Flightstats Airports](Connectors/Flightstats/Airports/R/README.md)
+3. Preparation
+  1. [Fuzzy Join](Preparation/Fuzzy%20Join/R/README.md)
+4. Analytics
+  1. Clustering
+    1. [DBScan](Analytics/Clustering/DBScan/R/README.md)
+    2. [KMeans](nalytics/Clustering/KMeans/R/README.md)
+    3. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/R/README.md)
+  2. Network analysis
+    1. [Attribute Analysis](Analytics/Network%20Analysis/Attribute%20Analysis/R/README.md)
+
+    
 ## How to create a new block
