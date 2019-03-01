@@ -19,6 +19,9 @@ library(data.table)
 library(dplyr)
 library(lubridate)
 
+# sanity checks
+if (!exists("input.data")) stop("No input data")
+
 # extract relevant fields from data
 flights <- data.table(carrier=input.data[, flight.carrier.field], number=input.data[, flight.number.field], date=input.data[, flight.date.field])
 

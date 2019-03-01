@@ -9,6 +9,10 @@ join.on = quote(list(Left.Field.1 == Right.Field.2, Left.Field.2 >= Right.Field.
 
 library(data.table)
 
+# sanity checks
+if (!exists("input.data")) stop("No 'left' input data")
+if (!exists("input.data.2")) stop("No 'right' input data")
+
 left <- input.data
 setDT(left)
 

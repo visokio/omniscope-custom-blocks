@@ -9,7 +9,7 @@ weight.field <- "Weight field"
 ### Parameters
 
 # number of output dimensions in the data
-output.dimensions <- 2
+output.dimensions <- 4
 
 # an initial step in tsne is a dimensionality reduction via PCA. This variable specifies to how many initial dimensions the network should be reduced
 initial.dimensions <- 25
@@ -22,6 +22,9 @@ perplexity <- 15
 
 library(data.table)
 library(Rtsne)
+
+# sanity checks
+if (!exists("input.data")) stop("No input data")
 
 has.weight = !is.null(weight.field)
 
@@ -55,9 +58,8 @@ adjacency.matrix[edges]<- indexes$weight
 # perform tsne
 tsne <- Rtsne(adjacency.matrix, dims = output.dimensions, initial_dims = initial.dimensions, perplexity = perplexity, check_duplicates = FALSE,  max_iter = 10000)
 
-# extract x,y coordinates
+ts# extract x,y coordinates
 y <- as.data.table(tsne$Y)
-setnames(y, c("x", "y"))
 y$i <- 1:nrow(y)
 output.data <- merge(nodes, y, by.x="i", by.y="i")
 output.data[,i:=NULL]

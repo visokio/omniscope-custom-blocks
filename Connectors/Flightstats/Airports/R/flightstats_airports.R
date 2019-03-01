@@ -10,6 +10,8 @@ flightstats.app.key <- "your flightstats app key"
 library(httr)
 library(jsonlite)
 
+# sanity checks
+if (!exists("input.data")) stop("No input data")
 
 app.id.string <- paste("appId", flightstats.app.id, sep="=")
 app.key.string <- paste("appKey", flightstats.app.key, sep="=")

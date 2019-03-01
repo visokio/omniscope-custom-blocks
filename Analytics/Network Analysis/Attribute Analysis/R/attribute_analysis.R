@@ -10,6 +10,8 @@ attribute.field <- "Category field"
 
 require(data.table)
 
+# sanity checks
+if (!exists("input.data")) stop("No input data")
 
 connection.data <- data.table(from=input.data[, from.field], to=input.data[, to.field], category=input.data[, attribute.field])
 connection.data[,sfreq:=1/.N, by=category]
