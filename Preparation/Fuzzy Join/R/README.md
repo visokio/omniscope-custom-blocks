@@ -1,4 +1,4 @@
-# Fuzzy join
+# Fuzzy Join
 
 Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by [inverse document frequency](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
 

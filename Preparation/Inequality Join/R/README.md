@@ -1,4 +1,4 @@
-# Inequality join
+# Inequality Join
 
 Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including
 all records that match the inequalities.

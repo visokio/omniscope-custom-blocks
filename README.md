@@ -54,3 +54,4 @@ The blocks added here will be available to install in the block picker of Omnisc
 
 
 ## How to create a new block
+Create a directory under one of the main sections that specifies the general area of what the block does. Create then a subdirectory specifying the language the block works in, which is either R, Python2 or Python3. In a last step, create the directory which contains your block's data. Add three files: The source code of the block, a README.md file containing a description and a thumbnail.png visualising what the block does. The source code should be reasonably documented and potentially contain sections to describe input fields and parameters.
