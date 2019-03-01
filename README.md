@@ -18,6 +18,9 @@ The blocks added here will be available to install in the block picker of Omnisc
     <tr valign="top">
         <td width="33%">Fuzzy Join (R)<br><a href="Preparation/Fuzzy%20Join/R/README.md" title="Fuzzy Join (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Fuzzy%20Join/R/thumbnail.png"></a></td>
     </tr>
+    <tr valign="top">
+        <td width="33%">Inequality Join (R)<br><a href="Preparation/Inequality%20Join/R/README.md" title="Inequality Join (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Inequality%20Join/R/thumbnail.png"></a></td>
+    </tr>
 </table>
 
 ### Analytics
@@ -37,8 +40,11 @@ The blocks added here will be available to install in the block picker of Omnisc
 1. Inputs
 2. Connectors
   1. [Flightstats Airports](Connectors/Flightstats/Airports/R/README.md)
+  2. [Flightstats Airlines](Connectors/Flightstats/Airlines/R/README.md)
+  3. [Flightstats Flights](Connectors/Flightstats/Flights/R/README.md)
 3. Preparation
   1. [Fuzzy Join](Preparation/Fuzzy%20Join/R/README.md)
+  2. [Inequality Join](Preparation/Inequality%20Join/R/README.md)
 4. Analytics
   1. Clustering
     1. [DBScan](Analytics/Clustering/DBScan/R/README.md)
