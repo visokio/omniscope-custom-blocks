@@ -11,6 +11,9 @@ The blocks added here will be available to install in the block picker of Omnisc
         <td width="33%">Flightstats Airlines (R)<br><a href="Connectors/Flightstats/Airlines/R/README.md" title="Flightstats Airlines (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airlines/R/thumbnail.png"></a></td>
         <td width="33%">Flightstats Flights (R)<br><a href="Connectors/Flightstats/Flights/R/README.md" title="Flightstats Flights (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Flights/R/thumbnail.png"></a></td>
     </tr>
+    <tr valign="top">
+        <td width="33%">Overpass Street Coordinates (Python)<br><a href="Connectors/Overpass/StreetCoordinates/Python/README.md" title="Overpass Street Coordinates (Python)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Overpass/StreetCoordinates/Python/thumbnail.png"></a></td>
+    </tr>
 </table>
 
 ### Preparation
@@ -40,6 +43,7 @@ The blocks added here will be available to install in the block picker of Omnisc
   1. [Flightstats Airports](Connectors/Flightstats/Airports/R/README.md)
   2. [Flightstats Airlines](Connectors/Flightstats/Airlines/R/README.md)
   3. [Flightstats Flights](Connectors/Flightstats/Flights/R/README.md)
+  4. [Overpass Street Coordinates](Connectors/Overpass/StreetCoordinates/Python/README.md)
 3. Preparation
   1. [Fuzzy Join](Preparation/Fuzzy%20Join/R/README.md)
   2. [Inequality Join](Preparation/Inequality%20Join/R/README.md)
