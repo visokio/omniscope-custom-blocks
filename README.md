@@ -34,7 +34,14 @@ The blocks added here will be available to install in the block picker of Omnisc
     <tr valign="top">
         <td width="33%">Attribute Analysis (R)<br><a href="Analytics/Network%20Analysis/Attribute%20Analysis/R/README.md" title="Attribute Analysis (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Attribute%20Analysis/R/thumbnail.png"></a></td>
         <td width="33%">Relationship Analysis (R)<br><a href="Analytics/Network%20Analysis/Relationship%20Analysis/R/README.md" title="Attribute Analysis (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Relationship%20Analysis/R/thumbnail.png"></a></td>
-    </tr>    
+        <td width="33%">DBScan (Python)<br><a href="Analytics/Clustering/DBScan/Python/README.md" title="DBScan (Python)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/DBScan/Python/thumbnail.png"></a></td>
+    </tr>
+    <tr valign="top">
+        <td width="33%">K-Nearest-Neighbours (R)<br><a href="Analytics/Prediction/KNN/R/README.md" title="K-Nearest-Neighbours (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/KNN/R/thumbnail.png"></a></td>
+        <td width="33%">Support Vector Machine Prediction (Python)<br><a href="Analytics/Prediction/SVM/Python/README.md" title="Support Vector Machine Prediction (Python)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/SVM/Python/thumbnail.png"></a></td>
+        <td width="33%"></td>     
+    </tr>
+
 </table>
 
 
@@ -49,10 +56,14 @@ The blocks added here will be available to install in the block picker of Omnisc
   2. [Inequality Join](Preparation/Inequality%20Join/R/README.md)
 4. Analytics
   1. Clustering
-    1. [DBScan](Analytics/Clustering/DBScan/R/README.md)
-    2. [KMeans](Analytics/Clustering/KMeans/R/README.md)
-    3. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/R/README.md)
-  2. Network analysis
+    1. [DBScan (R)](Analytics/Clustering/DBScan/R/README.md)
+    2. [DBScan (Python)](Analytics/Clustering/DBScan/Python/README.md)
+    3. [KMeans](Analytics/Clustering/KMeans/R/README.md)
+    4. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/R/README.md)
+  2. Prediction
+    1. [K-Nearest-Neighbours](Analytics/Prediction/KNN/R/README.md)
+    2. [Support Vector Machine Prediction](Analytics/Prediction/SVN/Python/README.md)
+  3. Network analysis
     1. [Attribute Analysis](Analytics/Network%20Analysis/Attribute%20Analysis/R/README.md)
     2. [Relationship Analysis](Analytics/Network%20Analysis/Relationship%20Analysis/R/README.md)
 
