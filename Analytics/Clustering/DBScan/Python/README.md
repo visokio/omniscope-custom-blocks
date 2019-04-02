@@ -16,4 +16,4 @@ If set to True, fields_to_use will be ignored and instead all numeric data field
 sys, numpy, sklearn
 
 ## Source
-[dbscan.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/DBScan/Python/dbscan.py)
+[script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/DBScan/Python/script.py)

@@ -19,4 +19,4 @@ Defines the join type. Possible values are "left", "right", and "left+right". Le
 data.table, plyr
 
 ## Source
-[fuzzy_join.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Fuzzy%20Join/R/fuzzy_join.R)
+[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Fuzzy%20Join/R/script.R)

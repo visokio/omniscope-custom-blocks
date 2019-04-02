@@ -19,4 +19,4 @@ If set to True, fields_to_use will be ignored and instead all numeric data field
 sys, numpy, sklearn
 
 ## Source
-[svm.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/SVM/Python/svm.py)
+[script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/SVM/Python/script.py)

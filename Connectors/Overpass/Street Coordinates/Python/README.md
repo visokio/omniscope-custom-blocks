@@ -24,7 +24,7 @@ Python3
 overpy, time
 
 ## Source
-[overpass_streetcoordinates](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Overpass/StreetCoordinates/Python/overpass_streetcoordinates.py)
+[script](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Overpass/Street%20Coordinates/Python/script.py)
 
 ## Resources
  - [Overpy docs](https://python-overpy.readthedocs.io/en/latest/example.html#use-overpass-ql-or-overpass-xml)

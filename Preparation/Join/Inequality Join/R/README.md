@@ -15,4 +15,4 @@ Specifies the fields from the first and second inputs and the equalities / inequ
 data.table
 
 ## Source
-[inequality_join.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Inequality%20Join/R/inequality_join.R)
+[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Inequality%20Join/R/script.R)

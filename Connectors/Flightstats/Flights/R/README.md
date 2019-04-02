@@ -23,4 +23,4 @@ The app key as provided by flightstats.
 httr, jsonlite, data.table, dplyr, lubridate
 
 ## Source
-[flightstats_flights.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Flights/R/flightstats_flights.R)
+[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Flights/R/script.R)

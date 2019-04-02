@@ -15,4 +15,4 @@ The app key as provided by flightstats.
 httr, jsonlite
 
 ## Source
-[flightstats_airlines.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airlines/R/flightstats_airlines.R)
+[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airlines/R/script.R)

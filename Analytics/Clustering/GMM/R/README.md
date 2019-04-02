@@ -16,4 +16,4 @@ If set to true, fields.to.use will be ignored and instead all numeric data field
 mclust
 
 ## Source
-[gmm.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/GMM/R/gmm.R)
+[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/GMM/R/script.R)

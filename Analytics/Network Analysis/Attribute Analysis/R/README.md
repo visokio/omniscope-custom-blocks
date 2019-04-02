@@ -27,4 +27,4 @@ Specifies the probability that if a node has the categorical attribute specified
 data.table
 
 ## Source
-[attribute_analysis.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Attribute%20Analysis/R/attribute_analysis.R)
+[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Attribute%20Analysis/R/script.R)

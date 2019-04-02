@@ -16,4 +16,4 @@ If set to true, fields.to.use will be ignored and instead all numeric data field
 dbscan
 
 ## Source
-[dbscan.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/DBScan/R/dbscan.R)
+[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/DBScan/R/script.R)

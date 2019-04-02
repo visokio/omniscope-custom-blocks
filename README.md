@@ -12,7 +12,7 @@ The blocks added here will be available to install in the block picker of Omnisc
         <td width="33%">Flightstats Flights (R)<br><a href="Connectors/Flightstats/Flights/R/" title="Flightstats Flights (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Flights/R/thumbnail.png"></a></td>
     </tr>
     <tr valign="top">
-        <td width="33%">Overpass Street Coordinates (Python)<br><a href="Connectors/Overpass/StreetCoordinates/Python/" title="Overpass Street Coordinates (Python)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Overpass/StreetCoordinates/Python/thumbnail.png"></a></td>
+        <td width="33%">Overpass Street Coordinates (Python)<br><a href="Connectors/Overpass/Street%20Coordinates/Python/" title="Overpass Street Coordinates (Python)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Overpass/Street%20Coordinates/Python/thumbnail.png"></a></td>
         <td width="33%"></td>
         <td width="33%"></td>
     </tr>
@@ -21,8 +21,8 @@ The blocks added here will be available to install in the block picker of Omnisc
 ### Preparation
 <table>
     <tr valign="top">
-        <td width="33%">Fuzzy Join (R)<br><a href="Preparation/Fuzzy%20Join/R/" title="Fuzzy Join (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Fuzzy%20Join/R/thumbnail.png"></a></td>
-        <td width="33%">Inequality Join (R)<br><a href="Preparation/Inequality%20Join/R/" title="Inequality Join (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Inequality%20Join/R/thumbnail.png"></a></td>
+        <td width="33%">Fuzzy Join (R)<br><a href="Preparation/Join/Fuzzy%20Join/R/" title="Fuzzy Join (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Fuzzy%20Join/R/thumbnail.png"></a></td>
+        <td width="33%">Inequality Join (R)<br><a href="Preparation/Join/Inequality%20Join/R/" title="Inequality Join (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Inequality%20Join/R/thumbnail.png"></a></td>
         <td width="33%"></td>
     </tr>
 </table>
@@ -55,8 +55,8 @@ The blocks added here will be available to install in the block picker of Omnisc
   3. [Flightstats Flights](Connectors/Flightstats/Flights/R/)
   4. [Overpass Street Coordinates](Connectors/Overpass/StreetCoordinates/Python/)
 3. Preparation
-  1. [Fuzzy Join](Preparation/Fuzzy%20Join/R/)
-  2. [Inequality Join](Preparation/Inequality%20Join/R/)
+  1. [Fuzzy Join](Preparation/Join/Fuzzy%20Join/R/)
+  2. [Inequality Join](Preparation/Join/Inequality%20Join/R/)
 4. Analytics
   1. Clustering
     1. [DBScan (R)](Analytics/Clustering/DBScan/R/)

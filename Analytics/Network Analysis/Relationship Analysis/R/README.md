@@ -35,4 +35,4 @@ Specifies the nth dimensional projection coordinates. If output.dimensions was s
 data.table, Rtsne
 
 ## Source
-[relationship_analysis.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Relationship%20Analysis/R/relationship_analysis.R)
+[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Relationship%20Analysis/R/script.R)

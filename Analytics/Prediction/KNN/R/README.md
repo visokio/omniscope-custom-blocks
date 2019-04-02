@@ -18,4 +18,4 @@ The k in k-nearest-neighbours. I.e. the number of points around a point of unkno
 class
 
 ## Source
-[knn.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/KNN/R/knn.R)
+[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/KNN/R/script.R)

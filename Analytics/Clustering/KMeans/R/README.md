@@ -18,4 +18,4 @@ Predefines the number of clusters
 none
 
 ## Source
-[kmeans.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/KMeans/R/kmeans.R)
+[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/KMeans/R/script.R)
