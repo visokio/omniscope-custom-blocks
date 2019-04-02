@@ -19,7 +19,7 @@
 		{
 			"name": "dbscan-python",
 			"displayName": "DBScan (Python)",
-			"Description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
+			"description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["dbscan"],
 			"language": "Python",
 			"category": "Analytics",
@@ -35,7 +35,7 @@
 		{
 			"name": "kmeans-r",
 			"displayName": "KMeans (R)",
-			"Description": "Performs KMeans clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
+			"description": "Performs KMeans clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["kmeans"],
 			"language": "R",
 			"category": "Analytics",
