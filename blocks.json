@@ -1,7 +1,7 @@
 {
 	"blocks": [
 		{
-			"name": "dbscan-r",
+			"name": "custom-dbscan-r",
 			"displayName": "DBScan (R)",
 			"description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["dbscan"],
@@ -17,11 +17,11 @@
 			"version": 0
 		},
 		{
-			"name": "dbscan-python",
+			"name": "custom-dbscan-python",
 			"displayName": "DBScan (Python)",
 			"description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["dbscan"],
-			"language": "Python",
+			"language": "PYTHON",
 			"category": "Analytics",
 			"subcategory": "Clustering",
 			"path": "DBScan",
@@ -33,7 +33,7 @@
 			"version": 0
 		},
 		{
-			"name": "kmeans-r",
+			"name": "custom-kmeans-r",
 			"displayName": "KMeans (R)",
 			"description": "Performs KMeans clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["kmeans"],
@@ -49,7 +49,7 @@
 			"version": 0
 		},
 		{
-			"name": "gmm-r",
+			"name": "custom-gmm-r",
 			"displayName": "Gaussian Mixture Model (R)",
 			"description": "Performs GMM clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["gmm", "gaussian", "mixture", "model"],
@@ -65,7 +65,7 @@
 			"version": 0
 		},
 		{
-			"name": "attribute-analysis-r",
+			"name": "custom-attribute-analysis-r",
 			"displayName": "Attribute Analysis (R)",
 			"description": "Given a dataset in which each record represents an edge between two nodes of a network, and each node has an associated categorical attribute, the block analyses connections between attributes, based on connections between associated nodes. The result of the analysis is a list of records in which each record specifies a connection from one attribute to another. The connection contains a probability field, which gives an answer to the question that if a node has the specified categorical attribute, how probable it is that it has a connection to another node with the linked categorical attribute.",
 			"tags": ["attribute", "analysis"],
@@ -81,7 +81,7 @@
 			"version": 0
 		},
 		{
-			"name": "relationship-analysis-r",
+			"name": "custom-relationship-analysis-r",
 			"displayName": "Relationship Analysis (R)",
 			"description": "Given a dataset in which each record represents an edge between two nodes of a network, the block will project all the nodes onto a (e.g. 2)- dimensional plane in such a way that nodes which share many connections are close together, and nodes that do not share many connections are far apart.",
 			"tags": ["relationship", "analysis"],
@@ -97,7 +97,7 @@
 			"version": 0
 		},
 		{
-			"name": "knn-r",
+			"name": "custom-knn-r",
 			"displayName": "K-Nearest-Neighbours (R)",
 			"description": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
 			"tags": ["knn", "nearest", "neighbours"],
@@ -113,11 +113,11 @@
 			"version": 0
 		},
 		{
-			"name": "svm-r",
+			"name": "custom-svm-r",
 			"displayName": "Support Vector Machine Prediction (Python)",
 			"description": "Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the bondary is made as large as possible to avoid touching the points.",
 			"tags": ["svm", "support", "vector", "machine"],
-			"language": "Python",
+			"language": "PYTHON",
 			"category": "Analytics",
 			"subcategory": "Prediction",
 			"path": "SVM",
@@ -129,7 +129,7 @@
 			"version": 0
 		},
 		{
-			"name": "fuzzy-join-r",
+			"name": "custom-fuzzy-join-r",
 			"displayName": "Fuzzy Join (R)",
 			"description": "Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by inverse document frequency.",
 			"tags": ["fuzzy", "join"],
@@ -145,7 +145,7 @@
 			"version": 0
 		},
 		{
-			"name": "inequality-join-r",
+			"name": "custom-inequality-join-r",
 			"displayName": "Inequality Join (R)",
 			"description": "Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.",
 			"tags": ["inequality", "join"],
@@ -161,7 +161,7 @@
 			"version": 0
 		},
 		{
-			"name": "flightstats-airports-r",
+			"name": "custom-flightstats-airports-r",
 			"displayName": "Flightstats Airports (R)",
 			"description": "Downloads a list of airports as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
 			"tags": ["flightstats", "airports"],
@@ -177,7 +177,7 @@
 			"version": 0
 		},
 		{
-			"name": "flightstats-airlines-r",
+			"name": "custom-flightstats-airlines-r",
 			"displayName": "Flightstats Airlines (R)",
 			"description": "Downloads a list of airlines as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
 			"tags": ["flightstats", "airlines"],
@@ -193,7 +193,7 @@
 			"version": 0
 		},
 		{
-			"name": "flightstats-flights-r",
+			"name": "custom-flightstats-flights-r",
 			"displayName": "Flightstats Flights (R)",
 			"description": "Requests information about flights specified in the input data from flightstats (https://www.flightstats.com). If the flight exists the result will contain live information, otherwise it will not be part of it. The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
 			"tags": ["flightstats", "flights"],
@@ -209,11 +209,11 @@
 			"version": 0
 		},
 		{
-			"name": "overpass-street-coordinates-python",
+			"name": "custom-overpass-street-coordinates-python",
 			"displayName": "Overpass Street Coordinates (Python)",
 			"description": "Finds all matching streets given a street name and requests multiple coordinates along the street using data from Overpass API. It will create a row for each point found that is part of a street that matches the given street name. The resulting rows will include the street name, the street Id and the coordinates of the point. The script needs an input with a field with the street name.",
 			"tags": ["overpass", "street", "coordinates", "map"],
-			"language": "Python",
+			"language": "PYTHON",
 			"category": "Connectors",
 			"subcategory": "Overpass",
 			"path": "Street Coordinates",
@@ -223,6 +223,6 @@
 			"inputs": ["Addresses"],
 			"outputs": ["Coordinates"],
 			"version": 0
-		},
+		}
 	]
 }
