@@ -1,0 +1,6 @@
+{
+  "name": "Overpass Street Coordinates (Python)",
+  "scriptFilename": "script.py",
+  "language": "PYTHON",
+  "schemaType": "HEADLESS"
+}

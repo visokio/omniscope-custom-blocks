@@ -1,0 +1,6 @@
+{
+  "name": "Flightstats Airports (R)",
+  "scriptFilename": "script.R",
+  "language": "R",
+  "schemaType": "HEADLESS"
+}

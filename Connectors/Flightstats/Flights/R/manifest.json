@@ -1,0 +1,6 @@
+{
+  "name": "Flightstats Flights (R)",
+  "scriptFilename": "script.R",
+  "language": "R",
+  "schemaType": "HEADLESS"
+}
