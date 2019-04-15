@@ -8,7 +8,7 @@
 			"category": "Analytics",
 			"subcategory": "Clustering",
 			"path": "DBScan",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "DBScan (Python)",
@@ -18,7 +18,7 @@
 			"category": "Analytics",
 			"subcategory": "Clustering",
 			"path": "DBScan",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "KMeans (R)",
@@ -28,7 +28,7 @@
 			"category": "Analytics",
 			"subcategory": "Clustering",
 			"path": "KMeans",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "Gaussian Mixture Model (R)",
@@ -38,7 +38,7 @@
 			"category": "Analytics",
 			"subcategory": "Clustering",
 			"path": "GMM",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "Attribute Analysis (R)",
@@ -48,7 +48,7 @@
 			"category": "Analytics",
 			"subcategory": "Network Analysis",
 			"path": "Attribute Analysis",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "Relationship Analysis (R)",
@@ -58,7 +58,7 @@
 			"category": "Analytics",
 			"subcategory": "Network Analysis",
 			"path": "Relationship Analysis",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "K-Nearest-Neighbours (R)",
@@ -68,7 +68,7 @@
 			"category": "Analytics",
 			"subcategory": "Prediction",
 			"path": "KNN",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "Support Vector Machine Prediction (Python)",
@@ -78,7 +78,7 @@
 			"category": "Analytics",
 			"subcategory": "Prediction",
 			"path": "SVM",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "Fuzzy Join (R)",
@@ -88,7 +88,7 @@
 			"category": "Preparation",
 			"subcategory": "Join",
 			"path": "Fuzzy Join",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "Inequality Join (R)",
@@ -98,7 +98,7 @@
 			"category": "Preparation",
 			"subcategory": "Join",
 			"path": "Inequality Join",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "Flightstats Airports (R)",
@@ -108,7 +108,7 @@
 			"category": "Connectors",
 			"subcategory": "Flightstats",
 			"path": "Airports",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "Flightstats Airlines (R)",
@@ -118,7 +118,7 @@
 			"category": "Connectors",
 			"subcategory": "Flightstats",
 			"path": "Airlines",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "Flightstats Flights (R)",
@@ -128,7 +128,7 @@
 			"category": "Connectors",
 			"subcategory": "Flightstats",
 			"path": "Flights",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		},
 		{
 			"displayName": "Overpass Street Coordinates (Python)",
@@ -138,7 +138,7 @@
 			"category": "Connectors",
 			"subcategory": "Overpass",
 			"path": "Street Coordinates",
-			"type": "HEADLESS",
+			"type": "HEADLESS"
 		}
 	]
 }
