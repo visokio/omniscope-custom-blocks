@@ -1,7 +1,6 @@
 {
 	"blocks": [
 		{
-			"name": "custom-dbscan-r",
 			"displayName": "DBScan (R)",
 			"description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["dbscan"],
@@ -10,14 +9,8 @@
 			"subcategory": "Clustering",
 			"path": "DBScan",
 			"type": "HEADLESS",
-			"minInputs": 1,
-			"maxInputs": 2,
-			"inputs": ["Train", "Cluster"],
-			"outputs": ["Clusters"],
-			"version": 0
 		},
 		{
-			"name": "custom-dbscan-python",
 			"displayName": "DBScan (Python)",
 			"description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["dbscan"],
@@ -26,14 +19,8 @@
 			"subcategory": "Clustering",
 			"path": "DBScan",
 			"type": "HEADLESS",
-			"minInputs": 1,
-			"maxInputs": 2,
-			"inputs": ["Train", "Cluster"],
-			"outputs": ["Clusters"],
-			"version": 0
 		},
 		{
-			"name": "custom-kmeans-r",
 			"displayName": "KMeans (R)",
 			"description": "Performs KMeans clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["kmeans"],
@@ -42,14 +29,8 @@
 			"subcategory": "Clustering",
 			"path": "KMeans",
 			"type": "HEADLESS",
-			"minInputs": 1,
-			"maxInputs": 2,
-			"inputs": ["Train", "Cluster"],
-			"outputs": ["Clusters"],
-			"version": 0
 		},
 		{
-			"name": "custom-gmm-r",
 			"displayName": "Gaussian Mixture Model (R)",
 			"description": "Performs GMM clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["gmm", "gaussian", "mixture", "model"],
@@ -58,14 +39,8 @@
 			"subcategory": "Clustering",
 			"path": "GMM",
 			"type": "HEADLESS",
-			"minInputs": 1,
-			"maxInputs": 2,
-			"inputs": ["Train", "Cluster"],
-			"outputs": ["Clusters"],
-			"version": 0
 		},
 		{
-			"name": "custom-attribute-analysis-r",
 			"displayName": "Attribute Analysis (R)",
 			"description": "Given a dataset in which each record represents an edge between two nodes of a network, and each node has an associated categorical attribute, the block analyses connections between attributes, based on connections between associated nodes. The result of the analysis is a list of records in which each record specifies a connection from one attribute to another. The connection contains a probability field, which gives an answer to the question that if a node has the specified categorical attribute, how probable it is that it has a connection to another node with the linked categorical attribute.",
 			"tags": ["attribute", "analysis"],
@@ -74,14 +49,8 @@
 			"subcategory": "Network Analysis",
 			"path": "Attribute Analysis",
 			"type": "HEADLESS",
-			"minInputs": 1,
-			"maxInputs": 1,
-			"inputs": ["Network"],
-			"outputs": ["Categories"],
-			"version": 0
 		},
 		{
-			"name": "custom-relationship-analysis-r",
 			"displayName": "Relationship Analysis (R)",
 			"description": "Given a dataset in which each record represents an edge between two nodes of a network, the block will project all the nodes onto a (e.g. 2)- dimensional plane in such a way that nodes which share many connections are close together, and nodes that do not share many connections are far apart.",
 			"tags": ["relationship", "analysis"],
@@ -90,14 +59,8 @@
 			"subcategory": "Network Analysis",
 			"path": "Relationship Analysis",
 			"type": "HEADLESS",
-			"minInputs": 1,
-			"maxInputs": 1,
-			"inputs": ["Network"],
-			"outputs": ["Projection"],
-			"version": 0
 		},
 		{
-			"name": "custom-knn-r",
 			"displayName": "K-Nearest-Neighbours (R)",
 			"description": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
 			"tags": ["knn", "nearest", "neighbours"],
@@ -106,14 +69,8 @@
 			"subcategory": "Prediction",
 			"path": "KNN",
 			"type": "HEADLESS",
-			"minInputs": 1,
-			"maxInputs": 2,
-			"inputs": ["Train", "Predict"],
-			"outputs": ["Predictions"],
-			"version": 0
 		},
 		{
-			"name": "custom-svm-r",
 			"displayName": "Support Vector Machine Prediction (Python)",
 			"description": "Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the bondary is made as large as possible to avoid touching the points.",
 			"tags": ["svm", "support", "vector", "machine"],
@@ -122,14 +79,8 @@
 			"subcategory": "Prediction",
 			"path": "SVM",
 			"type": "HEADLESS",
-			"minInputs": 1,
-			"maxInputs": 2,
-			"inputs": ["Train", "Predict"],
-			"outputs": ["Predictions"],
-			"version": 0
 		},
 		{
-			"name": "custom-fuzzy-join-r",
 			"displayName": "Fuzzy Join (R)",
 			"description": "Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by inverse document frequency.",
 			"tags": ["fuzzy", "join"],
@@ -138,14 +89,8 @@
 			"subcategory": "Join",
 			"path": "Fuzzy Join",
 			"type": "HEADLESS",
-			"minInputs": 2,
-			"maxInputs": 2,
-			"inputs": ["Left", "Right"],
-			"outputs": ["Joined"],
-			"version": 0
 		},
 		{
-			"name": "custom-inequality-join-r",
 			"displayName": "Inequality Join (R)",
 			"description": "Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.",
 			"tags": ["inequality", "join"],
@@ -154,14 +99,8 @@
 			"subcategory": "Join",
 			"path": "Inequality Join",
 			"type": "HEADLESS",
-			"minInputs": 2,
-			"maxInputs": 2,
-			"inputs": ["Left", "Right"],
-			"outputs": ["Joined"],
-			"version": 0
 		},
 		{
-			"name": "custom-flightstats-airports-r",
 			"displayName": "Flightstats Airports (R)",
 			"description": "Downloads a list of airports as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
 			"tags": ["flightstats", "airports"],
@@ -170,14 +109,8 @@
 			"subcategory": "Flightstats",
 			"path": "Airports",
 			"type": "HEADLESS",
-			"minInputs": 0,
-			"maxInputs": 0,
-			"inputs": [],
-			"outputs": ["Airports"],
-			"version": 0
 		},
 		{
-			"name": "custom-flightstats-airlines-r",
 			"displayName": "Flightstats Airlines (R)",
 			"description": "Downloads a list of airlines as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
 			"tags": ["flightstats", "airlines"],
@@ -186,14 +119,8 @@
 			"subcategory": "Flightstats",
 			"path": "Airlines",
 			"type": "HEADLESS",
-			"minInputs": 0,
-			"maxInputs": 0,
-			"inputs": [],
-			"outputs": ["Airlines"],
-			"version": 0
 		},
 		{
-			"name": "custom-flightstats-flights-r",
 			"displayName": "Flightstats Flights (R)",
 			"description": "Requests information about flights specified in the input data from flightstats (https://www.flightstats.com). If the flight exists the result will contain live information, otherwise it will not be part of it. The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
 			"tags": ["flightstats", "flights"],
@@ -202,14 +129,8 @@
 			"subcategory": "Flightstats",
 			"path": "Flights",
 			"type": "HEADLESS",
-			"minInputs": 1,
-			"maxInputs": 1,
-			"inputs": ["Flight Numbers"],
-			"outputs": ["Flights"],
-			"version": 0
 		},
 		{
-			"name": "custom-overpass-street-coordinates-python",
 			"displayName": "Overpass Street Coordinates (Python)",
 			"description": "Finds all matching streets given a street name and requests multiple coordinates along the street using data from Overpass API. It will create a row for each point found that is part of a street that matches the given street name. The resulting rows will include the street name, the street Id and the coordinates of the point. The script needs an input with a field with the street name.",
 			"tags": ["overpass", "street", "coordinates", "map"],
@@ -218,11 +139,6 @@
 			"subcategory": "Overpass",
 			"path": "Street Coordinates",
 			"type": "HEADLESS",
-			"minInputs": 1,
-			"maxInputs": 1,
-			"inputs": ["Addresses"],
-			"outputs": ["Coordinates"],
-			"version": 0
 		}
 	]
 }
