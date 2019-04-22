@@ -4,7 +4,7 @@ fields.to.use <- c("Field 1", "Field 2...")
 
 ### Parameters
 
-use.all.numeric.fields <- F
+use.all.numeric.fields <- T
 
 ### Script
 
@@ -25,12 +25,12 @@ output.data <- cbind(input.data, model$classification)
 names(output.data) <- c(names(input.data), "Cluster")
 
 if (exists("input.data.2")) {
-  
+
   # Cluster the unseen data
   new.data.to.cluster <- input.data.2[,fields.to.use]
   new.assignments <- predict(model, newdata=new.data.to.cluster)$classification
-  
+
   output.data.2 <- cbind(input.data.2, new.assignments)
   names(output.data) <- c(names(input.data), "Cluster")
-  
+
 }

@@ -7,7 +7,7 @@ field_to_predict = "Field 1"]
 
 ### Parameters
 
-use_all_numeric_fields = False
+use_all_numeric_fields = True
 
 ### Script
 

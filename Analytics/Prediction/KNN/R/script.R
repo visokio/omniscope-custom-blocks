@@ -6,7 +6,7 @@ field.to.predict <- "Field 3"
 
 ### Parameters
 
-use.all.numeric.fields <- F
+use.all.numeric.fields <- T
 
 # The number of neighbours to use, the K in K-Nearest Neighbours
 number.of.neighbours <- 5

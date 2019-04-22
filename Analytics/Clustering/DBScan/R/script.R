@@ -4,7 +4,7 @@ fields.to.use <- c("Field 1", "Field 2...")
 
 ### Parameters
 
-use.all.numeric.fields <- F
+use.all.numeric.fields <- T
 
 ### Script
 
@@ -32,14 +32,14 @@ output.data <- cbind(input.data, cluster.results$cluster)
 names(output.data) <- c(names(input.data), "Cluster")
 
 if (exists("input.data.2")) {
-  
+
   # Create a matrix of the relevant fields
   new.data.matrix <- as.matrix(input.data.2[,fields.to.use])
-  
+
   # Predict the cluster assigments of the new/unseen data
   new.data.prediction <- predict(cluster.results, new.data.matrix, data=original.data.matrix)
-  
+
   output.data.2 <- cbind(input.data.2, new.data.prediction)
   names(output.data.2) <- c(names(input.data.2), "Cluster")
-  
+
 }

@@ -4,7 +4,7 @@ fields_to_use = ["Field 1", "Field 2"]
 
 ### Parameters
 
-use_all_numeric_fields = False
+use_all_numeric_fields = True
 
 ### Script
 
