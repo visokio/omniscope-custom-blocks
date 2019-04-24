@@ -44,7 +44,7 @@ if 'input_data_2' not in locals():
 	input_data_2 = input_data
 
 # Make predictions
-predictions = pandas.DataFrame(svm_model.predict(new_x), columns=['Prediction (SVM)'])
+predictions = pandas.DataFrame(svm_model.predict(new_x), columns=['Prediction'])
 
 # Output the results
 output_data = pandas.concat([input_data_2, predictions], axis=1)

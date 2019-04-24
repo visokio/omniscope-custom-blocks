@@ -30,7 +30,7 @@ x_t = scaler.transform(x)
 model = cluster.DBSCAN(eps=0.8).fit(x_t)
 
 # Get labels
-labels = pandas.DataFrame(model.labels_+1, columns=["Cluster (DBSCAN)"])
+labels = pandas.DataFrame(model.labels_+1, columns=["Cluster"])
 
 # Output the results
 output_data = pandas.concat([input_data, labels], axis=1)
