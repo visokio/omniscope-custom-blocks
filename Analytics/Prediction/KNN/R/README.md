@@ -12,6 +12,8 @@ Adjust to fields you want to use in the prediction.
 The field which is unknwon in the new data you want to predict.
 ### use.all.numeric.fields
 If set to true, fields.to.use will be ignored and instead all numeric data fields used.
+### use.first.categorical.field
+If set to true, field.to.predict will be ignored and instead the first categorical field used.
 ### k.nearest.neighbours
 The k in k-nearest-neighbours. I.e. the number of points around a point of unknown class to take into account.
 ## Dependencies

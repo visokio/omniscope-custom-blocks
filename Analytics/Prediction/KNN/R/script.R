@@ -6,7 +6,11 @@ field.to.predict <- "Field 3"
 
 ### Parameters
 
+# whether to use all numeric fields to aid prediction
 use.all.numeric.fields <- T
+
+# whether to use the first categorical field to predict
+use.first.categorical.field <- T
 
 # The number of neighbours to use, the K in K-Nearest Neighbours
 number.of.neighbours <- 5
@@ -23,6 +27,11 @@ if (!exists("input.data"))
 if (use.all.numeric.fields) {
   fields.to.use <- names(input.data)[sapply(input.data, is.numeric)]
 }
+
+if (use.first.categorical.field) {
+  field.to.predict <- names(input.data)[sapply(input.data,is.factor)][1]
+}
+
 
 if (!exists("input.data.2"))  input.data.2 <- input.data
 
