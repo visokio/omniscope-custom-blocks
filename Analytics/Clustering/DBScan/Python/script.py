@@ -1,5 +1,6 @@
 ### Input fields
 
+# If you use fields_to_use, make sure to set use_all_numeric_fields = False
 fields_to_use = ["Field 1", "Field 2"]
 
 ### Parameters
@@ -14,12 +15,14 @@ from sklearn import cluster, preprocessing
 
 if use_all_numeric_fields:
     # Get the numeric fields from the input data
-    numeric_cols = [x for x in input_data.columns if (input_data[x].dtype == np.float64 or input_data[x].dtype == np.int64)]
-    x = input_data[numeric_cols]
-else :
-    x = input_data[fields_to_use]
+    fields_to_use = [x for x in input_data.columns if (input_data[x].dtype == np.float64 or input_data[x].dtype == np.int64)]
+
+# Remove invalid rows from the model creating data
+input_data = input_data.dropna(subset=fields_to_use)
+
 
 # Data to predict with
+x = input_data[fields_to_use]
 x = np.array(x, dtype=float)
 
 scaler = preprocessing.StandardScaler().fit(x)
