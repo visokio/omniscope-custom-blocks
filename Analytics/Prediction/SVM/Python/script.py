@@ -3,7 +3,7 @@
 # If you use fields_to_use, make sure to set use_all_numeric_fields = False
 fields_to_use = ["Field 1", "Field 2"]
 
-field_to_predict = "Field 1"]
+field_to_predict = "Field 1"
 
 
 ### Parameters
