@@ -139,6 +139,16 @@
 			"subcategory": "Overpass",
 			"path": "Street Coordinates",
 			"schemaType": "HEADLESS"
+		},
+		{
+			"displayName": "Kedro (Experimental)",
+			"description": "Connects to Kedro pipelines",
+			"tags": ["kedro", "pipeline", "workflow"],
+			"language": "PYTHON",
+			"category": "Analytics",
+			"subcategory": "Interfaces",
+			"path": "Analytics/Interfaces/Kedro",
+			"schemaType": "OPTIONS_V1"
 		}
 	]
 }
