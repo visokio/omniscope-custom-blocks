@@ -1,0 +1,14 @@
+{
+	"blocks": [
+			{
+				"displayName": "DBScan",
+				"description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
+				"tags": ["dbscan"],
+				"language": "PYTHON",
+				"category": "Analytics",
+				"subcategory": "Clustering",
+				"path": "Analytics/Clustering/DBScan",
+				"optionsVersion": 1
+			}
+	]
+}
