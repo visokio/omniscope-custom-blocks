@@ -6,7 +6,7 @@
     "minVersions": [
         null
     ],
-    "schemaType": "OPTIONS_V1",
+    "schemaType": "OPTIONS_V2",
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,

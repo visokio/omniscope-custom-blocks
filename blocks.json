@@ -146,7 +146,7 @@
 
 
 
-		
+
 		{
 			"displayName": "Kedro (Experimental)",
 			"description": "Connects to Kedro pipelines",
@@ -165,7 +165,7 @@
 			"category": "Analytics",
 			"subcategory": "Clustering",
 			"path": "Analytics/Clustering/DBScan",
-			"schemaType": "OPTIONS_V1"
+			"schemaType": "OPTIONS_V2"
 		}
 	]
 }
