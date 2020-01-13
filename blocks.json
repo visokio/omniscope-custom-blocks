@@ -140,6 +140,13 @@
 			"path": "Street Coordinates",
 			"schemaType": "HEADLESS"
 		},
+
+
+
+
+
+
+		
 		{
 			"displayName": "Kedro (Experimental)",
 			"description": "Connects to Kedro pipelines",
@@ -148,6 +155,16 @@
 			"category": "Analytics",
 			"subcategory": "Interfaces",
 			"path": "Analytics/Interfaces/Kedro",
+			"schemaType": "OPTIONS_V1"
+		},
+		{
+			"displayName": "DBScan",
+			"description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
+			"tags": ["dbscan"],
+			"language": "PYTHON",
+			"category": "Analytics",
+			"subcategory": "Clustering",
+			"path": "Analytics/Clustering/DBScan",
 			"schemaType": "OPTIONS_V1"
 		}
 	]
