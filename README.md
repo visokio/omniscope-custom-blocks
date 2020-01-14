@@ -7,7 +7,7 @@ The blocks added here will be available to install in Omniscope block picker.
 ### Inputs
 <table>
     <tr valign="top">
-        <td width="33%">PDF Reader<br><a href="Inputs/PDF Reader" title="PDF Reader"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/PDF Reader/thumbnail.png"></a>           </td>
+        <td width="33%">PDF Reader<br><a href="Inputs/PDF Reader" title="PDF Reader"><img width="190" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/PDF Reader/thumbnail.png"></a>           </td>
     </tr>
 </table>
 
