@@ -4,6 +4,31 @@ Public repository for custom blocks for Omniscope 2019+.
 The blocks added here will be available to install in Omniscope block picker.
 
 ## List of blocks
+
+1. Inputs
+   1. [PDF Reader](Inputs/PDF%20Reader/)
+2. Connectors
+   1. [Flightstats Airports](Connectors/Flightstats/Airports/R/)
+   2. [Flightstats Airlines](Connectors/Flightstats/Airlines/R/)
+   3. [Flightstats Flights](Connectors/Flightstats/Flights/R/)
+   4. [Overpass Street Coordinates](Connectors/Overpass/StreetCoordinates/Python/)
+3. Preparation
+   1. [Fuzzy Join](Preparation/Join/Fuzzy%20Join/R/)
+   2. [Inequality Join](Preparation/Join/Inequality%20Join/R/)
+4. Analytics
+   1. Clustering
+       1. [DBScan (R)](Analytics/Clustering/DBScan/R/)
+       2. [DBScan (Python)](Analytics/Clustering/DBScan/Python/)
+       3. [KMeans](Analytics/Clustering/KMeans/R/)
+       4. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/R/)
+   2. Prediction
+       1. [K-Nearest-Neighbours](Analytics/Prediction/KNN/R/)
+       2. [Support Vector Machine Prediction](Analytics/Prediction/SVN/Python/)
+   3. Network analysis
+       1. [Attribute Analysis](Analytics/Network%20Analysis/Attribute%20Analysis/R/)
+       2. [Relationship Analysis](Analytics/Network%20Analysis/Relationship%20Analysis/R/)
+
+
 ### Inputs
 <table>
     <tr valign="top">
@@ -53,29 +78,6 @@ The blocks added here will be available to install in Omniscope block picker.
     </tr>
 
 </table>
-
-
-1. Inputs
-2. Connectors
-  1. [Flightstats Airports](Connectors/Flightstats/Airports/R/)
-  2. [Flightstats Airlines](Connectors/Flightstats/Airlines/R/)
-  3. [Flightstats Flights](Connectors/Flightstats/Flights/R/)
-  4. [Overpass Street Coordinates](Connectors/Overpass/StreetCoordinates/Python/)
-3. Preparation
-  1. [Fuzzy Join](Preparation/Join/Fuzzy%20Join/R/)
-  2. [Inequality Join](Preparation/Join/Inequality%20Join/R/)
-4. Analytics
-  1. Clustering
-    1. [DBScan (R)](Analytics/Clustering/DBScan/R/)
-    2. [DBScan (Python)](Analytics/Clustering/DBScan/Python/)
-    3. [KMeans](Analytics/Clustering/KMeans/R/)
-    4. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/R/)
-  2. Prediction
-    1. [K-Nearest-Neighbours](Analytics/Prediction/KNN/R/)
-    2. [Support Vector Machine Prediction](Analytics/Prediction/SVN/Python/)
-  3. Network analysis
-    1. [Attribute Analysis](Analytics/Network%20Analysis/Attribute%20Analysis/R/)
-    2. [Relationship Analysis](Analytics/Network%20Analysis/Relationship%20Analysis/R/)
 
 
 ## How to create a new block
