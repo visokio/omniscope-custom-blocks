@@ -1,7 +1,7 @@
-# omniscope-custom-blocks
+# Omniscope Custom Blocks
 Public repository for custom blocks for Omniscope 2019+.
 
-The blocks added here will be available to install in the block picker of Omniscope.
+The blocks added here will be available to install in Omniscope block picker.
 
 ## List of blocks
 
@@ -73,4 +73,8 @@ The blocks added here will be available to install in the block picker of Omnisc
 
 
 ## How to create a new block
-Create a directory under one of the main sections that specifies the general area of what the block does. Create then a subdirectory specifying the language the block works in, which is either R, Python2 or Python3. In a last step, create the directory which contains your block's data. Add three files: The source code of the block, a README.md file containing a description and a thumbnail.png visualising what the block does. The source code should be reasonably documented and potentially contain sections to describe input fields and parameters.
+1. Create a directory under one of the main sections that specifies the general area of what the block does. 
+2. Create then a subdirectory specifying the language the block works in, which is either R, Python2 or Python3. 
+3. Create the directory which contains your block's data. Add three files: the source code of the block, a README.md file containing a description and a thumbnail.png showing what the block does. 
+
+The source code should be reasonably documented and potentially contains sections to describe input fields and parameters.
