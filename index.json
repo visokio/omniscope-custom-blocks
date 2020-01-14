@@ -9,6 +9,15 @@
 				"subcategory": "Clustering",
 				"path": "Analytics/Clustering/DBScan",
 				"optionsVersion": 1
+			} ,
+		        {
+				"displayName": "PDF Reader",
+				"description": "Extract text from PDF files.",
+				"tags": ["pdf", "text"],
+				"language": "R",
+				"category": "Inputs",
+				"path": "Inputs/PDF Reader",
+				"optionsVersion": 1
 			}
 	]
 }
