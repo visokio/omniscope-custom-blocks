@@ -27,8 +27,8 @@ library(plyr)
 possible.joins <- c("left", "right", "left+right")
 
 # sanity checks
-if (!exists("input.data")) stop("No 'left' input data")
-if (!exists("input.data.2")) stop("No 'right' input data")
+if (is.null(input.data)) stop("No 'left' input data")
+if (is.null(input.data.2)) stop("No 'right' input data")
 if (".index" %in% names(input.data) || ".index.x" %in% names(input.data) || ".index.y" %in% names(input.data)) stop("first input must not contain a field with name .index, .index.x or .index.y")
 if (".index" %in% names(input.data.2) || ".index.x" %in% names(input.data.2) || ".index.y" %in% names(input.data.2)) stop("first input must not contain a field with name .index, .index.x or .index.y")
 if (!(join.type %in% possible.joins)) stop("invalid join type")
@@ -59,10 +59,10 @@ trim.terms <- function(x) {
 create.terms <- function(data) {
   split.terms <- split.into.terms(data)
   trimmed.terms <- lapply(split.terms, trim.terms)
-  
+
   terms <- unlist(trimmed.terms)
   counts <- laply(trimmed.terms, length)
-  
+
   list(terms = terms, counts = counts)
 }
 
@@ -76,9 +76,9 @@ create.term.table <- function(data) {
   data <- unlist(lapply(data, as.character))
   terms <- create.terms(data)
   index <- 1:length(data)
-  
+
   index <- create.indexes(index, terms$counts)
-  
+
   data.table(index = index, term = terms$terms)
 }
 
@@ -96,9 +96,9 @@ best.fit <- function(x, y, turn) {
   merged.terms <- merge(x, y, by.x = "term", by.y = "term", allow.cartesian = T)
   scores <- merged.terms[, .(score = sum(idf.x)), by = .(index.x, index.y)]
   scores[, max.score := max(score), by = .(index.x)]
-  
+
   scores[, best.index := score == max.score, by = .(index.x, index.y)]
-  
+
   sw <- scores[best.index == TRUE]
   sw <- sw[, .(index.y = max(index.y)), by = index.x]
   if (turn) setnames(sw, c("index.x", "index.y"), c("index.y", "index.x"))
