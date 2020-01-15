@@ -85,7 +85,7 @@
             "description": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
-            "inputIndex": 0,
+            "inputIndex": 1,
             "defaultValue": null
         }
     ]
