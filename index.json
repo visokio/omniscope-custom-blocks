@@ -18,6 +18,16 @@
 				"category": "Inputs",
 				"path": "Inputs/PDF Reader",
 				"optionsVersion": 1
+			} ,
+      {
+				"displayName": "Inequality Join",
+				"description": "Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.",
+				"tags": ["inequality", "join"],
+				"language": "R",
+				"category": "Preparation",
+				"subcategory": "Join",
+				"path": "Preparation/Join/Inequality Join",
+				"optionsVersion": 1
 			}
 	]
 }

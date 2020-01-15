@@ -1,0 +1,92 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Inequality Join",
+    "scriptFilename": "script.R",
+    "language": "R",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "![Inequality Join](data:image/png;base64,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)\n\nPerforms a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "left",
+            "title": "Left field",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
+            "name": "comparator",
+            "title": "Comparator",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "==",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "==",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "<=",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "<=",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": ">=",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": ">=",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "<",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "<",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": ">",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": ">",
+                    "groupTitle": null,
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": ">="
+        },
+        {
+            "name": "right",
+            "title": "Right field",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null
+        }
+    ]
+}
