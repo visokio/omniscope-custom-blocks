@@ -3,6 +3,7 @@ library(omniscope)
 omniscope = Omniscope()
 
 input.data = read.input.records(omniscope, input.number=1)
+input.data.2 = read.input.records(omniscope, input.number=2)
 
 ### Input fields
 
