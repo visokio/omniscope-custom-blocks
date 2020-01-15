@@ -78,6 +78,16 @@
 				"subcategory": "Network Analysis",
 				"path": "Analytics/Network Analysis/Relationship Analysis",
 				"optionsVersion": 1
+			},
+			{
+				"displayName": "K-Nearest-Neighbours (R)",
+				"description": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
+				"tags": ["knn", "nearest", "neighbours"],
+				"language": "R",
+				"category": "Analytics",
+				"subcategory": "Prediction",
+				"path": "Analytics/Prediction/KNN",
+				"optionsVersion": 1
 			}
 	]
 }

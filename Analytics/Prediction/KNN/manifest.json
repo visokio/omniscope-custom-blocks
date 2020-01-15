@@ -1,0 +1,58 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "K-Nearest-Neighbours",
+    "scriptFilename": "script.R",
+    "language": "R",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "useAllNumericFields",
+            "title": "Use all numeric fields",
+            "description": "If set to true, \"Fields to use\" will be ignored and instead all numeric data fields used.",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "fieldsToUse",
+            "title": "Fields to use",
+            "description": "Adjust to fields you want to use in the prediction",
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": []
+        },
+        {
+            "name": "predictFirstCategoricalField",
+            "title": "Predict first categorical field found in the data",
+            "description": "If set to true, field.to.predict will be ignored and instead the first categorical field used",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "fieldToPredict",
+            "title": "Field to predict",
+            "description": "The field which is unknwon in the new data you want to predict",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
+            "name": "numberOfNeighbours",
+            "title": "Number of neighbours",
+            "description": "The k in k-nearest-neighbours. I.e. the number of points around a point of unknown class to take into account.",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 5
+        }
+    ]
+}
