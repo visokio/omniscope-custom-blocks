@@ -38,6 +38,16 @@
 				"subcategory": "Join",
 				"path": "Preparation/Join/Fuzzy Join",
 				"optionsVersion": 1
+			},
+			{
+				"displayName": "KMeans",
+				"description": "Performs KMeans clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
+				"tags": ["kmeans"],
+				"language": "R",
+				"category": "Analytics",
+				"subcategory": "Clustering",
+				"path": "Analytics/Clustering/KMeans",
+				"optionsVersion": 1
 			}
 	]
 }

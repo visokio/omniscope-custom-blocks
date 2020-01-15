@@ -1,0 +1,42 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "KMeans",
+    "scriptFilename": "script.R",
+    "language": "R",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "Performs KMeans clustering on the first input data provided.\nThe output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "useAllNumericFields",
+            "title": "Use all numeric fields",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "fieldsToUse",
+            "title": "Fields to use",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": []
+        },
+        {
+            "name": "numClusters",
+            "title": "Number of clusters",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 4
+        }
+    ]
+}
