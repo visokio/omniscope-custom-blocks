@@ -16,14 +16,14 @@
         {
             "name": "useAllNumericFields",
             "title": "Use all numeric fields",
-            "description": null,
+            "description": "If set to true, fields.to.use will be ignored and instead all numeric data fields used",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
             "defaultValue": true
         },
         {
             "name": "fieldsToUse",
             "title": "Fields to use",
-            "description": null,
+            "description": "Adjust to represent the fields you want to cluster on",
             "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
             "inputIndex": 0,
             "defaultValue": []
@@ -31,7 +31,7 @@
         {
             "name": "numClusters",
             "title": "Number of clusters",
-            "description": null,
+            "description": "Predefines the number of clusters",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
             "numMin": 1,
             "numMax": null,
