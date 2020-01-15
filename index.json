@@ -98,6 +98,16 @@
 				"subcategory": "Prediction",
 				"path": "Analytics/Prediction/SVM",
 				"optionsVersion": 1
+			},
+			{
+				"displayName": "Flightstats Airports",
+				"description": "Downloads a list of airports as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
+				"tags": ["flightstats", "airports"],
+				"language": "R",
+				"category": "Connectors",
+				"subcategory": "Flightstats",
+				"path": "Connectors/Flightstats/Airports",
+				"optionsVersion": 1
 			}
 	]
 }
