@@ -80,13 +80,23 @@
 				"optionsVersion": 1
 			},
 			{
-				"displayName": "K-Nearest-Neighbours (R)",
+				"displayName": "K-Nearest-Neighbours",
 				"description": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
 				"tags": ["knn", "nearest", "neighbours"],
 				"language": "R",
 				"category": "Analytics",
 				"subcategory": "Prediction",
 				"path": "Analytics/Prediction/KNN",
+				"optionsVersion": 1
+			},
+			{
+				"displayName": "Support Vector Machine Prediction",
+				"description": "Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the bondary is made as large as possible to avoid touching the points.",
+				"tags": ["svm", "support", "vector", "machine"],
+				"language": "PYTHON",
+				"category": "Analytics",
+				"subcategory": "Prediction",
+				"path": "Analytics/Prediction/SVM",
 				"optionsVersion": 1
 			}
 	]

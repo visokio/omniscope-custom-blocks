@@ -1,0 +1,41 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Support Vector Machine",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the bondary is made as large as possible to avoid touching the points",
+    "dependencies": "sklearn",
+    "options": [
+        {
+            "name": "useAllNumericFields",
+            "title": "Use all numeric fields",
+            "description": "If set to true, \"Fields to use\" will be ignored and instead all numeric data fields used",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "fieldsToUse",
+            "title": "Fields to use",
+            "description": "Adjust to the fields you want to use in the prediction",
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": []
+        },
+        {
+            "name": "fieldToPredict",
+            "title": "Field to predict",
+            "description": "Specify the field to predict on",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null
+        }
+    ]
+}
