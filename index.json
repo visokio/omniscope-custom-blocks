@@ -28,6 +28,16 @@
 				"subcategory": "Join",
 				"path": "Preparation/Join/Inequality Join",
 				"optionsVersion": 1
+			},
+      {
+				"displayName": "Fuzzy Join",
+				"description": "Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by inverse document frequency.",
+				"tags": ["fuzzy", "join"],
+				"language": "R",
+				"category": "Preparation",
+				"subcategory": "Join",
+				"path": "Preparation/Join/Fuzzy Join",
+				"optionsVersion": 1
 			}
 	]
 }
