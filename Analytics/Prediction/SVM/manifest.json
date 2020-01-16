@@ -9,7 +9,7 @@
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
-    "showPartitioning": false,
+    "showPartitioning": true,
     "introductoryText": "Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the bondary is made as large as possible to avoid touching the points",
     "dependencies": "sklearn",
     "options": [

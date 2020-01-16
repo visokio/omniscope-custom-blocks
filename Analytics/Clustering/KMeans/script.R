@@ -51,7 +51,7 @@ if (!is.null(input.data.2)) {
 if (!is.null(output.data)) {
   write.output.records(omniscope, output.data, output.number=1)
 }
-if (!is.null(output.data.2)) {
+if (exists("output.data.2") && !is.null(output.data.2)) {
   write.output.records(omniscope, output.data.2, output.number=2)
 }
 close(omniscope)

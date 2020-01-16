@@ -34,6 +34,6 @@ output.data <- connection.cross.prob
 
 
 if (!is.null(output.data)) {
-  write.output.records(omniscope, output.data, output.number=1)
+  write.output.records(omniscope, data.frame(output.data), output.number=1)
 }
 close(omniscope)

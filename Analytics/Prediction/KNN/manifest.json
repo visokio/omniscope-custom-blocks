@@ -9,7 +9,7 @@
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
-    "showPartitioning": false,
+    "showPartitioning": true,
     "introductoryText": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
     "dependencies": "",
     "options": [

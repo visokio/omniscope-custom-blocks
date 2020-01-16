@@ -36,7 +36,7 @@ has.weight = !is.null(weight.field)
 
 # extract network
 if (has.weight) {
-  connection.data <- data.table(from=input.data[, from.field], to=input.data[, to.field], weight=input.data[, attribute.field])
+  connection.data <- data.table(from=input.data[, from.field], to=input.data[, to.field], weight=input.data[, weight.field])
 } else {
   connection.data <- data.table(from=input.data[, from.field], to=input.data[, to.field], weight=1)
 }

@@ -9,7 +9,7 @@
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
-    "showPartitioning": false,
+    "showPartitioning": true,
     "introductoryText": "Performs KMeans clustering on the first input data provided.\nThe output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
     "dependencies": "",
     "options": [

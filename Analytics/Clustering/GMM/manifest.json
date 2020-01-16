@@ -9,7 +9,7 @@
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
-    "showPartitioning": false,
+    "showPartitioning": true,
     "introductoryText": "Performs GMM clustering on the first input data provided.\nThe output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
     "dependencies": "",
     "options": [
@@ -18,7 +18,7 @@
             "title": "Use all numeric fields",
             "description": "If set to true, fields.to.use will be ignored and instead all numeric data fields used",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
-            "defaultValue": null
+            "defaultValue": true
         },
         {
             "name": "fieldsToUse",
