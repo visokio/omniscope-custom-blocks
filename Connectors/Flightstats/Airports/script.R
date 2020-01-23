@@ -1,12 +1,12 @@
-library(omniscope)
+library(omniscope.api)
 
-omniscope = Omniscope()
+omni.api = omniscope.api()
 
 ### Parameters
 
-flightstats.app.id <- get.option(omniscope, "appID")
+flightstats.app.id <- get.option(omni.api, "appID")
 
-flightstats.app.key <- get.option(omniscope, "appKey")
+flightstats.app.key <- get.option(omni.api, "appKey")
 
 ### Script
 
@@ -35,6 +35,6 @@ json <- fromJSON(content(result, "text"), flatten = TRUE)
 output.data <- as.data.frame(json$airports)
 
 if (!is.null(output.data)) {
-  write.output.records(omniscope, output.data, output.number=1)
+  write.output.records(omni.api, output.data, output.number=1)
 }
-close(omniscope)
+close(omni.api)

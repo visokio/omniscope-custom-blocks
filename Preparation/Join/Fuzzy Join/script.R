@@ -1,22 +1,22 @@
-library(omniscope)
+library(omniscope.api)
 
-omniscope = Omniscope()
+omni.api = omniscope.api()
 
-input.data = read.input.records(omniscope, input.number=1)
-input.data.2 = read.input.records(omniscope, input.number=2)
+input.data = read.input.records(omni.api, input.number=1)
+input.data.2 = read.input.records(omni.api, input.number=2)
 
 ### Input fields
 
 # defines the left join field
-input.field.1 <- get.option(omniscope, "left")
+input.field.1 <- get.option(omni.api, "left")
 
 # defines the right join field
-input.field.2 <- get.option(omniscope, "right")
+input.field.2 <- get.option(omni.api, "right")
 
 ### Parameters
 
 # defines the join type. Possible values are "left", "right", and "left+right". Left joins will find the best matches for all "left" terms, potentially not using all of the "right" terms. Right joins do the opposite. Left+Right joins append individual left and right joins.
-join.type = get.option(omniscope, "joinType")
+join.type = get.option(omni.api, "joinType")
 
 ### Script
 
@@ -149,6 +149,6 @@ setorder(output.data, .index)
 output.data[, .index := NULL]
 
 if (!is.null(output.data)) {
-  write.output.records(omniscope, data.frame(output.data), output.number=1)
+  write.output.records(omni.api, data.frame(output.data), output.number=1)
 }
-close(omniscope)
+close(omni.api)

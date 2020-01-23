@@ -1,26 +1,26 @@
-library(omniscope)
+library(omniscope.api)
 
-omniscope = Omniscope()
+omni.api = omniscope.api()
 
-input.data = read.input.records(omniscope, input.number=1)
-input.data.2 = read.input.records(omniscope, input.number=2)
+input.data = read.input.records(omni.api, input.number=1)
+input.data.2 = read.input.records(omni.api, input.number=2)
 
 ### Input fields
 
-fields.to.use <- get.option(omniscope, "fieldsToUse")
+fields.to.use <- get.option(omni.api, "fieldsToUse")
 
-field.to.predict <- get.option(omniscope, "fieldToPredict")
+field.to.predict <- get.option(omni.api, "fieldToPredict")
 
 ### Parameters
 
 # whether to use all numeric fields to aid prediction
-use.all.numeric.fields <- get.option(omniscope, "useAllNumericFields")
+use.all.numeric.fields <- get.option(omni.api, "useAllNumericFields")
 
 # whether to use the first categorical field to predict
-use.first.categorical.field <- get.option(omniscope, "predictFirstCategoricalField")
+use.first.categorical.field <- get.option(omni.api, "predictFirstCategoricalField")
 
 # The number of neighbours to use, the K in K-Nearest Neighbours
-number.of.neighbours <- get.option(omniscope, "numberOfNeighbours")
+number.of.neighbours <- get.option(omni.api, "numberOfNeighbours")
 
 
 ### Script
@@ -52,6 +52,6 @@ names(output.data) = c(names(input.data.2), paste0("Predicted (", field.to.predi
 
 
 if (!is.null(output.data)) {
-  write.output.records(omniscope, output.data, output.number=1)
+  write.output.records(omni.api, output.data, output.number=1)
 }
-close(omniscope)
+close(omni.api)

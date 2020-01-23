@@ -1,20 +1,20 @@
-from omniscope import Omniscope
+from omniscope.api import OmniscopeApi
 import pandas
 
-omniscope = Omniscope()
+omniscope_api = OmniscopeApi()
 
 # read the records associated to the first block input
-input_data = omniscope.read_input_records(input_number=0)
-input_data_2 = omniscope.read_input_records(input_number=1)
+input_data = omniscope_api.read_input_records(input_number=0)
+input_data_2 = omniscope_api.read_input_records(input_number=1)
 
 ### Input fields
 
 # If you use fields_to_use, make sure to set use_all_numeric_fields = False
-fields_to_use = omniscope.get_option("fieldsToUse")
+fields_to_use = omniscope_api.get_option("fieldsToUse")
 
 ### Parameters
 
-use_all_numeric_fields = omniscope.get_option("useAllNumericFields")
+use_all_numeric_fields = omniscope_api.get_option("useAllNumericFields")
 
 ### Script
 
@@ -49,5 +49,5 @@ output_data = pandas.concat([input_data, labels], axis=1)
 
 #write the output records in the first output
 if output_data is not None:
-    omniscope.write_output_records(output_data, output_number=0)
-omniscope.close()
+    omniscope_api.write_output_records(output_data, output_number=0)
+omniscope_api.close()

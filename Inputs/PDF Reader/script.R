@@ -1,12 +1,12 @@
-library(omniscope)
+library(omniscope.api)
 library(pdftools)
 
-omniscope = Omniscope()
+omni.api = omniscope.api()
 
-input.data = read.input.records(omniscope, input.number=1)
-folderPath = get.option(omniscope, "folderPath")
-isRecursive = get.option(omniscope, "recursive")
-writeTxt = get.option(omniscope, "writeTxt")
+input.data = read.input.records(omni.api, input.number=1)
+folderPath = get.option(omni.api, "folderPath")
+isRecursive = get.option(omni.api, "recursive")
+writeTxt = get.option(omni.api, "writeTxt")
 
 output.data <- data.frame("File" = NULL, "Extracted text" = NULL)
 
@@ -38,6 +38,6 @@ lapply(files, function(f) {
 
 
 if (!is.null(output.data)) {
-  write.output.records(omniscope, output.data, output.number=1)
+  write.output.records(omni.api, output.data, output.number=1)
 }
-close(omniscope)
+close(omni.api)
