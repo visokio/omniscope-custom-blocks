@@ -10,8 +10,8 @@ These require Omniscope 2020.1 ROCK or later.
 1. Inputs
    1. [PDF Reader](Inputs/PDF%20Reader/)
 2. Connectors
-   1. [Flightstats Airports](Connectors/Flightstats/Airports/)
-   2. [Flightstats Airlines](Connectors/Flightstats/Airlines/)
+   1. [Flightstats Airlines](Connectors/Flightstats/Airlines/)
+   2. [Flightstats Airports](Connectors/Flightstats/Airports/)
    3. [Flightstats Flights](Connectors/Flightstats/Flights/)
    4. [Overpass Street Coordinates](Connectors/Overpass/Street%20Coordinates/)
 3. Preparation
@@ -20,14 +20,14 @@ These require Omniscope 2020.1 ROCK or later.
 4. Analytics
    1. Clustering
        1. [DBScan](Analytics/Clustering/DBScan/)
-       2. [KMeans](Analytics/Clustering/KMeans/)
-       3. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/)
-   2. Prediction
-       1. [K-Nearest-Neighbours](Analytics/Prediction/KNN/)
-       2. [Support Vector Machine Prediction](Analytics/Prediction/SVM/)
-   3. Network analysis
+       2. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/)
+       3. [KMeans](Analytics/Clustering/KMeans/)
+   2. Network analysis
        1. [Attribute Analysis](Analytics/Network%20Analysis/Attribute%20Analysis/)
        2. [Relationship Analysis](Analytics/Network%20Analysis/Relationship%20Analysis/)
+   3. Prediction
+       1. [K-Nearest-Neighbours](Analytics/Prediction/KNN/)
+       2. [Support Vector Machine Prediction](Analytics/Prediction/SVM/)
 
 
 ### Inputs
@@ -40,8 +40,8 @@ These require Omniscope 2020.1 ROCK or later.
 ### Connectors
 <table>
     <tr valign="top">
-        <td width="33%">Flightstats Airports<br><a href="Connectors/Flightstats/Airports/" title="Flightstats Airports"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airports/thumbnail.png"></a></td>
         <td width="33%">Flightstats Airlines<br><a href="Connectors/Flightstats/Airlines/" title="Flightstats Airlines"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airlines/thumbnail.png"></a></td>
+        <td width="33%">Flightstats Airports<br><a href="Connectors/Flightstats/Airports/" title="Flightstats Airports"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airports/thumbnail.png"></a></td>
         <td width="33%">Flightstats Flights<br><a href="Connectors/Flightstats/Flights/" title="Flightstats Flights"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Flights/thumbnail.png"></a></td>
     </tr>
     <tr valign="top">
@@ -64,8 +64,8 @@ These require Omniscope 2020.1 ROCK or later.
 <table>
     <tr valign="top">
         <td width="33%">DBScan<br><a href="Analytics/Clustering/DBScan/" title="DBScan"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/DBScan/thumbnail.png"></a></td>
-        <td width="33%">KMeans<br><a href="Analytics/Clustering/KMeans/" title="KMeans"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/KMeans/thumbnail.png"></a></td>    
         <td width="33%">Gaussian Mixture Model<br><a href="Analytics/Clustering/GMM/" title="GMM"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/GMM/thumbnail.png"></a></td>      
+        <td width="33%">KMeans<br><a href="Analytics/Clustering/KMeans/" title="KMeans"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/KMeans/thumbnail.png"></a></td>    
     </tr>
     <tr valign="top">
         <td width="33%">Attribute Analysis<br><a href="Analytics/Network%20Analysis/Attribute%20Analysis/" title="Attribute Analysis"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Attribute%20Analysis/thumbnail.png"></a></td>
@@ -97,8 +97,8 @@ These require Omniscope 2020.1 ROCK or later.
 These conform to an older specification of custom blocks supported by Omniscope 2019.3, and will be removed mid-2020.
 
 1. Connectors
-   1. [Flightstats Airports](Connectors/Flightstats/Airports/R/)
-   2. [Flightstats Airlines](Connectors/Flightstats/Airlines/R/)
+   1. [Flightstats Airlines](Connectors/Flightstats/Airlines/R/)
+   2. [Flightstats Airports](Connectors/Flightstats/Airports/R/)
    3. [Flightstats Flights](Connectors/Flightstats/Flights/R/)
    4. [Overpass Street Coordinates](Connectors/Overpass/Street%20Coordinates/Python/)
 2. Preparation
@@ -108,8 +108,8 @@ These conform to an older specification of custom blocks supported by Omniscope 
    1. Clustering
        1. [DBScan (R)](Analytics/Clustering/DBScan/R/)
        2. [DBScan (Python)](Analytics/Clustering/DBScan/Python/)
-       3. [KMeans](Analytics/Clustering/KMeans/R/)
-       4. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/R/)
+       3. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/R/)
+       4. [KMeans](Analytics/Clustering/KMeans/R/)
    2. Prediction
        1. [K-Nearest-Neighbours](Analytics/Prediction/KNN/R/)
        2. [Support Vector Machine Prediction](Analytics/Prediction/SVM/Python/)

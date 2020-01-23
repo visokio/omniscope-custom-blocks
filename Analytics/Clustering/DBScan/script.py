@@ -5,7 +5,6 @@ omniscope_api = OmniscopeApi()
 
 # read the records associated to the first block input
 input_data = omniscope_api.read_input_records(input_number=0)
-input_data_2 = omniscope_api.read_input_records(input_number=1)
 
 ### Input fields
 
