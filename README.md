@@ -13,7 +13,7 @@ These require Omniscope 2020.1 ROCK or later.
    1. [Flightstats Airports](Connectors/Flightstats/Airports/)
    2. [Flightstats Airlines](Connectors/Flightstats/Airlines/)
    3. [Flightstats Flights](Connectors/Flightstats/Flights/)
-   4. [Overpass Street Coordinates](Connectors/Overpass/StreetCoordinates/)
+   4. [Overpass Street Coordinates](Connectors/Overpass/Street%20Coordinates/)
 3. Preparation
    1. [Fuzzy Join](Preparation/Join/Fuzzy%20Join/)
    2. [Inequality Join](Preparation/Join/Inequality%20Join/)
@@ -24,7 +24,7 @@ These require Omniscope 2020.1 ROCK or later.
        3. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/)
    2. Prediction
        1. [K-Nearest-Neighbours](Analytics/Prediction/KNN/)
-       2. [Support Vector Machine Prediction](Analytics/Prediction/SVN/)
+       2. [Support Vector Machine Prediction](Analytics/Prediction/SVM/)
    3. Network analysis
        1. [Attribute Analysis](Analytics/Network%20Analysis/Attribute%20Analysis/)
        2. [Relationship Analysis](Analytics/Network%20Analysis/Relationship%20Analysis/)
@@ -40,12 +40,12 @@ These require Omniscope 2020.1 ROCK or later.
 ### Connectors
 <table>
     <tr valign="top">
-        <td width="33%">Flightstats Airports (R)<br><a href="Connectors/Flightstats/Airports/" title="Flightstats Airports (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airports/thumbnail.png"></a></td>
-        <td width="33%">Flightstats Airlines (R)<br><a href="Connectors/Flightstats/Airlines/" title="Flightstats Airlines (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airlines/thumbnail.png"></a></td>
-        <td width="33%">Flightstats Flights (R)<br><a href="Connectors/Flightstats/Flights/" title="Flightstats Flights (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Flights/thumbnail.png"></a></td>
+        <td width="33%">Flightstats Airports<br><a href="Connectors/Flightstats/Airports/" title="Flightstats Airports"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airports/thumbnail.png"></a></td>
+        <td width="33%">Flightstats Airlines<br><a href="Connectors/Flightstats/Airlines/" title="Flightstats Airlines"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airlines/thumbnail.png"></a></td>
+        <td width="33%">Flightstats Flights<br><a href="Connectors/Flightstats/Flights/" title="Flightstats Flights"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Flights/thumbnail.png"></a></td>
     </tr>
     <tr valign="top">
-        <td width="33%">Overpass Street Coordinates (Python)<br><a href="Connectors/Overpass/Street%20Coordinates/" title="Overpass Street Coordinates (Python)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Overpass/Street%20Coordinates/thumbnail.png"></a></td>
+        <td width="33%">Overpass Street Coordinates<br><a href="Connectors/Overpass/Street%20Coordinates/" title="Overpass Street Coordinates"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Overpass/Street%20Coordinates/thumbnail.png"></a></td>
         <td width="33%"></td>
         <td width="33%"></td>
     </tr>
@@ -54,8 +54,8 @@ These require Omniscope 2020.1 ROCK or later.
 ### Preparation
 <table>
     <tr valign="top">
-        <td width="33%">Fuzzy Join (R)<br><a href="Preparation/Join/Fuzzy%20Join/" title="Fuzzy Join (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Fuzzy%20Join/thumbnail.png"></a></td>
-        <td width="33%">Inequality Join (R)<br><a href="Preparation/Join/Inequality%20Join/" title="Inequality Join (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Inequality%20Join/thumbnail.png"></a></td>
+        <td width="33%">Fuzzy Join<br><a href="Preparation/Join/Fuzzy%20Join/" title="Fuzzy Join"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Fuzzy%20Join/thumbnail.png"></a></td>
+        <td width="33%">Inequality Join<br><a href="Preparation/Join/Inequality%20Join/" title="Inequality Join"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Inequality%20Join/thumbnail.png"></a></td>
         <td width="33%"></td>
     </tr>
 </table>
@@ -63,17 +63,17 @@ These require Omniscope 2020.1 ROCK or later.
 ### Analytics
 <table>
     <tr valign="top">
-        <td width="33%">DBScan<br><a href="Analytics/Clustering/DBScan/" title="DBScan (Python)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/DBScan/thumbnail.png"></a></td>
-        <td width="33%">KMeans (R)<br><a href="Analytics/Clustering/KMeans/" title="KMeans (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/KMeans/thumbnail.png"></a></td>    
-        <td width="33%">Gaussian Mixture Model (R)<br><a href="Analytics/Clustering/GMM/" title="GMM (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/GMM/thumbnail.png"></a></td>      
+        <td width="33%">DBScan<br><a href="Analytics/Clustering/DBScan/" title="DBScan"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/DBScan/thumbnail.png"></a></td>
+        <td width="33%">KMeans<br><a href="Analytics/Clustering/KMeans/" title="KMeans"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/KMeans/thumbnail.png"></a></td>    
+        <td width="33%">Gaussian Mixture Model<br><a href="Analytics/Clustering/GMM/" title="GMM"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/GMM/thumbnail.png"></a></td>      
     </tr>
     <tr valign="top">
-        <td width="33%">Attribute Analysis (R)<br><a href="Analytics/Network%20Analysis/Attribute%20Analysis/" title="Attribute Analysis (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Attribute%20Analysis/thumbnail.png"></a></td>
-        <td width="33%">Relationship Analysis (R)<br><a href="Analytics/Network%20Analysis/Relationship%20Analysis/" title="Attribute Analysis (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Relationship%20Analysis/thumbnail.png"></a></td>
-        <td width="33%">K-Nearest-Neighbours (R)<br><a href="Analytics/Prediction/KNN/" title="K-Nearest-Neighbours (R)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/KNN/thumbnail.png"></a></td>
+        <td width="33%">Attribute Analysis<br><a href="Analytics/Network%20Analysis/Attribute%20Analysis/" title="Attribute Analysis"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Attribute%20Analysis/thumbnail.png"></a></td>
+        <td width="33%">Relationship Analysis<br><a href="Analytics/Network%20Analysis/Relationship%20Analysis/" title="Attribute Analysis"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Relationship%20Analysis/thumbnail.png"></a></td>
+        <td width="33%">K-Nearest-Neighbours<br><a href="Analytics/Prediction/KNN/" title="K-Nearest-Neighbours"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/KNN/thumbnail.png"></a></td>
     </tr>
     <tr valign="top">
-        <td width="33%">Support Vector Machine Prediction (Python)<br><a href="Analytics/Prediction/SVM/" title="Support Vector Machine Prediction (Python)"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/SVM/thumbnail.png"></a></td>
+        <td width="33%">Support Vector Machine Prediction<br><a href="Analytics/Prediction/SVM/" title="Support Vector Machine Prediction"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/SVM/thumbnail.png"></a></td>
         <td width="33%"></td>     
         <td width="33%"></td>     
     </tr>
@@ -100,7 +100,7 @@ These conform to an older specification of custom blocks supported by Omniscope 
    1. [Flightstats Airports](Connectors/Flightstats/Airports/R/)
    2. [Flightstats Airlines](Connectors/Flightstats/Airlines/R/)
    3. [Flightstats Flights](Connectors/Flightstats/Flights/R/)
-   4. [Overpass Street Coordinates](Connectors/Overpass/StreetCoordinates/Python/)
+   4. [Overpass Street Coordinates](Connectors/Overpass/Street%20Coordinates/Python/)
 2. Preparation
    1. [Fuzzy Join](Preparation/Join/Fuzzy%20Join/R/)
    2. [Inequality Join](Preparation/Join/Inequality%20Join/R/)
@@ -112,7 +112,7 @@ These conform to an older specification of custom blocks supported by Omniscope 
        4. [GMM](Analytics/Network%20Analysis/Attribute%20Analysis/R/)
    2. Prediction
        1. [K-Nearest-Neighbours](Analytics/Prediction/KNN/R/)
-       2. [Support Vector Machine Prediction](Analytics/Prediction/SVN/Python/)
+       2. [Support Vector Machine Prediction](Analytics/Prediction/SVM/Python/)
    3. Network analysis
        1. [Attribute Analysis](Analytics/Network%20Analysis/Attribute%20Analysis/R/)
        2. [Relationship Analysis](Analytics/Network%20Analysis/Relationship%20Analysis/R/)
