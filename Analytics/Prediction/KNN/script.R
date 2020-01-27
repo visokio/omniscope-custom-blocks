@@ -36,7 +36,7 @@ if (use.all.numeric.fields) {
 }
 
 if (use.first.categorical.field) {
-  field.to.predict <- names(input.data)[sapply(input.data,is.factor)][1]
+  field.to.predict <- names(input.data)[sapply(input.data,is.character)][1]
 }
 
 
