@@ -1,17 +1,17 @@
-library(omniscope)
+library(omniscope.api)
 
-omniscope = Omniscope()
+omni.api = omniscope.api()
 
-input.data = read.input.records(omniscope, input.number=1)
-input.data.2 = read.input.records(omniscope, input.number=2)
+input.data = read.input.records(omni.api, input.number=1)
+input.data.2 = read.input.records(omni.api, input.number=2)
 
 ### Input fields
 
-fields.to.use <- get.option(omniscope, "fieldsToUse")
+fields.to.use <- get.option(omni.api, "fieldsToUse")
 
 ### Parameters
 
-use.all.numeric.fields <- get.option(omniscope, "useAllNumericFields")
+use.all.numeric.fields <- get.option(omni.api, "useAllNumericFields")
 
 ### Script
 
@@ -43,9 +43,9 @@ if (!is.null(input.data.2)) {
 }
 
 if (!is.null(output.data)) {
-  write.output.records(omniscope, output.data, output.number=1)
+  write.output.records(omni.api, output.data, output.number=1)
 }
 if (exists("output.data.2") && !is.null(output.data.2)) {
-  write.output.records(omniscope, output.data.2, output.number=2)
+  write.output.records(omni.api, output.data.2, output.number=2)
 }
-close(omniscope)
+close(omni.api)

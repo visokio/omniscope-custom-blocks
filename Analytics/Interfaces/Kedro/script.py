@@ -1,7 +1,7 @@
-from omniscope import Omniscope
+from omniscope.api import OmniscopeApi
 import pandas
 
-omniscope = Omniscope()
+omniscope_api = OmniscopeApi()
 
 # read the records associated to the first block input
 
@@ -11,7 +11,7 @@ import sys
 import os
 
 
-path = omniscope.get_option("path")
+path = omniscope_api.get_option("path")
 
 os.chdir(path)
 
@@ -27,14 +27,14 @@ sys.stderr = sys.stdout
 def connect_input(index):
     input_name = None
     try:
-        input_name = omniscope.get_option("input"+str(index))
+        input_name = omniscope_api.get_option("input"+str(index))
     except:
         return
     if input_name is None or len(input_name) == 0:
         return
         
     input_path = path+"/data/01_raw/"+input_name+".csv"
-    input_data_set = omniscope.read_input_records(input_number=index)
+    input_data_set = omniscope_api.read_input_records(input_number=index)
     if input_data_set is None:
         return
     os.remove(input_path)
@@ -43,7 +43,7 @@ def connect_input(index):
 def connect_output(index):
     output_name = None
     try:
-        output_name = omniscope.get_option("output"+str(index))
+        output_name = omniscope_api.get_option("output"+str(index))
     except:
         return
     if output_name is None or len(output_name) == 0:
@@ -54,7 +54,7 @@ def connect_output(index):
     if output_data_set is None:
         return
         
-    omniscope.write_output_records(output_data_set, output_number=index)
+    omniscope_api.write_output_records(output_data_set, output_number=index)
 
 
 
@@ -75,4 +75,4 @@ except:
 for i in range(0,2):
     connect_output(i)
 
-omniscope.close()
+omniscope_api.close()

@@ -1,10 +1,10 @@
-from omniscope import Omniscope
+from omniscope.api import OmniscopeApi
 import pandas
 
-omniscope = Omniscope()
+omniscope_api = OmniscopeApi()
 
 # read the records associated to the first block input
-input_data = omniscope.read_input_records(input_number=0)
+input_data = omniscope_api.read_input_records(input_number=0)
 
 ### Info
 #  - https://python-overpy.readthedocs.io/en/latest/example.html#use-overpass-ql-or-overpass-xml
@@ -12,7 +12,7 @@ input_data = omniscope.read_input_records(input_number=0)
 #  - https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_API_by_Example#List_of_streets
 
 ### Input fields
-address_field_name = omniscope.get_option("addressField")
+address_field_name = omniscope_api.get_option("addressField")
 
 ### Script
 import overpy
@@ -46,5 +46,5 @@ for index, row in input_data.iterrows():
 
 #write the output records in the first output
 if output_data is not None:
-    omniscope.write_output_records(output_data, output_number=0)
-omniscope.close()
+    omniscope_api.write_output_records(output_data, output_number=0)
+omniscope_api.close()

@@ -1,27 +1,27 @@
-library(omniscope)
+library(omniscope.api)
 
-omniscope = Omniscope()
+omni.api = omniscope.api()
 
-input.data = read.input.records(omniscope, input.number=1)
+input.data = read.input.records(omni.api, input.number=1)
 
 ### Input fields
-from.field <- get.option(omniscope, "from")
+from.field <- get.option(omni.api, "from")
 
-to.field <- get.option(omniscope, "to")
+to.field <- get.option(omni.api, "to")
 
 # this is optional and can also be NULL
-weight.field <- get.option(omniscope, "weight")
+weight.field <- get.option(omni.api, "weight")
 
 ### Parameters
 
 # number of output dimensions in the data
-output.dimensions <- get.option(omniscope, "outputDimensions")
+output.dimensions <- get.option(omni.api, "outputDimensions")
 
 # an initial step in tsne is a dimensionality reduction via PCA. This variable specifies to how many initial dimensions the network should be reduced
-initial.dimensions <- get.option(omniscope, "initialDimensions")
+initial.dimensions <- get.option(omni.api, "initialDimensions")
 
 # specifies more or less how many neighbour points each data point sees. The lower the more local relationships are accentuated
-perplexity <- get.option(omniscope, "perplexity")
+perplexity <- get.option(omni.api, "perplexity")
 
 ### Script
 
@@ -72,6 +72,6 @@ output.data[,i:=NULL]
 
 
 if (!is.null(output.data)) {
-  write.output.records(omniscope, data.frame(output.data), output.number=1)
+  write.output.records(omni.api, data.frame(output.data), output.number=1)
 }
-close(omniscope)
+close(omni.api)

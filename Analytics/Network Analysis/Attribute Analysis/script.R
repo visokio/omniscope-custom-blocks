@@ -1,15 +1,15 @@
-library(omniscope)
+library(omniscope.api)
 
-omniscope = Omniscope()
+omni.api = omniscope.api()
 
-input.data = read.input.records(omniscope, input.number=1)
+input.data = read.input.records(omni.api, input.number=1)
 
 ### Input fields
-from.field <- get.option(omniscope, "from")
+from.field <- get.option(omni.api, "from")
 
-to.field <- get.option(omniscope, "to")
+to.field <- get.option(omni.api, "to")
 
-attribute.field <- get.option(omniscope, "category")
+attribute.field <- get.option(omni.api, "category")
 
 ### Script
 
@@ -34,6 +34,6 @@ output.data <- connection.cross.prob
 
 
 if (!is.null(output.data)) {
-  write.output.records(omniscope, data.frame(output.data), output.number=1)
+  write.output.records(omni.api, data.frame(output.data), output.number=1)
 }
-close(omniscope)
+close(omni.api)
