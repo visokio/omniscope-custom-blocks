@@ -1,0 +1,42 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Gridsquare",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "This block converts grid square / [Maidenhead Locator System](https://en.wikipedia.org/wiki/Maidenhead_Locator_System) coordinate references such as `BL11bh16` to longitude/latitude decimal pairs.\n\nIt uses the centre point of the grid square as the output coordinates.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "gsfield",
+            "title": "Grid square field",
+            "description": "The field containing grid square / \"Maidenhead Locator System\" coordinate values, e.g. \"HK34wh\"",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": "Gridsquare"
+        },
+        {
+            "name": "lonfield",
+            "title": "Longitude output field name",
+            "description": "The name of the field to create, containing longitude (X) values. Typically \"Longitude\".",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "Longitude"
+        },
+        {
+            "name": "latfield",
+            "title": "Latitude output field name",
+            "description": "The name of the field to create, containing latitude (Y) values. Typically \"Latitude\".",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "Latitude"
+        }
+    ]
+}
