@@ -14,8 +14,6 @@ flightstats.app.key <- get.option(omni.api, "appKey")
 library(httr)
 library(jsonlite)
 
-# sanity checks
-if (is.null(input.data)) stop("No input data")
 
 app.id.string <- paste("appId", flightstats.app.id, sep="=")
 app.key.string <- paste("appKey", flightstats.app.key, sep="=")

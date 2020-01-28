@@ -25,9 +25,13 @@ import sys
 import numpy as np
 from sklearn import svm
 
+if input_data is None:
+	omniscope_api.cancel("No input data")
+	sys.exit()
+
 if use_all_numeric_fields:
     # Get the numeric fields from the input data
-    fields_to_use = [x for x in input_data.columns if (input_data[x].dtype == np.float64 or input_data[x].dtype == np.int64)]
+    fields_to_use = [x for x in input_data.columns if (input_data[x].dtype == np.float64 or input_data[x].dtype == np.int64 or input_data[x].dtype == "Int64")]
 
 all_fields_to_use = fields_to_use + [field_to_predict]
 
@@ -46,6 +50,11 @@ y = input_data[field_to_predict]
 
 # Data to predict with
 x = input_data[fields_to_use]
+
+if any(type != np.float64 and type != np.int64 and type != "Int64" for type in x.dtypes):
+	omniscope_api.cancel("Only numeric fields in  \"Fields to use\" are supported")
+	sys.exit()
+
 x = np.array(x, dtype=float)
 
 # Build the model

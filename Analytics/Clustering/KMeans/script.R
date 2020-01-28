@@ -18,15 +18,26 @@ num.clusters <- get.option(omni.api, "numClusters")
 ### Script
 
 
-if (is.null(input.data))
-  stop("No input data")
+if (is.null(input.data)) {
+  cancel(omni.api, "No input data")
+  stop()
+}
 
 if (use.all.numeric.fields) {
   fields.to.use <- names(input.data)[sapply(input.data, is.numeric)]
 }
 
 # Create a matrix of the numeric fields
-original.data.matrix <- as.matrix(input.data[,fields.to.use])
+
+if (!all(sapply(input.data[,fields.to.use], is.numeric))) {
+  cancel(omni.api, "Only numeric fields in \"Fields to use\" are supported")
+  stop()
+}
+
+input.data <- input.data[complete.cases(input.data[, fields.to.use]), ]
+
+
+original.data.matrix <- as.matrix(input.data[, fields.to.use])
 
 # Do the clustering
 cluster.results <- kmeans(original.data.matrix, num.clusters)
@@ -34,24 +45,9 @@ cluster.results <- kmeans(original.data.matrix, num.clusters)
 output.data <- cbind(input.data, cluster.results$cluster)
 names(output.data) <- c(names(input.data), "Cluster")
 
-if (!is.null(input.data.2)) {
-
-  # Create a matrix of the relevant fields
-  new.data.matrix <- as.matrix(input.data.2[,fields.to.use])
-
-  # Predict the cluster assigments of the new/unseen data
-  new.data.prediction <- predict(cluster.results, new.data.matrix, data=original.data.matrix)
-
-  output.data.2 <- cbind(input.data.2, new.data.prediction)
-  names(output.data.2) <- c(names(input.data.2), "Cluster")
-
-}
-
 
 if (!is.null(output.data)) {
   write.output.records(omni.api, output.data, output.number=1)
 }
-if (exists("output.data.2") && !is.null(output.data.2)) {
-  write.output.records(omni.api, output.data.2, output.number=2)
-}
+
 close(omni.api)

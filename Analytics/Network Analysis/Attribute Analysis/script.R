@@ -17,7 +17,29 @@ attribute.field <- get.option(omni.api, "category")
 require(data.table)
 
 # sanity checks
-if (is.null(input.data)) stop("No input data")
+if (is.null(input.data)) {
+  cancel(omni.api, "No input data")
+  stop()
+}
+
+if (!is.character(input.data[, from.field])) {
+  cancel(omni.api, "\"From field\" must be of type text")
+  stop()
+}
+
+if (!is.character(input.data[, to.field])) {
+  cancel(omni.api, "\"To field\" must be of type text")
+  stop()
+}
+
+if (!is.character(input.data[, attribute.field])) {
+  cancel(omni.api, "\"Attribute field\" must be of type text")
+  stop()
+}
+
+input.fields = c(from.field, to.field, attribute.field)
+
+input.data <- input.data[complete.cases(input.data[, input.fields]), ]
 
 connection.data <- data.table(from=input.data[, from.field], to=input.data[, to.field], category=input.data[, attribute.field])
 connection.data[,sfreq:=1/.N, by=category]

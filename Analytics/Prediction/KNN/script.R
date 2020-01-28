@@ -28,8 +28,10 @@ number.of.neighbours <- get.option(omni.api, "numberOfNeighbours")
 
 library(class)
 
-if (is.null(input.data))
-  stop("No input data")
+if (is.null(input.data)) {
+  cancel(omni.api, "No input data")
+  stop()
+}
 
 if (use.all.numeric.fields) {
   fields.to.use <- names(input.data)[sapply(input.data, is.numeric)]
@@ -39,10 +41,37 @@ if (use.first.categorical.field) {
   field.to.predict <- names(input.data)[sapply(input.data,is.character)][1]
 }
 
+if (!all(sapply(input.data[,fields.to.use], is.numeric))) {
+  cancel(omni.api, "Only numeric fields in \"Fields to use\" are supported")
+  stop()
+}
 
-if (is.null(input.data.2))  input.data.2 <- input.data
+if (!is.numeric(input.data[, field.to.predict])) {
+  cancel(omni.api, "\"Field to predict\" must be numeric")
+  stop()
+}
 
-test <- input.data.2[,fields.to.use]
+input.data <- input.data[complete.cases(input.data[, fields.to.use]), ]
+
+if (is.null(input.data.2))  {
+  input.data.2 <- input.data
+} else {
+
+  if (!all(fields.to.use %in% names(input.data.2))) {
+    cancel(omni.api, "Not all fields in \"Fields to use\" are present in the second input data")
+    stop()
+  }
+
+  if (!all(sapply(input.data.2[,fields.to.use], is.numeric))) {
+    cancel(omni.api, "Only numeric fields in \"Fields to use\" are supported in the second input data")
+    stop()
+  }
+
+  input.data.2 <- input.data.2[complete.cases(input.data.2[, fields.to.use]), ]
+
+}
+
+
 
 # Build the model
 model <- knn(input.data[,fields.to.use], input.data.2[,fields.to.use], input.data[,field.to.predict], k=number.of.neighbours)

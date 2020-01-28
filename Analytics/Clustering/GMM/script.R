@@ -18,12 +18,21 @@ use.all.numeric.fields <- get.option(omni.api, "useAllNumericFields")
 
 library(mclust)
 
-if (is.null(input.data))
-  stop("No input data")
+if (is.null(input.data)) {
+  cancel(omni.api, "No input data")
+  stop()
+}
 
 if (use.all.numeric.fields) {
   fields.to.use <- names(input.data)[sapply(input.data, is.numeric)]
 }
+
+if (!all(sapply(input.data[,fields.to.use], is.numeric))) {
+  cancel(omni.api, "Only numeric fields in \"Fields to use\" are supported")
+  stop()
+}
+
+input.data <- input.data[complete.cases(input.data[, fields.to.use]), ]
 
 # Calculate the clustering
 model <- Mclust(input.data[,fields.to.use])
@@ -33,12 +42,24 @@ names(output.data) <- c(names(input.data), "Cluster")
 
 if (!is.null(input.data.2)) {
 
+  if (!all(fields.to.use %in% names(input.data.2))) {
+	  cancel(omni.api, "Not all fields in \"Fields to use\" are present in the second input data")
+    stop()
+  }
+
+  if (!all(sapply(input.data.2[,fields.to.use], is.numeric))) {
+    cancel(omni.api, "Only numeric fields in \"Fields to use\" are supported in the second input data")
+    stop()
+  }
+
+
+  input.data.2 <- input.data.2[complete.cases(input.data.2[, fields.to.use]), ]
+
   # Cluster the unseen data
-  new.data.to.cluster <- input.data.2[,fields.to.use]
-  new.assignments <- predict(model, newdata=new.data.to.cluster)$classification
+  new.assignments <- predict(model, newdata=input.data.2[, fields.to.use])$classification
 
   output.data.2 <- cbind(input.data.2, new.assignments)
-  names(output.data) <- c(names(input.data), "Cluster")
+  names(output.data) <- c(names(input.data.2), "Cluster")
 
 }
 

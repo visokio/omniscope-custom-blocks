@@ -30,9 +30,34 @@ library(data.table)
 library(Rtsne)
 
 # sanity checks
-if (is.null(input.data)) stop("No input data")
+if (is.null(input.data)) {
+  cancel(omni.api, "No input data")
+  stop()
+}
+
+if (!is.character(input.data[, from.field])) {
+  cancel(omni.api, "\"From field\" must be of type text")
+  stop()
+}
+
+if (!is.character(input.data[, to.field])) {
+  cancel(omni.api, "\"To field\" must be of type text")
+  stop()
+}
 
 has.weight = !is.null(weight.field)
+
+if (has.weight && !is.numeric(input.data[, weight.field])) {
+  cancel(omni.api, "\"Weight field\" must be numeric")
+  stop()
+}
+
+
+input.fields = c(from.field, to.field)
+if (has.weight) input.fields <- c(input.fields, weight.field)
+
+input.data <- input.data[complete.cases(input.data[, input.fields]), ]
+
 
 # extract network
 if (has.weight) {

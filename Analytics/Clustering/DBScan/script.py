@@ -1,6 +1,7 @@
 from omniscope.api import OmniscopeApi
 import pandas
 
+
 omniscope_api = OmniscopeApi()
 
 # read the records associated to the first block input
@@ -21,16 +22,24 @@ import sys
 import numpy as np
 from sklearn import cluster, preprocessing
 
+if input_data is None:
+	omniscope_api.cancel("No input data")
+	sys.exit()
+
 if use_all_numeric_fields:
     # Get the numeric fields from the input data
-    fields_to_use = [x for x in input_data.columns if (input_data[x].dtype == np.float64 or input_data[x].dtype == np.int64)]
+    fields_to_use = [x for x in input_data.columns if (input_data[x].dtype == np.float64 or input_data[x].dtype == np.int64 or input_data[x].dtype == "Int64")]
 
 # Remove invalid rows from the model creating data
 input_data = input_data.dropna(subset=fields_to_use)
 
-
 # Data to predict with
 x = input_data[fields_to_use]
+
+if any(type != np.float64 and type != np.int64 and type != "Int64" for type in x.dtypes):
+	omniscope_api.cancel("Only numeric fields in  \"Fields to use\" are supported")
+	sys.exit()
+
 x = np.array(x, dtype=float)
 
 scaler = preprocessing.StandardScaler().fit(x)
