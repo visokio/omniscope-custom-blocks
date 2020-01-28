@@ -70,6 +70,16 @@
 			"optionsVersion": 1
 		},
 		{
+			"displayName": "Gridsquare",
+			"description": "Converts gridsquare / Maidenhead ",
+			"tags": ["gridsquare", "maidenhead", "coordinates", "locator", "latitude", "longitude"],
+			"language": "PYTHON",
+			"category": "Preparation",
+			"subcategory": "Geo",
+			"path": "Preparation/Geo/Gridsquare",
+			"optionsVersion": 1
+		},
+		{
 			"displayName": "DBScan",
 			"description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["dbscan"],
