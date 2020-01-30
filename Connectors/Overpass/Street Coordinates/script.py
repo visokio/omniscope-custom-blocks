@@ -16,10 +16,10 @@ address_field_name = omniscope_api.get_option("addressField")
 
 ### Script
 import overpy
-import time
 
 # sanity checks
-if (is.null(input.data)) omniscope_api.abort("No input data")
+if input_data is None:
+	omniscope_api.abort("No input data")
 
 api = overpy.Overpass()
 
