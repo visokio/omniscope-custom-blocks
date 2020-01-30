@@ -39,7 +39,7 @@ if (use.first.categorical.field) {
 }
 
 if (!all(sapply(input.data[,fields.to.use], is.numeric))) abort(omni.api, "Only numeric fields in \"Fields to use\" are supported")
-if (!is.numeric(input.data[, field.to.predict])) abort(omni.api, "\"Field to predict\" must be numeric")
+if (!is.character(input.data[, field.to.predict])) abort(omni.api, "\"Field to predict\" must be of type text")
 
 input.data <- input.data[complete.cases(input.data[, fields.to.use]), ]
 
