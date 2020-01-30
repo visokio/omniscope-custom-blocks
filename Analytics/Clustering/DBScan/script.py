@@ -23,8 +23,7 @@ import numpy as np
 from sklearn import cluster, preprocessing
 
 if input_data is None:
-	omniscope_api.cancel("No input data")
-	sys.exit()
+	omniscope_api.abort("No input data")
 
 if use_all_numeric_fields:
     # Get the numeric fields from the input data
@@ -37,8 +36,7 @@ input_data = input_data.dropna(subset=fields_to_use)
 x = input_data[fields_to_use]
 
 if any(type != np.float64 and type != np.int64 and type != "Int64" for type in x.dtypes):
-	omniscope_api.cancel("Only numeric fields in  \"Fields to use\" are supported")
-	sys.exit()
+	omniscope_api.abort("Only numeric fields in  \"Fields to use\" are supported")
 
 x = np.array(x, dtype=float)
 

@@ -18,19 +18,13 @@ use.all.numeric.fields <- get.option(omni.api, "useAllNumericFields")
 
 library(mclust)
 
-if (is.null(input.data)) {
-  cancel(omni.api, "No input data")
-  stop()
-}
+if (is.null(input.data)) abort(omni.api, "No input data")
 
 if (use.all.numeric.fields) {
   fields.to.use <- names(input.data)[sapply(input.data, is.numeric)]
 }
 
-if (!all(sapply(input.data[,fields.to.use], is.numeric))) {
-  cancel(omni.api, "Only numeric fields in \"Fields to use\" are supported")
-  stop()
-}
+if (!all(sapply(input.data[,fields.to.use], is.numeric))) abort(omni.api, "Only numeric fields in \"Fields to use\" are supported")
 
 input.data <- input.data[complete.cases(input.data[, fields.to.use]), ]
 
@@ -42,15 +36,9 @@ names(output.data) <- c(names(input.data), "Cluster")
 
 if (!is.null(input.data.2)) {
 
-  if (!all(fields.to.use %in% names(input.data.2))) {
-	  cancel(omni.api, "Not all fields in \"Fields to use\" are present in the second input data")
-    stop()
-  }
-
-  if (!all(sapply(input.data.2[,fields.to.use], is.numeric))) {
-    cancel(omni.api, "Only numeric fields in \"Fields to use\" are supported in the second input data")
-    stop()
-  }
+  # sanity checks to ensure the second input data is compatible with the first
+  if (!all(fields.to.use %in% names(input.data.2))) abort(omni.api, "Not all fields in \"Fields to use\" are present in the second input data")
+  if (!all(sapply(input.data.2[,fields.to.use], is.numeric))) abort(omni.api, "Only numeric fields in \"Fields to use\" are supported in the second input data")
 
 
   input.data.2 <- input.data.2[complete.cases(input.data.2[, fields.to.use]), ]

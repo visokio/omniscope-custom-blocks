@@ -18,10 +18,7 @@ num.clusters <- get.option(omni.api, "numClusters")
 ### Script
 
 
-if (is.null(input.data)) {
-  cancel(omni.api, "No input data")
-  stop()
-}
+if (is.null(input.data)) abort(omni.api, "No input data")
 
 if (use.all.numeric.fields) {
   fields.to.use <- names(input.data)[sapply(input.data, is.numeric)]
@@ -29,10 +26,7 @@ if (use.all.numeric.fields) {
 
 # Create a matrix of the numeric fields
 
-if (!all(sapply(input.data[,fields.to.use], is.numeric))) {
-  cancel(omni.api, "Only numeric fields in \"Fields to use\" are supported")
-  stop()
-}
+if (!all(sapply(input.data[,fields.to.use], is.numeric))) abort(omni.api, "Only numeric fields in \"Fields to use\" are supported")
 
 input.data <- input.data[complete.cases(input.data[, fields.to.use]), ]
 

@@ -12,34 +12,12 @@ comparator = get.option(omni.api, "comparator")
 right.field = get.option(omni.api, "right")
 
 #sanity checks
-if (is.null(left)) {
-  cancel(omni.api, "No 'left' input data")
-  stop()
-}
-if (is.null(right)) {
-  cancel(omni.api, "No 'right' input data")
-  stop()
-}
-
-if (!is.numeric(left[, left.field])) {
-  cancel(omni.api, "\"Left field\" must be numeric")
-  stop()
-}
-
-if (!is.numeric(right[, right.field])) {
-  cancel(omni.api, "\"Right field\" must be numeric")
-  stop()
-}
-
-if ("left.field.internal.omniscope" %in% names(left)) {
-  cancel(omni.api, "\"left.field.internal.omniscope\" is used internally by this block. The left input data cannot contain a field with this name.")
-  stop()
-}
-
-if ("right.field.internal.omniscope" %in% names(right)) {
-  cancel(omni.api, "\"right.field.internal.omniscope\" is used internally by this block. The right input data cannot contain a field with this name.")
-  stop()
-}
+if (is.null(left)) abort(omni.api, "No 'left' input data")
+if (is.null(right)) abort(omni.api, "No 'right' input data")
+if (!is.numeric(left[, left.field])) abort(omni.api, "\"Left field\" must be numeric")
+if (!is.numeric(right[, right.field])) abort(omni.api, "\"Right field\" must be numeric")
+if ("left.field.internal.omniscope" %in% names(left)) abort(omni.api, "\"left.field.internal.omniscope\" is used internally by this block. The left input data cannot contain a field with this name.")
+if ("right.field.internal.omniscope" %in% names(right)) abort(omni.api, "\"right.field.internal.omniscope\" is used internally by this block. The right input data cannot contain a field with this name.")
 
 
 left <- left[complete.cases(left[, left.field]), ]

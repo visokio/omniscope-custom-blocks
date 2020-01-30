@@ -26,21 +26,9 @@ library(dplyr)
 library(lubridate)
 
 # sanity checks
-if (is.null(input.data)) {
-  cancel(omni.api, "No input data")
-  stop()
-}
-
-if (!is.character(input.data[, flight.carrier.field])) {
-  cancel(omni.api, "\"Carrier field\" must be of type text")
-  stop()
-}
-
-
-if (!("POSIXct" %in% class(input.data[, flight.date.field]))) {
-  cancel(omni.api, "\"Date field\" must be of type date")
-  stop()
-}
+if (is.null(input.data)) abort(omni.api, "No input data")
+if (!is.character(input.data[, flight.carrier.field])) abort(omni.api, "\"Carrier field\" must be of type text")
+if (!("POSIXct" %in% class(input.data[, flight.date.field]))) abort(omni.api, "\"Date field\" must be of type date")
 
 # extract relevant fields from data
 flights <- data.table(carrier=input.data[, flight.carrier.field], number=input.data[, flight.number.field], date=input.data[, flight.date.field])

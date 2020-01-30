@@ -19,7 +19,7 @@ import overpy
 import time
 
 # sanity checks
-if (is.null(input.data)) stop("No input data")
+if (is.null(input.data)) omniscope_api.abort("No input data")
 
 api = overpy.Overpass()
 

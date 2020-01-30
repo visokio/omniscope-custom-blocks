@@ -27,36 +27,13 @@ library(plyr)
 possible.joins <- c("left", "right", "left+right")
 
 # sanity checks
-if (is.null(input.data)) {
-  cancel(omni.api, "No 'left' input data")
-  stop()
-}
-if (is.null(input.data.2)) {
-  cancel(omni.api, "No 'right' input data")
-  stop()
-}
-if (".index" %in% names(input.data) || ".index.x" %in% names(input.data) || ".index.y" %in% names(input.data)) {
-  cancel(omni.api, "first input must not contain a field with name .index, .index.x or .index.y")
-  stop()
-}
-if (".index" %in% names(input.data.2) || ".index.x" %in% names(input.data.2) || ".index.y" %in% names(input.data.2)) {
-  cancel(omni.api, "first input must not contain a field with name .index, .index.x or .index.y")
-  stop()
-}
-if (!(join.type %in% possible.joins)) {
-  cancel(omni.api, "invalid join type")
-  stop()
-}
-
-if (!is.character(input.data[, input.field.1])) {
-  cancel(omni.api, "\"Left field\" must be of type text")
-  stop()
-}
-
-if (!is.character(input.data.2[, input.field.2])) {
-  cancel(omni.api, "\"Right field\" must be of type text")
-  stop()
-}
+if (is.null(input.data)) abort(omni.api, "No 'left' input data")
+if (is.null(input.data.2)) abort(omni.api, "No 'right' input data")
+if (".index" %in% names(input.data) || ".index.x" %in% names(input.data) || ".index.y" %in% names(input.data)) abort(omni.api, "first input must not contain a field with name .index, .index.x or .index.y")
+if (".index" %in% names(input.data.2) || ".index.x" %in% names(input.data.2) || ".index.y" %in% names(input.data.2)) abort(omni.api, "first input must not contain a field with name .index, .index.x or .index.y")
+if (!(join.type %in% possible.joins)) abort(omni.api, "invalid join type")
+if (!is.character(input.data[, input.field.1])) abort(omni.api, "\"Left field\" must be of type text")
+if (!is.character(input.data.2[, input.field.2])) abort(omni.api, "\"Right field\" must be of type text")
 
 # make join type into booleans
 left.join <- F
