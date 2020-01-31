@@ -10,7 +10,7 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "introductoryText": "The first input specifies a data set consisting of two fields. Each record is a field rename operation. One field specifies the current field name, the second field specifies the new field name.\n\nThe second input specifies the data set whose fields are to be renamed",
+    "introductoryText": "The first input specifies a data set consisting of two fields. Each record is a field rename operation. One field specifies the current field name, the second field specifies the new field name.\n\nExample:\n\nCurrent Name, New Name\n–––––––––––––––––––––\nCategory, New Category\nIsin, Isin Number \nSomething else, Something renamed\n\n\nThe second input specifies the data set whose fields are to be renamed.\nExample:\n\nIndex, Category, Name, Isin\n–––––––––––––––––––––\n1, Subordinated, ABBEY, XS0076061927 \n2, Subordinated, HBOS, XS0070530885\n\n\nAfter execution, the output would look like this:\n\nIndex, New Category, Name, Isin Number\n––––––––––––––––––––––––––––––––\n1, Subordinated, ABBEY, XS0076061927 \n2, Subordinated, HBOS, XS0070530885",
     "dependencies": "",
     "options": [
         {
