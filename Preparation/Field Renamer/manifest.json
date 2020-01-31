@@ -1,0 +1,35 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Field Renamer",
+    "scriptFilename": "script.R",
+    "language": "R",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "The first input specifies a data set consisting of two fields. Each record is a field rename operation. One field specifies the current field name, the second field specifies the new field name.\n\nThe second input specifies the data set whose fields are to be renamed",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "currentNames",
+            "title": "Current field names",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": "Field 1"
+        },
+        {
+            "name": "newNames",
+            "title": "New field names",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": "Field 2"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+library(omniscope.api)
+
+omni.api = omniscope.api()
+
+input.data = read.input.records(omni.api, input.number=1)
+input.data.2 = read.input.records(omni.api, input.number=2)
+
+if(is.null(input.data)) abort(omni.api, "You have to provide a list of fields to be renamed in the first input")
+if(is.null(input.data.2)) abort(omni.api, "You have to provide a data set in the second input")
+
+current.names.field = get.option(omni.api, "currentNames")
+current.names = input.data[, current.names.field]
+if (length(current.names) !=length(unique(current.names))) abort(omni.api, "\"Current names\" contains duplicates")
+
+
+new.names.field = get.option(omni.api, "newNames")
+new.names = input.data[, new.names.field]
+if (length(new.names) !=length(unique(new.names))) abort(omni.api, "\"New names\" contains duplicates")
+
+library(data.table)
+setDT(input.data.2)
+
+setnames(input.data.2, current.names, new.names, skip_absent=TRUE)
+
+output.data = input.data.2
+if (!is.null(output.data)) {
+  write.output.records(omni.api, output.data, output.number=1)
+}
+close(omni.api)

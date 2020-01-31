@@ -148,6 +148,16 @@
 			"subcategory": "Prediction",
 			"path": "Analytics/Prediction/SVM",
 			"optionsVersion": 1
+		},
+		{
+			"displayName": "Field Renamer",
+			"description": "Renames the fields of a data set given a list of current names and new names.",
+			"tags": ["field", "organiser", "rename", "name"],
+			"language": "R",
+			"category": "Preparation",
+			"subcategory": "Rename",
+			"path": "Preparation/Rename/Field Renamer",
+			"optionsVersion": 1
 		}
 	]
 }
