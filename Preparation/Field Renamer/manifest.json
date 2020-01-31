@@ -20,7 +20,7 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
-            "defaultValue": "Field 1"
+            "defaultValue": null
         },
         {
             "name": "newNames",
@@ -29,7 +29,7 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
-            "defaultValue": "Field 2"
+            "defaultValue": null
         }
     ]
 }
