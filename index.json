@@ -155,8 +155,7 @@
 			"tags": ["field", "organiser", "rename", "name"],
 			"language": "R",
 			"category": "Preparation",
-			"subcategory": "Rename",
-			"path": "Preparation/Rename/Field Renamer",
+			"path": "Preparation/Field Renamer",
 			"optionsVersion": 1
 		}
 	]
