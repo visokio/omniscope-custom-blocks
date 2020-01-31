@@ -15,7 +15,6 @@ if (length(current.names) !=length(unique(current.names))) abort(omni.api, "\"Cu
 
 new.names.field = get.option(omni.api, "newNames")
 new.names = input.data[, new.names.field]
-if (length(new.names) !=length(unique(new.names))) abort(omni.api, "\"New names\" contains duplicates")
 
 library(data.table)
 setDT(input.data.2)
