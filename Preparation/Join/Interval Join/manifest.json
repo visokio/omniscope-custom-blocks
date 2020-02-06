@@ -1,0 +1,104 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Interval Join",
+    "scriptFilename": "script.R",
+    "language": "R",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": true,
+    "introductoryText": "The first input contains values and the second input intervals. The rows of the first input are now joined with rows of the second, if the value is contained in the interval.\n\nThe interval start and end values can be chosen to be either inclusive or exclusive. If the number is e.g. 5, and an interval is 5..10, then if inclusive is chosen, the rows are joined. If exclusive is chosen, they are not joined.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "value",
+            "title": "Value in interval",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": "Sequence"
+        },
+        {
+            "name": "start",
+            "title": "Interval start",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": "Start"
+        },
+        {
+            "name": "startOperator",
+            "title": "Interval start value inclusiveness",
+            "description": "If value is e.g. 5 and the interval is 5..10: If inclusive is chosen, then value is considered contained in the interval. If exclusive is chosen, then the value is not contained.",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Inclusive",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": ">=",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Exclusive",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": ">",
+                    "groupTitle": null,
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": ">="
+        },
+        {
+            "name": "end",
+            "title": "Interval end",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": "End"
+        },
+        {
+            "name": "endOperator",
+            "title": "Interval end value inclusiveness",
+            "description": "If value is e.g. 10 and the interval is 5..10: If inclusive is chosen, then value is considered contained in the interval. If exclusive is chosen, then the value is not contained.",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Inclusive",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "<=",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Exclusive",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "<",
+                    "groupTitle": null,
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "<="
+        }
+    ]
+}

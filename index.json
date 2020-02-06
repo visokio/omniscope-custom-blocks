@@ -70,6 +70,16 @@
 			"optionsVersion": 1
 		},
 		{
+			"displayName": "Interval Join",
+			"description": "Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.",
+			"tags": ["inequality", "interval", "join"],
+			"language": "R",
+			"category": "Preparation",
+			"subcategory": "Join",
+			"path": "Preparation/Join/Interval Join",
+			"optionsVersion": 1
+		},
+		{
 			"displayName": "Gridsquare",
 			"description": "Converts gridsquare / Maidenhead ",
 			"tags": ["gridsquare", "maidenhead", "coordinates", "locator", "latitude", "longitude"],
