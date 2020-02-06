@@ -99,6 +99,36 @@
             "isDropdown": true,
             "choicesLayoutType": "LIST",
             "defaultValue": "<"
+        },
+        {
+            "name": "joinType",
+            "title": "Type of join",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Inner",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "INNER",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Left",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LEFT",
+                    "groupTitle": null,
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "INNER"
         }
     ]
 }

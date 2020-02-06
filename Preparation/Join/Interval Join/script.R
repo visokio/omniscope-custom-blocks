@@ -1,5 +1,6 @@
 library(omniscope.api)
 library(data.table)
+library(dplyr)
 
 omni.api = omniscope.api()
 
@@ -12,6 +13,7 @@ start.field = get.option(omni.api, "start")
 startComparator = get.option(omni.api, "startOperator")
 end.field = get.option(omni.api, "end")
 endComparator = get.option(omni.api, "endOperator")
+join.type = get.option(omni.api, "joinType")
 
 #sanity checks
 if (is.null(left)) abort(omni.api, "No 'value' input data")
@@ -23,13 +25,15 @@ if ("end.field.internal.omniscope" %in% names(right)) abort(omni.api, "\"end.fie
 
 n <- unique(c(names(left), names(right)))
 
+
+left.original <- data.frame(left)
+
 left$value.field.internal.omniscope = left[, value.field]
 right$start.field.internal.omniscope = right[, start.field]
 right$end.field.internal.omniscope = right[, end.field]
 
-left <- left[complete.cases(left[, value.field]), ]
+left <- left[complete.cases(left[, c(value.field)]), ]
 right <- right[complete.cases(right[, c(start.field, end.field)]), ]
-
 
 
 is.date <- function(x) {class(x)[1] %in% c("POSIXct", "POSIXt")}
@@ -47,7 +51,16 @@ setDT(right)
 join.on = c(paste("value.field.internal.omniscope", startComparator, "start.field.internal.omniscope", sep=""),
 			paste("value.field.internal.omniscope", endComparator, "end.field.internal.omniscope", sep=""))
 
-output.data <- left[right, on=join.on, allow.cartesian = T, nomatch=0, n, with=FALSE]
+result <- left[right, on=join.on, allow.cartesian = T, nomatch=0, n, with=FALSE]
+
+if (join.type == "LEFT") {
+    left.merge <- merge.data.table(left.original, result, by = value.field, all.x = TRUE)
+    left.missing <- left.merge[!complete.cases(left.merge[, c(start.field, end.field)]), ]
+	result <- bind_rows(result, left.missing)
+}
+
+output.data <- result
+
 
 if (!is.null(output.data)) {
   write.output.records(omni.api, output.data, output.number=1)
