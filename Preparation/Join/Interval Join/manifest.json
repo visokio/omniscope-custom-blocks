@@ -20,7 +20,7 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
-            "defaultValue": "Sequence"
+            "defaultValue": null
         },
         {
             "name": "start",
@@ -29,7 +29,7 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 1,
-            "defaultValue": "Start"
+            "defaultValue": null
         },
         {
             "name": "startOperator",
@@ -68,7 +68,7 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 1,
-            "defaultValue": "End"
+            "defaultValue": null
         },
         {
             "name": "endOperator",
@@ -98,7 +98,7 @@
             ],
             "isDropdown": true,
             "choicesLayoutType": "LIST",
-            "defaultValue": "<="
+            "defaultValue": "<"
         }
     ]
 }
