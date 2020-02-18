@@ -29,6 +29,8 @@ These require Omniscope 2020.1 ROCK or later.
    3. Prediction
        1. [K-Nearest-Neighbours](Analytics/Prediction/KNN/)
        2. [Support Vector Machine Prediction](Analytics/Prediction/SVM/)
+5. Outputs
+   1. [Slack Bot](Outputs/Slack%20Bot/)
 
 
 ### Inputs
@@ -78,7 +80,13 @@ These require Omniscope 2020.1 ROCK or later.
         <td width="33%"></td>     
         <td width="33%"></td>     
     </tr>
+</table>
 
+### Outputs
+<table>
+    <tr valign="top">
+        <td width="33%">Slack Bot<br><a href="Outputs/Slack Bot" title="Slack Bot"><img width="190" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Slack Bot/thumbnail.png"></a>           </td>
+    </tr>
 </table>
 
 
