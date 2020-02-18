@@ -13,4 +13,4 @@ Python
 n/a
 
 ## Source
-[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Slack%20Bot/script.py)
+[script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Slack%20Bot/script.py)
