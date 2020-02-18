@@ -41,11 +41,10 @@ for index, row in input_data.iterrows():
 
     
 output_data = pd.DataFrame(messagesToSend)
-
 output_data_2 = pd.DataFrame(responses)
 
-print(output_data)
-print(output_data_2)
+#print(output_data)
+#print(output_data_2)
 
 if output_data is not None:
     omniscope_api.write_output_records(output_data, output_number=0)
