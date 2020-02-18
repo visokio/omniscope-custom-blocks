@@ -167,6 +167,15 @@
 			"category": "Preparation",
 			"path": "Preparation/Field Renamer",
 			"optionsVersion": 1
+		},
+		{
+			"displayName": "Slack Bot",
+			"description": "Post messages on a channel.",
+			"tags": ["slack", "bot"],
+			"language": "PYTHON",
+			"category": "Outputs",
+			"path": "Outputs/Slack Bot",
+			"optionsVersion": 1
 		}
 	]
 }
