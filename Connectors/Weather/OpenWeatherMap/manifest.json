@@ -1,0 +1,193 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "OpenWeatherMap",
+    "scriptFilename": "script.R",
+    "language": "R",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "![OpenWeatherMap](data:image/png;base64,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)\n\n\nConnector to retrieve current weather and forecasts from [OpenWeatherMap](https://openweathermap.org/).\n\n\nEach input record must consist either of:\n\n(1) A latitude and a longitude field.\n\n(2) A city field and optionally a state and country field. Country fields must be specified according to the [ISO 3166 specification](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes). If no country code is given, the country is assumed to be the United States of America.\n\n(3) A postcode and optionally a country field. The same rules as in (2) apply for the country code.\n\n\nThe block requires an API key. The keys can be requested [here](https://openweathermap.org/appid). Free accounts are subject to a rate limit of 60 calls per minute. If you have a paid subscription, untick the checkbox \"Apply free account rate limit\". In all other cases leave the option, otherwise the account will be suspended.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "appid",
+            "title": "App Id",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": true
+        },
+        {
+            "name": "apiChoice",
+            "title": "Type",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Current weather",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CURRENT",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "5-Day forecast",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FORECAST",
+                    "groupTitle": null,
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "CURRENT"
+        },
+        {
+            "name": "searchChoice",
+            "title": "Search",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "By city, state and country code",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CITY",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "By latitude/longitude",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LATLON",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "By postcode and country code",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "POSTCODE",
+                    "groupTitle": null,
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "LATLON"
+        },
+        {
+            "name": "unitsChoice",
+            "title": "Units",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Celsius",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CELSIUS",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Fahrenheit",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FAHRENHEIT",
+                    "groupTitle": null,
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Kelvin",
+                    "description": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "KELVIN",
+                    "groupTitle": null,
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "CELSIUS"
+        },
+        {
+            "name": "applyRateLimit",
+            "title": "Apply free account rate limit",
+            "description": "Tick this if you have a free account. Only 60 API calls per minute are allowed.",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "latitudeField",
+            "title": "Latitude field",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": "Latitude"
+        },
+        {
+            "name": "longitudeField",
+            "title": "Longitude field",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": "Longitude"
+        },
+        {
+            "name": "cityField",
+            "title": "City field",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": "Built up sub-division"
+        },
+        {
+            "name": "stateField",
+            "title": "State field",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
+            "name": "postcodeField",
+            "title": "Postcode field",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": "Postcode district"
+        },
+        {
+            "name": "countryField",
+            "title": "Country code field (ISO 3166)",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": "GB"
+        }
+    ]
+}

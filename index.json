@@ -167,6 +167,16 @@
 			"category": "Preparation",
 			"path": "Preparation/Field Renamer",
 			"optionsVersion": 1
+		},
+		{
+			"displayName": "OpenWeatherMap",
+			"description": "Retrieves current weather and forecasts from OpenWeatherMap",
+			"tags": ["weather", "map", "longitude", "latitude", "forecast"],
+			"language": "R",
+			"category": "Connectors",
+			"subcategory": "Weather",
+			"path": "Connectors/Weather/OpenWeatherMap",
+			"optionsVersion": 1
 		}
 	]
 }
