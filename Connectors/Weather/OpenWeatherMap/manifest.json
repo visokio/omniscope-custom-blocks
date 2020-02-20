@@ -142,7 +142,7 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": "Latitude"
+            "defaultValue": null
         },
         {
             "name": "longitudeField",
@@ -151,7 +151,7 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": "Longitude"
+            "defaultValue": null
         },
         {
             "name": "cityField",
@@ -160,7 +160,7 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": "Built up sub-division"
+            "defaultValue": null
         },
         {
             "name": "stateField",
@@ -178,7 +178,7 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": "Postcode district"
+            "defaultValue": null
         },
         {
             "name": "countryField",
@@ -187,7 +187,7 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": "GB"
+            "defaultValue": null
         }
     ]
 }
