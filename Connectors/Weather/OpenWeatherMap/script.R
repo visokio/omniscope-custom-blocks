@@ -23,6 +23,8 @@ state.field <- get.option(omni.api, "stateField")
 postcode.field <- get.option(omni.api, "postcodeField")
 country.field <- get.option(omni.api, "countryField")
 
+index.field <- get.option(omni.api, "indexField")
+
 apply.rate.limit <- get.option(omni.api, "applyRateLimit")
 
 
@@ -56,12 +58,7 @@ get.lat.lon.params <- function(lat, lon) {
   lon.string <- paste("lon", trimws(lon), sep="=")
   
   args <- c(lat.string, lon.string)
-  
-  if (!is.null(units)) {
-  	units.sring <- paste("units", units, sep="=")
-  	args <- c(args, units.sring)
-  }
-  
+   
   paste(args, collapse="&")
 }
 
@@ -93,7 +90,6 @@ get.postcode.params <- function(postcode, country) {
 url.query <- get.endpoint(apiChoice)
 id.string <- paste("appid", appid, sep="=")
 units <- get.metric(unitsChoice)
-
 
 
 rate.limit <- 1.1
@@ -162,12 +158,9 @@ get.forecast <- function(row) {
     
   url <- paste(url.query, app.params, sep = "?")
   
-  
-    
+      
   result <- GET(url)
-  
-  #print(paste(name, lat, lon, appid, result$status_code, " "))
-  
+     
 
   # rate limit check
   if (result$status_code == 429) {
@@ -209,6 +202,8 @@ get.forecast <- function(row) {
   } else {
     cancel(omni.api, "Unknown search type") 
   }
+  
+  if (!is.null(index.field) && index.field %in% names(row)) data$index <- row[index.field]
   
   data
 }

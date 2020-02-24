@@ -136,6 +136,15 @@
             "defaultValue": true
         },
         {
+            "name": "indexField",
+            "title": "Optional field to identify rows",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
             "name": "latitudeField",
             "title": "Latitude field",
             "description": null,
