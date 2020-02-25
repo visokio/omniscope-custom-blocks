@@ -186,6 +186,15 @@
 			"category": "Outputs",
 			"path": "Outputs/Slack Bot",
 			"optionsVersion": 1
+		},
+		{
+			"displayName": "GitHub",
+			"description": "Reads from and writes data to GitHub",
+			"tags": ["git", "repository", "read", "write"],
+			"language": "PYTHON",
+			"category": "Outputs",
+			"path": "Outputs/GitHub",
+			"optionsVersion": 1
 		}
 	]
 }
