@@ -73,6 +73,13 @@
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
             "defaultValue": ","
+        },
+        {
+            "name": "compressed",
+            "title": "Compressed",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
         }
     ]
 }
