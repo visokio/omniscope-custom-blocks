@@ -1,0 +1,216 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Web Image-PDF output",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "## Webpage Image/PDF output\n### Grab screenshots (PNG) per web page URL record by record, optionally creating a PDF file, saving all files to the specified output folder.\n#### Requires the installation of Chromedriver on your machine. Download it from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads).",
+    "dependencies": "selenium fpdf",
+    "options": [
+        {
+            "name": "urlField",
+            "title": "URL field",
+            "description": "The field containing the web pages URL to screenshot",
+            "groupTitle": "",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
+            "name": "resolution",
+            "title": "Screen resolution",
+            "description": null,
+            "groupTitle": "",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "3840x2160 (4K)",
+                    "description": null,
+                    "groupTitle": "16:9",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "3840x2160",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "2560x1440 (QHD)",
+                    "description": null,
+                    "groupTitle": "16:9",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "2560x1440",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1600x1200",
+                    "description": null,
+                    "groupTitle": "4:3",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1600x1200",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1920x1080 (FHD)",
+                    "description": null,
+                    "groupTitle": "16:9",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1920x1080",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1280x960",
+                    "description": null,
+                    "groupTitle": "4:3",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1280x960",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1024x768",
+                    "description": null,
+                    "groupTitle": "4:3",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1024x768",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1280x720 (HD)",
+                    "description": null,
+                    "groupTitle": "16:9",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1280x720",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "A4 (210mm x 297mm)",
+                    "description": null,
+                    "groupTitle": "PDF",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1123x794",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "1280x720"
+        },
+        {
+            "name": "orientationOpt",
+            "title": "Orientation",
+            "description": null,
+            "groupTitle": "",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Portrait",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "P",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Landscape",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "L",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "L"
+        },
+        {
+            "name": "folderPath",
+            "title": "Output folder",
+            "description": "The folder path where to save the png screenshot images and the pdf",
+            "groupTitle": "",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "chromeDriver",
+            "title": "Chromedriver executable",
+            "description": "Path to the ChromeDriver executable file, e.g C:\\Users\\Freddie\\chromedriver.exe",
+            "groupTitle": "",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "sleepSeconds",
+            "title": "Page load delay",
+            "description": "Wait the specified seconds before grabbing the screenshot to allow the page to load fully.",
+            "groupTitle": "",
+            "width": "SHRINK",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 100,
+            "mandatory": true,
+            "defaultValue": 3
+        },
+        {
+            "name": "createPdf",
+            "title": "Create PDF",
+            "description": "If ticked a PDF file will be generated made with all the screenshots grabbed",
+            "groupTitle": "PDF",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "pdfFileName",
+            "title": "PDF file name",
+            "description": "Optional file name for the PDF to generate.",
+            "groupTitle": "PDF",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "compression",
+            "title": "Compression",
+            "description": "Whether to compress the PDF (it will impact the images quality)",
+            "groupTitle": "PDF",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        }
+    ]
+}
