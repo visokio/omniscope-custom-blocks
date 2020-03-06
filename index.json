@@ -195,6 +195,15 @@
 			"category": "Outputs",
 			"path": "Outputs/GitHub",
 			"optionsVersion": 1
+		},
+		{
+			"displayName": "Web Image-PDF output",
+			"description": "Grab screenshots of webpages, optionally producing a PDF document.",
+			"tags": ["screenshot", "image", "pdf", "output"],
+			"language": "PYTHON",
+			"category": "Outputs",
+			"path": "Outputs/Web Image-PDF output",
+			"optionsVersion": 1
 		}
 	]
 }
