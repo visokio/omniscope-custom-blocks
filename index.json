@@ -180,7 +180,7 @@
 		},
 		{
 			"displayName": "Slack Bot",
-			"description": "Post messages on a channel.",
+			"description": "Posts messages on a channel.",
 			"tags": ["slack", "bot"],
 			"language": "PYTHON",
 			"category": "Outputs",
@@ -198,11 +198,20 @@
 		},
 		{
 			"displayName": "Web Image-PDF output",
-			"description": "Grab screenshots of webpages, optionally producing a PDF document.",
-			"tags": ["screenshot", "image", "pdf", "output"],
+			"description": "Grabs screenshots of webpages, optionally producing a PDF document.",
+			"tags": ["screenshot", "image", "pdf", "output", "print"],
 			"language": "PYTHON",
 			"category": "Outputs",
 			"path": "Outputs/Web Image-PDF output",
+			"optionsVersion": 1
+		},
+		{
+			"displayName": "Report to PDF batch output",
+			"description": "Prints a Report tab in batch using multi-tenant scenario configuration.",
+			"tags": ["batch", "output", "pdf", "report", "print", "tab", "scenario"],
+			"language": "PYTHON",
+			"category": "Outputs",
+			"path": "Outputs/Report to PDF batch output",
 			"optionsVersion": 1
 		}
 	]
