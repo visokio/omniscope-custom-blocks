@@ -1,0 +1,81 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Report to PDF batch output",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "## Report to PDF batch output\n#### This block will produce a PDF of a Report tab for each multi-tenant config row, saving the PDF files in a specified output folder, with filenames equal to the Report name + scenario ID.\n#### Connect a Multi-tenant report configuration to this block with the \"scenario\" field configured, set the base Report URL pointing to the tab you want to print (copy it from your browser address bar or from the Report Sharing dialog). \n##### It requires Google Chrome installed on your machine.\n##### It requires \"omniprint\" executable (Download it [here](https://visokio.com/wp-content/uploads/2020/04/Omniscope-Evo-Omniprint.zip)).",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "googleChrome",
+            "title": "Google Chrome executable",
+            "description": "Path to Google Chrome executable",
+            "groupTitle": null,
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "omniprint",
+            "title": "Omniprint executable",
+            "description": "Path to the omniprint executable",
+            "groupTitle": null,
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "outputFolder",
+            "title": "PDF Output folder",
+            "description": "Where Omniscope will save the PDF files",
+            "groupTitle": null,
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "report",
+            "title": "Report base URL",
+            "description": "e.g. http://127.0.0.1:24679/Folder/Project.iox/r/Report/#TabName",
+            "groupTitle": null,
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "chromePort",
+            "title": "Chrome port",
+            "description": "The debugging port on which Chrome will be listening to",
+            "groupTitle": "Advanced",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "chromeDelay",
+            "title": "Chrome loading delay",
+            "description": "Delay to allow Chrome loading the page before printing to PDF",
+            "groupTitle": "Advanced",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null
+        }
+    ]
+}
