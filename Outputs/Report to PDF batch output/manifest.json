@@ -68,7 +68,7 @@
         {
             "name": "chromeDelay",
             "title": "Chrome loading delay",
-            "description": "Delay to allow Chrome loading the page before printing to PDF",
+            "description": "Delay (ms) to allow Chrome loading the page before printing to PDF",
             "groupTitle": "Advanced",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
