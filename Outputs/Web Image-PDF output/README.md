@@ -1,7 +1,6 @@
 # Web Image-PDF output
 
-### Grab screenshots (PNG) per web page URL record by record, optionally creating a PDF file
-saving all files to a specified output folder.
+### Grab screenshots (PNG) per web page URL record by record, optionally creating a PDF file saving all files to a specified output folder.
 #### Requires the installation of Chromedriver on your machine. Download it from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads).
 
 
