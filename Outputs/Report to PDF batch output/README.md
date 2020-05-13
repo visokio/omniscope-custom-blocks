@@ -9,7 +9,7 @@
 Python
 
 ## Dependencies
-n/a
+omniprint , GoogleChrome
 
 ## Source
 [script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report%20to%20PDF%20batch%20output/script.py)
