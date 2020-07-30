@@ -1,0 +1,78 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "SFTP downloader",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "### Download all files ending with the specified extension contained in a folder on a SFTP server\n#### Connect this block to an 'Append files' block configured to 'use file names from the upstream block' to download files and load their content in Omniscope.\n##### See live example [here](https://omniscope.me/internal/Forums/Custom+block/SFTP.iox/)",
+    "dependencies": "pysftp",
+    "options": [
+        {
+            "name": "hostname",
+            "title": "Hostname",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "test.rebex.net"
+        },
+        {
+            "name": "port",
+            "title": "Port",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 22
+        },
+        {
+            "name": "username",
+            "title": "Username",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "demo"
+        },
+        {
+            "name": "password",
+            "title": "Password",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": false
+        },
+        {
+            "name": "folder",
+            "title": "Folder Path",
+            "description": "The path to the folder e.g.. /var/myfolder/",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "/"
+        },
+        {
+            "name": "extension",
+            "title": "File Extension (optional)",
+            "description": "File extension / suffix for files to download. If empty all files will be download.",
+            "groupTitle": null,
+            "width": "SHRINK",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "txt"
+        }
+    ]
+}
