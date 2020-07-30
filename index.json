@@ -10,6 +10,15 @@
 			"optionsVersion": 1
 		},
 		{
+			"displayName": "SFTP Downloader",
+			"description": "Download files from a SFTP server folder.",
+			"tags": ["sftp", "download"],
+			"language": "PYTHON",
+			"category": "Inputs",
+			"path": "Inputs/SFTP Downloader",
+			"optionsVersion": 1
+		},
+		{
 			"displayName": "Flightstats Airlines",
 			"description": "Downloads a list of airlines as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
 			"tags": ["flightstats", "airlines"],
