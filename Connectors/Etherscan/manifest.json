@@ -1,0 +1,72 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "EtherScan API",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "![EtherScan](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAACqCAMAAAAKqCSwAAAAM1BMVEX///9ekbLR2t92or4iaJXd5etBfaQMWYuXlpXw8/Wiv9O60N6Nscmfnp7Ix8epqKi2tbSo9evUAAAHkUlEQVR42tWd2WKkIBBFm6WAAkX+/2vnoTdb2Sk0w3uSk0vtoD4eRAsRERGAO+estdY55zgAIiI+/tJC4HYRgqnDYkws1nH4E7SI4OwimFJKSn1aUkqlFBNiuRsYnBVMqQjjCVkxsVgON226s4JVYH55FRPWXS4ucitaML+419IicMt6QJ+2wJarYBGd6OX80FqO/wHoR9rJsCSgL6udCksH+nKxabBgGR2o1lorZqc4GDpBC6q11lJYoA9QVtGTaq3VQhwMpkj6EpZZJLVSNYtUa0kpLC4TSbXWknGqfC+mgtIZwUQz/fEuICBlF5BqrcSoEaBl+polxZhzoVNa/xesaK8j1Vqy/poArZL6UtZeXa/VdETX60l7kwG6a3f/7Vsd8dUxfcfqYOVC3oMqWytYuIlUa63a6gFYlNb/Besdzt8XBpAzfedqcK0bDfVdElYX/TeTaq3qstaV1dSguTqm71+ypiuA2dsvv2vQBCbHKakYE2JZnsccciQKTI1TUi2OAwACIiAAz8zrZCkRTPV+KRycThSSXSZzBZ9SM12Ft0wZCiaAM4N/PABhMuIod1dITRlf0uayssLM8YTirUanFryloJIMmoNO8kfmipreThRpR8SUqDPzVPLP5lBTpcBUUTOoD9HqinNFzaoqGw18ckHdpaqW0apldp3SYasJWWd3KT0RICErJxFV6lQ12ot6/rFxp5JSMSHEIpZlsXZZDncw0qjA8m3Wef+Hs5F1HABe5SgigNsPPnpRzzY+6lQydk62P/PoRj2mgdHqL5Xhvwqka4A86skCRp0qVbJ/m8puVGlpa6rU7qIro5baOUu7/8n4/tmuftSlZQ8qKvxyYUmEOtqoKFsc1RHZ6nBLne7Yvvm6V9UD6mj+l25A1Tyq/JVh1FRzBjBqq4fUMVyqVLhVr63+qkBQqtjiDEwmm+usqgdRxwdVOVWLc4Ac6vEfHO//ZHJ4/7Ut1oN6PBiC8aq6jJo2gIytno6w+L2oSVWlOh1iurr9l0oxxgQTQjB2uBZcYQDNqJErTViDKpVYnOOvOh+AOyt2m1FTrjSixu6y1MQqebq/iT83GpOo3+qiMa4q4fqG6tFbsbsprhhAjaoavyNWcfyTOJr5VuQj9WpE1YhDVQ4rki3c568IUgOQqVOrcl+dTEYf20m2oz2qyuQl7HJdlS5HbQm1Q9Wj6+PXocunaunD2TdJGrW5Yz06FHqP9aoOoHLZqOrRoZBvAf6iqqcMhTyYFlRFoGoV6ummHcJmzMYb3IpA1RoDON8JhLDuUflIBCBQFdknl0KMtE3VftQGWz3n0iepWX09qiSIqyVVI7kU/GqMMWbzDdmqH7U6W52L0zfpXtX+xPpFxTFVI5ds8U26Ry1WVunLGUXUOlUj9dBH0z0qDqAu9aqmB+xCnQt+9JuJoNoB1Pp6NX0YtJx/ek9KjFpRr6ZREbKkO9Ryx5oeSlOoGoH/2ukBlROgPvpt9Wy8P5ru42p5ujKA2qEqHkj3qhZnVhSouhb1qOm+Bij3gVeqCr92ekAtBtYiqiRT9VWh/KzA62+CFYNVBWo6W/1U0hHSXRdQHgWWUS0NapT0B7VUBl6EijxKagLWHwYNoEK9WyEPJro81g/YSFQtoZ6D1Dmslg8uSVQt3PKNBKlzrGo+ku9SNXsb9YFp0n2sKhtrEVUVVc3vf8qhTgGgaKzp3qpW1fwzCei3NOmPVz0emI+sA6jApJSKWd7jUBGvKt7KSaPKAipy51z2RSvZzT951ePxyBprGbX2UZ520oOplu5ZlecA3aj5zTfGrB5bpuxFVXtRczHq3ALU9IJqkqpFSWP7n09YA26Vl7RMajw0nbMUVVUdqPlg+jHV2FXDjAUUUdsfla6T1JgNssOF5gggBVKHqLeoAdvOL0uopeeNIqBVkkbif+msvYDa+Ogxgg+mcgVMpesu1LYXkWDt3sfjf8mxcqiykbTSnZJBtTAQyh1bNL3TAesiVKL+ix7vV58GQsvb6RB9aAFNONWzDo7XV5lnOlrerlnv99lI9f5lMc+ieTES8NC096em6pQHTqw0b3ND7tsUzbj/51cuTL0e7FBKMcYWgle5AfetiqZy6m80sYtgTJC9OhV7FC2L+vrd7/VAGtC1hzRc+wpUBB/WHlBjNn7h60+7Ba3dfjpBB0DNul22/ch92Ez/2i4SFYE3ZtB7tn+cM59RyRwJeLfL7w2VX+Dxo3peYKiI4P22UYBONVQE7gMR57w09bTOQIWZGKdQiEmNSa4pIgLn3odtJcWkJH0+SQtPSjNhrWHwxZbfLxe8pFxXM4XUjJIC996HsD0ZJ0GSaMqfOs4j3NnpYEBFvpkr1koQpdBv/wnpNawbUeRvGd7d4lDXsRKSZo/rx0Gpiz6YZbC0ks40gs1P+GYAThB2gqR9o9wKK533nRPwdCXVGvzUD7I0j57TRhpmT6UQPQHsOh/0ZQWDvf66BX7VN7qGAte6+QsHktg/4d0mO1NiSNFstGvw93w+7DmqWBv0vPMzZ5UTi3UL93L+Dli22FRgXbfthflXvsqHCPzZ1u5XCMH/JcrfcQEA8Od6f+GQhvMfseLAiXMlMFkAAAAASUVORK5CYII=)\n\n\n## EtherScan API connector\n#### Insert your API Key and select the method + params to query EtherScan API.",
+    "dependencies": "etherscan",
+    "options": [
+        {
+            "name": "apikey",
+            "title": "API Key",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "method",
+            "title": "Method",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Get Balances",
+                    "description": "Get all addresses balance",
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "get_eth_balances",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Get Transaction by Address",
+                    "description": "Get the transactions for each address in the list",
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "get_transactions_by_address",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "get_eth_balances"
+        },
+        {
+            "name": "address",
+            "title": "Addresses",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null
+        }
+    ]
+}
