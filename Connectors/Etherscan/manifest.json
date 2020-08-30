@@ -19,7 +19,7 @@
             "description": null,
             "groupTitle": null,
             "width": "ONE",
-            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
             "mandatory": true,
             "defaultValue": null
         },
