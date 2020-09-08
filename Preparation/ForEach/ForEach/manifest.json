@@ -1,0 +1,57 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "ForEach",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "The **ForEach** block allows to execute another Omniscope project multiple times, each time with a different set of parameter values.",
+    "dependencies": "",
+    "options": [
+        {
+            "groupTitle": "File",
+            "name": "Iox_File_Url",
+            "title": "IOx File URL",
+            "description": "The URL of the file to execute",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "width": "THREE",
+            "defaultValue": null
+        },
+        {
+            "groupTitle": "Workflow Execution",
+            "name": "Parameters",
+            "title": "Parameters",
+            "description": "List of parameters fields. Each selected field is assumed to have the same name as a parameter",
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null,
+            "width": "THREE",
+            "inputIndex": 0
+        },
+        {
+            "groupTitle": "Workflow Execution",
+            "name": "Block_Names",
+            "title": "Blocks",
+            "description": "The list of blocks to execute, separated by a comma. Leave blank to execute all the blocks in the file.",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "width": "THREE",
+            "defaultValue": null
+        },
+        {
+            "groupTitle": "Workflow Execution",
+            "name": "Refresh_From_Source",
+            "title": "Refresh from source",
+            "description": null,
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "width": "THREE",
+            "defaultValue": null
+        }
+    ]
+}
