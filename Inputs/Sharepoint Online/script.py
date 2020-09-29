@@ -20,7 +20,6 @@ input_data = omniscope_api.read_input_records(input_number=0)
         
 username = omniscope_api.get_option("username")
 password = omniscope_api.get_option("password")
-sharepointUrl = omniscope_api.get_option("sharepointUrl")
 fileUrl = omniscope_api.get_option("fileUrl")
 
 downloadedFileName = os.path.basename(fileUrl)
