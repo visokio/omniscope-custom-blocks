@@ -10,6 +10,7 @@ These require Omniscope 2020.1 ROCK or later.
 1. Inputs
    1. [PDF Reader](Inputs/PDF%20Reader/)
    2. [SFTP Downloader](Inputs/SFTP%20Downloader/)
+   3. [Sharepoint Online Downloader](Inputs/Sharepoint%20Online/)
 2. Connectors
    1. [Flightstats Airlines](Connectors/Flightstats/Airlines/)
    2. [Flightstats Airports](Connectors/Flightstats/Airports/)
@@ -41,6 +42,7 @@ These require Omniscope 2020.1 ROCK or later.
     <tr valign="top">
         <td width="33%">PDF Reader<br><a href="Inputs/PDF Reader" title="PDF Reader"><img width="190" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/PDF Reader/thumbnail.png"></a>           </td>
        <td width="33%">SFTP Downloader<br><a href="Inputs/SFTP Downloader" title="SFTP Downloader"><img width="190" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/SFTP Downloader/thumbnail.png"></a>           </td>
+       <td width="33%">Sharepoint Online Downloader<br><a href="Inputs/Sharepoint Online" title="Sharepoint Online Downloader"><img width="190" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/Sharepoint Online/thumbnail.png"></a>           </td>
     </tr>
 </table>
 
