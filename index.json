@@ -19,6 +19,15 @@
 			"optionsVersion": 1
 		},
 		{
+			"displayName": "Sharepoint Online Downloader",
+			"description": "Download a file from a Sharepoint Online site.",
+			"tags": ["sharepoint", "online", "office365", "download"],
+			"language": "PYTHON",
+			"category": "Inputs",
+			"path": "Inputs/Sharepoint Online",
+			"optionsVersion": 1
+		},
+		{
 			"displayName": "Etherscan",
 			"description": "The Ethereum Blockchain Explorer.",
 			"tags": ["blockchain", "ethereum", "etherscan", "crypto"],
