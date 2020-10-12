@@ -4,9 +4,6 @@ from azure.storage.blob import BlobServiceClient
 
 omniscope_api = OmniscopeApi()
 
-# read the records associated to the first block input
-input_data = omniscope_api.read_input_records(input_number=0)
-
 connectionString = omniscope_api.get_option("connectionString")
 
 blob_service_client = BlobServiceClient.from_connection_string(connectionString)
