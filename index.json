@@ -28,6 +28,15 @@
 			"optionsVersion": 1
 		},
 		{
+			"displayName": "Azure Data Lake Storage Gen2",
+			"description": "Storage Gen2 Blob connector.",
+			"tags": ["azure", "storage", "lake", "datalake", "blob", "gen2"],
+			"language": "PYTHON",
+			"category": "Connectors",
+			"path": "Connectors/Azure Data Lake Blob",
+			"optionsVersion": 1
+		},
+		{
 			"displayName": "Etherscan",
 			"description": "The Ethereum Blockchain Explorer.",
 			"tags": ["blockchain", "ethereum", "etherscan", "crypto"],
