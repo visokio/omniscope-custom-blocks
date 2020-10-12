@@ -1,5 +1,5 @@
-# Azure Data Lake Gen2 Blob Connector
-### Opens and loads a CSV or Parquet blob / file from an Azure Data Lake (Gen2) blob container.
+# Azure Data Lake Storage Gen2 Blob Connector
+### Opens and loads a CSV or Parquet blob / file from an Azure Data Lake Storage Gen2 blob container.
 #### Instructions:
 1. Copy your credentials from the Azure portal
 1.1 Sign in to the Azure portal.
