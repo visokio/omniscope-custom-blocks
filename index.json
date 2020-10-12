@@ -29,7 +29,7 @@
 		},
 		{
 			"displayName": "Azure Data Lake Storage Gen2 Blob",
-			"description": "Storage Gen2 Blob connector to load CSV and Parquet files in Omniscope.",
+			"description": "Storage Gen2 Blob connector to load a CSV or Parquet blob/file in Omniscope.",
 			"tags": ["azure", "storage", "lake", "datalake", "blob", "gen2", "parquet", "csv"],
 			"language": "PYTHON",
 			"category": "Connectors",
