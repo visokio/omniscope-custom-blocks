@@ -1,0 +1,80 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Azure Data Lake Gen2 Connector",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "![Azure Data Lake](data:image/png;base64,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)\n\n### Azure Data Lake Gen2 Blob Connector\n#### Opens and loads a CSV or Parquet blob / file from an Azure Data Lake (Gen2) blob container.\n##### Instructions:\n1. Copy your credentials from the Azure portal\n1.1 Sign in to the Azure portal.\n1.2 Locate your storage account.\n1.3 In the Settings section of the storage account overview, select Access keys. \n1.4 Find the Connection string value under key1, and select the Copy button to copy the connection string and paste in this block config.\n\n2. Insert the Blob Container name\n\n3. Insert the Blob/File path *(e.g. myfolder/myfile.parquet)* to download from the Data Lake and load its data in this block.",
+    "dependencies": "azure-storage-blob pyarrow",
+    "options": [
+        {
+            "name": "connectionString",
+            "title": "Connection String",
+            "description": "In the Settings section of the storage account overview, select Access keys, find the Connection string value under key1, and select the Copy button to copy the connection string",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": true
+        },
+        {
+            "name": "containerName",
+            "title": "Container Name",
+            "description": "The name of the blob container",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "test"
+        },
+        {
+            "name": "blobPath",
+            "title": "Blob File Name / Path",
+            "description": "The blob / file name or path to download, e.g. myfolder/myfile.csv",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "my files/some data.parquet"
+        },
+        {
+            "name": "fileType",
+            "title": "File Type",
+            "description": null,
+            "groupTitle": null,
+            "width": "SHRINK",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "CSV",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CSV",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Parquet",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Parquet",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": false,
+            "choicesLayoutType": "COMPACT",
+            "defaultValue": "Parquet"
+        }
+    ]
+}
