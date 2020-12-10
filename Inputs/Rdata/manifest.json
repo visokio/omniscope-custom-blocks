@@ -1,0 +1,54 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "R Data Reader",
+    "scriptFilename": "script.R",
+    "language": "R",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "schemaType": "OPTIONS_V1",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "The block loads the following R data files:\n\n.rdata\n.rda\n.rds\n\nIn case of .rdata and .rda the first object is loaded as a data frame. The second block output specifies which objects are present in the file. I order to load a specific object, its name can be entered into the option \"Object to load\".",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "rda_file",
+            "title": "Rda file (.rdata, .rda, .rds)",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "obj",
+            "title": "Object to load (optional)",
+            "description": "Specify the object in the .rdata or .rda object to load, or leave empty to load the first object discovered",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Data Frame",
+            "tooltip": null
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data 2",
+            "label": "2",
+            "displayName": "Objects in file",
+            "tooltip": null
+        }
+    ]
+}
