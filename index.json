@@ -1,6 +1,15 @@
 {
 	"blocks": [
 		{
+			"displayName": "R Data Reader",
+			"description": "Load common R data files (rdata, rda, rds)",
+			"tags": ["rdata", "rda", "rds"],
+			"language": "R",
+			"category": "Inputs",
+			"path": "Inputs/Rdata",
+			"optionsVersion": 1
+		},
+		{
 			"displayName": "PDF Reader",
 			"description": "Extract text from PDF files.",
 			"tags": ["pdf", "text"],
