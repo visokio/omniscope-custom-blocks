@@ -1,7 +1,7 @@
 # Split Address
 
-Splits an address field into streetname, streetnumber, and suffix.
-An address is not expected to contain zip codes, city names or country names.
+Splits an address field into streetname, streetnumber, and suffix.  
+An address is not expected to contain zip codes, city names or country names.  
 Some examples of valid input patterns:
 
 - Baker Street 221B
