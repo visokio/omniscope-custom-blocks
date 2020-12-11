@@ -271,7 +271,7 @@
 		},
 		{
 			"displayName": "Split Address",
-			"description": "Splits addresses into streetname, streetnumber, suffix.",
+			"description": "Splits address field into streetname, streetnumber, suffix.",
 			"tags": ["split", "address", "streetname", "streetnumber", "suffix"],
 			"language": "PYTHON",
 			"category": "Preparation",
