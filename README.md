@@ -73,6 +73,7 @@ These require Omniscope 2020.1 ROCK or later.
         <td width="33%">Split Address<br><a href="Preparation/Split%20Address/" title="Split Address"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Split%20Address/thumbnail.png"></a></td>
         <td width="33%"></td>     
         <td width="33%"></td> 
+    </tr>
 </table>
 
 ### Analytics
