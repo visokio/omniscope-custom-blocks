@@ -1,0 +1,58 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Split Address",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "Splits an address field into streetname, streetnumber, and suffix.\nAn address is not expected to contain zip codes, city names or country names.\nSome examples of valid input patterns:\n\n- Baker Street 221B\n- Baker Street 221 B\n- Baker Street 221-B\n- Baker Street, 221 B\n- Baker Street 221 Apt B\n- 221B, Baker Street\n- 221 B, Baker Street\n- 221 Apt B, Baker Street\n- 221 Baker Street",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "address",
+            "title": "Address",
+            "description": "Name of the input field containing the address",
+            "groupTitle": "Input field",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
+            "name": "streetname",
+            "title": "Streetname",
+            "description": "Name of the output field containing the streetname",
+            "groupTitle": "Output fields (Optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Streetname"
+        },
+        {
+            "name": "streetnumber",
+            "title": "Streetnumber",
+            "description": "Name of the output field containing the streetnumber",
+            "groupTitle": "Output fields (Optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Streetnumber"
+        },
+        {
+            "name": "suffix",
+            "title": "Suffix",
+            "description": "Name of the output field containing the suffix",
+            "groupTitle": "Output fields (Optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Suffix"
+        }
+    ]
+}
