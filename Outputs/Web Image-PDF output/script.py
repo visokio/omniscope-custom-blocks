@@ -47,14 +47,15 @@ try:
         
         time.sleep(sleepSeconds)
         
-        imagePath = folderPath+'/screenshot'+str(index)+'.png'
+        fileName = 'screenshot_'+str(index)+'.png'
+        imagePath = folderPath+'/'+fileName
         
         if os.path.exists(imagePath):
             os.remove(imagePath)
         
         screenshot = driver.save_screenshot(imagePath)
         pngGrabbed.append(imagePath)
-        screenshots.append({"URL" : url, "Screenshot image" : imagePath})
+        screenshots.append({"URL" : url, "Screenshot path" : imagePath, "Screenshot filename" : fileName})
         
     if (omniscope_api.get_option("createPdf")):
         outputFileName = omniscope_api.get_option("pdfFileName")
@@ -80,7 +81,8 @@ finally:
     driver.quit()
 
 output_data = pd.DataFrame(screenshots)
-output_data['PDF'] = pdfPath
+if (omniscope_api.get_option("createPdf")):
+    output_data['PDF'] = pdfPath
 
 #write the output records in the first output
 if output_data is not None:
