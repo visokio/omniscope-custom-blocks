@@ -11,7 +11,7 @@
     "isResourceIntensiveScript": false,
     "showPartitioning": true,
     "introductoryText": "Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the boundary is made as large as possible to avoid touching the points",
-    "dependencies": "sklearn",
+    "dependencies": "Cython sklearn",
     "options": [
         {
             "name": "useAllNumericFields",
