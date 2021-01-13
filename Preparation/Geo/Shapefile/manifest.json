@@ -1,0 +1,85 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Shapefile",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "This block joins regions defined in a shapefile with a list of geographical points defined as longitude and latitude coordinates. \nEach point is checked whether it is within the regions defined in the shapefile. If a point is within a region, a \"1\" appears in the corresponding output field with the same name as the region.\nThe region's name is taken from a property which must be defined in the \"Label field name\" parameter. The property name defining the actual geometries must be given in the \"Geometry field name\" parameter.\n\nThe second output gives shapefile meta information. From this meta information it should be possible to determine what to use as a label field, and what to use as a geometry field.\n\nIf any of the label, geometry, latitude or longitude fields are not given, no joined output is produced. Meta data is however always produced.",
+    "dependencies": "geopandas",
+    "options": [
+        {
+            "name": "shp_file",
+            "title": "Shapefile (*.shp)",
+            "description": null,
+            "groupTitle": "Shapefile",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "label",
+            "title": "Label field name",
+            "description": null,
+            "groupTitle": "Shapefile",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "geometry",
+            "title": "Geometry field name",
+            "description": null,
+            "groupTitle": "Shapefile",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "latitude_field",
+            "title": "Latitude",
+            "description": null,
+            "groupTitle": "Points",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
+            "name": "longitude_field",
+            "title": "Longitude",
+            "description": null,
+            "groupTitle": "Points",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data 2",
+            "label": "2",
+            "displayName": "Output 2",
+            "tooltip": null
+        }
+    ]
+}

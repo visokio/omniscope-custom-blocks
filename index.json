@@ -1,6 +1,16 @@
 {
 	"blocks": [
 		{
+		"displayName": "Shapefile",
+		"description": "Joins regions defined in a shapefile with points defined as latitudes and longitudes, and gives meta information about the content of the shapefile",
+		"tags": ["shapefile", "geo", "geojson", "shp"],
+		"language": "PYTHON",
+		"category": "Preparation",
+		"subcategory": "Geo",
+		"path": "Preparation/Geo/Shapefile",
+		"optionsVersion": 1
+	  },
+		{
 			"displayName": "R Data Reader",
 			"description": "Load common R data files (rdata, rda, rds)",
 			"tags": ["rdata", "rda", "rds"],
