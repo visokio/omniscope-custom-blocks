@@ -1,0 +1,37 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "JSON Normalise",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "### Normalize semi-structured JSON strings into a flat table, appending data record by record.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "jsonField",
+            "title": "JSON Strings",
+            "description": "The field containing JSON strings to be normalised as flat table",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "Table",
+            "displayName": "Normalised JSON",
+            "tooltip": null
+        }
+    ]
+}
