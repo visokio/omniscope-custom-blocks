@@ -21,6 +21,7 @@ These require Omniscope 2020.1 ROCK or later.
    1. [Fuzzy Join](Preparation/Join/Fuzzy%20Join/)
    2. [Inequality Join](Preparation/Join/Inequality%20Join/)
    3. [Gridsquare](Preparation/Geo/Gridsquare/)
+   4. [For Each](Preparation/ForEach/ForEach/)
 4. Analytics
    1. Clustering
        1. [DBScan](Analytics/Clustering/DBScan/)
@@ -68,6 +69,9 @@ These require Omniscope 2020.1 ROCK or later.
         <td width="33%">Inequality Join<br><a href="Preparation/Join/Inequality%20Join/" title="Inequality Join"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Inequality%20Join/thumbnail.png"></a></td>
         <td width="33%">Gridsquare<br><a href="Preparation/Geo/Gridsquare/" title="Gridsquare"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Geo/Gridsquare/thumbnail.png"></a></td>
     </tr>
+   <tr valign="top">
+        <td width="33%">For Each<br><a href="Preparation/ForEach/ForEach/" title="For Each"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/ForEach/ForEach/thumbnail.png"></a></td>
+   </tr>
 </table>
 
 ### Analytics
