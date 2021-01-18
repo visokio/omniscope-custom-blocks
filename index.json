@@ -155,6 +155,16 @@
 			"optionsVersion": 1
 		},
 		{
+			"displayName": "JSON Normalise",
+			"description": "Normalise semi-structured JSON strings into a flat table, appending data record by record.",
+			"tags": ["JSON", "normalise", "table", "semi", "structured"],
+			"language": "PYTHON",
+			"category": "Preparation",
+			"subcategory": "JSON",
+			"path": "Preparation/JSON/Normalise",
+			"optionsVersion": 1
+		},
+		{
 			"displayName": "DBScan",
 			"description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
 			"tags": ["dbscan"],
