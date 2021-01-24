@@ -288,6 +288,15 @@
 			"category": "Outputs",
 			"path": "Outputs/Report to PDF batch output",
 			"optionsVersion": 1
+		},
+		{
+			"displayName": "Report tab to PDF",
+			"description": "Prints Report tabs to PDF files for each record of the batch input configuration.",
+			"tags": ["batch", "output", "pdf", "report", "print", "tab"],
+			"language": "PYTHON",
+			"category": "Outputs",
+			"path": "Outputs/Report tab to PDF",
+			"optionsVersion": 1
 		}
 	]
 }
