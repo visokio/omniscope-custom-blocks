@@ -1,0 +1,102 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Report tab to PDF",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "## Report tab to PDF\n#### This block will produce a PDF for each record of the upstream data containing a Report tab URL, saving the PDF files in a specified output folder, with filenames equal to the Report name + tab name + record index or to the specified optional name.\n##### It requires Google Chrome app installed on your machine.\n##### It requires Visokio \"Omniprint\" app, downloadable here for [Windows](https://visokio.com/wp-content/uploads/2020/04/Omniscope-Evo-Omniprint.zip), [Mac](https://visokio.com/wp-content/uploads/2021/01/Omniscope-Evo-Omniprint-macos.zip) and [Linux](https://visokio.com/wp-content/uploads/2021/01/Omniscope-Evo-Omniprint-linux.zip).",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "googleChrome",
+            "title": "Google Chrome app",
+            "description": "Path to Google Chrome executable",
+            "groupTitle": "Setup",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "omniprint",
+            "title": "Omniprint app",
+            "description": "Path to the omniprint executable",
+            "groupTitle": "Setup",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "report",
+            "title": "Report Tab URL",
+            "description": "e.g. http://127.0.0.1:24679/Folder/Project.iox/r/Report/#TabName",
+            "groupTitle": "Configuration",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
+            "name": "fileName",
+            "title": "PDF Output File names",
+            "description": "The field containing the filenames to use, record by record",
+            "groupTitle": "Configuration",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
+            "name": "outputFolder",
+            "title": "PDF Output folder",
+            "description": "Where Omniscope will save the PDF files",
+            "groupTitle": "Configuration",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "chromePort",
+            "title": "Chrome port",
+            "description": "The debugging port on which Chrome will be listening to",
+            "groupTitle": "Advanced",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "chromeDelay",
+            "title": "Chrome loading delay",
+            "description": "Delay (ms) to allow Chrome loading the page before printing to PDF",
+            "groupTitle": "Advanced",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 10000
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ]
+}
