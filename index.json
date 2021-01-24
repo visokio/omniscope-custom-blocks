@@ -281,9 +281,9 @@
 			"optionsVersion": 1
 		},
 		{
-			"displayName": "Report to PDF batch output",
+			"displayName": "Multi-tenant Report to PDF",
 			"description": "Prints a Report tab in batch using multi-tenant scenario configuration.",
-			"tags": ["batch", "output", "pdf", "report", "print", "tab", "scenario"],
+			"tags": ["batch", "output", "pdf", "report", "print", "tab", "scenario", "multitenant", "tenant"],
 			"language": "PYTHON",
 			"category": "Outputs",
 			"path": "Outputs/Report to PDF batch output",
