@@ -1,4 +1,4 @@
-# Report to PDF batch output
+# Multi-tenant Report to PDF batch output
 
 #### This block will produce a PDF of a Report tab for each multi-tenant config row, saving the PDF files in a specified output folder, with filenames equal to the Report name + scenario ID.
 #### Connect a Multi-tenant report configuration to this block with the "scenario" field configured, set the base Report URL pointing to the tab you want to print as PDF (copy it from your browser address bar or from the Report Sharing dialog). 
