@@ -37,7 +37,7 @@ These require Omniscope 2020.1 ROCK or later.
 5. Outputs
    1. [Slack Bot](Outputs/Slack%20Bot/)
    2. [Web Image-PDF output](Outputs/Web%20Image-PDF%20output/)
-   3. [Report to PDF batch output](Outputs/Report%20to%20PDF%20batch%20output/)
+   3. [Multi-tenant Report to PDF](Outputs/Report%20to%20PDF%20batch%20output/)
 
 
 ### Inputs
@@ -100,7 +100,7 @@ These require Omniscope 2020.1 ROCK or later.
     <tr valign="top">
         <td width="33%">Slack Bot<br><a href="Outputs/Slack Bot" title="Slack Bot"><img width="190" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Slack Bot/thumbnail.png"></a>           </td>
         <td width="33%">Web Image-PDF output<br><a href="Outputs/Web Image-PDF output" title="Web Image-PDF output"><img width="190" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Web Image-PDF output/thumbnail.png"></a>           </td>
-        <td width="33%">Report to PDF batch output<br><a href="Outputs/Report to PDF batch output" title="Report to PDF batch output"><img width="190" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report to PDF batch output/thumbnail.png"></a>           </td>
+        <td width="33%">Multi-tenant Report to PDF<br><a href="Outputs/Report to PDF batch output" title="Report to PDF batch output"><img width="190" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report to PDF batch output/thumbnail.png"></a>           </td>
     </tr>
 </table>
 
