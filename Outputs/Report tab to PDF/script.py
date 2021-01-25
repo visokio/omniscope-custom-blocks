@@ -31,12 +31,16 @@ chromeCommand = chrome + " --headless --disable-gpu --disable-translate " \
 "--disable-sync  --metrics-recording-only --disable-default-apps --no-first-run --mute-audio " \
 "--hide-scrollbars --remote-debugging-port="+str(chromePort)+" --window-size=1920,1080"
 
+isPosix = False
+if os.name == 'posix':
+    isPosix = True
+
 pdfs = []
 
 process = None
 
 try:
-  process = subprocess.Popen(shlex.split(chromeCommand), stdout=subprocess.PIPE, stderr=subprocess.PIPE) 
+  process = subprocess.Popen(shlex.split(chromeCommand,posix=isPosix), stdout=subprocess.PIPE, stderr=subprocess.PIPE) 
 
   for index, row in input_data.iterrows():
     report = row[omniscope_api.get_option("report")]
