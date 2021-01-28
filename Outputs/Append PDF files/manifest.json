@@ -1,0 +1,57 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Append PDF files",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "### Append multiple PDF files into one",
+    "dependencies": "PyPDF2",
+    "options": [
+        {
+            "name": "pdfPath",
+            "title": "PDF File paths",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
+            "name": "fileName",
+            "title": "PDF Filename",
+            "description": "The combined PDF file name",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "Combined.pdf"
+        },
+        {
+            "name": "outputFolder",
+            "title": "Output Folder",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ]
+}
