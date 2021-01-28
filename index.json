@@ -20,7 +20,7 @@
 			"optionsVersion": 1
 		},
 		{
-			"displayName": "R Batch Append",
+			"displayName": "Rds Batch Append",
 			"description": "Reads multiple rds files either from an upstream block, or a folder, and appends them",
 			"tags": ["rds", "batch", "append"],
 			"language": "R",
