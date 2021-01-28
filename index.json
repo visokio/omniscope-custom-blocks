@@ -20,6 +20,15 @@
 			"optionsVersion": 1
 		},
 		{
+			"displayName": "R Batch Append",
+			"description": "Reads multiple rds files either from an upstream block, or a folder, and appends them",
+			"tags": ["rds", "batch", "append"],
+			"language": "R",
+			"category": "Inputs",
+			"path": "Inputs/Rds Batch Append",
+			"optionsVersion": 1
+		},
+		{
 			"displayName": "PDF Reader",
 			"description": "Extract text from PDF files.",
 			"tags": ["pdf", "text"],

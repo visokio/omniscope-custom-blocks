@@ -1,0 +1,74 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Rds Batch Append",
+    "scriptFilename": "script.R",
+    "language": "R",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "This block takes a list of .rds files and appends them together. The list can be supplied via input from an upstream block, in which case also the field containing the path has to be specified. \nAlternatively it is possible to specify a folder and whether this folder should be scanned recursively for .rds files.\n\nBy selecting \"scan first\", reading will take twice as long as with this option the files are first scanned for their schema. This ensures however that the output will contain all fields from all input files.\nIf \"scan first\" is not selected, and .rds files with different schemas are encountered, an error is created.\n\nIn case \"coerce silently\" is selected, the aforementioned error is not created and the output adjusted so that it matches the schema of either the very first file, or in case \"scan first\" is selected, the schema of the entire set of files.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "pathField",
+            "title": "Path field",
+            "description": "If an input is connected from upstream, select the field that contains the full path to the rds files to append",
+            "groupTitle": "Read file names from first input",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
+            "name": "folder",
+            "title": "Folder",
+            "description": "Select the folder that contains the rds files to append. In case a file list is supplied from a block upstream, this option is ignored",
+            "groupTitle": "Read file names from folder",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "recursive",
+            "title": "Recursive",
+            "description": "Select if you wish to search the folder recursively for rds files",
+            "groupTitle": "Read file names from folder",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "scanFirst",
+            "title": "Scan files first in case not all files have the same schema",
+            "description": "If selected, all files are first scanned and their schema derived. This ensures that the output will contain all fields that appear in any rds files",
+            "groupTitle": "Schema",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "coerce",
+            "title": "Coerce schema silently",
+            "description": "Select this to silently coerce the schema. I.e. in case some rds files are missing fields, those are added with missing values. In case their data types differ, they are coerced into the schema data type",
+            "groupTitle": "Schema",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ]
+}
