@@ -306,6 +306,15 @@
 			"category": "Outputs",
 			"path": "Outputs/Report tab to PDF",
 			"optionsVersion": 1
+		},
+		{
+			"displayName": "Append PDF files",
+			"description": "Append multiple PDF files combining them into one PDF file.",
+			"tags": ["pdf", "append", "combine"],
+			"language": "PYTHON",
+			"category": "Outputs",
+			"path": "Outputs/Append PDF files",
+			"optionsVersion": 1
 		}
 	]
 }
