@@ -7,7 +7,28 @@ path.field = get.option(omni.api, "pathField")
 folder = get.option(omni.api, "folder")
 recursive = get.option(omni.api, "recursive")
 scan.first = get.option(omni.api, "scanFirst")
-coerce = get.option(omni.api, "coerce")
+action.additional.fields = get.option(omni.api, "actionAdditionalFields")
+action.missing.fields = get.option(omni.api, "actionMissingFields")
+action.incorrect.type = get.option(omni.api, "actionIncorrectFieldType")
+
+should.coerce = function(action) {
+	if (action == "WARN") return (TRUE)
+    else if (action == "IGNORE") return (TRUE)
+    return (FALSE)
+}
+
+should.warn = function(action) {
+	if (action == "WARN") return (TRUE)
+    return (FALSE)
+}
+
+should.stop = function(action) {
+	if (action == "ERROR") return (TRUE)
+    return (FALSE)
+}
+
+
+    
 
 
 
@@ -70,7 +91,7 @@ get.schema = function(file.list) {
   list(field.names=field.names, field.types=field.types)
 }
 
-read.rds = function(file.list, schema, coerce) {
+read.rds = function(file.list, schema) {
   field.names = as.character(c())
   field.types = as.character(c())
   if (!is.null(schema)) {
@@ -90,22 +111,29 @@ read.rds = function(file.list, schema, coerce) {
     }
     
     if (length(missing.field.names) > 0) {
-      if (coerce) {
+      if (should.coerce(action.missing.fields)) {
         for (missing.field in missing.field.names) {
           na.value = coerce.type(field.types[[missing.field]], NA)
           df[, (missing.field) := na.value]
         }
         
-      } else {
+      } 
+      
+      if(should.warn(action.missing.fields)) {
+      	updateMessage(omni.api, paste(f,"is missing fields:", paste(missing.field.names, collapse = ", "), sep=" "))
+      } else if(should.stop(action.missing.fields)) {
         abort(omni.api, paste(f,"is missing fields:", paste(missing.field.names, collapse = ", "), sep=" "))
       }
     }
     
     if (length(new.field.names) > 0) {
-      if (coerce) {
+      if (should.coerce(action.additional.fields)) {
         df = df[, field.names, with=FALSE]
-      } else {
-        abort(omni.api, paste(f,"has extraneous fields:", paste(new.field.names, collapse = ", "), sep=" "))
+      } 
+      if(should.warn(action.additional.fields)) {
+      	updateMessage(omni.api, paste(f,"has additional fields:", paste(new.field.names, collapse = ", "), sep=" "))
+      } else if(should.stop(action.additional.fields)) {
+        abort(omni.api, paste(f,"has additional fields:", paste(new.field.names, collapse = ", "), sep=" "))
       }
     }
     
@@ -113,10 +141,13 @@ read.rds = function(file.list, schema, coerce) {
     if (!all(field.types == current.field.types)) {
       for (current.field in names(df)) {
         if (field.types[[current.field]] != current.field.types[[current.field]]) {
-          if (coerce) {
+          if (should.coerce(action.incorrect.type)) {
             coerced.col = coerce.type(field.types[[current.field]], df[[current.field]])
             df[, (current.field) := coerced.col]
-          } else {
+          } 
+          if(should.warn(action.incorrect.type)) {
+      		updateMessage(omni.api, paste(f,"schemas don't match. Reference:", paste(field.types, collapse = ", "), " Current:", paste(current.field.types, collapse = ", "), sep=" "))
+          } else if(should.stop(action.incorrect.type)) {
             abort(omni.api, paste(f,"schemas don't match. Reference:", paste(field.types, collapse = ", "), " Current:", paste(current.field.types, collapse = ", "), sep=" "))
           }
         }
@@ -145,7 +176,7 @@ schema = NULL
 if (scan.first) schema = get.schema(file.list)
 
 
-read.rds(file.list, schema, coerce)
+read.rds(file.list, schema)
 
 
 close(omni.api)
