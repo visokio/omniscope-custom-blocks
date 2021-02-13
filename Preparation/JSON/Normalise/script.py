@@ -7,6 +7,7 @@ omniscope_api = OmniscopeApi()
 input_data = omniscope_api.read_input_records(input_number=0)
 
 jsonField = omniscope_api.get_option("jsonField")
+includeInput = omniscope_api.get_option("includeInput")
 
 output_data = None
 for index, row in input_data.iterrows():
@@ -18,6 +19,11 @@ for index, row in input_data.iterrows():
     print(jsonString)
     dictJson = json.loads(jsonString)
     dataframe = pd.json_normalize(dictJson)
+    dataframe = dataframe.add_prefix(jsonField+'_')
+    if includeInput:
+        new_cols = list(input_data.columns.values)
+        dataframe[new_cols] = row.values.tolist();
+    
     if output_data is None:
         output_data = dataframe
     else:
