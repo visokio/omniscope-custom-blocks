@@ -23,6 +23,15 @@
             "mandatory": true,
             "inputIndex": 0,
             "defaultValue": null
+        },
+        {
+            "name": "includeInput",
+            "title": "Include input dataset",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
         }
     ],
     "blockOutputs": [
