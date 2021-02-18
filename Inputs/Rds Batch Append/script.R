@@ -10,6 +10,8 @@ scan.first = get.option(omni.api, "scanFirst")
 action.additional.fields = get.option(omni.api, "actionAdditionalFields")
 action.missing.fields = get.option(omni.api, "actionMissingFields")
 action.incorrect.type = get.option(omni.api, "actionIncorrectFieldType")
+add.source.field = get.option(omni.api, "addSourceField")
+source.field.name = get.option(omni.api, "sourceFieldName")
 
 should.coerce = function(action) {
 	if (action == "WARN") return (TRUE)
@@ -155,6 +157,10 @@ read.rds = function(file.list, schema) {
     }
     
     setcolorder(df, field.names)
+    
+    if (add.source.field) {
+		df[, (source.field.name) := f]
+	}
 
     write.output.records(omni.api, df, output.number=1)
     

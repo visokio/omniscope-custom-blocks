@@ -48,7 +48,7 @@
             "title": "Scan files first in case not all files have the same schema",
             "description": "If selected, all files are first scanned and their schema derived. This ensures that the output will contain all fields that appear in any rds files",
             "groupTitle": "Schema",
-            "width": "ONE",
+            "width": "TWO",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
             "defaultValue": true
         },
@@ -183,6 +183,25 @@
             "isDropdown": true,
             "choicesLayoutType": "LIST",
             "defaultValue": "ERROR"
+        },
+        {
+            "name": "addSourceField",
+            "title": "Add source field",
+            "description": null,
+            "groupTitle": "Source",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "sourceFieldName",
+            "title": "Source field name",
+            "description": null,
+            "groupTitle": "Source",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Source"
         }
     ],
     "blockOutputs": [
