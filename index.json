@@ -322,7 +322,7 @@
 			"tags": ["http", "website", "scraping", "analysis"],
 			"language": "PYTHON",
 			"category": "Analytics",
-			"path": "Analytics/Website/Website Analysis",
+			"path": "Analytics/Websites/Website Analysis",
 			"optionsVersion": 1
 		}
 	]

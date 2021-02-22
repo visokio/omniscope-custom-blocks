@@ -12,4 +12,4 @@ httpx
 bs4
 
 ## Source
-[script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Website/Website Analysis/script.py)
+[script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Websites/Website%20Analysis/script.py)
