@@ -315,6 +315,15 @@
 			"category": "Outputs",
 			"path": "Outputs/Append PDF files",
 			"optionsVersion": 1
+		},
+		{
+			"displayName": "Website Analysis",
+			"description": "Extracts the structure and content of a website and its pages.",
+			"tags": ["http", "website", "scraping", "analysis"],
+			"language": "PYTHON",
+			"category": "Analytics",
+			"path": "Analytics/Website/Website Analysis",
+			"optionsVersion": 1
 		}
 	]
 }

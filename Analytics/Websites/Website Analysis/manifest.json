@@ -1,0 +1,67 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Website Analysis",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        3
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "Extracts the structure and content of a website and its pages. \n\nThe two outputs consist of a list of all the pages including their text and images in the first, and  a list of links from the parent to the page in the second.",
+    "dependencies": "asyncio\nhttpx\nbs4",
+    "options": [
+        {
+            "name": "url",
+            "title": "Url",
+            "description": null,
+            "groupTitle": "Website",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "max_depth",
+            "title": "Max depth",
+            "description": "The number of times a link is followed from one page to the next",
+            "groupTitle": "Configuration",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 5
+        },
+        {
+            "name": "n_workers",
+            "title": "Number of workers",
+            "description": "The number of simultaneous workers going through links",
+            "groupTitle": "Configuration",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 20,
+            "mandatory": true,
+            "defaultValue": 5
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Content",
+            "tooltip": null
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data 2",
+            "label": "2",
+            "displayName": "Links",
+            "tooltip": null
+        }
+    ]
+}
