@@ -4,7 +4,7 @@
     "scriptFilename": "script.py",
     "language": "PYTHON",
     "minVersions": [
-        3
+        "3"
     ],
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
