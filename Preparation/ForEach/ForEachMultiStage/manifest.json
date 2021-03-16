@@ -40,7 +40,7 @@
             "groupTitle": "Workflow Execution",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
-            "defaultValue": true
+            "defaultValue": false
         },
         {
             "name": "Parameters",
