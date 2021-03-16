@@ -156,11 +156,21 @@
 		{
 			"displayName": "ForEach",
 			"description": "Executes another Omniscope project multiple times, each time with a different set of parameter values.",
-			"tags": ["for", "foreach", "iteration"],
+			"tags": ["for", "foreach", "paramater", "iteration"],
 			"language": "PYTHON",
 			"category": "Preparation",
 			"subcategory": "ForEach",
 			"path": "Preparation/ForEach/ForEach",
+			"optionsVersion": 1
+		},
+		{
+			"displayName": "ForEach multi stage",
+			"description": "The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.",
+			"tags": ["for", "foreach", "iteration", "paramater", "stage", "orchestration"],
+			"language": "PYTHON",
+			"category": "Preparation",
+			"subcategory": "ForEach",
+			"path": "Preparation/ForEach/ForEachMultiStage",
 			"optionsVersion": 1
 		},
 		{

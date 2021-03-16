@@ -1,0 +1,123 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "ForEach multi stage",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "introductoryText": "The **ForEach multi stage** block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the **ForEach** block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "Iox_File_Url",
+            "title": "IOX file URL",
+            "description": "The URL of the file to execute",
+            "groupTitle": "File",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "Block_Names_Before",
+            "title": "Blocks (before loop)",
+            "description": "Optional comma-separated list of blocks to execute before looping and settings any parameters. If empty, do nothing.",
+            "groupTitle": "Workflow Execution",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "Refresh_From_Source_Before",
+            "title": "Refresh from source (before loop)",
+            "description": "Whether to refresh from source when executing the \"before\" set of blocks",
+            "groupTitle": "Workflow Execution",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "Parameters",
+            "title": "Parameters (for loop)",
+            "description": "List of parameters fields. Each selected field is assumed to have the same name as a parameter",
+            "groupTitle": "Workflow Execution",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": true
+        },
+        {
+            "name": "Block_Names",
+            "title": "Blocks (in loop, stage 1)",
+            "description": "The list of blocks to execute, separated by a comma. Leave blank to execute all the blocks in the file.",
+            "groupTitle": "Workflow Execution",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "Refresh_From_Source",
+            "title": "Refresh from source (in loop, stage 1)",
+            "description": null,
+            "groupTitle": "Workflow Execution",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "Block_Names2",
+            "title": "Blocks (in loop, stage 2)",
+            "description": "Another set of blocks to execute, optional, after the first stage completes, per loop iteration. If empty, do nothing.",
+            "groupTitle": "Workflow Execution",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "Refresh_From_Source2",
+            "title": "Refresh_From_Source (in loop, stage 2)",
+            "description": null,
+            "groupTitle": "Workflow Execution",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "Block_Names3",
+            "title": "Blocks (in loop, stage 3)",
+            "description": null,
+            "groupTitle": "Workflow Execution",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "Refresh_From_Source3",
+            "title": "Refresh_From_Source (in loop, stage 3)",
+            "description": null,
+            "groupTitle": "Workflow Execution",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ]
+}
