@@ -27,7 +27,7 @@ def update_parameters(omniscope_api, http, iox_url, param_names, param_values):
         omniscope_api.abort("Error updating project parameters" + str(update_param_response.data))
 
 
-def start_wf_execution(omniscope_api, http, iox_url, block_names, refersh_from_source):
+def start_wf_execution(omniscope_api, http, iox_url, block_names, refresh_from_source):
     start_wf_execution_url = iox_url + "w/execute"
     execute_workflow_json = json.dumps({"blocks" : block_names, "refreshFromSource" : refresh_from_source, "cancelExisting" : False})
     job_id = None
