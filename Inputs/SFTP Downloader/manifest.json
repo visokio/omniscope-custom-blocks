@@ -1,6 +1,6 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-    "name": "SFTP downloader",
+    "name": "SFTP Downloader",
     "scriptFilename": "script.py",
     "language": "PYTHON",
     "minVersions": [
