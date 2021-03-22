@@ -1,6 +1,6 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-    "name": "Azure Data Lake Gen2 Connector",
+    "name": "Azure Data Lake Storage Gen2 Blob",
     "scriptFilename": "script.py",
     "language": "PYTHON",
     "minVersions": [
