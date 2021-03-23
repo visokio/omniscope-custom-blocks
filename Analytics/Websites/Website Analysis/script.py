@@ -20,7 +20,7 @@ from typing import Callable
 
 class Analyser:
     
-    def __init__(self, url: str, n_workers: int, max_depth: int, report_urls: Callable[[list], None], report_text: Callable[[dict], None], local_only: bool = True):
+    def __init__(self, url: str, n_workers: int, max_depth: int, report_text: Callable[[dict], None], report_urls: Callable[[list], None], report_images: Callable[[list], None], local_only: bool = True):
         self.n_workers = n_workers
         self.url = url
         self.base = urlparse(url).scheme + "://" + urlparse(url).netloc + "/"
@@ -31,26 +31,38 @@ class Analyser:
         self.max_depth = max_depth
         self.report_urls = report_urls
         self.report_text = report_text
+        self.report_images = report_images
 
         
     async def analyse_site(self, site_data, url, depth, queue):
         soup = bs(site_data, features="html.parser")
         
-        imgs = []
-        for img in soup.findAll('img', src=True):
-        	imgs.append(img.get("src"))
+        title_tag = soup.find("title")
+        title = ""
+        if title_tag is not None:
+            title = title_tag.text
+            
+        h1_tag = soup.find("h1")
+        h1 = ""
+        if h1_tag is not None:
+            h1 = h1_tag.text
+        
         
         if self.report_text is not None:
-            self.report_text({"url": url, "text": soup.text, "images": " ".join(imgs)})
+            self.report_text({"url": url, "text": soup.text, "title": title, "h1": h1})
             
             
         sites = set()
-        result = []
+        urls = []
         for a in soup.findAll('a', href=True):
             link = urljoin(self.base, a.get("href"))
-            result.append({"url": link, "parent": url, })
+            urls.append({"url": link, "parent": url, })
             if link.startswith(self.base) or not self.local_only:
                 sites.add(link.strip())
+                
+        images = []
+        for img in soup.findAll('img', src=True):
+            images.append({"url": url, "image": img.get("src")})
             
         new_sites = sites - self.visited_sites
         if depth < self.max_depth:
@@ -60,7 +72,10 @@ class Analyser:
         self.visited_sites |= new_sites
         
         if self.report_urls is not None:
-            self.report_urls(result)
+            self.report_urls(urls)
+            
+        if self.report_images is not None:
+            self.report_images(images)
                 
         
             
@@ -116,7 +131,7 @@ class Analyser:
  
 
 def print_text(d):
-    df = pd.DataFrame({"url": [d["url"]], "text": [d["text"]], "images": [d["images"]]})
+    df = pd.DataFrame({"url": [d["url"]], "text": [d["text"]], "title": [d["title"]], "h1": [d["h1"]]})
     
     omniscope_api.write_output_records(df, output_number=0)
 
@@ -132,9 +147,21 @@ def print_urls(ds):
 
         omniscope_api.write_output_records(df, output_number=1)
         
+def print_images(ds):
+    if len(ds) > 0:
+        urls = []
+        images = []
+        for d in ds:
+            urls.append(d["url"])
+            images.append(d["image"])
+
+        df = df = pd.DataFrame({"urls": urls, "images": images})
+
+        omniscope_api.write_output_records(df, output_number=2)        
+        
 
 
-a = Analyser(url, n_workers = n_workers, max_depth = max_depth, report_urls = print_urls, report_text = print_text, local_only = True)
+a = Analyser(url, n_workers = n_workers, max_depth = max_depth, report_text = print_text, report_urls = print_urls, report_images = print_images, local_only = True)
 
 asyncio.run(a.run())
 
