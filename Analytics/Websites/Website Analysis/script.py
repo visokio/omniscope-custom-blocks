@@ -116,7 +116,6 @@ class Analyser:
  
 
 def print_text(d):
-    print("text:" + d["url"])
     df = pd.DataFrame({"url": [d["url"]], "text": [d["text"]], "images": [d["images"]]})
     
     omniscope_api.write_output_records(df, output_number=0)
@@ -135,7 +134,7 @@ def print_urls(ds):
         
 
 
-a = Analyser("https://visokio.com", n_workers = n_workers, max_depth = max_depth, report_urls = print_urls, report_text = print_text, local_only = True)
+a = Analyser(url, n_workers = n_workers, max_depth = max_depth, report_urls = print_urls, report_text = print_text, local_only = True)
 
 asyncio.run(a.run())
 
