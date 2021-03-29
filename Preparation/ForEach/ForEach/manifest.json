@@ -16,7 +16,7 @@
         {
             "groupTitle": "File",
             "name": "Iox_File_Url",
-            "title": "IOx File URL",
+            "title": "Iox File URL",
             "description": "The URL of the file to execute",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
