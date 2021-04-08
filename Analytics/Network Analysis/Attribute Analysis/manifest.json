@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "Given a dataset in which each record represents an edge between two nodes of a network, and each node has an associated categorical attribute, the block analyses connections between attributes, based on connections between associated nodes. The result of the analysis is a list of records in which each record specifies a connection from one attribute to another. The connection contains a probability field, which gives an answer to the question that if a node has the specified categorical attribute, how probable it is that it has a connection to another node with the linked categorical attribute.",
+    "tags": ["attribute", "analysis"],
+    "category": "Analytics",
+    "subcategory": "Network Analysis",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

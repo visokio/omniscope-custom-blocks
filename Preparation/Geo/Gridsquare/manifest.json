@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+		"description": "Converts gridsquare / Maidenhead ",
+		"tags": ["gridsquare", "maidenhead", "coordinates", "locator", "latitude", "longitude"],
+		"category": "Preparation",
+		"subcategory": "Geo",
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

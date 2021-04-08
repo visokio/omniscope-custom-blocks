@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "Prints Report tabs to PDF files for each record of the input data.",
+    "tags": ["batch", "output", "pdf", "report", "print", "tab", "convert"],
+    "category": "Outputs",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "Download a file from a Sharepoint Online site.",
+    "tags": ["sharepoint", "online", "office365", "download"],
+    "category": "Inputs",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

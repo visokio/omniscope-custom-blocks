@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "Prints a Report tab in batch using multi-tenant scenario configuration.",
+    "tags": ["batch", "output", "pdf", "report", "print", "tab", "scenario", "multitenant", "tenant"],
+    "category": "Outputs",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "Append multiple PDF files combining them into one PDF file.",
+    "tags": ["pdf", "append", "combine"],
+    "category": "Outputs",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

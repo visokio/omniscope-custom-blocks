@@ -6,9 +6,11 @@
     "minVersions": [
         null
     ],
+	"description": "Joins regions defined in a shapefile with points defined as latitudes and longitudes, and gives meta information about the content of the shapefile",
+    "tags": ["rdata", "rda", "rds"],
+	"category": "Inputs",
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
-    "schemaType": "OPTIONS_V1",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
     "introductoryText": "The block loads the following R data files:\n\n.rdata\n.rda\n.rds\n\nIn case of .rdata and .rda the first object is loaded as a data frame. The second block output specifies which objects are present in the file. I order to load a specific object, its name can be entered into the option \"Object to load\".",

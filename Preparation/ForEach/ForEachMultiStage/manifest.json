@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.",
+    "tags": ["for", "foreach", "iteration", "paramater", "stage", "orchestration"],
+    "category": "Preparation",
+    "subcategory": "ForEach",
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

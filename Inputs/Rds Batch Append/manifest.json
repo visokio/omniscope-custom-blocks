@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "Reads multiple rds files either from an upstream block, or a folder, and appends them",
+    "tags": ["rds", "batch", "append"],
+    "category": "Inputs",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

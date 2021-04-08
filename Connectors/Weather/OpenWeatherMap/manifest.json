@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "Retrieves current weather and forecasts from OpenWeatherMap",
+    "tags": ["weather", "map", "longitude", "latitude", "forecast"],
+    "category": "Connectors",
+    "subcategory": "Weather",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

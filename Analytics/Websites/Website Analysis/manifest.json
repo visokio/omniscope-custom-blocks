@@ -6,6 +6,9 @@
     "minVersions": [
         "3.9"
     ],
+    "description": "Extracts the structure and content of a website and its pages.",
+    "tags": ["http", "website", "scraping", "analysis"],
+    "category": "Analytics",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

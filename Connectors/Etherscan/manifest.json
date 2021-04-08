@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "The Ethereum Blockchain Explorer.",
+    "tags": ["blockchain", "ethereum", "etherscan", "crypto"],
+    "category": "Connectors",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

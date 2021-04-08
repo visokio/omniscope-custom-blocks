@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "Posts messages on a channel.",
+    "tags": ["slack", "bot"],
+    "category": "Outputs",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

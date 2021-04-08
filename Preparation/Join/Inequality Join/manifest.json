@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.",
+    "tags": ["inequality", "join"],
+    "category": "Preparation",
+    "subcategory": "Join",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

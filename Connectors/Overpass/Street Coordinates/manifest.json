@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "Finds all matching streets given a street name and requests multiple coordinates along the street using data from Overpass API. It will create a row for each point found that is part of a street that matches the given street name. The resulting rows will include the street name, the street Id and the coordinates of the point. The script needs an input with a field with the street name.",
+    "tags": ["overpass", "street", "coordinates", "map"],
+    "category": "Connectors",
+    "subcategory": "Overpass",
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

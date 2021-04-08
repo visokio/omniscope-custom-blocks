@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "Storage Gen2 Blob connector to load a CSV or Parquet blob/file in Omniscope.",
+    "tags": ["azure", "storage", "lake", "datalake", "blob", "gen2", "parquet", "csv"],
+    "category": "Connectors",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

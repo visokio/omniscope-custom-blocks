@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "Renames the fields of a data set given a list of current names and new names.",
+    "tags": ["field", "organiser", "rename", "name"],
+    "category": "Preparation",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.",
+    "tags": ["inequality", "interval", "join"],
+    "category": "Preparation",
+    "subcategory": "Join",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

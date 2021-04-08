@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "Grabs screenshots of webpages, optionally producing a PDF document.",
+    "tags": ["screenshot", "image", "pdf", "output", "print"],
+    "category": "Outputs",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

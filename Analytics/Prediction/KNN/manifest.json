@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
+    "tags": ["knn", "nearest", "neighbours", "prediction"],
+    "category": "Analytics",
+    "subcategory": "Prediction",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

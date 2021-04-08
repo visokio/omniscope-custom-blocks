@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "Reads from and writes data to GitHub",
+    "tags": ["git", "repository", "read", "write"],
+    "category": "Outputs",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

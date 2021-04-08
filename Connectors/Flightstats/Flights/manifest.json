@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "Requests information about flights specified in the input data from flightstats (https://www.flightstats.com). If the flight exists the result will contain live information, otherwise it will not be part of it. The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
+    "tags": ["flightstats", "flights"],
+    "category": "Connectors",
+    "subcategory": "Flightstats",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

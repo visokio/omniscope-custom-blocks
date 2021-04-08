@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "Performs GMM clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
+    "tags": ["gmm", "gaussian", "mixture", "model"],
+    "category": "Analytics",
+    "subcategory": "Clustering",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

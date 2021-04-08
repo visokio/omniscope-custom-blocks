@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "Executes another Omniscope project multiple times, each time with a different set of parameter values.",
+	"tags": ["for", "foreach", "paramater", "iteration"],
+	"category": "Preparation",
+	"subcategory": "ForEach",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

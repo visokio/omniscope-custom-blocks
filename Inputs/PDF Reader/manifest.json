@@ -6,7 +6,10 @@
     "minVersions": [
         null
     ],
-    "schemaType": "OPTIONS_V1",
+    "description": "Extract text from PDF files.",
+	"tags": ["pdf", "text"],
+	"category": "Inputs",
+    "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,

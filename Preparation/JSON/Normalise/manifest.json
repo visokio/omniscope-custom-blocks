@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "Normalise semi-structured JSON strings into a flat table, appending data record by record.",
+    "tags": ["JSON", "normalise", "table", "semi", "structured"],
+    "category": "Preparation",
+    "subcategory": "JSON",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

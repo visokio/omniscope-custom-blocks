@@ -6,6 +6,9 @@
     "minVersions": [
         null
     ],
+    "description": "Download files from a SFTP server folder.",
+    "tags": ["sftp", "download"],
+    "category": "Inputs",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,

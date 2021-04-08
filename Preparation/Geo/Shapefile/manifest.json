@@ -6,6 +6,10 @@
     "minVersions": [
         null
     ],
+    "description": "Match regions in shapefile with geographical points having latitude and longitude",
+    "tags": ["shapefile", "geo", "geojson", "shp"],
+    "category": "Preparation",
+    "subcategory": "Geo",
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
