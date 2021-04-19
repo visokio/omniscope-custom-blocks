@@ -23,7 +23,7 @@
             "groupTitle": null,
             "width": null,
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
-            "mandatory": false,
+            "mandatory": true,
             "defaultValue": ""
         },
         {
@@ -33,7 +33,7 @@
             "groupTitle": null,
             "width": null,
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
-            "mandatory": false
+            "mandatory": true
         },
         {
             "name": "fileUrl",
