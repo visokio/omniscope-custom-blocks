@@ -19,7 +19,7 @@
         {
             "name": "googleChrome",
             "title": "Google Chrome app",
-            "description": "Path to Google Chrome executable",
+            "description": "Path to Google Chrome executable. On Mac, this is typically `\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\"` (you must include the quotes). On Linux, `/opt/google/chrome/chrome`.",
             "groupTitle": "Setup",
             "width": "TWO",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
