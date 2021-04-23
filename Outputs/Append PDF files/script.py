@@ -7,6 +7,10 @@ omniscope_api = OmniscopeApi()
 # read the records associated to the first block input
 input_data = omniscope_api.read_input_records(input_number=0)
 
+# read the value of the option called "my_option"
+# my_option = omniscope_api.get_option("my_option")
+
+title = omniscope_api.get_option("title")
 pdfPath = omniscope_api.get_option("pdfPath")
 outputFolder = omniscope_api.get_option("outputFolder")
 
@@ -14,7 +18,7 @@ merger = PdfFileMerger()
 
 for index, row in input_data.iterrows():
     pdf = row[pdfPath]    
-    merger.append(pdf)
+    merger.append(pdf, row[title] if title is not None and title != "" else None)
 
 outputFile = outputFolder+"/"+omniscope_api.get_option("fileName")
 
