@@ -18,8 +18,8 @@
     "options": [
         {
             "name": "pdfPath",
-            "title": "PDF File paths",
-            "description": null,
+            "title": "Input PDF file paths",
+            "description": "A field containing the paths (filename and path) to the PDF files to append",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
@@ -28,9 +28,20 @@
             "defaultValue": null
         },
         {
+            "name": "title",
+            "title": "Titles",
+            "description": "A field containing a title for each PDF. Used to create table of contents. If missing, no table of contents entries will be created.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null
+        },
+        {
             "name": "fileName",
-            "title": "PDF Filename",
-            "description": "The combined PDF file name",
+            "title": "Output PDF filename",
+            "description": "The combined PDF file name to create, e.g. \"MyDocument.pdf\"",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -39,8 +50,8 @@
         },
         {
             "name": "outputFolder",
-            "title": "Output Folder",
-            "description": null,
+            "title": "Output folder",
+            "description": "The path to the folder to write the output PDF within.",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
