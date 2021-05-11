@@ -221,6 +221,23 @@
             "category": "Preparation"
         },
         {
+            "path": "Preparation/Split Address",
+            "displayName": "Split Address",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "split",
+                "address",
+                "street",
+                "zip",
+                "country"
+            ],
+            "description": "Splits an address field into streetname, streetnumber, and suffix.",
+            "category": "Preparation",
+            "subcategory": null,
+            "icon": null
+        },
+        {
             "path": "Preparation/JSON/Normalise",
             "displayName": "JSON Normalise",
             "language": "PYTHON",
