@@ -10,6 +10,17 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
+    "icon": null,
+    "description": "Splits an address field into streetname, streetnumber, and suffix.",
+    "category": "Preparation",
+    "subcategory": null,
+    "tags": [
+        "split",
+        "address",
+        "street",
+        "zip",
+        "country"
+    ],
     "introductoryText": "Splits an address field into streetname, streetnumber, and suffix.\nAn address is not expected to contain zip codes, city names or country names.\nSome examples of valid input patterns:\n\n- Baker Street 221B\n- Baker Street 221 B\n- Baker Street 221-B\n- Baker Street, 221 B\n- Baker Street 221 Apt B\n- 221B, Baker Street\n- 221 B, Baker Street\n- 221 Apt B, Baker Street\n- 221 Baker Street",
     "dependencies": "",
     "options": [
@@ -53,6 +64,15 @@
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
             "defaultValue": "Suffix"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "split",
+            "displayName": "Split",
+            "tooltip": null
         }
     ]
 }
