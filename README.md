@@ -17,6 +17,7 @@ These require Omniscope 2020.1 ROCK or later.
    3. [Flightstats Flights](Connectors/Flightstats/Flights/)
    4. [Overpass Street Coordinates](Connectors/Overpass/Street%20Coordinates/)
    5. [Azure Data Lake Storage Gen2 Blob](Connectors/Azure%20Data%20Lake%20Blob/)
+   6. [Slack API WebClient](Connectors/Slack%20API%20WebClient/)
 3. Preparation
    1. [Fuzzy Join](Preparation/Join/Fuzzy%20Join/)
    2. [Inequality Join](Preparation/Join/Inequality%20Join/)
@@ -61,7 +62,7 @@ These require Omniscope 2020.1 ROCK or later.
     <tr valign="top">
         <td width="33%">Overpass Street Coordinates<br><a href="Connectors/Overpass/Street%20Coordinates/" title="Overpass Street Coordinates"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Overpass/Street%20Coordinates/thumbnail.png"></a></td>
         <td width="33%">Azure Data Lake Storage Gen2 Blob<br><a href="Connectors/Azure%20Data%20Lake%20Blob/" title="Azure Data Lake Storage Gen2 Blob"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Azure%20Data%20Lake%20Blob/thumbnail.png"></a></td>
-        <td width="33%"></td>
+        <td width="33%">Slack API WebClient<br><a href="Connectors/Slack%20API%20WebClient/" title="Slack API WebClient"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Slack%20API%20WebClient/thumbnail.png"></a></td>
     </tr>
 </table>
 
