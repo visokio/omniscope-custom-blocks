@@ -103,6 +103,19 @@
             "category": "Connectors"
         },
         {
+            "path": "Connectors/Slack API WebClient",
+            "displayName": "Slack API WebClient",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "slack",
+                "api",
+                "webclient"
+            ],
+            "description": "Call Slack API public methods.",
+            "category": "Connectors"
+        },
+        {
             "path": "Preparation/ForEach/ForEach",
             "displayName": "ForEach",
             "language": "PYTHON",
