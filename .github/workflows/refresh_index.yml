@@ -17,7 +17,7 @@ jobs:
   build:
   
     # don't run if the push was done by an action (like this one) in order to avoid infinite loops
-    if: github.actor != 'Github Action'
+    if: github.actor != 'Github Action' && github.actor != 'actions-user'
   
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
