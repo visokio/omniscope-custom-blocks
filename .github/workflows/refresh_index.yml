@@ -41,7 +41,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git commit -m "refreshing index" -a
+          git commit --allow-empty -m "refreshing index" -a
           
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
