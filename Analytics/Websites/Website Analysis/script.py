@@ -158,7 +158,8 @@ def print_images(ds):
         df = df = pd.DataFrame({"urls": urls, "images": images})
 
         omniscope_api.write_output_records(df, output_number=2)        
-        
+       
+ 
 
 
 a = Analyser(url, n_workers = n_workers, max_depth = max_depth, report_text = print_text, report_urls = print_urls, report_images = print_images, local_only = True)
