@@ -6,6 +6,7 @@
     "minVersions": [
         null
     ],
+    "category": "Connectors",
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
