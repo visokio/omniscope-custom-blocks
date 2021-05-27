@@ -1,0 +1,47 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Standardise",
+    "scriptFilename": "script.R",
+    "language": "R",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": true,
+    "icon": null,
+    "description": "Standardises fields into the range [0..1]",
+    "category": "Preparation",
+    "subcategory": "Standardisation",
+    "tags": [
+        "standardise",
+        "normalise",
+        "range",
+        "interval"
+    ],
+    "introductoryText": "Standardises fields into the range [0..1]",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fields",
+            "title": "Fields to standardise",
+            "description": null,
+            "groupTitle": "Input",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ]
+}
