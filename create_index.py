@@ -14,13 +14,13 @@ supported_options_versions = [1]
 
 # the script will raise an error if these keys are not found in the individual block manifests. The key is the manifest
 # key and the value the index key
-keys_required = {"name": "displayName",  "language": "language", "optionsVersion": "optionsVersion"}
+keys_required = {"name": "displayName", "language": "language", "optionsVersion": "optionsVersion"}
 
 # if these are not found in the individual manifests, they are initialised with the value
-keys_with_defaults = {"tags": [], "category" : "Miscellaneous"}
+keys_with_defaults = {"tags": [], "category" : "Miscellaneous", "description": ""}
 
 # optional keys, if not found in the individual manifests they are ignored
-keys_optional = ["description", "subcategory", "icon"]
+keys_optional = ["subcategory", "icon"]
 
 
 
