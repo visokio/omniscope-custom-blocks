@@ -38,7 +38,7 @@
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
-            "defaultValue": null
+            "defaultValue": false
         }
     ],
     "blockOutputs": [
