@@ -1,0 +1,60 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Execute command",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Execute a system command.",
+    "category": "Custom",
+    "subcategory": null,
+    "tags": [
+        "command",
+        "execute"
+    ],
+    "introductoryText": "## Execute command\n#### The block will execute the command as specified by the user option, and pass through the input data.\nOn Windows, use \"cmd /c [your command]\" to execute shell commands such as copy. \nExample: \"cmd /c copy C:/Myfile.txt D:/Myfile.txt\"\n\n#",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "command",
+            "title": "Command",
+            "description": "The command to execute",
+            "groupTitle": "",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "cmd /c echo test"
+        },
+        {
+            "name": "ignoreErrors",
+            "title": "Ignore errors",
+            "description": "Tick to log a warning but otherwise ignore errors. Un-tick to abort and fail if an error occurs.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "Input Data",
+            "displayName": "Input Data",
+            "tooltip": "Input data passed through"
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data 2",
+            "label": "Command Output",
+            "displayName": "Command Output",
+            "tooltip": "Command system output"
+        }
+    ]
+}
