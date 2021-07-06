@@ -16,7 +16,11 @@
     "subcategory": null,
     "tags": [
         "command",
-        "execute"
+        "execute",
+        "command line",
+        "script",
+        "batch",
+        "terminal
     ],
     "introductoryText": "## Execute command\n#### The block will execute the command as specified by the user option, and pass through the input data.\nOn Windows, use \"cmd /c [your command]\" to execute shell commands such as copy. \nExample: \"cmd /c copy C:/Myfile.txt D:/Myfile.txt\"\n\n#",
     "dependencies": "",
