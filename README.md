@@ -24,6 +24,7 @@ These require Omniscope 2020.1 ROCK or later.
    3. [Gridsquare](Preparation/Geo/Gridsquare/)
    4. [For Each](Preparation/ForEach/ForEach/)
    5. [JSON Normalise](Preparation/JSON/Normalise/)
+   6. [Execute Command](Preparation/ExecuteCommand/)
 4. Analytics
    1. Clustering
        1. [DBScan](Analytics/Clustering/DBScan/)
@@ -76,6 +77,7 @@ These require Omniscope 2020.1 ROCK or later.
    <tr valign="top">
         <td width="33%">For Each<br><a href="Preparation/ForEach/ForEach/" title="For Each"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/ForEach/ForEach/thumbnail.png"></a></td>
       <td width="33%">JSON Normalise<br><a href="Preparation/JSON/Normalise/" title="JSON Normalise"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/JSON/Normalise/thumbnail.png"></a></td>
+      <td width="33%">Execute Command<br><a href="Preparation/ExecuteCommand/" title="Execute Command"><img width="290" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/ExecuteCommand/thumbnail.png"></a></td>
    </tr>
 </table>
 
