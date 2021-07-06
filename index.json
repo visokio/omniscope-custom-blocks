@@ -542,6 +542,22 @@
             ],
             "category": "Inputs",
             "description": "Download files from a SFTP server folder."
+        },
+        {
+            "path": "Preparation/ExecuteCommand",
+            "displayName": "Execute Command",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "command",
+                "execute",
+                "command line",
+                "terminal",
+                "batch",
+                "script"
+            ],
+            "category": "Preparation",
+            "description": "Execute a system command."
         }
     ]
 }
