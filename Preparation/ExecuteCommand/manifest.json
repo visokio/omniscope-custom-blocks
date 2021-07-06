@@ -26,7 +26,7 @@
             "title": "Command",
             "description": "The command to execute",
             "groupTitle": "",
-            "width": "ONE",
+            "width": "TWO",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
             "defaultValue": "cmd /c echo test"
