@@ -1,6 +1,6 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-    "name": "Execute command",
+    "name": "Execute Command",
     "scriptFilename": "script.py",
     "language": "PYTHON",
     "minVersions": [
@@ -22,7 +22,7 @@
         "batch",
         "terminal"
     ],
-    "introductoryText": "## Execute command\n#### The block will execute the command as specified by the user option, and pass through the input data.\nOn Windows, use \"cmd /c [your command]\" to execute shell commands such as copy. \nExample: \"cmd /c copy C:/Myfile.txt D:/Myfile.txt\"\n\n#",
+    "introductoryText": "## Execute Command\n#### The block will execute the command as specified by the user option, and pass through the input data.\nOn Windows, use \"cmd /c [your command]\" to execute shell commands such as copy. \nExample: \"cmd /c copy C:/Myfile.txt D:/Myfile.txt\"\n\n#",
     "dependencies": "",
     "options": [
         {
