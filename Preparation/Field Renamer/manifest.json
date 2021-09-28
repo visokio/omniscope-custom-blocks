@@ -6,20 +6,29 @@
     "minVersions": [
         null
     ],
-    "description": "Renames the fields of a data set given a list of current names and new names.",
-    "tags": ["field", "organiser", "rename", "name"],
-    "category": "Preparation",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "introductoryText": "With this block, fields of a data set can be renamed according to a set of rules.\n\n## First input:\nThe first input specifies a data set containing the rules. Each record is a field rename operation. The data set must contain two fields: One field specifies the current field name, the second field specifies the new field name.\n\nExample:\n\nCurrent Name, New Name\n–––––––––––––––––––––\nCategory, New Category\nIsin, Isin Number \nSomething else, Something renamed\n\n## Second input:\nThe second input specifies the data set whose fields are to be renamed.\nExample:\n\nIndex, Category, Name, Isin\n–––––––––––––––––––––\n1, Subordinated, ABBEY, XS0076061927 \n2, Subordinated, HBOS, XS0070530885\n\n## Output:\nAfter execution, the output would look like this:\n\nIndex, New Category, Name, Isin Number\n––––––––––––––––––––––––––––––––\n1, Subordinated, ABBEY, XS0076061927 \n2, Subordinated, HBOS, XS0070530885",
+    "icon": null,
+    "description": "Renames the fields of a data set given a list of current names and new names.",
+    "category": "Preparation",
+    "subcategory": null,
+    "tags": [
+        "field",
+        "organiser",
+        "rename",
+        "name"
+    ],
+    "introductoryText": "With this block, fields of a data set can be renamed according to a set of rules.\n\n## First input:\nThe first input specifies a data set containing the rules. Each record is a field rename operation. The data set must contain two fields: One field specifies the current field name, the second field specifies the new field name.\n\nExample:\n\nCurrent Name, New Name\n–––––––––––––––––––––\nCategory, New Category\nIsin, Isin Number \nSomething else, Something renamed\n\n## Second input:\nThe second input specifies the data set whose fields are to be renamed.\nExample:\n\nIndex, Category, Name, Isin\n–––––––––––––––––––––\n1, Subordinated, ABBEY, XS0076061927 \n2, Subordinated, HBOS, XS0070530885\n\n## Output:\nAfter execution, the first output would look like this:\n\nIndex, New Category, Name, Isin Number\n––––––––––––––––––––––––––––––––\n1, Subordinated, ABBEY, XS0076061927 \n2, Subordinated, HBOS, XS0070530885\n\nThe second output specifies the fields defined in the rules which were not found in the data set. Similarly the third output specifies fields in the data set for which no rules were found.",
     "dependencies": "",
     "options": [
         {
             "name": "currentNames",
             "title": "Current field names",
             "description": null,
+            "groupTitle": null,
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
@@ -29,10 +38,42 @@
             "name": "newNames",
             "title": "New field names",
             "description": null,
+            "groupTitle": null,
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
             "defaultValue": null
         }
-    ]
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output",
+            "tooltip": null
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Unused",
+            "label": "2",
+            "displayName": "Unused fields",
+            "tooltip": null
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Unchanged",
+            "label": "3",
+            "displayName": "Unchanged fields",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    }
 }
