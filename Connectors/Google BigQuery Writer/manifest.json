@@ -1,0 +1,60 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Google Big Query Export",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": null,
+    "description": null,
+    "category": null,
+    "subcategory": null,
+    "tags": [],
+    "introductoryText": null,
+    "dependencies": "google-cloud-bigquery\npyarrow",
+    "options": [
+        {
+            "name": "ApplicationCredentials",
+            "title": "JSON key file",
+            "description": "Path of the JSON key file. For more information see https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries",
+            "groupTitle": null,
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null,
+            "readOnly": true
+        },
+        {
+            "name": "TableId",
+            "title": "Table Identifier",
+            "description": "The fully qualified table id, e.g., be a fully-qualified ID in standard SQL format, e.g., \"project.dataset.table_id\"",
+            "groupTitle": null,
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "AppendData",
+            "title": "Append Data",
+            "description": "If unchecked, the data in the table will be replaced every time the block executes",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    }
+}

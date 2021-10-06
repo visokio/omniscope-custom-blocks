@@ -18,6 +18,7 @@ These require Omniscope 2020.1 ROCK or later.
    4. [Overpass Street Coordinates](Connectors/Overpass/Street%20Coordinates/)
    5. [Azure Data Lake Storage Gen2 Blob](Connectors/Azure%20Data%20Lake%20Blob/)
    6. [Slack API WebClient](Connectors/Slack%20API%20WebClient/)
+   7. [Google BigQuery Writer](Connectors/Google%20BigQuery%20Writer/))
 3. Preparation
    1. [Fuzzy Join](Preparation/Join/Fuzzy%20Join/)
    2. [Inequality Join](Preparation/Join/Inequality%20Join/)
