@@ -1,6 +1,6 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-    "name": "Google Big Query Export",
+    "name": "Google BigQuery Export",
     "scriptFilename": "script.py",
     "language": "PYTHON",
     "minVersions": [
