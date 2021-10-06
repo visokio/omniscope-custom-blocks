@@ -72,22 +72,6 @@
             "category": "Connectors",
             "description": "Storage Gen2 Blob connector to load a CSV or Parquet blob/file in Omniscope."
         },
-		{
-			"path" : "Connectors/Google BigQuery Writer",
-			"displayName": "Google BigQuery Writer",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "google",
-                "bigquery",
-                "query",
-                "writer",
-                "table",
-                "sql"
-            ],
-            "category": "Connectors",
-            "description": "Allows to write data to a Google BigQuery table. The table can be created/replaced, or records can be appeneded to an existing table"
-		},
         {
             "path": "Connectors/Weather/OpenWeatherMap",
             "displayName": "OpenWeatherMap",
@@ -354,6 +338,22 @@
             "category": "Outputs",
             "description": "Append multiple PDF files combining them into one PDF file."
         },
+        {
+			"path" : "Outputs/Google BigQuery Writer",
+			"displayName": "Google BigQuery Writer",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "google",
+                "bigquery",
+                "query",
+                "writer",
+                "table",
+                "sql"
+            ],
+            "category": "Outputs",
+            "description": "Allows to write data to a Google BigQuery table. The table can be created/replaced, or records can be appeneded to an existing table"
+		},
         {
             "path": "Outputs/Report to PDF batch output",
             "displayName": "Multi-tenant Report to PDF",
