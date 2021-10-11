@@ -36,7 +36,7 @@ def process_directory(path: str, blocks):
             return
 
         for key in keys_required:
-            if not key in manifest:
+            if not key in manifest or manifest[key] is None:
                 raise Exception(f"Key {key} is required but not present in manifest {path}")
 
         folder = os.sep.join(path.split(os.sep)[1:])
@@ -48,7 +48,7 @@ def process_directory(path: str, blocks):
             block[keys_required[key]] = manifest[key]
 
         for key in keys_with_defaults:
-            if not key in manifest:
+            if not key in manifest or manifest[key] is None:
                 block[key] = keys_with_defaults[key]
             else:
                 block[key] = manifest[key]
