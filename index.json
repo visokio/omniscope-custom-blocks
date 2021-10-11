@@ -378,7 +378,7 @@
             "optionsVersion": 1,
             "tags": [],
             "category": "Outputs",
-            "description": null,
+            "description": "Allows to write data to a Google BigQuery table. The table can be created/replaced, or records can be appeneded to an existing table",
             "subcategory": null,
             "icon": null
         },

@@ -11,7 +11,7 @@
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
     "icon": null,
-    "description": null,
+    "description": "Allows to write data to a Google BigQuery table. The table can be created/replaced, or records can be appeneded to an existing table",
     "category": "Outputs",
     "subcategory": null,
     "tags": [],
