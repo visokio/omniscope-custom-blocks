@@ -339,22 +339,6 @@
             "description": "Append multiple PDF files combining them into one PDF file."
         },
         {
-			"path" : "Outputs/Google BigQuery Writer",
-			"displayName": "Google BigQuery Writer",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "google",
-                "bigquery",
-                "query",
-                "writer",
-                "table",
-                "sql"
-            ],
-            "category": "Outputs",
-            "description": "Allows to write data to a Google BigQuery table. The table can be created/replaced, or records can be appeneded to an existing table"
-		},
-        {
             "path": "Outputs/Report to PDF batch output",
             "displayName": "Multi-tenant Report to PDF",
             "language": "PYTHON",
@@ -386,6 +370,17 @@
             ],
             "category": "Outputs",
             "description": "Reads from and writes data to GitHub"
+        },
+        {
+            "path": "Outputs/Google BigQuery Writer",
+            "displayName": "Google BigQuery Export",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [],
+            "category": null,
+            "description": null,
+            "subcategory": null,
+            "icon": null
         },
         {
             "path": "Outputs/Report tab to PDF",
