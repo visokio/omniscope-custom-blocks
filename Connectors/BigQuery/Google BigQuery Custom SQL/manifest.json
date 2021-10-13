@@ -1,0 +1,59 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Google BigQuery Custom SQL",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": null,
+    "description": "Executes a SQL query on Google BigQuery and imports the query results",
+    "category": "Connectors",
+    "subcategory": null,
+    "tags": [],
+    "introductoryText": null,
+    "dependencies": "google-cloud-bigquery\npyarrow",
+    "options": [
+        {
+            "name": "ApplicationCredentials",
+            "title": "JSON key file",
+            "description": "Path of the JSON key file. For more information see https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries",
+            "groupTitle": null,
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null,
+            "readOnly": true
+        },
+        {
+            "name": "Query",
+            "title": "Query",
+            "description": "The SQL query to be executed",
+            "groupTitle": null,
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    }
+}
