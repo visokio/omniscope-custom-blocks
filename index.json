@@ -1,405 +1,6 @@
 {
     "blocks": [
         {
-            "path": "Connectors/Flightstats/Flights",
-            "displayName": "Flightstats Flights",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "flightstats",
-                "flights"
-            ],
-            "category": "Connectors",
-            "description": "Requests information about flights specified in the input data from flightstats (https://www.flightstats.com). If the flight exists the result will contain live information, otherwise it will not be part of it. The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
-            "subcategory": "Flightstats"
-        },
-        {
-            "path": "Connectors/Flightstats/Airlines",
-            "displayName": "Flightstats Airlines",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "flightstats",
-                "airlines"
-            ],
-            "category": "Connectors",
-            "description": "Downloads a list of airlines as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
-            "subcategory": "Flightstats"
-        },
-        {
-            "path": "Connectors/Flightstats/Airports",
-            "displayName": "Flightstats Airports",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "flightstats",
-                "airports"
-            ],
-            "category": "Connectors",
-            "description": "Downloads a list of airports as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
-            "subcategory": "Flightstats"
-        },
-        {
-            "path": "Connectors/Overpass/Street Coordinates",
-            "displayName": "Overpass Street Coordinates",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "overpass",
-                "street",
-                "coordinates",
-                "map"
-            ],
-            "category": "Connectors",
-            "description": "Finds all matching streets given a street name and requests multiple coordinates along the street using data from Overpass API. It will create a row for each point found that is part of a street that matches the given street name. The resulting rows will include the street name, the street Id and the coordinates of the point. The script needs an input with a field with the street name.",
-            "subcategory": "Overpass"
-        },
-        {
-            "path": "Connectors/Azure Data Lake Blob",
-            "displayName": "Azure Data Lake Storage Gen2 Blob",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "azure",
-                "storage",
-                "lake",
-                "datalake",
-                "blob",
-                "gen2",
-                "parquet",
-                "csv"
-            ],
-            "category": "Connectors",
-            "description": "Storage Gen2 Blob connector to load a CSV or Parquet blob/file in Omniscope."
-        },
-        {
-            "path": "Connectors/Weather/OpenWeatherMap",
-            "displayName": "OpenWeatherMap",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "weather",
-                "map",
-                "longitude",
-                "latitude",
-                "forecast"
-            ],
-            "category": "Connectors",
-            "description": "Retrieves current weather and forecasts from OpenWeatherMap",
-            "subcategory": "Weather"
-        },
-        {
-            "path": "Connectors/Slack API WebClient",
-            "displayName": "Slack API WebClient",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [],
-            "category": "Connectors",
-            "description": "Allows you to call public Slack endpoints."
-        },
-        {
-            "path": "Connectors/Etherscan",
-            "displayName": "Etherscan",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "blockchain",
-                "ethereum",
-                "etherscan",
-                "crypto"
-            ],
-            "category": "Connectors",
-            "description": "The Ethereum Blockchain Explorer."
-        },
-        {
-            "path": "Preparation/ForEach/ForEach",
-            "displayName": "ForEach",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "for",
-                "foreach",
-                "paramater",
-                "iteration"
-            ],
-            "category": "Preparation",
-            "description": "Executes another Omniscope project multiple times, each time with a different set of parameter values.",
-            "subcategory": "ForEach"
-        },
-        {
-            "path": "Preparation/ForEach/ForEachMultiStage",
-            "displayName": "ForEach multi stage",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "for",
-                "foreach",
-                "iteration",
-                "paramater",
-                "stage",
-                "orchestration"
-            ],
-            "category": "Preparation",
-            "description": "The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.",
-            "subcategory": "ForEach"
-        },
-        {
-            "path": "Preparation/Join/Inequality Join",
-            "displayName": "Inequality Join",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "inequality",
-                "join"
-            ],
-            "category": "Preparation",
-            "description": "Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.",
-            "subcategory": "Join"
-        },
-        {
-            "path": "Preparation/Join/Interval Join",
-            "displayName": "Interval Join",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "inequality",
-                "interval",
-                "join"
-            ],
-            "category": "Preparation",
-            "description": "Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.",
-            "subcategory": "Join"
-        },
-        {
-            "path": "Preparation/Join/Fuzzy Join",
-            "displayName": "Fuzzy Join",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "fuzzy",
-                "join"
-            ],
-            "category": "Preparation",
-            "description": "Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by inverse document frequency.",
-            "subcategory": "Join"
-        },
-        {
-            "path": "Preparation/Geo/Shapefile",
-            "displayName": "Shapefile",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "shapefile",
-                "geo",
-                "geojson",
-                "shp"
-            ],
-            "category": "Preparation",
-            "description": "Match regions in shapefile with geographical points having latitude and longitude",
-            "subcategory": "Geo"
-        },
-        {
-            "path": "Preparation/Geo/Gridsquare",
-            "displayName": "Gridsquare",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "gridsquare",
-                "maidenhead",
-                "coordinates",
-                "locator",
-                "latitude",
-                "longitude"
-            ],
-            "category": "Preparation",
-            "description": "Converts gridsquare / Maidenhead ",
-            "subcategory": "Geo"
-        },
-        {
-            "path": "Preparation/Field Renamer",
-            "displayName": "Field Renamer",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "field",
-                "organiser",
-                "rename",
-                "name"
-            ],
-            "category": "Preparation",
-            "description": "Renames the fields of a data set given a list of current names and new names.",
-            "subcategory": null,
-            "icon": null
-        },
-        {
-            "path": "Preparation/Split Address",
-            "displayName": "Split Address",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "split",
-                "address",
-                "street",
-                "zip",
-                "country"
-            ],
-            "category": "Preparation",
-            "description": "Splits an address field into streetname, streetnumber, and suffix.",
-            "subcategory": null,
-            "icon": null
-        },
-        {
-            "path": "Preparation/ExecuteCommand",
-            "displayName": "Execute Command",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "command",
-                "execute",
-                "command line",
-                "script",
-                "batch",
-                "terminal"
-            ],
-            "category": "Custom",
-            "description": "Execute a system command.",
-            "subcategory": null,
-            "icon": "data:image/png;base64,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"
-        },
-        {
-            "path": "Preparation/JSON/Normalise",
-            "displayName": "JSON Normalise",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "JSON",
-                "normalise",
-                "table",
-                "semi",
-                "structured"
-            ],
-            "category": "Preparation",
-            "description": "Normalise semi-structured JSON strings into a flat table, appending data record by record.",
-            "subcategory": "JSON"
-        },
-        {
-            "path": "Preparation/Standardisation/Standardise",
-            "displayName": "Standardise",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "standardise",
-                "normalise",
-                "range",
-                "interval"
-            ],
-            "category": "Preparation",
-            "description": "Standardises fields into the range [0..1]",
-            "subcategory": "Standardisation",
-            "icon": null
-        },
-        {
-            "path": "Outputs/Web Image-PDF output",
-            "displayName": "Web Image-PDF output",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "screenshot",
-                "image",
-                "pdf",
-                "output",
-                "print"
-            ],
-            "category": "Outputs",
-            "description": "Grabs screenshots of webpages, optionally producing a PDF document."
-        },
-        {
-            "path": "Outputs/Slack Bot",
-            "displayName": "Slack Bot",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "slack",
-                "bot"
-            ],
-            "category": "Outputs",
-            "description": "Posts messages on a channel."
-        },
-        {
-            "path": "Outputs/Append PDF files",
-            "displayName": "Append PDF files",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "pdf",
-                "append",
-                "combine"
-            ],
-            "category": "Outputs",
-            "description": "Append multiple PDF files combining them into one PDF file."
-        },
-        {
-            "path": "Outputs/Report to PDF batch output",
-            "displayName": "Multi-tenant Report to PDF",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "batch",
-                "output",
-                "pdf",
-                "report",
-                "print",
-                "tab",
-                "scenario",
-                "multitenant",
-                "tenant"
-            ],
-            "category": "Outputs",
-            "description": "Prints a Report tab in batch using multi-tenant scenario configuration."
-        },
-        {
-            "path": "Outputs/GitHub",
-            "displayName": "GitHub",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "git",
-                "repository",
-                "read",
-                "write"
-            ],
-            "category": "Outputs",
-            "description": "Reads from and writes data to GitHub"
-        },
-        {
-            "path": "Outputs/Google BigQuery Writer",
-            "displayName": "Google BigQuery Export",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [],
-            "category": "Outputs",
-            "description": "Allows to write data to a Google BigQuery table. The table can be created/replaced, or records can be appeneded to an existing table",
-            "subcategory": null,
-            "icon": null
-        },
-        {
-            "path": "Outputs/Report tab to PDF",
-            "displayName": "Report tab to PDF",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "batch",
-                "output",
-                "pdf",
-                "report",
-                "print",
-                "tab",
-                "convert"
-            ],
-            "category": "Outputs",
-            "description": "Prints Report tabs to PDF files for each record of the input data."
-        },
-        {
             "path": "Analytics/Network Analysis/Attribute Analysis",
             "displayName": "Attribute Analysis",
             "language": "R",
@@ -426,35 +27,18 @@
             "subcategory": "Network Analysis"
         },
         {
-            "path": "Analytics/Prediction/KNN",
-            "displayName": "K-Nearest-Neighbours",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "knn",
-                "nearest",
-                "neighbours",
-                "prediction"
-            ],
-            "category": "Analytics",
-            "description": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
-            "subcategory": "Prediction"
-        },
-        {
-            "path": "Analytics/Prediction/SVM",
-            "displayName": "Support Vector Machine",
+            "path": "Analytics/Websites/Website Analysis",
+            "displayName": "Website Analysis",
             "language": "PYTHON",
             "optionsVersion": 1,
             "tags": [
-                "svm",
-                "support",
-                "vector",
-                "machine",
-                "prediction"
+                "http",
+                "website",
+                "scraping",
+                "analysis"
             ],
             "category": "Analytics",
-            "description": "Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the bondary is made as large as possible to avoid touching the points.",
-            "subcategory": "Prediction"
+            "description": "Extracts the structure and content of a website and its pages."
         },
         {
             "path": "Analytics/Clustering/GMM",
@@ -496,32 +80,355 @@
             "subcategory": "Clustering"
         },
         {
-            "path": "Analytics/Websites/Website Analysis",
-            "displayName": "Website Analysis",
-            "language": "PYTHON",
+            "path": "Analytics/Prediction/KNN",
+            "displayName": "K-Nearest-Neighbours",
+            "language": "R",
             "optionsVersion": 1,
             "tags": [
-                "http",
-                "website",
-                "scraping",
-                "analysis"
+                "knn",
+                "nearest",
+                "neighbours",
+                "prediction"
             ],
             "category": "Analytics",
-            "description": "Extracts the structure and content of a website and its pages."
+            "description": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
+            "subcategory": "Prediction"
         },
         {
-            "path": "Inputs/Sharepoint Online",
-            "displayName": "Sharepoint Online Downloader",
+            "path": "Analytics/Prediction/SVM",
+            "displayName": "Support Vector Machine",
             "language": "PYTHON",
             "optionsVersion": 1,
             "tags": [
-                "sharepoint",
-                "online",
-                "office365",
-                "download"
+                "svm",
+                "support",
+                "vector",
+                "machine",
+                "prediction"
             ],
-            "category": "Inputs",
-            "description": "Download a file from a Sharepoint Online site."
+            "category": "Analytics",
+            "description": "Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the bondary is made as large as possible to avoid touching the points.",
+            "subcategory": "Prediction"
+        },
+        {
+            "path": "Preparation/Split Address",
+            "displayName": "Split Address",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "split",
+                "address",
+                "street",
+                "zip",
+                "country"
+            ],
+            "category": "Preparation",
+            "description": "Splits an address field into streetname, streetnumber, and suffix.",
+            "subcategory": null,
+            "icon": null
+        },
+        {
+            "path": "Preparation/ForEach/ForEach",
+            "displayName": "ForEach",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "for",
+                "foreach",
+                "paramater",
+                "iteration"
+            ],
+            "category": "Preparation",
+            "description": "Executes another Omniscope project multiple times, each time with a different set of parameter values.",
+            "subcategory": "ForEach"
+        },
+        {
+            "path": "Preparation/ForEach/ForEachMultiStage",
+            "displayName": "ForEach multi stage",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "for",
+                "foreach",
+                "iteration",
+                "paramater",
+                "stage",
+                "orchestration"
+            ],
+            "category": "Preparation",
+            "description": "The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.",
+            "subcategory": "ForEach"
+        },
+        {
+            "path": "Preparation/ExecuteCommand",
+            "displayName": "Execute Command",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "command",
+                "execute",
+                "command line",
+                "script",
+                "batch",
+                "terminal"
+            ],
+            "category": "Custom",
+            "description": "Execute a system command.",
+            "subcategory": null,
+            "icon": "data:image/png;base64,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"
+        },
+        {
+            "path": "Preparation/Field Renamer",
+            "displayName": "Field Renamer",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "field",
+                "organiser",
+                "rename",
+                "name"
+            ],
+            "category": "Preparation",
+            "description": "Renames the fields of a data set given a list of current names and new names.",
+            "subcategory": null,
+            "icon": null
+        },
+        {
+            "path": "Preparation/Standardisation/Standardise",
+            "displayName": "Standardise",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "standardise",
+                "normalise",
+                "range",
+                "interval"
+            ],
+            "category": "Preparation",
+            "description": "Standardises fields into the range [0..1]",
+            "subcategory": "Standardisation",
+            "icon": null
+        },
+        {
+            "path": "Preparation/Geo/Shapefile",
+            "displayName": "Shapefile",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "shapefile",
+                "geo",
+                "geojson",
+                "shp"
+            ],
+            "category": "Preparation",
+            "description": "Match regions in shapefile with geographical points having latitude and longitude",
+            "subcategory": "Geo"
+        },
+        {
+            "path": "Preparation/Geo/Gridsquare",
+            "displayName": "Gridsquare",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "gridsquare",
+                "maidenhead",
+                "coordinates",
+                "locator",
+                "latitude",
+                "longitude"
+            ],
+            "category": "Preparation",
+            "description": "Converts gridsquare / Maidenhead ",
+            "subcategory": "Geo"
+        },
+        {
+            "path": "Preparation/JSON/Normalise",
+            "displayName": "JSON Normalise",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "JSON",
+                "normalise",
+                "table",
+                "semi",
+                "structured"
+            ],
+            "category": "Preparation",
+            "description": "Normalise semi-structured JSON strings into a flat table, appending data record by record.",
+            "subcategory": "JSON"
+        },
+        {
+            "path": "Preparation/Join/Inequality Join",
+            "displayName": "Inequality Join",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "inequality",
+                "join"
+            ],
+            "category": "Preparation",
+            "description": "Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.",
+            "subcategory": "Join"
+        },
+        {
+            "path": "Preparation/Join/Fuzzy Join",
+            "displayName": "Fuzzy Join",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "fuzzy",
+                "join"
+            ],
+            "category": "Preparation",
+            "description": "Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by inverse document frequency.",
+            "subcategory": "Join"
+        },
+        {
+            "path": "Preparation/Join/Interval Join",
+            "displayName": "Interval Join",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "inequality",
+                "interval",
+                "join"
+            ],
+            "category": "Preparation",
+            "description": "Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.",
+            "subcategory": "Join"
+        },
+        {
+            "path": "Connectors/Azure Data Lake Blob",
+            "displayName": "Azure Data Lake Storage Gen2 Blob",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "azure",
+                "storage",
+                "lake",
+                "datalake",
+                "blob",
+                "gen2",
+                "parquet",
+                "csv"
+            ],
+            "category": "Connectors",
+            "description": "Storage Gen2 Blob connector to load a CSV or Parquet blob/file in Omniscope."
+        },
+        {
+            "path": "Connectors/BigQuery/Google BigQuery Import Table",
+            "displayName": "Google BigQuery Import Table",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [],
+            "category": "Connectors",
+            "description": "Allows to import a table from Google BigQuery.",
+            "subcategory": null,
+            "icon": null
+        },
+        {
+            "path": "Connectors/BigQuery/Google BigQuery Custom SQL",
+            "displayName": "Google BigQuery Custom SQL",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [],
+            "category": "Connectors",
+            "description": "Executes a SQL query on Google BigQuery and imports the query results",
+            "subcategory": null,
+            "icon": null
+        },
+        {
+            "path": "Connectors/Overpass/Street Coordinates",
+            "displayName": "Overpass Street Coordinates",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "overpass",
+                "street",
+                "coordinates",
+                "map"
+            ],
+            "category": "Connectors",
+            "description": "Finds all matching streets given a street name and requests multiple coordinates along the street using data from Overpass API. It will create a row for each point found that is part of a street that matches the given street name. The resulting rows will include the street name, the street Id and the coordinates of the point. The script needs an input with a field with the street name.",
+            "subcategory": "Overpass"
+        },
+        {
+            "path": "Connectors/Slack API WebClient",
+            "displayName": "Slack API WebClient",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [],
+            "category": "Connectors",
+            "description": "Allows you to call public Slack endpoints."
+        },
+        {
+            "path": "Connectors/Flightstats/Airlines",
+            "displayName": "Flightstats Airlines",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "flightstats",
+                "airlines"
+            ],
+            "category": "Connectors",
+            "description": "Downloads a list of airlines as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
+            "subcategory": "Flightstats"
+        },
+        {
+            "path": "Connectors/Flightstats/Airports",
+            "displayName": "Flightstats Airports",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "flightstats",
+                "airports"
+            ],
+            "category": "Connectors",
+            "description": "Downloads a list of airports as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
+            "subcategory": "Flightstats"
+        },
+        {
+            "path": "Connectors/Flightstats/Flights",
+            "displayName": "Flightstats Flights",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "flightstats",
+                "flights"
+            ],
+            "category": "Connectors",
+            "description": "Requests information about flights specified in the input data from flightstats (https://www.flightstats.com). If the flight exists the result will contain live information, otherwise it will not be part of it. The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
+            "subcategory": "Flightstats"
+        },
+        {
+            "path": "Connectors/Weather/OpenWeatherMap",
+            "displayName": "OpenWeatherMap",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "weather",
+                "map",
+                "longitude",
+                "latitude",
+                "forecast"
+            ],
+            "category": "Connectors",
+            "description": "Retrieves current weather and forecasts from OpenWeatherMap",
+            "subcategory": "Weather"
+        },
+        {
+            "path": "Connectors/Etherscan",
+            "displayName": "Etherscan",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "blockchain",
+                "ethereum",
+                "etherscan",
+                "crypto"
+            ],
+            "category": "Connectors",
+            "description": "The Ethereum Blockchain Explorer."
         },
         {
             "path": "Inputs/Rdata",
@@ -550,6 +457,32 @@
             "description": "Reads multiple rds files either from an upstream block, or a folder, and appends them"
         },
         {
+            "path": "Inputs/SFTP Downloader",
+            "displayName": "SFTP Downloader",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "sftp",
+                "download"
+            ],
+            "category": "Inputs",
+            "description": "Download files from a SFTP server folder."
+        },
+        {
+            "path": "Inputs/Sharepoint Online",
+            "displayName": "Sharepoint Online Downloader",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "sharepoint",
+                "online",
+                "office365",
+                "download"
+            ],
+            "category": "Inputs",
+            "description": "Download a file from a Sharepoint Online site."
+        },
+        {
             "path": "Inputs/PDF Reader",
             "displayName": "PDF Reader",
             "language": "R",
@@ -563,16 +496,105 @@
             "icon": "data:image/png;base64,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"
         },
         {
-            "path": "Inputs/SFTP Downloader",
-            "displayName": "SFTP Downloader",
+            "path": "Outputs/Append PDF files",
+            "displayName": "Append PDF files",
             "language": "PYTHON",
             "optionsVersion": 1,
             "tags": [
-                "sftp",
-                "download"
+                "pdf",
+                "append",
+                "combine"
             ],
-            "category": "Inputs",
-            "description": "Download files from a SFTP server folder."
+            "category": "Outputs",
+            "description": "Append multiple PDF files combining them into one PDF file."
+        },
+        {
+            "path": "Outputs/Google BigQuery Writer",
+            "displayName": "Google BigQuery Export",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [],
+            "category": "Outputs",
+            "description": "Allows to write data to a Google BigQuery table. The table can be created/replaced, or records can be appended to an existing table",
+            "subcategory": null,
+            "icon": null
+        },
+        {
+            "path": "Outputs/Report tab to PDF",
+            "displayName": "Report tab to PDF",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "batch",
+                "output",
+                "pdf",
+                "report",
+                "print",
+                "tab",
+                "convert"
+            ],
+            "category": "Outputs",
+            "description": "Prints Report tabs to PDF files for each record of the input data."
+        },
+        {
+            "path": "Outputs/GitHub",
+            "displayName": "GitHub",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "git",
+                "repository",
+                "read",
+                "write"
+            ],
+            "category": "Outputs",
+            "description": "Reads from and writes data to GitHub"
+        },
+        {
+            "path": "Outputs/Slack Bot",
+            "displayName": "Slack Bot",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "slack",
+                "bot"
+            ],
+            "category": "Outputs",
+            "description": "Posts messages on a channel."
+        },
+        {
+            "path": "Outputs/Report to PDF batch output",
+            "displayName": "Multi-tenant Report to PDF",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "batch",
+                "output",
+                "pdf",
+                "report",
+                "print",
+                "tab",
+                "scenario",
+                "multitenant",
+                "tenant"
+            ],
+            "category": "Outputs",
+            "description": "Prints a Report tab in batch using multi-tenant scenario configuration."
+        },
+        {
+            "path": "Outputs/Web Image-PDF output",
+            "displayName": "Web Image-PDF output",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "screenshot",
+                "image",
+                "pdf",
+                "output",
+                "print"
+            ],
+            "category": "Outputs",
+            "description": "Grabs screenshots of webpages, optionally producing a PDF document."
         }
     ]
 }
