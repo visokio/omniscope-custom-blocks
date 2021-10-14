@@ -22,7 +22,11 @@ import urllib.parse
 from functools import cmp_to_key
 
 def create_header(f):
-    f.write("# Omniscope Custom Blocks\n")
+    f.write("# Omniscope Custom Blocks")
+    f.write(" &middot; ")
+    f.write("[![Refresh index](https://github.com/visokio/omniscope-custom-blocks/actions/workflows/refresh_index.yml/badge.svg)](https://github.com/visokio/omniscope-custom-blocks/actions/workflows/refresh_index.yml)")
+    f.write("[![Refresh readme](https://github.com/visokio/omniscope-custom-blocks/actions/workflows/refresh_readme.yml/badge.svg)](https://github.com/visokio/omniscope-custom-blocks/actions/workflows/refresh_readme.yml)")
+    f.write("\n\n")
     f.write("Public repository for custom blocks for Omniscope Evo.\n")
     f.write("\n")
 
