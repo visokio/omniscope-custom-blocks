@@ -51,19 +51,21 @@ Public repository for custom blocks for Omniscope Evo.
 3. Custom
    1. [Execute Command](#PreparationExecuteCommand)
 4. Connectors
-   1. Flightstats
+   1. Databases
+      1. [MongoDB](#ConnectorsMongoDB)
+   2. Flightstats
       1. [Flightstats Airlines](#ConnectorsFlightstatsAirlines)
       2. [Flightstats Airports](#ConnectorsFlightstatsAirports)
       3. [Flightstats Flights](#ConnectorsFlightstatsFlights)
-   2. Overpass
+   3. Overpass
       1. [Overpass Street Coordinates](#ConnectorsOverpassStreetCoordinates)
-   3. Weather
+   4. Weather
       1. [OpenWeatherMap](#ConnectorsWeatherOpenWeatherMap)
-   4. [Azure Data Lake Storage Gen2 Blob](#ConnectorsAzureDataLakeBlob)
-   5. [Google BigQuery Import Table](#ConnectorsBigQueryGoogleBigQueryImportTable)
-   6. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
-   7. [Slack API WebClient](#ConnectorsSlackAPIWebClient)
-   8. [Etherscan](#ConnectorsEtherscan)
+   5. [Azure Data Lake Storage Gen2 Blob](#ConnectorsAzureDataLakeBlob)
+   6. [Google BigQuery Import Table](#ConnectorsBigQueryGoogleBigQueryImportTable)
+   7. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
+   8. [Slack API WebClient](#ConnectorsSlackAPIWebClient)
+   9. [Etherscan](#ConnectorsEtherscan)
 5. Inputs
    1. [R Data Reader](#InputsRdata)
    2. [Rds Batch Append](#InputsRdsBatchAppend)
@@ -266,6 +268,16 @@ Renames the fields of a data set given a list of current names and new names.
 Execute a system command.
 
 [Link to Github page](Preparation/ExecuteCommand)
+
+<div id="ConnectorsMongoDB"/>
+
+### MongoDB
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/MongoDB/thumbnail.png" width="125" height="125"/>
+
+A connector for MongoDB
+
+[Link to Github page](Connectors/MongoDB)
 
 <div id="ConnectorsFlightstatsAirlines"/>
 
