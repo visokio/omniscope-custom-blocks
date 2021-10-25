@@ -6,14 +6,21 @@
     "minVersions": [
         "3.9"
     ],
-    "description": "Extracts the structure and content of a website and its pages.",
-    "tags": ["http", "website", "scraping", "analysis"],
-    "category": "Analytics",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "introductoryText": "Extracts the structure and content of a website and its pages. \n\nThe two outputs consist of a list of all the pages including their text and images in the first, and  a list of links from the parent to the page in the second.",
+    "icon": null,
+    "description": "Extracts the structure and content of a website and its pages.",
+    "category": "Analytics",
+    "subcategory": null,
+    "tags": [
+        "http",
+        "website",
+        "scraping",
+        "analysis"
+    ],
+    "introductoryText": "Extracts the structure and content of a website and its pages. \n\nThe three outputs consist of a list of all the pages including their text in the first, a list of links from the parent to the page in the second, and images in the third.",
     "dependencies": "asyncio>=3.4.3\nhttpx>=0.16.1\nbs4",
     "options": [
         {
@@ -36,7 +43,7 @@
             "numMin": null,
             "numMax": null,
             "mandatory": true,
-            "defaultValue": 5
+            "defaultValue": 4
         },
         {
             "name": "n_workers",
@@ -65,6 +72,20 @@
             "label": "2",
             "displayName": "Links",
             "tooltip": null
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data 3",
+            "label": "3",
+            "displayName": "Images",
+            "tooltip": null
         }
-    ]
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    }
 }
