@@ -31,6 +31,15 @@ chromeCommand = chrome + " --headless --disable-gpu --disable-translate " \
 "--disable-sync  --metrics-recording-only --disable-default-apps --no-first-run --mute-audio " \
 "--hide-scrollbars --remote-debugging-port="+str(chromePort)+" --window-size=1920,1080"
 
+pageSize = ""
+pageWidth = omniscope_api.get_option("pageWidth")
+if (pageWidth is not None and pageWidth > 0):
+   pageSize = "&pageWidth="+str(pageWidth)
+
+pageHeight = omniscope_api.get_option("pageHeight")
+if (pageHeight is not None and pageHeight > 0):
+   pageSize += "&pageHeight="+str(pageHeight)
+
 isPosix = False
 if os.name == 'posix':
     isPosix = True
@@ -47,7 +56,7 @@ try:
     reportName = report.rsplit('/', 3)[-2]
     reportBaseUrl = report.rsplit('/', 1)[-2]
     tabNameWithFilter = report.rsplit('#', 1)[-1]
-    reportUrl = reportBaseUrl + "/" + "#device=printer&tab=" + tabNameWithFilter
+    reportUrl = reportBaseUrl + "/" + "#device=printer"+ pageSize +"&tab=" + tabNameWithFilter
     tabName = unquote(tabNameWithFilter)
     print(tabName)
     if ('&' in tabName):
