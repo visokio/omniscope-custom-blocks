@@ -3,16 +3,27 @@
     "name": "Report tab to PDF",
     "scriptFilename": "script.py",
     "language": "PYTHON",
+    "executableVersion": null,
     "minVersions": [
         null
     ],
-    "description": "Prints Report tabs to PDF files for each record of the input data.",
-    "tags": ["batch", "output", "pdf", "report", "print", "tab", "convert"],
-    "category": "Outputs",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
+    "icon": null,
+    "description": "Prints Report tabs to PDF files for each record of the input data.",
+    "category": "Outputs",
+    "subcategory": null,
+    "tags": [
+        "batch",
+        "output",
+        "pdf",
+        "report",
+        "print",
+        "tab",
+        "convert"
+    ],
     "introductoryText": "## Report tab to PDF\n#### This block will produce a PDF for each record of the upstream data containing a Report tab URL, saving the PDF files in a specified output folder, with filenames equal to the Report name + tab name + record index or to the specified optional name.\n##### It requires Google Chrome app installed on your machine.\n##### It requires Visokio \"Omniprint\" app, downloadable here for [Windows](https://visokio.com/wp-content/uploads/2021/01/Omniscope-Evo-Omniprint.zip), [Mac](https://visokio.com/wp-content/uploads/2021/01/Omniscope-Evo-Omniprint-macos.zip) and [Linux](https://visokio.com/wp-content/uploads/2021/01/Omniscope-Evo-Omniprint-linux.tar.gz).",
     "dependencies": "",
     "options": [
@@ -24,7 +35,8 @@
             "width": "TWO",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": null
+            "defaultValue": null,
+            "readOnly": false
         },
         {
             "name": "omniprint",
@@ -34,7 +46,8 @@
             "width": "TWO",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": null
+            "defaultValue": null,
+            "readOnly": false
         },
         {
             "name": "report",
@@ -45,7 +58,8 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "fileName",
@@ -56,7 +70,8 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "outputFolder",
@@ -66,31 +81,60 @@
             "width": "TWO",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": null
+            "defaultValue": null,
+            "readOnly": false
+        },
+        {
+            "name": "pageWidth",
+            "title": "Page Width (pixels)",
+            "description": "Optional page width to override default A4 size or Report fixed size.",
+            "groupTitle": "Page Size",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null,
+            "showAsSlider": false
+        },
+        {
+            "name": "pageHeight",
+            "title": "Page Height (pixels)",
+            "description": "Optional page height to override default A4 size or Report fixed size.",
+            "groupTitle": "Page Size",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null,
+            "showAsSlider": false
         },
         {
             "name": "chromePort",
             "title": "Chrome port",
             "description": "The debugging port on which Chrome will be listening to",
             "groupTitle": "Advanced",
-            "width": "ONE",
+            "width": "HALF",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
             "numMin": null,
             "numMax": null,
             "mandatory": false,
-            "defaultValue": null
+            "defaultValue": null,
+            "showAsSlider": false
         },
         {
             "name": "chromeDelay",
             "title": "Chrome loading delay",
             "description": "Delay (ms) to allow Chrome loading the page before printing to PDF",
             "groupTitle": "Advanced",
-            "width": "ONE",
+            "width": "HALF",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
             "numMin": null,
             "numMax": null,
             "mandatory": false,
-            "defaultValue": 10000
+            "defaultValue": null,
+            "showAsSlider": false
         }
     ],
     "blockOutputs": [
@@ -101,5 +145,14 @@
             "displayName": "Output 1",
             "tooltip": null
         }
-    ]
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": true,
+    "apiMode": "BATCH"
 }
