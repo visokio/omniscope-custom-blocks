@@ -30,10 +30,10 @@ Public repository for custom blocks for Omniscope Evo.
    3. Prediction
       1. [Support Vector Machine](#AnalyticsPredictionSVM)
       2. [K-Nearest-Neighbours](#AnalyticsPredictionKNN)
-   4. [Website Analysis](#AnalyticsWebsitesWebsiteAnalysis)
-2. None
-   1. [Model Validation](#AnalyticsValidationModelValidation)
-3. Outputs
+   4. Validation
+      1. [Model Validation](#AnalyticsValidationModelValidation)
+   5. [Website Analysis](#AnalyticsWebsitesWebsiteAnalysis)
+2. Outputs
    1. [Report tab to PDF](#OutputsReporttabtoPDF)
    2. [Append PDF files](#OutputsAppendPDFfiles)
    3. [Multi-tenant Report to PDF](#OutputsReporttoPDFbatchoutput)
@@ -41,7 +41,7 @@ Public repository for custom blocks for Omniscope Evo.
    5. [GitHub](#OutputsGitHub)
    6. [Google BigQuery Export](#OutputsGoogleBigQueryWriter)
    7. [Web Image-PDF output](#OutputsWebImage-PDFoutput)
-4. Preparation
+3. Preparation
    1. ForEach
       1. [ForEach](#PreparationForEachForEach)
       2. [ForEach multi stage](#PreparationForEachForEachMultiStage)
@@ -58,9 +58,9 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Standardise](#PreparationStandardisationStandardise)
    6. [Field Renamer](#PreparationFieldRenamer)
    7. [Split Address](#PreparationSplitAddress)
-5. Custom
+4. Custom
    1. [Execute Command](#PreparationExecuteCommand)
-6. Connectors
+5. Connectors
    1. Databases
       1. [MongoDB](#ConnectorsMongoDB)
    2. Flightstats
@@ -76,7 +76,7 @@ Public repository for custom blocks for Omniscope Evo.
    7. [Slack API WebClient](#ConnectorsSlackAPIWebClient)
    8. [Google BigQuery Import Table](#ConnectorsBigQueryGoogleBigQueryImportTable)
    9. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
-7. Inputs
+6. Inputs
    1. [R Data Reader](#InputsRdata)
    2. [SFTP Downloader](#InputsSFTPDownloader)
    3. [Sharepoint Online Downloader](#InputsSharepointOnline)
@@ -153,6 +153,14 @@ Performs k-nearest-neighbour prediction on the data. The prediction for a new po
 
 [Link to Github page](Analytics/Prediction/KNN)
 
+<div id="AnalyticsValidationModelValidation"/>
+
+### Model Validation
+
+Computes a confusion matrix as well as model validation statistics
+
+[Link to Github page](Analytics/Validation/Model%20Validation)
+
 <div id="AnalyticsWebsitesWebsiteAnalysis"/>
 
 ### Website Analysis
@@ -160,14 +168,6 @@ Performs k-nearest-neighbour prediction on the data. The prediction for a new po
 Extracts the structure and content of a website and its pages.
 
 [Link to Github page](Analytics/Websites/Website%20Analysis)
-
-<div id="AnalyticsValidationModelValidation"/>
-
-### Model Validation
-
-None
-
-[Link to Github page](Analytics/Validation/Model%20Validation)
 
 <div id="OutputsReporttabtoPDF"/>
 
