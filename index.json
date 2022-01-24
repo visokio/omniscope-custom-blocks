@@ -117,10 +117,18 @@
             "displayName": "Model Validation",
             "language": "PYTHON",
             "optionsVersion": 1,
-            "tags": [],
-            "category": "Miscellaneous",
-            "description": "",
-            "subcategory": null,
+            "tags": [
+                "model",
+                "validation",
+                "confusion",
+                "matrix",
+                "precision",
+                "accuracy",
+                "fscore"
+            ],
+            "category": "Analytics",
+            "description": "Computes a confusion matrix as well as model validation statistics",
+            "subcategory": "Validation",
             "icon": null
         },
         {
