@@ -1,6 +1,6 @@
 from omniscope.api import OmniscopeApi
 import pandas as pd
-import ast
+import json
 omniscope_api = OmniscopeApi()
 
 # read the records associated to the first block input
@@ -17,7 +17,7 @@ for index, row in input_data.iterrows():
     if not jsonString:
         continue
 
-    dictJson = ast.literal_eval(jsonString)
+    dictJson = json.loads(jsonString)
     dataframe = pd.json_normalize(dictJson)
     dataframe = dataframe.add_prefix(jsonField+'_')
     if includeInput:
