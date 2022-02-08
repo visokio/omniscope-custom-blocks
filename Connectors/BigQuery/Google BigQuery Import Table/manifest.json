@@ -38,7 +38,7 @@
             "width": "THREE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": "visokio-dev2.test.bp_01"
+            "defaultValue": null
         },
         {
             "name": "PageSize",
