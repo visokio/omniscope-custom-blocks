@@ -1,427 +1,6 @@
 {
     "blocks": [
         {
-            "path": "Analytics/Clustering/GMM",
-            "displayName": "Gaussian Mixture Model",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "gmm",
-                "gaussian",
-                "mixture",
-                "model"
-            ],
-            "category": "Analytics",
-            "description": "Performs GMM clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
-            "subcategory": "Clustering"
-        },
-        {
-            "path": "Analytics/Clustering/DBScan",
-            "displayName": "DBScan",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "dbscan"
-            ],
-            "category": "Analytics",
-            "description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
-            "subcategory": "Clustering"
-        },
-        {
-            "path": "Analytics/Clustering/KMeans",
-            "displayName": "KMeans",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "kmeans"
-            ],
-            "category": "Analytics",
-            "description": "Performs KMeans clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
-            "subcategory": "Clustering"
-        },
-        {
-            "path": "Analytics/Websites/Website Analysis",
-            "displayName": "Website Analysis",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "http",
-                "website",
-                "scraping",
-                "analysis"
-            ],
-            "category": "Analytics",
-            "description": "Extracts the structure and content of a website and its pages.",
-            "subcategory": null,
-            "icon": null
-        },
-        {
-            "path": "Analytics/Prediction/SVM",
-            "displayName": "Support Vector Machine",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "svm",
-                "support",
-                "vector",
-                "machine",
-                "prediction"
-            ],
-            "category": "Analytics",
-            "description": "Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the bondary is made as large as possible to avoid touching the points.",
-            "subcategory": "Prediction"
-        },
-        {
-            "path": "Analytics/Prediction/KNN",
-            "displayName": "K-Nearest-Neighbours",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "knn",
-                "nearest",
-                "neighbours",
-                "prediction"
-            ],
-            "category": "Analytics",
-            "description": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
-            "subcategory": "Prediction"
-        },
-        {
-            "path": "Analytics/Network Analysis/Attribute Analysis",
-            "displayName": "Attribute Analysis",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "attribute",
-                "analysis"
-            ],
-            "category": "Analytics",
-            "description": "Given a dataset in which each record represents an edge between two nodes of a network, and each node has an associated categorical attribute, the block analyses connections between attributes, based on connections between associated nodes. The result of the analysis is a list of records in which each record specifies a connection from one attribute to another. The connection contains a probability field, which gives an answer to the question that if a node has the specified categorical attribute, how probable it is that it has a connection to another node with the linked categorical attribute.",
-            "subcategory": "Network Analysis"
-        },
-        {
-            "path": "Analytics/Network Analysis/Relationship Analysis",
-            "displayName": "Relationship Analysis",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "relationship",
-                "analysis"
-            ],
-            "category": "Analytics",
-            "description": "Given a dataset in which each record represents an edge between two nodes of a network, the block will project all the nodes onto a (e.g. 2)- dimensional plane in such a way that nodes which share many connections are close together, and nodes that do not share many connections are far apart.",
-            "subcategory": "Network Analysis"
-        },
-        {
-            "path": "Analytics/Validation/Model Validation",
-            "displayName": "Model Validation",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "model",
-                "validation",
-                "confusion",
-                "matrix",
-                "precision",
-                "accuracy",
-                "fscore"
-            ],
-            "category": "Analytics",
-            "description": "Computes a confusion matrix as well as model validation statistics",
-            "subcategory": "Validation",
-            "icon": null
-        },
-        {
-            "path": "Outputs/Report tab to PDF",
-            "displayName": "Report tab to PDF",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "batch",
-                "output",
-                "pdf",
-                "report",
-                "print",
-                "tab",
-                "convert"
-            ],
-            "category": "Outputs",
-            "description": "Prints Report tabs to PDF files for each record of the input data.",
-            "subcategory": null,
-            "icon": null
-        },
-        {
-            "path": "Outputs/Append PDF files",
-            "displayName": "Append PDF files",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "pdf",
-                "append",
-                "combine"
-            ],
-            "category": "Outputs",
-            "description": "Append multiple PDF files combining them into one PDF file."
-        },
-        {
-            "path": "Outputs/Report to PDF batch output",
-            "displayName": "Multi-tenant Report to PDF",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "batch",
-                "output",
-                "pdf",
-                "report",
-                "print",
-                "tab",
-                "scenario",
-                "multitenant",
-                "tenant"
-            ],
-            "category": "Outputs",
-            "description": "Prints a Report tab in batch using multi-tenant scenario configuration."
-        },
-        {
-            "path": "Outputs/Slack Bot",
-            "displayName": "Slack Bot",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "slack",
-                "bot"
-            ],
-            "category": "Outputs",
-            "description": "Posts messages on a channel."
-        },
-        {
-            "path": "Outputs/GitHub",
-            "displayName": "GitHub",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "git",
-                "repository",
-                "read",
-                "write"
-            ],
-            "category": "Outputs",
-            "description": "Reads from and writes data to GitHub"
-        },
-        {
-            "path": "Outputs/Google BigQuery Writer",
-            "displayName": "Google BigQuery Export",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [],
-            "category": "Outputs",
-            "description": "Allows to write data to a Google BigQuery table. The table can be created/replaced, or records can be appended to an existing table",
-            "subcategory": null,
-            "icon": null
-        },
-        {
-            "path": "Outputs/Web Image-PDF output",
-            "displayName": "Web Image-PDF output",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "screenshot",
-                "image",
-                "pdf",
-                "output",
-                "print"
-            ],
-            "category": "Outputs",
-            "description": "Grabs screenshots of webpages, optionally producing a PDF document."
-        },
-        {
-            "path": "Preparation/Standardisation/Standardise",
-            "displayName": "Standardise",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "standardise",
-                "normalise",
-                "range",
-                "interval"
-            ],
-            "category": "Preparation",
-            "description": "Standardises fields into the range [0..1]",
-            "subcategory": "Standardisation",
-            "icon": null
-        },
-        {
-            "path": "Preparation/ForEach/ForEach",
-            "displayName": "ForEach",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "for",
-                "foreach",
-                "paramater",
-                "iteration"
-            ],
-            "category": "Preparation",
-            "description": "Executes another Omniscope project multiple times, each time with a different set of parameter values.",
-            "subcategory": "ForEach"
-        },
-        {
-            "path": "Preparation/ForEach/ForEachMultiStage",
-            "displayName": "ForEach multi stage",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "for",
-                "foreach",
-                "iteration",
-                "paramater",
-                "stage",
-                "orchestration"
-            ],
-            "category": "Preparation",
-            "description": "The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.",
-            "subcategory": "ForEach"
-        },
-        {
-            "path": "Preparation/Field Renamer",
-            "displayName": "Field Renamer",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "field",
-                "organiser",
-                "rename",
-                "name"
-            ],
-            "category": "Preparation",
-            "description": "Renames the fields of a data set given a list of current names and new names.",
-            "subcategory": null,
-            "icon": null
-        },
-        {
-            "path": "Preparation/Join/Inequality Join",
-            "displayName": "Inequality Join",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "inequality",
-                "join"
-            ],
-            "category": "Preparation",
-            "description": "Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.",
-            "subcategory": "Join"
-        },
-        {
-            "path": "Preparation/Join/Interval Join",
-            "displayName": "Interval Join",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "inequality",
-                "interval",
-                "join"
-            ],
-            "category": "Preparation",
-            "description": "Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.",
-            "subcategory": "Join"
-        },
-        {
-            "path": "Preparation/Join/Fuzzy Join",
-            "displayName": "Fuzzy Join",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "fuzzy",
-                "join"
-            ],
-            "category": "Preparation",
-            "description": "Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by inverse document frequency.",
-            "subcategory": "Join"
-        },
-        {
-            "path": "Preparation/ExecuteCommand",
-            "displayName": "Execute Command",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "command",
-                "execute",
-                "command line",
-                "script",
-                "batch",
-                "terminal"
-            ],
-            "category": "Custom",
-            "description": "Execute a system command.",
-            "subcategory": null,
-            "icon": "data:image/png;base64,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7s/Ro2YsBvhE4llmmDbxBvH0pm1w3icOsbysEp8Tj5l0QeJHrisev3HOuSzwzJCZTMwTh4jFXBMrTczypkY8RRxWNZ3yhZTHKuctzlqxzOr35C8MZvSVZa7THEYMi1iCBBEKyiigCBsRWnVSLCRoP9rCP+T6JXIp5CqAkWMBJWiQXT/4H/zu1spOTnhJwSjQ/uI4HyNAYBeoVRzn+9hxaieA/xm40hv+UhWY+SS90tDCR0DfNnBx3dCUPeByBxh8MmRTdiU/TSGbBd7P6JvSwMAt0L3m9Vbfx+kDkKSu4jfAwSEwmqPs9Rbv7mzu7d8z9f5+APtgcnf++xzBAAAPoGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNC40LjAtRXhpdjIiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6aXB0Y0V4dD0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcEV4dC8yMDA4LTAyLTI5LyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgIHhtbG5zOnBsdXM9Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczpHSU1QPSJodHRwOi8vd3d3LmdpbXAub3JnL3htcC8iCiAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgeG1wTU06RG9jdW1lbnRJRD0iZ2ltcDpkb2NpZDpnaW1wOmY4YTNmNWVhLWY3ZDAtNGY0Ni1hNzQ5LTYwNjk2ODliNWMxMiIKICAgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpmNjQwMDRjNS1iOGQ5LTQzN2ItOGJjMC0xZDgzMzZmZWQ4M2MiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyYzg4NmMxYS0wZmZmLTRhMjctYjM0OC0zZTkxYTYzZGUyNzAiCiAgIEdJTVA6QVBJPSIyLjAiCiAgIEdJTVA6UGxhdGZvcm09Ik1hYyBPUyIKICAgR0lNUDpUaW1lU3RhbXA9IjE2Mzk2MzUyNjc1Njc1OTEiCiAgIEdJTVA6VmVyc2lvbj0iMi4xMC4yMiIKICAgZGM6Rm9ybWF0PSJpbWFnZS9wbmciCiAgIHRpZmY6T3JpZW50YXRpb249IjEiCiAgIHhtcDpDcmVhdG9yVG9vbD0iR0lNUCAyLjEwIj4KICAgPGlwdGNFeHQ6TG9jYXRpb25DcmVhdGVkPgogICAgPHJkZjpCYWcvPgogICA8L2lwdGNFeHQ6TG9jYXRpb25DcmVhdGVkPgogICA8aXB0Y0V4dDpMb2NhdGlvblNob3duPgogICAgPHJkZjpCYWcvPgogICA8L2lwdGNFeHQ6TG9jYXRpb25TaG93bj4KICAgPGlwdGNFeHQ6QXJ0d29ya09yT2JqZWN0PgogICAgPHJkZjpCYWcvPgogICA8L2lwdGNFeHQ6QXJ0d29ya09yT2JqZWN0PgogICA8aXB0Y0V4dDpSZWdpc3RyeUlkPgogICAgPHJkZjpCYWcvPgogICA8L2lwdGNFeHQ6UmVnaXN0cnlJZD4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii8iCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YTg0NDYyZjctYTZhNC00MDM3LWJjM2MtOWUyMWQyMTFmM2VmIgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJHaW1wIDIuMTAgKE1hYyBPUykiCiAgICAgIHN0RXZ0OndoZW49IjIwMjEtMTItMTZUMDY6MTQ6MjcrMDA6MDAiLz4KICAgIDwvcmRmOlNlcT4KICAgPC94bXBNTTpIaXN0b3J5PgogICA8cGx1czpJbWFnZVN1cHBsaWVyPgogICAgPHJkZjpTZXEvPgogICA8L3BsdXM6SW1hZ2VTdXBwbGllcj4KICAgPHBsdXM6SW1hZ2VDcmVhdG9yPgogICAgPHJkZjpTZXEvPgogICA8L3BsdXM6SW1hZ2VDcmVhdG9yPgogICA8cGx1czpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxLz4KICAgPC9wbHVzOkNvcHlyaWdodE93bmVyPgogICA8cGx1czpMaWNlbnNvcj4KICAgIDxyZGY6U2VxLz4KICAgPC9wbHVzOkxpY2Vuc29yPgogIDwvcmRmOkRlc2NyaXB0aW9uPgogPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgIAo8P3hwYWNrZXQgZW5kPSJ3Ij8++vOhbwAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB+UMEAYOGw/fAt8AAAg0SURBVHja7Z1PTBNbF8DPUKSIEgs1atSE2M8NbN/GBSsDGFMjKcn7KAHlj4qikWIDoRuiGIx96UAIBCNFW4gsJM+kBqIF1JUh3bytRY02RiRCbAtjgTrGcr7NZ/LynuLMMJ3O0PNLWDF3mDk/7r3n3rkzF4AgCIIgCIIgCIIgCIIgCIIgCGITMEr+MYvF4jQYDO25ublgNBpBr9cDwzBbPsiICDzPQyQSgVgsBsvL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"
-        },
-        {
-            "path": "Preparation/Split Address",
-            "displayName": "Split Address",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "split",
-                "address",
-                "street",
-                "zip",
-                "country"
-            ],
-            "category": "Preparation",
-            "description": "Splits an address field into streetname, streetnumber, and suffix.",
-            "subcategory": null,
-            "icon": null
-        },
-        {
-            "path": "Preparation/JSON/Normalise",
-            "displayName": "JSON Normalise",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "JSON",
-                "normalise",
-                "table",
-                "semi",
-                "structured"
-            ],
-            "category": "Preparation",
-            "description": "Normalise semi-structured JSON strings into a flat table, appending data record by record.",
-            "subcategory": "JSON"
-        },
-        {
-            "path": "Preparation/Geo/Gridsquare",
-            "displayName": "Gridsquare",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "gridsquare",
-                "maidenhead",
-                "coordinates",
-                "locator",
-                "latitude",
-                "longitude"
-            ],
-            "category": "Preparation",
-            "description": "Converts gridsquare / Maidenhead ",
-            "subcategory": "Geo"
-        },
-        {
-            "path": "Preparation/Geo/Shapefile",
-            "displayName": "Shapefile",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [
-                "shapefile",
-                "geo",
-                "geojson",
-                "shp"
-            ],
-            "category": "Preparation",
-            "description": "Match regions in shapefile with geographical points having latitude and longitude",
-            "subcategory": "Geo"
-        },
-        {
             "path": "Connectors/Azure Data Lake Blob",
             "displayName": "Azure Data Lake Storage Gen2 Blob",
             "language": "PYTHON",
@@ -454,28 +33,6 @@
             "description": "The Ethereum Blockchain Explorer."
         },
         {
-            "path": "Connectors/Slack API WebClient",
-            "displayName": "Slack API WebClient",
-            "language": "PYTHON",
-            "optionsVersion": 1,
-            "tags": [],
-            "category": "Connectors",
-            "description": "Allows you to call public Slack endpoints."
-        },
-        {
-            "path": "Connectors/Flightstats/Airports",
-            "displayName": "Flightstats Airports",
-            "language": "R",
-            "optionsVersion": 1,
-            "tags": [
-                "flightstats",
-                "airports"
-            ],
-            "category": "Connectors",
-            "description": "Downloads a list of airports as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
-            "subcategory": "Flightstats"
-        },
-        {
             "path": "Connectors/Flightstats/Flights",
             "displayName": "Flightstats Flights",
             "language": "R",
@@ -500,6 +57,43 @@
             "category": "Connectors",
             "description": "Downloads a list of airlines as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
             "subcategory": "Flightstats"
+        },
+        {
+            "path": "Connectors/Flightstats/Airports",
+            "displayName": "Flightstats Airports",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "flightstats",
+                "airports"
+            ],
+            "category": "Connectors",
+            "description": "Downloads a list of airports as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.",
+            "subcategory": "Flightstats"
+        },
+        {
+            "path": "Connectors/Slack API WebClient",
+            "displayName": "Slack API WebClient",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [],
+            "category": "Connectors",
+            "description": "Allows you to call public Slack endpoints."
+        },
+        {
+            "path": "Connectors/MongoDB",
+            "displayName": "MongoDB",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "mongodb",
+                "database",
+                "collection"
+            ],
+            "category": "Connectors",
+            "description": "A connector for MongoDB",
+            "subcategory": "Databases",
+            "icon": "data:image/png;base64,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"
         },
         {
             "path": "Connectors/Weather/OpenWeatherMap",
@@ -555,44 +149,311 @@
             "subcategory": "Overpass"
         },
         {
-            "path": "Connectors/MongoDB",
-            "displayName": "MongoDB",
+            "path": "Outputs/Slack Bot",
+            "displayName": "Slack Bot",
             "language": "PYTHON",
             "optionsVersion": 1,
             "tags": [
-                "mongodb",
-                "database",
-                "collection"
+                "slack",
+                "bot"
             ],
-            "category": "Connectors",
-            "description": "A connector for MongoDB",
-            "subcategory": "Databases",
-            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAADqCAMAAAD+p9sDAAADAFBMVEVHcEwoW4EoW4EoW4EoW4EoW4IoW4EoW4IoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4EoW4H///8QqlASkk8oW4H+///9/f79/v4pXIErXYMqXYIkWH8pXIIsXoP8/v01ZYn7/P18m7MXTnf+///6+/wdU3u4xMIqXIIbUXodUnofVHwmWoAZUHgSlU8iV34Nqk4SlE8rXoMmWYAlWX9Hc5QQp1D3/Pn3+frf5+0yY4f19/nu+fPz9vjo7fIiVn0hVX07aoz8/vwerlpMd5YvYYZSe5p1lq/r8PMSmE8Tq1IQqVASl0/w9PVAbY/D0dxwkqwXlVMqnmHH1d+swM9ZgZ7V3+fY4uj1+/hdxognsmERnlDy+vXt8vX8/fwRoVAQplC35spVsoFyzZhDcJHa4+qQq76cs8WxxNH8/f2UrcCkusqXsMJfhaKftscQpVDC5NIXrVXg8ujO7Nv6/fvk9evS7t4bllYgmVrZ8ePL6Ni7xcTO2uNmi6bM2OH5+/tjiKS4ydaf3blFvXeL1qpDqXQutWY9pm9asoQ0t2rS3eWJpbuovcyAnrVcg6BtkKoQpFDG69WOzKvl9uwyoWdVw4NwvJMQkk3k6/BWfpy7y9iCoLaMqLx5mbAwtmiA0qK03cei1bpmuY7p9++Z0bM3o2p6xJxPwH+q4cF0wJjQ2Na9ycfr7u3I0tC+zdk5uW7Y7uLp9e5lyY9GrXZNsXpftoitwruYva2/ztmEore1x9SGo7nAzdJpjagVTXYRo1CFyKXd4+Kp2L9vsJDCzcvX3t0Rm0+538sfnlnm6umW2rIysGeyw79JpXWIuaFBu3RYp3+CtJ3i5+b9+fvX+1hhAAAAPnRSTlMA+/xO/gMEAv0BsfgdEysO2OgY9Z7rjMy54wlJPoEvbTnyhgshpTNDBr7UJpjeqnqTdGhXVNDHY8G1765eUWoRPX4AABZxSURBVHja7JtrUFTnGccP614FQS4KiEJAxCiC90vUnMvez4oIO3sNU3YRoZBdKjc1KCqisWobjegWtda7mYjGJBov1WqjwWhqatOoX5JY60zjTKaZfGhn+qVf+r7nAkV2D7vLy7LH4fng4BxYzu88z/P/P8+7C4aNxEiMxEiMRBSFSqUAIYP/qFQvFZhCLu/zf7lc8XKAyWRMomQJcfnxmZmZ8blJE7gLCtGjqTAVljB19oy0+emxFAhldkHqkvELM2XgqkIm4gKFuZFnZqWNi6GYkColUvYrKrYgZV4c4BZr+hTgvpOyFiVTAEgSI1EqpTxhTAz4UkolTsmYwORWlGh5M7IBQ4xSyuerN6RSiQRcGzs7SXx4DFphLF+ItEFvoGkWS0dbDHoL034SQJ04aYzI8EAn5aYANLbFLCaX2Wr2lhndLpfbbfTYzTavrpzm+Kj0rAnMwxANWsLMxRSbNIPBZXdWN565d/Wby3u736za2vX8UPG1CrfTQ+lpDm9+hkokeCog8vPGclmzmLy2hnNXt5bifaNlc0e9w2pk8ZSUckm8GHwBtk9eGug1Bo3yOCs6qvASHPf5NFouNBqfBvD5NjcVWY0GisVLzkkCeFGOpsCSZiXDuwUqoi8r29LWAtB8GvULmdMyfN2/WW9mihOmuWDhq1Fdm+DeXs1KB20E06Evc1Z8XgowtLj/0ADk5g7a5tBTLN6iidGrm/CxT03lmq3cYas7VItrNYHQmPyBq1VNFrPBwNZmTEpcdOLBiswvVLIVaTFYG75vBlnDBwgtyF7XQbvHpAM/JVFS42ZHoy0AtDGTsrlmM3i9194fIGs9eFpc3bne6jBwtTn9dUWUDZzgYcvncvKv0zts9c+Xw7sOLsAzaO6oNlssjOtRytcyo6k24a28Mo13NsrWsK8F9wWLBgN8895Ws4fWsXjJ45OiJXkQLW5GLN9sHqqpimmlUEKrwX0bGu0u3hbS50RH64F7mDA7kZV/nd5jq+/CQ0tbT22uOlTeawsLpmIqhWr45T9jPjdGmhy29Z1ncU3oaCBKwI91F5s4WwCtNyV3eFsPyn/8aClfkc7qezthhYUZWq0af/+M3c7sC8AWsiclDGNtQvnP4Wctg91z5nLIzdbPFvC2CquLt4Wxc2XY8CQPzlpLC1iNpPUuW+M3vuDlX6D1dh4oMtNcbUrT8rBhwIMVOXERJ/8Gh626szYcHfFrC1VNdi9Nc7YwK+K2ADs9NyWGrUiDxa4v7gYVWYKjCPg6m+94mV1PCn5BYoQXdSj/M8ex8k/rPebGy3iYGhmoNks7q21u3hZSM8CvVEVO/l+fzsl/uctW0aYZfLP1n8juVtsMrLJQVGE+s+BHpCIz0yhO/i3Ooo6WQch/YN3U4u0/2O163hZyEiKwqMNVezw3a9Emr/F6+xCgcROZdn+91VFOsXgFS4faFmCzzUnn5N/gWtG4QV2i0eJDEwCvdl+Dk+Y2WWraK0NpC7Aipy7olf86MP1rNPjQBbCF9la3neaWodgZceDxqoaqIvOnSCkWjbab4Ko9lGicLXRd85RxJ5xgUZ88JLYAXjNh0mJe/u3eLe1I5V9AN31X68ycLVDU9FEYcjygVCqwarPnWuVuW/1+HLX8C+C1XCmyWXhbGB2P1hbgi+VN4+TfQDuLDtQOeUX2PSPb2uqx88fTyePHIMSTybAkftWmy72upr0RRONt4YNGW48tpC+UIRo4QUVOzgKrtpKRf+OKO5uDPNdCiufDf95Z7aSY2gR3smCiCoEtwF0/gz9p1bvMdWD612jwyAfcFr6gem0hJXfQ5xBAmOILefnXmRuuNEe4IntD7cPxywc9Xt4WFs+cPKjaZOQ/u0f+yw7uHYaK7KOb+P71Znc5v6iPGsTIArotYzov/0Zr4wcRk38BvNqOImuPLRTGhUsnwxJmUVxFUtbqe6uGGw3WJrSFc2V2Az+yzA3L0oGTZKbyb7TZqeKqYWu2frag+ccddmShJJRyxgRMFgbbvMVc2ozOa12gn9V4dAS0hatFTgrqpjSGWhQXKh1gmy2hJKxGrm9bhSZt6mPIWq/7Lu3R6xi6grzQ6FQKbBJbkvoy8/c7UVVk5aNKNHQl0BYa2eSBxpuKyUNgU2HjqRjGtq0VCAeSmofvIWy9swd0Hj1Dl5wRQu4UWA7TbrTOdr0Z4WJzevXjZShtYXOdGdIpqcUTg6aTY1kMm8VRdsVX4kMnBf9ZuekEQltYjlc1mg1M7hLzg6STYaNi4SftLC73PqTWdvrSyjce70I5b+K1rTaWLhWsQUHVZDzYAQCb27If95Wgu5Xjt4h1b516D6kr4KVfMHQx1BJVEHQqTD4NfC9FU47n+HKEbKcfEsS6NeSzbYjPN5uYvouhsoIoTBkwAehvFm8njrDd8KP/JUCsIU/+hNbR8bPnzOXwo6nZA9udDMuDHwAFHnAXRzhuqQ9fgmzEv0jy06OI6d6ssOth200beMhUpcHE6W3nfDhCLXnnAsHDkU+PoN1i8fYGIw0NYc4AqZNhSxkxKXu3GynbdqIXjtx9HDFdWxkDlx6HKQTVZHIqTJzB3Iay4XrYiF9COPKTJyjhSrT4GRtTmDmCcDJsIVuUrQjzpr5xgegLRz57grbtqupAYUqpcXGCdqBIhVXpaLiMEO7Et8SLcOSDGqQLOn4ATioSaqbABA12OEYpbcUI2Y58SPSHI2/vQJq65nc9FpCWsYHnFLAMFAI3pI1Fe9HB1bxN+IPb+HUlUk3Zx6ZuXsCuU2D58M83DOYmdBZ37P7a/4f7FdlDd3MX0tTVuWmQutcCuoECbAPQB7xd6BL3aDXhH4489RPSrvu90wQlJT9Q6hRYGoAz2LeU4qjOS05cIALBkZsOo4Tr0jt0oC7nBJAUBRYH1wG97RC+HFXD3SICw5EfH0FZmHfsFgA3JYCiyLG5gI12V29FVZXaj9YKwZEPtiFM3T5g5FIqMcE/nQzLAVppsTci67gb2wlBuI1fqdHBtbN/B5Xpt+lUmIJpOfM9VHA7XixKgvhnHzhyE7oDI7y20W4IOD2rsIREkFe99XNURnD+dwPBkbt3oEvddaCXEirFr6KosHx4mKdztSOCO3KJGBBu41eodv3l+BWnHm51fstSgWXA9wWMdYiWnWX3+7MRf3gBjvz0O2RDylUPtPHpfhVFhs2BLeetr0UDd2J7MHDkbVRH7PgG5ggzMddf6uDhCXA580ENEgv/xR4iKLhTh1EpSrvJATQj2e9RihybBUpWb/0BSeLUR7cHB0d+sg0RXHeDi5JKqYn+4VIAXLmzFYme+E8c8dv+cCe/RLMS4y3VbjiA+X1XRI5NAZdMziYkBwx+O84v3Geo7GBVkVEHppBR/uGWgEumFcUoJkv1fSJYOFSpw0sF4Uajgzt+KXg4VF0XMbjzawPA/cwPHCLBjBRc5S0iBDjy9i4xwR1dHRLcpu9EBKf9KAAb8Wu/cORNEcHt+DBEuKc14oG7sTpEuJOHxQMXsCoDwZFfa8UCt+1hqHCfXXwiFrjT20PO3MZ/iwRO/WhtyHDkY7VI4PYEZCNWBoK7WCMOuMBGIACHQC8jAifQcoHhEPh4RODeWRsO3O5KUcAFdjkBQSE3HREDnPZvAnAr3wgEt/FLMcAJ6YkAHPmjGOCOXwgPbtBNFwm4gLvcAHB/fSICOCGxFII7dUIEcOeJ8OAGPV5GAu5+mHDkn0UAtydcuJvRD7fs7XDhHkc/XOXDcOEeLIt6OEEPF4TbfSzq4Wq+DRfu75VRD/eXS+HCfbwj6uH++Kew4WpeYriLI3BR3HPr3hJ1zwmrpRDc020i97l1awR87qzIJxQhuGfRP6EIHqEIwt0W+8ojBPfj/9q79qCorjt8gV2WlacUUB4iKAREefhCoeakF9bdvQQULsve3VkHpOURWFFQxpaHEQXbSP+QoBCxzatJiorMpE0miraNExOMmUmMmU6idqZNdVonmUnVzqRNM32dc+69uy7sXWD37GXX8fyn4l2+Pb/f953fOff8Pj8A9w93wX3s79sMLsB5vLcnB7hf7HIP3Ksv+gG4q39wD9zFl/0A3M5D7oH7vM8PwLk8K3ABzuPjR3lOeZ53C5ynm1/ygHv5A3fAeX6BXBZw/YfcWDhfeuOqX4CTfGXPZVXw0ZN+Aa7Ixbnx93/ktZSTaeZ+cGjulTiBF/dkej1KOi4lwXl+JC4XuBc+mDO4j4G/gJN+zUYKHInXSeV6U1bynUSpVzU+esl/wElSisSrGvtIvH0v29vpUkuwn3lns1lecH0Sr6f/xmt0IiM4qalzDu7aC/4Frs951v3U+dZQkX+BkyBMp+AuEpk4OcH1H5k1uN8V+Rs48JqzE5GfODvdIdS1R05wzm5SOwO370Pgh+CeccIpf3dywewZfwQ3raXGE0/snT5z5C75uwaH2tiUmK8QAzc9MPc+PZ1NiLVecX2tk+SdVX6JOZUxd12bVseR6rRku5Cb6BwcydvGwkbYlJPIXf+65K2gLALtDdvRLfgM51ep49A9ceMpUE6uN+JvHdLuhz9+c8ptgg+JfZIG1KN74rQixRk4JZWLO4YcGCPZiM6hB9G2f96dcvlqjCC4k1p0wz81wjm4TfDfDNbawyTB7Xz9AVLZ9qdv9zmoAMHWZsVgvAZFZbbThnsqKgV11TA11JMEB/qO2HeLtn1++9VL3ulBBCketf4KpPODnXXVUFPRoagptfE0INpH/Cn7Ifm2P9962g7uGtFGl2Vgi7kEtV+VaPaSEIWSzthDFhy4al+pvFNpp8uLPyf5IZADzxhRs5c4qXZ7OfAfUb82ws3t3xbL8r3fjt695BVsqEFpJ+6UKNGQLphajTrtWQfGAOHxtjB3u26P3n5FiEmy2FCvF9zSOSBMqjVWRiBqksh0Ee2UiyPzj3uxEtyq/OYNPHW/+iXhT9CACRY1j1qU6RyckHTV5r8A4s4ETx15HpFlZeXof5AYvPka4eeXg8YBKwMDL06qk6ASLsBCUIulw4C4pUTf61DN3xmtrPzm39975ZOrpB9fBo5xBtTHJkiKT1RUEOqSqGPPkZ86sPP3v4YpV1lZeevu34gnNRynqrSoe2ekVPdONRUexbdJLALl5D/+xU9uVaLxKflHa8Bb2DSEzpPudozWzgHwh2puAm/4gVwfxeC+Iv/kYrAHcaWCTpHuB6yiIlD7bTh1XrFx6fgMg7vuBWwH22oYKNKLXXWHV2Mdh6vnHuJqgErlewjbZx3EH1wOLqDu8Ap6rase3EoqJQSVBpbadvKECcpuIHA3iNPJEBg34YxbpJzBrCAdd6k2X/ZC1mk+xXyiIc4mHQOcDoFb67p5uopKxi4Tm+lJcvtEtnHfK3xSDK6wYtt79Qyd4VF7UhiYpb3k5+4rBO5r4thOsEgH6JAkSjWT0UR4FlJyLdfaThzd1xDbaAfphJukTQyNV14zGhao4PIZO/JwI/8jTSpI6O7VEV53nW7YbsAWKJGzMAkRfTS0xu4KwuiQ0N3oJ4utt8WK5Ts1hZqNnZk6uACvU3TshUaykdl4jzBZDoGDnchDQzGzzYQtMOESE3t8Gc83ExXzMQjuPkENgBVqyw7e2yVutpZKUA/iaezyxdX2kjGv50c/VPH/kqNJDXiOsfCeQzmZ1GwdBOFCpZDPO65hHH5BpFpJIxUntbLUDIG6CdbEOw4tTqBm746opDJieXR6/RUYmqQy7/4oqZUljKf9u40Mw2MLp+bijaikHovHrGJgzAPHykhZYjVdb+8nFJHNdxiWt+2kF0RSc/N9VFIRWbwFXbVlx8hp7DvvKwP+KprnOqtowUV9VSY1V09LJRW+gDcPNOiqSibafcTPEkErAvvPs1be6JgOXeqOX6eKCs4N5S0tq01sy1FfcCKFpRuMyPo9Blar471IozLcc1pVQ9JcL3jIai1VtV1DJGXBzWQrBk3HTTxJKgJoRUw45ab5NkRnc/81aC3bu58FRcXzaUgKM6NivJUzIXtj7P+b6ImxOIzm5ALscQ3h0UbtYDs5WZh7RMK4eeuU0WKg+YhMXRLume22Gv7vx7NEx226qrZnbL5SD5mr3ilhdQaeIwNzVlIqTy3F4eQtXx3L8+ZmrZVDXunzAA9+ZNnRFp7+0Ve9KIMi4JZOIdPusJgAZC+PUs9YvaVZdlnQaMpB13uspUTwuV+4NNMtw2an1ttqKmmjLTbZ0uEOWeFhK+oLJk4rRGRoXjSyAyc14KOUm7JFWdCbO2/KKAuQ/jsGLSwtmogvfszzZJuWeuHLCkVTeIvli4MAyGIKD5Ot7tgAS2OXZhg7WetUpCLywdRTUxE5tLAiY4z0++0yoEMRefKMGVdt6KMLcyO9AE2QhcT1dlkYOOf1FRmi/4kSVssI9J+eRjoiHXgzYelCGJto21ZrYVu7vCoL8NEVw6V2+s9PorwzbXZ40atCeVlgtCyz512v8Sb61m7uttN//IZgr0ITYjNlhUJwUqfZhuFGVPGThwafWX9Kz9M/hJYaF06S/l3IQvDabD42oSywrZNl5GUB0v/hwTbWFpELkvHXKsOAwRG5RJQFndV65jQAQySrBRjpjec62RqtAG19kFzQhNhcmR4iyILBaLrTjFdIBEvtEbNeJ3Bk7OpIOSLSEV5Gvl0WOk8QkwX4mPorDFct0n9MmrzQhNgMXrNQTD0LWzsJygnAg8pWd7ZN3PxR0BtTKLVKTck+kCzk2WSBo7vrYbKUe5psYLyV1VcL9J+9Selt+peMTfiVJheE8PB0NFsy2OSRLMD/W/7syI4dONngQwuXhc8XNFEW1kWJsVnD1v61wv0FJ6T/9rNtHMPvaykUOREycqQUvOW5YqGus3Dnu6AslLs3bU0nWowmW6mdON/QBN5Mg4W6sH/L6i+/60bqoWTrOrBVz+9roVJ7ufwcKQUvySYLTFXL8TnLAqL/bhNXItB/QF6Yb0ATZWFDPC6T8f7t7ptgLvBgljYOl5oZYe8fldrzH5GOshAe9x2bLJi+6J31sR6MSM2xWk5fQvMRGbVWPZ8c6VwWVFTEgkD+bAHKguns4VnJAvwZzcEDrFWk/9gly30NmriJFCTs327WmtiBnroZmUWDSu3LWs4gRGRA+krfikhHWVgdy8cmrbMY35sELktZDayUOmCpLdB/CJ2f4avQMG+qqDBYqIcIhbrlwsliLM4SyEBjT6vZRv/xazJ9MSKnFuo2WTDqRiaHMJAHK6IijaYYrrRA+3AtZxVX/6Fx0b5D/y5kQbUpW5AFHW20tp7oLRa26crgEIv2pq4tpUaOP9aAP1uQ7MMROUUW8LEenr3NVnPbgcH9zY324KzoqB/fUquv2q4Tky3qcbVvR6QjvJXpAcLuO1NdY+Qs2tYze+4MHj86/P5E94FOvcXIMWgTAQdwbG6C30DjY1OdtFGBZwVRi4GhLWyVeeuXX27dajZyeprBkwaJVUGnwrWWX0SkYzEUtEL4/fEE6rQleFRrsWDTCoy8MC/C36CJzJKUXojuyAYE8gDtIyQAvcFDZy0Jo/wpIh1lgUpbsziVP8MOsQ+MNSQ+JjGS8n36dxWcaipsw6r81CkzF1+wLDGB8seAdISHfv2EtJQNy2IKNi5an7/iu6ty1yVHqyi/h8aHZ3Cws798CJCJBZFS9cCAf3hYkD0aj8aj8Wg8BOP/huqLvA/2JNEAAAAASUVORK5CYII="
+            "category": "Outputs",
+            "description": "Posts messages on a channel."
         },
         {
-            "path": "Inputs/Rdata",
-            "displayName": "R Data Reader",
+            "path": "Outputs/Report tab to PDF",
+            "displayName": "Report tab to PDF",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "batch",
+                "output",
+                "pdf",
+                "report",
+                "print",
+                "tab",
+                "convert"
+            ],
+            "category": "Outputs",
+            "description": "Prints Report tabs to PDF files for each record of the input data.",
+            "subcategory": null,
+            "icon": null
+        },
+        {
+            "path": "Outputs/Google BigQuery Writer",
+            "displayName": "Google BigQuery Export",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [],
+            "category": "Outputs",
+            "description": "Allows to write data to a Google BigQuery table. The table can be created/replaced, or records can be appended to an existing table",
+            "subcategory": null,
+            "icon": null
+        },
+        {
+            "path": "Outputs/Web Image-PDF output",
+            "displayName": "Web Image-PDF output",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "screenshot",
+                "image",
+                "pdf",
+                "output",
+                "print"
+            ],
+            "category": "Outputs",
+            "description": "Grabs screenshots of webpages, optionally producing a PDF document."
+        },
+        {
+            "path": "Outputs/Report to PDF batch output",
+            "displayName": "Multi-tenant Report to PDF",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "batch",
+                "output",
+                "pdf",
+                "report",
+                "print",
+                "tab",
+                "scenario",
+                "multitenant",
+                "tenant"
+            ],
+            "category": "Outputs",
+            "description": "Prints a Report tab in batch using multi-tenant scenario configuration."
+        },
+        {
+            "path": "Outputs/GitHub",
+            "displayName": "GitHub",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "git",
+                "repository",
+                "read",
+                "write"
+            ],
+            "category": "Outputs",
+            "description": "Reads from and writes data to GitHub"
+        },
+        {
+            "path": "Outputs/Append PDF files",
+            "displayName": "Append PDF files",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "pdf",
+                "append",
+                "combine"
+            ],
+            "category": "Outputs",
+            "description": "Append multiple PDF files combining them into one PDF file."
+        },
+        {
+            "path": "Preparation/Standardisation/Standardise",
+            "displayName": "Standardise",
             "language": "R",
             "optionsVersion": 1,
             "tags": [
-                "rdata",
-                "rda",
-                "rds"
+                "standardise",
+                "normalise",
+                "range",
+                "interval"
             ],
-            "category": "Inputs",
-            "description": "Joins regions defined in a shapefile with points defined as latitudes and longitudes, and gives meta information about the content of the shapefile"
+            "category": "Preparation",
+            "description": "Standardises fields into the range [0..1]",
+            "subcategory": "Standardisation",
+            "icon": null
         },
         {
-            "path": "Inputs/SFTP Downloader",
-            "displayName": "SFTP Downloader",
+            "path": "Preparation/ForEach/ForEach",
+            "displayName": "ForEach",
             "language": "PYTHON",
             "optionsVersion": 1,
             "tags": [
-                "sftp",
-                "download"
+                "for",
+                "foreach",
+                "paramater",
+                "iteration"
             ],
-            "category": "Inputs",
-            "description": "Download files from a SFTP server folder."
+            "category": "Preparation",
+            "description": "Executes another Omniscope project multiple times, each time with a different set of parameter values.",
+            "subcategory": "ForEach"
+        },
+        {
+            "path": "Preparation/ForEach/ProjectParameters",
+            "displayName": "Project Parameters Batch Setting",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "for",
+                "foreach",
+                "parameter",
+                "batch",
+                "iteration"
+            ],
+            "category": "Preparation",
+            "description": "",
+            "subcategory": "ForEach",
+            "icon": null
+        },
+        {
+            "path": "Preparation/ForEach/ForEachMultiStage",
+            "displayName": "ForEach multi stage",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "for",
+                "foreach",
+                "iteration",
+                "paramater",
+                "stage",
+                "orchestration"
+            ],
+            "category": "Preparation",
+            "description": "The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.",
+            "subcategory": "ForEach"
+        },
+        {
+            "path": "Preparation/Split Address",
+            "displayName": "Split Address",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "split",
+                "address",
+                "street",
+                "zip",
+                "country"
+            ],
+            "category": "Preparation",
+            "description": "Splits an address field into streetname, streetnumber, and suffix.",
+            "subcategory": null,
+            "icon": null
+        },
+        {
+            "path": "Preparation/ExecuteCommand",
+            "displayName": "Execute Command",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "command",
+                "execute",
+                "command line",
+                "script",
+                "batch",
+                "terminal"
+            ],
+            "category": "Custom",
+            "description": "Execute a system command.",
+            "subcategory": null,
+            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAUVnpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjarZppdiOhkkb/s4peAnPAchjP6R308vsGKcmyLZf97FcqK20pIYGI+AYyzfq//93mf/iXs4smJim55mz5F2usvvFLsde/dt6djef9/JP7d+795+bxheejwDFcf5Z8O//+uXt0cB0av6Wnjsq4fdHff1Hjrf/yoaPbhYKOyPPLvHVUbx0Ff33hbh20a1o21yLPU+jrOt7aX8vAj9G3fZ+eXIePf0dh9WbiOsH7FVywvPvgrwEE/XEmNL7w5z1zog35/B5590FuI2FBXq2TfRqV+RiVx2/ui88/BCXk63PDB+8XMz+OLz936fXim7PET1cO43Hld5/X4MrH6dx/9p7F7L2u2bWYWdJ8m9R9Kuc3TuwseTjNMi/hJ/G7nFflVQzZOwj5tMN2XsNV5wnLdtFN19x26xyHGwwx+uWFo/eDQOlnJYivfgRrToR4ue0l1DBDIVqD8AY+9Y+xuHPdei43mOS003Gmd3SmUfdG3/4bry872ltT3jlbHmvFuLwmIcPQyOk7ZxEQt+95lM4C318f/2lcAxFMZ5kLE2y2X1305G65pXkUTqADJyaOV605mbcOWCKunRiMC0TAZheSy86K9+Ic61iIT6Oj4kP0nRC4lPxklD4GqkV88Xpt2og75/rkr4/BLAKRKCYhNDU0YqXARv5ILORQSyHFlFJOkkqqqeWQY045Z8kKfk2CREmSRaRIlVZCiSWVXKQUU2pp1dcAOKaaq9RSa22NizZ6brRunNBa9z302FPPXXrptbdB+ow40shDRjGjjjb9DBOcmHnKLLPOttwilVZcaeUlq6y62ibVdthxp5237LLrbo+oOXOF9dPr51Fz96j5Eyk9UR5Ro6nIvQuncJI0ZkTMR0fERSNAQnuNmS0uRm80dBozWz1VkTyjTBqc6TRiRDAu59N2j9i9Re5d3EyMf4qbv0fOaOj+G5EzGrovIvc5bi+iNpVthg3mREjLUBfVBsqPk5ov/IeTfn40/2mD33ZESGvvxU8bI0s868pDq3PZOrpbLHUbuc+ZzE6rSHI1u07oJ3NeMwl/sDBzVLfAdBe2r8SeSLtd4PW8p0v0l8gLm0Oloclhr7lX2Ft5OvFHmgIjlKT5X1fhncEF4k+M7l9be53AOp9TADbO+nXj57bmL42f25q/NH5ua/7S+Lmt+UvjD4tdw+4U6dY/KfiuRy/tFkck1Wq+U3w9je3CkEqlwIory54jNu/29D2bNjbsUQesG6mnmHaItodY865zUmlSVCeRQyUMUiiN19lrPqWzP9Vepw65yehC7QWpIU8H/PRFdVPlR805yry0VrmOmBFdkxh7nkHRs6+VkDZl97Annw+wBbHgGEhdfUb0n/AV0BlnHugAkdRkj276AqmccplQGHZ73pgm/FiAFriNQ7OxeFdmprJCQqeWcknVcRPjRaLZMzQu3XtMIFYofbSSwO1GqfasRLtaRKXoJ6Cnil7ePh/NV1+8OoK7DCuVuoK4GiGLVJQmI3E1RSXv6FHKZky1ph43tT9WzsGzdKzUlkYH0+flIyEgIRpz7JJ7a7Omlfac09ByTJbYj52lrtppU/sA/qEVlALU03qBHrKdWVjzmJperJVIFFcOo3chwUwmAoEhAcFJYI1QxgaiNZkjyaxLvdpc28/JiOirNCkkW2eadQRfNaYoEMA/OVSIegddi6djsox4FKUNIWGTHw1y255c6bVAC6E46Atx2rZ0IxXH0PoIOyfLJDMXJuvczqXwE/rOzfpOSTG53RQe26ozu8wfpCYcl1tx3rjCMDXewdXbWi5ye17DilCpBDdb9Ihnu7tvZUBPeY3WQictSkqRZtssUrlTWa5UcpFC2EtaGl4DhwL2a9pQyGkJs5U6CWSficzMJN0kPvZ8uoIZc2RPRIpl9duOixa+s84WvJ+hI5p3nn24HSv40Wasm7BuiLIDBCCEFuNuAJvyMXkbru+ZznXG+Z7PZ5SdM5Qa1lwgB6+9ekrrVPjBIv2a6n8+gwVC8nzV5YdrvhuT2Y9Lvujy7bIvxuTedWfuc/zrFM19jn+donlb9x9MsY8kG5CbVGvH+mwQPqiymcNQeV7irkK13/OlqZSahUpOJJdv042JPkRIRlf8sCAgV01Qwiq5DQpwbhMFdBSgnp+ewfqxxuo2jo3AmtujIEnXPNyyvCivUZVZFOHBBiBIJzn2NB6pK92WuuMAIgEPXxBtjmyPVmfQvXYXkGskK2Bg27AT0ZoBBKbKvFIbLpiszfsG2WbDsZ8qHdnSTlTHLPBqv0LLTEmy2ouJb/ym5tE+SQXZeGqkW0H08Hel8MYhSa59js2PI41ufbnYI5DJUm+WdZk0ZHuQPqGQCVIF7bQRv+ylUPdTAWj+dUJBw4HBedkrKULeKyVY0cnJL4wzSLfTIJtU+UP1A7AfeY5bg3RvkNOtwckvbSIbK6KwFXQR6AajsBHrrBGrfDI2JmKyiACZu8HDwSKejvtQddJdInu+WHZGtH0A0FXIaDLvl70xltObipmu66zcfRA0AVmcBxkYCo8j+Js0nO1MYXQtEAQEHbfHMMjk0TUda3OkGsm2ZvC9E5jSl8mUpG4XDCcAPKwUF0RH04nItjWnWi2+hqyUtTIeb4nF8m4JCxcRW0aEoLkmULu0CHHLC3k0IYU6DkvC/Q+WBH2p2fkvTjcvv7jie4uuiiviS3jxNbYfRCjbMvjdFrk3irKi+TLAtPF7a4sLhVbstEmRgqF0mipMyH25E9kuhvp4Xx332lDA09rQyqAuXlHx1R/BoUezzuDvMP6LijuVpduHWlxvpdVweJeu1VpOCFjt3jcdEmIg9+SxlbkG2BGhpiQKp6JazZodw2TdFORexjgmi9iIG3yk4EgJtHNx4ukfBefqQERWBKCQQypOYq/obzA7o10CQIsQdsAQ8nHYjWZUJEqqUkchj+i/uBBJp0o6OYcJIxaxu5bx6g3UN87XvXZWjY7AdswB89zxsLonUzw5WPsi0QqYs9C6anrRBwkZYTW+aKSMTQ8GkVYH9RUVOYLfqhJRLthF1p9IoCuwA7NrPeSOPkCQAb8paIZblJ9DUbYsxur6dQewsaRI84O6zMzF0Cp17aNPRLJQrhvL2VA5eaYBL5ydn0oG1D7VQaKNVUQ1ZxkvirXo0AsG3KOsKJeCd9WNDeWO8DVIms+gSCKcbT9woYIRONfXmHiDxH5On+bi0nryxbsHLF41c9XZe1D8Ivdx2RfCvQY43RhvhwMfxy+y3tzTPj965ORbn4z19HrB8OXcLgf1Of/NrQDeMPMGmerd0xlSDwxhqnksLi9CVggoP1sTFEIVWQRGuV8VO1JiDpICWa+VnXOuqSkvbGwU9mFXbeyD8yPGz3HNkTwKGK5ECJDP1XeujWdo0vOYMftoy6QJ2iKCu8rjoaQ5Jkahu4rU10zqdtLR0KVSvZ5nRBbgYpomMjEDUHJsewzL6kVOdPM4iwXipTw9yU6OYzByDNakPZDlTLA5vA29jercKLRjyDVUjzNOl3YZ6OaUHVZkYQ+SgGfRcy4iPTtz1kpdNxJKdKmGOmEFlBx0juQRusy1wSfQTQPNVAWtrh4D6zBXZMyCy4ZkhjBpKrcK4ibj3mOJk1SMOJL0NGGueZ8wkGZ1g6dBZBLHOsYvfUq6j8eLPG7UcYjgkEdUp78Oaospqmsmk1KCptq6v9ONHLq5UYfuDWCmWZ+TiDRAaETwQhdP+d18JRfSC8p5Y5zPAGDsPwXDW48X6XzmHN02aUdoHeX9UjykO9V8YJrn4Yw51aXptg/mkhJljcDjrTaZXyYIeAfmvGtU41pcwcnl3GO7ZxU+lMIh4wmCgS5GR0/0hdx3oPK+o7IcVJa3CCM+AUtqFQbDU4OzBCTj7nWjA09LahEU5oL+jyOiRizMMENVjMamUqLKz5DLWBXPX9oA/zrRnhWqUbM+azOrI2TqYxYPejnsMnM7vExzKtWRreBlICp9eVKSP53TaUsMeFrd5xkN/RpxDhshrxZ3pAh/CqXZcdKTeWOAE6P+asfD/E4NfRZD5ndq6LMYMr9TQ58T0/xODX0WQ+ZLNfQ2FDweAYDBgX3QuUrSyAHJYRPH7gklNstGlqyTA65sfFYsW4QBkyc7+9TPFGJUF4JPZMC4ybDWoKM6pYmmCZYTPPIKrmDjkFaJL0FLyZ5tj6Wbf/DCGZcPAdB1JARusMEfkIDah4z2iHo7wHSujZ7XNdZNJOR2DnqHQMSthOoqoSC1Z1yVSZHIXB+HuCv8ZmsikxeCnJNMLqx1ddVK6AUixJeq4fQ2FW/jJJ+05LCheOgwdTOHM1BgQC1nYETLQitKMB1zXa3u5kB1w5LuqdX8jdN7oVnMz0TL95rF/Ey0fK9ZzM9Ey/eaxfxMtHyvWQwi242l24MYsEpcqeXWEq1WmrMQVHEkMkMFyiDJCSqDgiQegVnkI1xKIiXDHPB6CGq/7ML4IXZT9bpjXJKejJVHqyLQm+7uEviid8imClgS+OyunjUxHWuhMhjJQkHZyQhQMzUohm/kBPqihEGy7LlcRO1XqJGh2eJQQXNCO5ne0NkAfWFiRezZwwBzSbmyUNSajZy+ElJoMK4FVMarjjJdoggqJRRG9zCRQd3M7DH+QpeZcS49e2jRwxq6p9TFqm/NdV8IigJBZWWU2IWeBVeN79cHJkBxK6trcENSb9T6SB1byzoUN2Lt3anJ1b1FNQzUNRCPlqnYFRCl5tANtDaC0LvfAEkfonfqSWLdN3cktWvOe4qQ2ek98DhP0HchskBzBIsjSczULvAEQ4lWv4Sov+6ReGkeAXJgMKIOttNtHufCdBwPsXt/8g1dNs1B0KJ/E/lCAoZ1y2wOIx89dL8wn2p2nuuSz48rp5ar8ag7wlM2gLpV/m4IzC2FySFutIXPUZNpl9CMKKEHHdZoioMOSW8EZcMrmR6jIx8AqIXOVtFbQrWH7s82GN4IoE7IPgxlQWfWpbKxohUptYRex92CpWbq4zNfAcmdIz+JvhtHvoKR9pXoezDkV4x2EZr5BjS+ZsoPzGt+sA/xmSE/7cS1Yg70+Gvn70DPfbdAHcXIgGoeVFbUfXwfIBIHoo/lCmUbhtsDeEABial5ReBqqmZfJMZGVkWkjKVlTINLFEvEAsWPtO+Y34o1rhpLwVEtxI9GJsP9Ia9KxlCEiKZyU4xu6WY99YV3YABrOGaGx9LiVh2jd+GXjvpsGkum1pDA8DHFCIcTzPgMKSg1hYqiD78g3lqHtUF7HMbIEwFXa/Y4H+gzmahSFakHYuM3UoNnSFmIlKIGaBChuHz4WWmPRDzVjEF0rJdVk6dKpLiY9Y7fjd7PvSqfKTmvVnIFvVuFAlE3pkTmJgkRfEGiuhb7rJbLqrok22WbrHvXjgvWkjE/2DAASdEEuBmsbl4KyVwhMWYHL0PhHU3gmlyyjw42nuRUv526fz+6LPTslUPXt48vqfXH12+NT2ZVyls0/CGkoTMA+gsaakUtWLS/PkyQFwzMoo2lD1HobqHgUDJSJaOe2m4wQUO0E2mDLI/I4QZdynAUs95XLdSuRbFLYzl+ttVhfi8btNzfitp8V9U/LWrzVNVjLPKcQiTygEnUPpNaY+qPvJ3hbE1rdq9WqTPCT0lFlsD7ZOoMQW806+OHUW8rwCEqJBbdU32sn94AzqutIk3vFJ6boHrjoUDRy82c1FUNc00kLdRm7Q0PJbuxRHpHM9zukqlDKmc0We+v4ckSdaK7fIvK2fpEl0Mftd4tsJC2GzV6tZWgO0UilCSsnYgoQogYDQoEYT0SdYxli+QLtaW3YfXBC7Xr1FxW16596GMaiJjAJeflp/dFiVQFMs2r8FYVfhKz76YxJm65GR2AVms+sQi756m3myBEJbV/NX3f0vy+6fuW5vdN37c0v2/6vqX5fdP3Lc1/1hQ4bAoNMaByQDZOasiL4IcJfq9N/kAys1Kx8Ik+xFNDbTkNMM/FAGqo0YdjBhzTK5ftuPNoyT3NJlmSzdgqD4s+JhH0DnybKD/pnsQHyygqwNChP/BIA+lRa7w2P7ROENa6OeJ1IobawjCJlu0DvSWQkFFtnqiqKD0oGCFgG4K34+4b47TqJJeK4bLAZBPLJZr4PTlGrQ/cnkVXOYi56ril17fqbiQOjFFJ0Rx23+DR9n3sjHYFvKjdQk0BCn5QnvAJjnZY+KDplr7eelQBo6CbhMUcmkc5gZa6Yy3jeEhfULEBRayPQS3dN/QB+ViqX9hI0ade9CbPoIO1u7dAbMfyGuS7Cr/e9CGGhUiMOt6mQ8Lz9p5YTGDRe3WDereX0SPMRR+roKpRa1rTjamtMS8vDdBp4rAgpI1L+bo73PXusGZcUKo/TL90t00fDHpuaX7f9H1L8/um71ua3zd939L8vun7luYvC/zc0pymOYpFdKLgC4GPVG1rNoV1s/kqsFAjWImG+x0gfuoL4VjwaRN5RVEHo4VHReE1qkxMydJNSkQjlEJ+N/XnnOl6D9MCDQg2lCOv7fGj/jyPgwraRTdZUGJoxogu8uc2zg6WS6pZEH1yBf5YtVW9GVatPrsSxsa/4jydT7p1g4nLun0YisP0ybfbGPqwDlILBKnYzuWCjBDgTGw0YgNg41K2DN32dO2qA0bKrCIOPRQWIQ78qAcUO3pId3SC+KKWcge3QlH9A681FI560pJn16cZsffYTNSrf3uakYtS2P7j44z6MKOKmvM4o7k/z/ijxxm7XCN+8YSd+fbxvH80fm5r/tL4ua35S+PntuYvjZ/bmr80/mKx//0449ldImX0cca2XfRZdMsZN6VP3ThvShF0+JTifcdUqVfo5H06DwWiiMkkNQ51kX5ldVQllkxEKUrtoZ9BIAs/jQfWW1CTPppuKGWKyuFYNBUd2rWCAR5YeO9rPx/Ndyf89PifdcTy4q6s+X8+fh9CeHl7TgAAAYVpQ0NQSUNDIHByb2ZpbGUAAHicfZE9SMNAHMVfU7Uq9QPsIOKQoTpZEBVx1CoUoUKoFVp1MLn0C5o0JCkujoJrwcGPxaqDi7OuDq6CIPgB4ubmpOgiJf4vKbSI9eC4H+/uPe7eAUK1yDSrbRzQdNtMxKJiKr0qBl4RRD860IsumVnGnCTF0XJ83cPH17sIz2p97s/Ro2YsBvhE4llmmDbxBvH0pm1w3icOsbysEp8Tj5l0QeJHrisev3HOuSzwzJCZTMwTh4jFXBMrTczypkY8RRxWNZ3yhZTHKuctzlqxzOr35C8MZvSVZa7THEYMi1iCBBEKyiigCBsRWnVSLCRoP9rCP+T6JXIp5CqAkWMBJWiQXT/4H/zu1spOTnhJwSjQ/uI4HyNAYBeoVRzn+9hxaieA/xm40hv+UhWY+SS90tDCR0DfNnBx3dCUPeByBxh8MmRTdiU/TSGbBd7P6JvSwMAt0L3m9Vbfx+kDkKSu4jfAwSEwmqPs9Rbv7mzu7d8z9f5+APtgcnf++xzBAAAPoGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNC40LjAtRXhpdjIiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6aXB0Y0V4dD0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcEV4dC8yMDA4LTAyLTI5LyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgIHhtbG5zOnBsdXM9Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczpHSU1QPSJodHRwOi8vd3d3LmdpbXAub3JnL3htcC8iCiAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgeG1wTU06RG9jdW1lbnRJRD0iZ2ltcDpkb2NpZDpnaW1wOmY4YTNmNWVhLWY3ZDAtNGY0Ni1hNzQ5LTYwNjk2ODliNWMxMiIKICAgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpmNjQwMDRjNS1iOGQ5LTQzN2ItOGJjMC0xZDgzMzZmZWQ4M2MiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyYzg4NmMxYS0wZmZmLTRhMjctYjM0OC0zZTkxYTYzZGUyNzAiCiAgIEdJTVA6QVBJPSIyLjAiCiAgIEdJTVA6UGxhdGZvcm09Ik1hYyBPUyIKICAgR0lNUDpUaW1lU3RhbXA9IjE2Mzk2MzUyNjc1Njc1OTEiCiAgIEdJTVA6VmVyc2lvbj0iMi4xMC4yMiIKICAgZGM6Rm9ybWF0PSJpbWFnZS9wbmciCiAgIHRpZmY6T3JpZW50YXRpb249IjEiCiAgIHhtcDpDcmVhdG9yVG9vbD0iR0lNUCAyLjEwIj4KICAgPGlwdGNFeHQ6TG9jYXRpb25DcmVhdGVkPgogICAgPHJkZjpCYWcvPgogICA8L2lwdGNFeHQ6TG9jYXRpb25DcmVhdGVkPgogICA8aXB0Y0V4dDpMb2NhdGlvblNob3duPgogICAgPHJkZjpCYWcvPgogICA8L2lwdGNFeHQ6TG9jYXRpb25TaG93bj4KICAgPGlwdGNFeHQ6QXJ0d29ya09yT2JqZWN0PgogICAgPHJkZjpCYWcvPgogICA8L2lwdGNFeHQ6QXJ0d29ya09yT2JqZWN0PgogICA8aXB0Y0V4dDpSZWdpc3RyeUlkPgogICAgPHJkZjpCYWcvPgogICA8L2lwdGNFeHQ6UmVnaXN0cnlJZD4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii8iCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YTg0NDYyZjctYTZhNC00MDM3LWJjM2MtOWUyMWQyMTFmM2VmIgogICAgICBzdEV2dDpzb2Z0d2FyZUFnZW50PSJHaW1wIDIuMTAgKE1hYyBPUykiCiAgICAgIHN0RXZ0OndoZW49IjIwMjEtMTItMTZUMDY6MTQ6MjcrMDA6MDAiLz4KICAgIDwvcmRmOlNlcT4KICAgPC94bXBNTTpIaXN0b3J5PgogICA8cGx1czpJbWFnZVN1cHBsaWVyPgogICAgPHJkZjpTZXEvPgogICA8L3BsdXM6SW1hZ2VTdXBwbGllcj4KICAgPHBsdXM6SW1hZ2VDcmVhdG9yPgogICAgPHJkZjpTZXEvPgogICA8L3BsdXM6SW1hZ2VDcmVhdG9yPgogICA8cGx1czpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxLz4KICAgPC9wbHVzOkNvcHlyaWdodE93bmVyPgogICA8cGx1czpMaWNlbnNvcj4KICAgIDxyZGY6U2VxLz4KICAgPC9wbHVzOkxpY2Vuc29yPgogIDwvcmRmOkRlc2NyaXB0aW9uPgogPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgIAo8P3hwYWNrZXQgZW5kPSJ3Ij8++vOhbwAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB+UMEAYOGw/fAt8AAAg0SURBVHja7Z1PTBNbF8DPUKSIEgs1atSE2M8NbN/GBSsDGFMjKcn7KAHlj4qikWIDoRuiGIx96UAIBCNFW4gsJM+kBqIF1JUh3bytRY02RiRCbAtjgTrGcr7NZ/LynuLMMJ3O0PNLWDF3mDk/7r3n3rkzF4AgCIIgCIIgCIIgCIIgCIIgCGITMEr+MYvF4jQYDO25ublgNBpBr9cDwzBbPsiICDzPQyQSgVgsBsvL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"
+        },
+        {
+            "path": "Preparation/Field Renamer",
+            "displayName": "Field Renamer",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "field",
+                "organiser",
+                "rename",
+                "name"
+            ],
+            "category": "Preparation",
+            "description": "Renames the fields of a data set given a list of current names and new names.",
+            "subcategory": null,
+            "icon": null
+        },
+        {
+            "path": "Preparation/Join/Interval Join",
+            "displayName": "Interval Join",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "inequality",
+                "interval",
+                "join"
+            ],
+            "category": "Preparation",
+            "description": "Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.",
+            "subcategory": "Join"
+        },
+        {
+            "path": "Preparation/Join/Inequality Join",
+            "displayName": "Inequality Join",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "inequality",
+                "join"
+            ],
+            "category": "Preparation",
+            "description": "Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.",
+            "subcategory": "Join"
+        },
+        {
+            "path": "Preparation/Join/Fuzzy Join",
+            "displayName": "Fuzzy Join",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "fuzzy",
+                "join"
+            ],
+            "category": "Preparation",
+            "description": "Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by inverse document frequency.",
+            "subcategory": "Join"
+        },
+        {
+            "path": "Preparation/Geo/Shapefile",
+            "displayName": "Shapefile",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "shapefile",
+                "geo",
+                "geojson",
+                "shp"
+            ],
+            "category": "Preparation",
+            "description": "Match regions in shapefile with geographical points having latitude and longitude",
+            "subcategory": "Geo"
+        },
+        {
+            "path": "Preparation/Geo/Gridsquare",
+            "displayName": "Gridsquare",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "gridsquare",
+                "maidenhead",
+                "coordinates",
+                "locator",
+                "latitude",
+                "longitude"
+            ],
+            "category": "Preparation",
+            "description": "Converts gridsquare / Maidenhead ",
+            "subcategory": "Geo"
+        },
+        {
+            "path": "Preparation/JSON/Normalise",
+            "displayName": "JSON Normalise",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "JSON",
+                "normalise",
+                "table",
+                "semi",
+                "structured"
+            ],
+            "category": "Preparation",
+            "description": "Normalise semi-structured JSON strings into a flat table, appending data record by record.",
+            "subcategory": "JSON"
         },
         {
             "path": "Inputs/Sharepoint Online",
@@ -622,6 +483,31 @@
             "icon": "data:image/png;base64,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"
         },
         {
+            "path": "Inputs/SFTP Downloader",
+            "displayName": "SFTP Downloader",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "sftp",
+                "download"
+            ],
+            "category": "Inputs",
+            "description": "Download files from a SFTP server folder."
+        },
+        {
+            "path": "Inputs/Rdata",
+            "displayName": "R Data Reader",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "rdata",
+                "rda",
+                "rds"
+            ],
+            "category": "Inputs",
+            "description": "Joins regions defined in a shapefile with points defined as latitudes and longitudes, and gives meta information about the content of the shapefile"
+        },
+        {
             "path": "Inputs/Rds Batch Append",
             "displayName": "Rds Batch Append",
             "language": "R",
@@ -633,6 +519,137 @@
             ],
             "category": "Inputs",
             "description": "Reads multiple rds files either from an upstream block, or a folder, and appends them"
+        },
+        {
+            "path": "Analytics/Websites/Website Analysis",
+            "displayName": "Website Analysis",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "http",
+                "website",
+                "scraping",
+                "analysis"
+            ],
+            "category": "Analytics",
+            "description": "Extracts the structure and content of a website and its pages.",
+            "subcategory": null,
+            "icon": null
+        },
+        {
+            "path": "Analytics/Validation/Model Validation",
+            "displayName": "Model Validation",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "model",
+                "validation",
+                "confusion",
+                "matrix",
+                "precision",
+                "accuracy",
+                "fscore"
+            ],
+            "category": "Analytics",
+            "description": "Computes a confusion matrix as well as model validation statistics",
+            "subcategory": "Validation",
+            "icon": null
+        },
+        {
+            "path": "Analytics/Clustering/GMM",
+            "displayName": "Gaussian Mixture Model",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "gmm",
+                "gaussian",
+                "mixture",
+                "model"
+            ],
+            "category": "Analytics",
+            "description": "Performs GMM clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
+            "subcategory": "Clustering"
+        },
+        {
+            "path": "Analytics/Clustering/DBScan",
+            "displayName": "DBScan",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "dbscan"
+            ],
+            "category": "Analytics",
+            "description": "Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
+            "subcategory": "Clustering"
+        },
+        {
+            "path": "Analytics/Clustering/KMeans",
+            "displayName": "KMeans",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "kmeans"
+            ],
+            "category": "Analytics",
+            "description": "Performs KMeans clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.",
+            "subcategory": "Clustering"
+        },
+        {
+            "path": "Analytics/Prediction/KNN",
+            "displayName": "K-Nearest-Neighbours",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "knn",
+                "nearest",
+                "neighbours",
+                "prediction"
+            ],
+            "category": "Analytics",
+            "description": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
+            "subcategory": "Prediction"
+        },
+        {
+            "path": "Analytics/Prediction/SVM",
+            "displayName": "Support Vector Machine",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "svm",
+                "support",
+                "vector",
+                "machine",
+                "prediction"
+            ],
+            "category": "Analytics",
+            "description": "Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the bondary is made as large as possible to avoid touching the points.",
+            "subcategory": "Prediction"
+        },
+        {
+            "path": "Analytics/Network Analysis/Attribute Analysis",
+            "displayName": "Attribute Analysis",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "attribute",
+                "analysis"
+            ],
+            "category": "Analytics",
+            "description": "Given a dataset in which each record represents an edge between two nodes of a network, and each node has an associated categorical attribute, the block analyses connections between attributes, based on connections between associated nodes. The result of the analysis is a list of records in which each record specifies a connection from one attribute to another. The connection contains a probability field, which gives an answer to the question that if a node has the specified categorical attribute, how probable it is that it has a connection to another node with the linked categorical attribute.",
+            "subcategory": "Network Analysis"
+        },
+        {
+            "path": "Analytics/Network Analysis/Relationship Analysis",
+            "displayName": "Relationship Analysis",
+            "language": "R",
+            "optionsVersion": 1,
+            "tags": [
+                "relationship",
+                "analysis"
+            ],
+            "category": "Analytics",
+            "description": "Given a dataset in which each record represents an edge between two nodes of a network, the block will project all the nodes onto a (e.g. 2)- dimensional plane in such a way that nodes which share many connections are close together, and nodes that do not share many connections are far apart.",
+            "subcategory": "Network Analysis"
         }
     ]
 }
