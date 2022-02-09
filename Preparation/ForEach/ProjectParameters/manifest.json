@@ -1,0 +1,71 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Project Parameters Batch Setting",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": null,
+    "description": null,
+    "category": "Preparation",
+    "subcategory": "ForEach",
+    "tags": [
+        "for",
+        "foreach",
+        "parameter",
+		"batch",
+        "iteration"
+    ],
+    "introductoryText": "## For each row of the input data, sets the values of some defined project parameters.\n\nThe input data should have a field containing the project IOX URLs ( *e.g. http://127.0.0.1:24679/Folder/MyProject.iox/* ) , \ntogether with one or more fields used to set the project parameters (e.g. a field called *MyParam* containing value *MyValue* will result into setting the value *MyValue* in the project parameter named *MyParam*)",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "Iox_File_Url",
+            "title": "Iox File URL",
+            "description": "The URL of the project to set its parameters",
+            "groupTitle": "Projects",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "Parameters",
+            "title": "Parameters",
+            "description": "List of parameters fields. Each selected field is assumed to have the same name as a parameter",
+            "groupTitle": "Parameters",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": true,
+            "fieldTypes": []
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "output",
+            "label": "1",
+            "displayName": "Output",
+            "tooltip": "The input data passed through"
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": true,
+    "apiMode": "BATCH"
+}
