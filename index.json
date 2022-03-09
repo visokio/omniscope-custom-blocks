@@ -161,7 +161,7 @@
             "description": "Posts messages on a channel."
         },
         {
-            "path": "Outputs/Report tab to PDF",
+            "path": "Outputs/Report tab to PDF/host",
             "displayName": "Report tab to PDF",
             "language": "PYTHON",
             "optionsVersion": 1,
@@ -176,6 +176,25 @@
             ],
             "category": "Outputs",
             "description": "Prints Report tabs to PDF files for each record of the input data.",
+            "subcategory": null,
+            "icon": null
+        },
+        {
+            "path": "Outputs/Report tab to PDF/docker",
+            "displayName": "Report tab to PDF (DOCKER)",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "batch",
+                "output",
+                "pdf",
+                "report",
+                "print",
+                "tab",
+                "convert"
+            ],
+            "category": "Outputs",
+            "description": "Prints Report tabs to PDF files for each record of the input data. This block can only be used when running Custom Blocks in DOCKER mode.",
             "subcategory": null,
             "icon": null
         },
