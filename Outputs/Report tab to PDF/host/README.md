@@ -10,4 +10,4 @@ Python
 omniprint , Google Chrome
 
 ## Source
-[script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report%20tab%20to%20PDF/script.py)
+[script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report%20tab%20to%20PDF/host/script.py)
