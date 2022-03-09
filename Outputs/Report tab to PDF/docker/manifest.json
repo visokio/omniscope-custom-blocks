@@ -126,10 +126,10 @@
     ],
     "docker": {
         "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
-        "customBaseImage": null,
-        "useCustomBaseImage": false,
+        "customBaseImage": "europe-west2-docker.pkg.dev/visokiowebsite/visokio-custom-block/visokio-omniprint:0.0.2",
+        "useCustomBaseImage": true,
         "customSystemLibraries": null,
-        "installVisokioRepLibraries": false
+        "installVisokioRepLibraries": true
     },
     "designLock": true,
     "apiMode": "BATCH"
