@@ -37,12 +37,13 @@ Public repository for custom blocks for Omniscope Evo.
    9. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
 2. Outputs
    1. [Slack Bot](#OutputsSlackBot)
-   2. [Report tab to PDF](#OutputsReporttabtoPDF)
-   3. [Google BigQuery Export](#OutputsGoogleBigQueryWriter)
-   4. [Web Image-PDF output](#OutputsWebImage-PDFoutput)
-   5. [Multi-tenant Report to PDF](#OutputsReporttoPDFbatchoutput)
-   6. [GitHub](#OutputsGitHub)
-   7. [Append PDF files](#OutputsAppendPDFfiles)
+   2. [Report tab to PDF](#OutputsReporttabtoPDFhost)
+   3. [Report tab to PDF (DOCKER)](#OutputsReporttabtoPDFdocker)
+   4. [Google BigQuery Export](#OutputsGoogleBigQueryWriter)
+   5. [Web Image-PDF output](#OutputsWebImage-PDFoutput)
+   6. [Multi-tenant Report to PDF](#OutputsReporttoPDFbatchoutput)
+   7. [GitHub](#OutputsGitHub)
+   8. [Append PDF files](#OutputsAppendPDFfiles)
 3. Preparation
    1. ForEach
       1. [ForEach](#PreparationForEachForEach)
@@ -198,15 +199,25 @@ Posts messages on a channel.
 
 [Link to Github page](Outputs/Slack%20Bot)
 
-<div id="OutputsReporttabtoPDF"/>
+<div id="OutputsReporttabtoPDFhost"/>
 
 ### Report tab to PDF
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report tab to PDF/thumbnail.png" width="125" height="125"/>
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report tab to PDF/host/thumbnail.png" width="125" height="125"/>
 
 Prints Report tabs to PDF files for each record of the input data.
 
-[Link to Github page](Outputs/Report%20tab%20to%20PDF)
+[Link to Github page](Outputs/Report%20tab%20to%20PDF/host)
+
+<div id="OutputsReporttabtoPDFdocker"/>
+
+### Report tab to PDF (DOCKER)
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report tab to PDF/docker/thumbnail.png" width="125" height="125"/>
+
+Prints Report tabs to PDF files for each record of the input data. This block can only be used when running Custom Blocks in DOCKER mode.
+
+[Link to Github page](Outputs/Report%20tab%20to%20PDF/docker)
 
 <div id="OutputsGoogleBigQueryWriter"/>
 
