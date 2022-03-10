@@ -18,9 +18,7 @@ omniprint = "/usr/src/app/omniprint-linux"
 outputFolder = omniscope_api.get_option("outputFolder")
 if (outputFolder.endswith('/')):
     outputFolder = outputFolder[:-1]
-chromePort = omniscope_api.get_option("chromePort")
-if (chromePort is None or chromePort < 1):
-    chromePort = 9998
+chromePort = 9998
 chromeDelay = omniscope_api.get_option("chromeDelay")
 if (chromeDelay is None or chromeDelay < 1):
     chromeDelay = 3000
