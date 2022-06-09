@@ -17,11 +17,6 @@ os.chdir(path)
 
 sys.path.append(str(path))
 
-temp = sys.stderr
-
-sys.stderr = sys.stdout
-
-
 
 
 def connect_input(index):
@@ -58,9 +53,7 @@ def connect_output(index):
 
 
 
-i = 0
-
-for i in range(0,20):
+for i in range(0,3):
     connect_input(i)
 
 kedro_cli = importlib.import_module("kedro_cli")
@@ -68,7 +61,7 @@ kedro_cli = importlib.import_module("kedro_cli")
 try:
     kedro_cli.run()
 except:
-    # ignore
+    omniscope_api.abort("Kedro workflow execution was not successful")
     pass
 
 
