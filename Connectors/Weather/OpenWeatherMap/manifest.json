@@ -3,17 +3,25 @@
     "name": "OpenWeatherMap",
     "scriptFilename": "script.R",
     "language": "R",
+    "executableVersion": null,
     "minVersions": [
         null
     ],
-    "description": "Retrieves current weather and forecasts from OpenWeatherMap",
-    "tags": ["weather", "map", "longitude", "latitude", "forecast"],
-    "category": "Connectors",
-    "subcategory": "Weather",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Retrieves current weather and forecasts from OpenWeatherMap",
+    "category": "Connectors",
+    "subcategory": "Weather",
+    "tags": [
+        "weather",
+        "map",
+        "longitude",
+        "latitude",
+        "forecast"
+    ],
     "introductoryText": "![OpenWeatherMap](data:image/png;base64,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)\n\n\nConnector to retrieve current weather and forecasts from [OpenWeatherMap](https://openweathermap.org/).\n\n\nEach input record must consist either of:\n\n(1) A latitude and a longitude field.\n\n(2) A city field and optionally a state and country field. Country fields must be specified according to the [ISO 3166 specification](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes). If no country code is given, the country is assumed to be the United States of America.\n\n(3) A postcode and optionally a country field. The same rules as in (2) apply for the country code.\n\n\nThe block requires an API key. The keys can be requested [here](https://openweathermap.org/appid). Free accounts are subject to a rate limit of 60 calls per minute. If you have a paid subscription, untick the checkbox \"Apply free account rate limit\". In all other cases leave the option, otherwise the account will be suspended.",
     "dependencies": "",
     "options": [
@@ -21,13 +29,26 @@
             "name": "appid",
             "title": "App Id",
             "description": null,
+            "groupTitle": "Authentication",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
             "mandatory": true
+        },
+        {
+            "name": "applyRateLimit",
+            "title": "Apply free account rate limit",
+            "description": "Tick this if you have a free account. Only 60 API calls per minute are allowed.",
+            "groupTitle": "Authentication",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
         },
         {
             "name": "apiChoice",
             "title": "Type",
             "description": null,
+            "groupTitle": "Query",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
             "choices": [
@@ -35,18 +56,20 @@
                     "name": null,
                     "title": "Current weather",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "CURRENT",
-                    "groupTitle": null,
                     "isSpecial": false
                 },
                 {
                     "name": null,
                     "title": "5-Day forecast",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "FORECAST",
-                    "groupTitle": null,
                     "isSpecial": false
                 }
             ],
@@ -58,6 +81,8 @@
             "name": "searchChoice",
             "title": "Search",
             "description": null,
+            "groupTitle": "Query",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
             "choices": [
@@ -65,27 +90,30 @@
                     "name": null,
                     "title": "By city, state and country code",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "CITY",
-                    "groupTitle": null,
                     "isSpecial": false
                 },
                 {
                     "name": null,
                     "title": "By latitude/longitude",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "LATLON",
-                    "groupTitle": null,
                     "isSpecial": false
                 },
                 {
                     "name": null,
                     "title": "By postcode and country code",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "POSTCODE",
-                    "groupTitle": null,
                     "isSpecial": false
                 }
             ],
@@ -97,6 +125,8 @@
             "name": "unitsChoice",
             "title": "Units",
             "description": null,
+            "groupTitle": "Query",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
             "choices": [
@@ -104,27 +134,30 @@
                     "name": null,
                     "title": "Celsius",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "CELSIUS",
-                    "groupTitle": null,
                     "isSpecial": false
                 },
                 {
                     "name": null,
                     "title": "Fahrenheit",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "FAHRENHEIT",
-                    "groupTitle": null,
                     "isSpecial": false
                 },
                 {
                     "name": null,
                     "title": "Kelvin",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "KELVIN",
-                    "groupTitle": null,
                     "isSpecial": false
                 }
             ],
@@ -133,74 +166,106 @@
             "defaultValue": "CELSIUS"
         },
         {
-            "name": "applyRateLimit",
-            "title": "Apply free account rate limit",
-            "description": "Tick this if you have a free account. Only 60 API calls per minute are allowed.",
-            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
-            "defaultValue": true
-        },
-        {
             "name": "indexField",
             "title": "Optional field to identify rows",
             "description": null,
+            "groupTitle": "Query",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "latitudeField",
             "title": "Latitude field",
             "description": null,
+            "groupTitle": "Parameters",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "longitudeField",
             "title": "Longitude field",
             "description": null,
+            "groupTitle": "Parameters",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "cityField",
             "title": "City field",
             "description": null,
+            "groupTitle": "Parameters",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "stateField",
             "title": "State field",
             "description": null,
+            "groupTitle": "Parameters",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "postcodeField",
             "title": "Postcode field",
             "description": null,
+            "groupTitle": "Parameters",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "countryField",
             "title": "Country code field (ISO 3166)",
             "description": null,
+            "groupTitle": "Parameters",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         }
-    ]
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
 }
