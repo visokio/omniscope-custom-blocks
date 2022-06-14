@@ -3,42 +3,90 @@
     "name": "Interval Join",
     "scriptFilename": "script.R",
     "language": "R",
+    "executableVersion": null,
     "minVersions": [
         null
     ],
-    "description": "Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.",
-    "tags": ["inequality", "interval", "join"],
-    "category": "Preparation",
-    "subcategory": "Join",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": true,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHEAAABxCAQAAABId4RbAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmBg4MEwALo2haAAAME0lEQVR42u2ce3RU1RXGv33OGZRXCCjgAkFQyqNqLSyVqq3GilpdFaxaUaxVkWWXtYgLV6ulAtJWRazU1naprUUBpVowWBAKSx5RHgGUlyCPPAjPQEKeQEgmM+d8/WMGySRhJjO5GBLnm7WSzCQ59/zO3nffc/Y+9wJJJZVUUkl5I4l8exkIG/6MUNDgV38S+ikIAaHgoOmwtan7Hy/iAGwTcK/qqVibvYYIgcV8ezGtDGBTAySFWlbsKzsV7MYbz73NHYWu+3sAAAHAmbWv9Nrv1DWuqQFiy9TqvQCdrz9/NINiTvUvhMBh++wu+53EPkDTqzYiAAkCCEY7yQgan9VoFoT1IUIDMNGtKGDz4AOgar6Jp9cqjr89gxDjkUCaiaM2H2MkEZOILVtJxJagCMR4lg1sNmuMhC/9zUffNMRm43uJI7ZMJRGjSJqLW0cghrIUqkHJCuVUMwlPEYjHAAC+IBAr9BAVZ/nhR2pT978BiljbVwACtA4AMS4gpJR2L4fFjTLbI399RFK5Rh6Aj51xy2lEZDUIXemgEC2TCid64KUdZlP2enZCvgEAKFePurZ8WHpy4ulBBDbSIZB/Jc6OEoYEhEbvfu0AZIlXF9MOAFrJYfuGWi+XOSM7+G+PEHXk24sll1vO/sHIVjqqq4rI0fYTZ2RUjFedkOlJR5bqkRx0U7uh52X2kjWqn7sTHaQKezxouZa1zmVH2L2tKhA93giY2jNt8C/QVawngEAf9EaXs3pNzZ3xZmqZ3Wtek7a8TdI8ar2GtkgPQBduJZ1zPJUcXZA88B+CBjLZk2vHIV2AhUMtHct2paetQ6lZpwnKK14j3iDUxLZXSRdkFDmSVe7DgZnYqikveoJYiIXDLF01nZ+5L8AHZJm75BGMkmc9ZZRCXyHyHw2QQRcV0QXJA++H7LhB+niAWICFwyxpnaUN8nDm9P5EwKxWlQjIUO8IiZfU7zG6X8Vx0jGqq5Kukuvv+hI5phyFktJoxMIw4okBLCvZPoqgWq0JYKIM9gaxN1YJQBzIJJ1lVDlHluy6t2saVusKlMlFHiG6E15iHXPenddpHvabv8k/MFU8mhJcITREztOWDER31dAglC6520dZpfORLZM9RCSdcwHH8ry512/EUbNeE5Rfe4HYRd5R0/DygMoYrhruRpA8Pv9XhrLDEJQrE46ukYjh1umCdH7mPQ8fkG3ukScwWiY1FnG4LBYqYu880tloiOFzMkAe+d+AlPtQaBapfGTLbk8Qv4K0tEEWrJren6BZpkpQJtc0FjJbNpuNWH9HFWmj2/FkbD30xcJBH2OvdmaOIigDBegRJ2JBLcQIW7KsZNvDBNVnmgCejiP41FNFXIqe9lbgw8LPO18OF2vRLICm7Xpp2ur9f3p96vCSHuKUUkvxZ7eO3QEEQQChcitRdy6kAVgAe2VAva0TAmraDh1S3sxJW/54eWkX86ptzW7SjXMTteLFgJSaI8gZEag1plFsaekcK/Jzn5nak2ACdbkCXYjFdaxYw5aOAcfyXelpu1BtNmmC8kCiiMBtslUoRMGyUNRsCGYoNDgeKytauubxght/3Attuxox0NDQMOGXrvMKf/pkK+KD2+0pBvWkw1Zx9/PwAbnmIRmPcfK7mDT1jvZwAcdoYyuvG5xxFoiGZVgJEA4aEARQXmqKTXUc4yoISoe2PU91NEJAwAmsOrwqY+Q9WTAr3WDnk77MTsSOD8o2oSZyXrMxpnJ1xts564Kxpg2J6aQty4u3PVwBqi80BBgX1QKn+OXF2CqvYD4vOmfK6tS+dBJ1P1W9480EFssiMQ5y0pZQue+sHFNcco/5wLZllVzNgfEebYYcQY7OwvIf+kNztQadkV+HagSfvPS0g3BmiyYoP41/2vGRKJRpYs/4YNhZzyjIcPDZ8zwMsMuMlimIe+V6NygQamL7NHtmQlpay/wV6f0ImhXKDyfxTTiQLUWYIRT49ix0dIEzCTIy+Hw58mMcUjs1ALwUny0nyCzMU8ALKQUrzlhIS0tmz3il0yRkJFLAeFcWYakeglkd85efWGCdOZA1g09Z7oI0B8rU+MPOFtmJlRq4sc32WZYMOHcGQtJWk0XHsq/ejnwdJ+Cd8hM8KJDFihqy8zmS1p1BoaemFeenEZQJtawYw6hvyqU8JoNFZK7rK+3UxuB37+32l9TODEJDBA2fEJwO1ZwI5Mxc8ER5yXUqLb5NwNMFgFB18UFRbVT3S6VxmNF73/wgSReMlmv9mux3IqI+vApFaoeGAJMaPup9QCGqDLFnyqF3oSmbDKTQUIj195fscyGXbZKZj0fXxZdkMYoMseHeAMndS97q8TIO+KapTapCp+P11B2TjhWFDvR1g9Y3u3lMXsQL8Z01m2UzPtVzkH5paRnpqh2PFS6+laDON6PkqKYi3uu2Y2JpXjB8QBd0NVJLpxnwqznqoZhz1FN8nIJyGYIlEF9RxjlX0UHBifK74n+NfKq0dJpujQX8pVrptrvq9lfd0v1nKd9v0zFUk6SN1m4MxbHSoNo1c9UTxSXDE11pTJCxQk1snRSagjs6OkdrWb57w3CfjMcRvU/P0TQVQiH+2XPdiLyZx3eUHjmdVqyRrCra+lARguH14m/jXy9egc+wXFtbPejaNW19oXV4ePysKCsFGZ89e/unZIFqrxbxCulB2BQ5Suhp/Yb229bD16dv/06dqozVjGdCZRu+6v9k5PAsmFXuykRX/dfKWqEi9s8NJYNdjXF01lmyyu5btOxH031zMFMqdb7JMAWGulJ4cue/AJB6cjWneI1rRaQPa0Duxp3I3Twoz2CcPBM/HtAdlHXmM2TeUkW6yEzqiWDtHOln2aZNo2eHM24jBEiV/2pnaJympqYQbPDunAJ9GIuHxszA5c2+bg8CZnMcGbh6fIKyGDcDzF/S7QY6qeNqJ12WAlQcPZqR9f45W8dm8/jV8lem4BIZhD/gQXwOH0yUQ0fCv6YHBFcOu+lD5aikvqMJVe7MZWPKS4ebebY1j8vyxPOof5e1OhPLbqqMEjhOXnodnSN3foIOwLhGbDerm/CvFWCKQ9nwNZoAxjamFHcz5oVqGrNJFzP35sjqIItn3332c9jSqOlq3YR/zZrGwRXT+3pY03hdTcVvelUeiRX8XeiCz4MzCMobako8s8OYVoyoTD0HA+SEK1MJBZiaGiFV5jh2Px67FB7KlJcthKZaqw5jnzzVKCvWV18ky3fPH7IW5WaDJihjE2i5VjzogvtwlgUwzIBRpxoCUlRxzmM/b2eX6q62QIbwUGPHt4boBDS7Zn05pmPRBeZt6+MSyeKbHjSMl9SzeKRnyE1j1/ozb9uMPONHZaOXjfXV+reNIqgyNQH80ataP5BrsrFzpD9mmt8FyYPvhnZsfCHnNfq4NRw1tGNjzfT+RNBkKgfKHY1ouZajXi4XEtjxnVZg1BsUCdEV/iV/7IzO7hgme+iitGKqZf/kiyYgcJUZb1M5Tc5numft4xMBIPs+j14EDzlS/qyQDRsTR0/qoC7AgvDuqbnXr0WJZ7unalnxCN5DVup5FwKIHmyUxca3AvDzfkz0aC+jBoTY9c6KxzuUdjXvWc1P5SNmNLrdWvOR7ZKFou7+Noi+4iOkbH/mxukoZGtv+JCDPBz25z3Z5/6HyjvqC4KPskLmeQBYR4vMAqQPqwjXoqKFmpI5BE1bzxJwKZKCczRxVH2iilEmIzxjinRUuVYI1/tswCLq7dIWh7MqQenDzR51pBwAXJl+zLUhpQdnnR7EFLQGcLy1ipUfVcTaDd+Gc9+TzR6diQ8hFWsw0g3hebjV0/sjIhBD55XftAGiQ4qg/cH2cEj3rDNvEwDXeMlWH2IbgIDfB8TKLwlS/K3hcPg0dMlrRUTUEK9tUNnDJVTMb3JERnxrKapvnd487hNKDLGFsdWH2MI89BuK+A1w1JapJGJLUBKxJagRd4Q3dddPO2KzIUwcsZk+KaVlqp5H3dGhAU/zaz5mjEAMnV9s0NP8gtqhGTxzEnWt6IDC5WjnjqHu2v8rswmcKssvaD6GbOmKiP2XYIuA+9X5MZ9y67DI9qeTbzUDO9YiGQSiShSkzlOKCRv+JPS1Eq0I7Gjq/ieVVFJJJfU16v/RSlzSSbXsIgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wNi0xNFQxMjoxODo1NSswMDowMNlVyW8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDYtMTRUMTI6MTg6NTUrMDA6MDCoCHHTAAAAAElFTkSuQmCC",
+    "description": "Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.",
+    "category": "Preparation",
+    "subcategory": "Join",
+    "tags": [
+        "inequality",
+        "interval",
+        "join"
+    ],
     "introductoryText": "The first input contains values and the second input intervals. The rows of the first input are now joined with rows of the second, if the value is contained in the interval.\n\nThe interval start and end values can be chosen to be either inclusive or exclusive. If the number is e.g. 5, and an interval is 5..10, then if inclusive is chosen, the rows are joined. If exclusive is chosen, they are not joined.",
     "dependencies": "",
     "options": [
         {
+            "name": "joinType",
+            "title": "Type of join",
+            "description": null,
+            "groupTitle": "Join",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Inner",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "INNER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Left",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LEFT",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "INNER"
+        },
+        {
             "name": "value",
             "title": "Value in interval",
             "description": null,
+            "groupTitle": "First Input (Value)",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "start",
             "title": "Interval start",
             "description": null,
+            "groupTitle": "Second Input (Intervals)",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 1,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "startOperator",
             "title": "Interval start value inclusiveness",
             "description": "If value is e.g. 5 and the interval is 5..10: If inclusive is chosen, then value is considered contained in the interval. If exclusive is chosen, then the value is not contained.",
+            "groupTitle": "Second Input (Intervals)",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
             "choices": [
@@ -46,18 +94,20 @@
                     "name": null,
                     "title": "Inclusive",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": ">=",
-                    "groupTitle": null,
                     "isSpecial": false
                 },
                 {
                     "name": null,
                     "title": "Exclusive",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": ">",
-                    "groupTitle": null,
                     "isSpecial": false
                 }
             ],
@@ -69,15 +119,20 @@
             "name": "end",
             "title": "Interval end",
             "description": null,
+            "groupTitle": "Second Input (Intervals)",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 1,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "endOperator",
             "title": "Interval end value inclusiveness",
             "description": "If value is e.g. 10 and the interval is 5..10: If inclusive is chosen, then value is considered contained in the interval. If exclusive is chosen, then the value is not contained.",
+            "groupTitle": "Second Input (Intervals)",
+            "width": null,
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
             "choices": [
@@ -85,54 +140,44 @@
                     "name": null,
                     "title": "Inclusive",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "<=",
-                    "groupTitle": null,
                     "isSpecial": false
                 },
                 {
                     "name": null,
                     "title": "Exclusive",
                     "description": null,
+                    "groupTitle": null,
+                    "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "<",
-                    "groupTitle": null,
                     "isSpecial": false
                 }
             ],
             "isDropdown": true,
             "choicesLayoutType": "LIST",
             "defaultValue": "<"
-        },
-        {
-            "name": "joinType",
-            "title": "Type of join",
-            "description": null,
-            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
-            "mandatory": true,
-            "choices": [
-                {
-                    "name": null,
-                    "title": "Inner",
-                    "description": null,
-                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
-                    "value": "INNER",
-                    "groupTitle": null,
-                    "isSpecial": false
-                },
-                {
-                    "name": null,
-                    "title": "Left",
-                    "description": null,
-                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
-                    "value": "LEFT",
-                    "groupTitle": null,
-                    "isSpecial": false
-                }
-            ],
-            "isDropdown": true,
-            "choicesLayoutType": "LIST",
-            "defaultValue": "INNER"
         }
-    ]
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
 }
