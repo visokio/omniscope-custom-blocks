@@ -3,6 +3,7 @@
     "name": "Website Analysis",
     "scriptFilename": "script.py",
     "language": "PYTHON",
+    "executableVersion": null,
     "minVersions": [
         "3.9"
     ],
@@ -10,10 +11,10 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": null,
+    "icon": "data:image/png;base64,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",
     "description": "Extracts the structure and content of a website and its pages.",
     "category": "Analytics",
-    "subcategory": null,
+    "subcategory": "Website",
     "tags": [
         "http",
         "website",
@@ -43,7 +44,8 @@
             "numMin": null,
             "numMax": null,
             "mandatory": true,
-            "defaultValue": 4
+            "defaultValue": 4,
+            "showAsSlider": false
         },
         {
             "name": "n_workers",
@@ -55,7 +57,8 @@
             "numMin": 1,
             "numMax": 20,
             "mandatory": true,
-            "defaultValue": 5
+            "defaultValue": 5,
+            "showAsSlider": false
         }
     ],
     "blockOutputs": [
@@ -87,5 +90,7 @@
         "useCustomBaseImage": false,
         "customSystemLibraries": null,
         "installVisokioRepLibraries": false
-    }
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
 }
