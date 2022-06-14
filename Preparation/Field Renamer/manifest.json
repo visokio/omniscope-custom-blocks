@@ -3,6 +3,7 @@
     "name": "Field Renamer",
     "scriptFilename": "script.R",
     "language": "R",
+    "executableVersion": null,
     "minVersions": [
         null
     ],
@@ -10,7 +11,7 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": null,
+    "icon": "data:image/png;base64,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",
     "description": "Renames the fields of a data set given a list of current names and new names.",
     "category": "Preparation",
     "subcategory": null,
@@ -32,7 +33,8 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "newNames",
@@ -43,7 +45,8 @@
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         }
     ],
     "blockOutputs": [
@@ -75,5 +78,7 @@
         "useCustomBaseImage": false,
         "customSystemLibraries": null,
         "installVisokioRepLibraries": false
-    }
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
 }
