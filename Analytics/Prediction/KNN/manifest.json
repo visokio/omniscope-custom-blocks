@@ -3,17 +3,24 @@
     "name": "K-Nearest-Neighbours",
     "scriptFilename": "script.R",
     "language": "R",
+    "executableVersion": null,
     "minVersions": [
         null
     ],
-    "description": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
-    "tags": ["knn", "nearest", "neighbours", "prediction"],
-    "category": "Analytics",
-    "subcategory": "Prediction",    
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": true,
+    "icon": "data:image/png;base64,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",
+    "description": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
+    "category": "Analytics",
+    "subcategory": "Prediction",
+    "tags": [
+        "knn",
+        "nearest",
+        "neighbours",
+        "prediction"
+    ],
     "introductoryText": "Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.",
     "dependencies": "",
     "options": [
@@ -21,6 +28,8 @@
             "name": "useAllNumericFields",
             "title": "Use all numeric fields",
             "description": "If set to true, \"Fields to use\" will be ignored and instead all numeric data fields used.",
+            "groupTitle": null,
+            "width": null,
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
             "defaultValue": true
         },
@@ -28,14 +37,20 @@
             "name": "fieldsToUse",
             "title": "Fields to use",
             "description": "Adjust to fields you want to use in the prediction",
+            "groupTitle": null,
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
             "inputIndex": 0,
-            "defaultValue": []
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
         },
         {
             "name": "predictFirstCategoricalField",
             "title": "Predict first categorical field found in the data",
             "description": "If set to true, field.to.predict will be ignored and instead the first categorical field used",
+            "groupTitle": null,
+            "width": null,
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
             "defaultValue": true
         },
@@ -43,20 +58,44 @@
             "name": "fieldToPredict",
             "title": "Field to predict",
             "description": "The field which is unknwon in the new data you want to predict",
+            "groupTitle": null,
+            "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
-            "defaultValue": null
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "numberOfNeighbours",
             "title": "Number of neighbours",
             "description": "The k in k-nearest-neighbours. I.e. the number of points around a point of unknown class to take into account.",
+            "groupTitle": null,
+            "width": null,
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
             "numMin": 1,
             "numMax": null,
             "mandatory": true,
-            "defaultValue": 5
+            "defaultValue": 5,
+            "showAsSlider": false
         }
-    ]
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
 }
