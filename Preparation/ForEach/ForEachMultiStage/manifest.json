@@ -3,17 +3,26 @@
     "name": "ForEach multi stage",
     "scriptFilename": "script.py",
     "language": "PYTHON",
+    "executableVersion": null,
     "minVersions": [
         null
     ],
-    "description": "The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.",
-    "tags": ["for", "foreach", "iteration", "paramater", "stage", "orchestration"],
-    "category": "Preparation",
-    "subcategory": "ForEach",
     "optionsVersion": 1,
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.",
+    "category": "Preparation",
+    "subcategory": "ForEach",
+    "tags": [
+        "for",
+        "foreach",
+        "iteration",
+        "paramater",
+        "stage",
+        "orchestration"
+    ],
     "introductoryText": "The **ForEach multi stage** block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the **ForEach** block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.",
     "dependencies": "",
     "options": [
@@ -44,7 +53,7 @@
             "groupTitle": "Workflow Execution",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
-            "defaultValue": false
+            "defaultValue": null
         },
         {
             "name": "Parameters",
@@ -55,7 +64,8 @@
             "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
             "inputIndex": 0,
             "defaultValue": null,
-            "mandatory": true
+            "mandatory": true,
+            "fieldTypes": []
         },
         {
             "name": "Block_Names",
@@ -112,16 +122,17 @@
             "groupTitle": "Workflow Execution",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
-            "defaultValue": false
+            "defaultValue": null
         }
     ],
-    "blockOutputs": [
-        {
-            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
-            "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
-        }
-    ]
+    "blockOutputs": [],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
 }
