@@ -25,44 +25,68 @@ Public repository for custom blocks for Omniscope Evo.
    2. Github
       1. [GitHub](#OutputsGitHub)
    3. PDF
-      1. [Multi-tenant Report to PDF](#OutputsReporttoPDFbatchoutput)
-      2. [Append PDF files](#OutputsAppendPDFfiles)
-      3. [Web Image-PDF output](#OutputsWebImage-PDFoutput)
-      4. [Report tab to PDF](#OutputsReporttabtoPDFhost)
-      5. [Report tab to PDF (DOCKER)](#OutputsReporttabtoPDFdocker)
+      1. [Web Image-PDF output](#OutputsWebImage-PDFoutput)
+      2. [Report tab to PDF (DOCKER)](#OutputsReporttabtoPDFdocker)
+      3. [Report tab to PDF](#OutputsReporttabtoPDFhost)
+      4. [Multi-tenant Report to PDF](#OutputsReporttoPDFbatchoutput)
+      5. [Append PDF files](#OutputsAppendPDFfiles)
    4. Slack
       1. [Slack Bot](#OutputsSlackBot)
-2. Preparation
+2. Inputs
+   1. Databases
+      1. [MongoDB](#InputsDatabasesMongoDB)
+   2. R
+      1. [R Data Reader](#InputsRdata)
+      2. [Rds Batch Append](#InputsRdsBatchAppend)
+   3. [SFTP Downloader](#InputsSFTPDownloader)
+   4. [Sharepoint Online Downloader](#InputsSharepointOnline)
+   5. [PDF Reader](#InputsPDFReader)
+3. Analytics
+   1. Clustering
+      1. [DBScan](#AnalyticsClusteringDBScan)
+      2. [Gaussian Mixture Model](#AnalyticsClusteringGMM)
+      3. [KMeans](#AnalyticsClusteringKMeans)
+   2. Network Analysis
+      1. [Attribute Analysis](#AnalyticsNetworkAnalysisAttributeAnalysis)
+      2. [TSNE](#AnalyticsNetworkAnalysisTSNE)
+   3. Prediction
+      1. [K-Nearest-Neighbours](#AnalyticsPredictionKNN)
+      2. [Support Vector Machine](#AnalyticsPredictionSVM)
+   4. Validation
+      1. [Model Validation](#AnalyticsValidationModelValidation)
+   5. Website
+      1. [Website Analysis](#AnalyticsWebsitesWebsiteAnalysis)
+4. Custom scripts
+   1. [Execute Command](#CustomscriptsExecuteCommand)
+5. Preparation
    1. ForEach
-      1. [ForEach multi stage](#PreparationForEachForEachMultiStage)
-      2. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
+      1. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
+      2. [ForEach multi stage](#PreparationForEachForEachMultiStage)
    2. Geo
-      1. [Shapefile](#PreparationGeoShapefile)
-      2. [Gridsquare](#PreparationGeoGridsquare)
+      1. [Gridsquare](#PreparationGeoGridsquare)
+      2. [Shapefile](#PreparationGeoShapefile)
    3. Interfaces
       1. [Kedro](#PreparationInterfacesKedro)
    4. JSON
       1. [JSON Normalise](#PreparationJSONNormalise)
    5. Join
-      1. [Fuzzy Terms Join](#PreparationJoinFuzzyJoin)
-      2. [Inequality Join](#PreparationJoinInequalityJoin)
-      3. [Interval Join](#PreparationJoinIntervalJoin)
+      1. [Interval Join](#PreparationJoinIntervalJoin)
+      2. [Fuzzy Terms Join](#PreparationJoinFuzzyJoin)
+      3. [Inequality Join](#PreparationJoinInequalityJoin)
    6. Partition
       1. [Partition](#PreparationPartition)
    7. Standardisation
       1. [Standardise](#PreparationStandardisationStandardise)
    8. Workflow
       1. [ForEach](#PreparationForEachForEach)
-   9. [Split Address](#PreparationSplitAddress)
-   10. [Field Renamer](#PreparationFieldRenamer)
-3. Custom scripts
-   1. [Execute Command](#CustomscriptsExecuteCommand)
-4. Connectors
+   9. [Field Renamer](#PreparationFieldRenamer)
+   10. [Split Address](#PreparationSplitAddress)
+6. Connectors
    1. Azure
       1. [Azure Data Lake Storage Gen2 Blob](#ConnectorsAzureDataLakeBlob)
    2. Flightstats
-      1. [Flightstats Airlines](#ConnectorsFlightstatsAirlines)
-      2. [Flightstats Flights](#ConnectorsFlightstatsFlights)
+      1. [Flightstats Flights](#ConnectorsFlightstatsFlights)
+      2. [Flightstats Airlines](#ConnectorsFlightstatsAirlines)
       3. [Flightstats Airports](#ConnectorsFlightstatsAirports)
    3. Overpass
       1. [Overpass Street Coordinates](#ConnectorsOverpassStreetCoordinates)
@@ -70,33 +94,9 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Slack API WebClient](#ConnectorsSlackAPIWebClient)
    5. Weather
       1. [OpenWeatherMap](#ConnectorsWeatherOpenWeatherMap)
-   6. [Google BigQuery Import Table](#ConnectorsBigQueryGoogleBigQueryImportTable)
+   6. [Etherscan](#ConnectorsEtherscan)
    7. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
-   8. [Etherscan](#ConnectorsEtherscan)
-5. Analytics
-   1. Clustering
-      1. [DBScan](#AnalyticsClusteringDBScan)
-      2. [Gaussian Mixture Model](#AnalyticsClusteringGMM)
-      3. [KMeans](#AnalyticsClusteringKMeans)
-   2. Network Analysis
-      1. [TSNE](#AnalyticsNetworkAnalysisTSNE)
-      2. [Attribute Analysis](#AnalyticsNetworkAnalysisAttributeAnalysis)
-   3. Prediction
-      1. [Support Vector Machine](#AnalyticsPredictionSVM)
-      2. [K-Nearest-Neighbours](#AnalyticsPredictionKNN)
-   4. Validation
-      1. [Model Validation](#AnalyticsValidationModelValidation)
-   5. Website
-      1. [Website Analysis](#AnalyticsWebsitesWebsiteAnalysis)
-6. Inputs
-   1. Databases
-      1. [MongoDB](#InputsDatabasesMongoDB)
-   2. R
-      1. [Rds Batch Append](#InputsRdsBatchAppend)
-      2. [R Data Reader](#InputsRdata)
-   3. [Sharepoint Online Downloader](#InputsSharepointOnline)
-   4. [SFTP Downloader](#InputsSFTPDownloader)
-   5. [PDF Reader](#InputsPDFReader)
+   8. [Google BigQuery Import Table](#ConnectorsBigQueryGoogleBigQueryImportTable)
 ## Block Overview
 <div id="OutputsGoogleBigQueryWriter"/>
 
@@ -113,6 +113,36 @@ Allows to write data to a Google BigQuery table. The table can be created/replac
 Reads from and writes data to GitHub
 
 [Link to Github page](Outputs/GitHub)
+
+<div id="OutputsWebImage-PDFoutput"/>
+
+### Web Image-PDF output
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Web Image-PDF output/thumbnail.png" width="125" height="125"/>
+
+Grabs screenshots of webpages, optionally producing a PDF document.
+
+[Link to Github page](Outputs/Web%20Image-PDF%20output)
+
+<div id="OutputsReporttabtoPDFdocker"/>
+
+### Report tab to PDF (DOCKER)
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report tab to PDF/docker/thumbnail.png" width="125" height="125"/>
+
+Prints Report tabs to PDF files for each record of the input data. This block can only be used when running Custom Blocks in DOCKER mode.
+
+[Link to Github page](Outputs/Report%20tab%20to%20PDF/docker)
+
+<div id="OutputsReporttabtoPDFhost"/>
+
+### Report tab to PDF
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report tab to PDF/host/thumbnail.png" width="125" height="125"/>
+
+Prints Report tabs to PDF files for each record of the input data.
+
+[Link to Github page](Outputs/Report%20tab%20to%20PDF/host)
 
 <div id="OutputsReporttoPDFbatchoutput"/>
 
@@ -134,36 +164,6 @@ Append multiple PDF files combining them into one PDF file.
 
 [Link to Github page](Outputs/Append%20PDF%20files)
 
-<div id="OutputsWebImage-PDFoutput"/>
-
-### Web Image-PDF output
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Web Image-PDF output/thumbnail.png" width="125" height="125"/>
-
-Grabs screenshots of webpages, optionally producing a PDF document.
-
-[Link to Github page](Outputs/Web%20Image-PDF%20output)
-
-<div id="OutputsReporttabtoPDFhost"/>
-
-### Report tab to PDF
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report tab to PDF/host/thumbnail.png" width="125" height="125"/>
-
-Prints Report tabs to PDF files for each record of the input data.
-
-[Link to Github page](Outputs/Report%20tab%20to%20PDF/host)
-
-<div id="OutputsReporttabtoPDFdocker"/>
-
-### Report tab to PDF (DOCKER)
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report tab to PDF/docker/thumbnail.png" width="125" height="125"/>
-
-Prints Report tabs to PDF files for each record of the input data. This block can only be used when running Custom Blocks in DOCKER mode.
-
-[Link to Github page](Outputs/Report%20tab%20to%20PDF/docker)
-
 <div id="OutputsSlackBot"/>
 
 ### Slack Bot
@@ -174,13 +174,157 @@ Posts messages on a channel.
 
 [Link to Github page](Outputs/Slack%20Bot)
 
-<div id="PreparationForEachForEachMultiStage"/>
+<div id="InputsDatabasesMongoDB"/>
 
-### ForEach multi stage
+### MongoDB
 
-The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/Databases/MongoDB/thumbnail.png" width="125" height="125"/>
 
-[Link to Github page](Preparation/ForEach/ForEachMultiStage)
+A connector for MongoDB
+
+[Link to Github page](Inputs/Databases/MongoDB)
+
+<div id="InputsRdata"/>
+
+### R Data Reader
+
+Joins regions defined in a shapefile with points defined as latitudes and longitudes, and gives meta information about the content of the shapefile
+
+[Link to Github page](Inputs/Rdata)
+
+<div id="InputsRdsBatchAppend"/>
+
+### Rds Batch Append
+
+Reads multiple rds files either from an upstream block, or a folder, and appends them
+
+[Link to Github page](Inputs/Rds%20Batch%20Append)
+
+<div id="InputsSFTPDownloader"/>
+
+### SFTP Downloader
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/SFTP Downloader/thumbnail.png" width="125" height="125"/>
+
+Download files from a SFTP server folder.
+
+[Link to Github page](Inputs/SFTP%20Downloader)
+
+<div id="InputsSharepointOnline"/>
+
+### Sharepoint Online Downloader
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/Sharepoint Online/thumbnail.png" width="125" height="125"/>
+
+Download a file from a Sharepoint Online site.
+
+[Link to Github page](Inputs/Sharepoint%20Online)
+
+<div id="InputsPDFReader"/>
+
+### PDF Reader
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/PDF Reader/thumbnail.png" width="125" height="125"/>
+
+Extract text from PDF files.
+
+[Link to Github page](Inputs/PDF%20Reader)
+
+<div id="AnalyticsClusteringDBScan"/>
+
+### DBScan
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/DBScan/thumbnail.png" width="125" height="125"/>
+
+Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.
+
+[Link to Github page](Analytics/Clustering/DBScan)
+
+<div id="AnalyticsClusteringGMM"/>
+
+### Gaussian Mixture Model
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/GMM/thumbnail.png" width="125" height="125"/>
+
+Performs GMM clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.
+
+[Link to Github page](Analytics/Clustering/GMM)
+
+<div id="AnalyticsClusteringKMeans"/>
+
+### KMeans
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/KMeans/thumbnail.png" width="125" height="125"/>
+
+Performs KMeans clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.
+
+[Link to Github page](Analytics/Clustering/KMeans)
+
+<div id="AnalyticsNetworkAnalysisAttributeAnalysis"/>
+
+### Attribute Analysis
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network Analysis/Attribute Analysis/thumbnail.png" width="125" height="125"/>
+
+Given a dataset in which each record represents an edge between two nodes of a network, and each node has an associated categorical attribute, the block analyses connections between attributes, based on connections between associated nodes. The result of the analysis is a list of records in which each record specifies a connection from one attribute to another. The connection contains a probability field, which gives an answer to the question that if a node has the specified categorical attribute, how probable it is that it has a connection to another node with the linked categorical attribute.
+
+[Link to Github page](Analytics/Network%20Analysis/Attribute%20Analysis)
+
+<div id="AnalyticsNetworkAnalysisTSNE"/>
+
+### TSNE
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network Analysis/TSNE/thumbnail.png" width="125" height="125"/>
+
+Given a dataset in which each record represents an edge between two nodes of a network, the block will project all the nodes onto a (e.g. 2)- dimensional plane in such a way that nodes which share many connections are close together, and nodes that do not share many connections are far apart.
+
+[Link to Github page](Analytics/Network%20Analysis/TSNE)
+
+<div id="AnalyticsPredictionKNN"/>
+
+### K-Nearest-Neighbours
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/KNN/thumbnail.png" width="125" height="125"/>
+
+Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.
+
+[Link to Github page](Analytics/Prediction/KNN)
+
+<div id="AnalyticsPredictionSVM"/>
+
+### Support Vector Machine
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/SVM/thumbnail.png" width="125" height="125"/>
+
+Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the bondary is made as large as possible to avoid touching the points.
+
+[Link to Github page](Analytics/Prediction/SVM)
+
+<div id="AnalyticsValidationModelValidation"/>
+
+### Model Validation
+
+Computes a confusion matrix as well as model validation statistics
+
+[Link to Github page](Analytics/Validation/Model%20Validation)
+
+<div id="AnalyticsWebsitesWebsiteAnalysis"/>
+
+### Website Analysis
+
+Extracts the structure and content of a website and its pages.
+
+[Link to Github page](Analytics/Websites/Website%20Analysis)
+
+<div id="CustomscriptsExecuteCommand"/>
+
+### Execute Command
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Custom scripts/ExecuteCommand/thumbnail.png" width="125" height="125"/>
+
+Execute a system command.
+
+[Link to Github page](Custom%20scripts/ExecuteCommand)
 
 <div id="PreparationForEachProjectParameters"/>
 
@@ -190,13 +334,13 @@ None
 
 [Link to Github page](Preparation/ForEach/ProjectParameters)
 
-<div id="PreparationGeoShapefile"/>
+<div id="PreparationForEachForEachMultiStage"/>
 
-### Shapefile
+### ForEach multi stage
 
-Match regions in shapefile with geographical points having latitude and longitude
+The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.
 
-[Link to Github page](Preparation/Geo/Shapefile)
+[Link to Github page](Preparation/ForEach/ForEachMultiStage)
 
 <div id="PreparationGeoGridsquare"/>
 
@@ -207,6 +351,14 @@ Match regions in shapefile with geographical points having latitude and longitud
 Converts gridsquare / Maidenhead 
 
 [Link to Github page](Preparation/Geo/Gridsquare)
+
+<div id="PreparationGeoShapefile"/>
+
+### Shapefile
+
+Match regions in shapefile with geographical points having latitude and longitude
+
+[Link to Github page](Preparation/Geo/Shapefile)
 
 <div id="PreparationInterfacesKedro"/>
 
@@ -225,6 +377,14 @@ Intefaces with kedro workflows
 Normalise semi-structured JSON strings into a flat table, appending data record by record.
 
 [Link to Github page](Preparation/JSON/Normalise)
+
+<div id="PreparationJoinIntervalJoin"/>
+
+### Interval Join
+
+Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.
+
+[Link to Github page](Preparation/Join/Interval%20Join)
 
 <div id="PreparationJoinFuzzyJoin"/>
 
@@ -245,14 +405,6 @@ Performs a join between the first (left) and second (right) input. The field on 
 Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.
 
 [Link to Github page](Preparation/Join/Inequality%20Join)
-
-<div id="PreparationJoinIntervalJoin"/>
-
-### Interval Join
-
-Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.
-
-[Link to Github page](Preparation/Join/Interval%20Join)
 
 <div id="PreparationPartition"/>
 
@@ -280,6 +432,14 @@ Executes another Omniscope project multiple times, each time with a different se
 
 [Link to Github page](Preparation/ForEach/ForEach)
 
+<div id="PreparationFieldRenamer"/>
+
+### Field Renamer
+
+Renames the fields of a data set given a list of current names and new names.
+
+[Link to Github page](Preparation/Field%20Renamer)
+
 <div id="PreparationSplitAddress"/>
 
 ### Split Address
@@ -289,24 +449,6 @@ Executes another Omniscope project multiple times, each time with a different se
 Splits an address field into streetname, streetnumber, and suffix.
 
 [Link to Github page](Preparation/Split%20Address)
-
-<div id="PreparationFieldRenamer"/>
-
-### Field Renamer
-
-Renames the fields of a data set given a list of current names and new names.
-
-[Link to Github page](Preparation/Field%20Renamer)
-
-<div id="CustomscriptsExecuteCommand"/>
-
-### Execute Command
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Custom scripts/ExecuteCommand/thumbnail.png" width="125" height="125"/>
-
-Execute a system command.
-
-[Link to Github page](Custom%20scripts/ExecuteCommand)
 
 <div id="ConnectorsAzureDataLakeBlob"/>
 
@@ -318,16 +460,6 @@ Storage Gen2 Blob connector to load a CSV or Parquet blob/file in Omniscope.
 
 [Link to Github page](Connectors/Azure%20Data%20Lake%20Blob)
 
-<div id="ConnectorsFlightstatsAirlines"/>
-
-### Flightstats Airlines
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airlines/thumbnail.png" width="125" height="125"/>
-
-Downloads a list of airlines as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.
-
-[Link to Github page](Connectors/Flightstats/Airlines)
-
 <div id="ConnectorsFlightstatsFlights"/>
 
 ### Flightstats Flights
@@ -337,6 +469,16 @@ Downloads a list of airlines as provided by flightstats (https://www.flightstats
 Requests information about flights specified in the input data from flightstats (https://www.flightstats.com). If the flight exists the result will contain live information, otherwise it will not be part of it. The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.
 
 [Link to Github page](Connectors/Flightstats/Flights)
+
+<div id="ConnectorsFlightstatsAirlines"/>
+
+### Flightstats Airlines
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airlines/thumbnail.png" width="125" height="125"/>
+
+Downloads a list of airlines as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.
+
+[Link to Github page](Connectors/Flightstats/Airlines)
 
 <div id="ConnectorsFlightstatsAirports"/>
 
@@ -376,22 +518,6 @@ Retrieves current weather and forecasts from OpenWeatherMap
 
 [Link to Github page](Connectors/Weather/OpenWeatherMap)
 
-<div id="ConnectorsBigQueryGoogleBigQueryImportTable"/>
-
-### Google BigQuery Import Table
-
-Allows to import a table from Google BigQuery.
-
-[Link to Github page](Connectors/BigQuery/Google%20BigQuery%20Import%20Table)
-
-<div id="ConnectorsBigQueryGoogleBigQueryCustomSQL"/>
-
-### Google BigQuery Custom SQL
-
-Executes a SQL query on Google BigQuery and imports the query results
-
-[Link to Github page](Connectors/BigQuery/Google%20BigQuery%20Custom%20SQL)
-
 <div id="ConnectorsEtherscan"/>
 
 ### Etherscan
@@ -402,145 +528,19 @@ The Ethereum Blockchain Explorer.
 
 [Link to Github page](Connectors/Etherscan)
 
-<div id="AnalyticsClusteringDBScan"/>
+<div id="ConnectorsBigQueryGoogleBigQueryCustomSQL"/>
 
-### DBScan
+### Google BigQuery Custom SQL
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/DBScan/thumbnail.png" width="125" height="125"/>
+Executes a SQL query on Google BigQuery and imports the query results
 
-Performs DBScan clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.
+[Link to Github page](Connectors/BigQuery/Google%20BigQuery%20Custom%20SQL)
 
-[Link to Github page](Analytics/Clustering/DBScan)
+<div id="ConnectorsBigQueryGoogleBigQueryImportTable"/>
 
-<div id="AnalyticsClusteringGMM"/>
+### Google BigQuery Import Table
 
-### Gaussian Mixture Model
+Allows to import a table from Google BigQuery.
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/GMM/thumbnail.png" width="125" height="125"/>
-
-Performs GMM clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.
-
-[Link to Github page](Analytics/Clustering/GMM)
-
-<div id="AnalyticsClusteringKMeans"/>
-
-### KMeans
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/KMeans/thumbnail.png" width="125" height="125"/>
-
-Performs KMeans clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.
-
-[Link to Github page](Analytics/Clustering/KMeans)
-
-<div id="AnalyticsNetworkAnalysisTSNE"/>
-
-### TSNE
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network Analysis/TSNE/thumbnail.png" width="125" height="125"/>
-
-Given a dataset in which each record represents an edge between two nodes of a network, the block will project all the nodes onto a (e.g. 2)- dimensional plane in such a way that nodes which share many connections are close together, and nodes that do not share many connections are far apart.
-
-[Link to Github page](Analytics/Network%20Analysis/TSNE)
-
-<div id="AnalyticsNetworkAnalysisAttributeAnalysis"/>
-
-### Attribute Analysis
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network Analysis/Attribute Analysis/thumbnail.png" width="125" height="125"/>
-
-Given a dataset in which each record represents an edge between two nodes of a network, and each node has an associated categorical attribute, the block analyses connections between attributes, based on connections between associated nodes. The result of the analysis is a list of records in which each record specifies a connection from one attribute to another. The connection contains a probability field, which gives an answer to the question that if a node has the specified categorical attribute, how probable it is that it has a connection to another node with the linked categorical attribute.
-
-[Link to Github page](Analytics/Network%20Analysis/Attribute%20Analysis)
-
-<div id="AnalyticsPredictionSVM"/>
-
-### Support Vector Machine
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/SVM/thumbnail.png" width="125" height="125"/>
-
-Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the bondary is made as large as possible to avoid touching the points.
-
-[Link to Github page](Analytics/Prediction/SVM)
-
-<div id="AnalyticsPredictionKNN"/>
-
-### K-Nearest-Neighbours
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Prediction/KNN/thumbnail.png" width="125" height="125"/>
-
-Performs k-nearest-neighbour prediction on the data. The prediction for a new point depends on the k-nearest-neighbours around the point. The majority class is used as the prediction.
-
-[Link to Github page](Analytics/Prediction/KNN)
-
-<div id="AnalyticsValidationModelValidation"/>
-
-### Model Validation
-
-Computes a confusion matrix as well as model validation statistics
-
-[Link to Github page](Analytics/Validation/Model%20Validation)
-
-<div id="AnalyticsWebsitesWebsiteAnalysis"/>
-
-### Website Analysis
-
-Extracts the structure and content of a website and its pages.
-
-[Link to Github page](Analytics/Websites/Website%20Analysis)
-
-<div id="InputsDatabasesMongoDB"/>
-
-### MongoDB
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/Databases/MongoDB/thumbnail.png" width="125" height="125"/>
-
-A connector for MongoDB
-
-[Link to Github page](Inputs/Databases/MongoDB)
-
-<div id="InputsRdsBatchAppend"/>
-
-### Rds Batch Append
-
-Reads multiple rds files either from an upstream block, or a folder, and appends them
-
-[Link to Github page](Inputs/Rds%20Batch%20Append)
-
-<div id="InputsRdata"/>
-
-### R Data Reader
-
-Joins regions defined in a shapefile with points defined as latitudes and longitudes, and gives meta information about the content of the shapefile
-
-[Link to Github page](Inputs/Rdata)
-
-<div id="InputsSharepointOnline"/>
-
-### Sharepoint Online Downloader
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/Sharepoint Online/thumbnail.png" width="125" height="125"/>
-
-Download a file from a Sharepoint Online site.
-
-[Link to Github page](Inputs/Sharepoint%20Online)
-
-<div id="InputsSFTPDownloader"/>
-
-### SFTP Downloader
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/SFTP Downloader/thumbnail.png" width="125" height="125"/>
-
-Download files from a SFTP server folder.
-
-[Link to Github page](Inputs/SFTP%20Downloader)
-
-<div id="InputsPDFReader"/>
-
-### PDF Reader
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/PDF Reader/thumbnail.png" width="125" height="125"/>
-
-Extract text from PDF files.
-
-[Link to Github page](Inputs/PDF%20Reader)
+[Link to Github page](Connectors/BigQuery/Google%20BigQuery%20Import%20Table)
 
