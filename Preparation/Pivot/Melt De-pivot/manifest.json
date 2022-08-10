@@ -1,0 +1,79 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Melt De-pivot",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Keep all selected fixed fields in the output, de-pivot all other fields",
+    "category": "Preparation",
+    "subcategory": "Pivot",
+    "tags": [
+        "pivot",
+        "depivot",
+        "melt",
+        "variable",
+        "fixed"
+    ],
+    "introductoryText": "Select the fields in your input which you want to keep fixed. Every field that is not in this list is deemed variable. After execution, for each input record, multiple output records will exist. One output record for each variable field and its value. The fields in which the variable field names and their values are put can be specified with the options \"New fieldname for variable fields\" and \"New fieldname for variable values\".",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fixed_fields",
+            "title": "Fixed Fields",
+            "description": null,
+            "groupTitle": "Fixed Fields",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "var_name",
+            "title": "New fieldname for variable fields",
+            "description": null,
+            "groupTitle": "Variable Fields",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "Field"
+        },
+        {
+            "name": "value_name",
+            "title": "New fieldname for variable values",
+            "description": null,
+            "groupTitle": "Variable Fields",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "Value"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "STREAM_TRANSFORM"
+}
