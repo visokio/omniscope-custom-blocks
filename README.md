@@ -82,7 +82,8 @@ Public repository for custom blocks for Omniscope Evo.
    4. Slack
       1. [Slack Bot](#OutputsSlackBot)
 5. Output
-   1. [Report to PowerPoint](#OutputsReporttoPowerPoint)
+   1. PowerPoint
+      1. [Report to PowerPoint](#OutputsReporttoPowerPoint)
 6. Connectors
    1. Azure
       1. [Azure Data Lake Storage Gen2 Blob](#ConnectorsAzureDataLakeBlob)
