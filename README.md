@@ -79,12 +79,11 @@ Public repository for custom blocks for Omniscope Evo.
       3. [Web Image-PDF output](#OutputsWebImage-PDFoutput)
       4. [Append PDF files](#OutputsAppendPDFfiles)
       5. [Multi-tenant Report to PDF](#OutputsReporttoPDFbatchoutput)
-   4. Slack
-      1. [Slack Bot](#OutputsSlackBot)
-5. Output
-   1. PowerPoint
+   4. PowerPoint
       1. [Report to PowerPoint](#OutputsReporttoPowerPoint)
-6. Connectors
+   5. Slack
+      1. [Slack Bot](#OutputsSlackBot)
+5. Connectors
    1. Azure
       1. [Azure Data Lake Storage Gen2 Blob](#ConnectorsAzureDataLakeBlob)
    2. Flightstats
@@ -100,7 +99,7 @@ Public repository for custom blocks for Omniscope Evo.
    6. [Google BigQuery Import Table](#ConnectorsBigQueryGoogleBigQueryImportTable)
    7. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
    8. [Etherscan](#ConnectorsEtherscan)
-7. Custom scripts
+6. Custom scripts
    1. [Execute Command](#CustomscriptsExecuteCommand)
 ## Block Overview
 <div id="PreparationForEachForEachMultiStage"/>
@@ -443,16 +442,6 @@ Prints a Report tab in batch using multi-tenant scenario configuration.
 
 [Link to Github page](Outputs/Report%20to%20PDF%20batch%20output)
 
-<div id="OutputsSlackBot"/>
-
-### Slack Bot
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Slack Bot/thumbnail.png" width="125" height="125"/>
-
-Posts messages on a channel.
-
-[Link to Github page](Outputs/Slack%20Bot)
-
 <div id="OutputsReporttoPowerPoint"/>
 
 ### Report to PowerPoint
@@ -462,6 +451,16 @@ Posts messages on a channel.
 Export a Report to a PowerPoint pptx file
 
 [Link to Github page](Outputs/Report%20to%20PowerPoint)
+
+<div id="OutputsSlackBot"/>
+
+### Slack Bot
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Slack Bot/thumbnail.png" width="125" height="125"/>
+
+Posts messages on a channel.
+
+[Link to Github page](Outputs/Slack%20Bot)
 
 <div id="ConnectorsAzureDataLakeBlob"/>
 
