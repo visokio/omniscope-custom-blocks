@@ -23,7 +23,7 @@
         "prediction"
     ],
     "introductoryText": "Predicts classes of new data from old data by drawing a boundary between two classes whereas the margin around the boundary is made as large as possible to avoid touching the points",
-    "dependencies": "Cython sklearn",
+    "dependencies": "Cython scikit-learn",
     "options": [
         {
             "name": "useAllNumericFields",

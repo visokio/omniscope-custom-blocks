@@ -25,7 +25,7 @@
         "fscore"
     ],
     "introductoryText": "Computes a confusion matrix as well as model validation statistics",
-    "dependencies": "sklearn",
+    "dependencies": "scikit-learn",
     "options": [
         {
             "name": "ground_truth",
