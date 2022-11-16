@@ -20,14 +20,14 @@
         "interval",
         "join"
     ],
-    "introductoryText": "The first input contains values and the second input intervals. The rows of the first input are now joined with rows of the second, if the value is contained in the interval.\n\nThe interval start and end values can be chosen to be either inclusive or exclusive. If the number is e.g. 5, and an interval is 5..10, then if inclusive is chosen, the rows are joined. If exclusive is chosen, they are not joined.",
+    "introductoryText": "The first input contains values and the second input intervals. The rows of the first input are now joined with rows of the second, if the value is contained in the interval.\n\nThe interval start and end values can be chosen to be either inclusive or exclusive. If the number is e.g. 5, and an interval is 5..10, then if inclusive is chosen, the rows are joined. If exclusive is chosen, they are not joined.\n\nIn addition, it is possible to specify an optional equality criterium. Only those records are interval-joined if they also contain the same value in those specified fields.",
     "dependencies": "",
     "options": [
         {
             "name": "joinType",
             "title": "Type of join",
             "description": null,
-            "groupTitle": "Join",
+            "groupTitle": "Interval Join",
             "width": null,
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
@@ -59,9 +59,9 @@
         },
         {
             "name": "value",
-            "title": "Value in interval",
+            "title": "Value in interval (first input)",
             "description": null,
-            "groupTitle": "First Input (Value)",
+            "groupTitle": "Interval Join",
             "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
@@ -71,9 +71,9 @@
         },
         {
             "name": "start",
-            "title": "Interval start",
+            "title": "Interval start (second input)",
             "description": null,
-            "groupTitle": "Second Input (Intervals)",
+            "groupTitle": "Interval Join",
             "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
@@ -85,7 +85,7 @@
             "name": "startOperator",
             "title": "Interval start value inclusiveness",
             "description": "If value is e.g. 5 and the interval is 5..10: If inclusive is chosen, then value is considered contained in the interval. If exclusive is chosen, then the value is not contained.",
-            "groupTitle": "Second Input (Intervals)",
+            "groupTitle": "Interval Join",
             "width": null,
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
@@ -117,9 +117,9 @@
         },
         {
             "name": "end",
-            "title": "Interval end",
+            "title": "Interval end (second input)",
             "description": null,
-            "groupTitle": "Second Input (Intervals)",
+            "groupTitle": "Interval Join",
             "width": null,
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
@@ -131,7 +131,7 @@
             "name": "endOperator",
             "title": "Interval end value inclusiveness",
             "description": "If value is e.g. 10 and the interval is 5..10: If inclusive is chosen, then value is considered contained in the interval. If exclusive is chosen, then the value is not contained.",
-            "groupTitle": "Second Input (Intervals)",
+            "groupTitle": "Interval Join",
             "width": null,
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
@@ -160,6 +160,30 @@
             "isDropdown": true,
             "choicesLayoutType": "LIST",
             "defaultValue": "<"
+        },
+        {
+            "name": "left",
+            "title": "Left (first input)",
+            "description": null,
+            "groupTitle": "Optional equality criterium",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "right",
+            "title": "Right (second input)",
+            "description": null,
+            "groupTitle": "Optional equality criterium",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
         }
     ],
     "blockOutputs": [

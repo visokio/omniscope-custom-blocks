@@ -15,6 +15,12 @@ end.field = get.option(omni.api, "end")
 endComparator = get.option(omni.api, "endOperator")
 join.type = get.option(omni.api, "joinType")
 
+left.eq.field = get.option(omni.api, "left")
+right.eq.field = get.option(omni.api, "right")
+
+has.eq.crit = !is.null(left.eq.field) && left.eq.field != "" && !is.null(right.eq.field) && right.eq.field != ""
+
+
 #sanity checks
 if (is.null(left)) abort(omni.api, "No 'value' input data")
 if (is.null(right)) abort(omni.api, "No 'interval' input data")
@@ -32,8 +38,19 @@ left$value.field.internal.omniscope = left[, value.field]
 right$start.field.internal.omniscope = right[, start.field]
 right$end.field.internal.omniscope = right[, end.field]
 
-left <- left[complete.cases(left[, c(value.field)]), ]
-right <- right[complete.cases(right[, c(start.field, end.field)]), ]
+if (has.eq.crit) {
+	left$left.eq.field.internal.omniscope = left[, left.eq.field]
+	right$right.eq.field.internal.omniscope = right[, right.eq.field]
+}
+
+
+if (has.eq.crit) {
+	left <- left[complete.cases(left[, c(value.field, left.eq.field)]), ]
+	right <- right[complete.cases(right[, c(start.field, end.field, right.eq.field)]), ]
+} else {
+	left <- left[complete.cases(left[, c(value.field)]), ]
+	right <- right[complete.cases(right[, c(start.field, end.field)]), ]
+}
 
 
 is.date <- function(x) {class(x)[1] %in% c("POSIXct", "POSIXt")}
@@ -48,8 +65,19 @@ setDT(left)
 setDT(right)
 
 
-join.on = c(paste("value.field.internal.omniscope", startComparator, "start.field.internal.omniscope", sep=""),
-			paste("value.field.internal.omniscope", endComparator, "end.field.internal.omniscope", sep=""))
+if (has.eq.crit) {
+	join.on = c(paste("value.field.internal.omniscope", startComparator, "start.field.internal.omniscope", sep=""),
+			paste("value.field.internal.omniscope", endComparator, "end.field.internal.omniscope", sep=""),
+            paste("left.eq.field.internal.omniscope", "==", "right.eq.field.internal.omniscope"))
+
+
+} else {
+	join.on = c(paste("value.field.internal.omniscope", startComparator, "start.field.internal.omniscope", sep=""),
+		paste("value.field.internal.omniscope", endComparator, "end.field.internal.omniscope", sep=""))
+}
+
+
+
 
 result <- left[right, on=join.on, allow.cartesian = T, nomatch=0, n, with=FALSE]
 
