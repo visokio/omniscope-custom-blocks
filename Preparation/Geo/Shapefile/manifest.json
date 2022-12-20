@@ -21,12 +21,12 @@
         "geojson",
         "shp"
     ],
-    "introductoryText": "This block joins regions defined in a shapefile with a list of geographical points defined as longitude and latitude coordinates. \nEach point is checked whether it is within the regions defined in the shapefile. If a point is within a region, a \"1\" appears in the corresponding output field with the same name as the region.\nThe region's name is taken from a property which must be defined in the \"Label field name\" parameter. The property name defining the actual geometries must be given in the \"Geometry field name\" parameter.\n\nThe second output gives shapefile meta information. From this meta information it should be possible to determine what to use as a label field, and what to use as a geometry field.\n\nIf any of the label, geometry, latitude or longitude fields are not given, no joined output is produced. Meta data is however always produced.",
+    "introductoryText": "This block joins regions defined in a shapefile with a list of geographical points defined as longitude and latitude coordinates. \nEach point is checked whether it is within the regions defined in the shapefile. If a point is within a region, Its label appears in a new output field called \"regions\".\nThe region's name is taken from a property which must be defined in the \"Label field name\" parameter. The property name defining the actual geometries must be given in the \"Geometry field name\" parameter.\n\nThe second output gives shapefile meta information. From this meta information it should be possible to determine what to use as a label field, and what to use as a geometry field.\n\nIf any of the label, geometry, latitude or longitude fields are not given, no joined output is produced. Meta data is however always produced.\n\nIn order to use this block:\n1. First, specify the shape- or geojson-file containing the regions. \n2. Execute the block.\n3. Wait for it to produce Meta output.\n4. Look into the Meta output and determine which fields contain geometry information and which contain labels.\n4.1 Geometry information will look like \"POLYGON ((16.64622...\".\n4.2 Labels should include information about your region. Either a full name \"Ireland\", or maybe a country or region code \"AT141\".\n5. Fill the geometry, label, and other options\n6. Execute again, now the Joined output should contain your original input data together with regional label information.",
     "dependencies": "geopandas",
     "options": [
         {
             "name": "shp_file",
-            "title": "Shapefile (*.shp)",
+            "title": "Shapefile (*.shp, *.geojson)",
             "description": null,
             "groupTitle": "Shapefile",
             "width": "THREE",
@@ -103,6 +103,6 @@
         "customSystemLibraries": null,
         "installVisokioRepLibraries": false
     },
-    "designLock": false,
+    "designLock": true,
     "apiMode": "BATCH"
 }

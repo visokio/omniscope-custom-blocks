@@ -34,15 +34,22 @@ else:
     gdf = gp.GeoDataFrame(df, geometry=gp.points_from_xy(lon, lat))
     gdf_length = len(gdf.index)
 
-    d = {True: 1, False: 0}
+    labels = [""] * gdf_length
 
     for i in range(0, shp_length):
         shp_label = shp.iloc[i][label]
         shp_geometry = shp.iloc[i][geometry]
 
         mask = gdf.within(shp_geometry)
-        output_data[shp_label] = mask.map(d)
+        for i in range(0, gdf_length):
+            if mask[i]:
+                if len(labels[i]) == 0:
+                    labels[i] = shp_label
+                else:
+                    labels[i] = labels[i] + "," + shp_label
 
+
+    output_data["regions"] = labels
 
 
     #write the output records in the first output
