@@ -30,7 +30,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.7.7' # install the python version needed      
+          python-version: '3.11.1' # install the python version needed      
 
       # Runs a single command using the runners shell
       - name: refresh index
