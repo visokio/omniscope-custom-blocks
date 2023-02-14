@@ -1,9 +1,13 @@
 from omniscope.api import OmniscopeApi
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 
 import pandas as pd
-import time, os
+import os
 
 omniscope_api = OmniscopeApi()
 
@@ -31,6 +35,7 @@ resSplit[0], resSplit[1] = resSplit[1], resSplit[0]
 try:
     chrome_options = Options()
     chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--window-size="+resolution)
 
     chrome_driver = omniscope_api.get_option("chromeDriver")
@@ -42,8 +47,14 @@ try:
     for index, row in input_data.iterrows():
         url = row[urlField]
         driver.get(url)
-        
-        time.sleep(sleepSeconds)
+                
+        wait = WebDriverWait(driver, timeout=sleepSeconds, poll_frequency=1, ignored_exceptions=[TimeoutException])
+        #wait on a non existing div to 'sleep' for the entire time, forcing a polling on the DOM, keeping the PY script running
+        try:
+            element = wait.until(EC.presence_of_element_located((By.ID, "terminatorDiv")))
+        except TimeoutException as ex:
+            #ignore
+            pass
         
         fileName = 'screenshot_'+str(index)+'.png'
         imagePath = folderPath+'/'+fileName
