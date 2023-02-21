@@ -25,7 +25,7 @@
         "convert"
     ],
     "introductoryText": "## Report tab to PDF\n#### This block will produce a PDF for each record of the upstream data containing a Report tab URL, saving the PDF files in a specified output folder, with filenames equal to the Report name + tab name + record index or to the specified optional name.\n##### This version of the block requires Omniscope configured to use Docker to run custom blocks.",
-    "dependencies": "",
+    "dependencies": "selenium\nwebdriver_manager",
     "options": [
         {
             "name": "report",
@@ -90,8 +90,8 @@
         },
         {
             "name": "chromeDelay",
-            "title": "Chrome loading delay",
-            "description": "Delay (ms) to allow Chrome loading the page before printing to PDF",
+            "title": "Chrome loading delay (seconds)",
+            "description": "Delay (seconds) to allow Chrome loading the page before printing to PDF",
             "groupTitle": "Advanced",
             "width": "HALF",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
@@ -113,7 +113,7 @@
     ],
     "docker": {
         "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
-        "customBaseImage": "europe-west2-docker.pkg.dev/visokiowebsite/visokio-custom-block/visokio-omniprint:0.0.3",
+        "customBaseImage": "europe-west2-docker.pkg.dev/visokiowebsite/visokio-custom-block/visokio-omniprint:0.0.4",
         "useCustomBaseImage": true,
         "customSystemLibraries": null,
         "installVisokioRepLibraries": true
