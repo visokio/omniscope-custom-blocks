@@ -18,8 +18,6 @@ from selenium.webdriver.common.by import By
 
 omniscope_api = OmniscopeApi()
 
-if not omniscope_api.is_docker(): abort("This script can only be used in DOCKER mode. You are running in HOST mode, please use the other community block called 'Report Tab to PDF'")
-
 
 def send_devtools(driver, cmd, params={}):
     resource = "/session/%s/chromium/send_command_and_get_result" % driver.session_id
