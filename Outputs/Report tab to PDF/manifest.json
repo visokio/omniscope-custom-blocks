@@ -115,7 +115,7 @@
         "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
         "customBaseImage": "europe-west2-docker.pkg.dev/visokiowebsite/visokio-custom-block/visokio-omniprint:0.0.4",
         "useCustomBaseImage": true,
-        "customSystemLibraries": null,
+        "customSystemLibraries": "chromium",
         "installVisokioRepLibraries": true
     },
     "designLock": false,
