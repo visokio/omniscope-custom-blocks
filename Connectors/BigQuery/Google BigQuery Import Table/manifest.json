@@ -23,7 +23,7 @@
         "query"
     ],
     "introductoryText": null,
-    "dependencies": "google-cloud-bigquery\npyarrow",
+    "dependencies": "google-cloud-bigquery\npyarrow\ndb_dtypes",
     "options": [
         {
             "name": "ApplicationCredentials",
