@@ -28,7 +28,7 @@
         {
             "name": "ApplicationCredentials",
             "title": "JSON key file",
-            "description": "Path of the JSON key file. For more information see https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries",
+            "description": "Path of the JSON key file. Not required if already provided by the server environment. For more information see https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries",
             "groupTitle": null,
             "width": "THREE",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
