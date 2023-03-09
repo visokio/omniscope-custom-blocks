@@ -100,7 +100,7 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Model Validation](#AnalyticsValidationModelValidation)
    5. Website
       1. [Website Analysis](#AnalyticsWebsitesWebsiteAnalysis)
-   6. [Survival Analysis 2](#AnalyticsSurvival)
+   6. [Survival Analysis](#AnalyticsSurvival)
 ## Block Overview
 <div id="OutputsGoogleBigQueryWriter"/>
 
@@ -558,7 +558,7 @@ Extracts the structure and content of a website and its pages.
 
 <div id="AnalyticsSurvival"/>
 
-### Survival Analysis 2
+### Survival Analysis
 
 <img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Survival/thumbnail.png" width="125" height="125"/>
 
