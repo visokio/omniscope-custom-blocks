@@ -12,3 +12,4 @@ survival ggfortify
 [script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Survival/script.R)
 
 
+Working example here https://public.omniscope.me/Public/Analytics/Survival/Survival+Analysis.iox/
