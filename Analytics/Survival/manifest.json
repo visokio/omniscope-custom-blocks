@@ -1,0 +1,111 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Survival Analysis 2",
+    "scriptFilename": "script.R",
+    "language": "R",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Computes an estimate of a survival curve for truncated and/or censored data using the Kaplan-Meier or Fleming-Harrington method",
+    "category": "Analytics",
+    "subcategory": null,
+    "tags": [],
+    "introductoryText": "#### Computes a survival curve (probability of survival over time) for truncated and/or censored data using the Kaplan-Meier or Fleming-Harrington method.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "type",
+            "title": "Type",
+            "description": "The type",
+            "groupTitle": "Method",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Kaplan-Meier",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "kaplan-meier",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Fleming-Harrington",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "fleming-harrington",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "AUTO",
+            "defaultValue": "kaplan-meier"
+        },
+        {
+            "name": "time",
+            "title": "Time",
+            "description": "For right censored data, this is the follow up time. For interval data, the first argument is the starting time for the interval.",
+            "groupTitle": "Survival",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "event",
+            "title": "Event",
+            "description": "The status indicator, normally 0=censored, 1=dead.",
+            "groupTitle": "Survival",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "strata",
+            "title": "Strata",
+            "description": "The strata / layer. If not specified will use all input data as 1 layer",
+            "groupTitle": "Survival",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "Survival curve",
+            "displayName": "Survival curve",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": true,
+    "apiMode": "BATCH"
+}
