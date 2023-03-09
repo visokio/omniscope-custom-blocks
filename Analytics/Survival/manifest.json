@@ -1,6 +1,6 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-    "name": "Survival Analysis 2",
+    "name": "Survival Analysis",
     "scriptFilename": "script.R",
     "language": "R",
     "executableVersion": null,
