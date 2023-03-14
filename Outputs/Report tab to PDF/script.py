@@ -32,7 +32,7 @@ def chrome_version():
     else:
         raise NotImplemented(f"Unknown OS '{osname}'")
 
-    version = read_version_from_cmd(f"{installpath} --version", PATTERN["google-chrome"])
+    version = read_version_from_cmd(f"{installpath} --version", '\\d+\\.\\d+\\.\\d+.?\\d*')
 
     return version
 
@@ -63,7 +63,7 @@ def get_pdf(path: str, timeout: int, is_docker: bool):
     webdriver_options.experimental_options["prefs"] = webdriver_prefs
 
     webdriver_prefs["profile.default_content_settings"] = {"images": 2}
-    
+
     if is_docker:
         chrome_service = Service("/chromedriver")
         driver = webdriver.Chrome(service=chrome_service, options=webdriver_options)
@@ -74,17 +74,17 @@ def get_pdf(path: str, timeout: int, is_docker: bool):
         except BaseException as e:
             print("errror " + str(e))
             v = None
-            
+
         if v is not None:
             print("using chromedriver version: " + str(v))
             driver = webdriver.Chrome(ChromeDriverManager(version=v).install(), options=webdriver_options)
         else:
             print("using newest chromedriver version")
             driver = webdriver.Chrome(ChromeDriverManager().install(), options=webdriver_options)
-    
+
     if driver is None:
         print("No chromedriver available")
-    
+
     driver.get(path)
 
     try:
@@ -98,7 +98,7 @@ def get_pdf(path: str, timeout: int, is_docker: bool):
             "printBackground": True,
             "preferCSSPageSize": True,
         }
-        
+
         result = send_devtools(
             driver, "Page.printToPDF", calculated_print_options)
         driver.quit()
@@ -158,12 +158,12 @@ for index, row in input_data.iterrows():
     if (file_name_field is not None):
         file_name = row[file_name_field] + ".pdf"
     file_path = output_folder + "/" + file_name
-    
+
     pdf = get_pdf(report_url, chrome_delay, is_docker)
-    
+
     with open(file_path, "wb") as file:
         file.write(pdf)
-    
+
     pdfs.append({"URL" : report, "PDF filename" : file_name})
 
 
