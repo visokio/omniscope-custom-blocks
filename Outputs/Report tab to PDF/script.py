@@ -13,10 +13,29 @@ from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import staleness_of
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.core.utils import read_version_from_cmd, PATTERN
+import platform
 
 omniscope_api = OmniscopeApi()
+
+def chrome_version():
+    osname = platform.system()
+    if osname == 'Darwin':
+        installpath = "/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+    elif osname == 'Windows':
+        installpath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+    elif osname == 'Linux':
+        installpath = "/usr/bin/google-chrome"
+    else:
+        raise NotImplemented(f"Unknown OS '{osname}'")
+
+    version = read_version_from_cmd(f"{installpath} --version", PATTERN["google-chrome"])
+
+    return version
+
 
 
 def send_devtools(driver, cmd, params={}):
@@ -31,7 +50,7 @@ def send_devtools(driver, cmd, params={}):
     return response.get("value")
 
 
-def get_pdf(path: str, timeout: int):
+def get_pdf(path: str, timeout: int, is_docker: bool):
     webdriver_options = Options()
     webdriver_prefs = {}
     driver = None
@@ -44,9 +63,28 @@ def get_pdf(path: str, timeout: int):
     webdriver_options.experimental_options["prefs"] = webdriver_prefs
 
     webdriver_prefs["profile.default_content_settings"] = {"images": 2}
-
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=webdriver_options)
-
+    
+    if is_docker:
+        chrome_service = Service("/chromedriver")
+        driver = webdriver.Chrome(service=chrome_service, options=webdriver_options)
+    else:
+        v = None
+        try:
+            v = chrome_version()
+        except BaseException as e:
+            print("errror " + str(e))
+            v = None
+            
+        if v is not None:
+            print("using chromedriver version: " + str(v))
+            driver = webdriver.Chrome(ChromeDriverManager(version=v).install(), options=webdriver_options)
+        else:
+            print("using newest chromedriver version")
+            driver = webdriver.Chrome(ChromeDriverManager().install(), options=webdriver_options)
+    
+    if driver is None:
+        print("No chromedriver available")
+    
     driver.get(path)
 
     try:
@@ -75,6 +113,8 @@ report_url_field = omniscope_api.get_option("report")
 file_name_field = omniscope_api.get_option("fileName")
 output_folder = omniscope_api.get_option("outputFolder")
 chrome_delay = omniscope_api.get_option("chromeDelay")
+
+is_docker = omniscope_api.is_docker()
 
 if chrome_delay is None:
     chrome_delay = 3
@@ -119,7 +159,7 @@ for index, row in input_data.iterrows():
         file_name = row[file_name_field] + ".pdf"
     file_path = output_folder + "/" + file_name
     
-    pdf = get_pdf(report_url, chrome_delay)
+    pdf = get_pdf(report_url, chrome_delay, is_docker)
     
     with open(file_path, "wb") as file:
         file.write(pdf)
