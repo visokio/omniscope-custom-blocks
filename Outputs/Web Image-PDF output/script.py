@@ -1,15 +1,9 @@
 from omniscope.api import OmniscopeApi
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-from fpdf import FPDF
 
-import fpdf
+from visokio_omniprint import ImagesPdf, Image, Tools
+
 import pandas as pd
-import os
+
 
 omniscope_api = OmniscopeApi()
 
@@ -17,83 +11,50 @@ omniscope_api = OmniscopeApi()
 input_data = omniscope_api.read_input_records(input_number=0)
 
 # read the value of the option called "my_option"
-urlField = omniscope_api.get_option("urlField")
-folderPath = omniscope_api.get_option("folderPath")
+url_field = omniscope_api.get_option("url_field")
+folder_path = omniscope_api.get_option("folder_path")
 resolution = omniscope_api.get_option("resolution")
-sleepSeconds = omniscope_api.get_option("sleepSeconds")
-orientationOpt = omniscope_api.get_option("orientationOpt")
+sleep_seconds = omniscope_api.get_option("sleep_seconds")
+orientation = omniscope_api.get_option("orientation")
+create_pdf = omniscope_api.get_option("create_pdf")
+output_file_name = omniscope_api.get_option("pdf_file_name")
+compressed = omniscope_api.get_option("compression")
 
-resSplit = resolution.split("x")
-#width, then height
-imgSize = [ int(resSplit[0]), int(resSplit[1]) ]
+tinify = omniscope_api.get_option("tinify")
+tinify_key = omniscope_api.get_option("tinify_key")
+tinify_width = omniscope_api.get_option("tinify_width")
 
-if orientationOpt == "P":
-    resolution = resSplit[1]+"x"+resSplit[0]
-    imgSize = [ int(resSplit[1]), int(resSplit[0]) ]
+is_docker = omniscope_api.is_docker()
 
-#Pdf lib wants heigth than width 
-resSplit[0], resSplit[1] = resSplit[1], resSplit[0]
+screenshots = []
+images_pdf = ImagesPdf()
+image = Image()
+
+for index, row in input_data.iterrows():
+    url = row[url_field]
     
-try:
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--window-size="+resolution)
-
-    chrome_driver = omniscope_api.get_option("chromeDriver")
-    driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=chrome_driver)
-
-    screenshots = []
-    pngGrabbed = []
-
-    for index, row in input_data.iterrows():
-        url = row[urlField]
-        driver.get(url)
-        
-        wait = WebDriverWait(driver, timeout=sleepSeconds, poll_frequency=1, ignored_exceptions=[TimeoutException])
-        #wait on a non existing div to 'sleep' for the entire time, forcing a polling on the DOM, keeping the PY script running
-        try:
-            element = wait.until(EC.presence_of_element_located((By.ID, "terminatorDiv")))
-        except TimeoutException as ex:
-            #ignore
-            pass
-        
-        fileName = 'screenshot_'+str(index)+'.png'
-        imagePath = folderPath+'/'+fileName
-        
-        if os.path.exists(imagePath):
-            os.remove(imagePath)
-        
-        screenshot = driver.save_screenshot(imagePath)
-        pngGrabbed.append(imagePath)
-        screenshots.append({"URL" : url, "Screenshot path" : imagePath, "Screenshot filename" : fileName})
-        
-    if (omniscope_api.get_option("createPdf")):
-        outputFileName = omniscope_api.get_option("pdfFileName")
-        if (outputFileName is None):
-            outputFileName = 'output.pdf'
-        
-        pdf = FPDF(orientationOpt, 'pt', (int(resSplit[0]),int(resSplit[1])))
-        pdf.set_margins(0,0,0)
-        pdf.set_auto_page_break(False)
-        pdf.set_compression(omniscope_api.get_option("compression"))
-        
-        for image in pngGrabbed:
-           pdf.add_page()
-           pdf.image(image)
+    file_name = 'screenshot_'+str(index)+'.png'
+    image_path = folder_path+'/'+file_name
+    
+    image.grab_screenshot_in_path(url, sleep_seconds, is_docker, image_path)
+    
+    if tinify:
+        image.tinify(tinify_key, image_path, tinify_width)
+    
+    images_pdf.add_path(image_path)
+    
+    screenshots.append({"URL" : url, "Screenshot path" : image_path, "Screenshot filename" : file_name})
+    
+    
+output_data = pd.DataFrame(screenshots)    
            
-        pdfPath = folderPath + "/" + outputFileName
-        
-        if os.path.exists(pdfPath):
-            os.remove(pdfPath)
-        pdf.output(pdfPath, "F")
-    
-finally:
-    driver.quit()
 
-output_data = pd.DataFrame(screenshots)
-if (omniscope_api.get_option("createPdf")):
-    output_data['PDF'] = pdfPath
+if create_pdf:
+    pdf_path = folder_path + "/" + output_file_name
+    images_pdf.create_pdf_in_path(pdf_path, orientation, resolution, compressed)
+    output_data['PDF'] = pdf_path    
+
+
 
 #write the output records in the first output
 if output_data is not None:

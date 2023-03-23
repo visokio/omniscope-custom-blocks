@@ -8,106 +8,9 @@ import sys
 import json
 import base64
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support.expected_conditions import staleness_of
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.core.utils import read_version_from_cmd, PATTERN
-import platform
+from visokio_omniprint import Pdf, Tools
 
 omniscope_api = OmniscopeApi()
-
-def chrome_version():
-    osname = platform.system()
-    if osname == 'Darwin':
-        installpath = "/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-    elif osname == 'Windows':
-        installpath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
-    elif osname == 'Linux':
-        installpath = "/usr/bin/google-chrome"
-    else:
-        raise NotImplemented(f"Unknown OS '{osname}'")
-
-    version = read_version_from_cmd(f"{installpath} --version", '\\d+\\.\\d+\\.\\d+.?\\d*')
-
-    return version
-
-
-
-def send_devtools(driver, cmd, params={}):
-    resource = "/session/%s/chromium/send_command_and_get_result" % driver.session_id
-    url = driver.command_executor._url + resource
-    body = json.dumps({"cmd": cmd, "params": params})
-    response = driver.command_executor._request("POST", url, body)
-
-    if not response:
-        raise Exception(response.get("value"))
-
-    return response.get("value")
-
-
-def get_pdf(path: str, timeout: int, is_docker: bool):
-    webdriver_options = Options()
-    webdriver_prefs = {}
-    driver = None
-
-    webdriver_options.add_argument("--headless")
-    webdriver_options.add_argument("--disable-gpu")
-    webdriver_options.add_argument("--no-sandbox")
-    webdriver_options.add_argument("--disable-dev-shm-usage")
-    webdriver_options.add_argument("--window-size=1920,1080")
-    webdriver_options.experimental_options["prefs"] = webdriver_prefs
-
-    webdriver_prefs["profile.default_content_settings"] = {"images": 2}
-
-    if is_docker:
-        chrome_service = Service("/chromedriver")
-        driver = webdriver.Chrome(service=chrome_service, options=webdriver_options)
-    else:
-        v = None
-        try:
-            v = chrome_version()
-        except BaseException as e:
-            print("errror " + str(e))
-            v = None
-
-        if v is not None:
-            print("using chromedriver version: " + str(v))
-            driver = webdriver.Chrome(ChromeDriverManager(version=v).install(), options=webdriver_options)
-        else:
-            print("using newest chromedriver version")
-            driver = webdriver.Chrome(ChromeDriverManager().install(), options=webdriver_options)
-
-    if driver is None:
-        print("No chromedriver available")
-
-    driver.get(path)
-
-    try:
-        WebDriverWait(driver, timeout).until(
-            staleness_of(driver.find_element(by=By.TAG_NAME, value="html"))
-        )
-    except TimeoutException:
-        calculated_print_options = {
-            "landscape": False,
-            "displayHeaderFooter": False,
-            "printBackground": True,
-            "preferCSSPageSize": True,
-        }
-
-        result = send_devtools(
-            driver, "Page.printToPDF", calculated_print_options)
-        driver.quit()
-        return base64.b64decode(result["data"])
-
-
-
-
-
 
 report_url_field = omniscope_api.get_option("report")
 file_name_field = omniscope_api.get_option("fileName")
@@ -119,53 +22,37 @@ is_docker = omniscope_api.is_docker()
 if chrome_delay is None:
     chrome_delay = 3
 
-page_size = ""
 page_width = omniscope_api.get_option("pageWidth")
-if (page_width is not None and page_width > 0):
-   page_size = "&pageWidth="+str(page_width)
-
 page_height = omniscope_api.get_option("pageHeight")
-if (page_height is not None and page_height > 0):
-   page_size += "&pageHeight="+str(page_height)
-
-
-
 
 # read the records associated to the first block input
 input_data = omniscope_api.read_input_records(input_number=0)
-
 
 if (output_folder.endswith('/')):
     output_folder = output_folder[:-1]
 
 
-
+pdf_creator = Pdf()
+tools = Tools()
 
 pdfs = []
 
-
 for index, row in input_data.iterrows():
-    report = row[report_url_field]
-    report_name = report.rsplit('/', 3)[-2]
-    report_base_url = report.rsplit('/', 1)[-2]
-    tab_name_with_filter = report.rsplit('#', 1)[-1]
-    report_url = report_base_url + "/" + "#device=printer"+ page_size +"&tab=" + tab_name_with_filter
-    tab_name = unquote(tab_name_with_filter)
-
-    if ('&' in tab_name):
-        tab_name = tab_name.split('&',2)[0]
-    file_name = report_name + "-" + tab_name + "-" + str(index) + ".pdf"
-    if (file_name_field is not None):
-        file_name = row[file_name_field] + ".pdf"
-    file_path = output_folder + "/" + file_name
-
-    pdf = get_pdf(report_url, chrome_delay, is_docker)
-
+    url = row[report_url_field]
+    file_name = None
+    
+    print ("FILE NAME:"+str(file_name_field)+":")
+    
+    if file_name_field is not None and len(file_name_field) > 0:
+    	file_name = row[file_name_field]
+    
+    report_url, file_path, file_name = tools.report_url(url, page_width, page_height, output_folder, file_name, index)
+    pdf = pdf_creator.create_pdf(report_url, chrome_delay, is_docker)
+    
     with open(file_path, "wb") as file:
         file.write(pdf)
-
-    pdfs.append({"URL" : report, "PDF filename" : file_name})
-
+    
+    pdfs.append({"URL" : url, "PDF filename" : file_name})
 
 output_data = pd.DataFrame(pdfs)
 

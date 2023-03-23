@@ -22,14 +22,14 @@
         "output",
         "print"
     ],
-    "introductoryText": "## Webpage Image/PDF output\n### Grab screenshots (PNG) per web page URL record by record, optionally creating a PDF file, saving all files to the specified output folder.\n#### Requires the installation of Chromedriver on your machine. Download it from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads).",
-    "dependencies": "selenium fpdf",
+    "introductoryText": "## Webpage Image/PDF output\n### Grab screenshots (PNG) per web page URL record by record, optionally creating a PDF file, saving all files to the specified output folder.\n#### If *not* run in Docker, requires the installation of chrome on your machine.",
+    "dependencies": "visokio-omniprint",
     "options": [
         {
-            "name": "urlField",
+            "name": "url_field",
             "title": "URL field",
             "description": "The field containing the web pages URL to screenshot",
-            "groupTitle": "",
+            "groupTitle": "Screenshot",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
@@ -41,7 +41,7 @@
             "name": "resolution",
             "title": "Screen resolution",
             "description": null,
-            "groupTitle": "",
+            "groupTitle": "Screenshot",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
@@ -132,10 +132,10 @@
             "defaultValue": "1280x720"
         },
         {
-            "name": "orientationOpt",
+            "name": "orientation",
             "title": "Orientation",
             "description": null,
-            "groupTitle": "",
+            "groupTitle": "Screenshot",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
@@ -166,10 +166,10 @@
             "defaultValue": "L"
         },
         {
-            "name": "folderPath",
+            "name": "folder_path",
             "title": "Output folder",
             "description": "The folder path where to save the png screenshot images and the pdf",
-            "groupTitle": "",
+            "groupTitle": "Screenshot",
             "width": "TWO",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
             "mandatory": true,
@@ -177,21 +177,10 @@
             "readOnly": false
         },
         {
-            "name": "chromeDriver",
-            "title": "Chromedriver executable",
-            "description": "Path to the ChromeDriver executable file, e.g C:\\Users\\Freddie\\chromedriver.exe",
-            "groupTitle": "",
-            "width": "TWO",
-            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
-            "mandatory": true,
-            "defaultValue": null,
-            "readOnly": false
-        },
-        {
-            "name": "sleepSeconds",
+            "name": "sleep_seconds",
             "title": "Page load delay",
             "description": "Wait the specified seconds before grabbing the screenshot to allow the page to load fully.",
-            "groupTitle": "",
+            "groupTitle": "Screenshot",
             "width": "SHRINK",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
             "numMin": 0,
@@ -201,7 +190,39 @@
             "showAsSlider": false
         },
         {
-            "name": "createPdf",
+            "name": "tinify",
+            "title": "Tinify",
+            "description": "Click this to shrink the width of the image. You need a tinify api key for this option which can be obtained here: https://tinify.com/dashboard/api",
+            "groupTitle": "Tinify",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "tinify_key",
+            "title": "Tinify Api Key",
+            "description": null,
+            "groupTitle": "Tinify",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "tinify_width",
+            "title": "Image width",
+            "description": null,
+            "groupTitle": "Tinify",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null,
+            "showAsSlider": false
+        },
+        {
+            "name": "create_pdf",
             "title": "Create PDF",
             "description": "If ticked a PDF file will be generated made with all the screenshots grabbed",
             "groupTitle": "PDF",
@@ -210,7 +231,7 @@
             "defaultValue": null
         },
         {
-            "name": "pdfFileName",
+            "name": "pdf_file_name",
             "title": "PDF file name",
             "description": "Optional file name for the PDF to generate.",
             "groupTitle": "PDF",
@@ -240,10 +261,10 @@
     ],
     "docker": {
         "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
-        "customBaseImage": null,
-        "useCustomBaseImage": false,
+        "customBaseImage": "europe-west2-docker.pkg.dev/visokiowebsite/visokio-custom-block/visokio-omniprint-chrome-beta:0.0.1",
+        "useCustomBaseImage": true,
         "customSystemLibraries": null,
-        "installVisokioRepLibraries": false
+        "installVisokioRepLibraries": true
     },
     "designLock": false,
     "apiMode": "BATCH"
