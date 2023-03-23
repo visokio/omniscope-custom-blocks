@@ -1,0 +1,2 @@
+rm dist/*
+hatch build
