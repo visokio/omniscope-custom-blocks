@@ -23,24 +23,45 @@
         "batch",
         "terminal"
     ],
-    "introductoryText": "## Execute Command\n#### The block will execute the command as specified by the user option, and pass through the input data.\nOn Windows, use \"cmd /c [your command]\" to execute shell commands such as copy. \nExample: \"cmd /c copy C:/Myfile.txt D:/Myfile.txt\"\n\n#",
+    "introductoryText": "## Execute Command\n#### The block will execute the command as specified by the user option, and pass through the input data.\nOn Windows, use \"cmd /c [your command]\" to execute shell commands such as copy. \nExample: \"cmd /c copy C:/Myfile.txt D:/Myfile.txt\"\n\n#### Either insert a single command, or connect an input with a list of commands and specify the field.",
     "dependencies": "",
     "options": [
         {
             "name": "command",
             "title": "Command",
             "description": "The command to execute",
-            "groupTitle": "",
+            "groupTitle": "Single command",
             "width": "TWO",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
-            "mandatory": true,
-            "defaultValue": "cmd /c echo test"
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "commands_field",
+            "title": "Field with commands",
+            "description": null,
+            "groupTitle": "Multiple commands",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "ignoreErrors",
             "title": "Ignore errors",
             "description": "Tick to log a warning but otherwise ignore errors. Un-tick to abort and fail if an error occurs.",
-            "groupTitle": "",
+            "groupTitle": "Configuration",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "auto_cmd",
+            "title": "Automatically add \"cmd /c\" (for Windows)",
+            "description": null,
+            "groupTitle": "Configuration",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
             "defaultValue": null
