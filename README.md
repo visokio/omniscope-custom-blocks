@@ -34,9 +34,10 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Slack API WebClient](#ConnectorsSlackAPIWebClient)
    5. Weather
       1. [OpenWeatherMap](#ConnectorsWeatherOpenWeatherMap)
-   6. [Google BigQuery Import Table](#ConnectorsBigQueryGoogleBigQueryImportTable)
-   7. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
-   8. [Etherscan](#ConnectorsEtherscan)
+   6. [HubSpot](#ConnectorsHubSpot)
+   7. [Google BigQuery Import Table](#ConnectorsBigQueryGoogleBigQueryImportTable)
+   8. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
+   9. [Etherscan](#ConnectorsEtherscan)
 3. Inputs
    1. Databases
       1. [MongoDB](#InputsDatabasesMongoDB)
@@ -179,6 +180,16 @@ Allows you to call public Slack endpoints.
 Retrieves current weather and forecasts from OpenWeatherMap
 
 [Link to Github page](Connectors/Weather/OpenWeatherMap)
+
+<div id="ConnectorsHubSpot"/>
+
+### HubSpot
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/HubSpot/thumbnail.png" width="125" height="125"/>
+
+Retrieves contacts, companies, deals and lists
+
+[Link to Github page](Connectors/HubSpot)
 
 <div id="ConnectorsBigQueryGoogleBigQueryImportTable"/>
 
