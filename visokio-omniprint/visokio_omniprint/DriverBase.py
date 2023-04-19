@@ -31,11 +31,13 @@ class DriverBase:
         webdriver_options = Options()
         webdriver_prefs = {}
         # Add arguments to options
-        webdriver_options.add_argument("--headless")
+        webdriver_options.add_argument("--headless")  # TODO: explore new headless mode - https://developer.chrome.com/articles/new-headless/#:~:text=In%20a%20regular%20headful%20Chrome,number%20from%20the%20WebSocket%20URL.
         webdriver_options.add_argument("--disable-gpu")
         webdriver_options.add_argument("--no-sandbox")
         webdriver_options.add_argument("--disable-dev-shm-usage")
-        webdriver_options.add_argument("--window-size=1920,1080")
+        webdriver_options.add_argument("--window-size=1920,1080")  # TODO: document; why?
+        webdriver_options.add_argument("--ignore-certificate-errors") # Allow self-signed certificates. FIXME: update pypi for this change
+        # TODO: If remote debugging is needed, it can be added here: https://developer.chrome.com/blog/headless-chrome/#debugging-chrome-without-a-browser-ui
         # Add preferences to options
         webdriver_options.experimental_options["prefs"] = webdriver_prefs
         webdriver_prefs["profile.default_content_settings"] = {"images": 2}
