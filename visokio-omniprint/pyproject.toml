@@ -35,9 +35,9 @@ dependencies = [
 
 
 [project.urls]
-Documentation = "https://github.com/visokio/omniscope-custom-blocks/visokio-omniprint#readme"
-Issues = "https://github.com/visokio/omniscope-custom-blocks/visokio-omniprint/issues"
-Source = "https://github.com/visokio/omniscope-custom-blocks/visokio-omniprint"
+Documentation = "https://github.com/visokio/omniscope-custom-blocks/tree/master/visokio-omniprint#readme"
+Issues = "https://github.com/visokio/omniscope-custom-blocks/tree/master/visokio-omniprint/issues"
+Source = "https://github.com/visokio/omniscope-custom-blocks/tree/master/visokio-omniprint"
 
 
 [tool.hatch.envs.default]
