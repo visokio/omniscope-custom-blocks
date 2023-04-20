@@ -36,7 +36,7 @@ class DriverBase:
         webdriver_options.add_argument("--no-sandbox")
         webdriver_options.add_argument("--disable-dev-shm-usage")
         webdriver_options.add_argument("--window-size=1920,1080")  # TODO: document; why?
-        webdriver_options.add_argument("--ignore-certificate-errors") # Allow self-signed certificates. FIXME: update pypi for this change
+        webdriver_options.add_argument("--ignore-certificate-errors") # Allow self-signed certificates.
         # TODO: If remote debugging is needed, it can be added here: https://developer.chrome.com/blog/headless-chrome/#debugging-chrome-without-a-browser-ui
         # Add preferences to options
         webdriver_options.experimental_options["prefs"] = webdriver_prefs

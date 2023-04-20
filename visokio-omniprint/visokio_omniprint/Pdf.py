@@ -17,7 +17,7 @@ class Pdf(DriverBase):
         }
 
         result = self.send_devtools(driver, "Page.printToPDF", print_options)
-        driver.get("about:blank") # Navigate away to ensure page is unloaded properly. FIXME: update pypi for this change
+        driver.get("about:blank") # Navigate away to ensure page is unloaded properly.
         driver.quit()
         return base64.b64decode(result["data"])
 

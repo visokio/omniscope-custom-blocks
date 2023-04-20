@@ -8,8 +8,7 @@ class Image(DriverBase):
     def grab_screenshot_in_path(self, url, timeout, is_docker, path):
         driver = self.get_driver_for_url(url, timeout, is_docker)
         driver.save_screenshot(path)
-        # Navigate away to ensure page is unloaded properly:
-        driver.get("about:blank") # FIXME: deploy this change to pypi
+        driver.get("about:blank") # Navigate away to ensure page is unloaded properly
 
 
     def tinify(self, key, path, width):
