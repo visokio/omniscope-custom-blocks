@@ -5,6 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import staleness_of
+from selenium.webdriver.support.expected_conditions import presence_of_element_located
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -90,6 +91,19 @@ class DriverBase:
         driver = self.get_driver(is_docker)
         driver.get(url)  # Navigate to the specified URL
 
+        # Wait for aria-busy=true to disappear. In pages that don't have it, it'll immediately be the case.
+        # In Omniscope from mid 2023.2, it'll disappear when the app finishes rendering.
+        # A long timeout of 100s should only fail if the app was genuinely busy in a stuck state.
+        try:
+            WebDriverWait(driver, 100, 0.1).until_not(
+                presence_of_element_located((By.CSS_SELECTOR, "[aria-busy=true]"))
+            )
+        except TimeoutException:
+            driver.quit()
+            raise Exception("App remained busy for too long")
+
+        # Also wait for a further n seconds (configurable). 1 second is recommended if the app
+        # supports aria-busy. Longer otherwise.
         try:
             # Wait until the page is fully loaded
             WebDriverWait(driver, timeout).until(
