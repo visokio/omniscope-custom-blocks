@@ -21,13 +21,13 @@
         "paramater",
         "iteration"
     ],
-    "introductoryText": "The **ForEach** block allows to execute another Omniscope project multiple times, each time with a different set of parameter values.",
+    "introductoryText": "#### The **ForEach** block allows to execute another Omniscope project multiple times, each time with a different set of parameter values.\nN.B. use the internal IOX project URL to skip authentication and SSL issues, e.g. http://127.0.0.1:24679/pathToProject/file.iox/",
     "dependencies": "",
     "options": [
         {
             "name": "Iox_File_Url",
             "title": "Iox File URL",
-            "description": "The URL of the file to execute",
+            "description": "The URL of the file to execute. Use the internal project URL to skip authentication and SSL issues, e.g. http://127.0.0.1:24679/pathToFile/project.iox",
             "groupTitle": "File",
             "width": "THREE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
