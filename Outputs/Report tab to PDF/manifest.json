@@ -25,7 +25,7 @@
         "convert"
     ],
     "introductoryText": "## Report tab to PDF\n#### This block will produce a PDF for each record of the upstream data containing a Report tab URL, saving the PDF files in a specified output folder, with filenames equal to the Report name + tab name + record index or to the specified optional name.\n#### If *not* run in Docker, requires the installation of chrome on your machine.",
-    "dependencies": "visokio-omniprint",
+    "dependencies": "visokio-omniprint==1.0.1",
     "options": [
         {
             "name": "report",

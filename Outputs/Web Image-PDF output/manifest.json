@@ -23,7 +23,7 @@
         "print"
     ],
     "introductoryText": "## Webpage Image/PDF output\n### Grab screenshots (PNG) per web page URL record by record, optionally creating a PDF file, saving all files to the specified output folder.\n#### If *not* run in Docker, requires the installation of chrome on your machine.",
-    "dependencies": "visokio-omniprint",
+    "dependencies": "visokio-omniprint==1.0.1",
     "options": [
         {
             "name": "url_field",
