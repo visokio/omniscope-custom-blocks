@@ -104,8 +104,8 @@ class DriverBase:
 
         # Also wait for a further n seconds (configurable). 1 second is recommended if the app
         # supports aria-busy. Longer otherwise.
+        # TODO: reduce the default in the PDF block manifests from 3 to 1 once 2023.2.x aria-busy support becomes widely available
         try:
-            # Wait until the page is fully loaded
             WebDriverWait(driver, timeout).until(
                 staleness_of(driver.find_element(by=By.TAG_NAME, value="html"))
             )
