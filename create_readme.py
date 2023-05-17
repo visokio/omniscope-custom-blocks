@@ -29,6 +29,8 @@ def create_header(f):
     f.write("\n\n")
     f.write("Public repository for custom blocks for Omniscope Evo.\n")
     f.write("\n")
+    f.write("####[Python / R API docs](https://help.visokio.com/support/solutions/articles/42000071109-custom-block-r-python-api-reference)\n")
+    f.write("\n")
 
 def compare(a, b):
 
