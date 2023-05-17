@@ -2,6 +2,8 @@
 
 Public repository for custom blocks for Omniscope Evo.
 
+#### [Python / R API docs](https://help.visokio.com/support/solutions/articles/42000071109-custom-block-r-python-api-reference)
+
 ## How to add a block to this repository
 ### The simple way
 1. Design your custom block in Omniscope Evo 2020.1 or later.
