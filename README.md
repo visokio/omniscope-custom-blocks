@@ -78,7 +78,7 @@ Public repository for custom blocks for Omniscope Evo.
    6. [HubSpot](#ConnectorsHubSpot)
    7. [Google BigQuery Import Table](#ConnectorsBigQueryGoogleBigQueryImportTable)
    8. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
-   9. [Dune connector](#ConnectorsDune)
+   9. [Dune](#ConnectorsDune)
    10. [Etherscan](#ConnectorsEtherscan)
 6. Preparation
    1. ForEach
@@ -440,7 +440,7 @@ Executes a SQL query on Google BigQuery and imports the query results
 
 <div id="ConnectorsDune"/>
 
-### Dune connector
+### Dune
 
 <img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Dune/thumbnail.png" width="125" height="125"/>
 
