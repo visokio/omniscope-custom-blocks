@@ -1,6 +1,6 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-    "name": "Dune connector",
+    "name": "Dune",
     "scriptFilename": "script.py",
     "language": "PYTHON",
     "executableVersion": null,
