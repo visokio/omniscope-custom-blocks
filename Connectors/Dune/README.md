@@ -1,5 +1,5 @@
 ## Dune connector
-### Execute queries and retrieve data from any public query on dune.com, as well as any personal private queries your Dune account has access to.
+### Execute queries and retrieve blockchain data from any public query on dune.com, as well as any personal private queries your Dune account has access to.
 
 ## Language
 Python
