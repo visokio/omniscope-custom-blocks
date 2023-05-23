@@ -80,6 +80,7 @@ Public repository for custom blocks for Omniscope Evo.
    8. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
    9. [Dune](#ConnectorsDune)
    10. [Etherscan](#ConnectorsEtherscan)
+   11. [Flipside](#ConnectorsFlipside)
 6. Preparation
    1. ForEach
       1. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
@@ -457,6 +458,16 @@ Execute queries and retrieve blockchain data from any public query on dune.com, 
 The Ethereum Blockchain Explorer.
 
 [Link to Github page](Connectors/Etherscan)
+
+<div id="ConnectorsFlipside"/>
+
+### Flipside
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flipside/thumbnail.png" width="125" height="125"/>
+
+Executes a SQL query on Flipside and retrieves the blockchain data
+
+[Link to Github page](Connectors/Flipside)
 
 <div id="PreparationForEachProjectParameters"/>
 
