@@ -1,0 +1,60 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Flipside",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Executes a SQL query on Flipside and retrieves the blockchain data",
+    "category": "Connectors",
+    "subcategory": null,
+    "tags": [],
+    "introductoryText": "![Flipside](data:image/png;base64,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)\n### Flipside crypto connector\n#### Executes a SQL query on Flipside and retrieves the data\nFlipside data tables schema docs can be found [here](https://docs.flipsidecrypto.com/our-data/data-table-documentation)\n####",
+    "dependencies": "flipside",
+    "options": [
+        {
+            "name": "key",
+            "title": "API key",
+            "description": "Get your API key from your Flipside account page",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": false
+        },
+        {
+            "name": "query",
+            "title": "SQL query",
+            "description": "Flipside uses Snowflake dialect, similar to PostgreSQL",
+            "groupTitle": null,
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "Query results",
+            "displayName": "Query results",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": true,
+    "apiMode": "BATCH"
+}
