@@ -46,6 +46,8 @@ try:
         # If the DataFrame is empty, break the loop
         if df is None or df.empty:
             break
+            
+        df = df.drop(columns=['__row_index'])    
 
         # Append the data to the all_data DataFrame
         if (all_data is None): 
