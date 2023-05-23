@@ -58,10 +58,12 @@ try:
         # Increment the page number
         page_number += 1
 
-    output_data = all_data
     #write the output records in the first output
-    if output_data is not None:
-        omniscope_api.write_output_records(output_data, output_number=0)
+    if all_data is not None:
+        omniscope_api.write_output_records(all_data, output_number=0)
+        omniscope_api.close(f"Retrieved {all_data.shape[0]} records")
+    else:
+        omniscope_api.close("No data retrieved") 
         
 except QueryRunRateLimitError as e:
     omniscope_api.abort(f"You have been rate limited: {e.message}")
@@ -73,6 +75,3 @@ except ServerError as e:
     omniscope_api.abort(f"A server-side error has occurred: {e.message}")
 except ApiError as e:
     omniscope_api.abort(f"An API error has occurred: {e.message}")
-
-
-omniscope_api.close()
