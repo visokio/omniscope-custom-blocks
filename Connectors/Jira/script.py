@@ -56,15 +56,7 @@ if (projectID is not None):
     # Get all issues in a specific project as DataFrame
     issues_df = jira.get_issues(projectID)
     if (issues_df is not None):
-         print(issues_df)
          omniscope_api.write_output_records(issues_df, output_number=1)
-
-
-
-# Get a specific issue as DataFrame
-#issue_df = jira.get_issue('PROJKEY-1')
-#print(issue_df)
-
 
 
 omniscope_api.close()
