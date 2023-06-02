@@ -24,11 +24,11 @@ Public repository for custom blocks for Omniscope Evo.
 1. Analytics
    1. Clustering
       1. [KMeans](#AnalyticsClusteringKMeans)
-      2. [Gaussian Mixture Model](#AnalyticsClusteringGMM)
-      3. [DBScan](#AnalyticsClusteringDBScan)
+      2. [DBScan](#AnalyticsClusteringDBScan)
+      3. [Gaussian Mixture Model](#AnalyticsClusteringGMM)
    2. Network Analysis
-      1. [Attribute Analysis](#AnalyticsNetworkAnalysisAttributeAnalysis)
-      2. [TSNE](#AnalyticsNetworkAnalysisTSNE)
+      1. [TSNE](#AnalyticsNetworkAnalysisTSNE)
+      2. [Attribute Analysis](#AnalyticsNetworkAnalysisAttributeAnalysis)
    3. Prediction
       1. [K-Nearest-Neighbours](#AnalyticsPredictionKNN)
       2. [Support Vector Machine](#AnalyticsPredictionSVM)
@@ -39,15 +39,31 @@ Public repository for custom blocks for Omniscope Evo.
    6. [Survival Analysis](#AnalyticsSurvival)
 2. Custom scripts
    1. [Execute Command](#CustomscriptsExecuteCommand)
-3. Inputs
-   1. Databases
-      1. [MongoDB](#InputsDatabasesMongoDB)
-   2. R
-      1. [R Data Reader](#InputsRdata)
-      2. [Rds Batch Append](#InputsRdsBatchAppend)
-   3. [SFTP Downloader](#InputsSFTPDownloader)
-   4. [Sharepoint Online Downloader](#InputsSharepointOnline)
-   5. [PDF Reader](#InputsPDFReader)
+3. Preparation
+   1. ForEach
+      1. [ForEach multi stage](#PreparationForEachForEachMultiStage)
+      2. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
+   2. Geo
+      1. [Shapefile](#PreparationGeoShapefile)
+      2. [Gridsquare](#PreparationGeoGridsquare)
+   3. Interfaces
+      1. [Kedro](#PreparationInterfacesKedro)
+   4. JSON
+      1. [JSON Normalise](#PreparationJSONNormalise)
+   5. Join
+      1. [Interval Join](#PreparationJoinIntervalJoin)
+      2. [Inequality Join](#PreparationJoinInequalityJoin)
+      3. [Fuzzy Terms Join](#PreparationJoinFuzzyJoin)
+   6. Partition
+      1. [Partition](#PreparationPartition)
+   7. Pivot
+      1. [Melt De-pivot](#PreparationPivotMeltDe-pivot)
+   8. Standardisation
+      1. [Standardise](#PreparationStandardisationStandardise)
+   9. Workflow
+      1. [ForEach](#PreparationForEachForEach)
+   10. [Field Renamer](#PreparationFieldRenamer)
+   11. [Split Address](#PreparationSplitAddress)
 4. Outputs
    1. BigQuery
       1. [Google BigQuery Export](#OutputsGoogleBigQueryWriter)
@@ -55,14 +71,23 @@ Public repository for custom blocks for Omniscope Evo.
       1. [GitHub](#OutputsGitHub)
    3. PDF
       1. [Report tab to PDF](#OutputsReporttabtoPDF)
-      2. [Append PDF files](#OutputsAppendPDFfiles)
-      3. [Web Image-PDF output](#OutputsWebImage-PDFoutput)
+      2. [Web Image-PDF output](#OutputsWebImage-PDFoutput)
+      3. [Append PDF files](#OutputsAppendPDFfiles)
       4. [Multi-tenant Report to PDF](#OutputsReporttoPDFbatchoutput)
    4. PowerPoint
       1. [Report to PowerPoint](#OutputsReporttoPowerPoint)
    5. Slack
       1. [Slack Bot](#OutputsSlackBot)
-5. Connectors
+5. Inputs
+   1. Databases
+      1. [MongoDB](#InputsDatabasesMongoDB)
+   2. R
+      1. [Rds Batch Append](#InputsRdsBatchAppend)
+      2. [R Data Reader](#InputsRdata)
+   3. [SFTP Downloader](#InputsSFTPDownloader)
+   4. [PDF Reader](#InputsPDFReader)
+   5. [Sharepoint Online Downloader](#InputsSharepointOnline)
+6. Connectors
    1. Azure
       1. [Azure Data Lake Storage Gen2 Blob](#ConnectorsAzureDataLakeBlob)
    2. Flightstats
@@ -75,37 +100,14 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Slack API WebClient](#ConnectorsSlackAPIWebClient)
    5. Weather
       1. [OpenWeatherMap](#ConnectorsWeatherOpenWeatherMap)
-   6. [HubSpot](#ConnectorsHubSpot)
-   7. [Google BigQuery Import Table](#ConnectorsBigQueryGoogleBigQueryImportTable)
-   8. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
-   9. [Dune](#ConnectorsDune)
+   6. [Google BigQuery Import Table](#ConnectorsBigQueryGoogleBigQueryImportTable)
+   7. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogleBigQueryCustomSQL)
+   8. [HubSpot](#ConnectorsHubSpot)
+   9. [Flipside](#ConnectorsFlipside)
    10. [Etherscan](#ConnectorsEtherscan)
-   11. [Flipside](#ConnectorsFlipside)
-6. Preparation
-   1. ForEach
-      1. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
-      2. [ForEach multi stage](#PreparationForEachForEachMultiStage)
-   2. Geo
-      1. [Shapefile](#PreparationGeoShapefile)
-      2. [Gridsquare](#PreparationGeoGridsquare)
-   3. Interfaces
-      1. [Kedro](#PreparationInterfacesKedro)
-   4. JSON
-      1. [JSON Normalise](#PreparationJSONNormalise)
-   5. Join
-      1. [Fuzzy Terms Join](#PreparationJoinFuzzyJoin)
-      2. [Inequality Join](#PreparationJoinInequalityJoin)
-      3. [Interval Join](#PreparationJoinIntervalJoin)
-   6. Partition
-      1. [Partition](#PreparationPartition)
-   7. Pivot
-      1. [Melt De-pivot](#PreparationPivotMeltDe-pivot)
-   8. Standardisation
-      1. [Standardise](#PreparationStandardisationStandardise)
-   9. Workflow
-      1. [ForEach](#PreparationForEachForEach)
-   10. [Field Renamer](#PreparationFieldRenamer)
-   11. [Split Address](#PreparationSplitAddress)
+   11. [Dune](#ConnectorsDune)
+7. Connector
+   1. [Jira](#ConnectorsJira)
 ## Block Overview
 <div id="AnalyticsClusteringKMeans"/>
 
@@ -117,16 +119,6 @@ Performs KMeans clustering on the first input data provided. The output consists
 
 [Link to Github page](Analytics/Clustering/KMeans)
 
-<div id="AnalyticsClusteringGMM"/>
-
-### Gaussian Mixture Model
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/GMM/thumbnail.png" width="125" height="125"/>
-
-Performs GMM clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.
-
-[Link to Github page](Analytics/Clustering/GMM)
-
 <div id="AnalyticsClusteringDBScan"/>
 
 ### DBScan
@@ -137,15 +129,15 @@ Performs DBScan clustering on the first input data provided. The output consists
 
 [Link to Github page](Analytics/Clustering/DBScan)
 
-<div id="AnalyticsNetworkAnalysisAttributeAnalysis"/>
+<div id="AnalyticsClusteringGMM"/>
 
-### Attribute Analysis
+### Gaussian Mixture Model
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network Analysis/Attribute Analysis/thumbnail.png" width="125" height="125"/>
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Clustering/GMM/thumbnail.png" width="125" height="125"/>
 
-Given a dataset in which each record represents an edge between two nodes of a network, and each node has an associated categorical attribute, the block analyses connections between attributes, based on connections between associated nodes. The result of the analysis is a list of records in which each record specifies a connection from one attribute to another. The connection contains a probability field, which gives an answer to the question that if a node has the specified categorical attribute, how probable it is that it has a connection to another node with the linked categorical attribute.
+Performs GMM clustering on the first input data provided. The output consists of the original input with a Cluster field appended. If a second input is available, it will be used as output instead.
 
-[Link to Github page](Analytics/Network%20Analysis/Attribute%20Analysis)
+[Link to Github page](Analytics/Clustering/GMM)
 
 <div id="AnalyticsNetworkAnalysisTSNE"/>
 
@@ -156,6 +148,16 @@ Given a dataset in which each record represents an edge between two nodes of a n
 Given a dataset in which each record represents an edge between two nodes of a network, the block will project all the nodes onto a (e.g. 2)- dimensional plane in such a way that nodes which share many connections are close together, and nodes that do not share many connections are far apart.
 
 [Link to Github page](Analytics/Network%20Analysis/TSNE)
+
+<div id="AnalyticsNetworkAnalysisAttributeAnalysis"/>
+
+### Attribute Analysis
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network Analysis/Attribute Analysis/thumbnail.png" width="125" height="125"/>
+
+Given a dataset in which each record represents an edge between two nodes of a network, and each node has an associated categorical attribute, the block analyses connections between attributes, based on connections between associated nodes. The result of the analysis is a list of records in which each record specifies a connection from one attribute to another. The connection contains a probability field, which gives an answer to the question that if a node has the specified categorical attribute, how probable it is that it has a connection to another node with the linked categorical attribute.
+
+[Link to Github page](Analytics/Network%20Analysis/Attribute%20Analysis)
 
 <div id="AnalyticsPredictionKNN"/>
 
@@ -213,61 +215,137 @@ Execute a system command.
 
 [Link to Github page](Custom%20scripts/ExecuteCommand)
 
-<div id="InputsDatabasesMongoDB"/>
+<div id="PreparationForEachForEachMultiStage"/>
 
-### MongoDB
+### ForEach multi stage
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/Databases/MongoDB/thumbnail.png" width="125" height="125"/>
+The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.
 
-A connector for MongoDB
+[Link to Github page](Preparation/ForEach/ForEachMultiStage)
 
-[Link to Github page](Inputs/Databases/MongoDB)
+<div id="PreparationForEachProjectParameters"/>
 
-<div id="InputsRdata"/>
+### Project Parameters Batch Setting
 
-### R Data Reader
+None
 
-Joins regions defined in a shapefile with points defined as latitudes and longitudes, and gives meta information about the content of the shapefile
+[Link to Github page](Preparation/ForEach/ProjectParameters)
 
-[Link to Github page](Inputs/Rdata)
+<div id="PreparationGeoShapefile"/>
 
-<div id="InputsRdsBatchAppend"/>
+### Shapefile
 
-### Rds Batch Append
+Match regions in shapefile with geographical points having latitude and longitude
 
-Reads multiple rds files either from an upstream block, or a folder, and appends them
+[Link to Github page](Preparation/Geo/Shapefile)
 
-[Link to Github page](Inputs/Rds%20Batch%20Append)
+<div id="PreparationGeoGridsquare"/>
 
-<div id="InputsSFTPDownloader"/>
+### Gridsquare
 
-### SFTP Downloader
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Geo/Gridsquare/thumbnail.png" width="125" height="125"/>
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/SFTP Downloader/thumbnail.png" width="125" height="125"/>
+Converts gridsquare / Maidenhead 
 
-Download files from a SFTP server folder.
+[Link to Github page](Preparation/Geo/Gridsquare)
 
-[Link to Github page](Inputs/SFTP%20Downloader)
+<div id="PreparationInterfacesKedro"/>
 
-<div id="InputsSharepointOnline"/>
+### Kedro
 
-### Sharepoint Online Downloader
+Intefaces with kedro workflows
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/Sharepoint Online/thumbnail.png" width="125" height="125"/>
+[Link to Github page](Preparation/Interfaces/Kedro)
 
-Download a file from a Sharepoint Online site.
+<div id="PreparationJSONNormalise"/>
 
-[Link to Github page](Inputs/Sharepoint%20Online)
+### JSON Normalise
 
-<div id="InputsPDFReader"/>
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/JSON/Normalise/thumbnail.png" width="125" height="125"/>
 
-### PDF Reader
+Normalise semi-structured JSON strings into a flat table, appending data record by record.
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/PDF Reader/thumbnail.png" width="125" height="125"/>
+[Link to Github page](Preparation/JSON/Normalise)
 
-Extract text from PDF files.
+<div id="PreparationJoinIntervalJoin"/>
 
-[Link to Github page](Inputs/PDF%20Reader)
+### Interval Join
+
+Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.
+
+[Link to Github page](Preparation/Join/Interval%20Join)
+
+<div id="PreparationJoinInequalityJoin"/>
+
+### Inequality Join
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Inequality Join/thumbnail.png" width="125" height="125"/>
+
+Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.
+
+[Link to Github page](Preparation/Join/Inequality%20Join)
+
+<div id="PreparationJoinFuzzyJoin"/>
+
+### Fuzzy Terms Join
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Fuzzy Join/thumbnail.png" width="125" height="125"/>
+
+Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by inverse document frequency.
+
+[Link to Github page](Preparation/Join/Fuzzy%20Join)
+
+<div id="PreparationPartition"/>
+
+### Partition
+
+Partitions the data into chunks of the desired size. There will be a new field called "Partition" which contains a number unique to each partition.
+
+[Link to Github page](Preparation/Partition)
+
+<div id="PreparationPivotMeltDe-pivot"/>
+
+### Melt De-pivot
+
+Keep all selected fixed fields in the output, de-pivot all other fields
+
+[Link to Github page](Preparation/Pivot/Melt%20De-pivot)
+
+<div id="PreparationStandardisationStandardise"/>
+
+### Standardise
+
+Standardises the values in the selected fields so that they are in the range between 0 and 1. I.e. The new value of the highest value in each field is going to be 1, and the lowest value 0. All other values are scaled proportionally.
+
+[Link to Github page](Preparation/Standardisation/Standardise)
+
+<div id="PreparationForEachForEach"/>
+
+### ForEach
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/ForEach/ForEach/thumbnail.png" width="125" height="125"/>
+
+Executes another Omniscope project multiple times, each time with a different set of parameter values.
+
+[Link to Github page](Preparation/ForEach/ForEach)
+
+<div id="PreparationFieldRenamer"/>
+
+### Field Renamer
+
+Renames the fields of a data set given a list of current names and new names.
+
+[Link to Github page](Preparation/Field%20Renamer)
+
+<div id="PreparationSplitAddress"/>
+
+### Split Address
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Split Address/thumbnail.png" width="125" height="125"/>
+
+Splits an address field into streetname, streetnumber, and suffix.
+
+[Link to Github page](Preparation/Split%20Address)
 
 <div id="OutputsGoogleBigQueryWriter"/>
 
@@ -295,16 +373,6 @@ Prints Report tabs to PDF files for each record of the input data.
 
 [Link to Github page](Outputs/Report%20tab%20to%20PDF)
 
-<div id="OutputsAppendPDFfiles"/>
-
-### Append PDF files
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Append PDF files/thumbnail.png" width="125" height="125"/>
-
-Append multiple PDF files combining them into one PDF file.
-
-[Link to Github page](Outputs/Append%20PDF%20files)
-
 <div id="OutputsWebImage-PDFoutput"/>
 
 ### Web Image-PDF output
@@ -314,6 +382,16 @@ Append multiple PDF files combining them into one PDF file.
 Grabs screenshots of webpages, optionally producing a PDF document.
 
 [Link to Github page](Outputs/Web%20Image-PDF%20output)
+
+<div id="OutputsAppendPDFfiles"/>
+
+### Append PDF files
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Append PDF files/thumbnail.png" width="125" height="125"/>
+
+Append multiple PDF files combining them into one PDF file.
+
+[Link to Github page](Outputs/Append%20PDF%20files)
 
 <div id="OutputsReporttoPDFbatchoutput"/>
 
@@ -344,6 +422,62 @@ Export a Report to a PowerPoint pptx file
 Posts messages on a channel.
 
 [Link to Github page](Outputs/Slack%20Bot)
+
+<div id="InputsDatabasesMongoDB"/>
+
+### MongoDB
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/Databases/MongoDB/thumbnail.png" width="125" height="125"/>
+
+A connector for MongoDB
+
+[Link to Github page](Inputs/Databases/MongoDB)
+
+<div id="InputsRdsBatchAppend"/>
+
+### Rds Batch Append
+
+Reads multiple rds files either from an upstream block, or a folder, and appends them
+
+[Link to Github page](Inputs/Rds%20Batch%20Append)
+
+<div id="InputsRdata"/>
+
+### R Data Reader
+
+Joins regions defined in a shapefile with points defined as latitudes and longitudes, and gives meta information about the content of the shapefile
+
+[Link to Github page](Inputs/Rdata)
+
+<div id="InputsSFTPDownloader"/>
+
+### SFTP Downloader
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/SFTP Downloader/thumbnail.png" width="125" height="125"/>
+
+Download files from a SFTP server folder.
+
+[Link to Github page](Inputs/SFTP%20Downloader)
+
+<div id="InputsPDFReader"/>
+
+### PDF Reader
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/PDF Reader/thumbnail.png" width="125" height="125"/>
+
+Extract text from PDF files.
+
+[Link to Github page](Inputs/PDF%20Reader)
+
+<div id="InputsSharepointOnline"/>
+
+### Sharepoint Online Downloader
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/Sharepoint Online/thumbnail.png" width="125" height="125"/>
+
+Download a file from a Sharepoint Online site.
+
+[Link to Github page](Inputs/Sharepoint%20Online)
 
 <div id="ConnectorsAzureDataLakeBlob"/>
 
@@ -413,16 +547,6 @@ Retrieves current weather and forecasts from OpenWeatherMap
 
 [Link to Github page](Connectors/Weather/OpenWeatherMap)
 
-<div id="ConnectorsHubSpot"/>
-
-### HubSpot
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/HubSpot/thumbnail.png" width="125" height="125"/>
-
-Retrieves contacts, companies, deals and lists
-
-[Link to Github page](Connectors/HubSpot)
-
 <div id="ConnectorsBigQueryGoogleBigQueryImportTable"/>
 
 ### Google BigQuery Import Table
@@ -439,25 +563,15 @@ Executes a SQL query on Google BigQuery and imports the query results
 
 [Link to Github page](Connectors/BigQuery/Google%20BigQuery%20Custom%20SQL)
 
-<div id="ConnectorsDune"/>
+<div id="ConnectorsHubSpot"/>
 
-### Dune
+### HubSpot
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Dune/thumbnail.png" width="125" height="125"/>
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/HubSpot/thumbnail.png" width="125" height="125"/>
 
-Execute queries and retrieve blockchain data from any public query on dune.com, as well as any personal private queries your Dune account has access to
+Retrieves contacts, companies, deals and lists
 
-[Link to Github page](Connectors/Dune)
-
-<div id="ConnectorsEtherscan"/>
-
-### Etherscan
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Etherscan/thumbnail.png" width="125" height="125"/>
-
-The Ethereum Blockchain Explorer.
-
-[Link to Github page](Connectors/Etherscan)
+[Link to Github page](Connectors/HubSpot)
 
 <div id="ConnectorsFlipside"/>
 
@@ -469,135 +583,33 @@ Executes a SQL query on Flipside and retrieves the blockchain data
 
 [Link to Github page](Connectors/Flipside)
 
-<div id="PreparationForEachProjectParameters"/>
+<div id="ConnectorsEtherscan"/>
 
-### Project Parameters Batch Setting
+### Etherscan
 
-None
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Etherscan/thumbnail.png" width="125" height="125"/>
 
-[Link to Github page](Preparation/ForEach/ProjectParameters)
+The Ethereum Blockchain Explorer.
 
-<div id="PreparationForEachForEachMultiStage"/>
+[Link to Github page](Connectors/Etherscan)
 
-### ForEach multi stage
+<div id="ConnectorsDune"/>
 
-The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.
+### Dune
 
-[Link to Github page](Preparation/ForEach/ForEachMultiStage)
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Dune/thumbnail.png" width="125" height="125"/>
 
-<div id="PreparationGeoShapefile"/>
+Execute queries and retrieve blockchain data from any public query on dune.com, as well as any personal private queries your Dune account has access to
 
-### Shapefile
+[Link to Github page](Connectors/Dune)
 
-Match regions in shapefile with geographical points having latitude and longitude
+<div id="ConnectorsJira"/>
 
-[Link to Github page](Preparation/Geo/Shapefile)
+### Jira
 
-<div id="PreparationGeoGridsquare"/>
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Jira/thumbnail.png" width="125" height="125"/>
 
-### Gridsquare
+Retrieves projects and issues from Jira
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Geo/Gridsquare/thumbnail.png" width="125" height="125"/>
-
-Converts gridsquare / Maidenhead 
-
-[Link to Github page](Preparation/Geo/Gridsquare)
-
-<div id="PreparationInterfacesKedro"/>
-
-### Kedro
-
-Intefaces with kedro workflows
-
-[Link to Github page](Preparation/Interfaces/Kedro)
-
-<div id="PreparationJSONNormalise"/>
-
-### JSON Normalise
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/JSON/Normalise/thumbnail.png" width="125" height="125"/>
-
-Normalise semi-structured JSON strings into a flat table, appending data record by record.
-
-[Link to Github page](Preparation/JSON/Normalise)
-
-<div id="PreparationJoinFuzzyJoin"/>
-
-### Fuzzy Terms Join
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Fuzzy Join/thumbnail.png" width="125" height="125"/>
-
-Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by inverse document frequency.
-
-[Link to Github page](Preparation/Join/Fuzzy%20Join)
-
-<div id="PreparationJoinInequalityJoin"/>
-
-### Inequality Join
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Inequality Join/thumbnail.png" width="125" height="125"/>
-
-Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.
-
-[Link to Github page](Preparation/Join/Inequality%20Join)
-
-<div id="PreparationJoinIntervalJoin"/>
-
-### Interval Join
-
-Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.
-
-[Link to Github page](Preparation/Join/Interval%20Join)
-
-<div id="PreparationPartition"/>
-
-### Partition
-
-Partitions the data into chunks of the desired size. There will be a new field called "Partition" which contains a number unique to each partition.
-
-[Link to Github page](Preparation/Partition)
-
-<div id="PreparationPivotMeltDe-pivot"/>
-
-### Melt De-pivot
-
-Keep all selected fixed fields in the output, de-pivot all other fields
-
-[Link to Github page](Preparation/Pivot/Melt%20De-pivot)
-
-<div id="PreparationStandardisationStandardise"/>
-
-### Standardise
-
-Standardises the values in the selected fields so that they are in the range between 0 and 1. I.e. The new value of the highest value in each field is going to be 1, and the lowest value 0. All other values are scaled proportionally.
-
-[Link to Github page](Preparation/Standardisation/Standardise)
-
-<div id="PreparationForEachForEach"/>
-
-### ForEach
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/ForEach/ForEach/thumbnail.png" width="125" height="125"/>
-
-Executes another Omniscope project multiple times, each time with a different set of parameter values.
-
-[Link to Github page](Preparation/ForEach/ForEach)
-
-<div id="PreparationFieldRenamer"/>
-
-### Field Renamer
-
-Renames the fields of a data set given a list of current names and new names.
-
-[Link to Github page](Preparation/Field%20Renamer)
-
-<div id="PreparationSplitAddress"/>
-
-### Split Address
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Split Address/thumbnail.png" width="125" height="125"/>
-
-Splits an address field into streetname, streetnumber, and suffix.
-
-[Link to Github page](Preparation/Split%20Address)
+[Link to Github page](Connectors/Jira)
 

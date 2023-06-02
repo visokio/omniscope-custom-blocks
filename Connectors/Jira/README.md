@@ -9,3 +9,5 @@ requests
 
 ## Source
 [script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Jira/script.py)
+
+![](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Jira/jira%20demo.png)
