@@ -49,7 +49,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
-            "defaultValue": "visokio20"
+            "defaultValue": null
         },
         {
             "name": "boardID",
@@ -59,7 +59,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
-            "defaultValue": "56d6c87a92c8e44ae5374f3b"
+            "defaultValue": null
         },
         {
             "name": "listID",
@@ -69,7 +69,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
-            "defaultValue": "6480551ae4b0635cbc947ae7"
+            "defaultValue": null
         },
         {
             "name": "cardID",
@@ -79,7 +79,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
-            "defaultValue": "64804cdccaa0f9a8fea3e125"
+            "defaultValue": null
         },
         {
             "name": "checklistID",
@@ -89,7 +89,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
-            "defaultValue": "64804d584bc196a9b5712c7a"
+            "defaultValue": null
         },
         {
             "name": "searchString",
