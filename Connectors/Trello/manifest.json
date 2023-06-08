@@ -1,0 +1,158 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Trello",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Retrieves boards, lists and cards, and allows you to search in Trello.",
+    "category": "Connectors",
+    "subcategory": null,
+    "tags": [
+        "trello",
+        "board",
+        "card"
+    ],
+    "introductoryText": "![Trello](data:image/png;base64,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)\n### Trello connector\n#### Retrieves boards, lists, cards, checklists, items and allows you to search in Trello.\n#### Setup required : obtain the API-key and generate a API token from [Trello](https://trello.com/power-ups/admin/) by creating a new power up",
+    "dependencies": "requests",
+    "options": [
+        {
+            "name": "apiKey",
+            "title": "API Key",
+            "description": "Obtain it from Trello by creating a new power up https://trello.com/power-ups/admin/",
+            "groupTitle": "Authentication",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": true
+        },
+        {
+            "name": "apiToken",
+            "title": "API Token",
+            "description": "Obtain it from Trello admin UI",
+            "groupTitle": "Authentication",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": true
+        },
+        {
+            "name": "workspaceID",
+            "title": "Retrieve boards for this Workspace ID",
+            "description": "Take it from the Trello workspace URL, e.g. https://trello.com/w/[YourWorkspaceID]",
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "visokio20"
+        },
+        {
+            "name": "boardID",
+            "title": "Retrieve lists for this board ID",
+            "description": null,
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "56d6c87a92c8e44ae5374f3b"
+        },
+        {
+            "name": "listID",
+            "title": "Retrieve cards for this list ID",
+            "description": "if specified, all issues for this project will be retrieved",
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "6480551ae4b0635cbc947ae7"
+        },
+        {
+            "name": "cardID",
+            "title": "Retrieve checklists for this card ID",
+            "description": null,
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "64804cdccaa0f9a8fea3e125"
+        },
+        {
+            "name": "checklistID",
+            "title": "Retrieves items for the checklist ID",
+            "description": null,
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "64804d584bc196a9b5712c7a"
+        },
+        {
+            "name": "searchString",
+            "title": "Search cards in Trello",
+            "description": "search members, cards, boards, organisations",
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Boards",
+            "label": "Boards",
+            "displayName": "Boards",
+            "tooltip": "the Trello boards for the workspace"
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Lists",
+            "label": "Lists",
+            "displayName": "Lists",
+            "tooltip": "the Trello lists for the specified board"
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Cards",
+            "label": "Cards",
+            "displayName": "Cards",
+            "tooltip": "the Trello cards for the specified list"
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Checklists",
+            "label": "Checklists",
+            "displayName": "Checklists",
+            "tooltip": "the checklists for the specified card"
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Items",
+            "label": "Items",
+            "displayName": "Items",
+            "tooltip": "the items for the specified checklist"
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Search results",
+            "label": "Search results",
+            "displayName": "Search results",
+            "tooltip": "the results of the search on Trello."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}
