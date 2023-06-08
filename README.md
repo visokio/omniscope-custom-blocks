@@ -105,9 +105,8 @@ Public repository for custom blocks for Omniscope Evo.
    8. [HubSpot](#ConnectorsHubSpot)
    9. [Flipside](#ConnectorsFlipside)
    10. [Etherscan](#ConnectorsEtherscan)
-   11. [Dune](#ConnectorsDune)
-7. Connector
-   1. [Jira](#ConnectorsJira)
+   11. [Jira](#ConnectorsJira)
+   12. [Dune](#ConnectorsDune)
 ## Block Overview
 <div id="AnalyticsClusteringKMeans"/>
 
@@ -593,16 +592,6 @@ The Ethereum Blockchain Explorer.
 
 [Link to Github page](Connectors/Etherscan)
 
-<div id="ConnectorsDune"/>
-
-### Dune
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Dune/thumbnail.png" width="125" height="125"/>
-
-Execute queries and retrieve blockchain data from any public query on dune.com, as well as any personal private queries your Dune account has access to
-
-[Link to Github page](Connectors/Dune)
-
 <div id="ConnectorsJira"/>
 
 ### Jira
@@ -612,4 +601,14 @@ Execute queries and retrieve blockchain data from any public query on dune.com, 
 Retrieves projects and issues from Jira
 
 [Link to Github page](Connectors/Jira)
+
+<div id="ConnectorsDune"/>
+
+### Dune
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Dune/thumbnail.png" width="125" height="125"/>
+
+Execute queries and retrieve blockchain data from any public query on dune.com, as well as any personal private queries your Dune account has access to
+
+[Link to Github page](Connectors/Dune)
 
