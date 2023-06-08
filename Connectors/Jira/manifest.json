@@ -27,7 +27,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": ""
+            "defaultValue": null
         },
         {
             "name": "username",
@@ -37,7 +37,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": ""
+            "defaultValue": null
         },
         {
             "name": "apiKey",
@@ -56,7 +56,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
-            "defaultValue": ""
+            "defaultValue": null
         }
     ],
     "blockOutputs": [
