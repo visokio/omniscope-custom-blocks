@@ -50,14 +50,15 @@ class DriverBase:
         This function creates a ChromeDriver instance to be used in a Docker container.
         """
         chrome_service = Service("/chromedriver")
-        return webdriver.Chrome(service=chrome_service, options=options)
+        return webdriver.Chrome(options=options, service=chrome_service)
 
     def get_driver_host(self, options):
         """
         This function creates a ChromeDriver instance to be used on the host machine.
         """
         version = self.get_compatible_chromedriver()
-        return webdriver.Chrome(ChromeDriverManager(version=version).install(), options=options)
+        chrome_service = Service(ChromeDriverManager(version=version).install())
+        return webdriver.Chrome(options=options, service=chrome_service)
 
 
     def get_driver(self, is_docker):
