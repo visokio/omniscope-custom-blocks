@@ -1,0 +1,51 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Add row ID field",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": null,
+    "description": "Adds a Row ID field with a sequential number.",
+    "category": "Preparation",
+    "subcategory": null,
+    "tags": ["row", "ID", "sequence"],
+    "introductoryText": "### Adds a new column with a sequential numeric ID",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fieldName",
+            "title": "Row ID field name",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Row ID"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "STREAM_TRANSFORM"
+}
