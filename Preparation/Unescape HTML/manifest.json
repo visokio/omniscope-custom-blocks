@@ -1,0 +1,61 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Unescape HTML",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": null,
+    "description": "Convert all named and numeric character references to the corresponding Unicode characters",
+    "category": "Preparation",
+    "subcategory": null,
+    "tags": [
+        "HTML",
+        "escape",
+        "unescape",
+		"encode",
+		"decode"
+    ],
+    "introductoryText": "### Convert all named and numeric character references to the corresponding Unicode characters",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fieldName",
+            "title": "Text to unescape",
+            "description": "Select the field that contains the text to unescape",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": [
+                "STRING"
+            ]
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "STREAM_TRANSFORM"
+}
