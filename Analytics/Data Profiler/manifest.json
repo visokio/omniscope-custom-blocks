@@ -1,0 +1,66 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Data Profiler",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Provides detailed statistics about a dataset",
+    "category": "Analytics",
+    "subcategory": null,
+    "tags": [],
+    "introductoryText": "![](data:image/png;base64,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\n) \nThis block provides detailed statistics about your dataset. \nIt generates information about each field including its data type, basic statistics (such as count, mean, etc.), number of null values, and skewness for numeric fields. \nAdditionally, for numeric fields, it calculates a z-score for each data point, identifies potential anomalies (data points that are 3 or more standard deviations away from the mean), and estimates the likelihood of each data point being an anomaly. \nThe detailed field statistics are written to the first block output, while the input data enriched with anomaly detection information is written to the second block output.",
+    "dependencies": "scipy",
+    "options": [
+        {
+            "name": "fieldsAnalysis",
+            "title": "Fields analysis",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "anomalyDetection",
+            "title": "Anomaly detection",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Field statistics",
+            "tooltip": null
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data 2",
+            "label": "2",
+            "displayName": "Anomaly detection",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": true,
+    "apiMode": "BATCH"
+}
