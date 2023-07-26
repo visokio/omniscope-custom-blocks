@@ -25,7 +25,7 @@
         "convert"
     ],
     "introductoryText": "## Multi-tenant Report to PDF batch output\n#### This block will produce a PDF of a Report tab for each multi-tenant config row, saving the PDF files in a specified output folder, with filenames equal to the Report name + scenario ID.\n#### Connect a Multi-tenant report configuration to this block with the \"scenario\" field configured, set the base Report URL pointing to the tab you want to print (copy it from your browser address bar or from the Report Sharing dialog). \n#### If *not* run in Docker, requires the installation of chrome on your machine.",
-    "dependencies": "visokio-omniprint==1.1.1",
+    "dependencies": "visokio-omniprint==1.1.3",
     "options": [
         {
             "name": "report",

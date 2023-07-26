@@ -57,7 +57,7 @@ class DriverBase:
         This function creates a ChromeDriver instance to be used on the host machine.
         """
         version = self.get_compatible_chromedriver()
-        chrome_service = Service(ChromeDriverManager(version=version).install())
+        chrome_service = Service(ChromeDriverManager(driver_version=version).install())
         return webdriver.Chrome(options=options, service=chrome_service)
 
 
