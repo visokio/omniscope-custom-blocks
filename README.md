@@ -42,6 +42,7 @@ Public repository for custom blocks for Omniscope Evo.
    11. [Etherscan](#ConnectorsEtherscan)
    12. [Jira](#ConnectorsJira)
    13. [HubSpot](#ConnectorsHubSpot)
+   14. [Yahoo Finance](#ConnectorsYahooFinance)
 2. Preparation
    1. ForEach
       1. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
@@ -255,6 +256,16 @@ Retrieves projects and issues from Jira
 Retrieves contacts, companies, deals and lists
 
 [Link to Github page](Connectors/HubSpot)
+
+<div id="ConnectorsYahooFinance"/>
+
+### Yahoo Finance
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/YahooFinance/thumbnail.png" width="125" height="125"/>
+
+Fetches price data for tickers from Yahoo Finance
+
+[Link to Github page](Connectors/YahooFinance)
 
 <div id="PreparationForEachProjectParameters"/>
 
