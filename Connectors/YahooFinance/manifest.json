@@ -1,0 +1,183 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Yahoo Finance",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Fetches price data for tickers from Yahoo Finance",
+    "category": "Connectors",
+    "subcategory": null,
+    "tags": [
+        "stock",
+        "finance",
+        "ticker",
+        "price",
+        "yahoo"
+    ],
+    "introductoryText": "![](data:image/png;base64,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)\n### Fetches price data for tickers from Yahoo Finance\nFor each row in the input dataset, gets the ticker and retrieves the price history given the selected interval and start / end date, appending all results in the output data, grouped by date and ticker.",
+    "dependencies": "yfinance",
+    "options": [
+        {
+            "name": "Ticker",
+            "title": "Tickers field",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "Start",
+            "title": "Start date",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "2023-01-01"
+        },
+        {
+            "name": "End",
+            "title": "End date",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "2023-06-30"
+        },
+        {
+            "name": "Interval",
+            "title": "Interval",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "3 months",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "3mo",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1 month",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1mo",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1 week",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1wk",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "5 days",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "5d",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1 day",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1d",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1 hour",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1h",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "30 minutes",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "30m",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "15 minutes",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "15m",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "5 minutes",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "5m",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "1mo"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "Output",
+            "displayName": "Output",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": true,
+    "apiMode": "BATCH"
+}
