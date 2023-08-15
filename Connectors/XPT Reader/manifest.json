@@ -24,7 +24,7 @@
             "title": "XPT file",
             "description": null,
             "groupTitle": null,
-            "width": "ONE",
+            "width": "TWO",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
             "mandatory": true,
             "defaultValue": null,
