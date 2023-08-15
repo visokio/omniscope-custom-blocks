@@ -432,7 +432,7 @@ Retrieves projects and issues from Jira
 
 <img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/XPT Reader/thumbnail.png" width="125" height="125"/>
 
-None
+Reads a SAS Transport *xpt* file, extracting a dataset.
 
 [Link to Github page](Connectors/XPT%20Reader)
 
