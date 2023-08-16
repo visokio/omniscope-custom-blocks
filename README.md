@@ -47,7 +47,8 @@ Public repository for custom blocks for Omniscope Evo.
    10. [Split Address](#PreparationSplitAddress)
    11. [Field Renamer](#PreparationFieldRenamer)
    12. [Add row ID field](#PreparationAddrowIDfield)
-   13. [Unescape HTML](#PreparationUnescapeHTML)
+   13. [URL Encode](#PreparationURLEncode)
+   14. [Unescape HTML](#PreparationUnescapeHTML)
 2. Inputs
    1. Databases
       1. [MongoDB](#InputsDatabasesMongoDB)
@@ -253,6 +254,14 @@ Renames the fields of a data set given a list of current names and new names.
 Adds a Row ID field with a sequential number.
 
 [Link to Github page](Preparation/Add%20row%20ID%20field)
+
+<div id="PreparationURLEncode"/>
+
+### URL Encode
+
+URL encode strings in a field using the UTF-8 encoding scheme
+
+[Link to Github page](Preparation/URL%20Encode)
 
 <div id="PreparationUnescapeHTML"/>
 
