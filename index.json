@@ -83,6 +83,21 @@
             "icon": null
         },
         {
+            "path": "Preparation/URL Encode",
+            "displayName": "URL Encode",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "URL",
+                "quote",
+                "encode"
+            ],
+            "category": "Preparation",
+            "description": "URL encode strings in a field using the UTF-8 encoding scheme",
+            "subcategory": null,
+            "icon": null
+        },
+        {
             "path": "Preparation/Interfaces/Kedro",
             "displayName": "Kedro",
             "language": "PYTHON",
