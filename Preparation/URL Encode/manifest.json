@@ -1,0 +1,59 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "URL Encode",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": null,
+    "description": "URL encode strings in a field using the UTF-8 encoding scheme",
+    "category": "Preparation",
+    "subcategory": null,
+    "tags": [
+        "URL",
+        "quote",
+        "encode"
+    ],
+    "introductoryText": "### URL encode strings in a field using the UTF-8 encoding scheme",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fieldName",
+            "title": "Text to encode",
+            "description": "Select the field that contains the text to encode",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": [
+                "STRING"
+            ]
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": true,
+    "apiMode": "STREAM_TRANSFORM"
+}
