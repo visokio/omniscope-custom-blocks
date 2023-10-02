@@ -80,6 +80,9 @@ for index, row in block_input.iterrows():
 
 http = urllib3.PoolManager()
 
+
+ignore_errors = omniscope_api.get_option("ignore_errors")
+
 #For each set of param, update the project parameters and execute the workflow.
 for param_values in param_values_list:
     update_parameters(omniscope_api, http, iox_url, param_names, param_values)
@@ -89,6 +92,9 @@ for param_values in param_values_list:
         job_id = start_wf_execution(omniscope_api, http, iox_url, block_names, refresh_from_source)
         job_state = wait_job_termination(omniscope_api, http, iox_url, job_id)
         if job_state == "FAILED":
-            omniscope_api.abort("Worfklow execution failed: "+job_state)
+            if ignore_errors:
+                break
+            else:
+                omniscope_api.abort("Worfklow execution failed: "+job_state)
 
 omniscope_api.close()

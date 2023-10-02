@@ -1,6 +1,6 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-    "name": "ForEach",
+    "name": "For Each (Separate Workflows)",
     "scriptFilename": "script.py",
     "language": "PYTHON",
     "executableVersion": null,
@@ -21,7 +21,7 @@
         "paramater",
         "iteration"
     ],
-    "introductoryText": "#### The **ForEach** block allows to execute another Omniscope project multiple times, each time with a different set of parameter values.\nN.B. use the internal IOX project URL to skip authentication and SSL issues, e.g. http://127.0.0.1:24679/pathToProject/file.iox/",
+    "introductoryText": "#### The **ForEach** block allows to execute another Omniscope project multiple times, each time with a different set of parameter values.\nThis block uses TWO workflows:\n\n1. The first workflow is the one that contains this For Each block. Whenever this workflow is executed, the For Each block will execute the second workflow.\n2. The second workflow is another project on disk. Its location needs to be specified in the options below. It can be executed entirely, or you can define a subset of the blocks that should be executed.\n\nThis is contrary to the core For Each block, which does not require 2 workflows. Please check it to see if it already matches your requirements. It is easier to use and much more performant.\n\nN.B. use the internal IOX project URL to skip authentication and SSL issues, e.g. http://127.0.0.1:24679/pathToProject/file.iox/",
     "dependencies": "",
     "options": [
         {
@@ -62,6 +62,15 @@
             "description": null,
             "groupTitle": "Workflow Execution",
             "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "ignore_errors",
+            "title": "Ignore errors",
+            "description": "Ignores errors in the looped execution. I.e. if parameters are defined that break workflow execution, the block will continue with the next set of parameters instead of stopping.",
+            "groupTitle": "Workflow Execution",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
             "defaultValue": null
         }
