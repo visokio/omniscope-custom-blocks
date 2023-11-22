@@ -20,9 +20,18 @@
         "database",
         "collection"
     ],
-    "introductoryText": "# MongoDB connector\n\nUse this block to connect to MongoDB data bases. \n\n## Authentication\n\nIf authentication is required, specify a username, password and an authentication source. This could be \"admin\" for the admin database, or some other database in which your username is registered.\n\n## Custom Query\n\nIf \"Full Collection\" is ticked, then all data in the given collection is returned. In order to specify which records are to be returned a custom query can be entered. The query must be valid JSON and is formed like this:\n\nLet's say the collection is about students and contains a field \"age\" and we only want to return students of age greater or equal than 20. The query would look like this:\n\n{\"age\": {\"$gt\": 20}}\n\nIf the record contains an object \"address\" which itself contains fields \"streetname\", \"housenumber\" and we are interested in finding the student that lives in \"Park Lane\", we can form a query such as this:\n\n{\"address.streetname\": {\"$eq\": \"Park Lane\"}}\n\n## Flattening JSON\n\nThe connector will only return the first level of fields in the collection. If a field contains an object then it is necessary to connect the MongoDB connector to a JSON Normalise community block to further flatten the JSON records.",
+    "introductoryText": "# MongoDB connector\n\nUse this block to connect to MongoDB data bases. \n\n## Authentication\n\nEither use \"Url\", or \"Connection\" + \"Authentication\". The \"Url\" can contain any valid MongoDB connection url, which can itself contain a username and password. If an url is specified, the sections \"Connection\" and \"Authentication\" are ignored.\n\nIf authentication is required, specify a username, password and an authentication source. This could be \"admin\" for the admin database, or some other database in which your username is registered.\n\n## Custom Query\n\nIf \"Full Collection\" is ticked, then all data in the given collection is returned. In order to specify which records are to be returned a custom query can be entered. The query must be valid JSON and is formed like this:\n\nLet's say the collection is about students and contains a field \"age\" and we only want to return students of age greater or equal than 20. The query would look like this:\n\n{\"age\": {\"$gt\": 20}}\n\nIf the record contains an object \"address\" which itself contains fields \"streetname\", \"housenumber\" and we are interested in finding the student that lives in \"Park Lane\", we can form a query such as this:\n\n{\"address.streetname\": {\"$eq\": \"Park Lane\"}}\n\n## Flattening JSON\n\nThe connector will only return the first level of fields in the collection. If a field contains an object then it is necessary to connect the MongoDB connector to a JSON Normalise community block to further flatten the JSON records.",
     "dependencies": "pymongo",
     "options": [
+        {
+            "name": "connection_url",
+            "title": "Connection Url",
+            "description": null,
+            "groupTitle": "Url",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": false
+        },
         {
             "name": "host",
             "title": "Host",
@@ -62,9 +71,8 @@
             "description": "Your password (optional)",
             "groupTitle": "Authentication",
             "width": "ONE",
-            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
-            "mandatory": false,
-            "defaultValue": null
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": false
         },
         {
             "name": "auth_source",

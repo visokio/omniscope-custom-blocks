@@ -16,13 +16,19 @@ user = omniscope_api.get_option("user")
 password = omniscope_api.get_option("password")
 auth_source = omniscope_api.get_option("auth_source")
 full_data = omniscope_api.get_option("full_data")
+connection_url = omniscope_api.get_option("connection_url")
 
-
-if user and password and auth_source:
-	client = mongo.MongoClient(f"mongodb://{host}:{port}/", username=user, password=password, authMechanism='SCRAM-SHA-256', authSource=auth_source) 
+if connection_url is not None:
+    client = mongo.MongoClient(connection_url) 
 else:
-	client = mongo.MongoClient(f"mongodb://{host}:{port}/") 
+    if user and password and auth_source:
+	    client = mongo.MongoClient(f"mongodb://{host}:{port}/", username=user, password=password, authMechanism='SCRAM-SHA-256', authSource=auth_source) 
+    else:
+        client = mongo.MongoClient(f"mongodb://{host}:{port}/")
+
+
 db = client[database]
+
 col = db[collection]
 
 query_json = None if not query or full_data else json.loads(query)
@@ -30,11 +36,12 @@ query_json = None if not query or full_data else json.loads(query)
 cursor = col.find(query_json)
 
 if limit:
-	cursor.limit(limit)
+    cursor.limit(limit)
 
 output_data = pd.DataFrame(list(cursor))
 
+
 #write the output records in the first output
-if output_data is not None:
+if output_data is not None and not output_data.empty:
     omniscope_api.write_output_records(output_data, output_number=0)
 omniscope_api.close()
