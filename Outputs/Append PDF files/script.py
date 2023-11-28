@@ -1,5 +1,5 @@
 from omniscope.api import OmniscopeApi
-from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfMerger
 import glob
 
 omniscope_api = OmniscopeApi()
@@ -7,26 +7,28 @@ omniscope_api = OmniscopeApi()
 # read the records associated to the first block input
 input_data = omniscope_api.read_input_records(input_number=0)
 
-# read the value of the option called "my_option"
-# my_option = omniscope_api.get_option("my_option")
-
+#input
+input_folder = omniscope_api.get_option("input_folder")
+pdf_file_names = omniscope_api.get_option("pdf_file_names")
 title = omniscope_api.get_option("title")
-pdfPath = omniscope_api.get_option("pdfPath")
-outputFolder = omniscope_api.get_option("outputFolder")
 
-merger = PdfFileMerger()
+#output
+output_folder = omniscope_api.get_option("output_folder")
+file_name = omniscope_api.get_option("file_name")
+
+merger = PdfMerger()
 
 for index, row in input_data.iterrows():
-    pdf = row[pdfPath]    
+    pdf = input_folder + "/" + row[pdf_file_names]    
     merger.append(pdf, row[title] if title is not None and title != "" else None)
 
-outputFile = outputFolder+"/"+omniscope_api.get_option("fileName")
+output_file = output_folder + "/" + file_name
 
-merger.write(outputFile)
+merger.write(output_file)
 merger.close()
 
 output_data = input_data
-output_data['Combined PDF'] = outputFile
+output_data['Combined PDF'] = file_name
 
 #write the output records in the first output
 if output_data is not None:

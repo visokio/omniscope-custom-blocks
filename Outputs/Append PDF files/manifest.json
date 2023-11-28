@@ -24,10 +24,21 @@
     "dependencies": "PyPDF2",
     "options": [
         {
-            "name": "pdfPath",
-            "title": "Input PDF file paths",
-            "description": "A field containing the paths (filename and path) to the PDF files to append",
-            "groupTitle": null,
+            "name": "input_folder",
+            "title": "Input folder",
+            "description": null,
+            "groupTitle": "Input",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null,
+            "readOnly": true
+        },
+        {
+            "name": "pdf_file_names",
+            "title": "Input PDF file names",
+            "description": "A field containing the filenames of the pdf files contained within the input folder",
+            "groupTitle": "Input",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
@@ -39,7 +50,7 @@
             "name": "title",
             "title": "Titles",
             "description": "A field containing a title for each PDF. Used to create table of contents. If missing, no table of contents entries will be created.",
-            "groupTitle": null,
+            "groupTitle": "Input",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
@@ -48,25 +59,25 @@
             "fieldTypes": []
         },
         {
-            "name": "fileName",
-            "title": "Output PDF filename",
-            "description": "The combined PDF file name to create, e.g. \"MyDocument.pdf\"",
-            "groupTitle": null,
-            "width": "ONE",
-            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
-            "mandatory": true,
-            "defaultValue": "Combined.pdf"
-        },
-        {
-            "name": "outputFolder",
+            "name": "output_folder",
             "title": "Output folder",
             "description": "The path to the folder to write the output PDF within.",
-            "groupTitle": null,
+            "groupTitle": "Output",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
             "mandatory": true,
             "defaultValue": null,
             "readOnly": false
+        },
+        {
+            "name": "file_name",
+            "title": "Output PDF filename",
+            "description": "The combined PDF file name to create, e.g. \"MyDocument.pdf\"",
+            "groupTitle": "Output",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "combined.pdf"
         }
     ],
     "blockOutputs": [
