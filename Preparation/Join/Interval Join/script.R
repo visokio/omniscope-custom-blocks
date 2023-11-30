@@ -82,7 +82,12 @@ if (has.eq.crit) {
 result <- left[right, on=join.on, allow.cartesian = T, nomatch=0, n, with=FALSE]
 
 if (join.type == "LEFT") {
-    left.merge <- merge.data.table(left.original, result, by = value.field, all.x = TRUE)
+
+	tmp = result[,  .(v0 = max(get(value.field)), vs = max(get(start.field)), ve = max(get(end.field))), by=.(get(value.field))]
+
+	setnames(tmp, c("v0", "vs", "ve"), c(value.field, start.field, end.field))
+
+    left.merge <- merge.data.table(left.original, tmp, by = value.field, all.x = TRUE)
     left.missing <- left.merge[!complete.cases(left.merge[, c(start.field, end.field)]), ]
 	result <- bind_rows(result, left.missing)
 }
