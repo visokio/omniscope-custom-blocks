@@ -1,8 +1,8 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
     "name": "Interval Join",
-    "scriptFilename": "script.R",
-    "language": "R",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
     "executableVersion": null,
     "minVersions": [
         null
@@ -21,10 +21,10 @@
         "join"
     ],
     "introductoryText": "The first input contains values and the second input intervals. The rows of the first input are now joined with rows of the second, if the value is contained in the interval.\n\nThe interval start and end values can be chosen to be either inclusive or exclusive. If the number is e.g. 5, and an interval is 5..10, then if inclusive is chosen, the rows are joined. If exclusive is chosen, they are not joined.\n\nIn addition, it is possible to specify an optional equality criterium. Only those records are interval-joined if they also contain the same value in those specified fields.",
-    "dependencies": "",
+    "dependencies": "pandasql",
     "options": [
         {
-            "name": "joinType",
+            "name": "join_type",
             "title": "Type of join",
             "description": null,
             "groupTitle": "Interval Join",
@@ -82,7 +82,7 @@
             "fieldTypes": []
         },
         {
-            "name": "startOperator",
+            "name": "start_comparator",
             "title": "Interval start value inclusiveness",
             "description": "If value is e.g. 5 and the interval is 5..10: If inclusive is chosen, then value is considered contained in the interval. If exclusive is chosen, then the value is not contained.",
             "groupTitle": "Interval Join",
@@ -128,7 +128,7 @@
             "fieldTypes": []
         },
         {
-            "name": "endOperator",
+            "name": "end_comparator",
             "title": "Interval end value inclusiveness",
             "description": "If value is e.g. 10 and the interval is 5..10: If inclusive is chosen, then value is considered contained in the interval. If exclusive is chosen, then the value is not contained.",
             "groupTitle": "Interval Join",
