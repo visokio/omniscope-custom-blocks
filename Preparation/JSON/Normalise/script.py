@@ -10,6 +10,8 @@ jsonField = omniscope_api.get_option("jsonField")
 includeInput = omniscope_api.get_option("includeInput")
 
 output_data = None
+dataframes_list = []  # List to store each dataframe
+
 for index, row in input_data.iterrows():
     if not(isinstance(row[jsonField], str)):
         continue
@@ -20,14 +22,15 @@ for index, row in input_data.iterrows():
     dictJson = json.loads(jsonString)
     dataframe = pd.json_normalize(dictJson)
     dataframe = dataframe.add_prefix(jsonField+'_')
+    
     if includeInput:
         new_cols = list(input_data.columns.values)
-        dataframe[new_cols] = row.values.tolist();
-    
-    if output_data is None:
-        output_data = dataframe
-    else:
-        output_data = output_data.append(dataframe, ignore_index=True)
+        dataframe[new_cols] = row.values.tolist()
+
+    dataframes_list.append(dataframe)
+
+# Concatenate all dataframes in the list
+output_data = pd.concat(dataframes_list, ignore_index=True)
 
 #write the output records in the first output
 if output_data is not None:
