@@ -5,13 +5,16 @@ fixed_fields = omniscope_api.get_option("fixed_fields")
 var_name = omniscope_api.get_option("var_name")
 value_name = omniscope_api.get_option("value_name")
 
+input_data = omniscope_api.read_input_records(input_number=0)
+
 
 def process(chunk):
     result = chunk.melt(id_vars=fixed_fields, var_name=var_name, value_name=value_name)
     return (result)
 
-# process the data stream, by applying a lambda function to each data chunk
-omniscope_api.process_stream(process)
+output_data = process(input_data)
 
-# the data stream is over. No other data can be read or written.
+#write the output records in the first output
+if output_data is not None:
+    omniscope_api.write_output_records(output_data, output_number=0)
 omniscope_api.close()

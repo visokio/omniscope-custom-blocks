@@ -75,5 +75,5 @@
         "installVisokioRepLibraries": false
     },
     "designLock": false,
-    "apiMode": "STREAM_TRANSFORM"
+    "apiMode": "BATCH"
 }
