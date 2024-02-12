@@ -1,13 +1,9 @@
 from omniscope.api import OmniscopeApi
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-
+from visokio_omniprint import ImagesPPTX, Image, Tools
+from pptx import Presentation
+from pptx.util import Inches
 import pandas as pd
-import os
+
 
 omniscope_api = OmniscopeApi()
 
@@ -15,87 +11,49 @@ omniscope_api = OmniscopeApi()
 input_data = omniscope_api.read_input_records(input_number=0)
 
 # read the value of the option called "my_option"
-urlField = omniscope_api.get_option("urlField")
-folderPath = omniscope_api.get_option("folderPath")
+url_field = omniscope_api.get_option("url_field")
+folder_path = omniscope_api.get_option("folder_path")
 resolution = omniscope_api.get_option("resolution")
-sleepSeconds = omniscope_api.get_option("sleepSeconds")
-orientationOpt = omniscope_api.get_option("orientationOpt")
+sleep_seconds = omniscope_api.get_option("sleep_seconds")
+orientation = omniscope_api.get_option("orientation")
+output_file_name = omniscope_api.get_option("output_file_name")
 
-resSplit = resolution.split("x")
-#width, then height
-imgSize = [ int(resSplit[0]), int(resSplit[1]) ]
+tinify = omniscope_api.get_option("tinify")
+tinify_key = omniscope_api.get_option("tinify_key")
+tinify_width = omniscope_api.get_option("tinify_width")
 
-if orientationOpt == "P":
-    resolution = resSplit[1]+"x"+resSplit[0]
-    imgSize = [ int(resSplit[1]), int(resSplit[0]) ]
+is_docker = omniscope_api.is_docker()
 
-#Pdf lib wants heigth than width 
-resSplit[0], resSplit[1] = resSplit[1], resSplit[0]
+screenshots = []
+images_pptx = ImagesPPTX()
+image = Image()
+
+for index, row in input_data.iterrows():
+    url = row[url_field]
     
-try:
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--window-size="+resolution)
-
-    chrome_driver = omniscope_api.get_option("chromeDriver")
-    driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=chrome_driver)
-
-    screenshots = []
-    pngGrabbed = []
-
-    for index, row in input_data.iterrows():
-        url = row[urlField]
-        driver.get(url)
-                
-        wait = WebDriverWait(driver, timeout=sleepSeconds, poll_frequency=1, ignored_exceptions=[TimeoutException])
-        #wait on a non existing div to 'sleep' for the entire time, forcing a polling on the DOM, keeping the PY script running
-        try:
-            element = wait.until(EC.presence_of_element_located((By.ID, "terminatorDiv")))
-        except TimeoutException as ex:
-            #ignore
-            pass
-        
-        fileName = 'screenshot_'+str(index)+'.png'
-        imagePath = folderPath+'/'+fileName
-        
-        if os.path.exists(imagePath):
-            os.remove(imagePath)
-        
-        screenshot = driver.save_screenshot(imagePath)
-        pngGrabbed.append(imagePath)
-        screenshots.append({"URL" : url, "Screenshot path" : imagePath, "Screenshot filename" : fileName})
-        
+    file_name = 'screenshot_'+str(index)+'.png'
+    image_path = folder_path+'/'+file_name
     
-    outputFileName = omniscope_api.get_option("pptxFileName")
-    if (outputFileName is None):
-        outputFileName = 'output.pptx'
-        
-    from pptx import Presentation
-    from pptx.util import Inches
-    prs = Presentation()
-    for image in pngGrabbed:
-        blank_slide_layout = prs.slide_layouts[6]
-        slide = prs.slides.add_slide(blank_slide_layout)
-        left = top = Inches(0)
-        pic = slide.shapes.add_picture(image, left, top, Inches(10))
-     
-    pptxPath = folderPath + "/" + outputFileName
-    prs.save(pptxPath)
+    image.grab_screenshot_in_path(url, sleep_seconds, is_docker, image_path)
     
-    if (not omniscope_api.get_option("keepScreenshots")):
-        for image in pngGrabbed:
-            os.remove(image)
+    if tinify:
+        image.tinify(tinify_key, image_path, tinify_width)
     
-finally:
-    driver.quit()
+    images_pptx.add_path(image_path)
+    
+    screenshots.append({"URL" : url, "png" : file_name})
+    
+    
+output_data = pd.DataFrame(screenshots)    
+           
 
-output_data = pd.DataFrame(screenshots)
-output_data['PPTX'] = pptxPath
+pptx_path = folder_path + "/" + output_file_name
+images_pptx.create_pptx_in_path(pptx_path, orientation, resolution)
+output_data['PPTX'] = pptx_path    
+
+
 
 #write the output records in the first output
 if output_data is not None:
     omniscope_api.write_output_records(output_data, output_number=0)
-    omniscope_api.close(message=outputFileName+" successfully created")
-else:
-    omniscope_api.close()
+omniscope_api.close()

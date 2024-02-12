@@ -24,8 +24,8 @@
         "tab",
         "convert"
     ],
-    "introductoryText": "## Report tab to PDF\n#### This block will produce a PDF for each record of the upstream data containing a Report tab URL, saving the PDF files in a specified output folder, with filenames equal to the Report name + tab name + record index or to the specified optional name.\n#### If *not* run in Docker, requires the installation of chrome on your machine.",
-    "dependencies": "visokio-omniprint==1.1.3",
+    "introductoryText": "## Report tab to PDF\n#### This block will produce a PDF for each record of the upstream data containing a Report tab URL, saving the PDF files in a specified output folder, with filenames equal to the Report name + tab name + record index or to the specified optional name.\n### Setup\n#### The best way to use this block is within a Docker system. For more information check this article [Docker setup](https://help.visokio.com/support/solutions/articles/42000071133-setting-up-the-custom-block)\n#### If you are not using Docker, then Chrome has to be installed on the host machine.\n### Troubleshooting\n#### *In case you experience errors running this block, please ensure the following:*\n#### 1. Make sure you are using the newest Report tab to PDF community block. If in doubt, replace this one with a fresh one from the block palette.\n#### 2. If you are using Docker, make sure you are using the newest Docker image. If in doubt, simply remove all Visokio related Docker images\n#### 3. If *not* running Docker, make sure Chrome is installed and is on the newest version.\n#### 4. It's possible that your version of Omniscope is too old and has become incompatible with the other parts of the printing system. Please switch to the newest Rock, or the newest Release Candidate.",
+    "dependencies": "visokio-omniprint",
     "options": [
         {
             "name": "report",
@@ -113,9 +113,9 @@
     ],
     "docker": {
         "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
-        "customBaseImage": "europe-west2-docker.pkg.dev/visokiowebsite/visokio-custom-block/visokio-omniprint-chrome:0.0.2",
+        "customBaseImage": "europe-west2-docker.pkg.dev/visokiowebsite/visokio-custom-block/visokio-omniprint-chrome:latest",
         "useCustomBaseImage": true,
-        "customSystemLibraries": "",
+        "customSystemLibraries": null,
         "installVisokioRepLibraries": true
     },
     "designLock": false,
