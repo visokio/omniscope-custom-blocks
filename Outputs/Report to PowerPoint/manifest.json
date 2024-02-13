@@ -1,6 +1,6 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-    "name": "Report tab to PowerPoint",
+    "name": "Report to PowerPoint",
     "scriptFilename": "script.py",
     "language": "PYTHON",
     "executableVersion": null,
