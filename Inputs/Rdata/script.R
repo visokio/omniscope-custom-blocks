@@ -12,17 +12,17 @@ load.file.rdata = function(filename, obj.to.load) {
     objs = names(env)
     if (length(objs) == 0) abort(omni.api, "Your file contains no objects to load")
     if (is.null(obj.to.load)) obj.to.load = objs[1]
-    
+
     if (!(obj.to.load %in% objs)) {
     	objs.collapsed = paste(objs, collapse=", ")
     	abort(omni.api, paste("The file does not contain an object name ", obj.to.load, ". Available objects are: ", objs.collapsed, sep=""))
 	}
-    
+
     list(data = as.data.frame(get(obj.to.load, envir=env)), objs = data.frame(Objects = objs))
 }
 
 load.file.rds = function(filename) {
-    list(data = as.data.frame(readRDS(filename)), objs = data.frame())
+    list(data = as.data.frame(readRDS(filename)), objs = NULL)
 }
 
 load.file = function(filename, obj.to.load) {
