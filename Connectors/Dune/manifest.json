@@ -11,7 +11,7 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": "https://dune.com/docs/images/dune-icon-only.png",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5wUTEBcVOaE1lgAADqFJREFUeNrtnX9wXNV1xz/37kor2ci7K2TjGgbMj4DkH8AU1zDJBB4FSmlLOmXa2k4IeU0DacFt7GRiaMo0oRMmkMzgtF5NEzxMtpQWp1Pcxo6Nf+Cw5CcYmwHMyqsEQ+yS2tGudleyZMvW7rv9Y1fKWpatXWm12rd7PjOekVfS+3HuV+ece+559ynqiJRtEQxHRv+ftK25Gq4BrgQ6gPn5fxcCfmAeoIGWMYc6DpwGBoA40AskgA+Ad4FDDhxoDUcS5zp3raPq5UaTtnW5Bgv4MHA9sKxCpz4IvAzsc+CV1nDkPRGWiz1S0rYu0XAPcDdwW5Xd625gpwPfbQ1HPhBhVTl9trXUwP3AvUDQLc4U+A7wfCAc2S/Cqp4Q16HhM+QE1eLy2xkAQgqe8Ycj74qwKsy7tqXa4D7gEaC9RtOUGLA+EI48LcKa5twpaVtBDZ8HHqW+WJ+Bv2sLR065ZXapq11QAB5oS9vWczqXj9SbqADWemEobVsbNSwotI14rEnQb1tzHVgPfAKhkH8dhs/ODUdOibBKCXtAGr4K/L1o6Lx0BsKR1RIKiwh7Cj6ehiERVVE8lLatU2nb+lS1hceq8Vj9tjXfgZ3AtaKXSbFfwT3+cORI3Xuskb+wtG2tdeCoiGpK3GDgcNq2vlIN3mtGPVbeS+0BFokuykqXB25qCUeO143HKvBSK/NeSkRVfjqy0J+yrZUz5b1UpUUVDEdI29bzwEoZ/4qwKRCOrKp0YbViwjK2xQD4s/AWcJmMd0U57IHrLoA+VSFxVSwUpuCGLBwDLpVxrjiXZuFYH9xUUzlW2rbu0rAPaKKOmgurCJW3/c/StnVXTQirz7a+CGyXsa0atqdt60uuFlafbX3ZwNdlLKuOx/ts68uuTN77bOtJA+tkDKs6Pj7uD0cedY2w+mzrq0bW+twirq/7w5GHqz4U5sOfiMolGFg3HWFRlVlUXzLwuAyXKz3XOn848o2qE1Z+GiuzP3fzB4Fw5MWqEFbKtlBwI/CqjEtNcIMf3phqhV5NVVTe3DLNMXIFOMH9DHlgfgb6prK2qKciqmA4Qn7tzyfjUTP4svBWMByZUlfElDyWdCnUNJsC4ciqinusdK7XR0RVu6xM2dakhVWyx8rnVS1Z6Bfb1z4afisLx0rNt0r2WPm86lXAiNlrHwf2TCaJL1lYqVyz/iKk/aVeWJS2rbXTFgpTtoWGSw0cFltLSCybxwqGIxjYLCau25C4s5SQWLTHyj9tGxYT1y8G7g3AvxdTlS8lx3paTFvfKHimWE9UlLDSthUCGsW0dY8vv1nL1EJhyrbIgK8ht0mHIIzkW/MUxM+Xc+mJEvYG+LaYUhgjmvUTJfJqgvLCAgO/ElMKpXotPUF54TExoTAZr3VOj5WwLZ9Xcivh/F6rtTUcSZXksbzwNTGdMIHXerhkj5W2LVlkFiYkAfqqcMQU5bFStvWAmEwohvyLHIoLhQrWismEInmkKGElbetD1O5rRITy0560rY4JhaXh02IrocQk/jPFhMLVYiqhRO4/76wwZVvLFLwudhJKRcG1DhwYKZrqMd+Up26ESWHg/sJK/NhQKPmVMFnuHTfHStrWJbjndbdC9RHMa+hMYWlYIbYRpjg7vGe8UHinmEaYInePJ6w7xC7CFLntDGGlbOsKsYlQBlTKti4H0Pmtam4Rmwhl4paUbaGD4QgKlok9hLK4LLCC4chojnWrmEQoE4sLk/cOsYdQJpYBqKRttWmIiz2EcuHAPK3kPcxCmdFwjVYgpQahrBi4SgNXiSmEMs8M2zVwiZhCKDPzNdAmdhCmQ1gXih2EMnOheCxhOghooEXsIJSZuRrZqU8oEw3KoIA9vX7tFY8lTAWfNpzIKrbFg7zc6yeSnENbY6bFK6YRSqVJOySHvWyPB9mVCLCvfzY+ZdDKMMvjcMpRiLCEosUUP93AtniALT2tdA8206gdNNCsnTN+NmtEWEKRYtra00p0YBazPFlU/nvnwwsclzxLgNxj8U0eh8MnfexO+Ec904iYZnuyRR/LCzhi0voW0yyPQ/dgE1t6WtmV8HPkpI8mj1OymAqOmvKS68Xyi4nrT0zRgWa29gTZHg/Sc7phNLw1e6bqa8yAF+gTU9c+GmjUDt2DzWwZR0wT5UwlMugFEmL2GhWTMviU4c3js3kxHmBbPEhy2DtdYiqk1wsckyGoHTzK4NOGH6daeCnh5/vxICeyHnzTL6ZC/leEVUNiiiTnsCMeYEciQMZRNOjcZsY+XfH52a+9BmLyDl734c1Xun+cKhCTUaPrdSOimqHZwSEvcEiGyR00KMOwUbyabmFLT5BXknMYLhSTqpKt+R2OiMdygZgyRvFSr58X4wEiST9amVERVY2YCosNmAMK5C0U1SqmHYkAO+IBIsk5+LTBo9wxTNFYSI2sFe5D9m+YURq14WRWsTMRYHfiTDHN8rhqceQ9YHQROirCqjy+fPvJD3r97EoE+Em65Yz2E5cShdx+RgC2gu/IUE8/Ix0DO/OLvF0Ds/Aq94S5ImaEX1CGpxRAyrYuV3kXJkyfmArbT5p1Fl2LsybDddHu0Nujt5a2LYcJXj4uFE+zdjg85OPl3jlsGdPLVMtEYyFVmGMB7AFuF0lMNgLkugK6B5v4Qa+f7fEgPx9sonlK7Seuc1f7R74qFNZWEVbpYhppP8n1f/s5MuSjSTuj36snDGrnWcJyYLOGfxK5FC+mwl4mX15Mzbp++ya1UpsL7URBnpVE3k5xtsHI9TJFB2axPR44q5dJODO/GhsKAZ4D/kZM9Jtepv39F7Ar4WdbPEhq2Fvp9hMXhUG+O9azky85YGCphrfr1TiF7SeR3jn5XiaNT8uKVxH8aRbvC7HYN88Ohflw2E8dPbUzbi9TvmNAmFwYHC8UAmwEPl/LRpiwl0lEVWoY3DTeJOcMkrbVoaGr1m7+fL1MwpSldWuWhshIGBxXWPlweJAaeJP9iJheSc5ha0/wrF4moSwMRWOh5rOiwjl++Akg7FYxje1latQGrzIz0ftdB6gN46Yb432YgGfbXCSsXC+T5qVe/1mNcfVW/a64rLLD/zju5+f6hbRtPQE8XK035NMOJ7KabfEgu/O9TI211H7iDnZGY6HfL0lYSdsKakhW0100aYfUsJdt8SBbeoJEB2bRmJ/hCTPhrmjPGm93YdI+obDyXus54BMzLabCXqZ38u0nWoZ1pnk9GgstP7fmzkG+Ej9XQ89Mi6leeplcVWDA3KpRkXdiodKEVUmvNbKR1+Gh8fdlEqqOaDQWWjLRmDITXmukMe7n+X2ZfphsoXuwebQxTqhmb6WWaEz0XN6qKI+V91pPAuvKIabCXqY9vbnGuGapL9XETLBkYbXaFu/BEOCbqpikl8ndOKgFBs/R8WaCJQsr77VsinxETBrjajUE0tkVC60u1qFQgrje4hxvZB1pjPtJuoUfJXO9TIWNcYLrORGNhWYX+8NFb8edsi0cuFPD0ZHPxmuMO5nVNM7cvkzCtIVAVpSaApVE0rbWXuBxnpLGuLqaBf5PV2zDn0yrsACu7XgoOuToRSKmumDAUSfnGtMyNFHCPqlQOMKS9tW0t5y8LdrffFRsXvtkjb49FntmaDLVgEmxuGP1Kgz/IaavaZ6MxkKPTOYXPZM9Yzyx9515bTe2A0vE/rVYWVBvRGOhP5/sASbdJHD9wjVEYxtWAYdlHGqOQeVkrPb2NZM+wJSW5ZZevRo0fie3pXeTjEeNlBaMuk5hDnR1h8yMCAuANTezePt1v43+zU4jgqtj4B93xUJbpnqcsjUSLO5Y/TEM35OhcTWPRmOhx8txIE+5riie2Ns9r+13ToC6Q8bHlXwjGgv9Q7kO5innlcUTr//0orblCrBknFzF5mgsdH85D+gp9xX2JPZG5rUtDwA3yXi5IKcy7OjqDn1s4cI1pNOvVq+w8mFx57y25bOBj8jQVbWotnZ1h/5o4cI1/PKX3yzrsT3TddHxxN7dEharWladXd2dn5wOUU2rsArCYgb4XRnIqiopPNYV61wHlDX8TUu5YYJSxF3GsF0ekqgClFkVPdi5adpPU6n7+cjSB28cyKhIxiip0M8QWaNvjHX/895KnKtiDxR3fvHZ105mPfO9ysjaYuX5vyzK/6EF/XsrdcKKCev6+wbw4fS9dbBzYaM2m2SsK5ZPvRCNhS7WZPu3vhyuXMSt9I2mbItgOMLyJQ+uHMzo52XopzWfui96sPPfpmvmV1XCKuSyKz83p60p87OhrFokKigrv8hk1M3d726YsRfJz+imLasv/3X//mjn4osaTz/mGJkzlonHorHQ1Q1ec2wmL6JqRnP97X926cYP5m8Gc4NIbFJEQd0djW14vxoupmq2mfr2Bxcf6YptWHZZ86m/AE7LE4ml5Od8IRoLLVGY96vloqrWOfze9Q+EfjXU+JDo5ryK+k+dzf7lO7/4l4Fqu7aq3Rhv15tPr+4dbmxqbcg8m5X8ayyvG9SSrlhoxcCwb6AaL7Cqd1w8+NE3Tv3owLc+tWHRoYtne5yNoicSjuHuaCy0XGOiQMXLCK4PhYWM1L462v/W59PZr2nM2lNOXe1Cegj4SjQWes4tF+zaGHPztX/1QHrYszZrVHuNiskB/gt4KhoLvea2i3ftn/0P3/7W028f7OwAczWoJ7zKDNTIThK7DHxyQQPeaCy0YnDI+5obb6KmsuKPLv3ssoGsd6VW5tMnszpoDOjqv8Nh4AVj1Pe6ujdsgtz+GOfb31OENYP89Yc/fkn/cNOK/oy+M53x3hE/3YDOvzZuJvEqYzJGvYLhReD70e5QF0B7+xpK2c1FhFUlbLzznite6Gm75fCJxmU+j7l12FEd5T6HGfN1s8dhKKv3+bR506v46UCWyMFY5/v1YO+6KhCNXeVfes2DbVnlWargSjBXAZcA84GLgNlAK7kNfUebE/Pv6jnuVTgZQw/Qp6C3UZtjzTp7zFH64CyVPfS5K452/+F/b42f69y1zv8D/seb9ix3M/sAAAAASUVORK5CYII=",
     "description": "Execute queries and retrieve blockchain data from any public query on dune.com, as well as any personal private queries your Dune account has access to",
     "category": "Connectors",
     "subcategory": null,
@@ -41,7 +41,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": ""
+            "defaultValue": null
         },
         {
             "name": "mode",
@@ -74,7 +74,7 @@
                 }
             ],
             "isDropdown": true,
-            "choicesLayoutType": "AUTO",
+            "choicesLayoutType": "LIST",
             "defaultValue": "retrieveLatest"
         }
     ],
@@ -101,6 +101,6 @@
         "customSystemLibraries": null,
         "installVisokioRepLibraries": false
     },
-    "designLock": true,
+    "designLock": false,
     "apiMode": "BATCH"
 }
