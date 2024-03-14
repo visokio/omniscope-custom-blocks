@@ -34,7 +34,7 @@ for index, row in input_data.iterrows():
       presence_penalty=0 
     )
     
-    result_df.append({"Prompt" : the_prompt, "System Prompt": the_systemprompt, "Response" : [response.choices[0].message.content]})
+    result_df.append({"Prompt" : the_prompt, "System Prompt": the_systemprompt, "Response" : response.choices[0].message.content})
     
 output_data = pd.DataFrame(result_df) 
 
