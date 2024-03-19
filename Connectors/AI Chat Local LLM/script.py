@@ -5,14 +5,17 @@ omniscope_api = OmniscopeApi()
 # read the records associated to the first block input
 input_data = omniscope_api.read_input_records(input_number=0)
 
-API_Key = omniscope_api.get_option("OpenAiApiKey")
+modelEndpoint = omniscope_api.get_option("ModelEndpoint")
 prompt = omniscope_api.get_option("Prompt")
 systemPrompt = omniscope_api.get_option("SystemPrompt")
 model = omniscope_api.get_option("Model")
 temperature = omniscope_api.get_option("Temperature")
 
 from openai import OpenAI
-client = OpenAI(api_key=API_Key)
+client = OpenAI(
+    base_url=modelEndpoint,
+    api_key = "sk-no-key-required"
+)
 
 result_df = []
 for index, row in input_data.iterrows():
@@ -28,11 +31,7 @@ for index, row in input_data.iterrows():
           "content": the_prompt
         }
       ],
-      temperature=temperature,
-      max_tokens=256,
-      top_p=1,
-      frequency_penalty=0,
-      presence_penalty=0 
+      temperature=temperature
     )
     
     result_df.append({"Prompt" : the_prompt, "System Prompt": the_systemprompt, "Response" : response.choices[0].message.content})
