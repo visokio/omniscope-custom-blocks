@@ -23,7 +23,7 @@ Public repository for custom blocks for Omniscope Evo.
 ## Table of blocks (Omniscope 2020+)
 1. Code & AI
    1. [Execute Command](#CustomscriptsExecuteCommand)
-   2. [OpenAI GPT](#ConnectorsOpenAIGPT)
+   2. [AI Chat - OpenAI GPT](#ConnectorsOpenAIGPT)
 2. Outputs
    1. BigQuery
       1. [Google BigQuery Export](#OutputsGoogleBigQueryWriter)
@@ -129,11 +129,11 @@ Execute a system command.
 
 <div id="ConnectorsOpenAIGPT"/>
 
-### OpenAI GPT
+### AI Chat - OpenAI GPT
 
 <img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/OpenAI GPT/thumbnail.png" width="125" height="125"/>
 
-Executes a one-off prompt to OpenAI GPT and returns the result
+Executes a one-off prompt to OpenAI GPT and returns the generated text result
 
 [Link to Github page](Connectors/OpenAI%20GPT)
 
