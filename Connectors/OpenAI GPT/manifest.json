@@ -84,7 +84,7 @@
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
             "label": "1",
-            "displayName": "Output 1",
+            "displayName": "Output",
             "tooltip": null
         }
     ],
