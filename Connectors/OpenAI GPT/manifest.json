@@ -71,7 +71,7 @@
             "title": "User Prompt",
             "description": "Point to the field that contains the prompt to execute",
             "groupTitle": null,
-            "width": "ONE_AND_HALF",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
