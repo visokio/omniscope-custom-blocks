@@ -384,12 +384,12 @@
         },
         {
             "path": "Connectors/OpenAI GPT",
-            "displayName": "OpenAI GPT",
+            "displayName": "AI Chat - OpenAI GPT",
             "language": "PYTHON",
             "optionsVersion": 1,
             "tags": [],
             "category": "Code & AI",
-            "description": "Executes a one-off prompt to OpenAI GPT and returns the result",
+            "description": "Executes a one-off prompt to OpenAI GPT and returns the generated text result",
             "subcategory": null,
             "icon": "data:image/png;base64,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"
         },
