@@ -9,6 +9,7 @@ API_Key = omniscope_api.get_option("OpenAiApiKey")
 prompt = omniscope_api.get_option("Prompt")
 systemPrompt = omniscope_api.get_option("SystemPrompt")
 model = omniscope_api.get_option("Model")
+temperature = omniscope_api.get_option("Temperature")
 
 from openai import OpenAI
 client = OpenAI(api_key=API_Key)
@@ -27,7 +28,7 @@ for index, row in input_data.iterrows():
           "content": the_prompt
         }
       ],
-      temperature=1,
+      temperature=temperature,
       max_tokens=256,
       top_p=1,
       frequency_penalty=0,
