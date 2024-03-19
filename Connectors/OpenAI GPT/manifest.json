@@ -48,7 +48,7 @@
             "numMin": 0,
             "numMax": 1,
             "mandatory": true,
-            "defaultValue": 1,
+            "defaultValue": 0.8,
             "showAsSlider": true
         },
         {
