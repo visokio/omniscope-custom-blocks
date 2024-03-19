@@ -22,7 +22,7 @@
         {
             "name": "OpenAiApiKey",
             "title": "OpenAI API Key",
-            "description": null,
+            "description": "Find it here https://platform.openai.com/api-keys",
             "groupTitle": null,
             "width": "ONE_AND_HALF",
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
@@ -54,7 +54,7 @@
         {
             "name": "SystemPrompt",
             "title": "System Prompt",
-            "description": null,
+            "description": "Helps set the behavior of the model / AI assistant",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
