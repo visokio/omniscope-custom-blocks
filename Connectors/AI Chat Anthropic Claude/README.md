@@ -9,4 +9,4 @@ Python
 openai
 
 ## Source
-[script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/AI%20Chat%0Anthropic%20Claude/script.py)
+[script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/AI%20Chat%20Anthropic%20Claude/script.py)
