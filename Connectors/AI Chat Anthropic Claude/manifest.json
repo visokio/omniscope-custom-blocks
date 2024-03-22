@@ -1,0 +1,102 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "AI Chat - Claude",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Executes a one-off prompt to Anthropic Claude and returns the generated text result",
+    "category": "Code & AI",
+    "subcategory": null,
+    "tags": [
+        "LLM",
+        "NLP",
+        "Anthropic",
+        "Claude"
+    ],
+    "introductoryText": "![Anthropic Claude](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAABQCAMAAADBVVsXAAABR1BMVEUAAAAPDw3Zd1cfHxx6eXStq6QpKSbd29PelHnj4diqqaNGRUHbgWM/Pjvafl8ZGRfv593Jx8CEg30kJCHv49iXlpHdjnPaelsyMi/X1c3w6+G0s6zmtqGHhoF3dnFkY187OzfqyrmVlI2Mi4TflnxaWVVUU08WFhTb2dHS0Mjr0sSlo53gnIR+fXjchmg2NjIsLCjo5dzs2MrBwLjowK7nvKnjrpmamZPip5Dio4yQj4jdi2/diGxoZ2JYV1Lh39ff3dXt2s3qz7/GxL2/vbXpw7JramZKSkZCQj/u4NTs1ce7ubO3tq/muaanpqChn5njqpSUkozhoIhfXlpPT0svLizt3M/LycLpxrXlsZ2enZZ8e3bU0srQz8bOzcTqzL3gmYBycm1MS0jp597l49rt3tHDwrqysKnekXZ0c25wb2ru5drafF6vFNJcAAAAAXRSTlMAQObYZgAACJJJREFUeNrtmmlbGjEQxydLFagghwqCggcKCt4UUaz1wvuq931Xq22//+smmQQDuyBr6fPUur8XmmNZNv+dTGYSwMLCwsLCwsLCwsLCwsLCwkKlPTg04FXqq/C+uNIoX0Hys4dW3hUBjRIsmMA4rSXhPTGgMdpltZFWuuA9sakxXGGsNbPKIdSGb6nBU/gr9HUPtkGN8Lo0xieszbEyIOHNkxdtwXm5nsr5c6d1eWdpz2mcEBKH2hPKNRBC/FArujTGFFbmafGzMIbPtDwHFZiJtZJnbCuxggj2nWVs7IAacxHpJJwc1IxrjTHPy8e0NCDHTwlAWXzTREfHJfYtE8EPqDEeIshCzZjTGD28nJEO0RvgrQ4oQ/8XgnhG3A0NTc8ShIBS10mQD1BjcvUE+Qh/SqYxMI6lCY2RlKtgl1wcUAxDsoTz5dSO9cuojYgmbFhfrr0AyBbOu7qavPdrL7f2IJqA0GKVhYcaZ8gLhvgJ4yCvNI3G0DpvAakTAtSeD7WxgEON8ZkveSe8vIb+oBF9ISM4BoY8EUb8DopY4EbQ8FYEAFz+fh2zBc8lTWCKT/vVRhRgEQw5E7ZeSppQOt+MAEk+SswDFqUXoG3jEJ6SPYZsEEYr6Ikp7R//eQGg+VrjBOZERuAAL3/tk9j+CIaMoh9eAD3hA0Lq344ABVcXzMAaL1zds9gng62NzWDIDmHsGXtoQmxvZgow1oY0Tk/zLv83RtWY15ArMKbSKhS2kcRbsgDKiXjd6AUwLBYOoJIHsIExHwcHK1jAecsgJXWkCyo/RgbtRQ11kcFZKML+PRvxb/lQAP0b6P/Y7W9p6wfzHD5qzwQKpc9Qhl5CXkpyjC3g/OmACJqicrgPsaVb9CnnoiH3Y3mEMEJqXhlxE8G0Ty/AzNkwQWxnTjDNp0ZNz7zIFZOZySlXu5KIEk4EKqO3AD9R8Wxha5xIZqW+EmUkOzaigJW6Mt2t52Ca1R6tCEyIfnaNO1yieg+SbcL5blaADnzz2xunIoPEnYIlIgHkhkhKjW7Fn9pI7RNEEWAW2zzuemFel2CejFbC7gC6R918iBBO3qQA3ayS6FN6CM5XZ5u7MF7RgIlUAgR3/IJb4TiO9ksEmDlgRtEdYm5iDxWYrcL7n7RnjufXDpvDgNw/amV5HFciYpEDL5gUoJVP34IbV2t9pV41VNwwXZJWu4sFYIKs9Ek7EzHqiyiz3jXl2B3fPJ53aXpcjonMfBhUbgnnwqQARY5jpniETbJm2JCS8bXEVyTADrvUXjAfzMvTVURALzI0ubgKeoQn95kUIMEqZyCIizmA1JcKgA1qpQ0UhhUBRtmIc6VpSi+8yPHJ18mBHgcj8NmlWwZw8EYIh9tmUoB4UfT4hPeoRoAWVh4BlQ5FgBx6ixLzSHwD03iLRAgOBRyM68nxzcV5UBCudtukAP3xp2x6VEmaKKlqBGjVb6xFFQEaaGkZJOtPuMQ09JuPBVxaeabGSu2PxEwHQvp0orsKAfpxySwXCjufDWt0q4NbZyKenTWfEgRKnF/y00CjWm8Gycu7vS8mQ74YqthShQA5wlgHBTUUXhfPYt/ZR8c6XQfmwURI23UpHpCO+PDTxJSsd4HkB+GMvNYC8me4zFcpAM73BUMB5JeM+N34TFEUyiTh9iB/yVcT9M9z6INO0Ht10vNLG1qEAi0E6X+FBTi39mwYqlQtQLyyAC1E4o744FUcY8Q34c0UJ4Ou53mPJUGIIFmzApxH3eih97ec3VUL0EAYG+UEyBLOftYOr+Pege87CUm2B04FoNMBLeHXFRiyQioutReELBkJsISvfok/t1kBUsYCyC95gNeyya0/OB6GZjpmB4uPuibY7kBXIx4XGrBNkD7Qg2tURC/ANy7bCKZQZgTA45doOQHSvHgDJVRpD4eBwpYgOPgW2CTdG//Jxt5zzw7GTirsCJFo2UBpWy9Ar0j5TQuAhjNcToBRTARnoBi3zcRPIzaVAyGaEa3iefmit4d5BjCgjSDpcicm6zoBQiJHqSCAx1iAUxl56wVQJuSSzgqhGpj7c9xzTyi2wOiMCLOzAWkO2iQY0CFWwhkjD0AJ6QTYwthBJ4CaXsxWCIRIvJwA/tKDQuyvh2pIXk/g+jYXxGPgOTwWGhM7Iu34T4dTJERup66Hr/H6VQAHvFKyqbAjDbZki+U7xjRKJ0aNki+KAPZEaWQ6y7r95tIAagrBQxYPi62PExH7JGlHD+g58hDOcH/J+PnT1usF2C7eRIhidbBow6dTOrAbgijxlOroLoQk2/JeSJOfeeWZtj1ecYIZHqXHn8DjcDwZcnmpNPToZAz0pJsI4lfTrp169UVnldl5JCYN9w6+Eayha1MWczu9cJuq4UF9s8W7hq2RtP3uIfUhQZB9p2IiqIFbPtZ3MMNXFgajV5SFOU3O/8xAGAzouyWIZ6mOP8jl1o2NICLpXVYdhQx/be4GelkiJRSIfmBW4PQQlUTeJu69EmMvdYQU0zktBdyzM4s5IKVEzIWCzz+DKJwG4EqwVjHUbyXG9KaZ/ftld9OHbWolCwnyjC2P07jg/HNE7W0DInHzJaT4mw76UIDC4mAfJkV4Wkz/RioQxpBX+UGEA6dFJdp6iY6VGMYgRGWBXWwjkg56yYWo1uelU5Qshwqf9jTE0K0tkWfO7qBXsQDGzI1HfQEhMEWSpvteLH5SBr1KF4ZNeAG7311f0H04fpMq+J7lBoULPoppfmnnGT7fQyeb1rG7gph4oy9t7Lb0bsvR1KWSgPg7US/u6W7pbTpy+VHF+7bQNkyHF8AsmV2Z7E/ieQhyNTDuhWqY9W3kj0Kj8DKjaZ9yWV++OJi+86VlpLjRb/Dhy3WfHYsLhiFY6GFj4wj+AAyAxuAdw4LfZnjHJIM0+H/XjK2BhYWFhYWFhYWFhYWFhYXF/8JvUA3m0Iwu5BMAAAAASUVORK5CYII=)\n### AI Chat with Anthropic Claude\n#### Executes a one-off prompt request for each row in the input block, and output the results from Claude using the specified text generation / chat completion model",
+    "dependencies": "anthropic",
+    "options": [
+        {
+            "name": "AnthropicApiKey",
+            "title": "Anthropic API Key",
+            "description": "Find it here https://console.anthropic.com/settings/keys",
+            "groupTitle": null,
+            "width": "ONE_AND_HALF",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": true
+        },
+        {
+            "name": "Model",
+            "title": "Model",
+            "description": "E.g. claude-3-opus-20240229   . The model as per Anthropic API name.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "claude-3-opus-20240229"
+        },
+        {
+            "name": "Temperature",
+            "title": "Temperature",
+            "description": "The model temperature typically from 0 to 1",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1,
+            "mandatory": true,
+            "defaultValue": 0.5,
+            "showAsSlider": true
+        },
+        {
+            "name": "SystemPrompt",
+            "title": "System Prompt",
+            "description": "Helps set the behavior of the model / AI assistant",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "Prompt",
+            "title": "User Prompt",
+            "description": "Point to the field that contains the prompt to execute",
+            "groupTitle": null,
+            "width": "ONE_AND_HALF",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}
