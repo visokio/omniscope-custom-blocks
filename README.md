@@ -25,6 +25,7 @@ Public repository for custom blocks for Omniscope Evo.
    1. [Execute Command](#CustomscriptsExecuteCommand)
    2. [AI Chat - OpenAI GPT](#ConnectorsOpenAIGPT)
    3. [AI Chat - Local LLM](#ConnectorsAIChatLocalLLM)
+   4. [AI Chat - Claude](#ConnectorsAIChatAnthropicClaude)
 2. Outputs
    1. BigQuery
       1. [Google BigQuery Export](#OutputsGoogleBigQueryWriter)
@@ -145,6 +146,14 @@ Executes a one-off prompt to OpenAI GPT and returns the generated text result
 Executes a one-off prompt to a local LLM and returns the generated text result
 
 [Link to Github page](Connectors/AI%20Chat%20Local%20LLM)
+
+<div id="ConnectorsAIChatAnthropicClaude"/>
+
+### AI Chat - Claude
+
+Executes a one-off prompt to Anthropic Claude and returns the generated text result
+
+[Link to Github page](Connectors/AI%20Chat%20Anthropic%20Claude)
 
 <div id="OutputsGoogleBigQueryWriter"/>
 
