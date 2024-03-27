@@ -116,8 +116,9 @@ Public repository for custom blocks for Omniscope Evo.
    11. [Field Renamer](#PreparationFieldRenamer)
    12. [Unstack Records](#PreparationUnstackrows)
    13. [URL Encode](#PreparationURLEncode)
-   14. [Split Address](#PreparationSplitAddress)
-   15. [Add row ID field](#PreparationAddrowIDfield)
+   14. [Markdown to HTML](#PreparationMarkdowntoHTML)
+   15. [Split Address](#PreparationSplitAddress)
+   16. [Add row ID field](#PreparationAddrowIDfield)
 ## Block Overview
 <div id="CustomscriptsExecuteCommand"/>
 
@@ -702,6 +703,14 @@ Unstack all records by splitting on text fields with stacked values, filling rec
 URL encode strings in a field using the UTF-8 encoding scheme
 
 [Link to Github page](Preparation/URL%20Encode)
+
+<div id="PreparationMarkdowntoHTML"/>
+
+### Markdown to HTML
+
+None
+
+[Link to Github page](Preparation/Markdown%20to%20HTML)
 
 <div id="PreparationSplitAddress"/>
 
