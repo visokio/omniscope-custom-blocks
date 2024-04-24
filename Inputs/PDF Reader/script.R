@@ -36,8 +36,7 @@ lapply(files, function(f) {
     }
 })
 
-
-if (!is.null(output.data)) {
+if (!is.null(output.data) && is.data.frame(output.data) && nrow(output.data) > 0 && ncol(output.data) > 0) {
   write.output.records(omni.api, output.data, output.number=1)
 }
 close(omni.api)
