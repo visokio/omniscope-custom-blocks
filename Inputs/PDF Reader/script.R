@@ -8,6 +8,10 @@ folderPath = get.option(omni.api, "folderPath")
 isRecursive = get.option(omni.api, "recursive")
 writeTxt = get.option(omni.api, "writeTxt")
 
+if (!dir.exists(folderPath)) {
+	abort(omni.api, "Folder does not exist, or is not actually a folder")
+}
+
 output.data <- data.frame("File" = NULL, "Extracted text" = NULL)
 
 files <- list.files(path=toString(folderPath), pattern="*.pdf", full.names=TRUE, recursive=isRecursive)
