@@ -1,38 +1,40 @@
 from omniscope.api import OmniscopeApi
 import pandas as pd
 import json
+
+# Initialize Omniscope API
 omniscope_api = OmniscopeApi()
 
-# read the records associated to the first block input
+# Read the records associated with the first block input
 input_data = omniscope_api.read_input_records(input_number=0)
 
+# Get options
 jsonField = omniscope_api.get_option("jsonField")
 includeInput = omniscope_api.get_option("includeInput")
 
-output_data = None
-dataframes_list = []  # List to store each dataframe
+# Function to parse JSON and add prefix to keys
+def parse_json(row, jsonField):
+    try:
+        json_dict = json.loads(row[jsonField])
+        return {f"{jsonField}_{k}": v for k, v in json_dict.items()}
+    except (json.JSONDecodeError, TypeError):
+        return {}
 
-for index, row in input_data.iterrows():
-    if not(isinstance(row[jsonField], str)):
-        continue
-    jsonString = str(row[jsonField])
-    if not jsonString:
-        continue
+# Apply the JSON parsing function to each row
+json_expanded = input_data.apply(parse_json, axis=1, jsonField=jsonField)
 
-    dictJson = json.loads(jsonString)
-    dataframe = pd.json_normalize(dictJson)
-    dataframe = dataframe.add_prefix(jsonField+'_')
-    
-    if includeInput:
-        new_cols = list(input_data.columns.values)
-        dataframe[new_cols] = row.values.tolist()
+# Convert the list of dictionaries into a DataFrame
+expanded_df = pd.DataFrame(json_expanded.tolist())
 
-    dataframes_list.append(dataframe)
+# Concatenate the original input data and the expanded JSON data
+if includeInput:
+    output_data = pd.concat([input_data, expanded_df], axis=1)
+else:
+    output_data = expanded_df
 
-# Concatenate all dataframes in the list
-output_data = pd.concat(dataframes_list, ignore_index=True)
-
-#write the output records in the first output
-if output_data is not None:
+# Write the output records in the first output
+if not output_data.empty:
     omniscope_api.write_output_records(output_data, output_number=0)
+
+# Close the Omniscope API
 omniscope_api.close()
