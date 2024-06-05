@@ -1,0 +1,68 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "JSON Expand fields",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Expands JSON strings in a specified field into separate columns, optionally including the original input data",
+    "category": "Preparation",
+    "subcategory": "JSON",
+    "tags": [
+        "JSON",
+        "expand",
+        "fields",
+        "semi",
+        "structured"
+    ],
+    "introductoryText": "### Expands JSON strings in a specified field into separate columns, optionally including the original input data",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "jsonField",
+            "title": "JSON Strings",
+            "description": "The field containing JSON strings to be expanded as additional fields",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "includeInput",
+            "title": "Include input dataset",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "Expanded dataset",
+            "displayName": "Expanded dataset",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": "",
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}
