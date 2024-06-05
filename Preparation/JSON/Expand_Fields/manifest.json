@@ -45,6 +45,16 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
             "defaultValue": true
+        },
+        {
+            "name": "fieldPrefix",
+            "title": "Expanded Fields Prefix",
+            "description": "Optional",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
         }
     ],
     "blockOutputs": [

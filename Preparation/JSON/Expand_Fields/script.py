@@ -11,12 +11,16 @@ input_data = omniscope_api.read_input_records(input_number=0)
 # Get options
 jsonField = omniscope_api.get_option("jsonField")
 includeInput = omniscope_api.get_option("includeInput")
+prefix = omniscope_api.get_option("fieldPrefix")
+
+if prefix is None: 
+   prefix = ""
 
 # Function to parse JSON and add prefix to keys
 def parse_json(row, jsonField):
     try:
         json_dict = json.loads(row[jsonField])
-        return {f"{jsonField}_{k}": v for k, v in json_dict.items()}
+        return {f"{prefix}{k}": v for k, v in json_dict.items()}
     except (json.JSONDecodeError, TypeError):
         return {}
 
