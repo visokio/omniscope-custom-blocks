@@ -44,17 +44,24 @@ else:
     
 df = sqldf(q, globals())
 
+def dedup_names(names):
+    names = list(names)
+    counts = {}
 
+    for i, col in enumerate(names):
+        cur_count = counts.get(col, 0)
 
+        if cur_count > 0:
+            names[i] = '%s.%d' % (col, cur_count)
 
-cols=pd.Series(df.columns)
-for dup in df.columns[df.columns.duplicated(keep=False)]: 
-    cols[df.columns.get_loc(dup)] = ([dup + '.' + str(d_idx) 
-                                     if d_idx != 0 
-                                     else dup 
-                                     for d_idx in range(df.columns.get_loc(dup).sum())]
-                                    )
-df.columns=cols
+        counts[col] = cur_count + 1
+
+    return names
+        
+
+while sum(df.columns.duplicated(keep=False)) > 0:        
+    df.columns=dedup_names(df.columns)
+
 
 output_data = df
 
