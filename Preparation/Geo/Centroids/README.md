@@ -1,0 +1,1 @@
+This block calculates the centroid points (lat,long) and output them together with the shape ID from a specified GeoJSON file.
