@@ -17,8 +17,7 @@
     "subcategory": null,
     "tags": [
         "geojson",
-        "centroid",
-        "shape"
+        "centroid"
     ],
     "introductoryText": "### Calculates the centroid points (lat,long) and output them together with the shape ID from a specified GeoJSON file.",
     "dependencies": "geopandas",
