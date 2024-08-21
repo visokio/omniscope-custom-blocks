@@ -610,8 +610,7 @@
             "optionsVersion": 1,
             "tags": [
                 "geojson",
-                "centroid",
-                "shape"
+                "centroid"
             ],
             "category": "Preparation",
             "description": "Calculates the centroid points (lat,long) and output them together with the shape ID from a specified GeoJSON file.",
