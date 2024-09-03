@@ -1,20 +1,27 @@
 from omniscope.api import OmniscopeApi
-import pandas
+import pandas as pd
+
 omniscope_api = OmniscopeApi()
 
-chunkno = 0
 fieldName = omniscope_api.get_option("fieldName")
 
+# Initialize a global variable to keep track of the total rows processed
+total_rows_processed = 0
+
 def handle_chunk(chunk):
-
-    global chunkno
+    global total_rows_processed
     global fieldName
-    chunk[fieldName] = chunk.index + 1 + (chunkno * len(chunk.index))
-    chunkno +=1
-    return (chunk)
+    
+    # Calculate the new index value by adding the total number of rows processed so far
+    chunk[fieldName] = range(total_rows_processed + 1, total_rows_processed + len(chunk) + 1)
+    
+    # Update the total number of rows processed after handling this chunk
+    total_rows_processed += len(chunk)
+    
+    return chunk
 
-# process the data stream, by applying a lambda function to each data chunk
+# Process the data stream by applying the function to each data chunk
 omniscope_api.process_stream(handle_chunk)
 
-# the data stream is over. No other data can be read or written.
+# Close the data stream
 omniscope_api.close()
