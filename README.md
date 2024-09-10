@@ -21,29 +21,48 @@ Public repository for custom blocks for Omniscope Evo.
 7. Create a pull request.
 
 ## Table of blocks (Omniscope 2020+)
-1. Outputs
-   1. BigQuery
-      1. [Google BigQuery Export](#OutputsGoogle-BigQuery-Writer)
-   2. Github
-      1. [GitHub](#OutputsGitHub)
-   3. PDF
-      1. [Report tab to PDF](#OutputsReport-tab-to-PDF)
-      2. [Web Image-PDF output](#OutputsWeb-Image-PDF-output)
-      3. [Multi-tenant Report to PDF](#OutputsReport-to-PDF-batch-output)
-      4. [Append PDF files](#OutputsAppend-PDF-files)
-   4. PowerPoint
-      1. [Report to PowerPoint](#OutputsReport-to-PowerPoint)
-   5. Slack
-      1. [Slack Bot](#OutputsSlack-Bot)
-2. Inputs
+1. Inputs
    1. Databases
       1. [MongoDB](#InputsDatabasesMongoDB)
    2. R
       1. [Rds Batch Append](#InputsRds-Batch-Append)
       2. [R Data Reader](#InputsRdata)
-   3. [SFTP Downloader](#InputsSFTP-Downloader)
-   4. [Sharepoint Online Downloader](#InputsSharepoint-Online)
-   5. [PDF Reader](#InputsPDF-Reader)
+   3. [Sharepoint Online Downloader](#InputsSharepoint-Online)
+   4. [PDF Reader](#InputsPDF-Reader)
+   5. [SFTP Downloader](#InputsSFTP-Downloader)
+2. Preparation
+   1. ForEach
+      1. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
+      2. [ForEach multi stage](#PreparationForEachForEachMultiStage)
+   2. Geo
+      1. [Shapefile](#PreparationGeoShapefile)
+      2. [Gridsquare](#PreparationGeoGridsquare)
+   3. Interfaces
+      1. [Kedro](#PreparationInterfacesKedro)
+   4. JSON
+      1. [JSON Normalise](#PreparationJSONNormalise)
+      2. [JSON Expand fields](#PreparationJSONExpand_Fields)
+   5. Join
+      1. [Inequality Join](#PreparationJoinInequality-Join)
+      2. [Interval Join](#PreparationJoinInterval-Join)
+      3. [Fuzzy Terms Join](#PreparationJoinFuzzy-Join)
+   6. Partition
+      1. [Partition](#PreparationPartition)
+   7. Pivot
+      1. [Melt De-pivot](#PreparationPivotMelt-De-pivot)
+   8. Standardisation
+      1. [Standardise](#PreparationStandardisationStandardise)
+   9. Workflow
+      1. [For Each (Separate Workflows)](#PreparationForEachForEach)
+   10. [Unescape HTML](#PreparationUnescape-HTML)
+   11. [Add row ID field](#PreparationAdd-row-ID-field)
+   12. [Unstack Records](#PreparationUnstack-rows)
+   13. [Split Address](#PreparationSplit-Address)
+   14. [Field Renamer](#PreparationField-Renamer)
+   15. [Markdown to HTML](#PreparationMarkdown-to-HTML)
+   16. [Anonymise](#PreparationAnonymise)
+   17. [URL Encode](#PreparationURL-Encode)
+   18. [Centroids from GeoJSON](#PreparationGeoCentroids)
 3. Analytics
    1. Clustering
       1. [KMeans](#AnalyticsClusteringKMeans)
@@ -61,38 +80,20 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Website Analysis](#AnalyticsWebsitesWebsite-Analysis)
    6. [Survival Analysis](#AnalyticsSurvival)
    7. [Data Profiler](#AnalyticsData-Profiler)
-4. Preparation
-   1. ForEach
-      1. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
-      2. [ForEach multi stage](#PreparationForEachForEachMultiStage)
-   2. Geo
-      1. [Gridsquare](#PreparationGeoGridsquare)
-      2. [Shapefile](#PreparationGeoShapefile)
-   3. Interfaces
-      1. [Kedro](#PreparationInterfacesKedro)
-   4. JSON
-      1. [JSON Normalise](#PreparationJSONNormalise)
-      2. [JSON Expand fields](#PreparationJSONExpand_Fields)
-   5. Join
-      1. [Fuzzy Terms Join](#PreparationJoinFuzzy-Join)
-      2. [Inequality Join](#PreparationJoinInequality-Join)
-      3. [Interval Join](#PreparationJoinInterval-Join)
-   6. Partition
-      1. [Partition](#PreparationPartition)
-   7. Pivot
-      1. [Melt De-pivot](#PreparationPivotMelt-De-pivot)
-   8. Standardisation
-      1. [Standardise](#PreparationStandardisationStandardise)
-   9. Workflow
-      1. [For Each (Separate Workflows)](#PreparationForEachForEach)
-   10. [Add row ID field](#PreparationAdd-row-ID-field)
-   11. [Field Renamer](#PreparationField-Renamer)
-   12. [URL Encode](#PreparationURL-Encode)
-   13. [Unstack Records](#PreparationUnstack-rows)
-   14. [Split Address](#PreparationSplit-Address)
-   15. [Markdown to HTML](#PreparationMarkdown-to-HTML)
-   16. [Centroids from GeoJSON](#PreparationGeoCentroids)
-   17. [Unescape HTML](#PreparationUnescape-HTML)
+4. Outputs
+   1. BigQuery
+      1. [Google BigQuery Export](#OutputsGoogle-BigQuery-Writer)
+   2. Github
+      1. [GitHub](#OutputsGitHub)
+   3. PDF
+      1. [Web Image-PDF output](#OutputsWeb-Image-PDF-output)
+      2. [Report tab to PDF](#OutputsReport-tab-to-PDF)
+      3. [Append PDF files](#OutputsAppend-PDF-files)
+      4. [Multi-tenant Report to PDF](#OutputsReport-to-PDF-batch-output)
+   4. PowerPoint
+      1. [Report to PowerPoint](#OutputsReport-to-PowerPoint)
+   5. Slack
+      1. [Slack Bot](#OutputsSlack-Bot)
 5. Code & AI
    1. [Execute Command](#Custom-scriptsExecuteCommand)
    2. [AI Chat - OpenAI GPT](#ConnectorsOpenAI-GPT)
@@ -103,101 +104,25 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Azure Data Lake Storage Gen2 Blob](#ConnectorsAzure-Data-Lake-Blob)
    2. Flightstats
       1. [Flightstats Flights](#ConnectorsFlightstatsFlights)
-      2. [Flightstats Airlines](#ConnectorsFlightstatsAirlines)
-      3. [Flightstats Airports](#ConnectorsFlightstatsAirports)
+      2. [Flightstats Airports](#ConnectorsFlightstatsAirports)
+      3. [Flightstats Airlines](#ConnectorsFlightstatsAirlines)
    3. Overpass
       1. [Overpass Street Coordinates](#ConnectorsOverpassStreet-Coordinates)
    4. Slack
       1. [Slack API WebClient](#ConnectorsSlack-API-WebClient)
    5. Weather
       1. [OpenWeatherMap](#ConnectorsWeatherOpenWeatherMap)
-   6. [XPT Reader](#ConnectorsXPT-Reader)
-   7. [Flipside](#ConnectorsFlipside)
-   8. [Jira](#ConnectorsJira)
-   9. [HubSpot](#ConnectorsHubSpot)
-   10. [Trello](#ConnectorsTrello)
-   11. [Yahoo Finance](#ConnectorsYahooFinance)
-   12. [Google BigQuery Import Table](#ConnectorsBigQueryGoogle-BigQuery-Import-Table)
-   13. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogle-BigQuery-Custom-SQL)
-   14. [Dune](#ConnectorsDune)
-   15. [Etherscan](#ConnectorsEtherscan)
+   6. [Jira](#ConnectorsJira)
+   7. [Google BigQuery Import Table](#ConnectorsBigQueryGoogle-BigQuery-Import-Table)
+   8. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogle-BigQuery-Custom-SQL)
+   9. [Flipside](#ConnectorsFlipside)
+   10. [Dune](#ConnectorsDune)
+   11. [HubSpot](#ConnectorsHubSpot)
+   12. [Etherscan](#ConnectorsEtherscan)
+   13. [XPT Reader](#ConnectorsXPT-Reader)
+   14. [Trello](#ConnectorsTrello)
+   15. [Yahoo Finance](#ConnectorsYahooFinance)
 ## Block Overview
-<div id="OutputsGoogle-BigQuery-Writer"/>
-
-### Google BigQuery Export
-
-Allows to write data to a Google BigQuery table. The table can be created/replaced, or records can be appended to an existing table
-
-[Link to Github page](Outputs/Google-BigQuery-Writer)
-
-<div id="OutputsGitHub"/>
-
-### GitHub
-
-Reads from and writes data to GitHub
-
-[Link to Github page](Outputs/GitHub)
-
-<div id="OutputsReport-tab-to-PDF"/>
-
-### Report tab to PDF
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report-tab-to-PDF/thumbnail.png" width="125" height="125"/>
-
-Prints Report tabs to PDF files for each record of the input data.
-
-[Link to Github page](Outputs/Report-tab-to-PDF)
-
-<div id="OutputsWeb-Image-PDF-output"/>
-
-### Web Image-PDF output
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Web-Image-PDF-output/thumbnail.png" width="125" height="125"/>
-
-Grabs screenshots of webpages, optionally producing a PDF document.
-
-[Link to Github page](Outputs/Web-Image-PDF-output)
-
-<div id="OutputsReport-to-PDF-batch-output"/>
-
-### Multi-tenant Report to PDF
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report-to-PDF-batch-output/thumbnail.png" width="125" height="125"/>
-
-Prints Report tabs to PDF files for each record of the input data.
-
-[Link to Github page](Outputs/Report-to-PDF-batch-output)
-
-<div id="OutputsAppend-PDF-files"/>
-
-### Append PDF files
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Append-PDF-files/thumbnail.png" width="125" height="125"/>
-
-Append multiple PDF files combining them into one PDF file.
-
-[Link to Github page](Outputs/Append-PDF-files)
-
-<div id="OutputsReport-to-PowerPoint"/>
-
-### Report to PowerPoint
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report-to-PowerPoint/thumbnail.png" width="125" height="125"/>
-
-Export a Report to a PowerPoint pptx file
-
-[Link to Github page](Outputs/Report-to-PowerPoint)
-
-<div id="OutputsSlack-Bot"/>
-
-### Slack Bot
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Slack-Bot/thumbnail.png" width="125" height="125"/>
-
-Posts messages on a channel.
-
-[Link to Github page](Outputs/Slack-Bot)
-
 <div id="InputsDatabasesMongoDB"/>
 
 ### MongoDB
@@ -224,16 +149,6 @@ Joins regions defined in a shapefile with points defined as latitudes and longit
 
 [Link to Github page](Inputs/Rdata)
 
-<div id="InputsSFTP-Downloader"/>
-
-### SFTP Downloader
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/SFTP-Downloader/thumbnail.png" width="125" height="125"/>
-
-Download files from a SFTP server folder.
-
-[Link to Github page](Inputs/SFTP-Downloader)
-
 <div id="InputsSharepoint-Online"/>
 
 ### Sharepoint Online Downloader
@@ -253,6 +168,216 @@ Download a file from a Sharepoint Online site.
 Extract text from PDF files.
 
 [Link to Github page](Inputs/PDF-Reader)
+
+<div id="InputsSFTP-Downloader"/>
+
+### SFTP Downloader
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Inputs/SFTP-Downloader/thumbnail.png" width="125" height="125"/>
+
+Download files from a SFTP server folder.
+
+[Link to Github page](Inputs/SFTP-Downloader)
+
+<div id="PreparationForEachProjectParameters"/>
+
+### Project Parameters Batch Setting
+
+None
+
+[Link to Github page](Preparation/ForEach/ProjectParameters)
+
+<div id="PreparationForEachForEachMultiStage"/>
+
+### ForEach multi stage
+
+The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.
+
+[Link to Github page](Preparation/ForEach/ForEachMultiStage)
+
+<div id="PreparationGeoShapefile"/>
+
+### Shapefile
+
+Match regions in shapefile with geographical points having latitude and longitude
+
+[Link to Github page](Preparation/Geo/Shapefile)
+
+<div id="PreparationGeoGridsquare"/>
+
+### Gridsquare
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Geo/Gridsquare/thumbnail.png" width="125" height="125"/>
+
+Converts gridsquare / Maidenhead 
+
+[Link to Github page](Preparation/Geo/Gridsquare)
+
+<div id="PreparationInterfacesKedro"/>
+
+### Kedro
+
+Intefaces with kedro workflows
+
+[Link to Github page](Preparation/Interfaces/Kedro)
+
+<div id="PreparationJSONNormalise"/>
+
+### JSON Normalise
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/JSON/Normalise/thumbnail.png" width="125" height="125"/>
+
+Normalise semi-structured JSON strings into a flat table, appending data record by record.
+
+[Link to Github page](Preparation/JSON/Normalise)
+
+<div id="PreparationJSONExpand_Fields"/>
+
+### JSON Expand fields
+
+Expands JSON strings in a specified field into separate columns, optionally including the original input data
+
+[Link to Github page](Preparation/JSON/Expand_Fields)
+
+<div id="PreparationJoinInequality-Join"/>
+
+### Inequality Join
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Inequality-Join/thumbnail.png" width="125" height="125"/>
+
+Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.
+
+[Link to Github page](Preparation/Join/Inequality-Join)
+
+<div id="PreparationJoinInterval-Join"/>
+
+### Interval Join
+
+Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.
+
+[Link to Github page](Preparation/Join/Interval-Join)
+
+<div id="PreparationJoinFuzzy-Join"/>
+
+### Fuzzy Terms Join
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Fuzzy-Join/thumbnail.png" width="125" height="125"/>
+
+Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by inverse document frequency.
+
+[Link to Github page](Preparation/Join/Fuzzy-Join)
+
+<div id="PreparationPartition"/>
+
+### Partition
+
+Partitions the data into chunks of the desired size. There will be a new field called "Partition" which contains a number unique to each partition.
+
+[Link to Github page](Preparation/Partition)
+
+<div id="PreparationPivotMelt-De-pivot"/>
+
+### Melt De-pivot
+
+Keep all selected fixed fields in the output, de-pivot all other fields
+
+[Link to Github page](Preparation/Pivot/Melt-De-pivot)
+
+<div id="PreparationStandardisationStandardise"/>
+
+### Standardise
+
+Standardises the values in the selected fields so that they are in the range between 0 and 1. I.e. The new value of the highest value in each field is going to be 1, and the lowest value 0. All other values are scaled proportionally.
+
+[Link to Github page](Preparation/Standardisation/Standardise)
+
+<div id="PreparationForEachForEach"/>
+
+### For Each (Separate Workflows)
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/ForEach/ForEach/thumbnail.png" width="125" height="125"/>
+
+Executes another Omniscope project multiple times, each time with a different set of parameter values.
+
+[Link to Github page](Preparation/ForEach/ForEach)
+
+<div id="PreparationUnescape-HTML"/>
+
+### Unescape HTML
+
+Convert all named and numeric character references to the corresponding Unicode characters
+
+[Link to Github page](Preparation/Unescape-HTML)
+
+<div id="PreparationAdd-row-ID-field"/>
+
+### Add row ID field
+
+Adds a Row ID field with a sequential number.
+
+[Link to Github page](Preparation/Add-row-ID-field)
+
+<div id="PreparationUnstack-rows"/>
+
+### Unstack Records
+
+Unstack all records by splitting on text fields with stacked values, filling records with empty strings where needed.
+
+[Link to Github page](Preparation/Unstack-rows)
+
+<div id="PreparationSplit-Address"/>
+
+### Split Address
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Split-Address/thumbnail.png" width="125" height="125"/>
+
+Splits an address field into streetname, streetnumber, and suffix.
+
+[Link to Github page](Preparation/Split-Address)
+
+<div id="PreparationField-Renamer"/>
+
+### Field Renamer
+
+Renames the fields of a data set given a list of current names and new names.
+
+[Link to Github page](Preparation/Field-Renamer)
+
+<div id="PreparationMarkdown-to-HTML"/>
+
+### Markdown to HTML
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Markdown-to-HTML/thumbnail.png" width="125" height="125"/>
+
+None
+
+[Link to Github page](Preparation/Markdown-to-HTML)
+
+<div id="PreparationAnonymise"/>
+
+### Anonymise
+
+Anonymise sensitive text data within the input data.
+
+[Link to Github page](Preparation/Anonymise)
+
+<div id="PreparationURL-Encode"/>
+
+### URL Encode
+
+URL encode strings in a field using the UTF-8 encoding scheme
+
+[Link to Github page](Preparation/URL-Encode)
+
+<div id="PreparationGeoCentroids"/>
+
+### Centroids from GeoJSON
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Geo/Centroids/thumbnail.png" width="125" height="125"/>
+
+Calculates the centroid points (lat,long) and output them together with the shape ID from a specified GeoJSON file.
+
+[Link to Github page](Preparation/Geo/Centroids)
 
 <div id="AnalyticsClusteringKMeans"/>
 
@@ -360,197 +485,81 @@ Provides detailed statistics about a dataset
 
 [Link to Github page](Analytics/Data-Profiler)
 
-<div id="PreparationForEachProjectParameters"/>
+<div id="OutputsGoogle-BigQuery-Writer"/>
 
-### Project Parameters Batch Setting
+### Google BigQuery Export
 
-None
+Allows to write data to a Google BigQuery table. The table can be created/replaced, or records can be appended to an existing table
 
-[Link to Github page](Preparation/ForEach/ProjectParameters)
+[Link to Github page](Outputs/Google-BigQuery-Writer)
 
-<div id="PreparationForEachForEachMultiStage"/>
+<div id="OutputsGitHub"/>
 
-### ForEach multi stage
+### GitHub
 
-The ForEach multi stage block allows to orchestrate the execution of another Omniscope project and running the workflow multiple times, each time with a different set of parameter values. Unlike the ForEach block allows multiple stages of execution, executing/refreshing from source a different set of blocks in each stage.
+Reads from and writes data to GitHub
 
-[Link to Github page](Preparation/ForEach/ForEachMultiStage)
+[Link to Github page](Outputs/GitHub)
 
-<div id="PreparationGeoGridsquare"/>
+<div id="OutputsWeb-Image-PDF-output"/>
 
-### Gridsquare
+### Web Image-PDF output
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Geo/Gridsquare/thumbnail.png" width="125" height="125"/>
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Web-Image-PDF-output/thumbnail.png" width="125" height="125"/>
 
-Converts gridsquare / Maidenhead 
+Grabs screenshots of webpages, optionally producing a PDF document.
 
-[Link to Github page](Preparation/Geo/Gridsquare)
+[Link to Github page](Outputs/Web-Image-PDF-output)
 
-<div id="PreparationGeoShapefile"/>
+<div id="OutputsReport-tab-to-PDF"/>
 
-### Shapefile
+### Report tab to PDF
 
-Match regions in shapefile with geographical points having latitude and longitude
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report-tab-to-PDF/thumbnail.png" width="125" height="125"/>
 
-[Link to Github page](Preparation/Geo/Shapefile)
+Prints Report tabs to PDF files for each record of the input data.
 
-<div id="PreparationInterfacesKedro"/>
+[Link to Github page](Outputs/Report-tab-to-PDF)
 
-### Kedro
+<div id="OutputsAppend-PDF-files"/>
 
-Intefaces with kedro workflows
+### Append PDF files
 
-[Link to Github page](Preparation/Interfaces/Kedro)
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Append-PDF-files/thumbnail.png" width="125" height="125"/>
 
-<div id="PreparationJSONNormalise"/>
+Append multiple PDF files combining them into one PDF file.
 
-### JSON Normalise
+[Link to Github page](Outputs/Append-PDF-files)
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/JSON/Normalise/thumbnail.png" width="125" height="125"/>
+<div id="OutputsReport-to-PDF-batch-output"/>
 
-Normalise semi-structured JSON strings into a flat table, appending data record by record.
+### Multi-tenant Report to PDF
 
-[Link to Github page](Preparation/JSON/Normalise)
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report-to-PDF-batch-output/thumbnail.png" width="125" height="125"/>
 
-<div id="PreparationJSONExpand_Fields"/>
+Prints Report tabs to PDF files for each record of the input data.
 
-### JSON Expand fields
+[Link to Github page](Outputs/Report-to-PDF-batch-output)
 
-Expands JSON strings in a specified field into separate columns, optionally including the original input data
+<div id="OutputsReport-to-PowerPoint"/>
 
-[Link to Github page](Preparation/JSON/Expand_Fields)
+### Report to PowerPoint
 
-<div id="PreparationJoinFuzzy-Join"/>
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report-to-PowerPoint/thumbnail.png" width="125" height="125"/>
 
-### Fuzzy Terms Join
+Export a Report to a PowerPoint pptx file
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Fuzzy-Join/thumbnail.png" width="125" height="125"/>
+[Link to Github page](Outputs/Report-to-PowerPoint)
 
-Performs a join between the first (left) and second (right) input. The field on which the join is performed must be text containing multiple terms. The result will contain joined records based on how many terms they share, weighted by inverse document frequency.
+<div id="OutputsSlack-Bot"/>
 
-[Link to Github page](Preparation/Join/Fuzzy-Join)
+### Slack Bot
 
-<div id="PreparationJoinInequality-Join"/>
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Slack-Bot/thumbnail.png" width="125" height="125"/>
 
-### Inequality Join
+Posts messages on a channel.
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Join/Inequality-Join/thumbnail.png" width="125" height="125"/>
-
-Performs a join between the first (left) and second (right) input. The join can be performed using equality/inequality comparators ==, <=, >=, <, > , which means the result will be a constraint cartesian join including all records that match the inequalities.
-
-[Link to Github page](Preparation/Join/Inequality-Join)
-
-<div id="PreparationJoinInterval-Join"/>
-
-### Interval Join
-
-Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.
-
-[Link to Github page](Preparation/Join/Interval-Join)
-
-<div id="PreparationPartition"/>
-
-### Partition
-
-Partitions the data into chunks of the desired size. There will be a new field called "Partition" which contains a number unique to each partition.
-
-[Link to Github page](Preparation/Partition)
-
-<div id="PreparationPivotMelt-De-pivot"/>
-
-### Melt De-pivot
-
-Keep all selected fixed fields in the output, de-pivot all other fields
-
-[Link to Github page](Preparation/Pivot/Melt-De-pivot)
-
-<div id="PreparationStandardisationStandardise"/>
-
-### Standardise
-
-Standardises the values in the selected fields so that they are in the range between 0 and 1. I.e. The new value of the highest value in each field is going to be 1, and the lowest value 0. All other values are scaled proportionally.
-
-[Link to Github page](Preparation/Standardisation/Standardise)
-
-<div id="PreparationForEachForEach"/>
-
-### For Each (Separate Workflows)
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/ForEach/ForEach/thumbnail.png" width="125" height="125"/>
-
-Executes another Omniscope project multiple times, each time with a different set of parameter values.
-
-[Link to Github page](Preparation/ForEach/ForEach)
-
-<div id="PreparationAdd-row-ID-field"/>
-
-### Add row ID field
-
-Adds a Row ID field with a sequential number.
-
-[Link to Github page](Preparation/Add-row-ID-field)
-
-<div id="PreparationField-Renamer"/>
-
-### Field Renamer
-
-Renames the fields of a data set given a list of current names and new names.
-
-[Link to Github page](Preparation/Field-Renamer)
-
-<div id="PreparationURL-Encode"/>
-
-### URL Encode
-
-URL encode strings in a field using the UTF-8 encoding scheme
-
-[Link to Github page](Preparation/URL-Encode)
-
-<div id="PreparationUnstack-rows"/>
-
-### Unstack Records
-
-Unstack all records by splitting on text fields with stacked values, filling records with empty strings where needed.
-
-[Link to Github page](Preparation/Unstack-rows)
-
-<div id="PreparationSplit-Address"/>
-
-### Split Address
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Split-Address/thumbnail.png" width="125" height="125"/>
-
-Splits an address field into streetname, streetnumber, and suffix.
-
-[Link to Github page](Preparation/Split-Address)
-
-<div id="PreparationMarkdown-to-HTML"/>
-
-### Markdown to HTML
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Markdown-to-HTML/thumbnail.png" width="125" height="125"/>
-
-None
-
-[Link to Github page](Preparation/Markdown-to-HTML)
-
-<div id="PreparationGeoCentroids"/>
-
-### Centroids from GeoJSON
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Geo/Centroids/thumbnail.png" width="125" height="125"/>
-
-Calculates the centroid points (lat,long) and output them together with the shape ID from a specified GeoJSON file.
-
-[Link to Github page](Preparation/Geo/Centroids)
-
-<div id="PreparationUnescape-HTML"/>
-
-### Unescape HTML
-
-Convert all named and numeric character references to the corresponding Unicode characters
-
-[Link to Github page](Preparation/Unescape-HTML)
+[Link to Github page](Outputs/Slack-Bot)
 
 <div id="Custom-scriptsExecuteCommand"/>
 
@@ -608,16 +617,6 @@ Requests information about flights specified in the input data from flightstats 
 
 [Link to Github page](Connectors/Flightstats/Flights)
 
-<div id="ConnectorsFlightstatsAirlines"/>
-
-### Flightstats Airlines
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airlines/thumbnail.png" width="125" height="125"/>
-
-Downloads a list of airlines as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.
-
-[Link to Github page](Connectors/Flightstats/Airlines)
-
 <div id="ConnectorsFlightstatsAirports"/>
 
 ### Flightstats Airports
@@ -627,6 +626,16 @@ Downloads a list of airlines as provided by flightstats (https://www.flightstats
 Downloads a list of airports as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.
 
 [Link to Github page](Connectors/Flightstats/Airports)
+
+<div id="ConnectorsFlightstatsAirlines"/>
+
+### Flightstats Airlines
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Flightstats/Airlines/thumbnail.png" width="125" height="125"/>
+
+Downloads a list of airlines as provided by flightstats (https://www.flightstats.com). The script needs your flightstats app id and key which needs to be obtained either through buying their service or signing up for a test account.
+
+[Link to Github page](Connectors/Flightstats/Airlines)
 
 <div id="ConnectorsOverpassStreet-Coordinates"/>
 
@@ -656,15 +665,31 @@ Retrieves current weather and forecasts from OpenWeatherMap
 
 [Link to Github page](Connectors/Weather/OpenWeatherMap)
 
-<div id="ConnectorsXPT-Reader"/>
+<div id="ConnectorsJira"/>
 
-### XPT Reader
+### Jira
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/XPT-Reader/thumbnail.png" width="125" height="125"/>
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Jira/thumbnail.png" width="125" height="125"/>
 
-Reads a SAS Transport *xpt* file, extracting a dataset.
+Retrieves projects and issues from Jira
 
-[Link to Github page](Connectors/XPT-Reader)
+[Link to Github page](Connectors/Jira)
+
+<div id="ConnectorsBigQueryGoogle-BigQuery-Import-Table"/>
+
+### Google BigQuery Import Table
+
+Allows to import a table from Google BigQuery.
+
+[Link to Github page](Connectors/BigQuery/Google-BigQuery-Import-Table)
+
+<div id="ConnectorsBigQueryGoogle-BigQuery-Custom-SQL"/>
+
+### Google BigQuery Custom SQL
+
+Executes a SQL query on Google BigQuery and imports the query results
+
+[Link to Github page](Connectors/BigQuery/Google-BigQuery-Custom-SQL)
 
 <div id="ConnectorsFlipside"/>
 
@@ -676,15 +701,15 @@ Executes a SQL query on Flipside and retrieves the blockchain data
 
 [Link to Github page](Connectors/Flipside)
 
-<div id="ConnectorsJira"/>
+<div id="ConnectorsDune"/>
 
-### Jira
+### Dune
 
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Jira/thumbnail.png" width="125" height="125"/>
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Dune/thumbnail.png" width="125" height="125"/>
 
-Retrieves projects and issues from Jira
+Execute queries and retrieve blockchain data from any public query on dune.com, as well as any personal private queries your Dune account has access to
 
-[Link to Github page](Connectors/Jira)
+[Link to Github page](Connectors/Dune)
 
 <div id="ConnectorsHubSpot"/>
 
@@ -695,6 +720,26 @@ Retrieves projects and issues from Jira
 Retrieves contacts, companies, deals and lists
 
 [Link to Github page](Connectors/HubSpot)
+
+<div id="ConnectorsEtherscan"/>
+
+### Etherscan
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Etherscan/thumbnail.png" width="125" height="125"/>
+
+The Ethereum Blockchain Explorer.
+
+[Link to Github page](Connectors/Etherscan)
+
+<div id="ConnectorsXPT-Reader"/>
+
+### XPT Reader
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/XPT-Reader/thumbnail.png" width="125" height="125"/>
+
+Reads a SAS Transport *xpt* file, extracting a dataset.
+
+[Link to Github page](Connectors/XPT-Reader)
 
 <div id="ConnectorsTrello"/>
 
@@ -715,40 +760,4 @@ Retrieves boards, lists and cards, and allows you to search in Trello.
 Fetches price data for tickers from Yahoo Finance
 
 [Link to Github page](Connectors/YahooFinance)
-
-<div id="ConnectorsBigQueryGoogle-BigQuery-Import-Table"/>
-
-### Google BigQuery Import Table
-
-Allows to import a table from Google BigQuery.
-
-[Link to Github page](Connectors/BigQuery/Google-BigQuery-Import-Table)
-
-<div id="ConnectorsBigQueryGoogle-BigQuery-Custom-SQL"/>
-
-### Google BigQuery Custom SQL
-
-Executes a SQL query on Google BigQuery and imports the query results
-
-[Link to Github page](Connectors/BigQuery/Google-BigQuery-Custom-SQL)
-
-<div id="ConnectorsDune"/>
-
-### Dune
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Dune/thumbnail.png" width="125" height="125"/>
-
-Execute queries and retrieve blockchain data from any public query on dune.com, as well as any personal private queries your Dune account has access to
-
-[Link to Github page](Connectors/Dune)
-
-<div id="ConnectorsEtherscan"/>
-
-### Etherscan
-
-<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/Etherscan/thumbnail.png" width="125" height="125"/>
-
-The Ethereum Blockchain Explorer.
-
-[Link to Github page](Connectors/Etherscan)
 
