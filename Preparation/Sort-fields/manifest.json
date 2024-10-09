@@ -1,0 +1,79 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Sort fields",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Sort fields in the input data by name or type",
+    "category": "Preparation",
+    "subcategory": null,
+    "tags": [
+        "sort",
+        "fields",
+        "sort fields"
+    ],
+    "introductoryText": "### Sort fields in the input data by a criteria (alphabetical, type)",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "sortBy",
+            "title": "Sort Fields by",
+            "description": "Sort fields by criteria",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Name",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "name",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Type",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "type",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "name"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "STREAM_TRANSFORM"
+}
