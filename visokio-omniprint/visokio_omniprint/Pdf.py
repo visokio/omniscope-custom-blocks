@@ -1,5 +1,6 @@
 import json
 import base64
+from selenium.webdriver.common.print_page_options import PrintOptions
 
 from .DriverBase import DriverBase
 
@@ -9,17 +10,13 @@ class Pdf(DriverBase):
 
         driver = self.get_driver_for_url(url, timeout, is_docker)
 
-        print_options = {
-            "landscape": False,
-            "displayHeaderFooter": False,
-            "printBackground": True,
-            "preferCSSPageSize": True,
-        }
+        print_options = PrintOptions()
+        print_options.orientation = "portrait"
 
-        result = self.send_devtools(driver, "Page.printToPDF", print_options)
+        result = driver.print_page(print_options)
         driver.get("about:blank") # Navigate away to ensure page is unloaded properly.
         driver.quit()
-        return base64.b64decode(result["data"])
+        return base64.b64decode(result)
 
 
     def write_pdf_to_path(self, path, pdf):

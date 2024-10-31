@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "visokio-omniprint"
-version = "1.1.7"
+version = "1.2.0"
 description = "Visokio Omniscope PDF printing library"
 readme = "README.md"
 requires-python = ">=3.7"
@@ -25,7 +25,7 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dependencies = [
-  "selenium",
+  "selenium>=4.26.0",
   "webdriver-manager",
   "get-chrome-driver>=1.3.19",
   "tinify",

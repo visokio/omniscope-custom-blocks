@@ -73,21 +73,6 @@ class DriverBase:
             return self.get_driver_host(options)
 
 
-    def send_devtools(self, driver, cmd, params):
-        """
-        This function sends a command to the Chrome DevTools API and returns the result.
-        """
-        resource = "/session/%s/chromium/send_command_and_get_result" % driver.session_id
-        url = driver.command_executor._url + resource
-        body = json.dumps({"cmd": cmd, "params": params})
-        response = driver.command_executor._request("POST", url, body)
-
-        if not response:
-            raise Exception(response.get("value"))
-
-        return response.get("value")
-
-
     def get_driver_for_url(self, url, timeout, is_docker):
         driver = self.get_driver(is_docker)
         driver.get(url)  # Navigate to the specified URL
