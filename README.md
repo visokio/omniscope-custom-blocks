@@ -106,10 +106,11 @@ Public repository for custom blocks for Omniscope Evo.
    13. [Centroids from GeoJSON](#PreparationGeoCentroids)
    14. [Unescape HTML](#PreparationUnescape-HTML)
    15. [Anonymise](#PreparationAnonymise)
-   16. [Field Renamer](#PreparationField-Renamer)
-   17. [Add row ID field](#PreparationAdd-row-ID-field)
-   18. [URL Encode](#PreparationURL-Encode)
-   19. [Unstack Records](#PreparationUnstack-rows)
+   16. [Streaming Field Renamer](#PreparationStreaming-Field-Renamer)
+   17. [Field Renamer](#PreparationField-Renamer)
+   18. [Add row ID field](#PreparationAdd-row-ID-field)
+   19. [URL Encode](#PreparationURL-Encode)
+   20. [Unstack Records](#PreparationUnstack-rows)
 6. Outputs
    1. BigQuery
       1. [Google BigQuery Export](#OutputsGoogle-BigQuery-Writer)
@@ -670,6 +671,14 @@ Convert all named and numeric character references to the corresponding Unicode 
 Anonymise sensitive text data within the input data.
 
 [Link to Github page](Preparation/Anonymise)
+
+<div id="PreparationStreaming-Field-Renamer"/>
+
+### Streaming Field Renamer
+
+Renames the fields of a input data, optimised for streaming and big data, given a set of rules  defined in a CSV file
+
+[Link to Github page](Preparation/Streaming-Field-Renamer)
 
 <div id="PreparationField-Renamer"/>
 
