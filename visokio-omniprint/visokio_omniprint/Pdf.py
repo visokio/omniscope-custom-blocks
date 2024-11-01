@@ -12,6 +12,14 @@ class Pdf(DriverBase):
 
         print_options = PrintOptions()
         print_options.orientation = "portrait"
+        print_options.margin_left = 0
+        print_options.margin_right = 0
+        print_options.margin_top = 0
+        print_options.margin_bottom = 0
+
+        # A4 in cm
+        print_options.page_width = 21.0
+        print_options.page_height = 29.7
 
         result = driver.print_page(print_options)
         driver.get("about:blank") # Navigate away to ensure page is unloaded properly.
