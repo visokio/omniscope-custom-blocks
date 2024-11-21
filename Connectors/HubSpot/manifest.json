@@ -15,7 +15,10 @@
     "description": "Retrieves contacts, companies, deals and lists",
     "category": "Connectors",
     "subcategory": null,
-    "tags": [ "hubspot", "crm"],
+    "tags": [
+        "hubspot",
+        "crm"
+    ],
     "introductoryText": "### HubSpot connector\n- Retrieve contact, companies, deals and lists.\n- Search for a contact\n\n![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAACslBMVEUAAAD/AAD/f3//VVX/fz//Zmb/f1X/bUj/f1//cVX/f0z/c1z/f1X/dWL/f1v/d1X/f1//eFr/f1X/eF3/f1n/f1z/eVj/dFX/elv/dVj/elX/dlv/e1f/d1X/e1r/d1f/e1z/eFr/eFz/fFn/eFf/fFv/eVn/fFf/eVv/fFj/eVb/fFr/d1b/elr/eFr/elj/eln/elv/eFn/e1f/eVr/e1n/e1r/e1f/eVr/e1j/eVf/e1r/eFf/eln/eFj/elf/elj/eFr/eln/eFj/elr/eVn/elj/eVr/eln/eVj/e1r/eVj/e1f/eVn/e1j/eVf/e1n/eFf/eln/eFj/eFn/elj/eVr/eln/eVj/elr/eVn/elj/eVn/eln/eVj/eln/eVj/elj/eVn/elj/eVj/e1n/eVj/eFf/eln/eVj/elr/eVn/elj/eVn/eln/eVj/eln/elj/eVn/elj/eVj/eVj/elj/eVn/elj/eVj/eln/eVj/eVn/eln/eVj/eln/eVn/elj/eVn/eln/eVj/eln/eVj/elj/eVn/eVj/eln/eVj/elj/eVn/elj/eVj/eln/eVj/eln/eln/eVj/eln/eVn/eVj/eln/eVj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eVj/eln/eVn/elj/eVn/elj/eVj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eln/eVj/eln/eVn/elj/eVn/elj/eVj/eln/elj/eVn/elj/eVj/eln/eln/eVn/elj/eVn/eln/eVj/eln/eln/eVj/eln/eVj/elj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eVn/elj/eVn/eln/eVj/eln/elk85MxoAAAA5XRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQWFxgZGhscHR4fICEiJCUmJygpKissLS8wMzQ2ODk6Ozw+QEFCQ0RGR0hJS0xNTk9QUVJTVFVWV1hZWltdXl9hYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ent8fX+AgYKEhYaHiImKi4yNjo+QkZKTlJWWl5mam5ydnp+goaKjpKWoqqusrq+w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)",
     "dependencies": "requests",
     "options": [
@@ -55,6 +58,16 @@
                     "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "list_contacts",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Leads",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "list_leads",
                     "isSpecial": false
                 },
                 {

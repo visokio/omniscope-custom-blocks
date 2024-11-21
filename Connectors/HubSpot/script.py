@@ -2,7 +2,7 @@
 import os
 import requests
 import pandas as pd
-from pandas.io.json import json_normalize
+from pandas import json_normalize
 from omniscope.api import OmniscopeApi
 
 class HubspotConnector:
@@ -18,6 +18,27 @@ class HubspotConnector:
         response = requests.get(url, headers=headers, params=params)
         response.raise_for_status()
         return response.json()
+        
+    def list_leads(self):
+        endpoint = '/crm/v3/objects/leads'
+        leads = []
+        after = None
+
+        while True:
+            params = {'limit': 100}  # Maximum allowed limit is 100
+            if after:
+                params['after'] = after
+
+            response = self._make_request(endpoint, params)
+            leads.extend(response['results'])
+
+            # Check for pagination
+            if 'paging' in response and 'next' in response['paging']:
+                after = response['paging']['next']['after']
+            else:
+                break
+
+        return leads
 
     def list_companies(self):
         endpoint = '/crm/v3/objects/companies'
@@ -46,6 +67,7 @@ class HubspotConnector:
 
         while True:
             params = {'limit': 100}  # maximum allowed limit is 100
+            params['properties'] = 'email,lifecycleStage'
             if after:
                 params['after'] = after
 
@@ -110,6 +132,8 @@ query = omniscope_api.get_option("params")
 
 if action == "list_companies":
     data = hubspot_connector.list_companies()
+elif action == "list_leads":
+    data = hubspot_connector.list_leads()
 elif action == "list_contacts":
     data = hubspot_connector.list_contacts()
 elif action == "list_lists":
