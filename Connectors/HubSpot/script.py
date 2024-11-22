@@ -10,14 +10,84 @@ class HubspotConnector:
         self.api_key = api_key
         self.base_url = 'https://api.hubapi.com'
 
-    def _make_request(self, endpoint, params=None):
+    def _make_request(self, endpoint, params=None, method="GET", payload=None):
         headers = {
-        "Authorization": f"Bearer {self.api_key}"
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
         }
-        url = f'{self.base_url}{endpoint}'
-        response = requests.get(url, headers=headers, params=params)
+        url = f"{self.base_url}{endpoint}"
+
+        if method == "GET":
+            response = requests.get(url, headers=headers, params=params)
+        elif method == "POST":
+            response = requests.post(url, headers=headers, json=payload)
+
         response.raise_for_status()
         return response.json()
+
+
+
+    def batch_associations(self, from_object_type, to_object_type, ids):
+        """
+        Retrieve associations between two object types for given IDs using v3 API.
+        :param from_object_type: Object type to retrieve associations from (e.g., 'Companies').
+        :param to_object_type: Object type to retrieve associations to (e.g., 'Deals').
+        :param ids: List of object IDs to retrieve associations for.
+        :return: List of flattened association results.
+        """
+        endpoint = f"/crm/v3/associations/{from_object_type}/{to_object_type}/batch/read"
+        payload = {
+            "inputs": [{"id": str(obj_id)} for obj_id in ids]
+        }
+        response = self._make_request(endpoint, method="POST", payload=payload)
+        return self._flatten_associations(response.get("results", []), from_object_type, to_object_type)
+
+    def _flatten_associations(self, associations, from_object_type, to_object_type):
+        """
+        Flatten the association results into multiple rows.
+        Each `to` object will have its own row.
+        :param associations: List of association results from the API.
+        :param from_object_type: Object type to retrieve associations from (e.g., 'Companies').
+        :param to_object_type: Object type to retrieve associations to (e.g., 'Deals').
+        :return: Flattened list of dictionaries.
+        """
+        flattened_data = []
+        for association in associations:
+            from_id = association.get("from", {}).get("id")
+            for to in association.get("to", []):
+                flattened_data.append({
+                    f"{from_object_type}_id": from_id,
+                    f"{to_object_type}_id": to.get("id"),
+                    "association_type": to.get("type"),
+                })
+        return flattened_data
+
+    def list_object_ids(self, object_type):
+        """
+        Retrieve all object IDs for a given object type.
+        :param object_type: Object type to retrieve IDs for (e.g., 'Companies').
+        :return: List of object IDs.
+        """
+        endpoint = f"/crm/v3/objects/{object_type}"
+        ids = []
+        after = None
+
+        while True:
+            params = {"limit": 100}
+            if after:
+                params["after"] = after
+
+            response = self._make_request(endpoint, method="GET")
+            ids.extend([obj["id"] for obj in response["results"]])
+
+            if "paging" in response and "next" in response["paging"]:
+                after = response["paging"]["next"]["after"]
+            else:
+                break
+
+        return ids
+        
+        
         
     def list_leads(self):
         endpoint = '/crm/v3/objects/leads'
