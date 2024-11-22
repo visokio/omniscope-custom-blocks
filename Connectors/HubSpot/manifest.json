@@ -99,6 +99,16 @@
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
                     "value": "search_contact",
                     "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Associations for Object IDs",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "batch_associations",
+                    "isSpecial": false
                 }
             ],
             "isDropdown": true,
@@ -110,6 +120,36 @@
             "title": "Search Params",
             "description": "optional parameters for search methods",
             "groupTitle": "Retrieve",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "from_object_type",
+            "title": "From Object",
+            "description": null,
+            "groupTitle": "Associations",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Contacts"
+        },
+        {
+            "name": "to_object_type",
+            "title": "To Object",
+            "description": null,
+            "groupTitle": "Associations",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Companies"
+        },
+        {
+            "name": "object_ids",
+            "title": "Object IDs",
+            "description": "comma separated IDs",
+            "groupTitle": "Associations",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
