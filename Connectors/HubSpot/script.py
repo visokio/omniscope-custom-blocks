@@ -200,7 +200,26 @@ hubspot_connector = HubspotConnector(hubspot_api_key)
 action = omniscope_api.get_option("object")
 query = omniscope_api.get_option("params")
 
-if action == "list_companies":
+from_object_type = omniscope_api.get_option("from_object_type")
+to_object_type = omniscope_api.get_option("to_object_type")
+# Parse the object_ids if provided as a comma-separated string
+object_ids_input = omniscope_api.get_option("object_ids")
+if object_ids_input:
+    # Convert the comma-separated string to a list of IDs
+    object_ids = [obj_id.strip() for obj_id in object_ids_input.split(",")]
+else:
+    object_ids = None
+
+if action == "batch_associations":
+    if not from_object_type or not to_object_type:
+        omniscope_api.abort("For the Associations action, both 'From Object' and 'To Object' options must be specified. Example values: 'Companies', 'Contacts'.")
+   
+    if not object_ids:
+        # If no specific IDs provided, fetch all IDs for the `from_object_type`
+        object_ids = hubspot_connector.list_object_ids(from_object_type)
+    data = hubspot_connector.batch_associations(from_object_type, to_object_type, object_ids)
+
+elif action == "list_companies":
     data = hubspot_connector.list_companies()
 elif action == "list_leads":
     data = hubspot_connector.list_leads()
@@ -220,5 +239,8 @@ elif action == "search_contact":
 
 df = json_normalize(data)
 
-omniscope_api.write_output_records(df, 0)
-omniscope_api.commit()
+if df is not None and not df.empty:
+    omniscope_api.write_output_records(df, 0)
+    omniscope_api.commit()
+else:
+    omniscope_api.close("No data retrieved")
