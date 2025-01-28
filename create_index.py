@@ -30,7 +30,12 @@ import json
 
 def process_directory(path: str, blocks):
     with open(path+"/manifest.json", 'r') as manifest_file:
-        manifest = json.load(manifest_file)
+
+        try:
+            manifest = json.load(manifest_file)
+        except Exception as e:
+            print(f"JSON error detected, cannot load corrupt manifest at: {path}/manifest.json")
+            raise e
 
         if not "optionsVersion" in manifest or not manifest["optionsVersion"] in supported_options_versions:
             return
