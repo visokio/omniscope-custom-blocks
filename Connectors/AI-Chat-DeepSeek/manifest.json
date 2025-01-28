@@ -37,7 +37,7 @@
         "title": "Model",
         "description": "E.g. deepseek-chat",
         "groupTitle": null,
-        "width": "ONE",
+        "width": "ONE"
       },
       {
         "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
