@@ -16,22 +16,72 @@
     "category": "Preparation",
     "subcategory": null,
     "tags": [],
-    "introductoryText": "This Data Anonymisation block is designed to anonymise sensitive text data within the input data.\nBy replacing unique string values with randomly generated, recognisable words, this utility ensures that the original data remains confidential while preserving the structure and integrity of the dataset. \nThe utility dynamically generates unique words based on the number of unique values present in the dataset, making it efficient and adaptable to various data sizes. \nThis approach is particularly useful in scenarios where data privacy is paramount, such as in compliance with data protection regulations.",
-    "dependencies": "numpy",
+    "introductoryText": "This Data Anonymisation block protects sensitive information while preserving the dataset’s structure and integrity.\n\nIt replaces unique text values with randomly generated, recognisable words, ensuring confidentiality. Numeric values are altered by a random multiplier, and dates are shifted unpredictably across years, months, days, and times.\n\nBy consistently scrambling data while maintaining its overall format, this approach supports data privacy and compliance with protection regulations.",
+    "dependencies": "numpy diffprivlib",
     "options": [
         {
             "name": "selectedFields",
             "title": "Fields to anonymise",
             "description": "Leave it empty to select all fields",
-            "groupTitle": null,
+            "groupTitle": "",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
             "inputIndex": 0,
             "defaultValue": null,
             "mandatory": false,
-            "fieldTypes": [
-                "STRING"
-            ]
+            "fieldTypes": []
+        },
+        {
+            "name": "epsilon_numeric",
+            "title": "Numeric Privacy Budget",
+            "description": "Controls the noise level added to numeric fields. Lower values mean more noise for stronger privacy but less precision.",
+            "groupTitle": "Randomness",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null,
+            "showAsSlider": false
+        },
+        {
+            "name": "sensitivity_numeric",
+            "title": "Numeric Sensitivity",
+            "description": "Defines the maximum expected change in numeric values from one record. It helps calibrate the noise level appropriately.",
+            "groupTitle": "Randomness",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null,
+            "showAsSlider": false
+        },
+        {
+            "name": "epsilon_date",
+            "title": "Date Privacy Budget",
+            "description": "Sets the noise level for date/time fields. Lower values add more noise to dates, offering stronger privacy at the cost of date accuracy.",
+            "groupTitle": "Randomness",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null,
+            "showAsSlider": false
+        },
+        {
+            "name": "sensitivity_date",
+            "title": "Date Sensitivity",
+            "description": "Specifies the maximum expected change (in seconds) in datetime values from one record (e.g. 86400 seconds equals one day). This helps determine the right amount of noise.",
+            "groupTitle": "Randomness",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null,
+            "showAsSlider": false
         }
     ],
     "blockOutputs": [
@@ -47,7 +97,7 @@
         "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
         "customBaseImage": null,
         "useCustomBaseImage": false,
-        "customSystemLibraries": null,
+        "customSystemLibraries": "",
         "installVisokioRepLibraries": false
     },
     "designLock": false,
