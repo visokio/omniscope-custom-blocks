@@ -6,6 +6,7 @@ omniscope_api = OmniscopeApi()
 input_data = omniscope_api.read_input_records(input_number=0)
 
 modelEndpoint = omniscope_api.get_option("ModelEndpoint")
+API_Key = omniscope_api.get_option("ApiKey")
 prompt = omniscope_api.get_option("Prompt")
 systemPrompt = omniscope_api.get_option("SystemPrompt")
 model = omniscope_api.get_option("Model")
@@ -14,7 +15,7 @@ temperature = omniscope_api.get_option("Temperature")
 from openai import OpenAI
 client = OpenAI(
     base_url=modelEndpoint,
-    api_key = "sk-no-key-required"
+    api_key = API_Key
 )
 
 result_df = []
