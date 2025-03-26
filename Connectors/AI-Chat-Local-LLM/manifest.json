@@ -32,6 +32,15 @@
             "mandatory": true
         },
         {
+            "name": "ApiKey",
+            "title": "API Key",
+            "description": "Optional",
+            "groupTitle": null,
+            "width": "ONE_AND_HALF",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": false
+        },
+        {
             "name": "Model",
             "title": "Model",
             "description": "E.g. LLaMA_CPP",
