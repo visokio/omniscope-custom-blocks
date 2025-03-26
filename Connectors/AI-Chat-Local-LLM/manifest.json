@@ -34,7 +34,7 @@
         {
             "name": "ApiKey",
             "title": "API Key",
-            "description": "Optional",
+            "description": "sk-no-key-required",
             "groupTitle": null,
             "width": "ONE_AND_HALF",
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
