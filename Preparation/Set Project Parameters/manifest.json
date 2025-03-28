@@ -30,7 +30,7 @@
             "width": "THREE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": "http://127.0.0.1:24679/Admin+dashboards/Errors+Monitor.iox/"
+            "defaultValue": ""
         },
         {
             "name": "Params_Name",
