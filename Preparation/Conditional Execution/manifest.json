@@ -50,8 +50,8 @@
             "groupTitle": "Workflow Execution",
             "width": "TWO",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
-            "mandatory": false,
-            "defaultValue": "SavedErrors"
+            "mandatory": true,
+            "defaultValue": ""
         },
         {
             "name": "Refresh_From_Source",

@@ -25,7 +25,7 @@ if not iox_url.endswith("/"):
     iox_url += "/"
 
 block_names = read_block_names(omniscope_api.get_option("Block_Names"))
-refresh_from_source = str(omniscope_api.get_option("Refresh_From_Source")).lower()
+refresh_from_source = omniscope_api.get_option("Refresh_From_Source")
 
 # Prepare the payload for the workflow execution request
 payload = json.dumps({
