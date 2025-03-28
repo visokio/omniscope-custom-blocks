@@ -544,6 +544,20 @@
             "icon": null
         },
         {
+            "path": "Preparation/Set Project Parameter",
+            "displayName": "Set Project Parameter",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "parameter",
+                "param"
+            ],
+            "category": "Preparation",
+            "description": "The block updates a project parameter",
+            "subcategory": null,
+            "icon": null
+        },
+        {
             "path": "Preparation/Interfaces/Kedro",
             "displayName": "Kedro",
             "language": "PYTHON",
