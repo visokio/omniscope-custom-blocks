@@ -39,7 +39,7 @@
             "groupTitle": "Parameters",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
-            "mandatory": false,
+            "mandatory": true,
             "inputIndex": 0,
             "defaultValue": null,
             "fieldTypes": []
@@ -51,7 +51,7 @@
             "groupTitle": "Parameters",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
-            "mandatory": false,
+            "mandatory": true,
             "inputIndex": 0,
             "defaultValue": null,
             "fieldTypes": []
