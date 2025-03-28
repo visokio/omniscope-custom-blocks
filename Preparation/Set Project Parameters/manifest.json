@@ -12,7 +12,7 @@
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
     "icon": null,
-    "description": "The block updates a project parameter",
+    "description": "The block updates project parameters using the input data",
     "category": "Preparation",
     "subcategory": null,
     "tags": [
@@ -25,7 +25,7 @@
         {
             "name": "Iox_File_Url",
             "title": "IOX file URL",
-            "description": "The URL of the project to set the param",
+            "description": "The URL of the project to set the params",
             "groupTitle": "File",
             "width": "THREE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
