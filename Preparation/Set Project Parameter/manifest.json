@@ -1,0 +1,66 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Set Project Parameter",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": null,
+    "description": "The block updates a project parameter",
+    "category": "Preparation",
+    "subcategory": null,
+    "tags": [
+        "parameter",
+        "param"
+    ],
+    "introductoryText": "## Set Project Parameter\nThis block sets a project parameter.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "Iox_File_Url",
+            "title": "IOX file URL",
+            "description": "The URL of the project to set the param",
+            "groupTitle": "File",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "http://127.0.0.1:24679/Admin+dashboards/Errors+Monitor.iox/"
+        },
+        {
+            "name": "Param_Name",
+            "title": "Name",
+            "description": "The name of the parameter to change",
+            "groupTitle": "Parameter",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": ""
+        },
+        {
+            "name": "Param_Value",
+            "title": "Value",
+            "description": "The value to set in the parameter",
+            "groupTitle": "Parameter",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}
