@@ -35,7 +35,7 @@
         {
             "name": "Params_Name",
             "title": "Names",
-            "description": "The name of the parameter to change",
+            "description": "The field containing the names of the parameter to change",
             "groupTitle": "Parameters",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
@@ -47,7 +47,7 @@
         {
             "name": "Params_Value",
             "title": "Values",
-            "description": "The value to set in the parameter",
+            "description": "The field containing the values to set in the parameters",
             "groupTitle": "Parameters",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
