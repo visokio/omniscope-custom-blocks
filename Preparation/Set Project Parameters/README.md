@@ -1,0 +1,1 @@
+### Set Project Parameters\nThis block sets project parameters by reading input data. It uses two options—one for the column containing the parameter names and another for the column with the parameter values—to build a list of updates. Finally, it sends a single update request to change the project parameters based on the input data.

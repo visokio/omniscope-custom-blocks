@@ -1,6 +1,6 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-    "name": "Set Project Parameter",
+    "name": "Set Project Parameters",
     "scriptFilename": "script.py",
     "language": "PYTHON",
     "executableVersion": null,
@@ -19,7 +19,7 @@
         "parameter",
         "param"
     ],
-    "introductoryText": "## Set Project Parameter\nThis block sets a project parameter.",
+    "introductoryText": "## Set Project Parameters\nThis block sets project parameters by reading input data. It uses two options—one for the column containing the parameter names and another for the column with the parameter values—to build a list of updates. Finally, it sends a single update request to change the project parameters based on the input data.",
     "dependencies": "",
     "options": [
         {
@@ -33,24 +33,28 @@
             "defaultValue": "http://127.0.0.1:24679/Admin+dashboards/Errors+Monitor.iox/"
         },
         {
-            "name": "Param_Name",
-            "title": "Name",
+            "name": "Params_Name",
+            "title": "Names",
             "description": "The name of the parameter to change",
-            "groupTitle": "Parameter",
-            "width": "TWO",
-            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
-            "mandatory": true,
-            "defaultValue": ""
+            "groupTitle": "Parameters",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
-            "name": "Param_Value",
-            "title": "Value",
+            "name": "Params_Value",
+            "title": "Values",
             "description": "The value to set in the parameter",
-            "groupTitle": "Parameter",
+            "groupTitle": "Parameters",
             "width": "ONE",
-            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
-            "defaultValue": ""
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
         }
     ],
     "blockOutputs": [],
