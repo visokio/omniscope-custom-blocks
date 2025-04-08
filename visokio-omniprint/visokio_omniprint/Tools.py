@@ -1,4 +1,6 @@
-from urllib.parse import unquote
+from urllib.parse import quote
+from urllib.parse import urlparse
+
 
 class Tools:
 
@@ -16,22 +18,22 @@ class Tools:
 
     def _file_path(self, output_folder, file_name, report_name, tab_name, index):
         if (file_name is not None):
-            file_name = file_name + ".pdf"
+            file_name = f"{file_name}.pdf"
         else:
             if tab_name is not None:
                 if '&' in tab_name:
                     tab_name = tab_name.split('&',2)[0]
-                file_name = report_name + "-" + tab_name + "-" + str(index) + ".pdf"
+                file_name = f"{report_name}-{tab_name}-{index}.pdf"
             else:
-                file_name = report_name + "-" + str(index) + ".pdf"
+                file_name = f"{report_name}-{index}.pdf"
 
-        file_path = output_folder + "/" + file_name
+        file_path = f"{output_folder}/{file_name}"
         return file_path, file_name
 
     def _scenario_file_path(self, output_folder, report_name, scenario_id):
-        file_name = report_name + "-" + scenario_id + ".pdf"
+        file_name = f"{report_name}-{scenario_id}.pdf"
 
-        file_path = output_folder + "/" + file_name
+        file_path = f"{output_folder}/{file_name}"
         return file_path, file_name
 
 
@@ -48,39 +50,44 @@ class Tools:
 
 
 
-    def scenario_report_url(self, url, scenario_id, page_width, page_height, output_folder):
+    def scenario_report_url(self, url, scenario_id, page_width, page_height, output_folder, auth_username = None, auth_password = None):
         report_name, report_base_url, tab_name_with_filter, tab_name = self._split(url)
         page_size = self._page_size(page_width, page_height)
 
-        report_url = report_base_url + "/s/" + scenario_id + "/" + "#device=printer"+ page_size
+        report_url = f"{report_base_url}/s/{scenario_id}/#device=printer{page_size}"
 
         if tab_name_with_filter is not None:
-            report_url = report_url + "&tab=" + tab_name_with_filter
-
-        print ("SCENARIO report_base_url: " + str(report_base_url))
-        print ("SCENARIO report_url: " + str(report_url))
-
-        print ("SCENARIO output_folder: " + str(output_folder))
-        print ("SCENARIO report_name: " + str(report_name))
-        print ("SCENARIO scenario_id: " + str(scenario_id))
+            report_url = f"{report_url}&tab={tab_name_with_filter}"
 
         file_path, file_name = self._scenario_file_path(output_folder, report_name, scenario_id)
 
-        print ("SCENARIO file_path: " + str(file_path))
-        print ("SCENARIO file_name: " + str(file_name))
-
+        report_url = self.add_basic_auth(url, auth_username, auth_password)
 
         return report_url, file_path, file_name
 
-    def report_url(self, url, page_width, page_height, output_folder, file_name, index):
+    def report_url(self, url, page_width, page_height, output_folder, file_name, index, auth_username = None, auth_password = None):
         report_name, report_base_url, tab_name_with_filter, tab_name = self._split(url)
         page_size = self._page_size(page_width, page_height)
 
-        report_url = report_base_url + "/" + "#device=printer"+ page_size
+        report_url = f"{report_base_url}/#device=printer{page_size}"
 
         if tab_name_with_filter is not None:
-            report_url = report_url + "&tab=" + tab_name_with_filter
+            report_url = f"{report_url}&tab={tab_name_with_filter}"
 
 
         file_path, file_name = self._file_path(output_folder, file_name, report_name, tab_name, index)
+
+        report_url = self.add_basic_auth(url, auth_username, auth_password)
+
         return report_url, file_path, file_name
+
+
+    def add_basic_auth(self, url, auth_username, auth_password):
+        if auth_username is None or auth_username.strip() == ""  or auth_password is None or auth_password.strip() == "": return url
+
+        parsed_url = urlparse(url)
+
+        encoded_username = quote(auth_username)
+        encoded_password = quote(auth_password)
+
+        return f"{parsed_url.scheme}://{encoded_username}:{encoded_password}@{parsed_url.netloc}{parsed_url.path}"

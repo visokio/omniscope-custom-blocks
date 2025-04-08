@@ -22,7 +22,7 @@
         "output",
         "print"
     ],
-    "introductoryText": "## Webpage Image/PDF output\n#### Grab screenshots (PNG) per web page URL record by record, optionally creating a PDF file, saving all files to the specified output folder.\n### Setup\n#### The best way to use this block is within a Docker system. For more information check this article [Docker setup](https://help.visokio.com/support/solutions/articles/42000071133-setting-up-the-custom-block)\n#### If you are not using Docker, then Chrome has to be installed on the host machine.\n### Troubleshooting\n#### *In case you experience errors running this block, please ensure the following:*\n#### 1. Make sure you are using the newest Webpage Image/PDF output block. If in doubt, replace this one with a fresh one from the block palette.\n#### 2. If you are using Docker, make sure you are using the newest Docker image. If in doubt, simply remove all Visokio related Docker images\n#### 3. If *not* running Docker, make sure Chrome is installed and is on the newest version.\n#### 4. It's possible that your version of Omniscope is too old and has become incompatible with the other parts of the printing system. Please switch to the newest Rock, or the newest Release Candidate.",
+    "introductoryText": "## Webpage Image/PDF output\n#### Grab screenshots (PNG) per web page URL record by record, optionally creating a PDF file, saving all files to the specified output folder.\n### Setup\n#### The best way to use this block is within a Docker system. For more information check this article [Docker setup](https://help.visokio.com/support/solutions/articles/42000071133-setting-up-the-custom-block)\n#### If you are not using Docker, then Chrome has to be installed on the host machine.\n### Authentication\nIf Basic Authentication is set up either for the report itself or the folder in which it is located, and Local Desktop Experience is turned off in the admin app, or the report is only accessible via its public IP, then you need to specify a username and password in order for the block to print properly.\n### Troubleshooting\n#### *In case you experience errors running this block, please ensure the following:*\n#### 1. Make sure you are using the newest Webpage Image/PDF output block. If in doubt, replace this one with a fresh one from the block palette.\n#### 2. If you are using Docker, make sure you are using the newest Docker image. If in doubt, simply remove all Visokio related Docker images\n#### 3. If *not* running Docker, make sure Chrome is installed and is on the newest version.\n#### 4. It's possible that your version of Omniscope is too old and has become incompatible with the other parts of the printing system. Please switch to the newest Rock, or the newest Release Candidate.",
     "dependencies": "visokio-omniprint",
     "options": [
         {
@@ -248,6 +248,25 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
             "defaultValue": null
+        },
+        {
+            "name": "auth_username",
+            "title": "Username",
+            "description": null,
+            "groupTitle": "Authentication",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "auth_password",
+            "title": "Password",
+            "description": null,
+            "groupTitle": "Authentication",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": false
         }
     ],
     "blockOutputs": [

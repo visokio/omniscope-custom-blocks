@@ -24,12 +24,19 @@ tinify_width = omniscope_api.get_option("tinify_width")
 
 is_docker = omniscope_api.is_docker()
 
+auth_username = omniscope_api.get_option("auth_username")
+auth_password = omniscope_api.get_option("auth_password")
+
+
 screenshots = []
 images_pptx = ImagesPPTX()
 image = Image()
+tools = Tools()
 
 for index, row in input_data.iterrows():
     url = row[url_field]
+    
+    url = tools.add_basic_auth(url, auth_username, auth_password)
     
     file_name = 'screenshot_'+str(index)+'.png'
     image_path = folder_path+'/'+file_name

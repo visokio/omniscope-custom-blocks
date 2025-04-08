@@ -17,6 +17,10 @@ file_name_field = omniscope_api.get_option("fileName")
 output_folder = omniscope_api.get_option("outputFolder")
 chrome_delay = omniscope_api.get_option("chromeDelay")
 
+auth_username = omniscope_api.get_option("auth_username")
+auth_password = omniscope_api.get_option("auth_password")
+
+
 is_docker = omniscope_api.is_docker()
 
 if chrome_delay is None:
@@ -40,13 +44,11 @@ pdfs = []
 for index, row in input_data.iterrows():
     url = row[report_url_field]
     file_name = None
-    
-    print ("FILE NAME:"+str(file_name_field)+":")
-    
+   
     if file_name_field is not None and len(file_name_field) > 0:
     	file_name = row[file_name_field]
     
-    report_url, file_path, file_name = tools.report_url(url, page_width, page_height, output_folder, file_name, index)
+    report_url, file_path, file_name = tools.report_url(url, page_width, page_height, output_folder, file_name, index, auth_username, auth_password)
     pdf = pdf_creator.create_pdf(report_url, chrome_delay, is_docker)
     
     with open(file_path, "wb") as file:
