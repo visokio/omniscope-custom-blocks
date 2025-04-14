@@ -1,4 +1,5 @@
 from urllib.parse import quote
+from urllib.parse import unquote
 from urllib.parse import urlparse
 
 
@@ -54,6 +55,8 @@ class Tools:
         report_name, report_base_url, tab_name_with_filter, tab_name = self._split(url)
         page_size = self._page_size(page_width, page_height)
 
+        report_base_url = self.add_basic_auth(report_base_url, auth_username, auth_password)
+
         report_url = f"{report_base_url}/s/{scenario_id}/#device=printer{page_size}"
 
         if tab_name_with_filter is not None:
@@ -61,13 +64,13 @@ class Tools:
 
         file_path, file_name = self._scenario_file_path(output_folder, report_name, scenario_id)
 
-        report_url = self.add_basic_auth(url, auth_username, auth_password)
-
         return report_url, file_path, file_name
 
     def report_url(self, url, page_width, page_height, output_folder, file_name, index, auth_username = None, auth_password = None):
         report_name, report_base_url, tab_name_with_filter, tab_name = self._split(url)
         page_size = self._page_size(page_width, page_height)
+
+        report_base_url = self.add_basic_auth(report_base_url, auth_username, auth_password)
 
         report_url = f"{report_base_url}/#device=printer{page_size}"
 
@@ -77,7 +80,6 @@ class Tools:
 
         file_path, file_name = self._file_path(output_folder, file_name, report_name, tab_name, index)
 
-        report_url = self.add_basic_auth(url, auth_username, auth_password)
 
         return report_url, file_path, file_name
 

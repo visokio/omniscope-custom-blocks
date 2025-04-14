@@ -1,1 +1,1 @@
-python3 -m pip install visokio-omniprint===$1
+python3 -m pip install --break-system-packages visokio-omniprint===$1
