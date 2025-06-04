@@ -20,6 +20,9 @@ if prefix is None:
 def parse_json(row, jsonField):
     try:
         json_dict = json.loads(row[jsonField])
+        if not isinstance(json_dict, dict):
+        	omniscope_api.abort("The block can only process JSON dictionaries, but your data contains something else")
+        
         return {f"{prefix}{k}": v for k, v in json_dict.items()}
     except (json.JSONDecodeError, TypeError):
         return {}
