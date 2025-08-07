@@ -98,6 +98,7 @@ Public repository for custom blocks for Omniscope Evo.
    13. [Etherscan](#ConnectorsEtherscan)
    14. [Trello](#ConnectorsTrello)
    15. [Yahoo Finance](#ConnectorsYahooFinance)
+   16. [AirTable](#ConnectorsAirTable)
 5. Analytics
    1. Clustering
       1. [KMeans](#AnalyticsClusteringKMeans)
@@ -641,6 +642,14 @@ Retrieves boards, lists and cards, and allows you to search in Trello.
 Fetches price data for tickers from Yahoo Finance
 
 [Link to Github page](Connectors/YahooFinance)
+
+<div id="ConnectorsAirTable"/>
+
+### AirTable
+
+Retrieve records from an AirTable table using the REST API
+
+[Link to Github page](Connectors/Airtable)
 
 <div id="AnalyticsClusteringKMeans"/>
 
