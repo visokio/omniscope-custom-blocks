@@ -3,7 +3,6 @@
   "name": "AirTable",
   "scriptFilename": "script.py",
   "language": "PYTHON",
-  "executableVersion": "3.11.4",
   "minVersions": null,
   "optionsVersion": 1,
   "apiVersion": "VERSION_0",
@@ -32,20 +31,20 @@
     {
       "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
       "mandatory": true,
-      "defaultValue": "appz4KliJgAEci0kd",
+      "defaultValue": "",
       "name": "base_id",
       "title": "Base ID",
-      "description": "The Airtable base ID",
+      "description": "The Airtable base ID, e.g. appz4KliJgAEci0kd",
       "groupTitle": "Request",
       "width": "ONE"
     },
     {
       "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
       "mandatory": true,
-      "defaultValue": "tblY6wLfJ0nayUyna",
+      "defaultValue": "",
       "name": "table",
       "title": "Table name or ID",
-      "description": "The Airtable table name or ID",
+      "description": "The Airtable table name or ID, e.g. tblY6wLfJ0nayUyna",
       "groupTitle": "Request",
       "width": "ONE"
     },
@@ -59,7 +58,7 @@
       "name": "page_size",
       "title": "Page size",
       "description": "Number of records per request (1-100)",
-      "groupTitle": "Request",
+      "groupTitle": "Advanced",
       "width": "ONE"
     }
   ],
@@ -79,6 +78,6 @@
     "customSystemLibraries": null,
     "installVisokioRepLibraries": false
   },
-  "designLock": false,
+  "designLock": true,
   "apiMode": "BATCH"
 }
