@@ -16,7 +16,7 @@
     "AirTable",
     "connector"
   ],
-  "introductoryText": "## Retrieve records from an Airtable table\n\n### Finding base and table IDs from URLs\nWhen you have a base open in a compatible web browser, you should see a URL in the address bar\nIn between each slash, you will find a string that identifies the base and table IDs.\nBase IDs begin with \"app\"\nTable IDs begin with \"tbl\"",
+  "introductoryText": "## Retrieve records from an Airtable table\n\n### Get a Personal Access Token\nGo to https://airtable.com/create/tokens/new and create a token with the data.records:read scope.\n\n### Finding base and table IDs from URLs\nWhen you have a base open in a compatible web browser, you should see a URL in the address bar\nIn between each slash, you will find a string that identifies the base and table IDs.\nBase IDs begin with \"app\"\nTable IDs begin with \"tbl\"",
   "dependencies": "requests",
   "options": [
     {
