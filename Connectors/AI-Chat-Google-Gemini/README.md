@@ -9,5 +9,6 @@ Python
 google-genai
 
 ## Source
-[script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/AI%20Chat%20Google%20Gemini/script.py)
+[script.py](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/AI-Chat-Google-Gemini/script.py)
 
+![Gemini chat completion block](https://github.com/visokio/omniscope-custom-blocks/blob/master/Connectors/AI-Chat-Google-Gemini/thumbnail.png)
