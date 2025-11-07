@@ -121,16 +121,17 @@ Public repository for custom blocks for Omniscope Evo.
    11. [Unstack Records](#PreparationUnstack-rows)
    12. [Streaming Field Renamer](#PreparationStreaming-Field-Renamer)
    13. [Conditional Execution](#PreparationConditionalExecution)
-   14. [Unescape HTML](#PreparationUnescape-HTML)
-   15. [Sort fields](#PreparationSort-fields)
-   16. [Set Project Parameters](#PreparationSetProjectParameters)
-   17. [Anonymise](#PreparationAnonymise)
-   18. [Markdown to HTML](#PreparationMarkdown-to-HTML)
-   19. [Field Renamer](#PreparationField-Renamer)
-   20. [Split Address](#PreparationSplit-Address)
-   21. [Centroids from GeoJSON](#PreparationGeoCentroids)
-   22. [Add row ID field](#PreparationAdd-row-ID-field)
-   23. [URL Encode](#PreparationURL-Encode)
+   14. [Expand Date Fields](#PreparationExpand-Date-Fields)
+   15. [Unescape HTML](#PreparationUnescape-HTML)
+   16. [Sort fields](#PreparationSort-fields)
+   17. [Set Project Parameters](#PreparationSetProjectParameters)
+   18. [Anonymise](#PreparationAnonymise)
+   19. [Markdown to HTML](#PreparationMarkdown-to-HTML)
+   20. [Field Renamer](#PreparationField-Renamer)
+   21. [Split Address](#PreparationSplit-Address)
+   22. [Centroids from GeoJSON](#PreparationGeoCentroids)
+   23. [Add row ID field](#PreparationAdd-row-ID-field)
+   24. [URL Encode](#PreparationURL-Encode)
 ## Block Overview
 <div id="ConnectorsOpenAI-GPT"/>
 
@@ -757,6 +758,16 @@ Renames the fields of a input data, optimised for streaming and big data, given 
 This block conditionally triggers the execution of specified workflow blocks via the Workflow API, running them only when the Conditional Parameter is set to true.
 
 [Link to Github page](Preparation/Conditional%20Execution)
+
+<div id="PreparationExpand-Date-Fields"/>
+
+### Expand Date Fields
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Preparation/Expand-Date-Fields/thumbnail.png" width="125" height="125"/>
+
+Expands selected date fields into separate year, month, day, and other date-part fields for easier analysis
+
+[Link to Github page](Preparation/Expand-Date-Fields)
 
 <div id="PreparationUnescape-HTML"/>
 
