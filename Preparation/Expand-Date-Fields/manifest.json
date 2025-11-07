@@ -1,0 +1,59 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Expand Date Fields",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAC6FBMVEUAAAD////////////////////////////////////+/v/+/v7///////////////////+0tbT////////////6+vr////39/j+/v7////////+/v7////+/v/6+vr////a2trY2dj////////////////////////////////////////////9/f7///////////////////////////////////+qqqr////////9/f39/f3///+YmJng4eHg4OH//v6kpKT4+Pj///////////////+pqan39/fk5OTs7Ov+/v7////c3Nz///+2trb6+vr////+/v7///////+qq6v///+7u7v4+Pn////////09PTi4eLe3t7e3t719fX////a2trg3+D////+///29vbt7e3////////////////Pz8/+/v7////8/P3Ly8u7u7vFxMTy8vL39/fp6Onp6eng4ODa2trX19fe3t7a2trW1tfr6+v39/j+/v7R0dHHx8fX2Ni5ubnMzMzQ0NC7urrFxcX39/fw8PHs7Oz////c3Nzi4+Ph4eHd3NzT09Pk4+P////ExMS9vb62trfOzs3m5uby8vLv7/Dv7+/u7u7j5OTr7Ozh4ODx8vLi4uLe3t7b29v////U1NTV1dT+/v7v7+/S0tLv7+/Y2di9vb3///+2trbCwsL///739/fq6urp6end3t7s7Ozc3Nzt7e3////////k5OT////c3d3z9PTz8/TT1NTl5ebOzs7Gxsb//v/FxcXt7e719fXv7+/j4+T7/Pvc29vm5+f////e3t7////a2tr////n5+fk4+P////////9/P3V1NT//v7d3d2jo6Pz8/P////l5eX29/bp6enk5OT////////IyMjKycnDw8PZ2tm8vbzf4OD09PP7+vre3d/k5OPz8/P////39/f9/v7v8PD+/v7+/v7p6ur////+/v7//v/9/f38/Pz7+/seFOp/AAAA8nRSTlMA/vXivw1f+gw+HRVRBO0v3wl2NCoG5kQy9zvBNxf+8IWF+c+zcj1sUhHrxq8atZssD/Pp3kslDvykh2JcBpaSExL+xKkjEAsI+5uHXYWDE/zXcGIbFwoG+vG7/sGhiPTUq44gEu/o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",
+    "description": "Expands selected date fields into separate year, month, day, and other date-part fields for easier analysis",
+    "category": "Preparation",
+    "subcategory": null,
+    "tags": [
+        "date",
+        "expand",
+        "week"
+    ],
+    "introductoryText": "### Expand Date Fields\n\nThis block takes one or more date fields and automatically expands each into a set of useful date parts, such as:\n\n- Year (`*_year`)\n- Month number (`*_month`)\n- Month name (`*_month_name`)\n- Day of month (`*_day`)\n- Day name (`*_day_name`)\n- Day of year (`*_dayofyear`)\n- Quarter (`*_quarter`)\n- ISO week number (`*_weekofyear`)\n- Month start / end flags (`*_is_month_start`, `*_is_month_end`)\n\nEach new field is prefixed with the original date field name.\n\n#### 💡 When to use it\nUse this block when you need to:\n- **Filter or group** data by date parts (e.g. only Saturdays, only Q1, only end-of-month dates)\n- **Build visual reports** that break down results by time components\n- **Simplify date-based conditions** without writing formulas\n\nSimply select one or more date fields, and the block will output your dataset with all the extra date part fields ready for filtering and analysis.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "dateFields",
+            "title": "Date Fields",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": true,
+            "fieldTypes": [
+                "DATE"
+            ]
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": true,
+    "apiMode": "BATCH"
+}
