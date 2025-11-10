@@ -92,6 +92,26 @@
                 },
                 {
                     "name": null,
+                    "title": "Forms",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "list_forms",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Form submissions",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "list_form_submissions",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
                     "title": "Search contact",
                     "description": null,
                     "groupTitle": null,

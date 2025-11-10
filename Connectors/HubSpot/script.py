@@ -276,6 +276,91 @@ class HubspotConnector:
 
         return {"results": all_results}
 
+    # ----------------- NEW: FORMS (INSIGHTS) -----------------
+
+    def list_forms(self, include_all_types=True):
+        """
+        List forms using the Forms v2 API:
+        GET /forms/v2/forms
+
+        - By default, HubSpot only returns marketing forms.
+        - To include non-marketing forms (pop-ups, non-HubSpot, etc.),
+          you must pass formTypes=ALL.
+
+        Returns a plain list of form objects.
+        """
+        endpoint = "/forms/v2/forms"
+        params = {}
+
+        if include_all_types:
+            # Include ALL form types; marketing + non-marketing
+            params["formTypes"] = "ALL"  # case sensitive
+
+        response = self._make_request(endpoint, params=params, method="GET")
+
+        # The endpoint returns a raw JSON array of forms
+        if isinstance(response, list):
+            return response
+
+        # Fallback, in case HubSpot ever wraps it:
+        return response.get("forms", [])
+
+    def list_form_submissions(self, form_guid, page_size=50):
+        """
+        Get 'insights' for a specific form by retrieving ALL submissions and
+        flattening field values into columns.
+
+        Uses legacy endpoint:
+        GET /form-integrations/v1/submissions/forms/{form_guid}
+
+        Returns a list of dicts like:
+        {
+            "conversionId": ...,
+            "submittedAt": ...,
+            "pageUrl": ...,
+            "<field_name_1>": "<value>",
+            "<field_name_2>": "<value>",
+            ...
+        }
+        """
+        endpoint = f"/form-integrations/v1/submissions/forms/{form_guid}"
+        all_submissions = []
+        after = None
+
+        while True:
+            params = {"limit": page_size}
+            if after:
+                params["after"] = after
+
+            response = self._make_request(endpoint, params=params, method="GET")
+
+            submissions = response.get("results", [])
+            all_submissions.extend(submissions)
+
+            paging = response.get("paging", {})
+            next_page = paging.get("next")
+            if next_page and "after" in next_page:
+                after = next_page["after"]
+            else:
+                break
+
+        # Flatten field values into columns for Omniscope
+        flattened = []
+        for sub in all_submissions:
+            row = {
+                "conversionId": sub.get("conversionId"),
+                "submittedAt": sub.get("submittedAt"),
+                "pageUrl": sub.get("pageUrl"),
+            }
+            for field in sub.get("values", []):
+                name = field.get("name")
+                value = field.get("value")
+                if name:
+                    row[name] = value
+            flattened.append(row)
+
+        return flattened
+
 
 omniscope_api = OmniscopeApi()
 
@@ -332,6 +417,19 @@ elif action == "search_company":
 elif action == "search_contact":
     response = hubspot_connector.search_contact(query)
     data = response["results"]
+
+# -------- NEW ACTIONS FOR FORMS --------
+elif action == "list_forms":
+    data = hubspot_connector.list_forms()
+
+elif action == "list_form_submissions":
+    # Expect the form GUID to be passed in the "params" option
+    form_guid = query
+    if not form_guid:
+        omniscope_api.abort(
+            "For 'list_form_submissions', please provide the Form GUID in the 'Params' option."
+        )
+    data = hubspot_connector.list_form_submissions(form_guid)
 
 else:
     omniscope_api.abort(f"Unknown action: {action}")
