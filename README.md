@@ -66,7 +66,9 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Report to PowerPoint](#OutputsReport-to-PowerPoint)
    5. Slack
       1. [Slack Bot](#OutputsSlack-Bot)
-4. Analytics
+4. None
+   1. [Send to Telegram](#OutputsTelegram)
+5. Analytics
    1. Clustering
       1. [Gaussian Mixture Model](#AnalyticsClusteringGMM)
       2. [DBScan](#AnalyticsClusteringDBScan)
@@ -83,7 +85,7 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Website Analysis](#AnalyticsWebsitesWebsite-Analysis)
    6. [Survival Analysis](#AnalyticsSurvival)
    7. [Data Profiler](#AnalyticsData-Profiler)
-5. Inputs
+6. Inputs
    1. Databases
       1. [MongoDB](#InputsDatabasesMongoDB)
       2. [Snowflake Custom Query](#InputsDatabasesSnowflake-custom-query)
@@ -93,7 +95,7 @@ Public repository for custom blocks for Omniscope Evo.
    3. [PDF Reader](#InputsPDF-Reader)
    4. [SFTP Downloader](#InputsSFTP-Downloader)
    5. [Sharepoint Online Downloader](#InputsSharepoint-Online)
-6. Preparation
+7. Preparation
    1. ForEach
       1. [ForEach multi stage](#PreparationForEachForEachMultiStage)
       2. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
@@ -434,6 +436,14 @@ Export a Report to a PowerPoint pptx file
 Posts messages on a channel.
 
 [Link to Github page](Outputs/Slack-Bot)
+
+<div id="OutputsTelegram"/>
+
+### Send to Telegram
+
+None
+
+[Link to Github page](Outputs/Telegram)
 
 <div id="AnalyticsClusteringGMM"/>
 
