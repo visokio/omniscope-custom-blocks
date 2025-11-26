@@ -53,22 +53,24 @@ Public repository for custom blocks for Omniscope Evo.
    15. [Jira](#ConnectorsJira)
    16. [Etherscan](#ConnectorsEtherscan)
 3. Outputs
-   1. BigQuery
+   1. API
+      1. [Multipart Form Upload](#OutputsMulti-Form-Upload)
+   2. BigQuery
       1. [Google BigQuery Export](#OutputsGoogle-BigQuery-Writer)
-   2. Github
+   3. Github
       1. [GitHub](#OutputsGitHub)
-   3. PDF
+   4. Messenger
+      1. [Send to Telegram](#OutputsTelegram)
+   5. PDF
       1. [Report tab to PDF](#OutputsReport-tab-to-PDF)
       2. [Web Image-PDF output](#OutputsWeb-Image-PDF-output)
       3. [Append PDF files](#OutputsAppend-PDF-files)
       4. [Multi-tenant Report to PDF](#OutputsReport-to-PDF-batch-output)
-   4. PowerPoint
+   6. PowerPoint
       1. [Report to PowerPoint](#OutputsReport-to-PowerPoint)
-   5. Slack
+   7. Slack
       1. [Slack Bot](#OutputsSlack-Bot)
-4. None
-   1. [Send to Telegram](#OutputsTelegram)
-5. Analytics
+4. Analytics
    1. Clustering
       1. [Gaussian Mixture Model](#AnalyticsClusteringGMM)
       2. [DBScan](#AnalyticsClusteringDBScan)
@@ -85,7 +87,7 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Website Analysis](#AnalyticsWebsitesWebsite-Analysis)
    6. [Survival Analysis](#AnalyticsSurvival)
    7. [Data Profiler](#AnalyticsData-Profiler)
-6. Inputs
+5. Inputs
    1. Databases
       1. [MongoDB](#InputsDatabasesMongoDB)
       2. [Snowflake Custom Query](#InputsDatabasesSnowflake-custom-query)
@@ -95,7 +97,7 @@ Public repository for custom blocks for Omniscope Evo.
    3. [PDF Reader](#InputsPDF-Reader)
    4. [SFTP Downloader](#InputsSFTP-Downloader)
    5. [Sharepoint Online Downloader](#InputsSharepoint-Online)
-7. Preparation
+6. Preparation
    1. ForEach
       1. [ForEach multi stage](#PreparationForEachForEachMultiStage)
       2. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
@@ -361,6 +363,16 @@ The Ethereum Blockchain Explorer.
 
 [Link to Github page](Connectors/Etherscan)
 
+<div id="OutputsMulti-Form-Upload"/>
+
+### Multipart Form Upload
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Multi-Form-Upload/thumbnail.png" width="125" height="125"/>
+
+Uploads files from a path column to a remote HTTP endpoint using multipart/form-data.
+
+[Link to Github page](Outputs/Multi-Form-Upload)
+
 <div id="OutputsGoogle-BigQuery-Writer"/>
 
 ### Google BigQuery Export
@@ -376,6 +388,14 @@ Allows to write data to a Google BigQuery table. The table can be created/replac
 Reads from and writes data to GitHub
 
 [Link to Github page](Outputs/GitHub)
+
+<div id="OutputsTelegram"/>
+
+### Send to Telegram
+
+Sends data to Telegram
+
+[Link to Github page](Outputs/Telegram)
 
 <div id="OutputsReport-tab-to-PDF"/>
 
@@ -436,14 +456,6 @@ Export a Report to a PowerPoint pptx file
 Posts messages on a channel.
 
 [Link to Github page](Outputs/Slack-Bot)
-
-<div id="OutputsTelegram"/>
-
-### Send to Telegram
-
-None
-
-[Link to Github page](Outputs/Telegram)
 
 <div id="AnalyticsClusteringGMM"/>
 
