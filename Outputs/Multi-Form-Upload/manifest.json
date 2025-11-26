@@ -1,0 +1,77 @@
+{
+  "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+  "name": "Multipart Form Upload",
+  "scriptFilename": "script.py",
+  "language": "PYTHON",
+  "executableVersion": null,
+  "minVersions": [
+    null
+  ],
+  "optionsVersion": 1,
+  "apiVersion": "VERSION_0",
+  "isResourceIntensiveScript": false,
+  "showPartitioning": false,
+  "icon": null,
+  "description": "Uploads files from a path column to a remote HTTP endpoint using multipart/form-data.",
+  "category": "Outputs",
+  "subcategory": "API",
+  "tags": [
+    "upload",
+    "http",
+    "api",
+    "multipart"
+  ],
+  "introductoryText": "Uploads files from a path column to a remote HTTP endpoint using multipart/form-data. Adds HTTP status, response body, and error columns to the output.",
+  "dependencies": "requests",
+  "options": [
+    {
+      "name": "upload_url",
+      "title": "Upload URL",
+      "description": "HTTP endpoint to POST the file to.",
+      "groupTitle": "Request",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+      "mandatory": true,
+      "defaultValue": null
+    },
+    {
+      "name": "file_path_column",
+      "title": "File path column",
+      "description": "File path to upload from disk.",
+      "groupTitle": "Request",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+      "mandatory": true,
+      "defaultValue": null,
+      "readOnly": false
+    },
+    {
+      "name": "form_field_name",
+      "title": "Form field name",
+      "description": "Name of the multipart/form-data field that will contain the file.",
+      "groupTitle": "Request",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+      "mandatory": true,
+      "defaultValue": "file"
+    }
+  ],
+  "blockOutputs": [
+    {
+      "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+      "id": "Output Data",
+      "label": "1",
+      "displayName": "Output 1",
+      "tooltip": null
+    }
+  ],
+  "docker": {
+    "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+    "customBaseImage": null,
+    "useCustomBaseImage": false,
+    "customSystemLibraries": null,
+    "installVisokioRepLibraries": false
+  },
+  "designLock": false,
+  "apiMode": "BATCH"
+}
