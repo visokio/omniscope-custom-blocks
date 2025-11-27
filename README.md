@@ -134,8 +134,9 @@ Public repository for custom blocks for Omniscope Evo.
    20. [Field Renamer](#PreparationField-Renamer)
    21. [Split Address](#PreparationSplit-Address)
    22. [Centroids from GeoJSON](#PreparationGeoCentroids)
-   23. [Add row ID field](#PreparationAdd-row-ID-field)
-   24. [URL Encode](#PreparationURL-Encode)
+   23. [Data Quality Analyser](#PreparationData-Quality-Analyser)
+   24. [Add row ID field](#PreparationAdd-row-ID-field)
+   25. [URL Encode](#PreparationURL-Encode)
 ## Block Overview
 <div id="ConnectorsOpenAI-GPT"/>
 
@@ -860,6 +861,14 @@ Splits an address field into streetname, streetnumber, and suffix.
 Calculates the centroid points (lat,long) and output them together with the shape ID from a specified GeoJSON file.
 
 [Link to Github page](Preparation/Geo/Centroids)
+
+<div id="PreparationData-Quality-Analyser"/>
+
+### Data Quality Analyser
+
+Checks datasets for common quality issues and outputs detailed issue logs and cleaned, annotated data.
+
+[Link to Github page](Preparation/Data-Quality-Analyser)
 
 <div id="PreparationAdd-row-ID-field"/>
 
