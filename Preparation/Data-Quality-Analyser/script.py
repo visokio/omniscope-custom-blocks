@@ -98,8 +98,9 @@ if issues_rows:
     issues_df = pd.concat(issues_rows, axis=0, ignore_index=True)
 else:
     # No issues: still output a simple table so downstream blocks don't break
+    # NOTE: use the same column names as when issues exist
     issues_df = pd.DataFrame(
-        columns=list(df.columns) + ["_issue_type", "_issue_column", "_issue_details"]
+        columns=list(df.columns) + ["Issue Type", "Issue Column", "Issue Details"]
     )
 
 # --- 7. Build Annotated data output (Output: 'annotated') ---
@@ -113,16 +114,33 @@ annotated_df["_issue_flags"] = row_flags
 enriched_df = df.copy()
 
 # Fill numeric columns
+from pandas.api.types import is_integer_dtype
+
 for col in numeric_cols:
-    series = df[col]
-    if series.isna().any():
-        median = series.median()
+    series = enriched_df[col]
+
+    if not series.isna().any():
+        continue
+
+    median = series.median()
+
+    # If all values are NaN, median will be NaN: nothing useful to fill
+    if pd.isna(median):
+        continue
+
+    # If this is a nullable integer column (Int64) and the median is non-integer,
+    # upcast to a nullable float dtype so we can store fractional values safely.
+    if is_integer_dtype(series.dtype) and not float(median).is_integer():
+        series = series.astype("Float64")
+        enriched_df[col] = series.fillna(median)
+    else:
+        # Either not integer dtype, or median is an integer -> safe to fill directly
         enriched_df[col] = series.fillna(median)
 
 # Fill categorical / object / bool columns
 cat_cols = df.select_dtypes(include=["object", "category", "bool"]).columns
 for col in cat_cols:
-    series = df[col]
+    series = enriched_df[col]
     if series.isna().any():
         try:
             mode = series.mode().iloc[0]
@@ -138,8 +156,8 @@ enriched_df["_was_enriched"] = changed_mask.any(axis=1)
 # --- 9. Write outputs ---
 # Make sure the output IDs match those configured in your block design.
 api.write_output(annotated_df, 0)   # Output 1: data + _issue_flags
-api.write_output(issues_df, 1)         # Output 2: detailed issues log
-api.write_output(enriched_df, 2)     # Output 3: enriched data
+api.write_output(issues_df, 1)      # Output 2: detailed issues log
+api.write_output(enriched_df, 2)    # Output 3: enriched data
 
 # Final message in the block bar
 msg = "Data verified and enriched."
