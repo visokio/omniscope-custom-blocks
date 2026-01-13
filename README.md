@@ -121,22 +121,24 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Standardise](#PreparationStandardisationStandardise)
    9. Workflow
       1. [For Each (Separate Workflows)](#PreparationForEachForEach)
-   10. [Time Duration Unit Converter](#PreparationTime-Duration-Unit-Converter)
-   11. [Unstack Records](#PreparationUnstack-rows)
-   12. [Streaming Field Renamer](#PreparationStreaming-Field-Renamer)
-   13. [Conditional Execution](#PreparationConditionalExecution)
-   14. [Expand Date Fields](#PreparationExpand-Date-Fields)
-   15. [Unescape HTML](#PreparationUnescape-HTML)
-   16. [Sort fields](#PreparationSort-fields)
-   17. [Set Project Parameters](#PreparationSetProjectParameters)
-   18. [Anonymise](#PreparationAnonymise)
-   19. [Markdown to HTML](#PreparationMarkdown-to-HTML)
-   20. [Field Renamer](#PreparationField-Renamer)
-   21. [Split Address](#PreparationSplit-Address)
-   22. [Centroids from GeoJSON](#PreparationGeoCentroids)
-   23. [Data Quality Analyser](#PreparationData-Quality-Analyser)
-   24. [Add row ID field](#PreparationAdd-row-ID-field)
-   25. [URL Encode](#PreparationURL-Encode)
+   10. [Smart Schema Normaliser](#PreparationSmart-Schema-Normaliser)
+   11. [Time Duration Unit Converter](#PreparationTime-Duration-Unit-Converter)
+   12. [Unstack Records](#PreparationUnstack-rows)
+   13. [Streaming Field Renamer](#PreparationStreaming-Field-Renamer)
+   14. [Conditional Execution](#PreparationConditionalExecution)
+   15. [Expand Date Fields](#PreparationExpand-Date-Fields)
+   16. [Unescape HTML](#PreparationUnescape-HTML)
+   17. [Sort fields](#PreparationSort-fields)
+   18. [Set Project Parameters](#PreparationSetProjectParameters)
+   19. [Anonymise](#PreparationAnonymise)
+   20. [Markdown to HTML](#PreparationMarkdown-to-HTML)
+   21. [Field Renamer](#PreparationField-Renamer)
+   22. [Split Address](#PreparationSplit-Address)
+   23. [Centroids from GeoJSON](#PreparationGeoCentroids)
+   24. [Data Quality Analyser](#PreparationData-Quality-Analyser)
+   25. [Canonical Schema Mapper](#PreparationCanonical-Schema-Mapper)
+   26. [Add row ID field](#PreparationAdd-row-ID-field)
+   27. [URL Encode](#PreparationURL-Encode)
 ## Block Overview
 <div id="ConnectorsOpenAI-GPT"/>
 
@@ -750,6 +752,14 @@ Executes another Omniscope project multiple times, each time with a different se
 
 [Link to Github page](Preparation/ForEach/ForEach)
 
+<div id="PreparationSmart-Schema-Normaliser"/>
+
+### Smart Schema Normaliser
+
+Automatically cleans and stabilises incoming datasets by normalising field names, merging duplicates, and inferring data types, with zero configuration.
+
+[Link to Github page](Preparation/Smart-Schema-Normaliser)
+
 <div id="PreparationTime-Duration-Unit-Converter"/>
 
 ### Time Duration Unit Converter
@@ -869,6 +879,14 @@ Calculates the centroid points (lat,long) and output them together with the shap
 Checks datasets for common quality issues and outputs detailed issue logs and cleaned, annotated data.
 
 [Link to Github page](Preparation/Data-Quality-Analyser)
+
+<div id="PreparationCanonical-Schema-Mapper"/>
+
+### Canonical Schema Mapper
+
+Enforces a stable, business-defined schema by mapping aliases to canonical fields, coalescing values, and applying consistent types and defaults.
+
+[Link to Github page](Preparation/Canonical-Schema-Mapper)
 
 <div id="PreparationAdd-row-ID-field"/>
 
