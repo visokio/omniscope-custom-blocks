@@ -118,13 +118,12 @@ for _, r in rules.iterrows():
 if not canon_defs:
     api.abort("Rules CSV produced no canonical fields (check 'canonical' values).")
 
-canonical_cols = [d["canonical"] for d in canon_defs]
-
-# We'll set output column order on the first chunk to keep it stable.
+# Track which canonical fields are actually used across chunks
+active_canonical_cols = []
 output_cols = None
 
 def handle_chunk(chunk: pd.DataFrame) -> pd.DataFrame:
-    global output_cols
+    global output_cols, active_canonical_cols
 
     # Build normalized input col lookup
     in_norm_to_actual = {}
@@ -132,20 +131,26 @@ def handle_chunk(chunk: pd.DataFrame) -> pd.DataFrame:
         in_norm_to_actual.setdefault(norm(c), []).append(c)
 
     out = pd.DataFrame(index=chunk.index)
-
     used_input_cols = set()
 
-    # Create canonical fields
+    # Create canonical fields ONLY if at least one alias matches input data
     for d in canon_defs:
         src_cols = []
         for a_norm in d["aliases_norm"]:
             cols = in_norm_to_actual.get(a_norm, [])
             src_cols.extend(cols)
-        for c in src_cols:
-            used_input_cols.add(c)
-
-        s = coalesce_cols(chunk, src_cols)
-        out[d["canonical"]] = cast_and_fill(s, d["type"], d["default"])
+        
+        # Only create this canonical field if we found matching input columns
+        if src_cols:
+            for c in src_cols:
+                used_input_cols.add(c)
+            
+            s = coalesce_cols(chunk, src_cols)
+            out[d["canonical"]] = cast_and_fill(s, d["type"], d["default"])
+            
+            # Track this canonical field as active for first chunk
+            if output_cols is None and d["canonical"] not in active_canonical_cols:
+                active_canonical_cols.append(d["canonical"])
 
     # Pass through any unmapped input fields
     if passthrough_unmapped:
@@ -158,7 +163,6 @@ def handle_chunk(chunk: pd.DataFrame) -> pd.DataFrame:
         output_cols = list(out.columns)
 
     # Enforce consistent schema/order for every chunk
-    # If a column is missing (shouldn't happen if schema is stable), create it as blanks
     for c in output_cols:
         if c not in out.columns:
             out[c] = ""
