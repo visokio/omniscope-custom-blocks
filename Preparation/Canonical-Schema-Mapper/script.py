@@ -118,45 +118,50 @@ for _, r in rules.iterrows():
 if not canon_defs:
     api.abort("Rules CSV produced no canonical fields (check 'canonical' values).")
 
-# Track which canonical fields are actually used across chunks
-active_canonical_cols = []
 output_cols = None
 
 def handle_chunk(chunk: pd.DataFrame) -> pd.DataFrame:
-    global output_cols, active_canonical_cols
+    global output_cols
 
     # Build normalized input col lookup
     in_norm_to_actual = {}
     for c in chunk.columns:
         in_norm_to_actual.setdefault(norm(c), []).append(c)
-
-    out = pd.DataFrame(index=chunk.index)
-    used_input_cols = set()
-
-    # Create canonical fields ONLY if at least one alias matches input data
+Map each input column to its canonical field (if any)
+    # 
+    input_col_to_canonical = {}
+    canonical_data = {}
+    
     for d in canon_defs:
         src_cols = []
         for a_norm in d["aliases_norm"]:
             cols = in_norm_to_actual.get(a_norm, [])
             src_cols.extend(cols)
         
-        # Only create this canonical field if we found matching input columns
+        # Only process if we found matching input columns
         if src_cols:
+            # Map all matching input columns to this canonical field
             for c in src_cols:
-                used_input_cols.add(c)
+                input_col_to_canonical[c] = d["canonical"]
             
+            # Create the canonical field data
             s = coalesce_cols(chunk, src_cols)
-            out[d["canonical"]] = cast_and_fill(s, d["type"], d["default"])
-            
-            # Track this canonical field as active for first chunk
-            if output_cols is None and d["canonical"] not in active_canonical_cols:
-                active_canonical_cols.append(d["canonical"])
+            canonical_data[d["canonical"]] = cast_and_fill(s, d["type"], d["default"])
 
-    # Pass through any unmapped input fields
-    if passthrough_unmapped:
-        for c in chunk.columns:
-            if c not in used_input_cols and c not in out.columns:
-                out[c] = chunk[c]
+    # Build output preserving input column order
+    out = pd.DataFrame(index=chunk.index)
+    seen_canonical = set()
+    
+    for input_col in chunk.columns:
+        if input_col in input_col_to_canonical:
+            # Replace with canonical field (only once if multiple aliases)
+            canon_name = input_col_to_canonical[input_col]
+            if canon_name not in seen_canonical:
+                out[canon_name] = canonical_data[canon_name]
+                seen_canonical.add(canon_name)
+        elif passthrough_unmapped:
+            # Pass through unmapped field
+            out[input_col] = chunk[input_col]
 
     # Lock output schema/order based on first chunk
     if output_cols is None:
