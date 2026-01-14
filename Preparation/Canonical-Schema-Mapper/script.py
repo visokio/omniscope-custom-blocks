@@ -119,16 +119,19 @@ if not canon_defs:
     api.abort("Rules CSV produced no canonical fields (check 'canonical' values).")
 
 output_cols = None
+# Track mapping statistics
+mapped_fields = []
+unmapped_fields = []
 
 def handle_chunk(chunk: pd.DataFrame) -> pd.DataFrame:
-    global output_cols
+    global output_cols, mapped_fields, unmapped_fields
 
     # Build normalized input col lookup
     in_norm_to_actual = {}
     for c in chunk.columns:
         in_norm_to_actual.setdefault(norm(c), []).append(c)
-Map each input column to its canonical field (if any)
-    # 
+
+    # Map each input column to its canonical field (if any)
     input_col_to_canonical = {}
     canonical_data = {}
     
@@ -147,6 +150,10 @@ Map each input column to its canonical field (if any)
             # Create the canonical field data
             s = coalesce_cols(chunk, src_cols)
             canonical_data[d["canonical"]] = cast_and_fill(s, d["type"], d["default"])
+            
+            # Track mapped field (only on first chunk)
+            if output_cols is None and d["canonical"] not in mapped_fields:
+                mapped_fields.append(d["canonical"])
 
     # Build output preserving input column order
     out = pd.DataFrame(index=chunk.index)
@@ -162,10 +169,25 @@ Map each input column to its canonical field (if any)
         elif passthrough_unmapped:
             # Pass through unmapped field
             out[input_col] = chunk[input_col]
+            # Track unmapped field (only on first chunk)
+            if output_cols is None and input_col not in unmapped_fields:
+                unmapped_fields.append(input_col)
 
     # Lock output schema/order based on first chunk
     if output_cols is None:
         output_cols = list(out.columns)
+        
+        # Update message after first chunk
+        summary_parts = []
+        if mapped_fields:
+            summary_parts.append(f"Mapped {len(mapped_fields)} canonical field(s): {', '.join(mapped_fields)}")
+        if unmapped_fields:
+            summary_parts.append(f"Passed through {len(unmapped_fields)} unmapped field(s): {', '.join(unmapped_fields)}")
+        if not mapped_fields and not unmapped_fields:
+            summary_parts.append("No fields processed")
+        
+        summary_message = " | ".join(summary_parts)
+        api.update_message(summary_message)
 
     # Enforce consistent schema/order for every chunk
     for c in output_cols:
