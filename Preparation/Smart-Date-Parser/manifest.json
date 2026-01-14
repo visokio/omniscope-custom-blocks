@@ -1,0 +1,103 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Smart Date Parser",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAEMklEQVR4nO2dO44TQRCG24iMCxAjLLHEON6Mq8AtELeAq5BtbGKEZETMBYghQO0d2vPonq5n1/8leMVa7qn/m+oaz+46JQAAAAAAAAAAAEThoL0ACd58uvzZ+9yv749D12i4g+sJu5aRpHB/IBKBb+FZCJcLtxD6Et5kcLVYy8GXeBHB/CI9hb6EZRnMLmyE4EssivBEewFzjBh+SjaPy5SRFgvEhZVuYGIRkYKfcr4/psOdbgbqW0DU8DPax68qgPbBa3K+P17/1azDU40XjRz8Erkm0rOBeAdA+OtI10dUAIT/j9z+l76WrJOYAAi/Dal6iew3CP/2LF/j9HC5PuaeCdgFiBx+S+hLnB4urBKwChA5/JK9HSDDJQGbAAh/mTkZ5kIv4ZCAZQhE+Dxw1JVcAIS/TXm215z9Ger6qt8LALqQCoCzXwbKOpMNFdLhn9+9vD4+ff4h+dJk6zjfH5vafwnFUEgigGT404KXSIpAsY5eAVLqlwAzgCK94VPQLYCVs7/m/0dbR0r99UcHCE6XAJj6bdCTw24BNMLfGq6khkAr65iyNw9sAcHZdQnBdfb//vWz+nu/fXh7ffz64xeO5bCu49nzFxzLab4sVPmhUAo0Q59iZR17wRYQnGYBMPnbpjUfdIDgNAmAs98HLTmhAwQHAgSnWgC0f1/U5oUOEBwIEBwIEJwqAbD/+6QmN3SA4ECA4ECA4Ji6HTy9tz46mr/LMGWzA2AA9M1WftgCggMBggMBggMBgmPqKqCWtQl669eytJ5rFXSA4ECA4ECA4ECA4ECA4ECA4Li8DOy55NJ6rlXQAYIDAYKzKYCVz7cD+9jKDx0gOBAgOC6vAnAziA50gOBUCYBB0Cc1uaEDBAcCBAcCBKdaAMwBvqjNy+VlIG4G0YEtIDhNAmAb8EFLTugAwWkWAF3ANq35oAMEBwIoQvHx8r3sEgDbQD85fEoJ9uTi8n0A13y/zShLoPE5gl1nMvVfDxnxjZYrM8EvsUeEvV25awbAVlBJQ/gptW8LPTlgCOSmMfyM1IBo6sOjh9sCyvBfPZZp6cfLWueB3i6MIZCLlfDXkB4EyfZw/Dm5/5m2cK5QKWYwshkAA+EjEvs3Vb1Jh0BIcAvH2U9ZZ1wFBIdcAHQBXqjry9IBIAEPHHVl2wIgAS1c9WSdASABzRUBZx3Zh8CIElBO/tz1E7kKiCjBlL1dQKJuosFEe7ewDL6mM+TnHO5kshE/M6NLkNK8CHPfJyGBSmuGBNsM2wGmRBKhRQKp8FNSFiClWBKktC6CZPDX15R+wTmiSTBF+wrJhACZSCJoB58xsYiSkUWwEnzG5O1ga0WiwuJxmVtQyQjdwGLwGbMLm8OTDJZDn+JikSWWRfASfMbVYuewIIO30Ke4XfgSEkJ4DrxkmANZo0eKkcIGAAAAAAAAABCev3oVmY1Wa9/6AAAAAElFTkSuQmCC",
+    "description": "Automatically parse date fields with mixed or unknown formats into ISO datetime",
+    "category": "Preparation",
+    "subcategory": null,
+    "tags": [
+        "date",
+        "parsing"
+    ],
+    "introductoryText": "## Smart Date Parser Block \n### Automatically parse date fields with mixed or unknown formats into ISO datetime strings (`YYYY-MM-DDTHH:MM:SS`). Handles schema drift when date formats vary across data sources.\n\n### Required Configuration\n**fields_to_parse** (required)  \nYour date field names, comma-separated.  \nExample: `OrderDate,ShipDate,DeliveryDate`\n\n### Optional Configuration\n\n**output_suffix** (default: `_parsed`)  \nSuffix added to create output field names. Example: `OrderDate` → `OrderDate_parsed`\n\n**prefer_day_first** (default: `false`)  \nControls ambiguous date interpretation (12/09/2025):\n- `false` = MM/DD/YYYY (US format) → Dec 9, 2025\n- `true` = DD/MM/YYYY (EU format) → Sep 12, 2025\n\n**add_failure_flag** (default: `true`)  \nCreates boolean flag fields showing which rows failed to parse.  \nExample: `OrderDate_parsed_failed`\n\n**keep_original_fields** (default: `true`)  \nRetains original columns alongside parsed versions.\n\n**custom_formats** (optional)  \nComma-separated (python) format codes for specific formats.  \nExample: `%d.%m.%Y,%Y-%m-%d`  \nTried before 18+ built-in formats (ISO, slash/dash dates, YYYYMMDD, named months).\n\n\n### After This Block\nUse Omniscope's **Field Organiser** to convert ISO strings to proper Date/Datetime types and apply display formatting. Check `_failed` flag fields to identify rows needing attention.\n\n### Built-in Format Support\n\nAutomatically handles: ISO timestamps, slash formats (2025/11/18, 12/09/2025), dash formats (2025-11-14, 07-01-2026), compact (20251114), named months (23 Jan 2025, January 23, 2025).\n\n---",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fields_to_parse",
+            "title": "Fields to parse",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": true,
+            "fieldTypes": []
+        },
+        {
+            "name": "output_suffix",
+            "title": "Output suffix",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "prefer_day_first",
+            "title": "Prefer day first",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "add_failure_flag",
+            "title": "Add failure flag",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "keep_original_fields",
+            "title": "Keep original fields",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "custom_formats",
+            "title": "Custom formats",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": true,
+    "apiMode": "STREAM_TRANSFORM"
+}
