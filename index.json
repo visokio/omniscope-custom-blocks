@@ -1270,6 +1270,20 @@
             "icon": null
         },
         {
+            "path": "Preparation/Smart-Date-Parser",
+            "displayName": "Smart Date Parser",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "date",
+                "parsing"
+            ],
+            "category": "Preparation",
+            "description": "Automatically parse date fields with mixed or unknown formats into ISO datetime",
+            "subcategory": null,
+            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAEMklEQVR4nO2dO44TQRCG24iMCxAjLLHEON6Mq8AtELeAq5BtbGKEZETMBYghQO0d2vPonq5n1/8leMVa7qn/m+oaz+46JQAAAAAAAAAAAEThoL0ACd58uvzZ+9yv749D12i4g+sJu5aRpHB/IBKBb+FZCJcLtxD6Et5kcLVYy8GXeBHB/CI9hb6EZRnMLmyE4EssivBEewFzjBh+SjaPy5SRFgvEhZVuYGIRkYKfcr4/psOdbgbqW0DU8DPax68qgPbBa3K+P17/1azDU40XjRz8Erkm0rOBeAdA+OtI10dUAIT/j9z+l76WrJOYAAi/Dal6iew3CP/2LF/j9HC5PuaeCdgFiBx+S+hLnB4urBKwChA5/JK9HSDDJQGbAAh/mTkZ5kIv4ZCAZQhE+Dxw1JVcAIS/TXm215z9Ger6qt8LALqQCoCzXwbKOpMNFdLhn9+9vD4+ff4h+dJk6zjfH5vafwnFUEgigGT404KXSIpAsY5eAVLqlwAzgCK94VPQLYCVs7/m/0dbR0r99UcHCE6XAJj6bdCTw24BNMLfGq6khkAr65iyNw9sAcHZdQnBdfb//vWz+nu/fXh7ffz64xeO5bCu49nzFxzLab4sVPmhUAo0Q59iZR17wRYQnGYBMPnbpjUfdIDgNAmAs98HLTmhAwQHAgSnWgC0f1/U5oUOEBwIEBwIEJwqAbD/+6QmN3SA4ECA4ECA4Ji6HTy9tz46mr/LMGWzA2AA9M1WftgCggMBggMBggMBgmPqKqCWtQl669eytJ5rFXSA4ECA4ECA4ECA4ECA4ECA4Li8DOy55NJ6rlXQAYIDAYKzKYCVz7cD+9jKDx0gOBAgOC6vAnAziA50gOBUCYBB0Cc1uaEDBAcCBAcCBKdaAMwBvqjNy+VlIG4G0YEtIDhNAmAb8EFLTugAwWkWAF3ANq35oAMEBwIoQvHx8r3sEgDbQD85fEoJ9uTi8n0A13y/zShLoPE5gl1nMvVfDxnxjZYrM8EvsUeEvV25awbAVlBJQ/gptW8LPTlgCOSmMfyM1IBo6sOjh9sCyvBfPZZp6cfLWueB3i6MIZCLlfDXkB4EyfZw/Dm5/5m2cK5QKWYwshkAA+EjEvs3Vb1Jh0BIcAvH2U9ZZ1wFBIdcAHQBXqjry9IBIAEPHHVl2wIgAS1c9WSdASABzRUBZx3Zh8CIElBO/tz1E7kKiCjBlL1dQKJuosFEe7ewDL6mM+TnHO5kshE/M6NLkNK8CHPfJyGBSmuGBNsM2wGmRBKhRQKp8FNSFiClWBKktC6CZPDX15R+wTmiSTBF+wrJhACZSCJoB58xsYiSkUWwEnzG5O1ga0WiwuJxmVtQyQjdwGLwGbMLm8OTDJZDn+JikSWWRfASfMbVYuewIIO30Ke4XfgSEkJ4DrxkmANZo0eKkcIGAAAAAAAAABCev3oVmY1Wa9/6AAAAAElFTkSuQmCC"
+        },
+        {
             "path": "Preparation/URL-Encode",
             "displayName": "URL Encode",
             "language": "PYTHON",
