@@ -138,7 +138,8 @@ Public repository for custom blocks for Omniscope Evo.
    24. [Data Quality Analyser](#PreparationData-Quality-Analyser)
    25. [Canonical Schema Mapper](#PreparationCanonical-Schema-Mapper)
    26. [Add row ID field](#PreparationAdd-row-ID-field)
-   27. [URL Encode](#PreparationURL-Encode)
+   27. [Smart Date Parser](#PreparationSmart-Date-Parser)
+   28. [URL Encode](#PreparationURL-Encode)
 ## Block Overview
 <div id="ConnectorsOpenAI-GPT"/>
 
@@ -895,6 +896,14 @@ Enforces a stable, business-defined schema by mapping aliases to canonical field
 Adds a Row ID field with a sequential number.
 
 [Link to Github page](Preparation/Add-row-ID-field)
+
+<div id="PreparationSmart-Date-Parser"/>
+
+### Smart Date Parser
+
+Automatically parse date fields with mixed or unknown formats into ISO datetime
+
+[Link to Github page](Preparation/Smart-Date-Parser)
 
 <div id="PreparationURL-Encode"/>
 
