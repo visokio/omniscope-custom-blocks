@@ -70,6 +70,7 @@ Public repository for custom blocks for Omniscope Evo.
       1. [Report to PowerPoint](#OutputsReport-to-PowerPoint)
    7. Slack
       1. [Slack Bot](#OutputsSlack-Bot)
+   8. [Send Report to Slack](#OutputsReport-to-Slack)
 4. Analytics
    1. Clustering
       1. [Gaussian Mixture Model](#AnalyticsClusteringGMM)
@@ -460,6 +461,16 @@ Export a Report to a PowerPoint pptx file
 Posts messages on a channel.
 
 [Link to Github page](Outputs/Slack-Bot)
+
+<div id="OutputsReport-to-Slack"/>
+
+### Send Report to Slack
+
+<img align="right" src="https://github.com/visokio/omniscope-custom-blocks/blob/master/Outputs/Report-to-Slack/thumbnail.png" width="125" height="125"/>
+
+Send a Report link with screenshots and optional PDF to a Slack channel with a message
+
+[Link to Github page](Outputs/Report-to-Slack)
 
 <div id="AnalyticsClusteringGMM"/>
 
