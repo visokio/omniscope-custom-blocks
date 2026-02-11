@@ -1,0 +1,309 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Send Report to Slack",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Send a Report link with screenshots and optional PDF to a Slack channel with a message",
+    "category": "Outputs",
+    "subcategory": null,
+    "tags": [
+        "screenshot",
+        "image",
+        "pdf",
+        "output",
+        "print",
+        "slack",
+        "report"
+    ],
+    "introductoryText": "#### Takes a Report URL, captures a screenshot of the page, and posts it to a Slack channel with a message and link preview.\n#### Optionally combines all screenshots into a single PDF and uploads it.\n\n### How it works\nFor each input row the block:\n1. Loads the Report URL\n2. Waits for the page to render\n3. Captures a screenshot\n4. Posts the screenshot to Slack with the message\n5. (Optional) creates and uploads a combined PDF\n\n### Requirements\n* Best used inside Docker\n* If not using Docker, Chrome must be installed on the host machine\n* The report must be reachable from the Omniscope server\n\n### Slack Setup\nCreate a Slack app: https://api.slack.com/apps\nThe bot must:\n\n* Be invited to the target channel\n* Have permissions `chat:write` and `files:write`\n\nProvide the **Bot User OAuth Access Token** and **Channel ID** in the block options.\n\n### Notes\n* One Slack message is sent per input row\n* The report link is added to the message only if it is not already included\n* Basic Authentication can be used if the report is protected\n* `sleep_seconds` may need increasing for slow dashboards",
+    "dependencies": "visokio-omniprint requests",
+    "options": [
+        {
+            "name": "url_field",
+            "title": "Report URL",
+            "description": "The field containing the web pages URL to screenshot",
+            "groupTitle": "Report URL and Authentication",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "auth_username",
+            "title": "Username",
+            "description": null,
+            "groupTitle": "Report URL and Authentication",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "auth_password",
+            "title": "Password",
+            "description": null,
+            "groupTitle": "Report URL and Authentication",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": false
+        },
+        {
+            "name": "resolution",
+            "title": "Screen resolution",
+            "description": null,
+            "groupTitle": "Screenshot",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "3840x2160 (4K)",
+                    "description": null,
+                    "groupTitle": "16:9",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "3840x2160",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "2560x1440 (QHD)",
+                    "description": null,
+                    "groupTitle": "16:9",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "2560x1440",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1600x1200",
+                    "description": null,
+                    "groupTitle": "4:3",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1600x1200",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1920x1080 (FHD)",
+                    "description": null,
+                    "groupTitle": "16:9",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1920x1080",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1280x960",
+                    "description": null,
+                    "groupTitle": "4:3",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1280x960",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1024x768",
+                    "description": null,
+                    "groupTitle": "4:3",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1024x768",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "1280x720 (HD)",
+                    "description": null,
+                    "groupTitle": "16:9",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1280x720",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "A4 (210mm x 297mm)",
+                    "description": null,
+                    "groupTitle": "PDF",
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1123x794",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "1280x720"
+        },
+        {
+            "name": "orientation",
+            "title": "Orientation",
+            "description": null,
+            "groupTitle": "Screenshot",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Portrait",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "P",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Landscape",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "L",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "L"
+        },
+        {
+            "name": "sleep_seconds",
+            "title": "Page load delay",
+            "description": "Wait the specified seconds before grabbing the screenshot to allow the page to load fully.",
+            "groupTitle": "Screenshot",
+            "width": "SHRINK",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 100,
+            "mandatory": true,
+            "defaultValue": 3,
+            "showAsSlider": false
+        },
+        {
+            "name": "create_pdf",
+            "title": "Create PDF",
+            "description": "If ticked a PDF file will be generated made with all the screenshots grabbed",
+            "groupTitle": "PDF",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "compression",
+            "title": "Compression",
+            "description": "Whether to compress the PDF (it will impact the images quality)",
+            "groupTitle": "PDF",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "tinify",
+            "title": "Tinify",
+            "description": "Click this to shrink the width of the image. You need a tinify api key for this option which can be obtained here: https://tinify.com/dashboard/api",
+            "groupTitle": "Tinify",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        },
+        {
+            "name": "tinify_key",
+            "title": "Tinify Api Key",
+            "description": null,
+            "groupTitle": "Tinify",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "tinify_width",
+            "title": "Image width",
+            "description": null,
+            "groupTitle": "Tinify",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null,
+            "showAsSlider": false
+        },
+        {
+            "name": "channelID",
+            "title": "Channel ID",
+            "description": null,
+            "groupTitle": "Slack",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": ""
+        },
+        {
+            "name": "authToken",
+            "title": "Bot User OAuth Access Token",
+            "description": null,
+            "groupTitle": "Slack",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": true
+        },
+        {
+            "name": "message",
+            "title": "Message",
+            "description": null,
+            "groupTitle": "Slack",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output 1",
+            "tooltip": null
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data 2",
+            "label": "2",
+            "displayName": "Output 2",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": "europe-west2-docker.pkg.dev/visokiowebsite/visokio-custom-block/visokio-omniprint-chrome:latest",
+        "useCustomBaseImage": true,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": true
+    },
+    "designLock": true,
+    "apiMode": "BATCH"
+}
