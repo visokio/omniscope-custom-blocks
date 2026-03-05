@@ -33,7 +33,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": "1032"
+            "defaultValue": ""
         },
         {
             "name": "password",
@@ -52,7 +52,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": "228226448"
+            "defaultValue": ""
         },
         {
             "name": "clientid",
