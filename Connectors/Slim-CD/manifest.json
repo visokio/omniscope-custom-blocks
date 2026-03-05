@@ -209,7 +209,7 @@
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
-            "defaultValue": "sale"
+            "defaultValue": null
         },
         {
             "name": "cardnumber",
