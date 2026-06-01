@@ -72,7 +72,7 @@
         "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
         "customBaseImage": null,
         "useCustomBaseImage": false,
-        "customSystemLibraries": null,
+        "customSystemLibraries": "libpoppler-cpp-dev",
         "installVisokioRepLibraries": false
     },
     "designLock": false,
