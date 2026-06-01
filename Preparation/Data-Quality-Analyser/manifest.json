@@ -1,6 +1,6 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-    "name": "Data Quality Analyser",
+    "name": "Data Quality Analyser 2",
     "scriptFilename": "script.py",
     "language": "PYTHON",
     "executableVersion": null,
@@ -22,9 +22,37 @@
         "check",
         "inspect"
     ],
-    "introductoryText": "### Checks datasets for common quality issues and outputs detailed issue logs and cleaned, annotated data.",
+    "introductoryText": "#### Checks datasets for common quality issues and outputs detailed issue logs and cleaned, annotated data.",
     "dependencies": "",
-    "options": [],
+    "options": [
+        {
+            "name": "annotateData",
+            "title": "Annotate data",
+            "description": "Original data + issues summary in a field",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "findIssues",
+            "title": "Output Issues",
+            "description": "Output all rows with issues",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "enrichData",
+            "title": "Enrich data",
+            "description": "Enrich null data with median and mode",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": null
+        }
+    ],
     "blockOutputs": [
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
