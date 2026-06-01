@@ -20,7 +20,7 @@
         "download"
     ],
     "introductoryText": "### Download all files ending with the specified extension contained in a folder on a SFTP server\n#### Connect this block to an 'Append files' block configured to 'use file names from the upstream block' to download files and load their content in Omniscope.\n##### See live example [here](https://omniscope.me/internal/Forums/Custom+block/SFTP.iox/)",
-    "dependencies": "pysftp",
+    "dependencies": "pysftp paramiko<3",
     "options": [
         {
             "name": "username",
