@@ -76,5 +76,9 @@ for root, dirs, files in os.walk("."):
             process_directory(root, blocks)
 
 
+# sort for deterministic output (os.walk order varies by machine)
+blocks.sort(key=lambda b: b["path"])
+
+
 with open(index_file_name, 'w') as index_file:
     json.dump({"blocks": blocks}, index_file, indent=4)

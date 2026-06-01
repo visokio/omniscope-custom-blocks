@@ -199,6 +199,9 @@ for root, dirs, files in os.walk("."):
             process_directory(root, path_parts, blocks)
 
 
+# sort for deterministic output (os.walk order varies by machine)
+blocks.sort(key=lambda b: b["path"])
+
 
 with open(readme_file_name, 'w') as readme_file:
     create_header(readme_file)
