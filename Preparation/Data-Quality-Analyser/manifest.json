@@ -1,6 +1,6 @@
 {
     "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-    "name": "Data Quality Analyser 2",
+    "name": "Data Quality Analyser",
     "scriptFilename": "script.py",
     "language": "PYTHON",
     "executableVersion": null,
