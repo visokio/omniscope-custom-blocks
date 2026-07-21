@@ -661,9 +661,13 @@
             "displayName": "Web Form Session Login",
             "language": "PYTHON",
             "optionsVersion": 1,
-            "tags": [],
-            "category": "Custom scripts",
-            "description": "",
+            "tags": [
+                "form",
+                "session",
+                "login"
+            ],
+            "category": "Inputs",
+            "description": "Logs in to a website using form-based authentication",
             "subcategory": null,
             "icon": null
         },
