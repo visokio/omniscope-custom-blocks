@@ -80,7 +80,9 @@ Public repository for custom blocks for Omniscope Evo.
    3. [PDF Reader](#InputsPDF-Reader)
    4. [SFTP Downloader](#InputsSFTP-Downloader)
    5. [Sharepoint Online Downloader](#InputsSharepoint-Online)
-5. Outputs
+5. None
+   1. [Web Form Session Login](#InputsWeb-Form-Session-Login)
+6. Outputs
    1. API
       1. [Multipart Form Upload](#OutputsMulti-Form-Upload)
    2. BigQuery
@@ -99,7 +101,7 @@ Public repository for custom blocks for Omniscope Evo.
    7. Slack
       1. [Slack Bot](#OutputsSlack-Bot)
    8. [Send Report to Slack](#OutputsReport-to-Slack)
-6. Preparation
+7. Preparation
    1. ForEach
       1. [ForEach multi stage](#PreparationForEachForEachMultiStage)
       2. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
@@ -127,7 +129,7 @@ Public repository for custom blocks for Omniscope Evo.
    11. [Anonymise](#PreparationAnonymise)
    12. [Canonical Schema Mapper](#PreparationCanonical-Schema-Mapper)
    13. [Conditional Execution](#PreparationConditionalExecution)
-   14. [Data Quality Analyser 2](#PreparationData-Quality-Analyser)
+   14. [Data Quality Analyser](#PreparationData-Quality-Analyser)
    15. [Expand Date Fields](#PreparationExpand-Date-Fields)
    16. [Field Renamer](#PreparationField-Renamer)
    17. [Centroids from GeoJSON](#PreparationGeoCentroids)
@@ -547,6 +549,14 @@ Download a file from a Sharepoint Online site.
 
 [Link to Github page](Inputs/Sharepoint-Online)
 
+<div id="InputsWeb-Form-Session-Login"/>
+
+### Web Form Session Login
+
+None
+
+[Link to Github page](Inputs/Web-Form-Session-Login)
+
 <div id="OutputsMulti-Form-Upload"/>
 
 ### Multipart Form Upload
@@ -807,7 +817,7 @@ This block conditionally triggers the execution of specified workflow blocks via
 
 <div id="PreparationData-Quality-Analyser"/>
 
-### Data Quality Analyser 2
+### Data Quality Analyser
 
 Checks datasets for common quality issues and outputs detailed issue logs and cleaned, annotated data.
 
