@@ -80,9 +80,8 @@ Public repository for custom blocks for Omniscope Evo.
    3. [PDF Reader](#InputsPDF-Reader)
    4. [SFTP Downloader](#InputsSFTP-Downloader)
    5. [Sharepoint Online Downloader](#InputsSharepoint-Online)
-5. None
-   1. [Web Form Session Login](#InputsWeb-Form-Session-Login)
-6. Outputs
+   6. [Web Form Session Login](#InputsWeb-Form-Session-Login)
+5. Outputs
    1. API
       1. [Multipart Form Upload](#OutputsMulti-Form-Upload)
    2. BigQuery
@@ -101,7 +100,7 @@ Public repository for custom blocks for Omniscope Evo.
    7. Slack
       1. [Slack Bot](#OutputsSlack-Bot)
    8. [Send Report to Slack](#OutputsReport-to-Slack)
-7. Preparation
+6. Preparation
    1. ForEach
       1. [ForEach multi stage](#PreparationForEachForEachMultiStage)
       2. [Project Parameters Batch Setting](#PreparationForEachProjectParameters)
@@ -553,7 +552,7 @@ Download a file from a Sharepoint Online site.
 
 ### Web Form Session Login
 
-None
+Logs in to a website using form-based authentication
 
 [Link to Github page](Inputs/Web-Form-Session-Login)
 
