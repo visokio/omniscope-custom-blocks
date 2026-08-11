@@ -48,28 +48,30 @@ Public repository for custom blocks for Omniscope Evo.
 3. Connectors
    1. Azure
       1. [Azure Data Lake Storage Gen2 Blob](#ConnectorsAzure-Data-Lake-Blob)
-   2. Flightstats
+   2. CRM
+      1. [Salesforce REST OAuth](#ConnectorsSalesforce-REST-OAuth)
+   3. Flightstats
       1. [Flightstats Airlines](#ConnectorsFlightstatsAirlines)
       2. [Flightstats Airports](#ConnectorsFlightstatsAirports)
       3. [Flightstats Flights](#ConnectorsFlightstatsFlights)
-   3. Overpass
+   4. Overpass
       1. [Overpass Street Coordinates](#ConnectorsOverpassStreet-Coordinates)
-   4. Slack
+   5. Slack
       1. [Slack API WebClient](#ConnectorsSlack-API-WebClient)
-   5. Weather
+   6. Weather
       1. [OpenWeatherMap](#ConnectorsWeatherOpenWeatherMap)
-   6. [AirTable](#ConnectorsAirtable)
-   7. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogle-BigQuery-Custom-SQL)
-   8. [Google BigQuery Import Table](#ConnectorsBigQueryGoogle-BigQuery-Import-Table)
-   9. [Dune](#ConnectorsDune)
-   10. [Etherscan](#ConnectorsEtherscan)
-   11. [Flipside](#ConnectorsFlipside)
-   12. [HubSpot](#ConnectorsHubSpot)
-   13. [Jira](#ConnectorsJira)
-   14. [Slim CD Transaction](#ConnectorsSlim-CD)
-   15. [Trello](#ConnectorsTrello)
-   16. [XPT Reader](#ConnectorsXPT-Reader)
-   17. [Yahoo Finance](#ConnectorsYahooFinance)
+   7. [AirTable](#ConnectorsAirtable)
+   8. [Google BigQuery Custom SQL](#ConnectorsBigQueryGoogle-BigQuery-Custom-SQL)
+   9. [Google BigQuery Import Table](#ConnectorsBigQueryGoogle-BigQuery-Import-Table)
+   10. [Dune](#ConnectorsDune)
+   11. [Etherscan](#ConnectorsEtherscan)
+   12. [Flipside](#ConnectorsFlipside)
+   13. [HubSpot](#ConnectorsHubSpot)
+   14. [Jira](#ConnectorsJira)
+   15. [Slim CD Transaction](#ConnectorsSlim-CD)
+   16. [Trello](#ConnectorsTrello)
+   17. [XPT Reader](#ConnectorsXPT-Reader)
+   18. [Yahoo Finance](#ConnectorsYahooFinance)
 4. Inputs
    1. Databases
       1. [MongoDB](#InputsDatabasesMongoDB)
@@ -313,6 +315,14 @@ Execute a system command.
 Storage Gen2 Blob connector to load a CSV or Parquet blob/file in Omniscope.
 
 [Link to Github page](Connectors/Azure-Data-Lake-Blob)
+
+<div id="ConnectorsSalesforce-REST-OAuth"/>
+
+### Salesforce REST OAuth
+
+Loads Salesforce data through OAuth 2.0 Client Credentials and the REST SOQL Query API
+
+[Link to Github page](Connectors/Salesforce-REST-OAuth)
 
 <div id="ConnectorsFlightstatsAirlines"/>
 
