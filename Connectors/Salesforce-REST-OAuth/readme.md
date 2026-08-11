@@ -9,7 +9,7 @@ Loads Salesforce data. Authentication uses the OAuth 2.0 **Client Credentials** 
 4. Use your Salesforce **My Domain URL**, e.g. `https://your-company.my.salesforce.com`.
 
 #### Operations
-- **Query data**: use the visual query-builder options or paste custom SOQL. Results are retrieved through the synchronous REST Query API and automatically follow `nextRecordsUrl` pages.
+- **Load or Query data**: use a simple way to load objects with all fields, or a the visual query-builder options or paste custom SOQL. Results are retrieved through the synchronous REST Query API and automatically follow `nextRecordsUrl` pages.
 - **List available objects**: useful for discovering object API names.
 - **Describe fields**: returns field metadata for one object.
 

@@ -344,6 +344,79 @@ def query_records(
     return records
 
 
+def get_object_description(
+    session: requests.Session,
+    instance_url: str,
+    api_version: str,
+    headers: Dict[str, str],
+    timeout: int,
+    object_name: str,
+) -> Dict[str, Any]:
+    """Return Salesforce Describe metadata for one sObject."""
+    if not _IDENTIFIER_RE.match(object_name):
+        raise SalesforceConnectorError("Object API name is invalid.")
+
+    payload = request_json(
+        session,
+        "GET",
+        "%s/services/data/%s/sobjects/%s/describe" % (instance_url, api_version, object_name),
+        timeout,
+        headers=headers,
+    )
+    if not isinstance(payload, dict):
+        raise SalesforceConnectorError(
+            "Salesforce returned an unexpected Describe response for %s." % object_name
+        )
+    return payload
+
+
+def discover_object_fields(
+    session: requests.Session,
+    instance_url: str,
+    api_version: str,
+    headers: Dict[str, str],
+    timeout: int,
+    object_name: str,
+) -> List[str]:
+    """Discover all readable field API names exposed by sObject Describe.
+
+    Describe is permission-aware, so the returned fields reflect what the OAuth
+    Run As user can see. Deprecated/hidden fields are skipped. The resulting
+    names are used to generate a normal REST SOQL SELECT statement; FIELDS(ALL)
+    is deliberately not used because Salesforce bounds that form of query.
+    """
+    payload = get_object_description(
+        session, instance_url, api_version, headers, timeout, object_name
+    )
+    fields = payload.get("fields") or []
+    names: List[str] = []
+    for field in fields:
+        if not isinstance(field, dict):
+            continue
+        if field.get("deprecatedAndHidden") is True:
+            continue
+        name = field.get("name")
+        if isinstance(name, str) and _FIELD_RE.match(name):
+            names.append(name)
+
+    # Preserve Describe order while removing any accidental duplicates.
+    names = list(dict.fromkeys(names))
+    if not names:
+        raise SalesforceConnectorError(
+            "Salesforce Describe returned no readable fields for %s. Check the Run As user's object and field permissions."
+            % object_name
+        )
+    return names
+
+
+def build_all_fields_soql(object_name: str, field_names: List[str]) -> str:
+    if not _IDENTIFIER_RE.match(object_name):
+        raise SalesforceConnectorError("Object API name is invalid.")
+    if not field_names:
+        raise SalesforceConnectorError("No Salesforce fields were discovered for %s." % object_name)
+    return "SELECT %s FROM %s" % (", ".join(field_names), object_name)
+
+
 def list_objects(
     session: requests.Session,
     instance_url: str,
@@ -389,15 +462,8 @@ def describe_fields(
     timeout: int,
     object_name: str,
 ) -> pd.DataFrame:
-    if not _IDENTIFIER_RE.match(object_name):
-        raise SalesforceConnectorError("Object API name is invalid.")
-
-    payload = request_json(
-        session,
-        "GET",
-        "%s/services/data/%s/sobjects/%s/describe" % (instance_url, api_version, object_name),
-        timeout,
-        headers=headers,
+    payload = get_object_description(
+        session, instance_url, api_version, headers, timeout, object_name
     )
     fields = payload.get("fields", []) if isinstance(payload, dict) else []
     rows = []
@@ -480,19 +546,30 @@ def main() -> None:
         if operation != "query":
             raise SalesforceConnectorError("Unknown operation: %s" % operation)
 
-        query_mode = str(option(api, "queryMode", "builder")).strip()
-        if query_mode == "soql":
-            soql = required_option(api, "soql", "SOQL query")
+        query_mode = str(option(api, "queryMode", "simple")).strip()
+        if query_mode == "simple":
+            simple_object = str(option(api, "simpleObject", "Account")).strip()
+            api.update_message("Salesforce: discovering fields for %s" % simple_object)
+            field_names = discover_object_fields(
+                session, instance_url, api_version, headers, timeout, simple_object
+            )
+            soql = build_all_fields_soql(simple_object, field_names)
+            object_name = simple_object
+            api.update_message(
+                "Salesforce: found %s fields for %s" % (format(len(field_names), ","), simple_object)
+            )
         elif query_mode == "builder":
             fields_text = str(option(api, "fields", "Id, Name"))
             where_clause = option(api, "whereClause")
             order_by = option(api, "orderBy")
             soql = build_soql(object_name, fields_text, where_clause, order_by)
+        elif query_mode == "soql":
+            soql = required_option(api, "soql", "SOQL query")
         else:
             raise SalesforceConnectorError("Unknown query mode: %s" % query_mode)
 
         include_deleted = str(option(api, "includeDeleted", "false")).lower() == "true"
-        api.update_message("Salesforce: executing SOQL via REST API")
+        api.update_message("Salesforce: loading %s via REST API" % object_name)
         records = query_records(
             session,
             instance_url,
