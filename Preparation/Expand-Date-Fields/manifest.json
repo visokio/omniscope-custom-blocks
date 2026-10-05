@@ -36,6 +36,50 @@
             "fieldTypes": [
                 "DATE"
             ]
+        },
+        {
+            "name": "timezoneHandling",
+            "title": "Timezone handling",
+            "description": "sdf",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Preserve local date/time",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PRESERVE_LOCAL",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Convert to UTC",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CONVERT_TO_UTC",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Reject mixed timezones",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "REJECT_MIXED",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "PRESERVE_LOCAL"
         }
     ],
     "blockOutputs": [
