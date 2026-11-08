@@ -1565,6 +1565,26 @@
             "icon": null
         },
         {
+            "path": "Inputs/Date-Dimension",
+            "displayName": "Date Dimension",
+            "language": "PYTHON",
+            "optionsVersion": 1,
+            "tags": [
+                "date dimension",
+                "calendar table",
+                "fiscal year",
+                "ISO week",
+                "bank holidays",
+                "working days",
+                "time intelligence",
+                "visokio-agents"
+            ],
+            "category": "Inputs",
+            "description": "Generates a calendar table: calendar and ISO weeks, fiscal periods for any year start, UK or US public holidays, working-day counts and flags.",
+            "subcategory": "Date",
+            "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAD0ElEQVR42u2dS2hcVRyHv3+piFjfYJFaxSjFRVBEaXGnILhQXAgVsYqC0EpxIVJcuxAUoQvR4mPTjRFNq+DChSsRfFDxBYKgaC1UG3xEmygUo/XvYmYRTG7MDPecO5N83/JOht+557uPc8793wmIiIiIiIiIVCIzt2bm4cycz8yTmXkwMzfb3vGRN5tL+SYzz7W9oy/wcDbznO0dfYHzK3TIrO1dHdFhh+SKDYuIERM4ku3d4FBqvFGgAqVLhr5uZ+aZwB7gHmASONvuHIg54FPgQES8XlVgZm4B3gKu1UMrvAbcHxF/FhfYP/OOKK91piLi3hr3wD3KK8KuzLythsBd9nUxHq5xCf0d2GRfF+FkRFxQWmDazwWnBQOu6DgPdCIvChQFKlDWjcB5u60Y8zUEfmg/F+PLGgKftZ+LMTXwvHGYlMx8GZfU2uZzYEdELNQYxDxI7xGItCfv9kHlDX0GLjoT7wT2AtcD5+thIP4AvgBeAV4aRp6IiIiISDcM80R+A/BIf/owQXvvVywA7wK7I+LYCvmTwK3AZtpbjE9gBnjjf7K3AHcAlwFntOjhV+DtiPikhsBHgf0FD6rvgcmImFsm+yp6VXGlXiT5G3gmImaWyT4P2AecVXDfpyLis0G+MMwRvLfwVeFS4IGGz26k7BtVG4GbGj67rrA8gFsG/cIwAicqXNqvbth+YYXsixu2X9RhdqsCa7wHFx1mj9WYxCfyY44CFSgKFAUqUBQoChQFri82jktDM/MSYCtDLDcNk7V4Qbu/kD1B7wlI6ewrI+LbkgE1eGFR3qbMnM76TGfmOZn5ZGYuVM4+kpmXr5Uz8GlgZwe5O+n9mMO2DrK3A9PAjrVwD7y7w+xtHWZvz8wrHMQ4Cu2cVzvM/rrD7I8i4ru1IPAx4FAHuYeAG4CngL9qywPuWs0fjurPjLwYEQ8tM43YV2Ea8SOwf5lpxG7gmgr7/vgg04ixmQdGxExmHqdXQVaS4/8taoqIucw8WmMeOOgc0EGMgxhRoChQgaJAUaAoUIGiQFGgrAprYhqyrImxJsaamD7WxIz5PdCaGAcxjkK7xJqYMRdoTcwKWBOzFGtiSmBNjIMYBzGiQFGgKFCBokBRoChQgaJAUaACZR0JrPE4KTvM7pKsIfCrCjvS9Ejl5wrZsw3bf+owu1WBTxTeid/o/VPE5XgHOF34DPig4bOPgbnC+/5+cYERMQXcBxxrufGn+oJujogTDdkzwPPAiZYvp/8APwAHI+JoQ/Yp4AC9OpnTLR80vwBvAu95VxcRERERERERERFZyr8akp6hdqUyLQAAAABJRU5ErkJggg=="
+        },
+        {
             "path": "Inputs/PDF-Reader",
             "displayName": "PDF Reader",
             "language": "R",

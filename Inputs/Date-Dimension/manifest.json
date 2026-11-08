@@ -1,0 +1,293 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Date Dimension",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAD0ElEQVR42u2dS2hcVRyHv3+piFjfYJFaxSjFRVBEaXGnILhQXAgVsYqC0EpxIVJcuxAUoQvR4mPTjRFNq+DChSsRfFDxBYKgaC1UG3xEmygUo/XvYmYRTG7MDPecO5N83/JOht+557uPc8793wmIiIiIiIiIVCIzt2bm4cycz8yTmXkwMzfb3vGRN5tL+SYzz7W9oy/wcDbznO0dfYHzK3TIrO1dHdFhh+SKDYuIERM4ku3d4FBqvFGgAqVLhr5uZ+aZwB7gHmASONvuHIg54FPgQES8XlVgZm4B3gKu1UMrvAbcHxF/FhfYP/OOKK91piLi3hr3wD3KK8KuzLythsBd9nUxHq5xCf0d2GRfF+FkRFxQWmDazwWnBQOu6DgPdCIvChQFKlDWjcB5u60Y8zUEfmg/F+PLGgKftZ+LMTXwvHGYlMx8GZfU2uZzYEdELNQYxDxI7xGItCfv9kHlDX0GLjoT7wT2AtcD5+thIP4AvgBeAV4aRp6IiIiISDcM80R+A/BIf/owQXvvVywA7wK7I+LYCvmTwK3AZtpbjE9gBnjjf7K3AHcAlwFntOjhV+DtiPikhsBHgf0FD6rvgcmImFsm+yp6VXGlXiT5G3gmImaWyT4P2AecVXDfpyLis0G+MMwRvLfwVeFS4IGGz26k7BtVG4GbGj67rrA8gFsG/cIwAicqXNqvbth+YYXsixu2X9RhdqsCa7wHFx1mj9WYxCfyY44CFSgKFAUqUBQoChQFri82jktDM/MSYCtDLDcNk7V4Qbu/kD1B7wlI6ewrI+LbkgE1eGFR3qbMnM76TGfmOZn5ZGYuVM4+kpmXr5Uz8GlgZwe5O+n9mMO2DrK3A9PAjrVwD7y7w+xtHWZvz8wrHMQ4Cu2cVzvM/rrD7I8i4ru1IPAx4FAHuYeAG4CngL9qywPuWs0fjurPjLwYEQ8tM43YV2Ea8SOwf5lpxG7gmgr7/vgg04ixmQdGxExmHqdXQVaS4/8taoqIucw8WmMeOOgc0EGMgxhRoChQgaJAUaAoUIGiQFGgrAprYhqyrImxJsaamD7WxIz5PdCaGAcxjkK7xJqYMRdoTcwKWBOzFGtiSmBNjIMYBzGiQFGgKFCBokBRoChQgaJAUaACZR0JrPE4KTvM7pKsIfCrCjvS9Ejl5wrZsw3bf+owu1WBTxTeid/o/VPE5XgHOF34DPig4bOPgbnC+/5+cYERMQXcBxxrufGn+oJujogTDdkzwPPAiZYvp/8APwAHI+JoQ/Yp4AC9OpnTLR80vwBvAu95VxcRERERERERERFZyr8akp6hdqUyLQAAAABJRU5ErkJggg==",
+    "description": "Generates a calendar table: calendar and ISO weeks, fiscal periods for any year start, UK or US public holidays, working-day counts and flags.",
+    "category": "Inputs",
+    "subcategory": "Date",
+    "tags": [
+        "date dimension",
+        "calendar table",
+        "fiscal year",
+        "ISO week",
+        "bank holidays",
+        "working days",
+        "time intelligence",
+        "visokio-agents"
+    ],
+    "introductoryText": "Generates a **calendar table** (date dimension) with one row per day, to join to any fact table and to drive report filters.\n\n- Calendar year, quarter, month (number, name, short name), day of month, day of year, day of week, **ISO week** and ISO year, week start\n- **Fiscal year, quarter and period** for a fiscal year starting in any month, named *FY2026*, *FY2025* or *FY 2025/26*\n- **Public holidays** for England and Wales, Scotland, Northern Ireland or US federal (with substitute days and announced one-off changes), plus your own dates\n- **Working days**: flag, n-th working day of the month, working days in the month and left in the month, last working day, next and previous working day\n- Month, quarter and year start / end flags, leap years\n- Optional days, months and years relative to a reference date (or *TODAY*) for rolling filters\n\nThe range comes from the start and end dates, or from the dates in a field of the optional input (rounded out to whole years by default). A second output lists the holidays in the range.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "start_date",
+            "title": "Start date",
+            "description": "For example 2024-01-01. Optional when a date field is chosen.",
+            "groupTitle": "Range",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "end_date",
+            "title": "End date",
+            "description": "For example 2026-12-31.",
+            "groupTitle": "Range",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "date_field",
+            "title": "Or take the range from this field (optional)",
+            "description": "With data connected, the calendar covers this field's earliest to latest date.",
+            "groupTitle": "Range",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "whole_years",
+            "title": "Round the range out to whole years",
+            "description": "Extends a range taken from a field to 1 January and 31 December.",
+            "groupTitle": "Range",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "fiscal_year_start",
+            "title": "Fiscal year starts in month",
+            "description": "1 = January, 4 = April.",
+            "groupTitle": "Calendar rules",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 12,
+            "mandatory": true,
+            "defaultValue": 1,
+            "showAsSlider": false
+        },
+        {
+            "name": "fiscal_label",
+            "title": "Fiscal year named by",
+            "description": "How the fiscal year is named in the output.",
+            "groupTitle": "Calendar rules",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Year it ends (FY2026)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "END_YEAR",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Year it starts (FY2025)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "START_YEAR",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Both years (FY 2025/26)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SPAN",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "END_YEAR"
+        },
+        {
+            "name": "region",
+            "title": "Public holidays",
+            "description": "Which public holidays are marked and left out of working days.",
+            "groupTitle": "Calendar rules",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "England and Wales",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ENGLAND_WALES",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Scotland",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SCOTLAND",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Northern Ireland",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NI",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "US federal",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "US",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "None",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "ENGLAND_WALES"
+        },
+        {
+            "name": "weekend",
+            "title": "Weekend",
+            "description": "Days that are not working days.",
+            "groupTitle": "Calendar rules",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Saturday and Sunday",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SAT_SUN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Friday and Saturday",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FRI_SAT",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Sunday only",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SUN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "No weekend",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "SAT_SUN"
+        },
+        {
+            "name": "custom_holidays",
+            "title": "Extra holidays",
+            "description": "Comma-separated, for example: 2025-12-24=Christmas Eve, 2025-12-31=Office closed",
+            "groupTitle": "Calendar rules",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "reference_date",
+            "title": "Reference date (optional)",
+            "description": "A date or TODAY, for the relative fields.",
+            "groupTitle": "Calendar rules",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "calendar",
+            "label": "Calendar",
+            "displayName": "Calendar",
+            "tooltip": "One row per day with calendar, ISO week, fiscal, holiday and working-day fields."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "holidays",
+            "label": "Holidays",
+            "displayName": "Holidays",
+            "tooltip": "The holidays in the range: date, name, day name, year."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}
