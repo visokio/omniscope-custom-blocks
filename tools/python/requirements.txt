@@ -1,0 +1,19 @@
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+pytest>=8
+requests
+# Imported by blocks' scripts or tests; without them pytest fails (not skips) those blocks.
+scikit-learn
+beautifulsoup4
+markdown
+httpx
+paramiko
+pypdf
+pyarrow
+geopandas
+shapely
+python-pptx
+opendp
+# Not listed: the AI providers' SDKs (openai, anthropic, google-genai), kedro and db-dtypes.
+# The tests that need them skip when they are missing.

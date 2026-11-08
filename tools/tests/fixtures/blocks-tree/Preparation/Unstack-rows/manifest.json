@@ -1,0 +1,65 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Unstack Records",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Unstack all records by splitting on text fields with stacked values, filling records with empty strings where needed.",
+    "category": "Preparation",
+    "subcategory": null,
+    "tags": [],
+    "introductoryText": "### Unstack all records by splitting on text fields with stacked values, filling records with empty strings where needed.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "textFields",
+            "title": "Text Fields",
+            "description": "The text fields that contain the stacked value to unstack / explode",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": true,
+            "fieldTypes": [
+                "STRING"
+            ]
+        },
+        {
+            "name": "separator",
+            "title": "Separator",
+            "description": "The character to split the text by",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "\\n"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output",
+            "label": "Output",
+            "displayName": "Output",
+            "tooltip": null
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": true,
+    "apiMode": "BATCH"
+}
