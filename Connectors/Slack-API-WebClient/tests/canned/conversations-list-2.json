@@ -1,0 +1,206 @@
+{
+ "ok": true,
+ "channels": [
+  {
+   "id": "C01015EXAMPLE",
+   "name": "social",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1715731200,
+   "creator": "U0103EXAMPLE",
+   "num_members": 120,
+   "topic": {
+    "value": "",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about social",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01016EXAMPLE",
+   "name": "customer-feedback",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1716508800,
+   "creator": "U0100EXAMPLE",
+   "num_members": 31,
+   "topic": {
+    "value": "About #customer-feedback",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about customer feedback",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01017EXAMPLE",
+   "name": "partners",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1717286400,
+   "creator": "U0101EXAMPLE",
+   "num_members": 12,
+   "topic": {
+    "value": "About #partners",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about partners",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01018EXAMPLE",
+   "name": "data-team",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1718064000,
+   "creator": "U0102EXAMPLE",
+   "num_members": 17,
+   "topic": {
+    "value": "",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about data team",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01019EXAMPLE",
+   "name": "announcements",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1718841600,
+   "creator": "U0103EXAMPLE",
+   "num_members": 212,
+   "topic": {
+    "value": "About #announcements",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about announcements",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01020EXAMPLE",
+   "name": "standups",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1719619200,
+   "creator": "U0100EXAMPLE",
+   "num_members": 44,
+   "topic": {
+    "value": "About #standups",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about standups",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01021EXAMPLE",
+   "name": "design",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1720396800,
+   "creator": "U0101EXAMPLE",
+   "num_members": 19,
+   "topic": {
+    "value": "",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about design",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01022EXAMPLE",
+   "name": "warehouse",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1721174400,
+   "creator": "U0102EXAMPLE",
+   "num_members": 26,
+   "topic": {
+    "value": "About #warehouse",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about warehouse",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01023EXAMPLE",
+   "name": "deliveries",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1721952000,
+   "creator": "U0103EXAMPLE",
+   "num_members": 15,
+   "topic": {
+    "value": "About #deliveries",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about deliveries",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  }
+ ],
+ "response_metadata": {
+  "next_cursor": ""
+ }
+}

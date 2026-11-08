@@ -1,0 +1,30 @@
+{
+ "results": [
+  {
+   "conversionId": "c-1",
+   "submittedAt": 1736935200000,
+   "pageUrl": "https://example.com/catalogue",
+   "values": [
+    {
+     "name": "email",
+     "value": "ben@example.com"
+    },
+    {
+     "name": "firstname",
+     "value": "Ben"
+    }
+   ]
+  },
+  {
+   "conversionId": "c-2",
+   "submittedAt": 1737021600000,
+   "pageUrl": "https://example.com/catalogue",
+   "values": [
+    {
+     "name": "email",
+     "value": "chloe@example.com"
+    }
+   ]
+  }
+ ]
+}

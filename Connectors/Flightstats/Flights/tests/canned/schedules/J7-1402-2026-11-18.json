@@ -1,0 +1,73 @@
+{
+ "request": {
+  "departing": true,
+  "url": "https://api.flightstats.com/flex/schedules/rest/v1/json/flight/J7/1402/departing/2026/11/18",
+  "airline": {
+   "requestedCode": "J7",
+   "fsCode": "J7"
+  },
+  "flight": {
+   "requested": "1402",
+   "interpreted": "1402"
+  },
+  "date": {
+   "year": "2026",
+   "month": "11",
+   "day": "18",
+   "interpreted": "2026-11-18"
+  }
+ },
+ "scheduledFlights": [
+  {
+   "carrierFsCode": "J7",
+   "flightNumber": "1402",
+   "departureAirportFsCode": "JNP",
+   "arrivalAirportFsCode": "VLB",
+   "stops": 0,
+   "departureTime": "2026-11-18T13:20:00.000",
+   "arrivalTime": "2026-11-18T14:30:00.000",
+   "flightEquipmentIataCode": "E75",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "Q"
+   ],
+   "codeshares": [
+    {
+     "carrierFsCode": "XK",
+     "flightNumber": "1402",
+     "serviceType": "J",
+     "serviceClasses": [
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "Q"
+     ],
+     "referenceCode": 1000
+    },
+    {
+     "carrierFsCode": "OY",
+     "flightNumber": "7402",
+     "serviceType": "J",
+     "serviceClasses": [
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "Q"
+     ],
+     "referenceCode": 1001
+    }
+   ],
+   "referenceCode": "0"
+  }
+ ],
+ "appendix": {
+  "airlines": [],
+  "airports": [],
+  "equipments": []
+ }
+}

@@ -1,0 +1,13 @@
+Id,IsDeleted,Name,Type,Industry,BillingStreet,BillingCity,BillingPostalCode,BillingCountry,AnnualRevenue,NumberOfEmployees,OwnerId,CreatedDate,LastActivityDate
+001A00000000000000,False,Fernhill Garden Centre,Customer - Direct,Retail,12 Mill Road,Leeds,LS1 4AB,United Kingdom,2400000.0,38,005A00000000000000,2024-01-01 09:30:00,2025-01-10 00:00:00
+001A00000000000001,False,Marsh Lane Hardware,Customer - Direct,Retail,4 Marsh Lane,York,YO1 7HH,United Kingdom,860000.0,12,005A00000000000001,2024-02-02 09:30:00,2025-02-11 00:00:00
+001A00000000000002,False,Brookside Allotment Society,Customer - Channel,Not For Profit,Brookside,Harrogate,HG1 2RS,United Kingdom,,4,005A00000000000002,2024-03-03 09:30:00,2025-03-12 00:00:00
+001A00000000000003,False,Willow Bank Landscapes,Prospect,Construction,7 Willow Bank,Bradford,BD1 3QT,United Kingdom,1300000.0,21,005A00000000000000,2024-04-04 09:30:00,
+001A00000000000004,False,Oakfield Nurseries,Customer - Direct,Agriculture,Oakfield Farm,Wakefield,WF1 2DD,United Kingdom,3100000.0,55,005A00000000000001,2024-05-05 09:30:00,2025-05-14 00:00:00
+001A00000000000005,False,Greenway Estates,Prospect,Real Estate,1 Greenway,Leeds,LS6 1AA,United Kingdom,9800000.0,140,005A00000000000002,2024-06-06 09:30:00,2025-06-15 00:00:00
+001A00000000000006,False,Kestrel Facilities,Customer - Channel,Facilities,"Unit 5, Don Park",Sheffield,S9 2RT,United Kingdom,5200000.0,230,005A00000000000000,2024-07-07 09:30:00,2025-01-16 00:00:00
+001A00000000000007,False,Riverside Parks Trust,Other,Not For Profit,Riverside,Hull,HU1 1NQ,United Kingdom,,9,005A00000000000001,2024-08-08 09:30:00,
+001A00000000000008,False,Pennine Tools,Customer - Direct,Wholesale,Pennine Works,Huddersfield,HD1 6PL,United Kingdom,7400000.0,88,005A00000000000002,2024-09-09 09:30:00,2025-03-18 00:00:00
+001A00000000000009,False,Hollins Garden Design,Prospect,Design,3 Hollins Way,Ilkley,LS29 8AA,United Kingdom,410000.0,6,005A00000000000000,2024-10-01 09:30:00,2025-04-19 00:00:00
+001A00000000000010,False,Dalesway Hotels,Customer - Direct,Hospitality,Dalesway House,Skipton,BD23 1JD,United Kingdom,12500000.0,310,005A00000000000001,2024-11-02 09:30:00,2025-05-20 00:00:00
+001A00000000000011,False,Abbey Fields School,Other,Education,Abbey Fields,Selby,YO8 4QS,United Kingdom,,95,005A00000000000002,2024-12-03 09:30:00,

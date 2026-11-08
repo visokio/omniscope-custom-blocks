@@ -1,0 +1,46 @@
+{
+ "startAt": 0,
+ "maxResults": 100,
+ "total": 3,
+ "isLast": true,
+ "values": [
+  {
+   "id": "10001",
+   "key": "SHOP",
+   "name": "Web Shop",
+   "projectTypeKey": "software",
+   "style": "classic",
+   "projectCategory": {
+    "id": "10000",
+    "name": "Customer facing"
+   },
+   "avatarUrls": {
+    "48x48": "https://example.atlassian.net/avatar/10001"
+   }
+  },
+  {
+   "id": "10002",
+   "key": "APP",
+   "name": "Mobile App",
+   "projectTypeKey": "software",
+   "style": "next-gen",
+   "avatarUrls": {
+    "48x48": "https://example.atlassian.net/avatar/10002"
+   }
+  },
+  {
+   "id": "10003",
+   "key": "OPS",
+   "name": "Operations Desk",
+   "projectTypeKey": "service_desk",
+   "style": "classic",
+   "projectCategory": {
+    "id": "10001",
+    "name": "Internal"
+   },
+   "avatarUrls": {
+    "48x48": "https://example.atlassian.net/avatar/10003"
+   }
+  }
+ ]
+}

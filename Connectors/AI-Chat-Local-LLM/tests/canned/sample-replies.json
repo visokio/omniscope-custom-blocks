@@ -1,0 +1,14 @@
+{
+  "_note": "Invented replies to the sample prompts, used by the tests and placeholder.csv.",
+  "replies": {
+    "I was offered the same role elsewhere for noticeably more money.": "Pay",
+    "Shifts kept getting longer and cover was never arranged when people were off.": "Workload",
+    "After four years I could not see a route to a senior post here.": "Career progression",
+    "My family is moving to Scotland in the summer.": "Relocation",
+    "My line manager rarely gave feedback and cancelled most one-to-ones.": "Manager",
+    "I am going back to university full-time.": "Other",
+    "Too many calls per hour and no time to follow anything up properly.": "Workload",
+    "The pay review was frozen two years running.": "Pay",
+    "I wanted to lead campaigns and that was not going to happen soon.": "Career progression"
+  }
+}

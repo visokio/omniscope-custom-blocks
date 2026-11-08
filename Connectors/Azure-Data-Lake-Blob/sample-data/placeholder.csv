@@ -1,0 +1,31 @@
+Date,Store,Region,Units,Revenue,Promotion
+2026-03-02,Leeds Kirkgate,North,133,1899.24,False
+2026-03-02,York Micklegate,North,95,910.1,False
+2026-03-02,Bristol Harbourside,South West,54,434.16,False
+2026-03-02,Exeter Quay,South West,124,1683.92,False
+2026-03-02,Norwich Elm Hill,East,117,1164.15,True
+2026-03-03,Leeds Kirkgate,North,56,622.72,False
+2026-03-03,York Micklegate,North,89,1332.33,False
+2026-03-03,Bristol Harbourside,South West,86,1062.96,False
+2026-03-03,Exeter Quay,South West,75,684.0,False
+2026-03-03,Norwich Elm Hill,East,45,373.95,True
+2026-03-04,Leeds Kirkgate,North,36,405.36,False
+2026-03-04,York Micklegate,North,81,1004.4,False
+2026-03-04,Bristol Harbourside,South West,51,496.23,True
+2026-03-04,Exeter Quay,South West,79,738.65,False
+2026-03-04,Norwich Elm Hill,East,125,1323.75,True
+2026-03-05,Leeds Kirkgate,North,44,607.64,True
+2026-03-05,York Micklegate,North,84,1189.44,False
+2026-03-05,Bristol Harbourside,South West,52,724.36,False
+2026-03-05,Exeter Quay,South West,25,216.0,False
+2026-03-05,Norwich Elm Hill,East,109,1258.95,False
+2026-03-06,Leeds Kirkgate,North,102,1243.38,True
+2026-03-06,York Micklegate,North,63,674.73,False
+2026-03-06,Bristol Harbourside,South West,47,644.37,False
+2026-03-06,Exeter Quay,South West,38,564.3,False
+2026-03-06,Norwich Elm Hill,East,72,897.84,False
+2026-03-07,Leeds Kirkgate,North,92,833.52,False
+2026-03-07,York Micklegate,North,62,670.84,True
+2026-03-07,Bristol Harbourside,South West,48,708.96,True
+2026-03-07,Exeter Quay,South West,20,202.0,False
+2026-03-07,Norwich Elm Hill,East,100,1264.0,True

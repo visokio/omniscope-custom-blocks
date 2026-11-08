@@ -1,0 +1,147 @@
+{
+ "totalSize": 12,
+ "done": false,
+ "records": [
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000000"
+   },
+   "Id": "001A00000000000000",
+   "IsDeleted": false,
+   "Name": "Fernhill Garden Centre",
+   "Type": "Customer - Direct",
+   "Industry": "Retail",
+   "BillingStreet": "12 Mill Road",
+   "BillingCity": "Leeds",
+   "BillingPostalCode": "LS1 4AB",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": 2400000,
+   "NumberOfEmployees": 38,
+   "OwnerId": "005A00000000000000",
+   "CreatedDate": "2024-01-01T09:30:00.000+0000",
+   "LastActivityDate": "2025-01-10"
+  },
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000001"
+   },
+   "Id": "001A00000000000001",
+   "IsDeleted": false,
+   "Name": "Marsh Lane Hardware",
+   "Type": "Customer - Direct",
+   "Industry": "Retail",
+   "BillingStreet": "4 Marsh Lane",
+   "BillingCity": "York",
+   "BillingPostalCode": "YO1 7HH",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": 860000,
+   "NumberOfEmployees": 12,
+   "OwnerId": "005A00000000000001",
+   "CreatedDate": "2024-02-02T09:30:00.000+0000",
+   "LastActivityDate": "2025-02-11"
+  },
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000002"
+   },
+   "Id": "001A00000000000002",
+   "IsDeleted": false,
+   "Name": "Brookside Allotment Society",
+   "Type": "Customer - Channel",
+   "Industry": "Not For Profit",
+   "BillingStreet": "Brookside",
+   "BillingCity": "Harrogate",
+   "BillingPostalCode": "HG1 2RS",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": null,
+   "NumberOfEmployees": 4,
+   "OwnerId": "005A00000000000002",
+   "CreatedDate": "2024-03-03T09:30:00.000+0000",
+   "LastActivityDate": "2025-03-12"
+  },
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000003"
+   },
+   "Id": "001A00000000000003",
+   "IsDeleted": false,
+   "Name": "Willow Bank Landscapes",
+   "Type": "Prospect",
+   "Industry": "Construction",
+   "BillingStreet": "7 Willow Bank",
+   "BillingCity": "Bradford",
+   "BillingPostalCode": "BD1 3QT",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": 1300000,
+   "NumberOfEmployees": 21,
+   "OwnerId": "005A00000000000000",
+   "CreatedDate": "2024-04-04T09:30:00.000+0000",
+   "LastActivityDate": null
+  },
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000004"
+   },
+   "Id": "001A00000000000004",
+   "IsDeleted": false,
+   "Name": "Oakfield Nurseries",
+   "Type": "Customer - Direct",
+   "Industry": "Agriculture",
+   "BillingStreet": "Oakfield Farm",
+   "BillingCity": "Wakefield",
+   "BillingPostalCode": "WF1 2DD",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": 3100000,
+   "NumberOfEmployees": 55,
+   "OwnerId": "005A00000000000001",
+   "CreatedDate": "2024-05-05T09:30:00.000+0000",
+   "LastActivityDate": "2025-05-14"
+  },
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000005"
+   },
+   "Id": "001A00000000000005",
+   "IsDeleted": false,
+   "Name": "Greenway Estates",
+   "Type": "Prospect",
+   "Industry": "Real Estate",
+   "BillingStreet": "1 Greenway",
+   "BillingCity": "Leeds",
+   "BillingPostalCode": "LS6 1AA",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": 9800000,
+   "NumberOfEmployees": 140,
+   "OwnerId": "005A00000000000002",
+   "CreatedDate": "2024-06-06T09:30:00.000+0000",
+   "LastActivityDate": "2025-06-15"
+  },
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000006"
+   },
+   "Id": "001A00000000000006",
+   "IsDeleted": false,
+   "Name": "Kestrel Facilities",
+   "Type": "Customer - Channel",
+   "Industry": "Facilities",
+   "BillingStreet": "Unit 5, Don Park",
+   "BillingCity": "Sheffield",
+   "BillingPostalCode": "S9 2RT",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": 5200000,
+   "NumberOfEmployees": 230,
+   "OwnerId": "005A00000000000000",
+   "CreatedDate": "2024-07-07T09:30:00.000+0000",
+   "LastActivityDate": "2025-01-16"
+  }
+ ],
+ "nextRecordsUrl": "/services/data/v62.0/query/01gA0000000Example-2000"
+}

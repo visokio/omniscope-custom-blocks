@@ -1,0 +1,43 @@
+Key,Issue ID,Project key,Issue type,Summary,Status,Status category,Priority,Assignee,Reporter,Created,Updated,Due date,Resolved,Resolution,Labels,Components,Fix versions,Parent key
+SHOP-2,20000,SHOP,Story,Basket total ignores voucher after page refresh,Done,Done,Medium,Priya Natarajan,Elena Rossi,2025-09-01 08:15:00,2025-10-01 13:00:00,2025-11-01 00:00:00,2025-10-01 15:00:00,Done,,Checkout,2025.11,
+SHOP-3,20001,SHOP,Bug,Add postcode lookup to delivery form,In Progress,In Progress,High,Tom Okafor,Sam Whitfield,2025-09-03 09:15:00,2025-10-02 13:01:00,,,,customer-reported,Search,,
+SHOP-4,20002,SHOP,Task,Search results slow for long queries,In Review,In Progress,Low,Elena Rossi,Hannah Lowe,2025-09-05 10:15:00,2025-10-03 13:02:00,,,,tech-debt,Accounts,2025.11,
+SHOP-5,20003,SHOP,Story,Password reset e-mail goes to spam,Done,Done,Highest,Sam Whitfield,Priya Natarajan,2025-09-07 11:15:00,2025-10-04 13:03:00,2025-11-04 00:00:00,2025-10-04 15:00:00,Done,,Mobile app,,
+SHOP-6,20004,SHOP,Bug,Show stock level on product page,To Do,To Do,Highest,,Tom Okafor,2025-09-09 12:15:00,2025-10-05 13:04:00,,,,,Checkout,2025.11,
+SHOP-7,20005,SHOP,Task,Mobile app crashes on order history,In Progress,In Progress,Highest,Priya Natarajan,Elena Rossi,2025-09-11 13:15:00,2025-10-06 13:05:00,,,,customer-reported,Search,,SHOP-1
+SHOP-8,20006,SHOP,Story,Export order list to CSV,In Review,In Progress,Medium,Tom Okafor,Sam Whitfield,2025-09-13 14:15:00,2025-10-07 13:06:00,2025-11-07 00:00:00,,,,Accounts,2025.11,
+SHOP-9,20007,SHOP,Bug,Wrong VAT rate on gift cards,Done,Done,Highest,Elena Rossi,Hannah Lowe,2025-09-15 15:15:00,2025-10-08 13:07:00,,2025-10-08 15:00:00,Done,tech-debt,Mobile app,,
+SHOP-10,20008,SHOP,Task,Remember last used delivery address,To Do,To Do,High,Sam Whitfield,Priya Natarajan,2025-09-17 08:15:00,2025-10-09 13:08:00,,,,,Checkout,2025.11,
+SHOP-11,20009,SHOP,Story,Filter search by brand,In Progress,In Progress,Highest,Hannah Lowe,Tom Okafor,2025-09-19 09:15:00,2025-10-10 13:09:00,2025-11-10 00:00:00,,,customer-reported,Search,,
+SHOP-12,20010,SHOP,Bug,Order confirmation shows wrong delivery date,In Review,In Progress,Highest,Priya Natarajan,Elena Rossi,2025-09-21 10:15:00,2025-10-11 13:10:00,,,,,Accounts,2025.11,
+SHOP-13,20011,SHOP,Task,Add dark mode to mobile app,Done,Done,Low,Tom Okafor,Sam Whitfield,2025-09-23 11:15:00,2025-10-12 13:11:00,,2025-10-12 15:00:00,Done,,Mobile app,,SHOP-1
+SHOP-14,20012,SHOP,Story,Duplicate accounts after social sign-in,To Do,To Do,Low,Elena Rossi,Hannah Lowe,2025-09-25 12:15:00,2025-10-13 13:12:00,2025-11-13 00:00:00,,,tech-debt,Checkout,2025.11,
+SHOP-15,20013,SHOP,Bug,Paginate order history,In Progress,In Progress,Highest,,Priya Natarajan,2025-09-27 13:15:00,2025-10-14 13:13:00,,,,customer-reported,Search,,
+SHOP-16,20014,SHOP,Task,Improve product image loading,Done,Done,High,Hannah Lowe,Tom Okafor,2025-09-02 14:15:00,2025-10-15 13:14:00,,2025-10-15 15:00:00,Done,,Accounts,2025.11,
+SHOP-17,20015,SHOP,Story,Allow nicknames on saved cards,Done,Done,Highest,Priya Natarajan,Elena Rossi,2025-09-04 15:15:00,2025-10-16 13:15:00,2025-11-16 00:00:00,2025-10-16 15:00:00,Done,,Mobile app,,
+SHOP-18,20016,SHOP,Bug,Search misses products with accents,To Do,To Do,Low,Tom Okafor,Sam Whitfield,2025-09-06 08:15:00,2025-10-17 13:16:00,,,,,Checkout,2025.11,
+SHOP-19,20017,SHOP,Task,Track parcel from order page,In Progress,In Progress,Highest,Elena Rossi,Hannah Lowe,2025-09-08 09:15:00,2025-10-18 13:17:00,,,,"customer-reported, tech-debt",Search,,SHOP-1
+SHOP-20,20018,SHOP,Story,Account page times out for large orders,In Review,In Progress,Highest,Sam Whitfield,Priya Natarajan,2025-09-10 10:15:00,2025-10-19 13:18:00,2025-11-19 00:00:00,,,,Accounts,2025.11,
+SHOP-21,20019,SHOP,Bug,Collect consent for marketing e-mails,Done,Done,High,Hannah Lowe,Tom Okafor,2025-09-12 11:15:00,2025-10-20 13:19:00,,2025-10-20 15:00:00,Done,,Mobile app,,
+SHOP-22,20020,SHOP,Task,Retry failed card payments,To Do,To Do,Highest,Priya Natarajan,Elena Rossi,2025-09-14 12:15:00,2025-10-21 13:20:00,,,,,Checkout,2025.11,
+SHOP-23,20021,SHOP,Story,Basket total ignores voucher after page refresh (follow-up),Done,Done,Low,Tom Okafor,Sam Whitfield,2025-09-16 13:15:00,2025-10-22 13:21:00,2025-11-22 00:00:00,2025-10-22 15:00:00,Done,customer-reported,Search,,
+SHOP-24,20022,SHOP,Bug,Add postcode lookup to delivery form (follow-up),In Review,In Progress,Highest,,Hannah Lowe,2025-09-18 14:15:00,2025-10-23 13:22:00,,,,tech-debt,Accounts,2025.11,
+SHOP-25,20023,SHOP,Task,Search results slow for long queries (follow-up),Done,Done,High,Sam Whitfield,Priya Natarajan,2025-09-20 15:15:00,2025-10-24 13:23:00,,2025-10-24 15:00:00,Done,,Mobile app,,SHOP-1
+SHOP-26,20024,SHOP,Story,Password reset e-mail goes to spam (follow-up),To Do,To Do,Highest,Hannah Lowe,Tom Okafor,2025-09-22 08:15:00,2025-10-25 13:24:00,2025-11-25 00:00:00,,,,Checkout,2025.11,
+SHOP-27,20025,SHOP,Bug,Show stock level on product page (follow-up),In Progress,In Progress,High,Priya Natarajan,Elena Rossi,2025-09-24 09:15:00,2025-10-26 13:25:00,,,,customer-reported,Search,,
+SHOP-28,20026,SHOP,Task,Mobile app crashes on order history (follow-up),In Review,In Progress,Medium,Tom Okafor,Sam Whitfield,2025-09-26 10:15:00,2025-10-27 13:26:00,,,,,Accounts,2025.11,
+SHOP-29,20027,SHOP,Story,Export order list to CSV (follow-up),Done,Done,Low,Elena Rossi,Hannah Lowe,2025-09-01 11:15:00,2025-10-28 13:27:00,2025-11-28 00:00:00,2025-10-28 15:00:00,Done,tech-debt,Mobile app,,
+SHOP-30,20028,SHOP,Bug,Wrong VAT rate on gift cards (follow-up),Done,Done,High,Sam Whitfield,Priya Natarajan,2025-09-03 12:15:00,2025-10-01 13:28:00,,2025-10-01 15:00:00,Done,,Checkout,2025.11,
+SHOP-31,20029,SHOP,Task,Remember last used delivery address (follow-up),In Progress,In Progress,Highest,Hannah Lowe,Tom Okafor,2025-09-05 13:15:00,2025-10-02 13:29:00,,,,customer-reported,Search,,SHOP-1
+SHOP-32,20030,SHOP,Story,Filter search by brand (follow-up),In Review,In Progress,Medium,Priya Natarajan,Elena Rossi,2025-09-07 14:15:00,2025-10-03 13:30:00,2025-11-03 00:00:00,,,,Accounts,2025.11,
+SHOP-33,20031,SHOP,Bug,Order confirmation shows wrong delivery date (follow-up),Done,Done,High,,Sam Whitfield,2025-09-09 15:15:00,2025-10-04 13:31:00,,2025-10-04 15:00:00,Done,,Mobile app,,
+SHOP-34,20032,SHOP,Task,Add dark mode to mobile app (follow-up),To Do,To Do,Highest,Elena Rossi,Hannah Lowe,2025-09-11 08:15:00,2025-10-05 13:32:00,,,,tech-debt,Checkout,2025.11,
+SHOP-35,20033,SHOP,Story,Duplicate accounts after social sign-in (follow-up),In Progress,In Progress,High,Sam Whitfield,Priya Natarajan,2025-09-13 09:15:00,2025-10-06 13:33:00,2025-11-06 00:00:00,,,customer-reported,Search,,
+SHOP-36,20034,SHOP,Bug,Paginate order history (follow-up),In Review,In Progress,Medium,Hannah Lowe,Tom Okafor,2025-09-15 10:15:00,2025-10-07 13:34:00,,,,,Accounts,2025.11,
+SHOP-37,20035,SHOP,Task,Improve product image loading (follow-up),Done,Done,Highest,Priya Natarajan,Elena Rossi,2025-09-17 11:15:00,2025-10-08 13:35:00,,2025-10-08 15:00:00,Done,,Mobile app,,SHOP-1
+SHOP-38,20036,SHOP,Story,Allow nicknames on saved cards (follow-up),To Do,To Do,Highest,Tom Okafor,Sam Whitfield,2025-09-19 12:15:00,2025-10-09 13:36:00,2025-11-09 00:00:00,,,,Checkout,2025.11,
+SHOP-39,20037,SHOP,Bug,Search misses products with accents (follow-up),In Progress,In Progress,Highest,Elena Rossi,Hannah Lowe,2025-09-21 13:15:00,2025-10-10 13:37:00,,,,"customer-reported, tech-debt",Search,,
+SHOP-40,20038,SHOP,Task,Track parcel from order page (follow-up),In Review,In Progress,High,Sam Whitfield,Priya Natarajan,2025-09-23 14:15:00,2025-10-11 13:38:00,,,,,Accounts,2025.11,
+SHOP-41,20039,SHOP,Story,Account page times out for large orders (follow-up),Done,Done,Low,Hannah Lowe,Tom Okafor,2025-09-25 15:15:00,2025-10-12 13:39:00,2025-11-12 00:00:00,2025-10-12 15:00:00,Done,,Mobile app,,
+SHOP-42,20040,SHOP,Bug,Collect consent for marketing e-mails (follow-up),To Do,To Do,Low,,Elena Rossi,2025-09-27 08:15:00,2025-10-13 13:40:00,,,,,Checkout,2025.11,
+SHOP-43,20041,SHOP,Task,Retry failed card payments (follow-up),In Progress,In Progress,Medium,Tom Okafor,Sam Whitfield,2025-09-02 09:15:00,2025-10-14 13:41:00,,,,customer-reported,Search,,SHOP-1

@@ -11,7 +11,7 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": null,
+    "icon": "data:image/png;base64,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",
     "description": "Loads Salesforce data through OAuth 2.0 and the REST API, with a simple object picker that automatically loads all available fields.",
     "category": "Connectors",
     "subcategory": "CRM",
@@ -22,13 +22,13 @@
         "rest",
         "soql"
     ],
-    "introductoryText": "### Salesforce REST OAuth\n\nThe easiest way to use this connector is **Simple - Load object**: choose a familiar Salesforce object such as Accounts, Contacts or Opportunities. The block automatically discovers every field available to the OAuth Run As user and loads the records into Omniscope. You do not need to know Salesforce field API names or write SOQL.\n\n#### Salesforce setup\n1. In Salesforce Setup, create/configure an **External Client App** with OAuth enabled and the **Manage user data via APIs (`api`)** scope.\n2. Enable the **Client Credentials Flow** and configure its **Run As** user in the app policies. That user's Salesforce permissions determine which objects and fields this block can read.\n3. Copy the app **Consumer Key** and **Consumer Secret** into the OAuth options below.\n4. Use your Salesforce **My Domain URL**, e.g. `https://your-company.my.salesforce.com`.\n\n#### Load modes\n- **Simple - Load object (recommended):** choose a common Salesforce object; all available fields are discovered and selected automatically.\n- **Query Builder:** for advanced users who want to specify an object, fields, WHERE and ORDER BY.\n- **Custom SOQL:** for expert Salesforce users who want full SOQL control.\n\nThe optional schema actions can still list every object available to the authenticated user or describe an object's fields. Records are loaded through the synchronous REST Query API with automatic pagination.",
+    "introductoryText": "Loads Salesforce records through the REST API, signing in with OAuth 2.0 client credentials, so a scheduled workflow runs without anyone signing in.\n\n**How to set it up**\n1. In Salesforce Setup, create or configure an **External Client App** with OAuth enabled and the **Manage user data via APIs (`api`)** scope.\n2. Enable the **Client Credentials Flow** and choose its **Run As** user in the app policies. That user's permissions decide which objects and fields the block can read: a dedicated integration user with read access to what you need is best.\n3. Copy the app's **Consumer Key** and **Consumer Secret** into the block.\n4. Enter your **My Domain URL**, such as `https://your-company.my.salesforce.com`.\n\n**Load modes**\n- **Simple - Load object** (the default): choose a common object, such as Accounts, Contacts or Opportunities. The block asks Salesforce which fields the Run As user can read and loads all of them, without SOQL or field API names.\n- **Query Builder**: an object, a list of fields, a WHERE and an ORDER BY.\n- **Custom SOQL**: any SOQL query.\n\nTwo schema actions list the objects available and describe an object's fields. Every page of results is loaded through the REST Query API.",
     "dependencies": "requests",
     "options": [
         {
             "name": "authBaseUrl",
             "title": "Salesforce My Domain URL",
-            "description": "HTTPS My Domain URL used for OAuth, e.g. https://acme.my.salesforce.com. My Domain is recommended for External Client Apps.",
+            "description": "HTTPS My Domain URL used for OAuth, such as https://acme.my.salesforce.com. My Domain is recommended for External Client Apps.",
             "groupTitle": "OAuth 2.0",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -57,7 +57,7 @@
         {
             "name": "operation",
             "title": "Action",
-            "description": "Load data is the normal choice. Schema utilities are available for advanced discovery/troubleshooting.",
+            "description": "Load data loads records. The two Advanced actions list the objects available, or describe an object's fields, for finding API names.",
             "groupTitle": "Data",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -101,7 +101,7 @@
         {
             "name": "queryMode",
             "title": "Load mode",
-            "description": "Simple mode automatically discovers and loads every available field. Query Builder and Custom SOQL are retained for advanced use.",
+            "description": "Simple loads every field the Run As user can read. Query Builder takes an object, fields, WHERE and ORDER BY; Custom SOQL takes any query.",
             "groupTitle": "Data",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -145,7 +145,7 @@
         {
             "name": "simpleObject",
             "title": "Salesforce object",
-            "description": "Choose the data you want. In Simple mode the connector automatically discovers and loads all fields available for this object.",
+            "description": "For Simple mode: the object to load, with every field the Run As user can read.",
             "groupTitle": "Simple",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -299,7 +299,7 @@
         {
             "name": "includeDeleted",
             "title": "Include deleted/archived records",
-            "description": "Uses the REST queryAll resource instead of query. Relevant only to Query data.",
+            "description": "Also load deleted (in the Recycle Bin) and archived records, through the REST queryAll resource. Used only by the Load data action.",
             "groupTitle": "Load options",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -333,7 +333,7 @@
         {
             "name": "maxRecords",
             "title": "Maximum records",
-            "description": "Connector-side safety cap across all REST pages. Use 0 for no connector-side cap.",
+            "description": "Stop after this many records, across all pages; the final message says when the limit was reached. 0 loads every record.",
             "groupTitle": "Load options",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -343,7 +343,7 @@
         {
             "name": "objectName",
             "title": "Object API name (advanced)",
-            "description": "Used by Query Builder and Describe fields, e.g. Account or MyObject__c. Simple mode does not use this option.",
+            "description": "Used by Query Builder and Describe fields, such as Account or MyObject__c. Simple mode does not use this option.",
             "groupTitle": "Advanced query",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -363,7 +363,7 @@
         {
             "name": "whereClause",
             "title": "WHERE clause (advanced)",
-            "description": "Optional Query Builder WHERE expression without the word WHERE, e.g. CreatedDate = LAST_N_DAYS:30.",
+            "description": "Optional Query Builder WHERE expression without the word WHERE, such as CreatedDate = LAST_N_DAYS:30.",
             "groupTitle": "Advanced query",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -373,7 +373,7 @@
         {
             "name": "orderBy",
             "title": "ORDER BY clause (advanced)",
-            "description": "Optional Query Builder ORDER BY expression without the words ORDER BY, e.g. CreatedDate DESC.",
+            "description": "Optional Query Builder ORDER BY expression without the words ORDER BY, such as CreatedDate DESC.",
             "groupTitle": "Advanced query",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -383,7 +383,7 @@
         {
             "name": "soql",
             "title": "Custom SOQL (advanced)",
-            "description": "SOQL used when Query mode is Custom SOQL, e.g. SELECT Id, Name, Owner.Name FROM Account.",
+            "description": "The query to run when Load mode is Custom SOQL, such as SELECT Id, Name, Owner.Name FROM Account.",
             "groupTitle": "Advanced query",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -415,9 +415,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output",
-            "tooltip": "Salesforce records or optional schema metadata"
+            "label": "Records",
+            "displayName": "Records",
+            "tooltip": "Salesforce records (date and date-time fields as dates), or the object list or field descriptions of the schema actions"
         }
     ],
     "docker": {

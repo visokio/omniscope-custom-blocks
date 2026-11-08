@@ -1,0 +1,47 @@
+[
+ {
+  "id": "64f0c0ffee000000000cl001",
+  "name": "Before sending",
+  "idCard": "64d0c0ffee000000000c0000",
+  "idBoard": "64b0c0ffee0000000000b001",
+  "pos": 16384,
+  "checkItems": [
+   {
+    "id": "64e0c0ffee00000000000i00",
+    "name": "Draft text",
+    "state": "complete",
+    "idChecklist": "64f0c0ffee000000000cl001",
+    "pos": 16384,
+    "due": null,
+    "idMember": null
+   },
+   {
+    "id": "64e0c0ffee00000000000i01",
+    "name": "Pick photos",
+    "state": "complete",
+    "idChecklist": "64f0c0ffee000000000cl001",
+    "pos": 32768,
+    "due": null,
+    "idMember": null
+   },
+   {
+    "id": "64e0c0ffee00000000000i02",
+    "name": "Check prices with sales",
+    "state": "incomplete",
+    "idChecklist": "64f0c0ffee000000000cl001",
+    "pos": 49152,
+    "due": null,
+    "idMember": null
+   },
+   {
+    "id": "64e0c0ffee00000000000i03",
+    "name": "Book the e-mail send",
+    "state": "incomplete",
+    "idChecklist": "64f0c0ffee000000000cl001",
+    "pos": 65536,
+    "due": null,
+    "idMember": null
+   }
+  ]
+ }
+]

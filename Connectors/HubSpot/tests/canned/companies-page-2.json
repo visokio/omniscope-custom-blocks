@@ -1,0 +1,64 @@
+{
+ "results": [
+  {
+   "id": "9009",
+   "properties": {
+    "name": "Pennine Tools",
+    "domain": "pennine-tools.example",
+    "industry": "Wholesale",
+    "city": "Huddersfield",
+    "createdate": "2024-09-11T09:18:00.000Z",
+    "hs_lastmodifieddate": "2025-03-09T12:00:00.000Z",
+    "hs_object_id": "9009"
+   },
+   "createdAt": "2024-09-11T09:18:00.000Z",
+   "updatedAt": "2025-03-09T12:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "9010",
+   "properties": {
+    "name": "Hollins Garden Design",
+    "domain": "hollins-design.example",
+    "industry": "Design",
+    "city": "Ilkley",
+    "createdate": "2024-10-12T09:19:00.000Z",
+    "hs_lastmodifieddate": "2025-03-10T12:00:00.000Z",
+    "hs_object_id": "9010"
+   },
+   "createdAt": "2024-10-12T09:19:00.000Z",
+   "updatedAt": "2025-03-10T12:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "9011",
+   "properties": {
+    "name": "Dalesway Hotels",
+    "domain": "dalesway-hotels.example",
+    "industry": "Hospitality",
+    "city": "Skipton",
+    "createdate": "2024-11-13T09:20:00.000Z",
+    "hs_lastmodifieddate": "2025-03-11T12:00:00.000Z",
+    "hs_object_id": "9011"
+   },
+   "createdAt": "2024-11-13T09:20:00.000Z",
+   "updatedAt": "2025-03-11T12:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "9012",
+   "properties": {
+    "name": "Abbey Fields School",
+    "domain": "abbeyfields.example",
+    "industry": "Education",
+    "city": "Selby",
+    "createdate": "2024-12-14T09:21:00.000Z",
+    "hs_lastmodifieddate": "2025-03-12T12:00:00.000Z",
+    "hs_object_id": "9012"
+   },
+   "createdAt": "2024-12-14T09:21:00.000Z",
+   "updatedAt": "2025-03-12T12:00:00.000Z",
+   "archived": false
+  }
+ ]
+}

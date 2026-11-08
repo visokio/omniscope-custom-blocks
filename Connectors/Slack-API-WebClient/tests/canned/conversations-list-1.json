@@ -1,0 +1,340 @@
+{
+ "ok": true,
+ "channels": [
+  {
+   "id": "C01000EXAMPLE",
+   "name": "general",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": true,
+   "created": 1704067200,
+   "creator": "U0100EXAMPLE",
+   "num_members": 212,
+   "topic": {
+    "value": "",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about general",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01001EXAMPLE",
+   "name": "random",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1704844800,
+   "creator": "U0101EXAMPLE",
+   "num_members": 198,
+   "topic": {
+    "value": "About #random",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about random",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01002EXAMPLE",
+   "name": "sales-uk",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1705622400,
+   "creator": "U0102EXAMPLE",
+   "num_members": 14,
+   "topic": {
+    "value": "About #sales-uk",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about sales uk",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": [
+    "sales"
+   ]
+  },
+  {
+   "id": "C01003EXAMPLE",
+   "name": "sales-europe",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1706400000,
+   "creator": "U0103EXAMPLE",
+   "num_members": 11,
+   "topic": {
+    "value": "",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about sales europe",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01004EXAMPLE",
+   "name": "support",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1707177600,
+   "creator": "U0100EXAMPLE",
+   "num_members": 37,
+   "topic": {
+    "value": "About #support",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about support",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01005EXAMPLE",
+   "name": "support-escalations",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1707955200,
+   "creator": "U0101EXAMPLE",
+   "num_members": 9,
+   "topic": {
+    "value": "About #support-escalations",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about support escalations",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01006EXAMPLE",
+   "name": "marketing",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1708732800,
+   "creator": "U0102EXAMPLE",
+   "num_members": 22,
+   "topic": {
+    "value": "",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about marketing",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01007EXAMPLE",
+   "name": "product-updates",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1709510400,
+   "creator": "U0103EXAMPLE",
+   "num_members": 140,
+   "topic": {
+    "value": "About #product-updates",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about product updates",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01008EXAMPLE",
+   "name": "release-notes",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1710288000,
+   "creator": "U0100EXAMPLE",
+   "num_members": 61,
+   "topic": {
+    "value": "About #release-notes",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about release notes",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01009EXAMPLE",
+   "name": "office-leeds",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": true,
+   "is_general": false,
+   "created": 1711065600,
+   "creator": "U0101EXAMPLE",
+   "num_members": 0,
+   "topic": {
+    "value": "",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about office leeds",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01010EXAMPLE",
+   "name": "office-london",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1711843200,
+   "creator": "U0102EXAMPLE",
+   "num_members": 48,
+   "topic": {
+    "value": "About #office-london",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about office london",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01011EXAMPLE",
+   "name": "events",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1712620800,
+   "creator": "U0103EXAMPLE",
+   "num_members": 73,
+   "topic": {
+    "value": "About #events",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about events",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01012EXAMPLE",
+   "name": "hiring",
+   "is_channel": true,
+   "is_private": true,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1713398400,
+   "creator": "U0100EXAMPLE",
+   "num_members": 6,
+   "topic": {
+    "value": "",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about hiring",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01013EXAMPLE",
+   "name": "finance",
+   "is_channel": true,
+   "is_private": true,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1714176000,
+   "creator": "U0101EXAMPLE",
+   "num_members": 8,
+   "topic": {
+    "value": "About #finance",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about finance",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  },
+  {
+   "id": "C01014EXAMPLE",
+   "name": "it-help",
+   "is_channel": true,
+   "is_private": false,
+   "is_archived": false,
+   "is_general": false,
+   "created": 1714953600,
+   "creator": "U0102EXAMPLE",
+   "num_members": 95,
+   "topic": {
+    "value": "About #it-help",
+    "creator": "",
+    "last_set": 0
+   },
+   "purpose": {
+    "value": "Talk about it help",
+    "creator": "",
+    "last_set": 0
+   },
+   "previous_names": []
+  }
+ ],
+ "response_metadata": {
+  "next_cursor": "dGVhbTpDMDE1"
+ }
+}

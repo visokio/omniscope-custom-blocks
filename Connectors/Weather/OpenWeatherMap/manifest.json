@@ -12,7 +12,7 @@
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
     "icon": "data:image/png;base64,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",
-    "description": "Retrieves current weather and forecasts from OpenWeatherMap",
+    "description": "Adds the current weather, or a 5-day forecast in 3-hour steps, from OpenWeatherMap to each location in the input, found by latitude and longitude, city or postcode. Needs a free OpenWeatherMap API key.",
     "category": "Connectors",
     "subcategory": "Weather",
     "tags": [
@@ -20,15 +20,18 @@
         "map",
         "longitude",
         "latitude",
-        "forecast"
+        "forecast",
+        "openweathermap",
+        "temperature",
+        "api"
     ],
-    "introductoryText": "![OpenWeatherMap](data:image/png;base64,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)\n\n\nConnector to retrieve current weather and forecasts from [OpenWeatherMap](https://openweathermap.org/).\n\n\nEach input record must consist either of:\n\n(1) A latitude and a longitude field.\n\n(2) A city field and optionally a state and country field. Country fields must be specified according to the [ISO 3166 specification](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes). If no country code is given, the country is assumed to be the United States of America.\n\n(3) A postcode and optionally a country field. The same rules as in (2) apply for the country code.\n\n\nThe block requires an API key. The keys can be requested [here](https://openweathermap.org/appid). Free accounts are subject to a rate limit of 60 calls per minute. If you have a paid subscription, untick the checkbox \"Apply free account rate limit\". In all other cases leave the option, otherwise the account will be suspended.",
+    "introductoryText": "![OpenWeatherMap](data:image/png;base64,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)\n\nLooks up each input record's location at [OpenWeatherMap](https://openweathermap.org/) and writes the **current weather** (one record per location) or the **5-day forecast** (40 records per location, one every 3 hours). Times are in UTC.\n\n**How to set it up**\n\n1. Get an API key: sign up at [openweathermap.org](https://home.openweathermap.org/users/sign_up); the key is under *API keys*. The free plan includes both kinds of weather.\n2. Connect records with a location and choose how to find it:\n   - **Latitude and longitude** (recommended): two number fields.\n   - **City**: a city name, optionally a state (United States only) and an [ISO 3166](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) country code such as GB.\n   - **Postcode**: a postcode or zip code and a country code; without a country code OpenWeatherMap assumes the United States.\n3. Choose a field to identify records (such as a site ID) so each weather record can be joined back.\n\nOpenWeatherMap marks searching by city or postcode as deprecated (still answered, no longer maintained); latitude and longitude is the supported way.\n\nThe free plan allows 60 calls a minute: leave **Apply free account rate limit** ticked unless you pay for more. Each distinct location is asked for once per run. Records with no location are skipped, and the block's message says how many were skipped or not found.",
     "dependencies": "",
     "options": [
         {
             "name": "appid",
-            "title": "App Id",
-            "description": null,
+            "title": "API key",
+            "description": "Your OpenWeatherMap API key (openweathermap.org, under API keys).",
             "groupTitle": "Authentication",
             "width": null,
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
@@ -37,7 +40,7 @@
         {
             "name": "applyRateLimit",
             "title": "Apply free account rate limit",
-            "description": "Tick this if you have a free account. Only 60 API calls per minute are allowed.",
+            "description": "Waits 1.1 seconds between calls so a free account stays under 60 calls a minute. Untick only if your plan allows more.",
             "groupTitle": "Authentication",
             "width": null,
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
@@ -45,8 +48,8 @@
         },
         {
             "name": "apiChoice",
-            "title": "Type",
-            "description": null,
+            "title": "Weather",
+            "description": "Current weather: one record per location. 5-day forecast: 40 records per location, one every 3 hours.",
             "groupTitle": "Query",
             "width": null,
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -55,7 +58,7 @@
                 {
                     "name": null,
                     "title": "Current weather",
-                    "description": null,
+                    "description": "One record per location: conditions at the time of the call.",
                     "groupTitle": null,
                     "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
@@ -64,8 +67,8 @@
                 },
                 {
                     "name": null,
-                    "title": "5-Day forecast",
-                    "description": null,
+                    "title": "5-day forecast",
+                    "description": "40 records per location, every 3 hours for 5 days.",
                     "groupTitle": null,
                     "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
@@ -79,8 +82,8 @@
         },
         {
             "name": "searchChoice",
-            "title": "Search",
-            "description": null,
+            "title": "Find locations by",
+            "description": "How each record's location is given. Latitude and longitude is the supported way; OpenWeatherMap has deprecated searching by city or postcode (still answered, no longer maintained).",
             "groupTitle": "Query",
             "width": null,
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -88,8 +91,8 @@
             "choices": [
                 {
                     "name": null,
-                    "title": "By city, state and country code",
-                    "description": null,
+                    "title": "City, state and country code",
+                    "description": "A city field, optionally with a state (United States only) and a country code.",
                     "groupTitle": null,
                     "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
@@ -98,8 +101,8 @@
                 },
                 {
                     "name": null,
-                    "title": "By latitude/longitude",
-                    "description": null,
+                    "title": "Latitude and longitude",
+                    "description": "Two number fields, in decimal degrees.",
                     "groupTitle": null,
                     "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
@@ -108,8 +111,8 @@
                 },
                 {
                     "name": null,
-                    "title": "By postcode and country code",
-                    "description": null,
+                    "title": "Postcode and country code",
+                    "description": "A postcode or zip code field, and a country code (the United States if none).",
                     "groupTitle": null,
                     "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
@@ -124,7 +127,7 @@
         {
             "name": "unitsChoice",
             "title": "Units",
-            "description": null,
+            "description": "Units for temperatures and wind speed: Celsius with metres a second, Fahrenheit with miles an hour, or Kelvin with metres a second.",
             "groupTitle": "Query",
             "width": null,
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -167,10 +170,10 @@
         },
         {
             "name": "indexField",
-            "title": "Optional field to identify rows",
-            "description": null,
+            "title": "Field to identify records",
+            "description": "Optional. Copied into each output record as 'index', so the weather can be joined back to the input (a site or customer ID, for example).",
             "groupTitle": "Query",
-            "width": null,
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
@@ -180,9 +183,9 @@
         {
             "name": "latitudeField",
             "title": "Latitude field",
-            "description": null,
-            "groupTitle": "Parameters",
-            "width": null,
+            "description": "Latitude in decimal degrees. Used when finding locations by latitude and longitude.",
+            "groupTitle": "Location fields",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
@@ -192,9 +195,9 @@
         {
             "name": "longitudeField",
             "title": "Longitude field",
-            "description": null,
-            "groupTitle": "Parameters",
-            "width": null,
+            "description": "Longitude in decimal degrees. Used when finding locations by latitude and longitude.",
+            "groupTitle": "Location fields",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
@@ -204,9 +207,9 @@
         {
             "name": "cityField",
             "title": "City field",
-            "description": null,
-            "groupTitle": "Parameters",
-            "width": null,
+            "description": "City name, such as Leeds. Used when finding locations by city.",
+            "groupTitle": "Location fields",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
@@ -216,9 +219,9 @@
         {
             "name": "stateField",
             "title": "State field",
-            "description": null,
-            "groupTitle": "Parameters",
-            "width": null,
+            "description": "Optional. US state code, such as NY; OpenWeatherMap uses states for the United States only.",
+            "groupTitle": "Location fields",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
@@ -228,9 +231,9 @@
         {
             "name": "postcodeField",
             "title": "Postcode field",
-            "description": null,
-            "groupTitle": "Parameters",
-            "width": null,
+            "description": "Postcode or zip code. Used when finding locations by postcode.",
+            "groupTitle": "Location fields",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
@@ -240,9 +243,9 @@
         {
             "name": "countryField",
             "title": "Country code field (ISO 3166)",
-            "description": null,
-            "groupTitle": "Parameters",
-            "width": null,
+            "description": "Optional. Two-letter ISO 3166 country code, such as GB. Used with city or postcode searches.",
+            "groupTitle": "Location fields",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
@@ -254,9 +257,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
+            "label": "Weather",
+            "displayName": "Weather records",
+            "tooltip": "Current weather: one record per location found. Forecast: 40 records per location. OpenWeatherMap's fields (temperatures in main.*, wind.*, rain.1h, dt and others; times in UTC), then the location fields from the input and 'index'."
         }
     ],
     "docker": {

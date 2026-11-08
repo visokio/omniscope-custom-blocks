@@ -1,0 +1,49 @@
+{
+ "request": {
+  "departing": true,
+  "url": "https://api.flightstats.com/flex/schedules/rest/v1/json/flight/XK/88/departing/2026/11/24",
+  "airline": {
+   "requestedCode": "XK",
+   "fsCode": "XK"
+  },
+  "flight": {
+   "requested": "88",
+   "interpreted": "88"
+  },
+  "date": {
+   "year": "2026",
+   "month": "11",
+   "day": "24",
+   "interpreted": "2026-11-24"
+  }
+ },
+ "scheduledFlights": [
+  {
+   "carrierFsCode": "XK",
+   "flightNumber": "88",
+   "departureAirportFsCode": "NMR",
+   "arrivalAirportFsCode": "JNP",
+   "stops": 0,
+   "departureTime": "2026-11-24T09:40:00.000",
+   "arrivalTime": "2026-11-24T10:55:00.000",
+   "flightEquipmentIataCode": "320",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "Y",
+    "J"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "0",
+   "departureTerminal": "2",
+   "arrivalTerminal": "1"
+  }
+ ],
+ "appendix": {
+  "airlines": [],
+  "airports": [],
+  "equipments": []
+ }
+}

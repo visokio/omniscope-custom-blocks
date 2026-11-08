@@ -1,0 +1,6 @@
+{
+ "error": {
+  "type": "INVALID_PERMISSIONS_OR_MODEL_NOT_FOUND",
+  "message": "Invalid permissions, or the requested model was not found. Check that both your user and your token have the required permissions, and that the model names and/or ids are correct."
+ }
+}

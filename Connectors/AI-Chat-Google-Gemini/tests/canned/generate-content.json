@@ -1,0 +1,23 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "__REPLY__"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "__FINISH__",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 64,
+    "candidatesTokenCount": 11,
+    "totalTokenCount": 75
+  },
+  "modelVersion": "gemini-3.5-flash-lite",
+  "responseId": "canned-0001"
+}

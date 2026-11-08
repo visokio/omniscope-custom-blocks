@@ -1,0 +1,26 @@
+{
+ "status": "1",
+ "message": "OK",
+ "result": [
+  {
+   "account": "0xeee65f53e9421ce50211670eae679f02e8d28a79",
+   "balance": "184250000000000000000"
+  },
+  {
+   "account": "0x023c39c200661fccd268a29a0d347301ef56e64d",
+   "balance": "12750330000000000000"
+  },
+  {
+   "account": "0xc3cd6089065c3146e80a9c222670bbe4f4c54977",
+   "balance": "4100000000000000000"
+  },
+  {
+   "account": "0x656cf2d133187c8df95247f2866028de71159b42",
+   "balance": "0"
+  },
+  {
+   "account": "0xb4ea410fb9102f29a422eb14ab2f2d0f0cc02223",
+   "balance": "902500000000000000000"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+  "_note": "Invented replies to the sample prompts, used by the tests and placeholder.csv.",
+  "replies": {
+    "Return train Leeds to York for client workshop": "Travel",
+    "Lunch with client team at workshop": "Meals",
+    "Hotel, one night, Bristol, for site audit": "Accommodation",
+    "Printer paper and toner refill for home office": "Office supplies",
+    "Monthly subscription, diagram drawing tool": "Software",
+    "One-day spreadsheet modelling course": "Training",
+    "Parking at Manchester Piccadilly": "Travel",
+    "Taxi from station to supplier's warehouse": "Travel",
+    "Flowers for a colleague's leaving card": "Other",
+    "Team breakfast before quarterly planning day": "Meals"
+  }
+}

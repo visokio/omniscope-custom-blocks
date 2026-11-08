@@ -1,0 +1,8 @@
+{
+ "errors": [
+  {
+   "error": "RATE_LIMIT_REACHED",
+   "message": "Rate limit exceeded. Please try again later"
+  }
+ ]
+}

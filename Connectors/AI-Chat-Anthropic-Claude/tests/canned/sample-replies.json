@@ -1,0 +1,14 @@
+{
+  "_note": "Invented replies to the sample prompts, used by the tests and placeholder.csv.",
+  "replies": {
+    "My order was due on Friday and still hasn't arrived. The tracking page hasn't changed for four days.": "Delivery",
+    "The bedside lamp I bought flickers and then switches itself off after a few minutes.": "Product fault",
+    "I was charged twice for the same order. Please refund the second payment.": "Billing",
+    "The curtains are lovely but the wrong length. How do I send them back and swap them?": "Returns",
+    "Do you have a showroom in Manchester where I could see the sofas?": "Other",
+    "The courier left my parcel with a neighbour I don't know and I can't find it.": "Delivery",
+    "One of the four dining chairs arrived with a cracked leg.": "Product fault",
+    "I returned a rug three weeks ago and haven't had my refund yet.": "Returns",
+    "My discount code wasn't applied at checkout, so I paid full price.": "Billing"
+  }
+}

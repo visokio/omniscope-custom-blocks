@@ -1,0 +1,11 @@
+Claim,Employee,Date,Amount,Description,Instruction
+EX-7001,A. Fairweather,2025-06-02,48.6,Return train Leeds to York for client workshop,"Classify this expense claim into one category: Travel, Accommodation, Meals, Office supplies, Software, Training or Other. Reply with the category only."
+EX-7002,A. Fairweather,2025-06-02,23.15,Lunch with client team at workshop,"Classify this expense claim into one category: Travel, Accommodation, Meals, Office supplies, Software, Training or Other. Reply with the category only."
+EX-7003,B. Okafor,2025-06-03,129.0,"Hotel, one night, Bristol, for site audit","Classify this expense claim into one category: Travel, Accommodation, Meals, Office supplies, Software, Training or Other. Reply with the category only."
+EX-7004,B. Okafor,2025-06-04,12.99,Printer paper and toner refill for home office,"Classify this expense claim into one category: Travel, Accommodation, Meals, Office supplies, Software, Training or Other. Reply with the category only."
+EX-7005,C. Hughes,2025-06-05,19.0,"Monthly subscription, diagram drawing tool","Classify this expense claim into one category: Travel, Accommodation, Meals, Office supplies, Software, Training or Other. Reply with the category only."
+EX-7006,C. Hughes,2025-06-06,350.0,One-day spreadsheet modelling course,"Classify this expense claim into one category: Travel, Accommodation, Meals, Office supplies, Software, Training or Other. Reply with the category only."
+EX-7007,D. Marsh,2025-06-09,7.5,Parking at Manchester Piccadilly,"Classify this expense claim into one category: Travel, Accommodation, Meals, Office supplies, Software, Training or Other. Reply with the category only."
+EX-7008,D. Marsh,2025-06-09,31.4,Taxi from station to supplier's warehouse,"Classify this expense claim into one category: Travel, Accommodation, Meals, Office supplies, Software, Training or Other. Reply with the category only."
+EX-7009,E. Singh,2025-06-10,15.0,Flowers for a colleague's leaving card,"Classify this expense claim into one category: Travel, Accommodation, Meals, Office supplies, Software, Training or Other. Reply with the category only."
+EX-7010,E. Singh,2025-06-11,54.2,Team breakfast before quarterly planning day,"Classify this expense claim into one category: Travel, Accommodation, Meals, Office supplies, Software, Training or Other. Reply with the category only."

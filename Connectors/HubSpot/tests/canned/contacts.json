@@ -1,0 +1,94 @@
+{
+ "results": [
+  {
+   "id": "501",
+   "properties": {
+    "email": "priya.natarajan@fernhill-garden.example",
+    "firstname": "Priya",
+    "lastname": "Natarajan",
+    "lifecyclestage": "customer",
+    "createdate": "2025-01-10T08:00:00.000Z",
+    "lastmodifieddate": "2025-02-10T08:00:00.000Z",
+    "hs_object_id": "501"
+   },
+   "createdAt": "2025-01-10T08:00:00.000Z",
+   "updatedAt": "2025-02-10T08:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "502",
+   "properties": {
+    "email": "tom.okafor@marshlane.example",
+    "firstname": "Tom",
+    "lastname": "Okafor",
+    "lifecyclestage": "lead",
+    "createdate": "2025-01-11T08:00:00.000Z",
+    "lastmodifieddate": "2025-02-11T08:00:00.000Z",
+    "hs_object_id": "502"
+   },
+   "createdAt": "2025-01-11T08:00:00.000Z",
+   "updatedAt": "2025-02-11T08:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "503",
+   "properties": {
+    "email": "elena.rossi@brookside-allotments.example",
+    "firstname": "Elena",
+    "lastname": "Rossi",
+    "lifecyclestage": "customer",
+    "createdate": "2025-01-12T08:00:00.000Z",
+    "lastmodifieddate": "2025-02-12T08:00:00.000Z",
+    "hs_object_id": "503"
+   },
+   "createdAt": "2025-01-12T08:00:00.000Z",
+   "updatedAt": "2025-02-12T08:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "504",
+   "properties": {
+    "email": "sam.whitfield@willowbank.example",
+    "firstname": "Sam",
+    "lastname": "Whitfield",
+    "lifecyclestage": "opportunity",
+    "createdate": "2025-01-13T08:00:00.000Z",
+    "lastmodifieddate": "2025-02-13T08:00:00.000Z",
+    "hs_object_id": "504"
+   },
+   "createdAt": "2025-01-13T08:00:00.000Z",
+   "updatedAt": "2025-02-13T08:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "505",
+   "properties": {
+    "email": "hannah.lowe@oakfield-nurseries.example",
+    "firstname": "Hannah",
+    "lastname": "Lowe",
+    "lifecyclestage": "lead",
+    "createdate": "2025-01-14T08:00:00.000Z",
+    "lastmodifieddate": "2025-02-14T08:00:00.000Z",
+    "hs_object_id": "505"
+   },
+   "createdAt": "2025-01-14T08:00:00.000Z",
+   "updatedAt": "2025-02-14T08:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "506",
+   "properties": {
+    "email": "owen.pryce@greenway-estates.example",
+    "firstname": "Owen",
+    "lastname": "Pryce",
+    "lifecyclestage": "subscriber",
+    "createdate": "2025-01-15T08:00:00.000Z",
+    "lastmodifieddate": "2025-02-15T08:00:00.000Z",
+    "hs_object_id": "506"
+   },
+   "createdAt": "2025-01-15T08:00:00.000Z",
+   "updatedAt": "2025-02-15T08:00:00.000Z",
+   "archived": false
+  }
+ ]
+}

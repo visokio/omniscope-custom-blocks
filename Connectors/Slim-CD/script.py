@@ -31,23 +31,27 @@ def _as_bool(v: Any) -> bool:
     return str(v).strip().lower() in ("1", "true", "t", "yes", "y", "on")
 
 
+class SlimCDError(Exception):
+    pass
+
+
 def _fetch_json(params: Dict[str, str]) -> Dict[str, Any]:
-    r = requests.get(SLIMCD_URL, params=params, timeout=TIMEOUT_S)
-    r.raise_for_status()
+    # The credentials travel as URL parameters, so no message may include the URL (requests' own messages do)
+    try:
+        r = requests.get(SLIMCD_URL, params=params, timeout=TIMEOUT_S)
+    except requests.RequestException as e:
+        raise SlimCDError(f"Could not reach Slim CD: {type(e).__name__}.") from None
+    if r.status_code != 200:
+        raise SlimCDError(f"Slim CD answered HTTP {r.status_code}.")
 
     txt = r.text.strip()
-    if not txt:
-        return {}
-
     try:
-        obj = r.json()
+        obj = json.loads(txt)
     except Exception:
-        try:
-            obj = json.loads(txt)
-        except Exception:
-            obj = {"raw": txt}
-
-    return obj if isinstance(obj, dict) else {"raw": obj}
+        obj = None
+    if not isinstance(obj, dict) or not isinstance(obj.get("reply"), dict):
+        raise SlimCDError("Slim CD's answer was not the expected JSON reply (check the account and Site ID).")
+    return obj
 
 
 def _build_params(api: OmniscopeApi) -> Dict[str, str]:
@@ -58,11 +62,11 @@ def _build_params(api: OmniscopeApi) -> Dict[str, str]:
     siteid = _as_str_or_none(_opt(api, "siteid"))
 
     if not username:
-        raise ValueError("SlimCD username is required.")
+        raise SlimCDError("Enter the Slim CD username.")
     if password is None:
-        raise ValueError("Password option missing (can be empty string for API access credentials).")
+        raise SlimCDError("Enter the Slim CD password (it can be empty for API access credentials).")
     if not siteid:
-        raise ValueError("Site ID is required.")
+        raise SlimCDError("Enter the Site ID.")
 
     params["username"] = username
     params["password"] = str(password)
@@ -74,6 +78,8 @@ def _build_params(api: OmniscopeApi) -> Dict[str, str]:
 
     maxrecords = _as_str_or_none(_opt(api, "maxrecords"))
     if maxrecords:
+        if not maxrecords.isdigit() or int(maxrecords) < 1:
+            raise SlimCDError(f"Max records must be a whole number above 0; got '{maxrecords}'.")
         params["maxrecords"] = maxrecords
 
     if _as_bool(_opt(api, "reverseorder")):
@@ -113,15 +119,17 @@ def _build_params(api: OmniscopeApi) -> Dict[str, str]:
     return params
 
 
-def _extract_transactions(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
+def _check_reply(payload: Dict[str, Any]) -> Dict[str, Any]:
     reply = payload.get("reply", {})
-    if not isinstance(reply, dict):
-        return []
-
     responsecode = str(reply.get("responsecode", "")).strip()
     if responsecode and responsecode != "0":
-        desc = reply.get("description") or reply.get("response") or "SlimCD error"
-        raise ValueError(f"SlimCD error responsecode={responsecode}: {desc}")
+        desc = reply.get("description") or reply.get("response") or "no description"
+        raise SlimCDError(f"Slim CD refused the request (response code {responsecode}): {desc}")
+    return reply
+
+
+def _extract_transactions(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
+    reply = _check_reply(payload)
 
     datablock = reply.get("datablock", {})
     if not isinstance(datablock, dict):
@@ -187,12 +195,12 @@ KNOWN_TX_COLUMNS: List[str] = [
 
 
 def _convert_types(df: pd.DataFrame) -> pd.DataFrame:
-    if df.empty:
-        return df
+    # Converted even when empty, so the output's field types are the same whether or not records came back.
+    # zip stays text: ZIP codes have leading zeros (02134) and ZIP+4 forms (02134-1234).
 
     # Date
     if "transactiondate" in df.columns:
-        df["transactiondate"] = pd.to_datetime(df["transactiondate"], errors="coerce")
+        df["transactiondate"] = pd.to_datetime(df["transactiondate"], errors="coerce", format="mixed")
 
     # Int-ish (nullable)
     int_fields = [
@@ -204,7 +212,6 @@ def _convert_types(df: pd.DataFrame) -> pd.DataFrame:
         "voided",
         "checkid",
         "salestaxtype",
-        "zip",
     ]
     for c in int_fields:
         if c in df.columns:
@@ -214,7 +221,7 @@ def _convert_types(df: pd.DataFrame) -> pd.DataFrame:
     dec_fields = ["amount", "salestax", "tip", "giftbalance", "cashback"]
     for c in dec_fields:
         if c in df.columns:
-            df[c] = pd.to_numeric(df[c], errors="coerce")
+            df[c] = pd.to_numeric(df[c], errors="coerce").astype("float64")
 
     # Boolean-ish
     if "cardpresent" in df.columns:
@@ -223,17 +230,19 @@ def _convert_types(df: pd.DataFrame) -> pd.DataFrame:
             .astype(str)
             .str.strip()
             .str.lower()
-            .map({"true": True, "false": False, "1": True, "0": False})
+            .map({"true": True, "false": False, "1": True, "0": False, "y": True, "n": False,
+                  "yes": True, "no": False})
+            .astype("boolean")
         )
 
     return df
 
 
 def _force_all_text(df: pd.DataFrame) -> pd.DataFrame:
-    if df.empty:
-        return df
+    # Missing values stay missing (astype(str) would write the text "None" or "nan")
     for c in df.columns:
-        df[c] = df[c].astype(str)
+        df[c] = df[c].map(lambda v: None if v is None or (isinstance(v, float) and pd.isna(v)) else str(v))
+        df[c] = df[c].astype(object)
     return df
 
 
@@ -247,9 +256,9 @@ try:
     payload = _fetch_json(params)
 
     if recordcountonly_enabled:
-        # Keep current behavior (single-row output) if you use this mode
-        reply = payload.get("reply", {})
-        datablock = reply.get("datablock", {}) if isinstance(reply, dict) else {}
+        # One record with the count; an error reply stops the block like a transaction search does
+        reply = _check_reply(payload)
+        datablock = reply.get("datablock", {})
         recordcount = None
         if isinstance(datablock, dict):
             rc = datablock.get("RecordCount")
@@ -265,28 +274,26 @@ try:
             "startdate": params.get("startdate"),
             "enddate": params.get("enddate"),
         }])
+        out["recordcount"] = out["recordcount"].astype("Int64")
         api.write_output_records(out, output_number=0)
         api.close()
         raise SystemExit(0)
 
     rows = _extract_transactions(payload)
 
-    # KEY FIX: output empty transactions dataset (0 rows) instead of reply metadata
-    if not rows:
-        out = pd.DataFrame(columns=KNOWN_TX_COLUMNS)
-    else:
-        out = pd.DataFrame(rows)
+    # An empty search gives the known fields with no records, typed the same way as a full one
+    out = pd.DataFrame(rows) if rows else pd.DataFrame(columns=KNOWN_TX_COLUMNS, dtype=object)
 
-        # Ensure stable columns
-        for c in KNOWN_TX_COLUMNS:
-            if c not in out.columns:
-                out[c] = pd.NA
-        out = out[KNOWN_TX_COLUMNS + [c for c in out.columns if c not in KNOWN_TX_COLUMNS]]
+    # Ensure stable columns
+    for c in KNOWN_TX_COLUMNS:
+        if c not in out.columns:
+            out[c] = None
+    out = out[KNOWN_TX_COLUMNS + [c for c in out.columns if c not in KNOWN_TX_COLUMNS]]
 
-        out = _force_all_text(out) if treat_all_text else _convert_types(out)
+    out = _force_all_text(out) if treat_all_text else _convert_types(out)
 
     api.write_output_records(out, output_number=0)
-    api.close()
+    api.close(f"{len(out)} transaction(s).")
 
-except Exception as e:
+except SlimCDError as e:
     api.abort(str(e))

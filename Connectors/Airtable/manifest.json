@@ -1,6 +1,6 @@
 {
   "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
-  "name": "AirTable",
+  "name": "Airtable",
   "scriptFilename": "script.py",
   "language": "PYTHON",
   "minVersions": null,
@@ -9,23 +9,26 @@
   "isResourceIntensiveScript": false,
   "showPartitioning": false,
   "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANEAAACuCAMAAACfkBjJAAAAb1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8v0wLRAAAAJHRSTlMA0Uyx+ekFzBEKw7tV8KqZG3dEZoj0MuLVKN08IqGRLdpuf1+X359XAAAFlklEQVR42uSbgZKiMBBEIyaAURBRQEVQtP//G6/c2lqP25XZOHhOdt8HWDatnc4kqKdTdo01BYBkm26CmfKcvDHooW0XK2/JzhW+QKe18pKy0bjHaeWdUbP1BIPoplQeUS4L0ERrT2IiXMzxTZL2oMRz2Bi4MF+ESjJ5CmfMJlNCyVZ7PIROcyWQcqnxOFtpcU6GNU2yPCox7NoCJP7EORHWrinx8jjPzgYkHsV5nuIJVOcXpUTc7UHiUZwT1Y3NtiNTQlhYi4rz3SbB/yG6fJ0ScsNaQOnLVhVA402c56nGC3jWHj5eb+GC9DhnhbW80je7RBDAaHG+2xhIwfJTIgzmEIXZZL6FNc08UA9SpxoyOa1iz8KaRqe1b2E9apyHCwsvSJY79Q0OgsJ6jNKXTeEZ1WJ4NU3gH60aYAIfCQZWIHjJXN2lg5eY36Qoh5dM1X1O8JFgqP3ILz+fWaohjp4UoBtJ9xNKaq+uSpkBj9NUy9+6m3g3SsT8Z9y5ULmU2lsfn93NFsImQe/2/Jhp3Sd7/Dfqas9PGqtS9mSHUL1TT42ZXmaCDsLcbzocznsgad9EhO3HeiXWqNuAhPhjRFdJjS0+fO1igUZR9pRt0qutNbCt/j56EmYUYU/c9ZtAEaslALPtXQyTY9TVHse2VqvpmzL7zxmhiCHl1R7nG4rBVdEVC8DBqDzFk6k2GfENNDCkCFYDpFH8syW+Pbe/M6EIE0Mc0xCPaVx76KymFaHaA3i9UTd7iB0BrQhF9MB52rhGnVaD9sS37TWtqJ8PfaMCh8zh3cOgH56jIljt8MtmGkX/GOjnRitClDAWB7Y99LLurginCgDHqPHtORIrOqEIZsJZxUe3J6ZGOLQiaMtrWmO+XlBfP46tCLCsNryeuNlDW85XBFtwK7GLPXQj4SvCyQBPNapIc5fixlcEswWBaY+UUcQQxKW48RWhsOzpTNxNqAE8P1toRTfsCBO03TnS/UWtCUJWrHAUweoxxmizvGunNorsvFktOGs0X9Fty0QbJecu+YCi/paJNkrIVX9CEZJorAM3VnHjK6IrEd8ourjxFdGRxzeKX9z4ihAlcICYNDOKG0sRvWXiv+QQBoysZigitkxUCeUXN74iOh/4Rs0uzKzmKwIsnInqO2HQFGDDVwRbwJk/3d2LboJAEIXhg4oiSIttES+VWNz3f8aGbWPlogMVw56ZN/iimfysmD2jOUH1xHxEkdn2/+LPkuY+qH3YY4qMfzJ9p2iIVqY6o4pMunj87UThOzewSJ7wYVH/4hlOJD8yyVOIb5SPLuqXRGlCIDJZ1n3VrcAgMrHX9ePcgEPUMYkWK4BF1GXlhROASSTth+gAkInuniJPNwCf6OYp8uy4AyhFZha2ej4BVlHLfkjzBGAW1R6Z4o8AIBddnyL7RQDwiy6nyNnXElAh+nlk2pceLSJjQu88BxSJbO4oEk0PgCZRmTuKRDZ3FIls7igS2dxRJIpLjyKRzR1FIn+9BBSJbO4oEu3f54Aikc03RSKbb4pEpUeTqMxRTaIyRxWJbI4qEtkcVSSyOapI9Hv6pkZ0yVEloqscVSGq5BujKDeV2VbzjVE0ufvjKaMI0V++vaE+lKIguvPjKaUImLx4i/xGvtGJpM+FTySFDp1oCmHYRP4OwpCJQhnEJEo7vTnPI+r6NxQSUY//dFGIet0a4r4o63kVgOMiF27yuy1ivcTPG24ZOHId60Ci0I2r+9pFlLf2DSmaTR27f9XTsAwGE8XH8Xd1i4gv3J4j8l26a7Um4gs3ScQXbpKIL9wkEfmubhHxhZsk4gs3ScQXbpKIL9wkkYZlUBXxhZsk4gu3f4r83Nlwk0R84dZfdFq7HW7CRHzhJsy6tgzYdnVzAl/BMqjOIeZfBrVJXrN4UTxvGXwDT4ZsU961Z+EAAAAASUVORK5CYII=",
-  "description": "Retrieve records from an AirTable table using the REST API",
+  "description": "Reads every record of an Airtable table, or of one of its views, through the Airtable REST API, one record per row.",
   "category": "Connectors",
   "subcategory": null,
   "tags": [
-    "AirTable",
-    "connector"
+    "airtable",
+    "connector",
+    "rest api",
+    "spreadsheet database",
+    "no-code"
   ],
-  "introductoryText": "## Retrieve records from an Airtable table\n\n### Get a Personal Access Token\nGo to https://airtable.com/create/tokens/new and create a token with the data.records:read scope.\n\n### Finding base and table IDs from URLs\nWhen you have a base open in a compatible web browser, you should see a URL in the address bar\nIn between each slash, you will find a string that identifies the base and table IDs.\nBase IDs begin with \"app\"\nTable IDs begin with \"tbl\"",
+  "introductoryText": "Reads all the records of an Airtable table into Omniscope, page by page, with the record ID first and one field per Airtable field.\n\n**How to set it up**\n\n1. Create a personal access token at https://airtable.com/create/tokens with the `data.records:read` scope and access to the base, and paste it into **Personal access token**.\n2. Open the table in a web browser. The address has the form `https://airtable.com/appXXXXXXXX/tblXXXXXXXX/viwXXXXXXXX`: the part starting `app` is the **Base ID**, the part starting `tbl` is the table ID (or type the table's name).\n3. Optionally choose a **View** (its name or `viw` ID) to read only that view's records in its order, or a **Filter formula** such as `{Status} = 'Open'`.\n\nLists and objects (attachments, linked records, collaborators, multiple selects) arrive as JSON text. Airtable leaves empty values out of a record, so they arrive empty; an unticked checkbox arrives as false.",
   "dependencies": "requests",
   "options": [
     {
       "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
       "mandatory": true,
       "name": "token",
-      "title": "Personal Access Token",
-      "description": "Airtable personal access token",
-      "groupTitle": "Auth",
+      "title": "Personal access token",
+      "description": "An Airtable personal access token with the data.records:read scope and access to the base.",
+      "groupTitle": "Connection",
       "width": "ONE"
     },
     {
@@ -34,8 +37,8 @@
       "defaultValue": "",
       "name": "base_id",
       "title": "Base ID",
-      "description": "The Airtable base ID, e.g. appz4KliJgAEci0kd",
-      "groupTitle": "Request",
+      "description": "The ID of the base: the part of the table's web address that starts with \"app\", for example appA1b2C3d4E5f6G7.",
+      "groupTitle": "Table",
       "width": "ONE"
     },
     {
@@ -44,31 +47,51 @@
       "defaultValue": "",
       "name": "table",
       "title": "Table name or ID",
-      "description": "The Airtable table name or ID, e.g. tblY6wLfJ0nayUyna",
-      "groupTitle": "Request",
+      "description": "The table's name, exactly as shown in Airtable, or its ID (the part of the address that starts with \"tbl\").",
+      "groupTitle": "Table",
+      "width": "ONE"
+    },
+    {
+      "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+      "mandatory": false,
+      "defaultValue": null,
+      "name": "view",
+      "title": "View",
+      "description": "Optional. A view's name or ID (starts with \"viw\"): only the records in that view are read, in its order.",
+      "groupTitle": "Table",
+      "width": "ONE"
+    },
+    {
+      "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+      "mandatory": false,
+      "defaultValue": null,
+      "name": "filter_formula",
+      "title": "Filter formula",
+      "description": "Optional. An Airtable formula; only records for which it is true are read, for example {Status} = 'Open'.",
+      "groupTitle": "Table",
       "width": "ONE"
     },
     {
       "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
-      "numMin": null,
-      "numMax": null,
+      "numMin": 1,
+      "numMax": 100,
       "mandatory": false,
       "defaultValue": 100,
       "showAsSlider": false,
       "name": "page_size",
       "title": "Page size",
-      "description": "Number of records per request (1-100)",
+      "description": "Records per request, from 1 to 100 (Airtable's maximum). All pages are read whatever the size.",
       "groupTitle": "Advanced",
-      "width": "ONE"
+      "width": "HALF"
     }
   ],
   "blockOutputs": [
     {
       "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
       "id": "Output Data",
-      "label": "1",
-      "displayName": "Output",
-      "tooltip": null
+      "label": "Records",
+      "displayName": "Airtable records",
+      "tooltip": "One record per Airtable record: the record ID, then the table's fields. Lists and objects as JSON text."
     }
   ],
   "docker": {

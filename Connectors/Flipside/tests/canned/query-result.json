@@ -1,0 +1,502 @@
+{
+ "query_id": "clx9q2ex0001demo",
+ "status": "QUERY_STATE_SUCCESS",
+ "columns": [
+  "block_date",
+  "chain",
+  "tx_count",
+  "active_addresses",
+  "avg_fee_usd",
+  "__row_index"
+ ],
+ "column_types": [
+  "date",
+  "string",
+  "number",
+  "number",
+  "number",
+  "number"
+ ],
+ "records": [
+  {
+   "block_date": "2026-05-01T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1037389,
+   "active_addresses": 348777,
+   "avg_fee_usd": 1.9649,
+   "__row_index": 0
+  },
+  {
+   "block_date": "2026-05-01T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2525334,
+   "active_addresses": 761866,
+   "avg_fee_usd": 0.5336,
+   "__row_index": 1
+  },
+  {
+   "block_date": "2026-05-02T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1256920,
+   "active_addresses": 418147,
+   "avg_fee_usd": 1.1272,
+   "__row_index": 2
+  },
+  {
+   "block_date": "2026-05-02T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2355015,
+   "active_addresses": 734137,
+   "avg_fee_usd": 1.1927,
+   "__row_index": 3
+  },
+  {
+   "block_date": "2026-05-03T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1041439,
+   "active_addresses": 310204,
+   "avg_fee_usd": 2.5635,
+   "__row_index": 4
+  },
+  {
+   "block_date": "2026-05-03T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2138091,
+   "active_addresses": 643206,
+   "avg_fee_usd": 1.2265,
+   "__row_index": 5
+  },
+  {
+   "block_date": "2026-05-04T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1221082,
+   "active_addresses": 356526,
+   "avg_fee_usd": 1.7232,
+   "__row_index": 6
+  },
+  {
+   "block_date": "2026-05-04T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2341559,
+   "active_addresses": 686535,
+   "avg_fee_usd": 1.0337,
+   "__row_index": 7
+  },
+  {
+   "block_date": "2026-05-05T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1043059,
+   "active_addresses": 320182,
+   "avg_fee_usd": 0.5997,
+   "__row_index": 8
+  },
+  {
+   "block_date": "2026-05-05T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2035940,
+   "active_addresses": 729355,
+   "avg_fee_usd": 0.7204,
+   "__row_index": 9
+  },
+  {
+   "block_date": "2026-05-06T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1346651,
+   "active_addresses": 424318,
+   "avg_fee_usd": 1.8581,
+   "__row_index": 10
+  },
+  {
+   "block_date": "2026-05-06T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2480275,
+   "active_addresses": 830769,
+   "avg_fee_usd": 0.3514,
+   "__row_index": 11
+  },
+  {
+   "block_date": "2026-05-07T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1206179,
+   "active_addresses": 398881,
+   "avg_fee_usd": 0.8349,
+   "__row_index": 12
+  },
+  {
+   "block_date": "2026-05-07T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 1962957,
+   "active_addresses": 687002,
+   "avg_fee_usd": 0.8595,
+   "__row_index": 13
+  },
+  {
+   "block_date": "2026-05-08T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1067843,
+   "active_addresses": 337660,
+   "avg_fee_usd": 0.9237,
+   "__row_index": 14
+  },
+  {
+   "block_date": "2026-05-08T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2430830,
+   "active_addresses": 777958,
+   "avg_fee_usd": 0.3399,
+   "__row_index": 15
+  },
+  {
+   "block_date": "2026-05-09T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1286344,
+   "active_addresses": 369390,
+   "avg_fee_usd": 1.0736,
+   "__row_index": 16
+  },
+  {
+   "block_date": "2026-05-09T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 1918618,
+   "active_addresses": 650847,
+   "avg_fee_usd": 0.3544,
+   "__row_index": 17
+  },
+  {
+   "block_date": "2026-05-10T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1184017,
+   "active_addresses": 340332,
+   "avg_fee_usd": 1.553,
+   "__row_index": 18
+  },
+  {
+   "block_date": "2026-05-10T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2355772,
+   "active_addresses": 760415,
+   "avg_fee_usd": 0.7855,
+   "__row_index": 19
+  },
+  {
+   "block_date": "2026-05-11T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1169704,
+   "active_addresses": 368413,
+   "avg_fee_usd": 1.8291,
+   "__row_index": 20
+  },
+  {
+   "block_date": "2026-05-11T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 1963078,
+   "active_addresses": 624183,
+   "avg_fee_usd": 0.509,
+   "__row_index": 21
+  },
+  {
+   "block_date": "2026-05-12T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1302908,
+   "active_addresses": 462690,
+   "avg_fee_usd": 0.5595,
+   "__row_index": 22
+  },
+  {
+   "block_date": "2026-05-12T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 1995292,
+   "active_addresses": 670972,
+   "avg_fee_usd": 0.9324,
+   "__row_index": 23
+  },
+  {
+   "block_date": "2026-05-13T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1006687,
+   "active_addresses": 338640,
+   "avg_fee_usd": 2.6654,
+   "__row_index": 24
+  },
+  {
+   "block_date": "2026-05-13T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2181368,
+   "active_addresses": 671423,
+   "avg_fee_usd": 0.9298,
+   "__row_index": 25
+  },
+  {
+   "block_date": "2026-05-14T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1328697,
+   "active_addresses": 400048,
+   "avg_fee_usd": 1.1255,
+   "__row_index": 26
+  },
+  {
+   "block_date": "2026-05-14T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2025492,
+   "active_addresses": 668966,
+   "avg_fee_usd": 0.8033,
+   "__row_index": 27
+  },
+  {
+   "block_date": "2026-05-15T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1089625,
+   "active_addresses": 338907,
+   "avg_fee_usd": 0.4835,
+   "__row_index": 28
+  },
+  {
+   "block_date": "2026-05-15T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2107778,
+   "active_addresses": 755917,
+   "avg_fee_usd": 0.9508,
+   "__row_index": 29
+  },
+  {
+   "block_date": "2026-05-16T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1098904,
+   "active_addresses": 389990,
+   "avg_fee_usd": 1.2599,
+   "__row_index": 30
+  },
+  {
+   "block_date": "2026-05-16T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2067270,
+   "active_addresses": 584647,
+   "avg_fee_usd": 0.3952,
+   "__row_index": 31
+  },
+  {
+   "block_date": "2026-05-17T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1069663,
+   "active_addresses": 319190,
+   "avg_fee_usd": 2.4952,
+   "__row_index": 32
+  },
+  {
+   "block_date": "2026-05-17T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2075923,
+   "active_addresses": 622544,
+   "avg_fee_usd": 0.9734,
+   "__row_index": 33
+  },
+  {
+   "block_date": "2026-05-18T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1320998,
+   "active_addresses": 400671,
+   "avg_fee_usd": 2.2278,
+   "__row_index": 34
+  },
+  {
+   "block_date": "2026-05-18T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2145209,
+   "active_addresses": 696954,
+   "avg_fee_usd": 0.9632,
+   "__row_index": 35
+  },
+  {
+   "block_date": "2026-05-19T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1329808,
+   "active_addresses": 452906,
+   "avg_fee_usd": 1.6196,
+   "__row_index": 36
+  },
+  {
+   "block_date": "2026-05-19T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2459529,
+   "active_addresses": 760775,
+   "avg_fee_usd": 0.6957,
+   "__row_index": 37
+  },
+  {
+   "block_date": "2026-05-20T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1335991,
+   "active_addresses": 432427,
+   "avg_fee_usd": 2.2563,
+   "__row_index": 38
+  },
+  {
+   "block_date": "2026-05-20T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2109108,
+   "active_addresses": 744986,
+   "avg_fee_usd": 0.9845,
+   "__row_index": 39
+  },
+  {
+   "block_date": "2026-05-21T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1086558,
+   "active_addresses": 385392,
+   "avg_fee_usd": 1.5254,
+   "__row_index": 40
+  },
+  {
+   "block_date": "2026-05-21T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2125723,
+   "active_addresses": 639885,
+   "avg_fee_usd": 0.3409,
+   "__row_index": 41
+  },
+  {
+   "block_date": "2026-05-22T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1070225,
+   "active_addresses": 358931,
+   "avg_fee_usd": 0.7375,
+   "__row_index": 42
+  },
+  {
+   "block_date": "2026-05-22T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2072045,
+   "active_addresses": 654331,
+   "avg_fee_usd": 0.8986,
+   "__row_index": 43
+  },
+  {
+   "block_date": "2026-05-23T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1133177,
+   "active_addresses": 388461,
+   "avg_fee_usd": 1.0163,
+   "__row_index": 44
+  },
+  {
+   "block_date": "2026-05-23T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2145119,
+   "active_addresses": 673568,
+   "avg_fee_usd": 0.3733,
+   "__row_index": 45
+  },
+  {
+   "block_date": "2026-05-24T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1077809,
+   "active_addresses": 314417,
+   "avg_fee_usd": 2.141,
+   "__row_index": 46
+  },
+  {
+   "block_date": "2026-05-24T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 1997462,
+   "active_addresses": 666045,
+   "avg_fee_usd": 0.491,
+   "__row_index": 47
+  },
+  {
+   "block_date": "2026-05-25T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1226433,
+   "active_addresses": 407816,
+   "avg_fee_usd": 1.2483,
+   "__row_index": 48
+  },
+  {
+   "block_date": "2026-05-25T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2520508,
+   "active_addresses": 838177,
+   "avg_fee_usd": 0.9145,
+   "__row_index": 49
+  },
+  {
+   "block_date": "2026-05-26T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1016201,
+   "active_addresses": 317585,
+   "avg_fee_usd": 1.0386,
+   "__row_index": 50
+  },
+  {
+   "block_date": "2026-05-26T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2212455,
+   "active_addresses": 784683,
+   "avg_fee_usd": 1.3018,
+   "__row_index": 51
+  },
+  {
+   "block_date": "2026-05-27T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1021666,
+   "active_addresses": 341655,
+   "avg_fee_usd": 2.6421,
+   "__row_index": 52
+  },
+  {
+   "block_date": "2026-05-27T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2260723,
+   "active_addresses": 650500,
+   "avg_fee_usd": 1.3054,
+   "__row_index": 53
+  },
+  {
+   "block_date": "2026-05-28T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1149218,
+   "active_addresses": 411930,
+   "avg_fee_usd": 2.4987,
+   "__row_index": 54
+  },
+  {
+   "block_date": "2026-05-28T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2451203,
+   "active_addresses": 868947,
+   "avg_fee_usd": 0.2966,
+   "__row_index": 55
+  },
+  {
+   "block_date": "2026-05-29T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1277821,
+   "active_addresses": 388987,
+   "avg_fee_usd": 0.7244,
+   "__row_index": 56
+  },
+  {
+   "block_date": "2026-05-29T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2152129,
+   "active_addresses": 703988,
+   "avg_fee_usd": 0.2167,
+   "__row_index": 57
+  },
+  {
+   "block_date": "2026-05-30T00:00:00.000Z",
+   "chain": "ethereum",
+   "tx_count": 1157377,
+   "active_addresses": 396680,
+   "avg_fee_usd": 1.5887,
+   "__row_index": 58
+  },
+  {
+   "block_date": "2026-05-30T00:00:00.000Z",
+   "chain": "arbitrum",
+   "tx_count": 2251218,
+   "active_addresses": 683703,
+   "avg_fee_usd": 1.4376,
+   "__row_index": 59
+  }
+ ]
+}

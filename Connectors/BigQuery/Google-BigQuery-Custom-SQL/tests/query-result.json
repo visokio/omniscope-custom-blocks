@@ -1,0 +1,235 @@
+{
+ "sql": "SELECT region, DATE_TRUNC(order_date, MONTH) AS month, COUNT(*) AS orders, SUM(amount) AS revenue, ROUND(AVG(amount), 2) AS avg_basket, ARRAY_AGG(product ORDER BY qty DESC LIMIT 2) AS top_products FROM `example-project.retail.orders` WHERE order_date >= '2026-01-01' GROUP BY region, month ORDER BY month, region",
+ "schema": [
+  [
+   "region",
+   "STRING",
+   "NULLABLE"
+  ],
+  [
+   "month",
+   "DATE",
+   "NULLABLE"
+  ],
+  [
+   "orders",
+   "INT64",
+   "NULLABLE"
+  ],
+  [
+   "revenue",
+   "NUMERIC",
+   "NULLABLE"
+  ],
+  [
+   "avg_basket",
+   "NUMERIC",
+   "NULLABLE"
+  ],
+  [
+   "top_products",
+   "STRING",
+   "REPEATED"
+  ]
+ ],
+ "rows": [
+  [
+   "North",
+   "2026-01-01",
+   238,
+   5471.62,
+   22.99,
+   [
+    "Oat flapjack",
+    "Ginger beer"
+   ]
+  ],
+  [
+   "Midlands",
+   "2026-01-01",
+   236,
+   5859.88,
+   24.83,
+   [
+    "Pork pie",
+    "Ginger beer"
+   ]
+  ],
+  [
+   "South East",
+   "2026-01-01",
+   493,
+   8213.38,
+   16.66,
+   [
+    "Sourdough",
+    "Cold brew"
+   ]
+  ],
+  [
+   "South West",
+   "2026-01-01",
+   192,
+   5896.32,
+   30.71,
+   [
+    "Cream tea kit",
+    "Cider vinegar"
+   ]
+  ],
+  [
+   "Scotland",
+   "2026-01-01",
+   421,
+   6879.14,
+   16.34,
+   [
+    "Shortbread",
+    "Oatcakes"
+   ]
+  ],
+  [
+   "Wales",
+   "2026-01-01",
+   210,
+   6524.7,
+   31.07,
+   [
+    "Bara brith",
+    "Welsh cakes"
+   ]
+  ],
+  [
+   "North",
+   "2026-02-01",
+   610,
+   12590.4,
+   20.64,
+   [
+    "Oat flapjack",
+    "Ginger beer"
+   ]
+  ],
+  [
+   "Midlands",
+   "2026-02-01",
+   453,
+   10514.13,
+   23.21,
+   [
+    "Pork pie",
+    "Ginger beer"
+   ]
+  ],
+  [
+   "South East",
+   "2026-02-01",
+   375,
+   7110.0,
+   18.96,
+   [
+    "Sourdough",
+    "Cold brew"
+   ]
+  ],
+  [
+   "South West",
+   "2026-02-01",
+   471,
+   7762.08,
+   16.48,
+   [
+    "Cream tea kit",
+    "Cider vinegar"
+   ]
+  ],
+  [
+   "Scotland",
+   "2026-02-01",
+   333,
+   8681.31,
+   26.07,
+   [
+    "Shortbread",
+    "Oatcakes"
+   ]
+  ],
+  [
+   "Wales",
+   "2026-02-01",
+   526,
+   12213.72,
+   23.22,
+   [
+    "Bara brith",
+    "Welsh cakes"
+   ]
+  ],
+  [
+   "North",
+   "2026-03-01",
+   594,
+   14184.72,
+   23.88,
+   [
+    "Oat flapjack",
+    "Ginger beer"
+   ]
+  ],
+  [
+   "Midlands",
+   "2026-03-01",
+   539,
+   17064.74,
+   31.66,
+   [
+    "Pork pie",
+    "Ginger beer"
+   ]
+  ],
+  [
+   "South East",
+   "2026-03-01",
+   239,
+   5728.83,
+   23.97,
+   [
+    "Sourdough",
+    "Cold brew"
+   ]
+  ],
+  [
+   "South West",
+   "2026-03-01",
+   269,
+   6108.99,
+   22.71,
+   [
+    "Cream tea kit",
+    "Cider vinegar"
+   ]
+  ],
+  [
+   "Scotland",
+   "2026-03-01",
+   612,
+   15085.8,
+   24.65,
+   [
+    "Shortbread",
+    "Oatcakes"
+   ]
+  ],
+  [
+   "Wales",
+   "2026-03-01",
+   335,
+   6110.4,
+   18.24,
+   [
+    "Bara brith",
+    "Welsh cakes"
+   ]
+  ]
+ ]
+}

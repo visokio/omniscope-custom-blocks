@@ -1,0 +1,32 @@
+[
+ {
+  "id": "64b0c0ffee0000000000b001",
+  "name": "Content calendar",
+  "desc": "Posts, newsletters and webinars, by stage.",
+  "closed": false,
+  "url": "https://trello.com/b/Board0001/content-calendar",
+  "shortUrl": "https://trello.com/b/Board0001",
+  "dateLastActivity": "2025-03-17T10:30:00.000Z",
+  "idOrganization": "64a0c0ffee0000000000w001"
+ },
+ {
+  "id": "64b0c0ffee0000000000b002",
+  "name": "Trade show 2025",
+  "desc": "",
+  "closed": false,
+  "url": "https://trello.com/b/Board0002/trade-show-2025",
+  "shortUrl": "https://trello.com/b/Board0002",
+  "dateLastActivity": "2025-03-12T15:05:00.000Z",
+  "idOrganization": "64a0c0ffee0000000000w001"
+ },
+ {
+  "id": "64b0c0ffee0000000000b003",
+  "name": "Website fixes (archived)",
+  "desc": "",
+  "closed": true,
+  "url": "https://trello.com/b/Board0003/website-fixes",
+  "shortUrl": "https://trello.com/b/Board0003",
+  "dateLastActivity": "2024-11-02T08:00:00.000Z",
+  "idOrganization": "64a0c0ffee0000000000w001"
+ }
+]

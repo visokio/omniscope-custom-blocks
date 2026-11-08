@@ -1,0 +1,73 @@
+{
+ "records": [
+  {
+   "id": "rec08AbCdEfGhIjK",
+   "createdTime": "2026-03-09T09:08:00.000Z",
+   "fields": {
+    "Name": "Oskar Nowak",
+    "Email": "oskar@example.com",
+    "Workshop": "Pottery for beginners",
+    "Seats": 1,
+    "Tags": [
+     "weekend"
+    ],
+    "Booked on": "2026-03-09"
+   }
+  },
+  {
+   "id": "rec09AbCdEfGhIjK",
+   "createdTime": "2026-03-10T09:09:00.000Z",
+   "fields": {
+    "Name": "Fatima Rahman",
+    "Email": "fatima@example.com",
+    "Workshop": "Screen printing",
+    "Seats": 4,
+    "Paid": true,
+    "Tags": [
+     "group"
+    ],
+    "Booked on": "2026-03-10"
+   }
+  },
+  {
+   "id": "rec10AbCdEfGhIjK",
+   "createdTime": "2026-03-11T09:10:00.000Z",
+   "fields": {
+    "Name": "Ellie Marsh",
+    "Email": "ellie@example.com",
+    "Workshop": "Watercolour landscapes",
+    "Seats": 1,
+    "Paid": true,
+    "Tags": [
+     "weekend"
+    ],
+    "Booked on": "2026-03-11"
+   }
+  },
+  {
+   "id": "rec11AbCdEfGhIjK",
+   "createdTime": "2026-03-12T09:11:00.000Z",
+   "fields": {
+    "Name": "Dev Patel",
+    "Email": "dev@example.com",
+    "Workshop": "Life drawing",
+    "Booked on": "2026-03-12"
+   }
+  },
+  {
+   "id": "rec12AbCdEfGhIjK",
+   "createdTime": "2026-03-13T09:12:00.000Z",
+   "fields": {
+    "Name": "Sophie Grant",
+    "Email": "sophie@example.com",
+    "Workshop": "Screen printing",
+    "Seats": 2,
+    "Paid": true,
+    "Tags": [
+     "evening"
+    ],
+    "Booked on": "2026-03-13"
+   }
+  }
+ ]
+}

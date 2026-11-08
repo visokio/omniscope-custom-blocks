@@ -1,0 +1,23 @@
+{
+  "id": "msg_canned0002",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-haiku-5-5",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "The customer mentions a second payment.",
+      "signature": "c2lnbmF0dXJl"
+    },
+    {
+      "type": "text",
+      "text": "__REPLY__"
+    }
+  ],
+  "stop_reason": "__FINISH__",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 58,
+    "output_tokens": 40
+  }
+}

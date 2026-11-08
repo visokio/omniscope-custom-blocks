@@ -20,6 +20,10 @@ class SalesforceConnectorError(RuntimeError):
 
 
 _IDENTIFIER_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
+COMPOUND_TYPES = {"address", "location"}
+# Salesforce's date-time format in query results, e.g. 2025-03-04T09:15:00.000+0000
+_DATETIME_RE = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:?\d{2})$")
+_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 _FIELD_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_.]*$")
 
 
@@ -377,11 +381,13 @@ def discover_object_fields(
     headers: Dict[str, str],
     timeout: int,
     object_name: str,
+    field_types: Dict[str, str],
 ) -> List[str]:
     """Discover all readable field API names exposed by sObject Describe.
 
     Describe is permission-aware, so the returned fields reflect what the OAuth
-    Run As user can see. Deprecated/hidden fields are skipped. The resulting
+    Run As user can see. Deprecated/hidden and compound (address, location) fields
+    are skipped; field_types receives each field's Salesforce type. The resulting
     names are used to generate a normal REST SOQL SELECT statement; FIELDS(ALL)
     is deliberately not used because Salesforce bounds that form of query.
     """
@@ -395,9 +401,13 @@ def discover_object_fields(
             continue
         if field.get("deprecatedAndHidden") is True:
             continue
+        # Compound fields (BillingAddress, a location) repeat their component fields, which are loaded anyway
+        if field.get("type") in COMPOUND_TYPES:
+            continue
         name = field.get("name")
         if isinstance(name, str) and _FIELD_RE.match(name):
             names.append(name)
+            field_types[name] = str(field.get("type") or "")
 
     # Preserve Describe order while removing any accidental duplicates.
     names = list(dict.fromkeys(names))
@@ -415,6 +425,42 @@ def build_all_fields_soql(object_name: str, field_names: List[str]) -> str:
     if not field_names:
         raise SalesforceConnectorError("No Salesforce fields were discovered for %s." % object_name)
     return "SELECT %s FROM %s" % (", ".join(field_names), object_name)
+
+
+def records_frame(
+    records: List[Dict[str, Any]],
+    columns: Optional[List[str]] = None,
+    field_types: Optional[Dict[str, str]] = None,
+) -> pd.DataFrame:
+    """Records as a table: date and date-time fields as dates (UTC), no empty relationship placeholders.
+
+    `columns` (the queried fields, when known) gives an empty result its fields. `field_types` (from Describe)
+    says which fields are dates; without it, text that is entirely in Salesforce's date or date-time format is.
+    """
+    if records:
+        df = pd.DataFrame.from_records(records)
+    else:
+        df = pd.DataFrame({c: pd.Series([], dtype=object) for c in (columns or [])})
+    # A null lookup (Owner = null) gives a field "Owner" while other records give "Owner.Name": drop the empty one
+    for column in list(df.columns):
+        if df[column].isna().all() and any(str(c).startswith(column + ".") for c in df.columns):
+            df = df.drop(columns=column)
+    for column in df.columns:
+        kind = (field_types or {}).get(column)
+        values = df[column]
+        if kind is None:
+            text = values.dropna()
+            if not len(text) or not text.map(lambda v: isinstance(v, str)).all():
+                continue
+            if text.map(lambda v: bool(_DATETIME_RE.match(v))).all():
+                kind = "datetime"
+            elif text.map(lambda v: bool(_DATE_RE.match(v))).all():
+                kind = "date"
+        if kind == "datetime":
+            df[column] = pd.to_datetime(values, utc=True, errors="coerce", format="ISO8601")
+        elif kind == "date":
+            df[column] = pd.to_datetime(values, utc=True, errors="coerce", format="%Y-%m-%d")
+    return df
 
 
 def list_objects(
@@ -547,12 +593,15 @@ def main() -> None:
             raise SalesforceConnectorError("Unknown operation: %s" % operation)
 
         query_mode = str(option(api, "queryMode", "simple")).strip()
+        columns: Optional[List[str]] = None
+        field_types: Dict[str, str] = {}
         if query_mode == "simple":
             simple_object = str(option(api, "simpleObject", "Account")).strip()
             api.update_message("Salesforce: discovering fields for %s" % simple_object)
             field_names = discover_object_fields(
-                session, instance_url, api_version, headers, timeout, simple_object
+                session, instance_url, api_version, headers, timeout, simple_object, field_types
             )
+            columns = field_names
             soql = build_all_fields_soql(simple_object, field_names)
             object_name = simple_object
             api.update_message(
@@ -563,6 +612,7 @@ def main() -> None:
             where_clause = option(api, "whereClause")
             order_by = option(api, "orderBy")
             soql = build_soql(object_name, fields_text, where_clause, order_by)
+            columns = validate_builder_fields(object_name, fields_text)
         elif query_mode == "soql":
             soql = required_option(api, "soql", "SOQL query")
         else:
@@ -582,13 +632,14 @@ def main() -> None:
             api,
         )
 
-        if records:
-            output = pd.DataFrame.from_records(records)
+        capped = bool(max_records) and len(records) >= max_records
+        if records or columns:
+            output = records_frame(records, columns, field_types)
             api.write_output_records(output, output_number=0)
-            api.close(
-                message="Loaded %s Salesforce records using REST API %s."
-                % (format(len(output), ","), api_version)
-            )
+            message = "Loaded %s Salesforce records using REST API %s." % (format(len(output), ","), api_version)
+            if capped:
+                message += " Stopped at Maximum records (%s); there may be more." % format(max_records, ",")
+            api.close(message=message)
         else:
             api.close(message="Salesforce query returned 0 records using REST API %s." % api_version)
 
