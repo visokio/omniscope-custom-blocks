@@ -1,0 +1,9 @@
+Current Name,New Name
+acct_no,Account Number
+txn_dt,Transaction Date
+txn_ref,Reference
+dr_cr,Debit or Credit
+amt_gbp,Amount
+bal_gbp,Balance
+mcc,Merchant Category
+branch_cd,Branch Code

@@ -1,206 +1,161 @@
+"""Data Quality Analyser: finds duplicate records, missing values and numeric outliers.
+
+Outputs (each only when its option is ticked):
+  annotated - the input with Row ID, Issue Flags and Issue Count fields
+  issues    - one record per issue found: Row ID, Issue Type, Issue Field, Issue Details
+  enriched  - the input with missing numbers filled with the field's median and missing text with its mode,
+              plus a Was Enriched field
+"""
 from omniscope.api import OmniscopeApi
 import pandas as pd
-import numpy as np
-from pandas.api.types import is_integer_dtype  # <-- needed for median fill
+from pandas.api.types import is_bool_dtype, is_integer_dtype, is_numeric_dtype, is_object_dtype, is_string_dtype
 
 api = OmniscopeApi()
 
-# --- 0. Read block options ---
-# Configure these as boolean options in the block UI: annotateData, findIssues, enrichData
 annotate_data = bool(api.get_option("annotateData"))
 find_issues = bool(api.get_option("findIssues"))
 enrich_data = bool(api.get_option("enrichData"))
 
-# --- 1. Read input data ---
 df = api.read_input_records(input_number=0)
+if df is None:
+    api.abort("Connect a data source to the block's input.")
 
-if df is None or df.empty:
-    api.commit(message="No input data.")
-    raise SystemExit()
-
-# Work on a copy and create a stable row key
-df = df.copy().reset_index(drop=True)
-df["Row ID"] = df.index  # stable row identifier for joins / reporting
-
-# If nothing is selected, just stop
 if not (annotate_data or find_issues or enrich_data):
-    api.commit(message="No operations selected.")
-    raise SystemExit()
+    api.abort("Tick at least one output: annotated data, issue log or enriched data.")
 
-# --- 2. Prepare helpers for issue detection ---
-issues_rows = []   # collect issue records here (long format)
-row_flags = pd.Series("", index=df.index, name="Issue Flags")
+df = df.reset_index(drop=True)
+input_fields = list(df.columns)
 
-def add_issue(mask, issue_type, column=None, details=None):
-    """
-    Record one issue row per (row, issue) in a compact issues table.
-    Also append a code to the per-row Issue Flags field for annotated output.
-    """
+
+def free_name(name, taken):
+    """`name`, or `name 2`, `name 3`... if the input already has a field called `name`."""
+    candidate, n = name, 2
+    while candidate in taken:
+        candidate, n = f"{name} {n}", n + 1
+    return candidate
+
+
+renamed = []
+
+
+def added_field(name):
+    chosen = free_name(name, set(input_fields) | set(added.values()))
+    if chosen != name:
+        renamed.append(f"{name} -> {chosen}")
+    return chosen
+
+
+added = {}
+for name in ["Row ID", "Issue Flags", "Issue Count", "Was Enriched"]:
+    added[name] = added_field(name)
+ROW_ID, FLAGS, COUNT, ENRICHED = (added[k] for k in ["Row ID", "Issue Flags", "Issue Count", "Was Enriched"])
+
+# Row ID is the record's position in the input, counting from 1; it links the three outputs
+row_id = pd.Series(range(1, len(df) + 1), index=df.index, dtype="int64")
+
+
+def is_text(dtype):
+    return (is_object_dtype(dtype) or is_string_dtype(dtype)) and not is_bool_dtype(dtype)
+
+
+numeric_fields = [c for c in input_fields if is_numeric_dtype(df[c].dtype) and not is_bool_dtype(df[c].dtype)]
+text_fields = [c for c in input_fields if is_text(df[c].dtype)]
+
+# --- Issue detection ---
+issue_tables = []
+flag_lists = [[] for _ in range(len(df))]
+
+
+def add_issue(mask, issue_type, field, details):
+    mask = pd.Series(mask, index=df.index).fillna(False).astype(bool)
     if not mask.any():
         return
-
-    # Update per-row flags (for Annotated output – quick human-readable view)
-    code = issue_type if column is None else f"{issue_type}:{column}"
-    row_flags.loc[mask] = (
-        row_flags.loc[mask]
-        .replace("", code)
-        .where(row_flags.loc[mask] == "", row_flags.loc[mask] + "," + code)
-    )
-
-    # Build a compact issues table: one row per issue instance
-    rows = df.index[mask]
-    tmp = pd.DataFrame({
-        "Row ID": rows,
+    code = issue_type if field is None else f"{issue_type}:{field}"
+    positions = mask.to_numpy().nonzero()[0]
+    for p in positions:
+        flag_lists[p].append(code)
+    issue_tables.append(pd.DataFrame({
+        ROW_ID: row_id.iloc[positions].to_numpy(),
         "Issue Type": issue_type,
-        "Issue Column": column,
+        "Issue Field": field,
         "Issue Details": details,
-    })
-    issues_rows.append(tmp)
+    }))
 
-# --- 3. Detect issues only if needed (annotateData or findIssues) ---
-numeric_cols = df.select_dtypes(include=[np.number]).columns
-# Don't treat Row ID as a numeric field for quality checks
-numeric_cols = [c for c in numeric_cols if c != "Row ID"]
 
-if annotate_data or find_issues:
-    # 3.1 Detect duplicates (full-row duplicates)
-    dup_mask = df.drop(columns=["Row ID"]).duplicated(keep=False)  # exclude technical key
-    add_issue(
-        dup_mask,
-        issue_type="DUPLICATE_ROW",
-        column=None,
-        details="Row is a duplicate of at least one other row (full-row duplicate).",
-    )
+if (annotate_data or find_issues) and len(df):
+    add_issue(df.duplicated(keep=False), "DUPLICATE_ROW", None,
+              "Every field is the same as in at least one other record.")
 
-    # 3.2 Detect missing values
-    missing_mask = df.drop(columns=["Row ID"]).isna()
-    for col in missing_mask.columns:
-        col_mask = missing_mask[col]
-        if col_mask.any():
-            add_issue(
-                col_mask,
-                issue_type="MISSING VALUE",
-                column=col,
-                details="Value is null/NaN.",
-            )
+    for col in input_fields:
+        add_issue(df[col].isna(), "MISSING_VALUE", col, "Value is missing.")
 
-    # 3.3 Detect outliers in numeric columns (IQR-based)
-    for col in numeric_cols:
-        series = df[col].dropna()
-        if series.empty:
+    for col in numeric_fields:
+        values = df[col].astype("float64")
+        present = values.dropna()
+        if present.empty:
             continue
-
-        q1, q3 = series.quantile([0.25, 0.75])
+        q1, q3 = present.quantile([0.25, 0.75])
         iqr = q3 - q1
         if iqr == 0:
-            # No spread -> outlier detection not meaningful
-            continue
+            continue  # no spread: every value but the common one would be an outlier
+        lower, upper = q1 - 1.5 * iqr, q3 + 1.5 * iqr
+        add_issue((values < lower) | (values > upper), "OUTLIER", col,
+                  f"Value outside the range {lower:.4g} to {upper:.4g} (1.5 times the interquartile range "
+                  f"beyond the quartiles).")
 
-        lower = q1 - 1.5 * iqr
-        upper = q3 + 1.5 * iqr
-        out_mask = (df[col] < lower) | (df[col] > upper)
+issue_count = sum(len(f) for f in flag_lists)
 
-        if out_mask.any():
-            details = (
-                f"Value outside IQR bounds: [{lower:.4g}, {upper:.4g}] "
-                f"(col='{col}')."
-            )
-            add_issue(
-                out_mask,
-                issue_type="OUTLIER",
-                column=col,
-                details=details,
-            )
-
-# --- 4. Build Issue log output (Output 1) if requested ---
-issues_df = None
 if find_issues:
-    if issues_rows:
-        issues_df = pd.concat(issues_rows, axis=0, ignore_index=True)
+    if issue_tables:
+        issues_df = pd.concat(issue_tables, ignore_index=True)
     else:
-        # No issues: still output a simple table so downstream blocks don't break
-        # Force Row ID to use the same (numeric) dtype as in df
         issues_df = pd.DataFrame({
-            "Row ID": pd.Series(dtype=df["Row ID"].dtype),
-            "Issue Type": pd.Series(dtype="object"),
-            "Issue Column": pd.Series(dtype="object"),
-            "Issue Details": pd.Series(dtype="object"),
+            ROW_ID: pd.Series(dtype="int64"),
+            "Issue Type": pd.Series(dtype=object),
+            "Issue Field": pd.Series(dtype=object),
+            "Issue Details": pd.Series(dtype=object),
         })
-    api.write_output(issues_df, 1)
+    api.write_output(issues_df, "issues")
 
-# --- 5. Build Annotated data output (Output 0) if requested ---
 if annotate_data:
     annotated_df = df.copy()
+    annotated_df.insert(0, ROW_ID, row_id)
+    annotated_df[FLAGS] = pd.Series([",".join(f) for f in flag_lists], index=df.index, dtype=object)
+    annotated_df[COUNT] = pd.Series([len(f) for f in flag_lists], index=df.index, dtype="int64")
+    api.write_output(annotated_df, "annotated")
 
-    # Per-row human-readable flags
-    annotated_df["Issue Flags"] = row_flags
-
-    # Numeric summary: how many issues affect each row?
-    issue_count = pd.Series(0, index=df.index, dtype=int)
-    nonempty = row_flags != ""
-    issue_count[nonempty] = row_flags[nonempty].str.count(",") + 1
-    annotated_df["Issue Count"] = issue_count
-
-    api.write_output(annotated_df, 0)
-
-# --- 6. Enrich data (Output 2) if requested ---
+filled = 0
 if enrich_data:
     enriched_df = df.copy()
-
-    # Fill numeric columns
-    for col in numeric_cols:
+    for col in numeric_fields:
         series = enriched_df[col]
-
         if not series.isna().any():
             continue
-
-        median = series.median()
-
-        # If all values are NaN, median will be NaN: nothing to fill
+        median = series.astype("float64").median()
         if pd.isna(median):
-            continue
-
-        # If this is an integer-like dtype and median is non-integer,
-        # upcast to a nullable float type first.
+            continue  # every value missing: nothing to take a median of
         if is_integer_dtype(series.dtype) and not float(median).is_integer():
-            series = series.astype("Float64")
-            enriched_df[col] = series.fillna(median)
-        else:
-            enriched_df[col] = series.fillna(median)
-
-    # Fill categorical / object / bool columns
-    cat_cols = df.select_dtypes(include=["object", "category", "bool"]).columns
-    for col in cat_cols:
+            series = series.astype("float64")  # the median of whole numbers can be x.5
+        enriched_df[col] = series.fillna(median)
+    for col in text_fields:
         series = enriched_df[col]
-        if series.isna().any():
-            try:
-                mode = series.mode().iloc[0]
-            except IndexError:
-                # All values are NaN -> nothing sensible to fill with
-                continue
-            enriched_df[col] = series.fillna(mode)
+        if not series.isna().any():
+            continue
+        modes = series.mode(dropna=True)
+        if modes.empty:
+            continue
+        enriched_df[col] = series.fillna(modes.iloc[0])  # ties: the first value in sort order
+    was_filled = df[input_fields].isna() & enriched_df[input_fields].notna()
+    filled = int(was_filled.to_numpy().sum())
+    enriched_df.insert(0, ROW_ID, row_id)
+    enriched_df[ENRICHED] = was_filled.any(axis=1).astype(bool)
+    api.write_output(enriched_df, "enriched")
 
-    # Add a flag column showing which rows changed during enrichment
-    changed_mask = (df.ne(enriched_df)) & ~(df.isna() & enriched_df.isna())
-    enriched_df["_was_enriched"] = changed_mask.any(axis=1)
-
-    api.write_output(enriched_df, 2)
-
-# --- 7. Final message in the block bar ---
-parts = []
-if find_issues:
-    if issues_rows:
-        parts.append("issues detected")
-    else:
-        parts.append("no issues detected")
-if annotate_data:
-    parts.append("data annotated")
+parts = [f"{len(df):,} records checked"]
+if annotate_data or find_issues:
+    parts.append(f"{issue_count:,} issues found")
 if enrich_data:
-    parts.append("data enriched")
-
-if parts:
-    msg = " / ".join(parts).capitalize() + "."
-else:
-    msg = "Data passed through."
-
-api.commit(message=msg)
+    parts.append(f"{filled:,} missing values filled")
+if renamed:
+    parts.append("fields renamed to avoid clashes with input fields: " + ", ".join(renamed))
+api.commit(message="; ".join(parts) + ".")

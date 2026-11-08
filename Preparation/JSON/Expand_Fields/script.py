@@ -7,41 +7,88 @@ omniscope_api = OmniscopeApi()
 
 # Read the records associated with the first block input
 input_data = omniscope_api.read_input_records(input_number=0)
+if input_data is None:
+    omniscope_api.abort("Connect the data with the JSON field to the block's input.")
 
 # Get options
 jsonField = omniscope_api.get_option("jsonField")
 includeInput = omniscope_api.get_option("includeInput")
-prefix = omniscope_api.get_option("fieldPrefix")
+prefix = omniscope_api.get_option("fieldPrefix") or ""
 
-if prefix is None: 
-   prefix = ""
+if not jsonField:
+    omniscope_api.abort("Choose the field holding the JSON text in 'JSON field'.")
+if jsonField not in input_data.columns:
+    omniscope_api.abort(f"The input has no field called '{jsonField}'.")
+includeInput = includeInput is None or includeInput is True or str(includeInput).lower() == "true"
 
-# Function to parse JSON and add prefix to keys
-def parse_json(row, jsonField):
+
+def parse_json(value):
+    """The top-level keys of a JSON object, or None for empty text, invalid JSON, or JSON that is not an object."""
+    if not isinstance(value, str) or not value.strip():
+        return None
     try:
-        json_dict = json.loads(row[jsonField])
-        if not isinstance(json_dict, dict):
-        	omniscope_api.abort("The block can only process JSON dictionaries, but your data contains something else")
-        
-        return {f"{prefix}{k}": v for k, v in json_dict.items()}
-    except (json.JSONDecodeError, TypeError):
-        return {}
+        parsed = json.loads(value)
+    except ValueError:
+        return False
+    return parsed if isinstance(parsed, dict) else False
 
-# Apply the JSON parsing function to each row
-json_expanded = input_data.apply(parse_json, axis=1, jsonField=jsonField)
 
-# Convert the list of dictionaries into a DataFrame
-expanded_df = pd.DataFrame(json_expanded.tolist())
+def as_text(v):
+    """Nested objects and arrays become JSON text; other values their usual text."""
+    if isinstance(v, (dict, list)):
+        return json.dumps(v, ensure_ascii=False)
+    if isinstance(v, bool):
+        return "true" if v else "false"
+    return str(v)
 
-# Concatenate the original input data and the expanded JSON data
+
+def tidy(values):
+    """One field's values: numbers stay numbers, true/false stay yes/no, anything else (or a mix) becomes text."""
+    present = [v for v in values if v is not None]
+    if present and all(isinstance(v, bool) for v in present):
+        return pd.Series(values, dtype="boolean")
+    if present and all(isinstance(v, (int, float)) and not isinstance(v, bool) for v in present):
+        if all(isinstance(v, int) for v in present) and all(abs(v) < 2 ** 63 for v in present):
+            return pd.Series(values, dtype="Int64")
+        return pd.Series([float(v) if v is not None else None for v in values], dtype="float64")
+    return pd.Series([as_text(v) if v is not None else None for v in values], dtype=object)
+
+
+parsed = [parse_json(v) for v in input_data[jsonField]]
+bad = sum(1 for p in parsed if p is False)
+
+# Field names in order of first appearance, with the prefix
+keys = []
+seen = set()
+for p in parsed:
+    if p:
+        for k in p:
+            if k not in seen:
+                seen.add(k)
+                keys.append(k)
+
+expanded = {}
+for k in keys:
+    expanded[f"{prefix}{k}"] = tidy([p.get(k) if p else None for p in parsed])
+expanded_df = pd.DataFrame(expanded, index=input_data.index)
+
 if includeInput:
+    clash = [c for c in expanded_df.columns if c in input_data.columns]
+    if clash:
+        omniscope_api.abort("The JSON has keys with the same name as input fields: " + ", ".join(clash[:10])
+                            + ". Set 'Prefix for new fields' (for example json_) to keep them apart.")
     output_data = pd.concat([input_data, expanded_df], axis=1)
 else:
     output_data = expanded_df
 
-# Write the output records in the first output
-if not output_data.empty:
-    omniscope_api.write_output_records(output_data, output_number=0)
+if output_data.shape[1] == 0:
+    omniscope_api.abort("No JSON objects found in the field, so there are no fields to output.")
+
+# Write the output records in the first output (also when there are no records, so the next block sees the fields)
+omniscope_api.write_output_records(output_data, output_number=0)
 
 # Close the Omniscope API
-omniscope_api.close()
+if bad:
+    omniscope_api.close(f"{bad} record(s) had text that is not a JSON object; their new fields are empty.")
+else:
+    omniscope_api.close()

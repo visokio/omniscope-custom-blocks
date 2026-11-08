@@ -11,31 +11,35 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": true,
-    "icon": "data:image/png;base64,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",
-    "description": "Performs a join between values in the first input and intervals in the second input. Rows are joined if the value is contained in an interval.",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAD9UlEQVR42u2dP2sUQRyG31/MxYAxEhQS9S5qoYUWAYtEJcWVFloI4hdIKSiKheYDiIVtQCGloIiFoLaaQoKGELFIIBYG8lcQsQgJaoKvRVYMcsnN5WZ3Z/fep7xMZmfeZ2d3ZvduFxBCCCEaE8tbh0juAnAWQB+Aw9HH8wDGAIya2W9pD1PcbpI3SH7h1iyRvE6yRYmFJa9IcpzufCR5VMmFIe9INLJqZZFktxJM/7D5kTtnQofTdAXeZP1c0yw0vdnmAoDOOqtaAlDM6uy0KcM73zkP8gDgIIAzWQ0hywL7PNYlgSlwKNC6JND1NBhoXRLoyKLHupYkMHneeaxrVMuI5JcRTdEyosvDSC5pGZH0nrcR+D0PVd3VHYr0RmELyQ91XIUZJ1lQkulK7I4uTNfKAsmSEgxH4kSNI6+o5MI7nD5xkPc4T4fNprx0xMx+AXjtUPSNma1JoJBAIYESqAgkUEigkEAJFBIoJFBIoAQKCRQJ0ZzVhpPsBXARQAeACQBPa/jfNgBXAJwG8B3ACzMb0+6QjLgmkg8r3OebI/nA4X7gg6js/zyMviglYhY4yPgYzFoeljF5zQC+ANgf0ya+Aegys3VNYuKhGKM8RHVn6rsyWRO4kpNtNKZAM/uKjceFxMVYtA0R43mwn+RaDBOYNZL9SjgZiXdiEHhbySYn0Eg+9yjvldaAyUvsIPnZg7xZkgeUaDoSe0n+rEPeL5LnlGS6Eq816jNi8iTx0Q7kPVVy4QhsJzldg7xpku1KLiyJPSRXHeStkuxRYmFKHHAQOKCkwpY4vI28YSUUvsACySGS65vErUef5e738JZjkd0A/l7bfGtms3nsp6UUbgnAVfx7yNw7AENmNpeRnSPT7a+38+dJLlc4Py2TPK/2B77nbtH5zSGU1H53kr4CfxVA2zZ/b4vKhEpw7U9aYJ+nMmkRXPuTFrjXU5m0CK79uomZcSRQAoUECgmUQCGBQgKFBDYWIf7EukjyfqB5FTUChQQKCcz/OZDkMQCnALR63F6HQ5lWACcCzcsliw6Slz1u8weASTObcRZI8gKAcgwB7HEoU8DGWzVDpODYR98vlCyTHDGzl1UPodHIK0OERjlyU/UceFJZBctJTWIaYBY6pViCZaqqwGi2M6KsgmOk0ky04izUzF6SnIxhGXHJocwawn2n7XGHMivw+3rY2pcRm0bijM/eOz7K4weAT4EK7AWwr0qZ72b2LM1zoMj4JEZIoEiKEO8HzpvZrRDDIlkG0KkRKCRQSKAECgkUEiiBQgKFBIpMCFz2VCYtgmt/0gLfeyqTFllvf33oQT/5kKhHbXlED7trwPYLIYQQQgghhBAiJf4AU1hRbMe5SbkAAAAASUVORK5CYII=",
+    "description": "Joins each record of the first input to the intervals in the second input that contain its value (a number or a date between a start and an end), optionally only where another field matches as well.",
     "category": "Preparation",
     "subcategory": "Join",
     "tags": [
         "inequality",
         "interval",
-        "join"
+        "join",
+        "range join",
+        "between",
+        "bands",
+        "lookup"
     ],
-    "introductoryText": "The first input contains values and the second input intervals. The rows of the first input are now joined with rows of the second, if the value is contained in the interval.\n\nThe interval start and end values can be chosen to be either inclusive or exclusive. If the number is e.g. 5, and an interval is 5..10, then if inclusive is chosen, the rows are joined. If exclusive is chosen, they are not joined.\n\nIn addition, it is possible to specify an optional equality criterium. Only those records are interval-joined if they also contain the same value in those specified fields.",
-    "dependencies": "pandasql",
+    "introductoryText": "Joins each record of the first input to every interval of the second input that contains its value: a parcel weight to its price band, an order date to the price period in force, a score to its grade.\n\n**How to set it up**\n\n- **Value in interval**: the number or date field of the first input.\n- **Interval start** and **Interval end**: the fields of the second input that bound each interval, of the same kind (numbers or dates). An empty start means no lower limit, an empty end no upper limit.\n- **Start** and **End**: whether a value equal to the start or the end is inside the interval. The defaults (start inclusive, end exclusive) suit bands that follow on from each other, such as 0 to 2 and 2 to 5.\n- **Join type**: Inner keeps only records that fall in an interval; Left keeps every record of the first input, with empty interval fields where none contains it.\n- **Also match on** (optional): a field in each input that must be equal too, for example the delivery zone, so each zone uses its own bands.\n\nA record in several overlapping intervals is output once for each. The output has the first input's fields, then the second's; a field name in both gets `.1` on the second input's copy.",
+    "dependencies": "",
     "options": [
         {
             "name": "join_type",
-            "title": "Type of join",
-            "description": null,
-            "groupTitle": "Interval Join",
-            "width": null,
+            "title": "Join type",
+            "description": "Inner: only records whose value is in an interval. Left: every record of the first input; those in no interval have empty fields from the second input.",
+            "groupTitle": "Interval join",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
             "choices": [
                 {
                     "name": null,
                     "title": "Inner",
-                    "description": null,
+                    "description": "Only records whose value falls in an interval",
                     "groupTitle": null,
                     "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
@@ -45,7 +49,7 @@
                 {
                     "name": null,
                     "title": "Left",
-                    "description": null,
+                    "description": "Every record of the first input",
                     "groupTitle": null,
                     "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
@@ -60,9 +64,9 @@
         {
             "name": "value",
             "title": "Value in interval (first input)",
-            "description": null,
-            "groupTitle": "Interval Join",
-            "width": null,
+            "description": "The number or date field of the first input to look up in the intervals.",
+            "groupTitle": "Interval join",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
@@ -72,9 +76,21 @@
         {
             "name": "start",
             "title": "Interval start (second input)",
-            "description": null,
-            "groupTitle": "Interval Join",
-            "width": null,
+            "description": "The field of the second input where each interval starts (number or date, the same kind as the value). Empty means no lower limit.",
+            "groupTitle": "Interval join",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "end",
+            "title": "Interval end (second input)",
+            "description": "The field of the second input where each interval ends (number or date). Empty means no upper limit.",
+            "groupTitle": "Interval join",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 1,
@@ -83,16 +99,16 @@
         },
         {
             "name": "start_comparator",
-            "title": "Interval start value inclusiveness",
-            "description": "If value is e.g. 5 and the interval is 5..10: If inclusive is chosen, then value is considered contained in the interval. If exclusive is chosen, then the value is not contained.",
-            "groupTitle": "Interval Join",
-            "width": null,
+            "title": "Start",
+            "description": "Whether a value equal to the interval's start is inside it. Inclusive: a value of 5 is in the interval 5 to 10. Exclusive: it is not.",
+            "groupTitle": "Interval join",
+            "width": "HALF",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
             "choices": [
                 {
                     "name": null,
-                    "title": "Inclusive",
+                    "title": "Inclusive (value >= start)",
                     "description": null,
                     "groupTitle": null,
                     "width": null,
@@ -102,7 +118,7 @@
                 },
                 {
                     "name": null,
-                    "title": "Exclusive",
+                    "title": "Exclusive (value > start)",
                     "description": null,
                     "groupTitle": null,
                     "width": null,
@@ -116,29 +132,17 @@
             "defaultValue": ">="
         },
         {
-            "name": "end",
-            "title": "Interval end (second input)",
-            "description": null,
-            "groupTitle": "Interval Join",
-            "width": null,
-            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
-            "mandatory": true,
-            "inputIndex": 1,
-            "defaultValue": null,
-            "fieldTypes": []
-        },
-        {
             "name": "end_comparator",
-            "title": "Interval end value inclusiveness",
-            "description": "If value is e.g. 10 and the interval is 5..10: If inclusive is chosen, then value is considered contained in the interval. If exclusive is chosen, then the value is not contained.",
-            "groupTitle": "Interval Join",
-            "width": null,
+            "title": "End",
+            "description": "Whether a value equal to the interval's end is inside it. Inclusive: a value of 10 is in the interval 5 to 10. Exclusive: it is not, so bands such as 5 to 10 and 10 to 20 do not overlap.",
+            "groupTitle": "Interval join",
+            "width": "HALF",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
             "choices": [
                 {
                     "name": null,
-                    "title": "Inclusive",
+                    "title": "Inclusive (value <= end)",
                     "description": null,
                     "groupTitle": null,
                     "width": null,
@@ -148,7 +152,7 @@
                 },
                 {
                     "name": null,
-                    "title": "Exclusive",
+                    "title": "Exclusive (value < end)",
                     "description": null,
                     "groupTitle": null,
                     "width": null,
@@ -163,9 +167,9 @@
         },
         {
             "name": "left",
-            "title": "Left (first input)",
-            "description": null,
-            "groupTitle": "Optional equality criterium",
+            "title": "Field in first input",
+            "description": "A field that must also be equal, for example a zone or product code. Choose it in both inputs, or leave both empty.",
+            "groupTitle": "Also match on (optional)",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
@@ -175,9 +179,9 @@
         },
         {
             "name": "right",
-            "title": "Right (second input)",
-            "description": null,
-            "groupTitle": "Optional equality criterium",
+            "title": "Field in second input",
+            "description": "The field of the second input to compare with the first input's field.",
+            "groupTitle": "Also match on (optional)",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
@@ -190,9 +194,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
+            "label": "Joined",
+            "displayName": "Records with their intervals",
+            "tooltip": "Each first-input record once per interval that contains its value: its fields, then the interval's fields (a name in both gets .1). Left join: records in no interval are kept with empty interval fields."
         }
     ],
     "docker": {

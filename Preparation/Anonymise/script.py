@@ -7,6 +7,8 @@ dp.enable_features("contrib")
 
 omniscope_api = OmniscopeApi()
 input_1 = omniscope_api.read_input_records(input_number=0)
+if input_1 is None:
+    omniscope_api.abort("Connect a data source to the block's input.")
 
 
 # --------------------------------------------------------------------------
@@ -23,7 +25,11 @@ def get_option(name, default=None):
 
 
 def get_float_option(name, default):
-    return float(get_option(name, default))
+    value = get_option(name, default)
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        omniscope_api.abort(f"Option {name} must be a number, not {value!r}.")
 
 
 epsilon_numeric = get_float_option("epsilon_numeric", 5.0)
@@ -32,10 +38,10 @@ sensitivity_numeric = get_float_option("sensitivity_numeric", 10.0)
 epsilon_date = get_float_option("epsilon_date", 5.0)
 sensitivity_date = get_float_option("sensitivity_date", 3600.0)  # one hour
 
-if epsilon_numeric <= 0 or epsilon_date <= 0:
-    raise ValueError("epsilon must be greater than zero")
-if sensitivity_numeric <= 0 or sensitivity_date <= 0:
-    raise ValueError("sensitivity must be greater than zero")
+if not (epsilon_numeric > 0 and epsilon_date > 0):
+    omniscope_api.abort("The privacy budgets (numbers and dates) must be greater than zero.")
+if not (sensitivity_numeric > 0 and sensitivity_date > 0):
+    omniscope_api.abort("The sensitivities (numbers and dates) must be greater than zero.")
 
 
 # --------------------------------------------------------------------------
@@ -69,12 +75,12 @@ def laplace_array(values, scale):
 BASE_WORDS = [
     "apple", "banana", "cherry", "grape", "honeydew", "kiwi", "lemon", "mango",
     "nectarine", "orange", "papaya", "quince", "raspberry", "strawberry",
-    "tangerine", "vanilla", "watermelon", "zucchini", "abandon", "ability",
+    "tangerine", "vanilla", "watermelon", "courgette", "abandon", "ability",
     "accept", "account", "achieve", "activity", "actually", "addition",
-    "address", "adventure", "agreement", "alternative", "analysis", "analyze",
+    "address", "adventure", "agreement", "alternative", "analysis", "analyse",
     "appearance", "application", "appropriate", "argument", "arrangement",
     "association", "assumption", "attraction", "authority", "available",
-    "beautiful", "behavior", "believe", "beneficial", "billion", "business",
+    "beautiful", "behaviour", "believe", "beneficial", "billion", "business",
     "calendar", "capability", "celebration", "challenge", "character",
     "children", "circular", "citizens", "clarity", "collection",
     "comfortable", "community", "competition", "complaint", "conclusion",
@@ -84,12 +90,12 @@ BASE_WORDS = [
     "development", "difference", "discussion", "education", "effective",
     "emergency", "emotional", "encouragement", "environment", "essential",
     "evaluation", "experience", "explanation", "exploration", "expression",
-    "fascinate", "favorable", "financial", "foundation", "freedom",
+    "fascinate", "favourable", "financial", "foundation", "freedom",
     "friendship", "generally", "government", "guidance", "happiness",
     "historical", "immediate", "important", "impressive", "influence",
     "information", "inspiration", "interaction", "interesting", "introduction",
     "investigation", "knowledge", "leadership", "legislation", "literature",
-    "management", "motivation", "observation", "opportunity", "organization",
+    "management", "motivation", "observation", "opportunity", "organisation",
     "participation", "performance", "perspective", "political", "population",
     "presentation", "professional", "protection", "publication",
     "relationship", "representation", "responsibility", "satisfaction",
@@ -141,7 +147,8 @@ def anonymize_text_fields(df, selected_fields):
     }
 
     for col in text_cols:
-        df[col] = df[col].map(mapping)
+        # map() of an empty or all-missing field gives float64; keep the field as text
+        df[col] = df[col].map(mapping).astype(df[col].dtype)
 
 
 def anonymize_numeric_fields(df, selected_fields, epsilon, sensitivity):
@@ -149,7 +156,12 @@ def anonymize_numeric_fields(df, selected_fields, epsilon, sensitivity):
     for col in selected_fields:
         if col in df.columns and is_noisable_numeric_column(df[col]):
             values = df[col].to_numpy(dtype=float, na_value=np.nan)
-            df[col] = laplace_array(values, scale)
+            noisy = laplace_array(values, scale)
+            if pd.api.types.is_integer_dtype(df[col]):
+                # whole-number fields stay whole numbers (rounding the noise keeps the privacy guarantee)
+                df[col] = pd.array(np.round(noisy), dtype="Float64").astype("Int64")
+            else:
+                df[col] = noisy
 
 
 def anonymize_date_fields(df, selected_fields, epsilon, sensitivity):
@@ -165,7 +177,8 @@ def anonymize_date_fields(df, selected_fields, epsilon, sensitivity):
         seconds = (series - epoch).dt.total_seconds().to_numpy(dtype=float)
         noisy = laplace_array(seconds, scale)
 
-        result = epoch + pd.to_timedelta(np.round(noisy), unit="s")
+        with np.errstate(invalid="ignore"):  # missing dates stay missing (NaN -> NaT)
+            result = epoch + pd.to_timedelta(np.round(noisy), unit="s")
         result = pd.Series(result, index=df.index)
         if tz is not None:
             result = result.dt.tz_convert(tz)

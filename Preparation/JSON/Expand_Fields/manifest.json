@@ -11,36 +11,40 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": "data:image/png;base64,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",
-    "description": "Expands JSON strings in a specified field into separate columns, optionally including the original input data",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAFRElEQVR42u2dwWsdRRzHv9OkaRJTtMZSBAOBQNNDDkklUAptacCCh4amemn9FxSDCBWKFHPorQTvSm+FCFHswSL21pPSgyVYTJvoIaklSmOTaPqSJn49ONhQQmZ3Zt++2d3vB3Kafe/3/f2+u/NmdmcngBBCCCGEEEII0QBI9pJ8j+R1kndIzpNcJblMcpLkwRy1HLQxl62GeavputXYK8eeFauP5C26WczDRGveYgI9t0j2Vd28MZLrTM5kDpomU+hZJzlWVfNGmZ6lHHQteegarZp5QySflsjApySHGlHLXQ3ycAxAs8fnbuagzSdGs82pMoMWH2IbxGxHXxWuwLdSHr8C4EsAR4wx9+otzsY4YmOu1Dm3Ql6BrlHed/Y38lWSrRHobbVahqy2ho6SYzDwrqMIJyLWfsKh/W4VutAOR/tMxOffTGBupTCwzdG+GrGBTxztrVUw0JXkWsQGrsnAchvYVmoDSb7gmMD/ZYzZjNU9Y8wGgL93mtCTbC/zFfiao/2PAgykf3e0d5XZwDcc7QsFMHAhMMdiGkiyDcCo47DbGcUyJA+TfMf+DZA0GaXi0jhqcy3V5L0t4XO20xnEepvk7DbffZ/k2Qy+/3SS55aFN5FkO8lDJN8lOZMg6RWSHYExP0kQ51JgjA6r1cWMzf1Q3gObkOS2riVJy+UMrrykjATGuuyRX+5re3zM830Ms0SyM/A3byZFvHshv4kkOz0f/Ob2WMwnqUn6cz4w9useMQcCY54PyHcyRgN9z8iJDGL7FPNcBnEnfHucIt9Ke55hksdDa5nTZ7aadxzAcKOLl6WBvutVWgFMBI7Upj0+83PICBvABPxvXt9EbAQOYoKW5tlBzP0UsaYDBzGjAXkuxj4S9Z1G/EayJSD22RSxzgTEabFayzWN2CbR3SRfITlI8kOScwmSPBYY81KCGB8HxjiWIMaczXnQ1mB3GW6n7U9w5l7MIM6Inedt122eyeD7LyboSfajjCRI/kaGN7P77fTiHMn+DHO4Ue+TMGYDjzqSnypADlOOHI4WdRqRhF8d7S8X4Dx03fL7pcwG/lkCA/c52h/nKcbknT3JDQBNOxzSZIz5J9LuswnAxg6HbBpjmst8BQLAuqO9JeKrz6Ut9xV1jTBwTQbKQBnYQANrjvaYlx+0yUD3KG2EZDfJfSQb/riL5C6rpRvASGBupZjMX4v9JnDATflrVTDwQolfsb5QBQO7Uu4NE/M+Mc/vGdOFKuDRjca+zUg1us8tReqx+4+VxcB5kj2NqGVDRnnGmFkAJwE8SPnRGPeJeQDgpM2pWtjpwuckawUcxNSs9m5UHZIH7EKhqyRvk3xoi7gZwTRi02p5aLVdtVoPQAghhBBCCCGEEEIIIUQupFqZbZ84jwM4BWBvRhqWAHwF4CNjzEICDS/hv3fTewHsyUhDDcAUgG+MMStFqENqA63oH1G/9xdmARw2xiw7zPsA9Vt6+AjAuDGmFnMdtpLmge446vvySQ8A125Nw6jvutFOAG8WoA5eBp7KoUt37d2Sx799GyhAHbwM3JuDcNeZvScHDe0FqIOXgSJCZKAMFDJQyEAZKGSgkIFCBspAIQOFDBQyUAYKGShkoJCBMlDIQCEDhQyUgUIGChkoZGD1DJzLQY9rN8LHOWioFaAOXgZ+nYPwbx3tP+WgYboAdfifNK+XvQjgBwD12nTuEYB+Y8z8DhpaAbwPoF7/3m0VwBVjzFLMdfC6Am1SgwA+y7grWwbwRRLR9r29TwF8D+BJxt3mHZd5sdRBCCGEEEIIIYQQQjSCfwHd8qg5KiSrNwAAAABJRU5ErkJggg==",
+    "description": "Turns a text field holding a JSON object into one new field per key, next to the input fields; nested objects and arrays become JSON text.",
     "category": "Preparation",
     "subcategory": "JSON",
     "tags": [
-        "JSON",
+        "json",
         "expand",
         "fields",
         "semi",
-        "structured"
+        "structured",
+        "parse",
+        "properties"
     ],
-    "introductoryText": "### Expands JSON strings in a specified field into separate columns, optionally including the original input data",
+    "introductoryText": "Reads a text field holding a JSON object in each record, such as the properties of a web event or the payload of an API response, and adds one field per top-level key.\n\n**How to set it up**: choose the field with the JSON. Keep the input fields ticked to add the new fields after them; untick to output only the new fields. Set a **prefix** (for example `json_`) when a key has the same name as an input field.\n\nKeys become fields in the order they first appear. A key whose values are all numbers becomes a number field, all true/false a yes/no field, anything else text. Nested objects and arrays are written as JSON text (use **JSON Normalise** to turn arrays into records). Records with empty text, invalid JSON or JSON that is not an object (an array or a single value) are kept, with the new fields empty; the block's message says how many.",
     "dependencies": "",
     "options": [
         {
             "name": "jsonField",
-            "title": "JSON Strings",
-            "description": "The field containing JSON strings to be expanded as additional fields",
+            "title": "JSON field",
+            "description": "The text field holding a JSON object in each record.",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
             "defaultValue": null,
-            "fieldTypes": []
+            "fieldTypes": [
+                "STRING"
+            ]
         },
         {
             "name": "includeInput",
-            "title": "Include input dataset",
-            "description": null,
+            "title": "Keep the input fields",
+            "description": "Output the input fields followed by the new ones. Unticked, only the new fields.",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
@@ -48,8 +52,8 @@
         },
         {
             "name": "fieldPrefix",
-            "title": "Expanded Fields Prefix",
-            "description": "Optional",
+            "title": "Prefix for new fields",
+            "description": "Optional. Added to the start of each new field name, for example json_ (needed when a key matches an input field name).",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -61,9 +65,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "Expanded dataset",
-            "displayName": "Expanded dataset",
-            "tooltip": null
+            "label": "Expanded",
+            "displayName": "Expanded records",
+            "tooltip": "The input records with one new field per JSON key."
         }
     ],
     "docker": {

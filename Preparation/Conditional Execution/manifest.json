@@ -11,33 +11,55 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": null,
-    "description": "This block conditionally triggers the execution of specified workflow blocks via the Workflow API, running them only when the Conditional Parameter is set to true.",
+    "icon": "data:image/png;base64,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",
+    "description": "When its yes/no option (usually linked to a project parameter) is on, starts a separate run of the listed blocks of a project; when it is off, does nothing.",
     "category": "Preparation",
-    "subcategory": null,
+    "subcategory": "Workflow",
     "tags": [
         "condition",
         "conditional",
         "execution",
-        "orchestration"
+        "orchestration",
+        "parameter",
+        "trigger",
+        "rest api"
     ],
-    "introductoryText": "# Conditional Workflow Executor Block\n\nThis block empowers users to dynamically control workflow execution based on a simple boolean condition. \nInstead of relying on methods like the Validate block — which can cause the entire workflow to fail — it simply checks a boolean option, that you can link it to a Project Parameter. \nWhen the option/parameter is set to true, it executes a designated list of workflow blocks via the Workflow API.\n\nThis approach is ideal for scenarios where:\n- **Conditional Execution:** Only specific segments of a workflow need to be run based on dynamic conditions.\n- **Robust Workflow Management:** Avoid potential workflow failures by bypassing validation errors.\n- **Dynamic Control:** Link the execution flag to a project parameter, allowing for flexible, real-time control over workflow processes.\n\nBy integrating this block into your workflow, you can fine-tune execution paths, ensuring that only the necessary components run, which enhances overall process efficiency and reliability.",
-    "dependencies": "",
+    "introductoryText": "Starts a separate run of some blocks of a project, this one or another, **only when the option Run the blocks is on**. Link that option to a yes/no project parameter, and whoever sets the parameter (a report view, the scheduler, the REST API or another block) decides whether the blocks run.\n\n**Setting up**\n\n1. Give the project's address, ending in .iox, for example `http://127.0.0.1:24679/Folder/Project.iox/`.\n2. List the blocks to run, separated by commas.\n3. Link *Run the blocks* to a project parameter.\n\nThe block asks the server to start the blocks and finishes straight away: it does not wait for them or report how they went. A run of that project already in progress is cancelled so that the new one can start. The user needs the *Workflow Execution via APIs* permission.\n\nTo choose a branch of this workflow from the data, use the core **If Then Split** or **Output Router** blocks instead.",
+    "dependencies": "urllib3",
     "options": [
         {
             "name": "Iox_File_Url",
-            "title": "IOX file URL",
-            "description": "The URL of the file to execute",
-            "groupTitle": "File",
-            "width": "THREE",
+            "title": "Project address",
+            "description": "The address of the project whose blocks to run, ending in .iox. On the same server, the internal address such as http://127.0.0.1:24679/Folder/Project.iox/ avoids the public address and its certificate. A report or workflow address of the project is cut back to the project.",
+            "groupTitle": "Project",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
             "defaultValue": ""
         },
         {
+            "name": "username",
+            "title": "Username",
+            "description": "Optional. For a server that asks for sign-in with a list of users: sent with basic authentication. Leave empty when no sign-in is needed.",
+            "groupTitle": "Project",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "password",
+            "title": "Password",
+            "description": "Optional. The password for the username.",
+            "groupTitle": "Project",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": false
+        },
+        {
             "name": "execute",
-            "title": "Conditional Parameter",
-            "description": "Link it to a Project Parameter to control whether to run the blocks or not",
+            "title": "Run the blocks",
+            "description": "On: start the blocks. Off: do nothing. Link it to a yes/no project parameter to switch it from outside the workflow.",
             "groupTitle": "Condition",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
@@ -45,10 +67,10 @@
         },
         {
             "name": "Block_Names",
-            "title": "Blocks to Execute",
-            "description": "Optional comma-separated list of blocks to execute before looping and settings any parameters. If empty, do nothing.",
-            "groupTitle": "Workflow Execution",
-            "width": "TWO",
+            "title": "Blocks to run",
+            "description": "Names of the blocks to start, separated by commas. Blocks they depend on run too when needed.",
+            "groupTitle": "Blocks",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
             "defaultValue": ""
@@ -56,11 +78,11 @@
         {
             "name": "Refresh_From_Source",
             "title": "Refresh from source",
-            "description": "Whether to refresh from source when executing the \"before\" set of blocks",
-            "groupTitle": "Workflow Execution",
-            "width": "ONE",
+            "description": "Reload the data from the sources, rather than reuse data the blocks already hold.",
+            "groupTitle": "Blocks",
+            "width": "HALF",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
-            "defaultValue": null
+            "defaultValue": false
         }
     ],
     "blockOutputs": [],

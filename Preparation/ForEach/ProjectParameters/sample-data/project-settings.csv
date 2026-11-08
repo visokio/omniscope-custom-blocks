@@ -1,0 +1,6 @@
+Project,Region,Minimum order,Currency
+http://127.0.0.1:24679/Branch reports/Leeds.iox/,North,250,GBP
+http://127.0.0.1:24679/Branch reports/York.iox/,North,250,GBP
+http://127.0.0.1:24679/Branch reports/Bristol.iox/,South West,150,GBP
+http://127.0.0.1:24679/Branch reports/Dublin.iox/,Ireland,200,EUR
+http://127.0.0.1:24679/Branch reports/Cork.iox/,Ireland,100,EUR

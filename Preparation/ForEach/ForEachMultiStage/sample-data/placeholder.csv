@@ -1,0 +1,6 @@
+Pass,Region,Report title,Result,Failed at stage,Job IDs
+1,North East,North East: weekly sales,COMPLETED,,"JOB_2, JOB_3"
+2,North West,North West: weekly sales,COMPLETED,,"JOB_4, JOB_5"
+3,Midlands,Midlands: weekly sales,COMPLETED,,"JOB_6, JOB_7"
+4,South East,South East: weekly sales,COMPLETED,,"JOB_8, JOB_9"
+5,South West,South West: weekly sales,COMPLETED,,"JOB_10, JOB_11"

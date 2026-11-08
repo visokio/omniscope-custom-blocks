@@ -11,24 +11,25 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": null,
-    "description": "Convert all named and numeric character references to the corresponding Unicode characters",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAFi0lEQVR42u2dW4hXRRzHP79NXVe8hHZh1x6SrBCsoMIM8iF6CAsvCQWVL12IQDYiegglIgJjISICKYLqxRQSzBta0IUwZNOKLV3yFvZSYqaZF1zz8u3hfwST9u/5zzlzLn9/H1hYdmdmZ3+fM+c/M2dmDjiO4ziO4ziO4ziO4ziO4ziO4ziO4zhRkdQpqVdSv6QTyVd/8rNOj1C15fVIGtDwDEjq8UhVU954SYO6NAPeEqsnr0PSBqWn16NWLYF9ao1+j1p15C1U65zwyFVD3h1JL7NVjl1cVoeHs3B5k4H1wJiA7IMusFx5XcAaoDuwiI88iuXJM0krFI4PI0oWuCSDvEOSpnoUy5M3W9KZQHmnJd3nUSxP3jRJRzK0vkUexfLkTZK0N4O8DzyK5ckbKenLDPI2SxrlkSxP4DsZ5O2TdLVHsTx5izLIOybpFo9iefJmSToVKO+spHkexfLkTZF0MEPrW+xRLE/eOEnbM8hbJck8kuXI65C0LoO8HySN8UiWJ7Avg7z9kq7zKJYnb2EGeSclzfQolicv9MHseZ7MWocRAZXuBu4CpgITgaJnC4aAP4EdQL+ZHS9JXjewlrAHswB9ZpZ5qsxaqPAIYC5wdyv5InMSWGNm3xcsbzTwNTAjsIjPgAfN7GwhAhN5TyetrnJ3MmCjmX1VkDwDlgOPBRaxE5hpZn/nUZ+0SyrmVVTe+YvwgQKnnxZnkHcYmJOXvFQCk3t91XtKBiyIveRA0mzg1cDsZ4BHzGxvnnVK0wJnVOgzrxnjYl5okqYBK4ErAot43sy+yLteaQTeVKOe/a2R5E2isRRwQmARH5rZshh1SyPwyhoJvCaCvJHAKuCGwCK+AZ6N9Q+nEVinpWxdEcp8G7g3MO+vwAIz+6dMgZfzTMuiDK3nODDXzA7GrKMLHF7eLODNwOzngIVmtj12PUfkWNaECz6DDgBHC0oXQ94UYDXh04Qvm9naIuqah8BRwP3/01vdRWPK6HSkdLHkdQKfAFcFFrESeL2oiy2PW+jsYYYaNye/i5UuFs8AtwXm/Q54ysxUlMCsLXAizafYbkzSkHO6wxFj8nhgvv3AfDM7WeRndVaB16Ycm1nO6WIKnB6QZwh4yMx+K7qz5b3Q/ChlujGrwAMp0+SdLiY7AvKMBlYnu29rJfAwsKfJ73cDf0VIF5PQXbDdwJpkF26tbqGbki7+xewEPo2YLhbvAT8G5r0TeL/I9Z2X/EOS3khZ1vgLBt5/NBl4553uv/+Q2Ys5DeS3ZhgLLjGzpXUZyJ/naMog550u/6vabJ+kBcDngbMxr0kaLGI2xnuhw0vcDLyQIa7Li1jm4QKbS1wGvBuYfSywLvY+vzQCh2oU8xh1fQ4IXfF2fTK8GFWmwAM1EngkQis8DTwM/BJYxD0ZWnEuArfXSODuSLfSQ8AcIHQ54BOxTptII7CfxtPlqnMO+Dbi5+HPwKNA6Grqt2Kc99KRouJDNB5uquICt5hZ1Nu9mW0CXskwZPs47xOXOlJW/CdgY4Ul7qGx7K8IlgIrAvNOBNZLmpDbRdXiDMXtwHzCd+TEuG1uAdbnsVGkhTjUa3PLRZUfS2N72XQaU01dBUs7RWNCexewNfZts0kcuoFtQOgTiD4ze8lH2yVShQ2eTnaJvsW6DST6IQc1F+jHjLSBRD/opw0k+lFbbSDRD7trA4l+3GQbSPQDX2su0I9cbgOJfuh5G0j01w60gUR/8UcbSPRX79RcoL/8qg0kdknalkGiv0O3AhInS/o9UKC/Q7ciEkMfBPs7dCskMeRB8DGPXLUk+mvIay6wQ9IG78TUW+J4SYM+jKi3xJ5EUDN5PR6pakvslNQrqT/poZ5Ivu/1luc4juM4juM4juM4juM4juM4juM4lyf/AmpiDEL+UiPUAAAAAElFTkSuQmCC",
+    "description": "Turns HTML character references such as &amp;, &eacute; and &#163; in a text field back into the characters they stand for, in a new field.",
     "category": "Preparation",
     "subcategory": null,
     "tags": [
-        "HTML",
+        "html",
         "escape",
         "unescape",
-		"encode",
-		"decode"
+        "entities",
+        "decode",
+        "text cleaning"
     ],
-    "introductoryText": "### Convert all named and numeric character references to the corresponding Unicode characters",
+    "introductoryText": "Text taken from web pages, feeds, CMS exports or APIs often carries HTML character references: `&amp;` for &, `&eacute;` for é, `&#163;` for £, `&nbsp;` for a non-breaking space. This block turns them back into the characters they stand for, in a new field.\n\n**How to set it up**: choose the text field and a name for the new field (use the same name to replace it).\n\n- **Repeat for double-escaped text**: tick when the text was escaped twice (`&amp;lt;` should become `<`).\n- **Non-breaking spaces as plain spaces**: ticked by default, so `&nbsp;` becomes an ordinary space that matches in joins and filters.\n\nHTML tags such as `<b>` are not removed, and text that is not a known reference (`R&D`, `Q&A`) is left as it is. Missing values stay missing.",
     "dependencies": "",
     "options": [
         {
             "name": "fieldName",
             "title": "Text to unescape",
-            "description": "Select the field that contains the text to unescape",
+            "description": "The text field holding the escaped text.",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
@@ -38,15 +39,43 @@
             "fieldTypes": [
                 "STRING"
             ]
+        },
+        {
+            "name": "outputField",
+            "title": "Unescaped field name",
+            "description": "Name of the new field holding the unescaped text. Use the name of the field being unescaped to replace it.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Unicode text"
+        },
+        {
+            "name": "repeat",
+            "title": "Repeat for double-escaped text",
+            "description": "Unescape again until nothing changes, so &amp;lt; becomes < rather than &lt;.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "plainSpaces",
+            "title": "Non-breaking spaces as plain spaces",
+            "description": "Turn non-breaking spaces (&nbsp;) into ordinary spaces.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
         }
     ],
     "blockOutputs": [
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
+            "label": "Unescaped",
+            "displayName": "Records with unescaped text",
+            "tooltip": "The input records with the unescaped text in a new field."
         }
     ],
     "docker": {

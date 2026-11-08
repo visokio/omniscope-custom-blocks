@@ -1,0 +1,26 @@
+Order,Branch,Product,Units,Unit Price,Order Date
+SO-3001,Leeds,Garden hose 15m,4,18.50,2025-04-01
+SO-3002,York,Compost 50L,10,7.25,2025-04-01
+SO-3003,Leeds,Hand trowel,6,5.99,2025-04-02
+SO-3004,Harrogate,Watering can 10L,3,12.00,2025-04-02
+SO-3005,York,Garden hose 15m,5,18.50,2025-04-03
+SO-3006,,Plant labels (100),8,3.40,2025-04-03
+SO-3007,Leeds,Compost 50L,12,7.25,2025-04-04
+SO-3008,Harrogate,Hand trowel,,5.99,2025-04-04
+SO-3009,York,Pruning shears,2,24.00,2025-04-05
+SO-3010,Leeds,Watering can 10L,4,12.00,2025-04-05
+SO-3010,Leeds,Watering can 10L,4,12.00,2025-04-05
+SO-3011,Harrogate,Compost 50L,9,7.25,2025-04-07
+SO-3012,York,Plant labels (100),7,3.40,2025-04-07
+SO-3013,Leeds,Garden hose 15m,240,18.50,2025-04-08
+SO-3014,Harrogate,Pruning shears,3,,2025-04-08
+SO-3015,York,Hand trowel,5,5.99,2025-04-09
+SO-3016,Leeds,Compost 50L,11,7.25,2025-04-09
+SO-3017,,Watering can 10L,2,12.00,2025-04-10
+SO-3018,Harrogate,Garden hose 15m,6,185.00,2025-04-10
+SO-3019,York,Compost 50L,8,7.25,2025-04-11
+SO-3020,Leeds,Pruning shears,1,24.00,2025-04-11
+SO-3020,Leeds,Pruning shears,1,24.00,2025-04-11
+SO-3021,Harrogate,Plant labels (100),9,3.40,2025-04-12
+SO-3022,York,Watering can 10L,3,12.00,
+SO-3023,Leeds,Hand trowel,5,5.99,2025-04-14

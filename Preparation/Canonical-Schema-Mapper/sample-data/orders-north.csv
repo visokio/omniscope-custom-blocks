@@ -1,0 +1,11 @@
+OrderID,Order Date,Customer,SKU,Qty,Quantity,Unit Price,Paid,Notes
+N-1001,03/02/2025,Fernhill Garden Centre,TP-30,12,,4.50,Yes,
+N-1002,03/02/2025,Marsh Lane Hardware,HR-01,4,,18.00,Yes,Delivered to side gate
+N-1003,05/02/2025,Brookside Allotment Society,CN-10,,15,2.20,No,
+N-1004,06/02/2025,Kestrel Nurseries,CP-50,,20,6.75,Yes,
+N-1005,07/02/2025,Willow Bank Landscapes,HT-02,6,6,3.10,,Paid on account
+N-1006,10/02/2025,Fernhill Garden Centre,CP-50,30,,6.75,No,
+N-1007,11/02/2025,Ashby Garden Supplies,NT-04,,,1.95,Yes,Quantity to follow
+N-1008,12/02/2025,Marsh Lane Hardware,TP-30,8,,4.50,Yes,
+N-1009,13/02/2025,Kestrel Nurseries,HR-01,two,,18.00,No,Typed in by hand
+N-1010,14/02/2025,Brookside Allotment Society,CN-10,40,,2.20,Yes,

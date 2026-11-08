@@ -11,29 +11,32 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": true,
-    "icon": "data:image/png;base64,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",
-    "description": "Standardises the values in the selected fields so that they are in the range between 0 and 1. I.e. The new value of the highest value in each field is going to be 1, and the lowest value 0. All other values are scaled proportionally.",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAErElEQVR42u2dzWtcVRiHn3ccKi5sVRC1jY1uq+BCJW3dpF2LxYUgCgUVYoVqq3+EuDWIogtxoeAf4LYlCxurpF9I3Tr5MOkyJgshsX1d5ASrdDIz97x37r0zvweymTP3nrnnuefM75ybeweEEEIIIYQQQowTNmoH5O73AceAKeBQenkF+AWYN7M70l5Pcfe7+4fufsu7s+bu59x9n1qsXvIm3H3B++eGuz+llquHvMnUswZl1d0PqwWrHzZveHGuajitVuBHns8HSqH/bdQWMAkcBg6kl/8EloCOmXlg2vwDeCxzV2vARFPTaTtQXBs4DpwAHuzytk13v5ji/O3MKo8HyAN4AjgKzDdRYCtI3gHgLPDKHvJIZaeA8+7+SGa1U4HtcLSpQ2grQN7DwHlgYsCz/qy7P5RR9cHAdjg4lgLTsPl2j17Xjf3AW+m7rFD1kV/d49oDX0q9qSiH2Fn2KsJqYDusNVVgO6P3tYDpgM9w0t0vFUinlwPbISzADCuFR6TQyYJD572G0kmgM+B2PwG3gMcz619lZ6G7aSk8ewidDDyRBt5Xmrd9ElD3x7lzwIpSeLbA/YECi+7rC+B6Rr1XgK8amsKzBVaeAs1sK53RRULIKvCqmW03NIVnC9wIFLhZdEMzW0oT8WsD9rwpM1tucArPFrgYKLCTs/FdEs/16I1rwPvAMTNbCUibUSm88Jp0O1PgZkAS3UgRm0yJW8Csu3+WZE4BT6bi5TTt+Dlw0brqFJ4n0Mw8ReJTmQdwIXJulATNu/sa8Ex6+aaZ/R48h45O4Z1h98DdCfCLFF9LXAmekO8Oby//b3ibdvc5M/uhBsk5dF+tzLP9NvB1wUCzAXwTNaG9S97TXb6bplNZpck5el/ZVyPMbB2YZefi6iA979O0bTRHCpY1MoWHXNA1s3V3n02R+OQeQ8IGcAG4HN3z7uKBgmWNTOFhV+STkB/d/RL/LuburjSspwNeil7MrZBapPBW9FGZmZtZJ0X3O+lv2cwWR0ge6VguBuwqK4W3yzi4IaXAOlB5Cm+VIG9YKbAOvbDyFN4q4biGlQLrIrHSFF7GEDqsFFgriVWl8Dai0SlcAstJp510hWG3Jy6b2WIZ9Ulgw1N4S83d7BQugQ1P4RLY8BQugQ1HAiVQSKCQQAkUEigkUEigBObyV8Ey1V8Tgb8VLFP9dRCY7kGYu0fRXAn3J4x9/aU98DVdOinz5hLVL4QQQgghhBBCCCHqhru33P299BsN2z0e47+wx376+XWVcd5+292vu/tMv09vavcjD/geeE2ncum0geeAL4ET7v5mrydL9XM14l3Jq4TXgXd6vakfgWfUlpVxJkLgEbVjZTwbIVD3EFbHvgiBosZIoAQKCRQSKIFCAsXwKWOO96i7z3QrG8L2Y/X5e654u3vTnvF5xcxe6HIsC8DzTToYMzMNofoOFBIoJFBI4Mgxiil0tAQphWoIFRIoJFBIoASKRgr8W81UGVsRAm+qHSvj1wiBn6sdK6Nn2/ezEtMCvmPnf/XF8PgWON3rp3p69sB0d8wbwAxwDdhW25bGNnCVnZtaTo/SD2YKIYQQQgghhBBCCCFEDv8AKMi2+3Jmj3cAAAAASUVORK5CYII=",
+    "description": "Rescales the chosen number fields to the range 0 to 1 (min-max scaling): each field's lowest value becomes 0, its highest 1, and the rest fall proportionally between.",
     "category": "Preparation",
     "subcategory": "Standardisation",
     "tags": [
         "standardise",
         "normalise",
+        "rescale",
+        "min-max",
         "range",
-        "interval"
+        "interval",
+        "scoring"
     ],
-    "introductoryText": "Standardises the values in the selected fields so that they are in the range between 0 and 1. I.e. The new value of the highest value in each field is going to be 1, and the lowest value 0. All other values are scaled proportionally.",
+    "introductoryText": "Rescales each chosen number field to the range 0 to 1, so fields measured in different units (prices, percentages, days) can be compared, weighted and added up:\n\nnew value = (value − lowest) / (highest − lowest)\n\nThe lowest value in each field becomes 0 and the highest 1; the chosen fields are replaced, the others pass through unchanged.\n\n- Missing values stay missing and are ignored when finding the lowest and highest.\n- A field whose values are all the same becomes 0, and the block's message names it.\n- Choose number fields only: a text or date field stops the block with a message.\n\nTo get z-scores (mean 0, standard deviation 1) instead, use the Normalise block.",
     "dependencies": "",
     "options": [
         {
             "name": "fields",
             "title": "Fields to standardise",
-            "description": null,
+            "description": "The number fields to rescale. Each is rescaled on its own lowest and highest value and replaced in the output.",
             "groupTitle": "Input",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
             "inputIndex": 0,
             "defaultValue": null,
-            "mandatory": false,
+            "mandatory": true,
             "fieldTypes": []
         }
     ],
@@ -41,9 +44,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
+            "label": "Standardised",
+            "displayName": "Standardised records",
+            "tooltip": "The input records with each chosen field rescaled to 0 to 1."
         }
     ],
     "docker": {

@@ -1,0 +1,11 @@
+Zone,From kg,To kg,Band,Price
+North,0,2,Small,3.20
+North,2,5,Medium,4.60
+North,5,10,Large,7.90
+North,10,,Heavy,12.50
+South,0,2,Small,3.50
+South,2,5,Medium,4.95
+South,5,10,Large,8.40
+South,10,,Heavy,13.75
+Islands,0,5,Standard,9.80
+Islands,5,30,Heavy,19.00

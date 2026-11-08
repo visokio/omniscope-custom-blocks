@@ -1,0 +1,9 @@
+Order,Customer,Order Date,Lines
+SO-3001,Fernhill Garden Centre,2025-04-01,"[{""sku"": ""PL-30"", ""name"": ""Terracotta pot 30cm"", ""qty"": 12, ""price"": 6.5}, {""sku"": ""CP-50"", ""name"": ""Compost 50L"", ""qty"": 20, ""price"": 7.25}]"
+SO-3002,Marsh Lane Hardware,2025-04-01,"[{""sku"": ""HR-01"", ""name"": ""Hose reel"", ""qty"": 4, ""price"": 24.0, ""options"": {""colour"": ""green""}}]"
+SO-3003,Brookside Allotment Society,2025-04-02,"[{""sku"": ""NT-04"", ""name"": ""Netting 4m"", ""qty"": 15, ""price"": 3.2}, {""sku"": ""CB-10"", ""name"": ""Cane bundle"", ""qty"": 10, ""price"": 4.0}, {""sku"": ""HT-02"", ""name"": ""Hand trowel"", ""qty"": 6, ""price"": 5.5}]"
+SO-3004,Willow Bank Landscapes,2025-04-02,
+SO-3005,Oakley Nurseries,2025-04-03,"{""sku"": ""GL-12"", ""name"": ""Gardening gloves"", ""qty"": 24, ""price"": 3.75}"
+SO-3006,Kingfisher Garden Shop,2025-04-03,"[{""sku"": ""PL-30"", ""name"": ""Terracotta pot 30cm"", ""qty"": 6, ""price"": 6.5, ""options"": {""colour"": ""terracotta""}}, {""sku"": ""WC-09"", ""name"": ""Watering can 9L"", ""qty"": 3, ""price"": 11.0, ""options"": {""colour"": ""green""}}]"
+SO-3007,Hollybush Farm Shop,2025-04-04,"[{""sku"": ""CP-50"", ""name"": ""Compost 50L"", ""qty"": 40, ""price"": 7.25, ""tags"": [""bulk"", ""pallet""]}]"
+SO-3008,Riverside Tea Rooms,2025-04-04,"[{""sku"": ""HB-01"", ""name"": ""Herb planter"", ""qty"": 2, ""price"": 18.0}"

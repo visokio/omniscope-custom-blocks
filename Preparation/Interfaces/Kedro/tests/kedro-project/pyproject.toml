@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orders_summary"
+version = "0.1"
+dependencies = ["kedro>=1.0", "kedro-datasets[pandas-csvdataset]"]
+
+[tool.kedro]
+package_name = "orders_summary"
+project_name = "Orders summary"
+kedro_init_version = "1.0.0"
+source_dir = "src"

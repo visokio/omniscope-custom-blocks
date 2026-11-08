@@ -1,0 +1,13 @@
+Supplier,Category,Price,Punctuality,Defects,LeadTime
+Northwind Fasteners,Hardware,104.5,96.2,1.8,6
+Ashby Components,Hardware,98.0,91.5,3.2,9
+Kestrel Plastics,Packaging,112.3,88.0,0.9,12
+Fernhill Paper,Packaging,95.4,97.8,2.4,5
+Marsh Lane Metals,Hardware,101.2,,4.1,8
+Pennine Print,Packaging,108.9,93.1,1.2,7
+Brookside Electrical,Electrical,99.7,85.4,5.6,14
+Willow Bank Cables,Electrical,96.3,94.9,2.0,10
+Harbourside Labels,Packaging,103.0,99.1,0.6,4
+Tamworth Motors,Electrical,110.6,90.2,3.7,11
+Lindqvist Timber,Hardware,100.0,92.7,2.9,9
+Ripon Seals,Hardware,97.1,95.5,1.5,6

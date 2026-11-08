@@ -8,7 +8,7 @@ date_fields = omni.get_option("dateFields")
 timezone_handling = omni.get_option("timezoneHandling") or "PRESERVE_LOCAL"
 
 if not date_fields:
-    omni.abort("The 'Date fields' option must contain at least one field.")
+    omni.abort("Choose at least one date field to expand.")
     raise SystemExit
 
 # In case Omniscope returns a single string instead of a list
@@ -18,15 +18,24 @@ if isinstance(date_fields, str):
 # --- Read input data ---
 df = omni.read_input_records(0)
 
-if df is None or df.empty:
-    omni.write_output_records(pd.DataFrame(), 0)
-    omni.commit("No input data.")
+if df is None:
+    omni.abort("Connect a data source to the block's input.")
     raise SystemExit
 
 # Check all selected fields exist
 missing = [f for f in date_fields if f not in df.columns]
 if missing:
     omni.abort("Selected fields not found in input: " + ", ".join(missing))
+    raise SystemExit
+
+# A number would otherwise be read as nanoseconds since 1970
+not_dates = [f for f in date_fields
+             if not (pd.api.types.is_datetime64_any_dtype(df[f].dtype)
+                     or pd.api.types.is_string_dtype(df[f].dtype)
+                     or pd.api.types.is_object_dtype(df[f].dtype))]
+if not_dates:
+    omni.abort("These fields are not Date fields: " + ", ".join(not_dates)
+               + ". Convert them to dates first (for example with Field Organiser).")
     raise SystemExit
 
 # Deterministic English names, independent of machine locale
@@ -133,24 +142,30 @@ def prepare_dates(series, handling):
     return pd.to_datetime(stripped, errors="coerce")
 
 
-processed = []
+def flag(values, dates):
+    """True/False for a date, empty for a missing date."""
+    return values.astype("boolean").mask(dates.isna())
+
+
+empty_fields = []
 
 # --- Expand each date field ---
+# Every chosen field always gets the same set of new fields, so the output's fields never depend on the data.
 for field in date_fields:
     try:
         dates = prepare_dates(df[field], timezone_handling)
     except ValueError as exc:
         omni.abort(
             f"Unable to process date field '{field}': {exc} "
-            "Change the 'Timezone handling' option or normalise the field upstream."
+            "Change the 'Time zones' option or normalise the field upstream."
         )
         raise SystemExit
 
-    if dates.isna().all():
-        # Skip completely invalid fields
-        continue
+    if len(dates) and dates.isna().all():
+        empty_fields.append(field)
 
     prefix = field
+    iso = dates.dt.isocalendar()
 
     df[f"{prefix}_year"] = dates.dt.year.astype("Int64")
     df[f"{prefix}_month"] = dates.dt.month.astype("Int64")
@@ -159,23 +174,17 @@ for field in date_fields:
     df[f"{prefix}_day_name"] = dates.dt.dayofweek.map(DAY_NAMES)
     df[f"{prefix}_dayofyear"] = dates.dt.dayofyear.astype("Int64")
     df[f"{prefix}_quarter"] = dates.dt.quarter.astype("Int64")
-    df[f"{prefix}_is_month_start"] = dates.dt.is_month_start
-    df[f"{prefix}_is_month_end"] = dates.dt.is_month_end
+    df[f"{prefix}_is_month_start"] = flag(dates.dt.is_month_start, dates)
+    df[f"{prefix}_is_month_end"] = flag(dates.dt.is_month_end, dates)
 
-    # ISO week of year
-    df[f"{prefix}_weekofyear"] = dates.dt.isocalendar().week.astype("Int64")
-
-    processed.append(field)
+    # ISO week of year, and the ISO year it belongs to (29 December 2025 is in week 1 of 2026)
+    df[f"{prefix}_weekofyear"] = iso.week.astype("Int64")
+    df[f"{prefix}_week_year"] = iso.year.astype("Int64")
 
 # --- Output ---
 omni.write_output_records(df, 0)
 
-if processed:
-    omni.commit(
-        "Expanded date parts for fields: "
-        + ", ".join(processed)
-        + f". Timezone handling: {timezone_handling}."
-    )
-else:
-    omni.abort("None of the selected fields contained valid dates.")
-    raise SystemExit
+message = "Expanded " + ", ".join(date_fields) + "."
+if empty_fields:
+    message += " No dates in " + ", ".join(empty_fields) + ": its date parts are empty."
+omni.commit(message)

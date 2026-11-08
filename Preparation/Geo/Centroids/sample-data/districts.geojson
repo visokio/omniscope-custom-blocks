@@ -1,0 +1,187 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "district_code": "D01",
+    "district_name": "Ashcombe",
+    "households": 4200
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -1.6,
+       53.12
+      ],
+      [
+       -1.4,
+       53.12
+      ],
+      [
+       -1.4,
+       53.16
+      ],
+      [
+       -1.26,
+       53.16
+      ],
+      [
+       -1.26,
+       53.24
+      ],
+      [
+       -1.6,
+       53.24
+      ],
+      [
+       -1.6,
+       53.12
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "district_code": "D02",
+    "district_name": "Brackenford",
+    "households": 2900
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -1.4,
+       53.12
+      ],
+      [
+       -1.2,
+       53.12
+      ],
+      [
+       -1.2,
+       53.24
+      ],
+      [
+       -1.26,
+       53.24
+      ],
+      [
+       -1.26,
+       53.16
+      ],
+      [
+       -1.4,
+       53.16
+      ],
+      [
+       -1.4,
+       53.12
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "district_code": "D03",
+    "district_name": "Coldharbour Vale",
+    "households": 3600
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -1.6,
+       53.0
+      ],
+      [
+       -1.35,
+       53.0
+      ],
+      [
+       -1.35,
+       53.12
+      ],
+      [
+       -1.6,
+       53.12
+      ],
+      [
+       -1.6,
+       53.0
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "district_code": "D04",
+    "district_name": "Dunmere",
+    "households": 1800
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -1.35,
+        53.0
+       ],
+       [
+        -1.2,
+        53.0
+       ],
+       [
+        -1.2,
+        53.12
+       ],
+       [
+        -1.35,
+        53.12
+       ],
+       [
+        -1.35,
+        53.0
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -1.1,
+        53.05
+       ],
+       [
+        -1.06,
+        53.05
+       ],
+       [
+        -1.06,
+        53.08
+       ],
+       [
+        -1.1,
+        53.08
+       ],
+       [
+        -1.1,
+        53.05
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

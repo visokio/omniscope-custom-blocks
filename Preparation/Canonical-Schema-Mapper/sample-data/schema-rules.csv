@@ -1,0 +1,9 @@
+canonical,aliases,type,default,format
+order_id,OrderID|Order No,string,,
+order_date,Order Date|OrderDate|Date Ordered,date,,%d/%m/%Y
+customer,Customer Name|Client,string,,
+sku,SKU|SKU Code|Product Code,string,,
+quantity,Qty|Quantity|Units,integer,,
+unit_price,Unit Price|Price,number,,
+paid,Paid|Is Paid,boolean,false,
+currency,Currency,string,GBP,
