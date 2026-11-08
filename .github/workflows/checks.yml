@@ -1,0 +1,59 @@
+name: Checks
+
+# On every push: rebuild index.json, check the manifests, and run the tool and block tests.
+# On master, an out-of-date index.json (typically after an edit in GitHub's web editor) is regenerated
+# and committed by this workflow. Pushes made with GITHUB_TOKEN do not start workflows, so its own
+# commit does not run it again.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# A newer push to the same branch cancels the run still going for the older one.
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    # A pull request from a branch of this repository is already checked by its push; only forks need this run.
+    if: >-
+      github.actor != 'github-actions[bot]' &&
+      (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tools/python/requirements.txt
+      - run: npm ci
+      - run: pip install -r tools/python/requirements.txt
+
+      - name: Rebuild index.json and check the manifests
+        run: npm run build -- --no-site
+
+      - name: Commit the regenerated index.json (master only)
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          if git diff --quiet -- index.json; then echo "index.json is up to date"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Regenerate index.json after ${GITHUB_SHA::7}" -- index.json
+          git push
+
+      - name: index.json is up to date (branches and pull requests)
+        if: github.ref != 'refs/heads/master'
+        run: git diff --exit-code -- index.json
+
+      - run: npm run typecheck
+      - run: npm test
