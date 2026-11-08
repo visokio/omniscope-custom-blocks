@@ -1,0 +1,2327 @@
+{
+ "_about": "Related core and community blocks and views, shown in the Related section of each gallery page. Format and rules: CONTRIBUTING.md, \"Related blocks and views\".",
+ "items": {
+  "Analytics/AB-Test": {
+   "summary": "The core **One Way ANOVA** block does not test conversion rates, give lift with confidence intervals or compare each variant with a control; this block does, from per-variant totals, with a plain-language verdict.",
+   "overlaps": [
+    {
+     "view": "abtest",
+     "note": "Runs the same comparisons with the control (z-test for rates, Welch for means, optional Bonferroni) inside a report, so the results follow its filters. It needs one row per visitor; use this block for per-variant totals, for tests in several segments at once, or for a results table you can keep.",
+     "name": "A/B Test"
+    }
+   ],
+   "seeAlso": [
+    {
+     "coreBlock": "One Way ANOVA",
+     "note": "Compares means across groups."
+    },
+    {
+     "block": "Analytics/Sample-Size-Calculator",
+     "note": "Works out how many visitors a test needs before it starts."
+    }
+   ]
+  },
+  "Analytics/ABC-Classification": {
+   "summary": "With core blocks an ABC split takes a sort, a running total and formulas, and is awkward per group or with XYZ demand variability. This block classifies every item in one step.",
+   "overlaps": [
+    {
+     "view": "abcxyz",
+     "note": "Classifies the same way (ABC by share of value, XYZ by demand variability, same default thresholds) and shows the nine classes as a matrix in a report, recalculated for any filter. Use this block when you need each item's class as a field, for joins, exports or stock rules.",
+     "name": "ABC-XYZ Analysis"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Concentration-Measures",
+     "note": "HHI, Gini and top-N shares summarising how concentrated the total is."
+    },
+    {
+     "block": "Analytics/Safety-Stock",
+     "note": "Stock levels per item, often set differently for A, B and C items."
+    },
+    {
+     "block": "Preparation/Tile",
+     "note": "Equal-sum (Pareto) bands and other tiles of a numeric field."
+    }
+   ]
+  },
+  "Analytics/Basket-Affinity": {
+   "summary": "The core **Basket Analysis** block finds strong association rules; this block keeps every product pair, weak pairs included, for heat maps and range reviews, so the two complement each other.",
+   "overlaps": [
+    {
+     "coreBlock": "Basket Analysis",
+     "note": "Association rules for items bought together. This block outputs the full pairwise matrix (support, confidence, lift, Jaccard) for heat maps."
+    },
+    {
+     "view": "marketbasket",
+     "note": "Measures lift, confidence and support for item pairs from the same order lines and draws them as a clustered matrix with ranked rules, in a report. Use this block to keep every pair as data, with Jaccard and each item's strongest partners.",
+     "name": "Market Basket"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Product-Recommendations",
+     "note": "Turns co-purchase similarity into a ranked list of products per customer."
+    }
+   ]
+  },
+  "Analytics/Benford-Test": {
+   "overlaps": [
+    {
+     "view": "benford",
+     "note": "Runs the same digit tests with MAD conformity in a report, ranks groups by deviation and selects the records behind a digit. Use this block to keep the conformity summary and the flagged records for follow-up.",
+     "name": "Benford Analysis"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/Sequence-Gap-Finder",
+     "note": "Another audit screen: missing, duplicate and out-of-order document numbers."
+    }
+   ]
+  },
+  "Analytics/Case-Bottlenecks": {
+   "summary": "The core **Network Analysis** block analyses links between nodes, not timed event logs. This block measures case durations, handover times and rework from an event log as tables.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Path-Analysis",
+     "note": "The most common routes in more detail, with transitions for Sankey charts."
+    },
+    {
+     "view": "processmap",
+     "note": "Draws the process map from the same event log, with rework loops and variants, and selects cases.",
+     "name": "Process Map"
+    }
+   ]
+  },
+  "Analytics/Churn-Survival": {
+   "summary": "A Python alternative to the community R **Survival Analysis** block, aimed at churn: it starts from start and end dates. Choose the R block if you already work in R.",
+   "overlaps": [
+    {
+     "block": "Analytics/Survival",
+     "note": "Kaplan-Meier (or Fleming-Harrington) survival curves for censored data, using the R survival package. This block adds per-group median lifetime, milestone retention and log-rank tests, and needs no extra packages."
+    },
+    {
+     "view": "survivalcurve",
+     "note": "Uses the same Kaplan-Meier method (Greenwood bands, log-rank test) and draws the curves interactively in a report. Use this block for retention at milestones, restricted mean lifetime and the curves as data.",
+     "name": "Survival Curve"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Cohort-Retention",
+     "note": "Retention per acquisition cohort and period, as a cohort matrix."
+    }
+   ]
+  },
+  "Analytics/Clustering/DBScan": {
+   "summary": "The core **Clustering** block is the first choice. **DBScan** needs no cluster count and standardises the fields itself, and the records it leaves as noise are a ready-made list of outliers.",
+   "overlaps": [
+    {
+     "coreBlock": "Clustering",
+     "note": "Groups rows into a chosen or automatic number of clusters, optionally per partition. This block finds clusters of any shape by density and marks isolated records as noise; use the core block for large inputs."
+    },
+    {
+     "block": "Analytics/Clustering/KMeans",
+     "note": "Puts every record into one of a chosen number of clusters. Use DBScan when you don't know how many clusters to expect or want the outliers left out."
+    },
+    {
+     "block": "Analytics/Clustering/GMM",
+     "note": "Fits overlapping oval clusters and gives each record a membership probability. DBScan suits irregular shapes and leaves noise unclustered."
+    }
+   ]
+  },
+  "Analytics/Clustering/GMM": {
+   "summary": "The core **Clustering** block is the first choice, especially for large inputs or without R, and works best on compact, round groups. This block fits a Gaussian mixture for clusters that differ in size, shape and tilt, so borderline records show up.",
+   "overlaps": [
+    {
+     "coreBlock": "Clustering",
+     "note": "Groups rows into clusters, optionally per partition. This block fits a Gaussian mixture (R mclust), gives each record the probability it belongs to its cluster, and can assign a second input to the same clusters."
+    },
+    {
+     "block": "Analytics/Clustering/KMeans",
+     "note": "k-means with a number of clusters you choose. Quicker to explain; use this block when clusters differ in size or shape or overlap."
+    },
+    {
+     "block": "Analytics/Clustering/DBScan",
+     "note": "Density clusters of any shape, with isolated records marked as noise. This block assigns every record and gives a probability."
+    }
+   ]
+  },
+  "Analytics/Clustering/KMeans": {
+   "summary": "The core **Clustering** block is the first choice. This block is a plain R k-means that is easy to explain and extend, and standardises the fields itself.",
+   "overlaps": [
+    {
+     "coreBlock": "Clustering",
+     "note": "Can choose the number of clusters itself and cluster each partition separately. This block runs R's k-means with a fixed seed, so the same input always gives the same clusters."
+    },
+    {
+     "block": "Analytics/Clustering/DBScan",
+     "note": "Finds clusters by density, chooses their number itself and marks outliers as noise. Use KMeans when you want a set number of compact groups covering every record."
+    },
+    {
+     "block": "Analytics/Clustering/GMM",
+     "note": "Chooses the number of clusters by BIC and allows long, tilted or overlapping clusters, with a probability per record. KMeans is simpler and assumes round clusters of similar size."
+    }
+   ],
+   "seeAlso": [
+    {
+     "view": "scatter3d",
+     "note": "Shows the clusters in 3D on three numeric fields, coloured by Cluster.",
+     "name": "3D Scatter"
+    }
+   ]
+  },
+  "Analytics/Cohort-Retention": {
+   "summary": "With core blocks, cohort retention takes several Aggregate and Join blocks and a pivot, and the cohort logic is easy to get wrong. This block builds the cohort matrix in one step.",
+   "overlaps": [
+    {
+     "view": "cohortretention",
+     "note": "Builds the same cohorts from raw activity and shows them as a triangle heatmap with retention curves, recalculated when the report is filtered. Use this block when the cohort matrix or each customer's cohort is needed as data.",
+     "name": "Cohort Retention"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Churn-Survival",
+     "note": "Kaplan-Meier retention from start and end dates, with median lifetime and tests between groups."
+    },
+    {
+     "block": "Analytics/Customer-Lifetime-Value",
+     "note": "Predicts each customer's future spend and probability of still being active."
+    }
+   ]
+  },
+  "Analytics/Concentration-Measures": {
+   "summary": "HHI, Gini and Lorenz curves are possible per group with sorts, running totals and formulas; this block calculates them in one step.",
+   "overlaps": [
+    {
+     "view": "concentration",
+     "note": "Draws Lorenz curves with Gini, top shares and HHI from the same items and measure, and selects the largest items with one click. Use this block for the measures as a table per group, with HHI bands and CR4.",
+     "name": "Concentration"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/ABC-Classification",
+     "note": "Classifies each item A, B or C by its cumulative share of value (Pareto)."
+    },
+    {
+     "block": "Preparation/Top-N-With-Other",
+     "note": "Keeps the largest items per group and rolls the rest into Other, with shares."
+    }
+   ]
+  },
+  "Analytics/Contingency-Table": {
+   "summary": "The core **Frequency Table** block gives the counts; this block adds shares, expected counts and the standardised residuals that show which cells drive the difference.",
+   "overlaps": [
+    {
+     "view": "indexheatmap",
+     "note": "Shows the same cross-tab as index scores against independence in a report, marking cells by the same adjusted residual. Use this block for the chi-square test, Cramer's V and the cells as data.",
+     "name": "Index Heatmap"
+    }
+   ],
+   "seeAlso": [
+    {
+     "coreBlock": "Frequency Table",
+     "note": "Row counts for each combination of the selected fields."
+    }
+   ]
+  },
+  "Analytics/Correlation-Matrix": {
+   "summary": "If a covariance or correlation matrix is all you need, use the core **Covariance Correlation** block. This block adds ranked pairs and p-values, per group.",
+   "overlaps": [
+    {
+     "coreBlock": "Covariance Correlation",
+     "note": "Builds a covariance or correlation matrix from numeric fields. This block reports Pearson and Spearman correlations with p-values, per group or against a target."
+    },
+    {
+     "view": "correlationmatrix",
+     "note": "Calculates Pearson or Spearman correlations in the browser, shows them as a heatmap and plots any pair on click. It gives no p-values; use this block for significance, correlations per group or every field against one target.",
+     "name": "Correlation Matrix"
+    }
+   ]
+  },
+  "Analytics/Cost-Allocation": {
+   "summary": "Allocating a cost pool by drivers is possible with core **Join** blocks and formulas, but the rounded shares rarely add back to the pool exactly. This block allocates by drivers with penny-exact rounding."
+  },
+  "Analytics/Customer-Lifetime-Value": {
+   "seeAlso": [
+    {
+     "block": "Analytics/RFM-Segmentation",
+     "note": "Scores customers on recency, frequency and spend and names segments, without a prediction."
+    },
+    {
+     "block": "Analytics/Cohort-Retention",
+     "note": "Retention and cumulative revenue per acquisition cohort."
+    }
+   ]
+  },
+  "Analytics/Data-Profiler": {
+   "summary": "This block puts a first-look profile into the workflow as data, with the same fields every time, so **Validate data** can check it. Unlike the core **Anomaly Detection** block, which scores whole records, it flags each field separately, showing which value is unusual.",
+   "overlaps": [
+    {
+     "coreBlock": "Field metadata",
+     "note": "Lists chosen metadata for each field, one record per field. This block adds the most common value, quartiles and skewness, and scores every numeric value with a z-score and anomaly flag."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/Outlier-Flagger",
+     "note": "IQR and median-based (MAD) outlier rules, within groups, for skewed fields where a z-score misleads."
+    },
+    {
+     "block": "Preparation/Data-Quality-Analyser",
+     "note": "An issue log of duplicate rows, missing values and IQR outliers."
+    },
+    {
+     "block": "Analytics/Histogram-Distribution",
+     "note": "Histograms and percentiles for one numeric field, compared across groups."
+    }
+   ]
+  },
+  "Analytics/Find-Nearest": {
+   "summary": "The LAT_LON_DISTANCE formula measures one pair of points, so finding the nearest with it needs a cross join first, which does not scale. This block finds the k nearest points in a second input directly, within an optional maximum distance.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Trade-Area-Summary",
+     "note": "Counts and sums points within several radii of each site, with shared catchment."
+    },
+    {
+     "block": "Analytics/Point-To-Point-Distance",
+     "note": "Distance and bearing between two locations on the same row."
+    }
+   ]
+  },
+  "Analytics/Forecast-Accuracy": {
+   "summary": "This block scores any forecast against actuals, including those from the core **Time Series Forecast** block, with MAE, RMSE, MAPE, WAPE, bias and tracking signal per item.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Holt-Winters-Forecast",
+     "note": "Produces forecasts per series that this block can score against actuals."
+    },
+    {
+     "block": "Analytics/Validation/Model-Validation",
+     "note": "The equivalent for predicted categories: confusion matrix, precision and recall."
+    }
+   ]
+  },
+  "Analytics/Funnel-Analysis": {
+   "summary": "With core blocks a funnel takes a pivot of first-event times per user and step-by-step formulas; this block handles the step order and time window for you.",
+   "overlaps": [
+    {
+     "view": "eventfunnel",
+     "note": "Follows users through ordered steps from the same kind of event log, in a report, and selects those who dropped off. Use this block for the per-user table (furthest step, hours to convert) or for a funnel where steps may happen in any order.",
+     "name": "Event Funnel"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Path-Analysis",
+     "note": "The most common event sequences, for when the steps are not known in advance."
+    }
+   ]
+  },
+  "Analytics/Histogram-Distribution": {
+   "summary": "Report charts can draw a histogram; this block outputs bins shared across groups, so groups compare like for like.",
+   "overlaps": [
+    {
+     "view": "distribution",
+     "note": "Draws the histogram with median, percentiles and outliers in a report, comparing groups as outlines on a shared scale. Use this block when the bins and the statistics are needed as tables.",
+     "name": "Distribution"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Data-Profiler",
+     "note": "Per-field statistics including counts, mean, nulls and skewness, but no histograms or per-group comparison."
+    },
+    {
+     "coreBlock": "Field metadata",
+     "note": "One record per field with counts and summaries."
+    },
+    {
+     "block": "Preparation/Tile",
+     "note": "Gives each record its band (equal width, quantile and more) rather than counting bins."
+    }
+   ]
+  },
+  "Analytics/Holt-Winters-Forecast": {
+   "summary": "The core **Time Series Forecast** block suits general forecasting. This block uses one transparent, well-known method per series, chooses trend and seasonality automatically and checks accuracy on a holdout, for teams who need to explain or match an established method.",
+   "overlaps": [
+    {
+     "coreBlock": "Time Series Forecast",
+     "note": "Predicts future values of a measure from past observations. This block uses Holt-Winters exponential smoothing per series with prediction intervals."
+    },
+    {
+     "view": "forecast",
+     "note": "Fits Holt-Winters to one series in a report, with 80% and 95% ranges and a backtest, and re-fits it for any filtered slice. Use this block to forecast many series in one pass and keep the forecasts and their accuracy as data.",
+     "name": "Forecast"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Forecast-Accuracy",
+     "note": "Compares forecasts from several models with actuals."
+    },
+    {
+     "block": "Analytics/Seasonal-Decomposition",
+     "note": "Splits the history into trend and seasonal parts, to understand it rather than project it."
+    },
+    {
+     "block": "Analytics/Stock-Run-Out",
+     "note": "Projects stock from a demand forecast such as this one."
+    },
+    {
+     "coreView": "Area Range",
+     "note": "Draws the forecast with its 80% or 95% interval as a band."
+    }
+   ]
+  },
+  "Analytics/Inflation-Adjustment": {
+   "summary": "Restating amounts is possible with a join to an index table and a formula. This block also chooses the right index per series and reports the index used and the cumulative inflation.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Price-Index",
+     "note": "Builds your own price index from item prices and quantities, which this block can then use."
+    },
+    {
+     "block": "Preparation/Join/As-Of-Join",
+     "note": "General join to the record in force at each date; this block does that for index values and then restates the amounts."
+    }
+   ]
+  },
+  "Analytics/Likert-Survey": {
+   "summary": "The standard survey summary (distributions, top-2-box, net scores) is possible with a de-pivot, aggregates and formulas; this block produces it in one step, from wide or long survey data.",
+   "overlaps": [
+    {
+     "view": "likert",
+     "note": "Draws the diverging chart from answers in long layout (one row per answer), which this block's Responses (long) output provides. Use this block for mean scores, top-2-box and net scores as a table, or to start from a wide survey export.",
+     "name": "Likert Survey"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Net-Promoter-Score",
+     "note": "NPS from 0 to 10 recommend answers, with margins of error."
+    }
+   ]
+  },
+  "Analytics/Monte-Carlo-Cost-Risk": {
+   "summary": "The core **Distribution Input** block is a building block for simulation; this block runs the whole cost-risk simulation: three-point estimates, risk events, P-values, contingency and the lines that drive the risk.",
+   "seeAlso": [
+    {
+     "coreBlock": "Distribution Input",
+     "note": "Generates random values from a chosen distribution."
+    }
+   ]
+  },
+  "Analytics/Net-Promoter-Score": {
+   "summary": "A basic NPS is possible with formulas and an Aggregate. This block adds the margin of error, confidence intervals, weights and period comparison.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Likert-Survey",
+     "note": "Summaries of agreement or satisfaction scale questions from the same kind of survey export."
+    },
+    {
+     "view": "likert",
+     "note": "Shows 0 to 10 answers as a Net Promoter Score chart, split by group.",
+     "name": "Likert Survey"
+    }
+   ]
+  },
+  "Analytics/Network-Analysis/Attribute-Analysis": {
+   "summary": "Omniscope's **Network** view draws the connections node by node, and an Aggregate block can count connections per category but not which categories meet at the same nodes. This block rolls the network up to its categories, weighted so large groups do not dominate.",
+   "seeAlso": [
+    {
+     "coreBlock": "Network Analysis",
+     "note": "Finds important nodes and clusters in a link table."
+    },
+    {
+     "block": "Analytics/Network-Analysis/TSNE",
+     "note": "Maps the nodes of the same kind of connection list in 2-D, by who they connect to."
+    },
+    {
+     "view": "networkanalyser",
+     "note": "Can draw the category links as a directed network, with Probability as the link weight.",
+     "name": "Network Analyser"
+    }
+   ]
+  },
+  "Analytics/Network-Analysis/TSNE": {
+   "summary": "Omniscope's **Network** view draws nodes and links directly. This block instead computes a 2-D position for every node from its pattern of connections and outputs it as data; links are not drawn, which keeps large, dense networks readable.",
+   "seeAlso": [
+    {
+     "coreBlock": "Network Analysis",
+     "note": "Finds important nodes and clusters in a link table."
+    },
+    {
+     "block": "Analytics/Network-Analysis/Attribute-Analysis",
+     "note": "Measures how much each category's connections overlap with each other category's, from the same kind of input."
+    },
+    {
+     "view": "forcecoordinategraph",
+     "note": "Draws a network at X and Y positions you supply: join this block's map back onto the connections to show the links between the placed nodes.",
+     "name": "Force Coordinate Graph"
+    },
+    {
+     "coreView": "Scatter",
+     "note": "Plots the map, Dimension 1 against Dimension 2, one point per node."
+    }
+   ]
+  },
+  "Analytics/Occupancy-From-Intervals": {
+   "summary": "With core blocks, occupancy over time takes expanding each interval into time buckets and aggregating; this block calculates exact average and peak occupancy per bucket in one step.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Date-Range-Expander",
+     "note": "Expands each start / end range into one row per day, week or month, with days per period."
+    },
+    {
+     "view": "strata",
+     "note": "Draws the intervals themselves as a timeline, where the stack's height shows how many are open at each moment.",
+     "name": "Strata"
+    }
+   ]
+  },
+  "Analytics/Path-Analysis": {
+   "summary": "The core **Network Analysis** block analyses links between nodes, not ordered paths per user. This block finds the most common event sequences.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Funnel-Analysis",
+     "note": "Conversion and drop-off through a fixed list of steps."
+    },
+    {
+     "block": "Analytics/Case-Bottlenecks",
+     "note": "Durations, rework and slow handovers from a process event log."
+    },
+    {
+     "block": "Preparation/Sessionise-Events",
+     "note": "Splits each user's events into sessions, so paths can be measured per session."
+    },
+    {
+     "view": "processmap",
+     "note": "Maps how cases move between steps from the same kind of event log, with rework and variants.",
+     "name": "Process Map"
+    },
+    {
+     "coreView": "Sankey",
+     "note": "Draws the Transitions output (step-numbered From and To links) as flows."
+    }
+   ]
+  },
+  "Analytics/Period-Comparison": {
+   "summary": "The standard month, quarter-to-date, year-to-date and moving annual total comparison is possible with date formulas and several Aggregate blocks; this block builds it in one step.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Variance-Bridge",
+     "note": "Explains the gap between two totals as a waterfall of category variances."
+    },
+    {
+     "view": "yearonyear",
+     "note": "Draws this year against last year by month, with a like-for-like year-to-date change and financial years.",
+     "name": "Year on Year"
+    }
+   ]
+  },
+  "Analytics/Point-In-Polygon": {
+   "summary": "Use the community **Shapefile** block to read a shapefile directly, and this block when you also want a count of points per polygon, or every polygon a point falls in where regions overlap.",
+   "overlaps": [
+    {
+     "block": "Preparation/Geo/Shapefile",
+     "note": "Joins latitude / longitude points to regions from a shapefile, a GeoJSON file or shapes on a second input. This block also counts points per polygon and can return every overlapping match."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/Geo/Centroids",
+     "note": "Centre points of the shapes, from GeoJSON or WKT text or a boundary file."
+    }
+   ]
+  },
+  "Analytics/Point-To-Point-Distance": {
+   "summary": "The LAT_LON_DISTANCE formula gives the distance between two points. This block adds bearing, compass direction and midpoint, in kilometres or miles, with optional road distance and travel time estimates.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Find-Nearest",
+     "note": "Finds the nearest locations in another table for each point."
+    },
+    {
+     "block": "Analytics/Trade-Area-Summary",
+     "note": "Counts points around each site by radius."
+    },
+    {
+     "view": "globeflows",
+     "note": "Draws the same origin and destination pairs as arcs on a 3D globe.",
+     "name": "Globe Flows"
+    }
+   ]
+  },
+  "Analytics/Prediction/KNN": {
+   "summary": "The core **Prediction** block is the general choice, for many fields, mixed field types or large data. This block fits no model, which suits a few numeric measures where \"records like this one\" is the right logic, and re-predicts the labelled records, a ready-made check for **Model Validation**.",
+   "overlaps": [
+    {
+     "coreBlock": "Prediction",
+     "note": "Builds a model for a target field from chosen predictors, with likelihood fields for each value. This block classifies from the nearest known records, with no model to fit, and gives the share of neighbours that agree."
+    },
+    {
+     "block": "Analytics/Prediction/SVM",
+     "note": "Learns boundaries between categories from training records. KNN needs no training step and reports how many neighbours agree; SVM gives no confidence."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Validation/Model-Validation",
+     "note": "Confusion matrix, precision, recall and F1 for this block's predictions on held-back records."
+    },
+    {
+     "block": "Analytics/Regression",
+     "note": "Logistic regression for yes / no outcomes, with coefficients and probabilities."
+    }
+   ]
+  },
+  "Analytics/Prediction/SVM": {
+   "summary": "The core **Prediction** block is the general choice, with a confidence per prediction and support for text fields. This block is a single, well-known method on numeric fields with its settings in the script to change; it gives no confidence, so use **Regression** instead when the prediction must be explained.",
+   "overlaps": [
+    {
+     "coreBlock": "Prediction",
+     "note": "Builds a model for a target field from chosen predictors, with likelihood fields for each value. This block trains a support vector machine on numeric fields and predicts a second input."
+    },
+    {
+     "block": "Analytics/Prediction/KNN",
+     "note": "Classifies from the k most similar known records and gives the share that agree. Try both on the same split and compare."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Validation/Model-Validation",
+     "note": "Checks this block's predictions against known answers: confusion matrix, precision, recall and F1."
+    },
+    {
+     "block": "Analytics/Regression",
+     "note": "Logistic regression for yes / no outcomes, with coefficients and probabilities."
+    }
+   ]
+  },
+  "Analytics/Price-Elasticity": {
+   "summary": "The core **Regression** block fits regressions in general; this block applies the log-log elasticity model per product, with controls and a plain-language reading of the result.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Regression",
+     "note": "Linear or logistic regression on any fields, with the full statistics report."
+    }
+   ]
+  },
+  "Analytics/Price-Index": {
+   "seeAlso": [
+    {
+     "block": "Analytics/Inflation-Adjustment",
+     "note": "Restates money values in real terms using an index table, such as this block's output."
+    },
+    {
+     "block": "Analytics/Price-Volume-Mix",
+     "note": "Splits a revenue change into price, volume and mix effects per item."
+    }
+   ]
+  },
+  "Analytics/Price-Volume-Mix": {
+   "overlaps": [
+    {
+     "view": "pvmbridge",
+     "note": "Calculates the same volume, mix, price, new and discontinued effects and draws the waterfall in a report, recalculated for any filter. Use this block for one bridge per group, or to keep each item's effects as data.",
+     "name": "Price Volume Mix"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Variance-Bridge",
+     "note": "Bridges any two totals by category, without the price and volume split."
+    },
+    {
+     "block": "Analytics/Price-Index",
+     "note": "Price and volume indices for a whole basket of items, per period."
+    },
+    {
+     "coreView": "Waterfall",
+     "note": "Draws the Bridge output as a waterfall chart."
+    }
+   ]
+  },
+  "Analytics/Principal-Components": {
+   "summary": "Use the core **Reduce Dimensions** block when you want the reduced fields for modelling or charts. This block reports the analysis itself, to understand what drives the variation.",
+   "overlaps": [
+    {
+     "coreBlock": "Reduce Dimensions",
+     "note": "Compresses numeric fields into fewer dimensions using PCA (or LDA). This block reports explained variance and loadings as tables."
+    }
+   ],
+   "seeAlso": [
+    {
+     "view": "scatter3d",
+     "note": "Plots three component scores in 3D, coloured by a category.",
+     "name": "3D Scatter"
+    }
+   ]
+  },
+  "Analytics/Product-Recommendations": {
+   "summary": "The core **Basket Analysis** block works across all transactions; this block turns purchase history into recommendations for each customer: the top products they have not bought yet, with the reason.",
+   "seeAlso": [
+    {
+     "coreBlock": "Basket Analysis",
+     "note": "Association rules for items bought together."
+    },
+    {
+     "block": "Analytics/Basket-Affinity",
+     "note": "Support, confidence, lift and Jaccard for every pair of items, as a matrix."
+    },
+    {
+     "view": "marketbasket",
+     "note": "Shows which items are bought together, as a matrix with ranked rules.",
+     "name": "Market Basket"
+    }
+   ]
+  },
+  "Analytics/RFM-Segmentation": {
+   "summary": "RFM scoring is possible with several Aggregate blocks, tiles and formulas; this block scores recency, frequency and value and names the segments in one step.",
+   "overlaps": [
+    {
+     "view": "rfmsegments",
+     "note": "Scores customers 1 to 5 from the same transactions and shows named segments on the recency grid in a report, selecting a segment's customers; its eleven segments differ slightly from this block's ten. Use this block to keep each customer's scores and segment as fields, for campaigns or exports.",
+     "name": "RFM Segments"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Customer-Lifetime-Value",
+     "note": "Predicted lifetime value and probability active from the same order history."
+    }
+   ]
+  },
+  "Analytics/Reconciliation-Matcher": {
+   "summary": "A core **Join** matches on exact keys. This block matches two ledgers one-to-one on amount, with tolerances, references and date windows, including one-to-many groups, and lists what is left unmatched.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Data-Compare",
+     "note": "Compares two versions of one dataset by key and lists added, removed and changed records."
+    }
+   ]
+  },
+  "Analytics/Regression": {
+   "summary": "The core **Regression** block suits scoring; this block is for explaining, with odds ratios, collinearity checks and fit measures for linear and logistic models. To predict categories, see the core **Prediction** block.",
+   "overlaps": [
+    {
+     "coreBlock": "Regression",
+     "note": "Estimates relationships between a response and predictor fields and generates predictions. This block reports coefficients with standard errors, p-values and confidence intervals, and fits logistic models."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Validation/Model-Validation",
+     "note": "Confusion matrix and validation statistics for any classifier's predictions."
+    },
+    {
+     "block": "Analytics/Prediction/KNN",
+     "note": "Predicts a category from the most similar known records."
+    },
+    {
+     "block": "Analytics/Prediction/SVM",
+     "note": "A support vector machine trained on known records, to predict a category."
+    },
+    {
+     "block": "Analytics/Price-Elasticity",
+     "note": "A log-log regression per product, set up for price and demand."
+    },
+    {
+     "view": "modelevaluation",
+     "note": "Evaluates a logistic model's scored rows (actual outcome and probability) with ROC, gains and a movable threshold.",
+     "name": "Model Evaluation"
+    }
+   ]
+  },
+  "Analytics/Running-Balance": {
+   "summary": "The RUNNINGTOTAL formula gives a running total, but not per account from opening balances, with daily closing balances and overdraft figures; this block does.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Multi-Row-Formula",
+     "note": "Running totals and other window calculations per group, without balance statistics."
+    }
+   ]
+  },
+  "Analytics/Safety-Stock": {
+   "seeAlso": [
+    {
+     "block": "Analytics/Stock-Run-Out",
+     "note": "Projects stock day by day to find run-out dates and shortfalls."
+    },
+    {
+     "block": "Analytics/ABC-Classification",
+     "note": "ABC-XYZ classes, for setting service levels by item class."
+    }
+   ]
+  },
+  "Analytics/Sample-Size-Calculator": {
+   "seeAlso": [
+    {
+     "block": "Analytics/AB-Test",
+     "note": "Analyses the test once it has run: lift, p-values and verdicts."
+    },
+    {
+     "view": "abtest",
+     "note": "Reads the test's results in a report once it has run, with the smallest change it could detect.",
+     "name": "A/B Test"
+    }
+   ]
+  },
+  "Analytics/Seasonal-Decomposition": {
+   "summary": "The core **Time Series Forecast** block predicts future values; this block explains past ones, splitting each series into trend, seasonal and residual parts, so the two complement each other.",
+   "overlaps": [
+    {
+     "view": "decomposition",
+     "note": "Decomposes one series in a report with a robust classical method and flags unusual periods. Use this block for many series at once, or to keep the seasonally adjusted values and seasonal indices as data.",
+     "name": "Seasonal Decomposition"
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Holt-Winters-Forecast",
+     "note": "Forecasts the same series ahead, with trend and seasonality."
+    },
+    {
+     "block": "Analytics/Time-Series-Anomalies",
+     "note": "Flags single spikes and dips against a rolling baseline."
+    }
+   ]
+  },
+  "Analytics/Stock-Run-Out": {
+   "seeAlso": [
+    {
+     "block": "Analytics/Safety-Stock",
+     "note": "Sets the safety stock and reorder levels this block checks against."
+    },
+    {
+     "block": "Analytics/Holt-Winters-Forecast",
+     "note": "Forecasts the demand to project."
+    }
+   ]
+  },
+  "Analytics/Survival": {
+   "summary": "No core block estimates survival curves. This block starts from a duration you have already worked out, accepts several event codings and runs on R's survival package, so it can be extended; **Churn Survival Curves** (Python) suits churn from start and end dates.",
+   "overlaps": [
+    {
+     "block": "Analytics/Churn-Survival",
+     "note": "Kaplan-Meier retention from start and end dates, with median lifetime, milestone retention and log-rank tests, in Python. Use this block when you have a duration and event flag and want the Fleming-Harrington method or R."
+    },
+    {
+     "view": "survivalcurve",
+     "note": "Draws Kaplan-Meier curves in a report from start and end dates or a duration, with confidence bands, medians, numbers at risk and a log-rank test. Use this block for the curve as data or for Fleming-Harrington estimates.",
+     "name": "Survival Curve"
+    }
+   ]
+  },
+  "Analytics/Text-Word-Frequency": {
+   "seeAlso": [
+    {
+     "coreBlock": "Text analysis",
+     "note": "Adds word counts, top words, language and readability per record. This block counts words and phrases across records and per group."
+    }
+   ]
+  },
+  "Analytics/Tiered-Calculation": {
+   "summary": "Tiered rates are possible with nested IF formulas, but these are hard to maintain when tiers change. This block applies a tier table, marginally or to the whole amount.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Join/Interval-Join",
+     "note": "Looks up the band a value falls in; this block also charges each slice of an amount at its own rate."
+    }
+   ]
+  },
+  "Analytics/Time-Series-Anomalies": {
+   "summary": "The core **Anomaly Detection** block scores records from the fields you select; this block is time-aware, allowing for weekday effects, and reports direction and severity.",
+   "seeAlso": [
+    {
+     "coreBlock": "Anomaly Detection",
+     "note": "Scores records from the selected fields, optionally within groups. This block compares each point with a rolling baseline over time."
+    },
+    {
+     "block": "Analytics/Seasonal-Decomposition",
+     "note": "Trend, seasonal and residual parts of each series."
+    },
+    {
+     "block": "Preparation/Outlier-Flagger",
+     "note": "Outlier bounds per field and group when time order doesn't matter."
+    },
+    {
+     "view": "spcchart",
+     "note": "Flags unusual points in a measure over time with control limits and run rules (XmR), for operational monitoring.",
+     "name": "SPC Control Chart"
+    }
+   ]
+  },
+  "Analytics/Trade-Area-Summary": {
+   "seeAlso": [
+    {
+     "block": "Analytics/Find-Nearest",
+     "note": "The k nearest sites for each point, with a distance limit."
+    },
+    {
+     "block": "Analytics/Point-To-Point-Distance",
+     "note": "Distance between a pair of locations on each row."
+    }
+   ]
+  },
+  "Analytics/Validation/Model-Validation": {
+   "summary": "The core **Prediction** block gives a confidence per prediction but does not compare its predictions with actual answers; doing that by hand takes a Formula and an Aggregate for accuracy, and more steps per class. This block does it in one step for predictions from any source, with the confusion matrix and per-class scores.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Prediction/SVM",
+     "note": "Predicts categories; validate it on records held back from training."
+    },
+    {
+     "block": "Analytics/Prediction/KNN",
+     "note": "Predicts categories from the nearest known records."
+    },
+    {
+     "block": "Analytics/Regression",
+     "note": "Logistic regression, whose predicted classes this block can check."
+    },
+    {
+     "block": "Analytics/Forecast-Accuracy",
+     "note": "For predicted amounts rather than categories: MAE, RMSE, MAPE and bias."
+    },
+    {
+     "view": "modelevaluation",
+     "note": "For two-class models that give a score: ROC, gains and a confusion matrix at a threshold you move.",
+     "name": "Model Evaluation"
+    }
+   ]
+  },
+  "Analytics/Variance-Bridge": {
+   "summary": "A bridge between two totals is possible with aggregates, joins and formulas; this block produces the waterfall steps with favourable and adverse labels in one step.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Price-Volume-Mix",
+     "note": "Splits a revenue change into volume, mix, price, new and lost product effects."
+    },
+    {
+     "block": "Analytics/Period-Comparison",
+     "note": "Month, QTD, YTD and moving annual totals against prior periods."
+    },
+    {
+     "view": "variancechart",
+     "note": "Shows actual against plan per row or period, with absolute and percentage variance, from the same two measures.",
+     "name": "Variance Chart"
+    },
+    {
+     "coreView": "Waterfall",
+     "note": "Draws the bridge steps as a waterfall chart."
+    }
+   ]
+  },
+  "Analytics/Websites/Website-Analysis": {
+   "summary": "Omniscope's data sources read data you point them at. This block finds the pages itself, following a site's links from a start page, and returns the pages, links and images as three tables.",
+   "seeAlso": [
+    {
+     "view": "networkanalyser",
+     "note": "Analyses the Links output (page to page) as a network: PageRank, communities and shortest paths.",
+     "name": "Network Analyser"
+    }
+   ]
+  },
+  "Analytics/Weighted-Scoring": {
+   "summary": "The community **Standardise** block is the first step of a scorecard; this block does the whole scorecard: normalise, weight, rank, apply must-pass thresholds and test how sensitive the ranking is to the weights.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Standardisation/Standardise",
+     "note": "Min-max rescaling of fields, the first step of a scorecard."
+    }
+   ]
+  },
+  "Connectors/AI-Chat-Anthropic-Claude": {
+   "summary": "The core **AI Request** block does more (context data, JSON output, diagnostics) but depends on the server's AI settings. This block works where the server has no AI provider or uses another one, flags replies cut short and is a few lines of Python you can change.",
+   "overlaps": [
+    {
+     "coreBlock": "AI Request",
+     "note": "Sends a prompt per record to the AI provider set up on the server, with context fields and structured output. This block calls Claude directly with your own Anthropic key, so nothing needs setting up in the server's AI settings."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Connectors/OpenAI-GPT",
+     "note": "Sends the same prompts to OpenAI models, with an OpenAI key."
+    },
+    {
+     "block": "Connectors/AI-Chat-Google-Gemini",
+     "note": "For Google Gemini, with a Gemini key, which can use a free quota."
+    },
+    {
+     "block": "Connectors/AI-Chat-DeepSeek",
+     "note": "DeepSeek's models, with a DeepSeek key."
+    },
+    {
+     "block": "Connectors/AI-Chat-Local-LLM",
+     "note": "For text that must not leave your network: a model on your own server."
+    }
+   ]
+  },
+  "Connectors/AI-Chat-DeepSeek": {
+   "summary": "The core **AI Request** block does more (context data, JSON output, diagnostics) but uses the providers in the server's AI settings, and DeepSeek is not listed there by name. This block flags replies cut short and is a few lines of Python you can change.",
+   "overlaps": [
+    {
+     "coreBlock": "AI Request",
+     "note": "Sends a prompt per record to the AI provider set up on the server, with context fields and structured output. This block calls DeepSeek directly with your own key, with no server AI settings needed."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Connectors/OpenAI-GPT",
+     "note": "Sends the same prompts to OpenAI models, with an OpenAI key."
+    },
+    {
+     "block": "Connectors/AI-Chat-Anthropic-Claude",
+     "note": "Claude models from Anthropic, with an Anthropic key."
+    },
+    {
+     "block": "Connectors/AI-Chat-Google-Gemini",
+     "note": "For Google Gemini, with a Gemini key, which can use a free quota."
+    },
+    {
+     "block": "Connectors/AI-Chat-Local-LLM",
+     "note": "A model on your own server, through an OpenAI-compatible endpoint, so text stays inside."
+    }
+   ]
+  },
+  "Connectors/AI-Chat-Google-Gemini": {
+   "summary": "The core **AI Request** block does more (context data, JSON output, diagnostics) but depends on the server's AI settings. This block works where the server has no AI provider configured, flags replies cut short and is a few lines of Python you can change.",
+   "overlaps": [
+    {
+     "coreBlock": "AI Request",
+     "note": "Sends a prompt per record to the AI provider set up on the server, with context fields and structured output. This block calls Gemini directly with your own key, which can use the key's free quota."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Connectors/OpenAI-GPT",
+     "note": "Sends the same prompts to OpenAI models, with an OpenAI key."
+    },
+    {
+     "block": "Connectors/AI-Chat-Anthropic-Claude",
+     "note": "Claude models from Anthropic, with an Anthropic key."
+    },
+    {
+     "block": "Connectors/AI-Chat-DeepSeek",
+     "note": "DeepSeek's models, with a DeepSeek key."
+    },
+    {
+     "block": "Connectors/AI-Chat-Local-LLM",
+     "note": "A model on your own server, for text that should stay in the organisation."
+    }
+   ]
+  },
+  "Connectors/AI-Chat-Local-LLM": {
+   "summary": "The core **AI Request** block does more (context data, JSON output, diagnostics) and can use a local model set up as a custom provider in the server's AI settings. This block needs no AI settings, so each workflow can point at its own model server.",
+   "overlaps": [
+    {
+     "coreBlock": "AI Request",
+     "note": "Sends a prompt per record to the AI provider configured on the server, such as OpenAI or Anthropic. This block sends text only to the OpenAI-compatible endpoint you enter, such as Ollama, LM Studio or vLLM on your own network."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Connectors/OpenAI-GPT",
+     "note": "Sends the same prompts to OpenAI models, with an OpenAI key."
+    },
+    {
+     "block": "Connectors/AI-Chat-Anthropic-Claude",
+     "note": "Claude models from Anthropic, with an Anthropic key."
+    },
+    {
+     "block": "Connectors/AI-Chat-Google-Gemini",
+     "note": "For Google Gemini, with a Gemini key, which can use a free quota."
+    },
+    {
+     "block": "Connectors/AI-Chat-DeepSeek",
+     "note": "DeepSeek's models, with a DeepSeek key."
+    }
+   ]
+  },
+  "Connectors/Airtable": {
+   "summary": "The core **File** block (HTTP API location) and the **API** block can call the Airtable API, but Airtable returns at most 100 records a page, so a larger table then needs a loop to follow its offset markers. This block does the paging, rate-limit waits and type clean-up for you, and adds views and filter formulas as options.",
+   "seeAlso": [
+    {
+     "block": "Preparation/JSON/Normalise",
+     "note": "Flattens the lists and objects (attachments, linked records) that arrive as JSON text into records."
+    },
+    {
+     "block": "Preparation/JSON/Expand_Fields",
+     "note": "Turns a JSON object field into one field per key."
+    }
+   ]
+  },
+  "Connectors/Azure-Data-Lake-Blob": {
+   "summary": "The core **Azure Gen2 Storage** source is the first place to look. This block is a short Python script around Azure's own library that also reads gzipped files and converts Parquet types (decimals, lists, structs) that need a field type in Omniscope.",
+   "overlaps": [
+    {
+     "coreBlock": "Azure Gen2 Storage",
+     "note": "The core source for a remote file on Azure Gen2 Storage. This block reads one CSV or Parquet blob with the storage account's connection string, which can be a read-only shared access signature."
+    }
+   ]
+  },
+  "Connectors/BigQuery/Google-BigQuery-Custom-SQL": {
+   "summary": "The core **Database** block can reach BigQuery through a JDBC connection, once Google's BigQuery JDBC driver has been set up on the server. The community BigQuery blocks use Google's Python library and a service account key instead.",
+   "overlaps": [
+    {
+     "block": "Connectors/BigQuery/Google-BigQuery-Import-Table",
+     "note": "Reads a whole table or view, with tables listed page by page rather than billed as a query. Use Custom SQL to filter, join or aggregate in BigQuery first."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Outputs/Google-BigQuery-Writer",
+     "note": "Writes records back to a BigQuery table."
+    }
+   ]
+  },
+  "Connectors/BigQuery/Google-BigQuery-Import-Table": {
+   "summary": "The core **Database** block can reach BigQuery through a JDBC connection, once Google's BigQuery JDBC driver has been set up on the server. The community BigQuery blocks use Google's Python library and a service account key instead; this one reads a whole table or view without running (and paying for) a query.",
+   "overlaps": [
+    {
+     "block": "Connectors/BigQuery/Google-BigQuery-Custom-SQL",
+     "note": "Runs a GoogleSQL query and outputs only its result. Use Import Table to bring in a table as it is."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Outputs/Google-BigQuery-Writer",
+     "note": "Writes records back to a BigQuery table."
+    }
+   ]
+  },
+  "Connectors/Dune": {
+   "summary": "The core **API** block can read one page of a query's stored result from Dune's API, but cannot start an execution and wait for it, follow the next pages or use Dune's column types (dates and large numbers arrive as text). This block does all three.",
+   "overlaps": [
+    {
+     "block": "Connectors/Flipside",
+     "note": "Runs your own SQL on Flipside's blockchain tables, but Flipside has wound down its public query tools. Use Dune for saved queries on a service that is still running."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Connectors/Etherscan",
+     "note": "Balances and transaction lists for a field of Ethereum addresses."
+    }
+   ]
+  },
+  "Connectors/Etherscan": {
+   "summary": "The core **API** and **Batch API** blocks can call Etherscan, but the answers come back as JSON with every number as text and amounts in wei, at most 10,000 transactions per call, and with no pacing for the free plan's rate limit. This block batches the balance calls, pages through long transaction histories and writes typed records.",
+   "seeAlso": [
+    {
+     "block": "Connectors/Dune",
+     "note": "SQL query results over indexed blockchain data, for questions across many addresses."
+    },
+    {
+     "view": "orbitaltransactionflow",
+     "note": "Replays transactions between senders and receivers over time; the transaction lists of a few addresses fit it, with an address at the centre.",
+     "name": "Orbital Transaction Flow"
+    }
+   ]
+  },
+  "Connectors/Flightstats/Airlines": {
+   "summary": "The core **API** block can read a JSON web address, but the FlightStats answer is a list wrapped in an object, credentials go in the address and errors come back in a different shape. This block makes the request, checks the answer and writes one record per airline with the same fields every run.",
+   "seeAlso": [
+    {
+     "block": "Connectors/Flightstats/Airports",
+     "note": "The airport list from the same API, as a lookup for airport codes."
+    },
+    {
+     "block": "Connectors/Flightstats/Flights",
+     "note": "Looks up scheduled flights by carrier and flight number."
+    }
+   ]
+  },
+  "Connectors/Flightstats/Airports": {
+   "summary": "The core **API** block can read a JSON web address, but the FlightStats answer is a list wrapped in an object, fields missing from every airport in one answer would be missing from the output, and errors come back in a different shape. This block checks the answer and writes the same 25 fields every run.",
+   "seeAlso": [
+    {
+     "block": "Connectors/Flightstats/Airlines",
+     "note": "The airline list from the same API, to turn carrier codes into names."
+    },
+    {
+     "block": "Connectors/Flightstats/Flights",
+     "note": "Scheduled flights, whose departure and arrival airports this list can place on a map."
+    }
+   ]
+  },
+  "Connectors/Flightstats/Flights": {
+   "summary": "The core **Batch API** block can call a web address per record, but each FlightStats answer is nested JSON (legs, service classes, codeshares) to be parsed afterwards, and repeated flights are requested again. This block makes one request per distinct flight and day, flattens the answer to one record per leg and keeps the requested flight on each record to join back.",
+   "seeAlso": [
+    {
+     "block": "Connectors/Flightstats/Airports",
+     "note": "Airport names and positions, to join to this block's airport codes."
+    },
+    {
+     "block": "Connectors/Flightstats/Airlines",
+     "note": "Airline names for the carrier codes."
+    }
+   ]
+  },
+  "Connectors/Flipside": {
+   "summary": "The Flipside API is a submit, poll and page service that the core **API** block cannot drive, so this block uses Flipside's own Python SDK for all three steps, though Flipside has wound down its public query tools.",
+   "overlaps": [
+    {
+     "block": "Connectors/Dune",
+     "note": "Reads saved Dune queries, public or your own, over indexed blockchain data. The alternative if Flipside no longer accepts queries."
+    }
+   ]
+  },
+  "Connectors/HubSpot": {
+   "summary": "The core **API** block can make one HubSpot request with a token header, but HubSpot returns 100 records a page, each pointing to the next, and nests every property inside a properties object. This block follows the pages, flattens the properties into fields, turns timestamps into dates and also reads the associations between objects."
+  },
+  "Connectors/Jira": {
+   "summary": "The core **API** and **Batch API** blocks can call Jira's REST API, but each page of 100 issues is a separate request whose token comes from the previous answer, and the issue fields arrive as nested JSON. This block follows the pages itself and writes one tidy record per issue."
+  },
+  "Connectors/OpenAI-GPT": {
+   "summary": "The core **AI Request** block does more (context data, JSON output, diagnostics) but depends on the server's AI settings. This block works where the server has no AI provider or uses another one, flags replies cut short and is a few lines of Python you can change.",
+   "overlaps": [
+    {
+     "coreBlock": "AI Request",
+     "note": "Sends a prompt per record to the AI provider set up on the server, with context fields and structured output. This block calls OpenAI directly with your own key, billed to that key's account, with no server AI settings needed."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Connectors/AI-Chat-Anthropic-Claude",
+     "note": "Claude models from Anthropic, with an Anthropic key."
+    },
+    {
+     "block": "Connectors/AI-Chat-Google-Gemini",
+     "note": "For Google Gemini, with a Gemini key, which can use a free quota."
+    },
+    {
+     "block": "Connectors/AI-Chat-DeepSeek",
+     "note": "DeepSeek's models, with a DeepSeek key."
+    },
+    {
+     "block": "Connectors/AI-Chat-Local-LLM",
+     "note": "Any OpenAI-compatible model server on your own network, so text stays inside."
+    }
+   ]
+  },
+  "Connectors/Overpass/Street-Coordinates": {
+   "summary": "The core **Geocode** block is the one to place a house or a business. This block returns every point OpenStreetMap stores along each street of that name, for when the street itself matters; it builds the Overpass query for each name in a field and retries when the server is busy.",
+   "seeAlso": [
+    {
+     "coreBlock": "Geocode",
+     "note": "Gives one point per address rather than the shape of the street."
+    }
+   ]
+  },
+  "Connectors/Salesforce-REST-OAuth": {
+   "summary": "The core **Salesforce** block is the first choice for most imports, and **Salesforce output** writes back. This block adds what the core block leaves out: lookups through relationships in one query, deleted and archived records, a record limit and schema listings.",
+   "overlaps": [
+    {
+     "coreBlock": "Salesforce",
+     "note": "Reads a Salesforce table or a custom SOQL query. This block signs in with the OAuth 2.0 client credentials flow, for unattended runs, and can load every readable field of an object without SOQL."
+    }
+   ]
+  },
+  "Connectors/Slack-API-WebClient": {
+   "summary": "For a message per record the community **Slack Bot** block is simpler; this block is the general one, calling any Slack Web API method, reading as well as posting, and turning the answer's list into records.",
+   "seeAlso": [
+    {
+     "block": "Outputs/Slack-Bot",
+     "note": "Posts one message per record to a channel, without writing API calls."
+    }
+   ]
+  },
+  "Connectors/Slim-CD": {
+   "summary": "The core **API** block can call Slim CD's reporting address, but the transactions arrive nested in the reply with every value as text, in a different shape for one transaction or none, and the password sits in the URL. This block sends the search from separate options (the password in a password field), checks Slim CD's response code and writes one typed record per transaction."
+  },
+  "Connectors/Trello": {
+   "summary": "The core **API** block can read one Trello request, but the cards answer gives labels and checklists as nested JSON, and list names need a second request joined on. This block makes those requests, writes labels and members as text and adds each card's list name."
+  },
+  "Connectors/Weather/OpenWeatherMap": {
+   "summary": "The core **API** and **Batch API** blocks can call OpenWeatherMap one location at a time, but the answer is nested JSON whose fields change with the weather. This block asks once per distinct location, keeps to the free plan's call rate and writes a fixed set of fields with times as dates.",
+   "seeAlso": [
+    {
+     "coreBlock": "Geocode",
+     "note": "Turns addresses into latitude and longitude, the supported way to find locations here."
+    }
+   ]
+  },
+  "Connectors/XPT-Reader": {
+   "summary": "The core **File** block reads delimited text, spreadsheets, JSON, Parquet and other common formats, but not SAS transport files, which are binary with numbers in IBM mainframe floating point. This block reads them directly, lists every dataset and field with its SAS label and format, and turns SAS date numbers into dates."
+  },
+  "Connectors/YahooFinance": {
+   "summary": "Yahoo Finance has no official API to call from the core **API** or **Batch API** blocks. This block uses the open-source yfinance library to download each ticker's history and repeats your input records for every period, so a holdings table becomes a price history per holding in one step.",
+   "seeAlso": [
+    {
+     "view": "tradingview",
+     "note": "Embeds TradingView's chart for a symbol in the data; it shows TradingView's prices, not the ones this block loads.",
+     "name": "TradingView"
+    },
+    {
+     "coreView": "Candlestick",
+     "note": "Draws the open, high, low and close prices per period."
+    }
+   ]
+  },
+  "Custom-scripts/ExecuteCommand": {
+   "summary": "Omniscope's Scheduler can run a command as a task action, before or after a project refreshes. This block runs commands inside the workflow instead, where they are needed, once or once per record, and returns each command's exit code and output as data. The core **Custom Python script** and **Custom R script** blocks can also start programs, from code you write; this block needs none."
+  },
+  "Inputs/Databases/MongoDB": {
+   "summary": "The core **Database** block reads SQL databases through JDBC; MongoDB is a document database without SQL tables, so it is not one of them. This block reads a collection with MongoDB's own Python driver and turns each document into a record.",
+   "seeAlso": [
+    {
+     "block": "Preparation/JSON/Normalise",
+     "note": "Flattens the nested objects and arrays that arrive as JSON text into records."
+    },
+    {
+     "block": "Preparation/JSON/Expand_Fields",
+     "note": "Turns a nested object field into one field per key."
+    }
+   ]
+  },
+  "Inputs/Databases/Snowflake-custom-query": {
+   "summary": "The core **Database** block connects to Snowflake (driver bundled), supports key-pair sign-in and reads large results without holding them in memory: use it for most Snowflake work. This block is a short script you can read and change, for example to set session parameters, run a statement first or reshape the result in Python.",
+   "overlaps": [
+    {
+     "coreBlock": "Database",
+     "note": "Connects to Snowflake among other databases and is the better choice for large tables. This block runs one query through Snowflake's Python connector, with password or key-pair sign-in, and reads the result into memory."
+    }
+   ]
+  },
+  "Inputs/Date-Dimension": {
+   "summary": "Use **Expand Date Fields** for quick date parts on a fact table, and this block for one reusable calendar to join to many tables.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Expand-Date-Fields",
+     "note": "Adds date parts (year, month, quarter, ISO week, day names) to date fields in your data. This block generates a calendar table with fiscal periods, public holidays and working-day counts."
+    },
+    {
+     "coreBlock": "Value sequence",
+     "note": "Generates a date range as a single field."
+    },
+    {
+     "block": "Preparation/Working-Days",
+     "note": "Counts and adds working days between dates in your data, with the same UK and US holidays."
+    }
+   ]
+  },
+  "Inputs/PDF-Reader": {
+   "summary": "The core **File** block reads data files such as CSV, Excel and JSON, not the text inside PDF documents. This block reads the text layer of every PDF in a folder, one record per page, for the core text and formula blocks to pick values out of. Scanned pages that are only images need OCR, which it does not do."
+  },
+  "Inputs/Rdata": {
+   "summary": "The core **File** block does not read R's own save formats; otherwise you write an R script or export to CSV from R first. This block reads one object from a .rds, .rda or .RData file and lists everything else in it.",
+   "seeAlso": [
+    {
+     "block": "Inputs/Rds-Batch-Append",
+     "note": "Appends many .rds files from a folder into one table."
+    }
+   ]
+  },
+  "Inputs/Rds-Batch-Append": {
+   "summary": "The core **Append** block stacks tables already in the workflow; getting a folder of .rds files in otherwise means an R script of your own. This block reads every .rds file in a folder (or a list of paths) and appends them, lining up fields that differ between files.",
+   "seeAlso": [
+    {
+     "block": "Inputs/Rdata",
+     "note": "Reads one .rds, .rda or .RData file, including files holding several objects."
+    }
+   ]
+  },
+  "Inputs/SFTP-Downloader": {
+   "summary": "The core **Remote file via SSH** source is the way to read one file. This block fetches a whole folder, or the files matching a pattern such as sales_*.csv, and checks the server's host key.",
+   "overlaps": [
+    {
+     "coreBlock": "Remote file via SSH",
+     "note": "Reads one remote file over SFTP or SCP straight into the workflow. This block downloads every file in a folder, or those matching a pattern, for an Append files block to load."
+    }
+   ],
+   "seeAlso": [
+    {
+     "coreBlock": "Append files",
+     "note": "Loads the downloaded files, taking their paths from this block."
+    }
+   ]
+  },
+  "Inputs/Sharepoint-Online": {
+   "summary": "The core **File** and **Append files** blocks read files the Omniscope server can see, but have no SharePoint sign-in. This block signs in through Microsoft Graph and downloads a file or a whole folder from a document library.",
+   "seeAlso": [
+    {
+     "coreBlock": "Append files",
+     "note": "Loads the downloaded files, taking their paths from this block."
+    }
+   ]
+  },
+  "Inputs/Web-Form-Session-Login": {
+   "summary": "The core **API** and **Batch API** blocks send requests with the headers you give them, including a Cookie header, but cannot fill in a login form: they do not read the page, its hidden anti-forgery field or the cookie it sets. This block does that part and outputs the session cookies for those blocks to send."
+  },
+  "Outputs/Append-PDF-files": {
+   "summary": "No core block combines PDF files; this block combines a list of PDF files, such as those from **Report tab to PDF**, into one, with bookmarks.",
+   "seeAlso": [
+    {
+     "block": "Outputs/Report-tab-to-PDF",
+     "note": "Prints Report tabs to PDF files and lists their paths, ready to combine here."
+    }
+   ]
+  },
+  "Outputs/GitHub": {
+   "summary": "The core **File** block can read a public file from GitHub by its raw address, but not a private repository's file, and no core output block writes to a Git repository. This block reads public and private files through GitHub's API and writes its input as a commit on a branch, so each published version is kept in the repository's history."
+  },
+  "Outputs/Google-BigQuery-Writer": {
+   "summary": "The core **Database output** block can write to BigQuery once Google's BigQuery JDBC driver has been set up on the server. This block uses Google's Python library and a service account key instead, sends the records as one BigQuery load job and creates the table if it does not exist.",
+   "seeAlso": [
+    {
+     "block": "Connectors/BigQuery/Google-BigQuery-Import-Table",
+     "note": "Reads a BigQuery table back into a workflow."
+    },
+    {
+     "block": "Connectors/BigQuery/Google-BigQuery-Custom-SQL",
+     "note": "Queries BigQuery with GoogleSQL."
+    }
+   ]
+  },
+  "Outputs/Multi-Form-Upload": {
+   "summary": "The core **File output** block can write a file to a web address with a PUT request, and the **Batch API** block sends one request per record, but neither builds a multipart/form-data body, which upload forms and most file-upload APIs expect. This block builds that body for each file, with the field name, extra fields and headers the endpoint needs; the core **File attributes** block can list the files to send."
+  },
+  "Outputs/Report-tab-to-PDF": {
+   "summary": "A Report can be printed by hand from the browser; this block does it from the workflow, one PDF per tab listed in its input, and the core **Batch output** block can email them.",
+   "overlaps": [
+    {
+     "block": "Outputs/Report-to-PDF-batch-output",
+     "note": "Prints one tab once per scenario of a multi-tenant configuration. Use this block for a list of different tab addresses."
+    },
+    {
+     "block": "Outputs/Web-Image-PDF-output",
+     "note": "Saves screenshots at a chosen size and can put them in one PDF. This block uses Omniscope's print layout on A4 pages instead."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Outputs/Append-PDF-files",
+     "note": "Combines the PDFs this block writes into one pack, with bookmarks."
+    },
+    {
+     "coreBlock": "Project metadata",
+     "note": "Lists a project's Report tabs with their URLs, for this block's input."
+    }
+   ]
+  },
+  "Outputs/Report-to-PDF-batch-output": {
+   "summary": "A multi-tenant Report already shows each scenario its own data in the browser; this block prints that view to a PDF for every scenario in the configuration, from one tab address, and the core **Batch output** block can email each PDF to its recipient.",
+   "overlaps": [
+    {
+     "block": "Outputs/Report-tab-to-PDF",
+     "note": "Prints any list of Report tabs, one PDF per address. Use this block when one tab is needed once per multi-tenant scenario."
+    }
+   ]
+  },
+  "Outputs/Report-to-PowerPoint": {
+   "seeAlso": [
+    {
+     "block": "Outputs/Web-Image-PDF-output",
+     "note": "The same screenshots saved as PNG files, or as one PDF."
+    },
+    {
+     "coreBlock": "Project metadata",
+     "note": "Lists a project's Report tabs with their URLs, for this block's input."
+    }
+   ]
+  },
+  "Outputs/Report-to-Slack": {
+   "seeAlso": [
+    {
+     "block": "Outputs/Slack-Bot",
+     "note": "Posts text messages, optionally with a file, without screenshots."
+    },
+    {
+     "block": "Outputs/Web-Image-PDF-output",
+     "note": "Saves the screenshots as files instead of posting them."
+    }
+   ]
+  },
+  "Outputs/Slack-Bot": {
+   "seeAlso": [
+    {
+     "block": "Outputs/Report-to-Slack",
+     "note": "Posts a screenshot of a Report tab with each message."
+    },
+    {
+     "block": "Connectors/Slack-API-WebClient",
+     "note": "Calls any Slack Web API method, to read channels and members or post in other ways."
+    },
+    {
+     "block": "Outputs/Telegram",
+     "note": "Sends records as a message to a Telegram chat instead."
+    }
+   ]
+  },
+  "Outputs/Telegram": {
+   "seeAlso": [
+    {
+     "block": "Outputs/Slack-Bot",
+     "note": "Posts records as messages to a Slack channel instead."
+    },
+    {
+     "coreBlock": "Email output",
+     "note": "Sends the data by email, with an optional inline table."
+    }
+   ]
+  },
+  "Outputs/Web-Image-PDF-output": {
+   "summary": "This block captures what any web page the server can reach shows on screen, Omniscope Reports included, as PNG images at a size you set, with an optional PDF; the core **Batch output** block can attach the images to emails.",
+   "overlaps": [
+    {
+     "block": "Outputs/Report-tab-to-PDF",
+     "note": "Prints Report tabs in Omniscope's print layout, one A4 PDF per tab. Use this block for PNG images at a set size, or for any web page."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Outputs/Report-to-PowerPoint",
+     "note": "Puts the same kind of screenshots into a PowerPoint deck, one slide per tab."
+    },
+    {
+     "block": "Outputs/Report-to-Slack",
+     "note": "Posts screenshots of Report tabs to a Slack channel with a message."
+    }
+   ]
+  },
+  "Preparation/Add-row-ID-field": {
+   "summary": "Prefer the core **Add row ID** block in new workflows, or a `CURRENTROW()` formula in a **Field organiser** when numbering is one of several field changes. This block has two small extras (the field placed first, an existing ID replaced in place).",
+   "overlaps": [
+    {
+     "coreBlock": "Add row ID",
+     "note": "Does the same job without Python and can restart the numbering within partitions. Prefer it in new workflows; this block streams in chunks and stays for projects that already use it."
+    }
+   ]
+  },
+  "Preparation/Anonymise": {
+   "summary": "The core **Scramble data** block scrambles text in chosen fields; this block keeps more of the data's shape for demos and testing. It is pseudonymisation, so treat the output as still sensitive; the core **Random Sample** block pairs well with it.",
+   "overlaps": [
+    {
+     "coreBlock": "Scramble data",
+     "note": "Scrambles text in chosen fields before sharing. This block also adds random noise to numbers and dates, and gives each distinct text value the same code word everywhere, so counts and joins still work."
+    }
+   ]
+  },
+  "Preparation/Business-Hours-SLA": {
+   "summary": "This block measures elapsed time within opening hours across weekends, holidays and part days, for SLAs set in business hours, where formulas count only whole working days.",
+   "overlaps": [
+    {
+     "block": "Preparation/Working-Days",
+     "note": "Counts whole working days and adds them to dates for due dates, with the same holidays. Use this block when the SLA is in hours within opening hours."
+    }
+   ]
+  },
+  "Preparation/Canonical-Schema-Mapper": {
+   "summary": "For fixed renames and types, use the core **Define schema** block. This block is the data-driven route, so one list can drive the same mapping in several workflows and be changed in one place; it streams.",
+   "overlaps": [
+    {
+     "coreBlock": "Define schema",
+     "note": "Maps fields and their aliases to set names and types, configured once in the block with no Python. Use this block when the alias rules are kept as data (a CSV file or rules text) shared between projects, or you need defaults and yes/no fields."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/Smart-Schema-Normaliser",
+     "note": "Tidies names and guesses types with no rules at all."
+    },
+    {
+     "block": "Preparation/Field-Renamer",
+     "note": "One-to-one renames from a rules table on another input, without types."
+    },
+    {
+     "block": "Preparation/Streaming-Field-Renamer",
+     "note": "Renames from rules typed in the block or kept in a CSV file, streaming inputs of any size."
+    }
+   ]
+  },
+  "Preparation/Conditional Execution": {
+   "summary": "The core **If-Then-Split**, **Output Router** and **Validate data** blocks decide from the data inside one run: use them whenever the decision depends on data in the workflow. This block decides from a switch, usually linked to a yes/no project parameter set from outside, and starts the listed blocks as a separate run, here or in another project.",
+   "seeAlso": [
+    {
+     "coreBlock": "If-Then-Split",
+     "note": "Routes rows from a formula on the data, inside one run."
+    },
+    {
+     "coreBlock": "Output Router",
+     "note": "Sends each row to one output from a formula result, within the run."
+    },
+    {
+     "block": "Preparation/Set Project Parameters",
+     "note": "Sets the yes/no parameter that switches this block, from within a workflow."
+    },
+    {
+     "view": "switchparam",
+     "note": "Radio buttons in a report that set a parameter, such as the one this block's switch is linked to.",
+     "name": "Switch Param"
+    },
+    {
+     "view": "workflowexecution",
+     "note": "A button in a report that starts chosen blocks directly, with no parameter in between.",
+     "name": "Workflow Execution"
+    }
+   ]
+  },
+  "Preparation/Data-Cleansing": {
+   "summary": "Each step is possible with core blocks such as **Normalise case**; this block adds placeholders, invisible characters, missing-value fixes and an audit of what changed.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Smart-Schema-Normaliser",
+     "note": "Normalises field names, merges duplicate fields and infers types. This block cleans values instead (blanks, characters, case, missing values)."
+    },
+    {
+     "block": "Preparation/Data-Quality-Analyser",
+     "note": "Finds missing values, duplicate rows and outliers, and outputs annotated data."
+    },
+    {
+     "coreBlock": "Delete empty data",
+     "note": "Removes empty rows and fields."
+    },
+    {
+     "coreBlock": "Search / replace",
+     "note": "Replaces text, including with regular expressions. This block combines these steps in one checklist."
+    }
+   ]
+  },
+  "Preparation/Data-Compare": {
+   "summary": "Use the core **Compare** block for a pass or fail test in a workflow, and this block to report what changed.",
+   "overlaps": [
+    {
+     "coreBlock": "Compare",
+     "note": "Checks an Actual input against an Expected input: whether fields, record counts and cell values match, with allowed differences. This block lists added, removed and changed records by key, with field-level differences."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Reconciliation-Matcher",
+     "note": "Matches the items of two ledgers on amount, reference and date, with tolerances."
+    }
+   ]
+  },
+  "Preparation/Data-Quality-Analyser": {
+   "summary": "The core **Validate data** block checks a dataset against rules you set and stops or warns when they fail, and **De-duplicate** removes exact duplicates rather than listing them. This block needs no rules: it looks for missing values, duplicate rows and outliers in every field at once, and the community blocks linked here each take one of those checks further.",
+   "overlaps": [
+    {
+     "block": "Preparation/Outlier-Flagger",
+     "note": "Flags outliers by IQR, z-score or MAD, per field and within groups, and can cap them. This block applies one fixed IQR rule as one check among three."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/Imputation",
+     "note": "More ways to fill missing values: mean, median, previous value, interpolation, within groups."
+    },
+    {
+     "block": "Analytics/Data-Profiler",
+     "note": "One record per field with missing and distinct counts and statistics."
+    },
+    {
+     "block": "Preparation/Data-Validation-Rules",
+     "note": "Checks the data against rules you define, rather than fixed checks."
+    },
+    {
+     "block": "Preparation/Duplicate-Survivorship",
+     "note": "Groups duplicates on several match keys and keeps the best record of each."
+    },
+    {
+     "block": "Preparation/Data-Cleansing",
+     "note": "Fixes the problems in one step: empty rows and fields, placeholders, stray characters, case."
+    }
+   ]
+  },
+  "Preparation/Data-Validation-Rules": {
+   "summary": "The core **Validate data** block can stop data with errors from passing through: use it to guard a workflow. This block is for reporting, from rules in a table that business users can edit.",
+   "overlaps": [
+    {
+     "coreBlock": "Validate data",
+     "note": "Flags schema problems, value-rule matches and record-count limits as warnings or errors, and can stop the data. This block outputs a per-record and per-rule results table from a rules table."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/Data-Quality-Analyser",
+     "note": "Fixed checks (missing values, duplicate rows, IQR outliers) with no configuration. This block checks the rules you define."
+    },
+    {
+     "block": "Preparation/Geo/UK-Postcode-Tools",
+     "note": "Goes beyond a format check: standardises postcodes and adds area, district and country."
+    }
+   ]
+  },
+  "Preparation/Date-Range-Expander": {
+   "summary": "Expanding each contract, booking or subscription into one row per day, week or month, with amounts prorated, otherwise needs a join to a calendar and formulas; this block does it in one step.",
+   "seeAlso": [
+    {
+     "coreBlock": "Value sequence",
+     "note": "Generates one date range as a single field, not one per record."
+    },
+    {
+     "block": "Analytics/Occupancy-From-Intervals",
+     "note": "Average and peak concurrency over time from start and end times, against capacity."
+    }
+   ]
+  },
+  "Preparation/Duplicate-Survivorship": {
+   "summary": "The core **De-duplicate** block is enough for exact duplicates on the fields you choose. This block matches on several alternative keys and chooses the survivor by a rule (most complete, latest or earliest date, highest or lowest value).",
+   "overlaps": [
+    {
+     "coreBlock": "De-duplicate",
+     "note": "Keeps one record from each set of exact duplicates on chosen fields. This block also chooses the survivor by rules and fills its gaps from the other duplicates."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/Data-Quality-Analyser",
+     "note": "Flags exact duplicate rows; it does not choose a survivor or fill gaps."
+    },
+    {
+     "block": "Preparation/Join/Fuzzy-Match",
+     "note": "Groups near-duplicates by fuzzy text similarity, for names written differently."
+    }
+   ]
+  },
+  "Preparation/Expand-Date-Fields": {
+   "summary": "Formulas such as `DATEUNIT` and `DATEFORMAT` take one part of a date at a time, each a formula per date field, and week numbers from a date pattern depend on the server's regional settings. This block adds eleven parts per date field at once, with English names and ISO weeks paired with their ISO year, the same on any server.",
+   "seeAlso": [
+    {
+     "block": "Inputs/Date-Dimension",
+     "note": "Generates a whole calendar table, with fiscal periods and public holidays, to join to your data."
+    }
+   ]
+  },
+  "Preparation/Field-Renamer": {
+   "summary": "The core **Field organiser** and **Bulk field organiser** rename fields in the block's settings, which suits a handful of fixed names. This block takes the renames from a rules table on its first input, so the list can live in a spreadsheet or database and change without editing the workflow, and reports rules that matched nothing.",
+   "overlaps": [
+    {
+     "block": "Preparation/Streaming-Field-Renamer",
+     "note": "Takes the rename rules from its options or a CSV file and streams the data in chunks. Use Field Renamer when the rules come from another block, such as a database table."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/Canonical-Schema-Mapper",
+     "note": "Maps several aliases to one name, combines fields and sets types, from rules kept as data."
+    },
+    {
+     "coreBlock": "Bulk field organiser",
+     "note": "Renames many fields by pattern, such as a prefix or find and replace."
+    }
+   ]
+  },
+  "Preparation/ForEach/ForEach": {
+   "summary": "The core **For each** block is simpler and faster, and the right choice whenever the repeated blocks can live in the same project. This block repeats a different project through the server's Workflow REST API, waiting for each run: use it for a shared template project, or when what matters is what each run writes or publishes.",
+   "overlaps": [
+    {
+     "coreBlock": "For each",
+     "note": "Repeats part of the workflow it sits in and appends each run's output, with no server settings. Use this block when the work to repeat is a separate project."
+    },
+    {
+     "block": "Preparation/ForEach/ForEachMultiStage",
+     "note": "Also runs a separate project per record, but in up to three ordered stages, with an optional stage before the loop."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/ForEach/ProjectParameters",
+     "note": "Sets parameters in many projects without running them."
+    }
+   ]
+  },
+  "Preparation/ForEach/ForEachMultiStage": {
+   "summary": "The core **For each** block is the choice whenever the repeated blocks can live in the same project. This block runs a separate project per record in up to three ordered runs, for blocks that must run in an order their connections do not impose.",
+   "overlaps": [
+    {
+     "coreBlock": "For each",
+     "note": "Repeats blocks in the same project, appending each run's output; simpler and faster when the blocks can live there. Use this block when each record needs several ordered runs of a separate project."
+    },
+    {
+     "block": "Preparation/ForEach/ForEach",
+     "note": "Runs a separate project once per record in a single run. Use this block when each record needs several runs in a set order."
+    }
+   ],
+   "seeAlso": [
+    {
+     "view": "sequentialworkflowexecution",
+     "note": "A report button that runs blocks one after another, each as a separate run, once rather than per record.",
+     "name": "Sequential Workflow Execution"
+    }
+   ]
+  },
+  "Preparation/ForEach/ProjectParameters": {
+   "summary": "No core block changes another project's parameters; they are set in each project's Parameters dialog or through the server's Workflow REST API, and the core **For each** block changes them only for its own loop. This block calls that API once per input record, so one table sets the parameters of many projects.",
+   "overlaps": [
+    {
+     "block": "Preparation/Set Project Parameters",
+     "note": "Sets several parameters of one project from name / value records. This block sets them in many projects, one record per project."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/ForEach/ForEach",
+     "note": "Sets a project's parameters and then runs it, once per record."
+    }
+   ]
+  },
+  "Preparation/Geo/Centroids": {
+   "summary": "No core block turns shapes into points; this block gives one centre point per shape.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Point-In-Polygon",
+     "note": "Tags points with the polygon they fall in, from the same GeoJSON or WKT shapes."
+    },
+    {
+     "block": "Preparation/Geo/Shapefile",
+     "note": "Finds the region each point falls in, from the same kinds of shape sources."
+    }
+   ]
+  },
+  "Preparation/Geo/Gridsquare": {
+   "summary": "The core **Geocode** block looks up coordinates for place names and addresses; a Maidenhead locator is not a place name but a code, converted by calculation, which this block does."
+  },
+  "Preparation/Geo/Shapefile": {
+   "summary": "The core **Join** block matches on equal values, so it cannot tell which region a point falls in. This block reads a shapefile, GeoJSON file or GeoPackage directly, converting projected coordinate systems such as British National Grid for you.",
+   "overlaps": [
+    {
+     "block": "Analytics/Point-In-Polygon",
+     "note": "Tags points with the polygon they fall in, from GeoJSON or WKT shapes on a second input, appends the polygon's fields and counts points per polygon. Use this block to read a shapefile directly."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/Geo/Centroids",
+     "note": "A centre point for each region's shape."
+    }
+   ]
+  },
+  "Preparation/Geo/UK-Postcode-Tools": {
+   "summary": "This block validates and standardises UK postcodes and adds their area, district and country, offline, with no paid lookup service.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Split-Address",
+     "note": "Splits an address into street name, number and suffix."
+    },
+    {
+     "block": "Preparation/Data-Validation-Rules",
+     "note": "Includes a UK postcode format check among many rule types."
+    }
+   ]
+  },
+  "Preparation/Imputation": {
+   "summary": "This block adds the mean, median, mode, a constant, the next value and interpolation to the core **Fill down** block's previous value, within groups, with a flag on every filled value.",
+   "seeAlso": [
+    {
+     "coreBlock": "Fill down",
+     "note": "Carries the previous value down into blanks, one of this block's methods."
+    },
+    {
+     "block": "Preparation/Data-Quality-Analyser",
+     "note": "Finds missing values among other issues and fills them in a simple way."
+    },
+    {
+     "block": "Preparation/Time-Series-Filler",
+     "note": "Inserts the missing periods of a time series first, then fills them."
+    }
+   ]
+  },
+  "Preparation/Interfaces/Kedro": {
+   "summary": "The core **Custom Python script** block can run any Python, Kedro included, but you would write the session, catalog and file handling yourself; this block does that wiring. If the pipeline's steps are simple enough to rebuild with Omniscope's own blocks (Aggregate, Join, Field organiser), do that instead, so the workflow is visible and editable block by block."
+  },
+  "Preparation/JSON/Expand_Fields": {
+   "summary": "The core **Parse text** block is the place to start for tabular data inside a cell. This block does the simpler job of turning one JSON object per record into fields beside the input, with nothing to configure.",
+   "overlaps": [
+    {
+     "coreBlock": "Parse text",
+     "note": "Parses JSON or XML in a field into records and columns, appended with the input fields. This block only turns a JSON object's top-level keys into fields beside the input, typing each from its values."
+    },
+    {
+     "block": "Preparation/JSON/Normalise",
+     "note": "Flattens nested objects and arrays into records and dotted fields. Use Expand fields for one flat object per record."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Connectors/Airtable",
+     "note": "Airtable lists and objects arrive as JSON text that this block can expand."
+    },
+    {
+     "block": "Inputs/Databases/MongoDB",
+     "note": "Nested document values arrive as JSON text that this block can expand."
+    },
+    {
+     "view": "jsontree",
+     "note": "Shows the JSON as an expandable tree, to see which keys it holds before expanding them.",
+     "name": "JSON Tree"
+    }
+   ]
+  },
+  "Preparation/JSON/Normalise": {
+   "summary": "The core **Parse text** block is the place to start. This block is a Python alternative for JSON, repeating the input fields on each record it creates.",
+   "overlaps": [
+    {
+     "coreBlock": "Parse text",
+     "note": "Parses JSON or XML in each cell into tabular records, appended with the input fields; start there. This block flattens JSON only, naming nested keys with dots (Lines_options.colour)."
+    },
+    {
+     "block": "Preparation/JSON/Expand_Fields",
+     "note": "Adds one field per top-level key of a JSON object, keeping one record per input record. Use Normalise when arrays should become records."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Connectors/Airtable",
+     "note": "Its attachments, linked records and multiple selects arrive as JSON text."
+    },
+    {
+     "block": "Inputs/Databases/MongoDB",
+     "note": "Nested objects and arrays in its documents arrive as JSON text."
+    },
+    {
+     "view": "jsontree",
+     "note": "Shows the JSON as an expandable tree, to see its shape before flattening it.",
+     "name": "JSON Tree"
+    }
+   ]
+  },
+  "Preparation/Join/As-Of-Join": {
+   "summary": "**Inequality Join** and **Interval Join** return every match; an as-of join keeps exactly one, the record in force at each row's date, per key, with a maximum age. Doing that with a core **Join** needs a cross join and then filtering, which grows very large on big tables.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Join/Inequality-Join",
+     "note": "Joins on <, <=, >, >= conditions and returns every match. An as-of join keeps only the latest (or next, or nearest) match per row."
+    },
+    {
+     "block": "Preparation/Join/Interval-Join",
+     "note": "Joins values to the intervals (start and end) that contain them."
+    },
+    {
+     "block": "Analytics/Inflation-Adjustment",
+     "note": "Uses the index in force at each date to restate money values in real terms."
+    }
+   ]
+  },
+  "Preparation/Join/Fuzzy-Join": {
+   "summary": "The core **Join** block needs equal key values, and the `LEVENSHTEIN` formula compares one pair at a time. This block pairs records by the words they share, weighting distinctive words above common ones, with no threshold to tune, and suits teams where R is preferred.",
+   "overlaps": [
+    {
+     "block": "Preparation/Join/Fuzzy-Match",
+     "note": "Scores character-level similarity, so it catches typos and abbreviations, and can also find near-duplicates within one input. Use this block when names share the same words in a different order or form."
+    }
+   ]
+  },
+  "Preparation/Join/Fuzzy-Match": {
+   "summary": "The core **De-duplicate** block finds exact duplicates only, and the `LEVENSHTEIN` formula compares two values in one row. This block groups near-duplicates within one input and finds the best match for each record in a second input.",
+   "overlaps": [
+    {
+     "block": "Preparation/Join/Fuzzy-Join",
+     "note": "Joins two inputs by how many terms their text fields share. Overlaps with this block's two-input lookup mode; this block also finds near-duplicates within one input and scores with character-level similarity."
+    }
+   ],
+   "seeAlso": [
+    {
+     "coreBlock": "De-duplicate",
+     "note": "Exact duplicates only."
+    },
+    {
+     "block": "Preparation/Duplicate-Survivorship",
+     "note": "Keeps the best record of each duplicate group and fills its gaps from the others."
+    }
+   ]
+  },
+  "Preparation/Join/Inequality-Join": {
+   "summary": "The core **Join** block pairs records whose keys are equal. This block joins on a single comparison, which suits \"everything before\" or \"everything above\", and keeps every matching pair, for example to count or compare them afterwards.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Join/As-Of-Join",
+     "note": "Keeps only the latest earlier record per row, such as the rate in force at a date."
+    },
+    {
+     "block": "Preparation/Join/Interval-Join",
+     "note": "Matches a value to ranges with a start and an end, in one step."
+    }
+   ]
+  },
+  "Preparation/Join/Interval-Join": {
+   "summary": "With the core **Join** block, a range lookup means joining every record to every band and filtering, which grows very large. This block tests both ends of an interval at once, with open-ended bands and a choice of whether each boundary counts.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Join/As-Of-Join",
+     "note": "Keeps the single record in force at each date (latest on or before, next or nearest), per key."
+    },
+    {
+     "block": "Preparation/Join/Inequality-Join",
+     "note": "Joins on a single comparison (<, <=, >, >=) and outputs every matching pair."
+    },
+    {
+     "block": "Analytics/Tiered-Calculation",
+     "note": "Applies tier tables to amounts, charging each slice at its own rate."
+    }
+   ]
+  },
+  "Preparation/Markdown-to-HTML": {
+   "summary": "None of the core preparation blocks converts Markdown, and doing it with text replacements breaks down at lists, links and tables. This block converts the whole text with a standard Markdown library.",
+   "seeAlso": [
+    {
+     "view": "customhtml",
+     "note": "Shows HTML held in a field, such as this block's output, for the filtered or selected record or as one card per value.",
+     "name": "Custom HTML"
+    }
+   ]
+  },
+  "Preparation/Multi-Field-Formula": {
+   "summary": "This block applies any of a range of calculations (round, scale, share of row or column total, index to a base, z-score, fill, text case) to many fields at once.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Standardisation/Standardise",
+     "note": "Rescales selected fields to the range 0 to 1, one of the operations this block offers."
+    },
+    {
+     "coreBlock": "Normalise",
+     "note": "Converts numeric fields to z-scores, one of this block's operations."
+    },
+    {
+     "coreBlock": "Bulk field organiser",
+     "note": "Applies the same name and type changes to many fields."
+    },
+    {
+     "block": "Preparation/Multi-Row-Formula",
+     "note": "Calculations across rows rather than across fields: previous value, running total, rolling mean."
+    }
+   ]
+  },
+  "Preparation/Multi-Row-Formula": {
+   "summary": "Formulas can do much of this, since RUNNINGTOTAL and SUBSET formulas give running totals, previous values and moving averages per group, but each calculation is a formula to write and check. This block offers previous and next values, change, percentage change, running totals, rolling statistics and ranks within groups as options.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Rolling-Time-Window",
+     "note": "Windows of a fixed length of time (last 24 hours, 30 days) rather than a number of rows."
+    },
+    {
+     "block": "Analytics/Running-Balance",
+     "note": "Running balances per account with lowest balance and days below zero."
+    },
+    {
+     "block": "Preparation/Multi-Field-Formula",
+     "note": "One operation across many fields of the same row."
+    },
+    {
+     "view": "runningpivot",
+     "note": "Shows running totals in a pivot, by row and column, without adding fields.",
+     "name": "Running Pivot View"
+    }
+   ]
+  },
+  "Preparation/Name-Parser": {
+   "summary": "The core **Split values** and **Normalise case** blocks can split on spaces and fix capitals, but cannot tell titles, middle names, suffixes, \"Last, First\" order or organisation names apart; this block does.",
+   "seeAlso": [
+    {
+     "coreBlock": "Split values",
+     "note": "Splits a field on a separator."
+    },
+    {
+     "coreBlock": "Normalise case",
+     "note": "Changes text case."
+    }
+   ]
+  },
+  "Preparation/Outlier-Flagger": {
+   "summary": "The core **Anomaly Detection** block gives each record one anomaly score, which is good for finding unusual records overall. This block applies a stated rule per field, within groups, reports the bounds used and can cap values, so the result is easy to explain.",
+   "overlaps": [
+    {
+     "block": "Preparation/Data-Quality-Analyser",
+     "note": "Flags IQR outliers (as well as missing values and duplicate rows) in an issue log. This block adds z-score and MAD methods, grouping, bounds per field and capping."
+    },
+    {
+     "coreBlock": "Anomaly Detection",
+     "note": "Assigns an anomaly score to each record from the selected fields, optionally within groups. This block applies explicit IQR, z-score or MAD bounds per field and can cap values."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Analytics/Data-Profiler",
+     "note": "Field statistics plus a z-score anomaly flag (3 or more standard deviations) on each record."
+    },
+    {
+     "block": "Analytics/Time-Series-Anomalies",
+     "note": "Spikes and dips in a series against a rolling baseline, allowing for weekdays."
+    }
+   ]
+  },
+  "Preparation/Partition": {
+   "summary": "The core **Split Data** block divides records between outputs, such as a random 30% and the rest, rather than into numbered batches of a fixed size; an **Add row ID** block and a formula can give batch numbers in two steps. This block numbers the batches directly.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Tile",
+     "note": "Bands records by the values of a numeric field, such as deciles."
+    }
+   ]
+  },
+  "Preparation/Pivot/Melt-De-pivot": {
+   "summary": "The core **De-pivot** block is the first choice for most tables. This block differs in three ways: choose the fields to keep and everything else is de-pivoted, values of different types are turned into text consistently (and the block says so), and empty values can be left out.",
+   "overlaps": [
+    {
+     "coreBlock": "De-pivot",
+     "note": "Does the same job with rule-based field selection and no Python. Use this block for its handling of mixed types and empty values, or as a script to adapt."
+    }
+   ]
+  },
+  "Preparation/RegEx-Parse": {
+   "summary": "The core **Search / replace** block can replace with regular expressions; this block also parses capture groups into new fields and tokenises the matches of a pattern into columns or rows.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Unstack-rows",
+     "note": "Splits stacked values on a fixed separator into rows; this block can tokenise matches of a pattern into rows."
+    },
+    {
+     "coreBlock": "Search / replace",
+     "note": "Regular expression replacement."
+    },
+    {
+     "coreBlock": "Split values",
+     "note": "Splits a field on a separator or at fixed positions."
+    }
+   ]
+  },
+  "Preparation/Rolling-Time-Window": {
+   "summary": "This block is built for velocity checks, as in card fraud rules: several trailing time windows at once (such as 1 hour, 24 hours and 7 days) per key, with counts, sums and distinct values.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Multi-Row-Formula",
+     "note": "Rolling calculations over a fixed number of rows, plus previous value, change and rank."
+    }
+   ]
+  },
+  "Preparation/Sequence-Gap-Finder": {
+   "summary": "With core blocks, checking a numbered sequence takes a sort, a previous-value formula and filters per series. This block reports missing ranges, duplicates and out-of-order numbers directly.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Benford-Test",
+     "note": "Another audit screen: whether amounts follow Benford's law."
+    }
+   ]
+  },
+  "Preparation/Sessionise-Events": {
+   "summary": "With formulas, sessionising takes a sort, a lag of the timestamp per user, a gap test and a running count, then an aggregate. This block does it in one step with session summaries.",
+   "seeAlso": [
+    {
+     "block": "Analytics/Path-Analysis",
+     "note": "The most common sequences of events per session, using this block's Session ID."
+    }
+   ]
+  },
+  "Preparation/Set Project Parameters": {
+   "summary": "Project parameters are normally set in the Parameters dialog, by report views that switch a parameter, or through the server's Workflow REST API. This block lets a workflow set several parameters of one project from its own data, one record per parameter, in a single request.",
+   "overlaps": [
+    {
+     "block": "Preparation/ForEach/ProjectParameters",
+     "note": "Sets the same parameters in many projects, one record per project and one field per parameter. Use this block for several parameters of one project, often its own."
+    }
+   ],
+   "seeAlso": [
+    {
+     "coreBlock": "For each",
+     "note": "Changes parameters only for the duration of its loop, in its own project."
+    },
+    {
+     "block": "Preparation/Conditional Execution",
+     "note": "Starts listed blocks when a yes/no parameter, such as one this block sets, is on."
+    },
+    {
+     "view": "switchparam",
+     "note": "Lets a report viewer set one parameter by picking a value.",
+     "name": "Switch Param"
+    },
+    {
+     "view": "setparamandexecute",
+     "note": "Lets a report viewer type parameter values and run blocks with them.",
+     "name": "Set Parameters and Execute"
+    }
+   ]
+  },
+  "Preparation/Smart-Date-Parser": {
+   "summary": "The core **Field organiser** converts a text field to a Date with one format for the whole field, so a field that mixes formats needs splitting, several conversions and an append. This block reads each value on its own, in any of the common formats plus your own, and marks the values it could not read.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Smart-Schema-Normaliser",
+     "note": "Guesses number, date and yes/no types for every text field of an untidy export."
+    }
+   ]
+  },
+  "Preparation/Smart-Schema-Normaliser": {
+   "summary": "The core **Format field names** block changes how names are written, and **Define schema** sets types from a schema you maintain; neither merges two fields that hold the same thing under different names. This block does all three in one step with no field list, so it copes when a new export adds or renames a field.",
+   "overlaps": [
+    {
+     "coreBlock": "Format field names",
+     "note": "Changes how chosen field names are written, such as snake case. This block also merges fields whose names differ only in case or spacing and guesses each text field's type."
+    }
+   ],
+   "seeAlso": [
+    {
+     "coreBlock": "Define schema",
+     "note": "Sets names and types from a schema you know, rather than guessing."
+    },
+    {
+     "block": "Preparation/Canonical-Schema-Mapper",
+     "note": "Maps aliases to names you choose, from rules kept as data."
+    },
+    {
+     "block": "Preparation/Data-Cleansing",
+     "note": "Cleans values instead of names: blanks, placeholders, characters, case."
+    },
+    {
+     "block": "Preparation/Smart-Date-Parser",
+     "note": "Reads dates written in many formats in one field, and flags those it can't read."
+    }
+   ]
+  },
+  "Preparation/Sort-fields": {
+   "summary": "The core **Field organiser** puts fields in the order you arrange them, so a field added to the source later lands wherever the source puts it. This block applies a rule instead (by name, or by type then name), so new fields fall into place by themselves. The core **Sort** block orders records, not fields."
+  },
+  "Preparation/Split-Address": {
+   "summary": "The core **Split values** block splits at a separator character, so it cannot tell whether the number comes before or after the street, or that \"12A\" is a number and a suffix. This block tries a set of patterns for both orders, with suffixes, and expects the postcode to have been split off already.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Geo/UK-Postcode-Tools",
+     "note": "Validates and splits UK postcodes, often the other half of an address clean-up."
+    }
+   ]
+  },
+  "Preparation/Standardisation/Standardise": {
+   "summary": "The core **Normalise** block converts number fields to z-scores, which have no fixed range; this block does min-max scaling, so every chosen field runs from exactly 0 to 1. Use it when rescaling is the whole job and R is preferred.",
+   "seeAlso": [
+    {
+     "coreBlock": "Normalise",
+     "note": "Scales to mean 0 and standard deviation 1 instead of 0 to 1."
+    },
+    {
+     "block": "Preparation/Multi-Field-Formula",
+     "note": "Min-max scaling among many other operations on many fields at once."
+    },
+    {
+     "block": "Analytics/Weighted-Scoring",
+     "note": "Builds a weighted scorecard, rescaling each criterion itself."
+    }
+   ]
+  },
+  "Preparation/Stratified-Sample": {
+   "summary": "Neither the core **Random Sample** nor the **Split Data** block samples within strata; this block draws a reproducible sample per group: proportional with a minimum, equal, or a fixed number.",
+   "seeAlso": [
+    {
+     "coreBlock": "Random Sample",
+     "note": "A fixed number or percentage of rows, without strata."
+    },
+    {
+     "coreBlock": "Split Data",
+     "note": "Proportional or cut-off split into two outputs."
+    }
+   ]
+  },
+  "Preparation/Streaming-Field-Renamer": {
+   "summary": "The core **Field organiser** and **Bulk field organiser** rename fields in each block's own settings. This block takes the renames as one short list that several projects can share, and streams the data rather than loading it all.",
+   "overlaps": [
+    {
+     "block": "Preparation/Field-Renamer",
+     "note": "Reads the rename rules from a second input (a table from any block) and lists unused rules. Use this block for very large inputs or rules kept in one CSV file."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/Canonical-Schema-Mapper",
+     "note": "Maps several aliases to one name and converts types, also streaming."
+    }
+   ]
+  },
+  "Preparation/Subtotals-Rollup": {
+   "summary": "The core **Aggregate** block summarises one grouping at a time, so a table with subtotal rows at every level and a grand total needs one Aggregate per level and an Append. This block builds it in one step, with shares of parent and of total.",
+   "seeAlso": [
+    {
+     "coreBlock": "Aggregate",
+     "note": "Summary measures per group, one level at a time."
+    },
+    {
+     "block": "Preparation/Top-N-With-Other",
+     "note": "Keeps the top items per group and rolls the rest into Other."
+    }
+   ]
+  },
+  "Preparation/Tile": {
+   "summary": "The BUCKET formula makes equal-width bands only. This block adds quantiles, equal-sum (Pareto) bands, standard-deviation bands and manual cut points, within groups.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Partition",
+     "note": "Numbers records in chunks of a fixed size, regardless of their values."
+    },
+    {
+     "block": "Analytics/ABC-Classification",
+     "note": "A, B and C classes by cumulative share of value, with XYZ demand variability."
+    },
+    {
+     "block": "Analytics/Histogram-Distribution",
+     "note": "Counts records per bin for a histogram, with distribution statistics."
+    }
+   ]
+  },
+  "Preparation/Time-Series-Filler": {
+   "summary": "With core blocks, inserting the missing periods of each series takes a calendar, a cross join with the series keys and a join back. This block does it in one step with a choice of fill method.",
+   "seeAlso": [
+    {
+     "block": "Preparation/Imputation",
+     "note": "Fills missing values in existing rows by mean, median, mode or interpolation, within groups."
+    }
+   ]
+  },
+  "Preparation/Top-N-With-Other": {
+   "summary": "Top N with an Other row is possible with **Aggregate**, **Sort**, a rank formula and an **Append**, but fiddly per group. This block keeps the top N per group and rolls the rest into an Other row, ready for a readable chart.",
+   "seeAlso": [
+    {
+     "coreBlock": "Aggregate",
+     "note": "Summary measures per group, without ranking or an Other row."
+    },
+    {
+     "block": "Preparation/Subtotals-Rollup",
+     "note": "Subtotals at every level of a hierarchy, with a grand total."
+    },
+    {
+     "block": "Analytics/Concentration-Measures",
+     "note": "Summarises how concentrated a total is: HHI, Gini, top-N shares."
+    }
+   ]
+  },
+  "Preparation/URL-Encode": {
+   "summary": "The core **Search / replace** block changes text by pattern, so encoding by hand takes one replacement per character, and accented letters need their UTF-8 byte codes worked out. This block applies standard percent-encoding to the whole field in one step, with a choice of keeping slashes and of + for spaces."
+  },
+  "Preparation/Unescape-HTML": {
+   "summary": "The core **Search / replace** block can swap `&amp;` for `&`, one reference at a time, but HTML has over two thousand named references plus numeric ones, and `&amp;` must be done last or it creates new ones. This block converts them all in one pass, with the same rules web browsers use."
+  },
+  "Preparation/Unstack-rows": {
+   "summary": "The core **De-tokenise** block handles one field; this block also fills shorter lists with empty values and accepts a separator of any length.",
+   "overlaps": [
+    {
+     "coreBlock": "De-tokenise",
+     "note": "Splits tokenised text in one field into separate records. This block splits several fields at once and pairs their values by position (each product with its quantity)."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Preparation/RegEx-Parse",
+     "note": "Tokenises the matches of a pattern into rows, when the values have no fixed separator."
+    }
+   ]
+  },
+  "Preparation/Working-Days": {
+   "summary": "The NETWORKDAYS formula ignores public holidays and cannot add working days to a date. This block does both, with generated UK or US holidays and your own closures.",
+   "overlaps": [
+    {
+     "block": "Preparation/Business-Hours-SLA",
+     "note": "Measures elapsed hours within opening hours and checks SLAs set in business hours. Use this block for SLAs and due dates in whole days."
+    }
+   ],
+   "seeAlso": [
+    {
+     "block": "Inputs/Date-Dimension",
+     "note": "A full calendar table with working-day flags and counts, to join to your data."
+    }
+   ]
+  }
+ }
+}
