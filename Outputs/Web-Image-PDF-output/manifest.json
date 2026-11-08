@@ -11,8 +11,8 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": "data:image/png;base64,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",
-    "description": "Grabs screenshots of webpages, optionally producing a PDF document.",
+    "icon": "data:image/png;base64,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",
+    "description": "Saves a screenshot (PNG) of the web page at each input record's URL, at a chosen size, and optionally one PDF with a page per screenshot.",
     "category": "Outputs",
     "subcategory": "PDF",
     "tags": [
@@ -20,27 +20,32 @@
         "image",
         "pdf",
         "output",
-        "print"
+        "print",
+        "png",
+        "web page",
+        "report"
     ],
-    "introductoryText": "## Webpage Image/PDF output\n#### Grab screenshots (PNG) per web page URL record by record, optionally creating a PDF file, saving all files to the specified output folder.\n### Setup\n#### The best way to use this block is within a Docker system. For more information check this article [Docker setup](https://help.visokio.com/support/solutions/articles/42000071133-setting-up-the-custom-block)\n#### If you are not using Docker, then Chrome has to be installed on the host machine.\n### Authentication\nIf Basic Authentication is set up either for the report itself or the folder in which it is located, and Local Desktop Experience is turned off in the admin app, or the report is only accessible via its public IP, then you need to specify a username and password in order for the block to print properly.\n### Troubleshooting\n#### *In case you experience errors running this block, please ensure the following:*\n#### 1. Make sure you are using the newest Webpage Image/PDF output block. If in doubt, replace this one with a fresh one from the block palette.\n#### 2. If you are using Docker, make sure you are using the newest Docker image. If in doubt, simply remove all Visokio related Docker images\n#### 3. If *not* running Docker, make sure Chrome is installed and is on the newest version.\n#### 4. It's possible that your version of Omniscope is too old and has become incompatible with the other parts of the printing system. Please switch to the newest Rock, or the newest Release Candidate.",
+    "introductoryText": "Takes a screenshot of the web page at each input record's URL, such as a Report tab or any other page, and saves it as a PNG in the output folder (`screenshot_0.png`, `screenshot_1.png`, ... in input order). Optionally it also makes one PDF with a page per screenshot.\n\n**How to set it up**: choose the field with the URLs, the screenshot size and orientation, and the output folder. Tick Create PDF for the PDF; its file name defaults to `screenshots.pdf`. Each PDF page is the size of the screenshot (1 pixel = 1 point).\n\nThe output has one record per screenshot: the URL, the PNG's path and file name, and the PDF's path (empty without a PDF). Records with an empty URL are skipped. Files from an earlier run with the same names are replaced.\n\n**What it needs.** Chrome, driven by the `visokio-omniprint` Python package (installed on first run). On a server that runs custom blocks in Docker, the block uses its own image with Chrome included ([Docker setup](https://help.visokio.com/support/solutions/articles/42000071133-setting-up-the-custom-block)); otherwise Chrome must be installed on the machine running Omniscope. Each page must be reachable from that machine.\n\n**Authentication.** For pages behind Basic Authentication (for example a Report with Local Desktop Experience turned off), enter a username and password. They are used only to open the page; they are not written to the output.",
     "dependencies": "visokio-omniprint",
     "options": [
         {
             "name": "url_field",
             "title": "URL field",
-            "description": "The field containing the web pages URL to screenshot",
+            "description": "The field holding the address of each page to capture, such as a Report tab URL.",
             "groupTitle": "Screenshot",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
             "defaultValue": null,
-            "fieldTypes": []
+            "fieldTypes": [
+                "STRING"
+            ]
         },
         {
             "name": "resolution",
-            "title": "Screen resolution",
-            "description": null,
+            "title": "Screenshot size",
+            "description": "The size of each screenshot in pixels: Chrome's page area is set to this size (turned on its side for Portrait).",
             "groupTitle": "Screenshot",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -134,7 +139,7 @@
         {
             "name": "orientation",
             "title": "Orientation",
-            "description": null,
+            "description": "Landscape: wider than tall, as listed. Portrait: the same size turned on its side.",
             "groupTitle": "Screenshot",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -168,9 +173,9 @@
         {
             "name": "folder_path",
             "title": "Output folder",
-            "description": "The folder path where to save the png screenshot images and the pdf",
+            "description": "The folder the PNG files and the PDF are saved in, on the machine running Omniscope. Created if missing.",
             "groupTitle": "Screenshot",
-            "width": "TWO",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
             "mandatory": true,
             "defaultValue": null,
@@ -178,8 +183,8 @@
         },
         {
             "name": "sleep_seconds",
-            "title": "Page load delay",
-            "description": "Wait the specified seconds before grabbing the screenshot to allow the page to load fully.",
+            "title": "Page load delay (seconds)",
+            "description": "Extra seconds to wait after the page has finished loading, before the screenshot. Raise it if charts come out half drawn.",
             "groupTitle": "Screenshot",
             "width": "SHRINK",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
@@ -191,8 +196,8 @@
         },
         {
             "name": "tinify",
-            "title": "Tinify",
-            "description": "Click this to shrink the width of the image. You need a tinify api key for this option which can be obtained here: https://tinify.com/dashboard/api",
+            "title": "Shrink with Tinify",
+            "description": "Shrinks each PNG to the width below with the Tinify web service (api.tinify.com), which needs an API key: https://tinify.com/dashboard/api",
             "groupTitle": "Tinify",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
@@ -200,20 +205,19 @@
         },
         {
             "name": "tinify_key",
-            "title": "Tinify Api Key",
-            "description": null,
+            "title": "Tinify API key",
+            "description": "Needed with Shrink with Tinify.",
             "groupTitle": "Tinify",
             "width": "ONE",
-            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
-            "mandatory": false,
-            "defaultValue": null
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": false
         },
         {
             "name": "tinify_width",
-            "title": "Image width",
-            "description": null,
+            "title": "Shrunk width (pixels)",
+            "description": "Needed with Shrink with Tinify. The height keeps the screenshot's proportions.",
             "groupTitle": "Tinify",
-            "width": "ONE",
+            "width": "HALF",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
             "numMin": null,
             "numMax": null,
@@ -224,7 +228,7 @@
         {
             "name": "create_pdf",
             "title": "Create PDF",
-            "description": "If ticked a PDF file will be generated made with all the screenshots grabbed",
+            "description": "Also make one PDF with a page per screenshot, in input order.",
             "groupTitle": "PDF",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
@@ -233,7 +237,7 @@
         {
             "name": "pdf_file_name",
             "title": "PDF file name",
-            "description": "Optional file name for the PDF to generate.",
+            "description": "Optional. Empty: screenshots.pdf. .pdf is added if missing.",
             "groupTitle": "PDF",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -242,8 +246,8 @@
         },
         {
             "name": "compression",
-            "title": "Compression",
-            "description": "Whether to compress the PDF (it will impact the images quality)",
+            "title": "Compress the PDF",
+            "description": "Compresses the PDF's page descriptions (lossless). The screenshots are stored compressed either way, so the file size hardly changes.",
             "groupTitle": "PDF",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
@@ -252,7 +256,7 @@
         {
             "name": "auth_username",
             "title": "Username",
-            "description": null,
+            "description": "Optional. For pages behind Basic Authentication.",
             "groupTitle": "Authentication",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -262,7 +266,7 @@
         {
             "name": "auth_password",
             "title": "Password",
-            "description": null,
+            "description": "Optional. Used only to open the page; not written to the output.",
             "groupTitle": "Authentication",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
@@ -273,9 +277,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
+            "label": "Screenshots",
+            "displayName": "Screenshots saved",
+            "tooltip": "One record per screenshot: URL, Screenshot path, Screenshot filename, PDF (its path, or empty)."
         }
     ],
     "docker": {

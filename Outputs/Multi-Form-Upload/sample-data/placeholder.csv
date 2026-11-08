@@ -1,0 +1,6 @@
+Invoice,File name,File path,HTTP status,Response,Error
+INV-1001,INV-1001.csv,/data/omniscope/outgoing/invoices/INV-1001.csv,201,"{""status"": ""received"", ""file"": ""INV-1001.csv"", ""id"": ""upl-0001""}",
+INV-1002,INV-1002.csv,/data/omniscope/outgoing/invoices/INV-1002.csv,201,"{""status"": ""received"", ""file"": ""INV-1002.csv"", ""id"": ""upl-0002""}",
+INV-1003,INV-1003.csv,/data/omniscope/outgoing/invoices/INV-1003.csv,201,"{""status"": ""received"", ""file"": ""INV-1003.csv"", ""id"": ""upl-0003""}",
+INV-1004,INV-1004.csv,/data/omniscope/outgoing/invoices/INV-1004.csv,201,"{""status"": ""received"", ""file"": ""INV-1004.csv"", ""id"": ""upl-0004""}",
+INV-1005,INV-1005.csv,/data/omniscope/outgoing/invoices/INV-1005.csv,,,File not found: /data/omniscope/outgoing/invoices/INV-1005.csv

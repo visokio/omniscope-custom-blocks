@@ -1,0 +1,5 @@
+Page,URL
+Sales dashboard,http://127.0.0.1:24679/Sales/Monthly%20Review.iox/r/Board%20Pack/#Overview
+Regional view,http://127.0.0.1:24679/Sales/Monthly%20Review.iox/r/Board%20Pack/#Regions
+Stock levels,http://127.0.0.1:24679/Operations/Stock.iox/r/Report/#Warehouses
+Price list,https://www.example.com/trade/price-list

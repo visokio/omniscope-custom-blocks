@@ -1,0 +1,4 @@
+Team,Report URL,Message
+Sales,http://127.0.0.1:24679/Sales/Monthly%20Review.iox/r/Board%20Pack/#Overview,Monthly sales review: revenue 4% above target.
+Operations,http://127.0.0.1:24679/Operations/Stock.iox/r/Report/#Warehouses,Stock levels this morning: 3 warehouses below cover.
+Finance,http://127.0.0.1:24679/Finance/Quarterly%20Review.iox/r/Quarterly%20Review/#Cash,Cash position at month end (full report: http://127.0.0.1:24679/Finance/Quarterly%20Review.iox/r/Quarterly%20Review/#Cash).

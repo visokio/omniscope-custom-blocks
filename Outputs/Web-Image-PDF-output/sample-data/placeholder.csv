@@ -1,0 +1,5 @@
+URL,Screenshot path,Screenshot filename,PDF
+http://127.0.0.1:24679/Sales/Monthly%20Review.iox/r/Board%20Pack/#Overview,/data/reports/screenshots/screenshot_0.png,screenshot_0.png,/data/reports/screenshots/screenshots.pdf
+http://127.0.0.1:24679/Sales/Monthly%20Review.iox/r/Board%20Pack/#Regions,/data/reports/screenshots/screenshot_1.png,screenshot_1.png,/data/reports/screenshots/screenshots.pdf
+http://127.0.0.1:24679/Operations/Stock.iox/r/Report/#Warehouses,/data/reports/screenshots/screenshot_2.png,screenshot_2.png,/data/reports/screenshots/screenshots.pdf
+https://www.example.com/trade/price-list,/data/reports/screenshots/screenshot_3.png,screenshot_3.png,/data/reports/screenshots/screenshots.pdf

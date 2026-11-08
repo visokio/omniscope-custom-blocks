@@ -1,0 +1,10 @@
+{
+    "ok": true,
+    "result": {
+        "message_id": 4101,
+        "from": {"id": 7000000001, "is_bot": true, "first_name": "Stock alerts", "username": "stock_alerts_bot"},
+        "chat": {"id": -1001234567890, "title": "Warehouse leads", "type": "supergroup"},
+        "date": 1741000000,
+        "text": "(the text as sent)"
+    }
+}
