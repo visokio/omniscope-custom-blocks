@@ -1,0 +1,182 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Regression",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Linear or logistic regression with coefficients, standard errors, p-values, confidence intervals, odds ratios, VIF, fit statistics and scored rows.",
+    "category": "Analytics",
+    "subcategory": "Statistics",
+    "tags": [
+        "regression",
+        "linear regression",
+        "logistic regression",
+        "p-value",
+        "odds ratio",
+        "VIF",
+        "AUC",
+        "statistics",
+        "visokio-agents"
+    ],
+    "introductoryText": "**Linear** (least squares) or **logistic** (yes / no outcome) regression with the full statistical output.\n\n- **Coefficients** with standard errors, t or z statistics, **p-values** and confidence intervals; **odds ratios** for logistic regression\n- **VIF** (variance inflation factor) per term, to spot collinear predictors (above 10 is a warning sign)\n- **Fit**: R-squared, adjusted R-squared, RMSE, F test and AIC; or log-likelihood, McFadden pseudo R-squared, likelihood-ratio test, **AUC** and accuracy\n- **Scored rows**: prediction, residual and a prediction interval (linear), or probability and predicted class (logistic)\n\nText predictors are dummy-coded against their most common value (for example *Contract = One year* compared with *Monthly*). Rows with missing values are left out of the fit but still scored when their predictors are complete. *Automatic* chooses logistic when the target has exactly two values.\n\nPython with numpy only; the tests check the results against reference values from statsmodels.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "target_field",
+            "title": "Target field",
+            "description": "The value to explain: a number (linear) or a yes / no outcome (logistic).",
+            "groupTitle": "Model",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "predictor_fields",
+            "title": "Predictor fields",
+            "description": "Numbers or text (text is dummy-coded).",
+            "groupTitle": "Model",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": true,
+            "fieldTypes": []
+        },
+        {
+            "name": "model",
+            "title": "Model",
+            "description": "Automatic chooses logistic for a two-value target and linear otherwise.",
+            "groupTitle": "Model",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Automatic",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "AUTO",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Linear",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LINEAR",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Logistic",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LOGISTIC",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "AUTO"
+        },
+        {
+            "name": "positive_class",
+            "title": "Positive class (logistic)",
+            "description": "Default: Yes / 1 / True if present.",
+            "groupTitle": "Model",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "confidence",
+            "title": "Confidence level",
+            "description": "For the coefficient confidence intervals.",
+            "groupTitle": "Options",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.5,
+            "numMax": 0.999,
+            "mandatory": true,
+            "defaultValue": 0.95,
+            "showAsSlider": false
+        },
+        {
+            "name": "threshold",
+            "title": "Classification threshold (logistic)",
+            "description": null,
+            "groupTitle": "Options",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.01,
+            "numMax": 0.99,
+            "mandatory": true,
+            "defaultValue": 0.5,
+            "showAsSlider": false
+        },
+        {
+            "name": "max_levels",
+            "title": "Most values for a text predictor",
+            "description": null,
+            "groupTitle": "Options",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 2,
+            "numMax": 1000,
+            "mandatory": true,
+            "defaultValue": 30,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "coefficients",
+            "label": "Coefficients",
+            "displayName": "Coefficients",
+            "tooltip": "Per term: coefficient, standard error, t or z, p-value, confidence interval, VIF, odds ratio (logistic), significant."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "fit",
+            "label": "Fit",
+            "displayName": "Fit",
+            "tooltip": "Model statistics: rows, R-squared, F test, AIC; or log-likelihood, pseudo R-squared, LR test, AUC, accuracy."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "scored",
+            "label": "Scored",
+            "displayName": "Scored rows",
+            "tooltip": "The input with prediction, residual and interval, or probability and predicted class."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

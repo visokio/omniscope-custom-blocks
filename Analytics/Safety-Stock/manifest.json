@@ -1,0 +1,274 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Safety Stock and Reorder Point",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAETklEQVR42u2dTWgdZRSGn2OxtqURtaAIRleSjQqCqAvBldAurLhT3CgIBSOKBREVN2ptRbH+oBXUhT8bEUS6sOjGn00NCEJEJC5EVETUgiFa4u/rIlcoSJszyZ2v547vA9nkHu4z871zMvfeObkDxhhjjDHGGGOMMcaYBJEpkjQNzAJXjn71EfBsRHwzzo0ZmqcEkrZLWtJ/WZK03Z7a4U0fZ2eP3enpRp4LJsXTklNWeXwW2HqCx7cCD4xhOzKe+yfIU6YD39Pq/CbpPHtqdmCGjcDd63yOqYF5ygQ4l3yeWyWd3WB7h+bpPcAXgD8Tz7MFuKvB9g7N0+Q8+JpyLEo6c42Oj5WnvKfaOXAP8Hei7nTg9gbbPDRPky58M3nUHpE01XNnlPdUfBX6EKBE3VnArgbbPTRPky48lDxqv5e0uefOKO2p+j7wwWTdOcAtDbZ9aJ4mXfhB8qj9WtLGnjujrKfyJzF7knXTwE0Ntn9oniZdOJc8ahckbei5M0p6jvFNS9on6f3Rz75xXL1Zb4DXddjpGxosbDnPyFXzuqOkkDSf3OF5SdFgYat5mlxHXcs5kIgQ8Eiy/GJgZ4Pjqponc91x9qQEOOIN4Itk7X2N/jhU8lwxppp+AoyIv4BHk+WXS7qmwcJW8mQ+fps6mR0I8CrwVbK21ZjC0Dz9BRgRfwCPJ8uvlnRVg/0ZmqfXDgR4CfjO58IJDTAiloEnk+U7JF3WYJ+G5um1AwEOAEeStfeuw7MwME+NACPiF+DpZPn1ki5ao2ponjIdCPAUsJjJG7jHnmIBRsQi8Hyy/EZJF9pTqwMBngCOJuo2sL7B2aF5agQYET8ALybLb5Z0vj21OhDgMeD3RN2pwG57igUYEd8CryTLd0k6155aHQiwl9w4/ibgDnuKBRgRXwKvJ8tvW+v4+tA8lToQ2o3jD81TI8CI+Bx4K1l+Jye+ev2/8VTqQICHyY3jbwNm7CkWYER8ArzT9w4MzVOpAyE/jm9PxQAj4jDwYYPuGJSnUgf++woOeyY0wIh4Fzhsz+R2IORHEO0pGuBBYN6eCQ1wNI6/157J7UDoNo5vT7UAO47j21OwA6HbOL491QLsOI5vT8EOhG7j+PZUC7DjOL49BTsQ4DngJ3smNMCI+BV4xp7J7UDIj6/bUzHA0fj6AXsmtwMB9pMbX7enYoAdx9ftKdiBkB9fX7KnYICj8fWXE6Vz9hSl2C1+JsZTLUTfZGstHV+tE/Ft7owxxhhjjDGmTzq9D5R0BivfGT0DnOblGyvLwKfA2xGxNPYAR+HtZuXmiKY/jgD7R7M2q9Llw+ydDq8J24Ad2eIuAc54bZtxaR8B+pzXji19BGgK4gAdoHGAxgE6QOMAjQM0DtABHo+fvVzNWO4jwM+8rs1Y6CPAQ8CPXtveOcrKN0Gl6HpBdxNwLXAJsNlrPfY/mwvAwdH/GhpjjDHGGGOMMcYYY4wZ8Q+vWYE+ZbM9hQAAAABJRU5ErkJggg==",
+    "description": "Calculates safety stock, reorder points, order-up-to levels and EOQ per item from demand history and lead times for a target service level, with a reorder list.",
+    "category": "Analytics",
+    "subcategory": "Supply Chain",
+    "tags": [
+        "safety stock",
+        "reorder point",
+        "inventory",
+        "eoq",
+        "service level",
+        "supply chain",
+        "replenishment",
+        "visokio-agents"
+    ],
+    "introductoryText": "Sets stock levels from demand history for a target **service level** (the chance of not running out during a replenishment lead time):\n\n| Output | Formula |\n|---|---|\n| Average demand, standard deviation | per period (day, week, month); periods with **no demand count as zero** |\n| **Safety stock** | z x sqrt(L x sd_d² + d² x sd_L²), with z from the service level, L the lead time and sd_L its variability |\n| **Reorder point** | d x L + safety stock |\n| **Order-up-to level** | for periodic review: d x (L + R) + z x sqrt((L + R) x sd_d² + d² x sd_L²) |\n| **EOQ** | sqrt(2 x annual demand x ordering cost / (holding rate x unit cost)), when costs are given |\n| Cover, status, suggested order | from stock on hand: items at or below the reorder point and the quantity to bring them to the order-up-to level |\n\nInput 1 is demand history (item, date, quantity: orders or daily sales lines). Optional input 2 has one row per item with its lead time (in periods), lead-time standard deviation, unit cost, stock on hand and an item-specific service level. Without input 2, one lead time applies to all items.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "item_field",
+            "title": "Item field",
+            "description": "Identifies the item, such as a part number.",
+            "groupTitle": "Demand (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "date_field",
+            "title": "Date field",
+            "description": "Date of each demand record; demand is summed per period.",
+            "groupTitle": "Demand (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "quantity_field",
+            "title": "Quantity field",
+            "description": "Quantity demanded or shipped.",
+            "groupTitle": "Demand (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "period",
+            "title": "Demand period",
+            "description": "Lead times and review periods are in this unit.",
+            "groupTitle": "Policy",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Week",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WEEK",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Day",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DAY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Month",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTH",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "WEEK"
+        },
+        {
+            "name": "service_level",
+            "title": "Target service level",
+            "description": "0.95 = 95% chance of no stock-out per replenishment cycle.",
+            "groupTitle": "Policy",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.5,
+            "numMax": 0.9999,
+            "mandatory": true,
+            "defaultValue": 0.95,
+            "showAsSlider": false
+        },
+        {
+            "name": "lead_time",
+            "title": "Lead time (periods)",
+            "description": "Used when input 2 gives none.",
+            "groupTitle": "Policy",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1000,
+            "mandatory": true,
+            "defaultValue": 2.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "review_period",
+            "title": "Review period (periods)",
+            "description": "Time between stock reviews, for the order-up-to level.",
+            "groupTitle": "Policy",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1000,
+            "mandatory": true,
+            "defaultValue": 1.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "ordering_cost",
+            "title": "Cost per order",
+            "description": "For EOQ. 0 = no EOQ.",
+            "groupTitle": "Policy",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "holding_rate",
+            "title": "Annual holding cost rate",
+            "description": "Share of unit cost per year, such as 0.25.",
+            "groupTitle": "Policy",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 10,
+            "mandatory": true,
+            "defaultValue": 0.25,
+            "showAsSlider": false
+        },
+        {
+            "name": "param_item_field",
+            "title": "Item field",
+            "description": null,
+            "groupTitle": "Item parameters (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "param_lead_field",
+            "title": "Lead time",
+            "description": null,
+            "groupTitle": "Item parameters (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "param_lead_sd_field",
+            "title": "Lead time std dev",
+            "description": null,
+            "groupTitle": "Item parameters (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "param_cost_field",
+            "title": "Unit cost",
+            "description": null,
+            "groupTitle": "Item parameters (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "param_stock_field",
+            "title": "Stock on hand",
+            "description": null,
+            "groupTitle": "Item parameters (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "param_service_field",
+            "title": "Service level override",
+            "description": null,
+            "groupTitle": "Item parameters (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "levels",
+            "label": "Stock levels",
+            "displayName": "Stock levels",
+            "tooltip": "Per item: demand statistics, lead time, service level, z, safety stock, reorder point, order-up-to level, EOQ, cover, status, suggested order."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "reorder",
+            "label": "Reorder list",
+            "displayName": "Reorder list",
+            "tooltip": "Items at or below their reorder point, least cover first, with the suggested order quantity."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

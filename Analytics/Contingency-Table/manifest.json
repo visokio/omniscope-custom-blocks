@@ -1,0 +1,135 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Contingency Table and Chi-square",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAC/0lEQVR42u3duWtUQRzA8e8veKOIFwoWHo2FTTCSQiF4NPEAwdLGztiJ2Pk/WAhaGG3EVhstFCGCEUFRPCqtPAoVD9TGK0rGIk/w2k3cnXlJzPcDWyQbZsJ88ybvkc0+kCRJkiRJkqT/X7Q7QEqpC+gDtgArgGkua1PfgCfAAHAiIu6OS8CU0hzgOLA3xw/CFJWAU8CBiPhUW8Aq3mVgow2yGAR6W4nY0eKEx4yXVQ9wtJYjsPqdd8tts8h2ui4i7pU+AvuMV+yEcl8dW+hm17qYrXVsoV+9VChmKCJmlg6YRvmSN8BF4JU9frEU2AYsahok4p+adBT4Ro33dy+rtcmqREDj1bg2Ha5p7ZcKBpQBDSgDyoAyoAFlQBnQgDKg6jcZ/q63GOgGFgAvgJvAh8xzrAQ6gVmMvOTvNiMv/zNghnh7gOnVx8uA1cAZ4EumOdYAO3/6eHn1OOcW2r7un+L9MB9Ym3GODQ2OyOVT9Qh8m2mch8D2Bs+9A85mmudgg88/Ai4UWJ9DEz3gwkzjPAc+NnjudUTcyDFJSqnRLvQ01xy/zedZqAxoQBlQBpQBDSgDyoAGlAFlQBnQgDKg6jJZ/9d9d0ppfeE5DqeU9hmwjCXVo6QV1cMtVAaUAQ0oT2KyeQBcyzRWozPN68BQm2s0DDwFPo9hvikVcDAi9ucYqMmlwntgR4YpzkfErjHM5xaa2bxM4xR9hbcBPYmRAWVAA8qAMqAMaEAZUAaUAQ0oA8qAMqABZUAZUAY0oAwoA8qAoxrONE7R9972ZsaNDTJyj+G5bcY7YsDx8SwiNuUcsMm7A0+oLXSp7RvqmgwBtxnxjyMvUkrdwOncY7dyH/kh/rwVgPIYioiZpY/AJ65zMY/r2EKvuM7FDNQRsJ8C90MXw9Xalg0YEXeAU653dicj4n7xk5jqRGY2cAnocd2zuAr0RsTnWi4jIuIT0AucdDtte9s80Wq8lo/A347GTkbeeWELsAqYYZfmlwrV2eYA0N/KtilJkiRJkiRJU813Ql2Xyk/XIWMAAAAASUVORK5CYII=",
+    "description": "Cross-tabulates two categorical fields with shares, expected counts and residuals, and tests their association with chi-square and Cramer's V.",
+    "category": "Analytics",
+    "subcategory": "Statistics",
+    "tags": [
+        "contingency table",
+        "crosstab",
+        "chi-square",
+        "cramer's v",
+        "association",
+        "statistics",
+        "visokio-agents"
+    ],
+    "introductoryText": "Cross-tabulates two categorical fields (channel by outcome, region by product, segment by churned) and tests whether they are **associated** or independent.\n\n**Cells output**, one row per combination: count, row share, column share, share of total, expected count under independence, **adjusted standardised residual** (values beyond about +/-2 show the cells that drive the association) and contribution to chi-square.\n\n**Test output**: Pearson **chi-square**, degrees of freedom, **p-value**, **Cramer's V** (strength from 0 = none to 1 = perfect, with a plain-language label), sample size, the smallest expected count (with a caution when cells expect fewer than 5) and a one-sentence **verdict** naming the most over-represented combination.\n\nOptional weight field for pre-aggregated counts, optional segments (one test per segment), Yates continuity correction for 2 x 2 tables. Pure Python.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "row_field",
+            "title": "Row field",
+            "description": "Category shown down the rows, such as Channel.",
+            "groupTitle": "Fields",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "col_field",
+            "title": "Column field",
+            "description": "Category shown across the columns, such as Outcome.",
+            "groupTitle": "Fields",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "weight_field",
+            "title": "Count / weight field (optional)",
+            "description": "Use when each row is already a count, such as an aggregated table.",
+            "groupTitle": "Fields",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "segment_fields",
+            "title": "Test separately for each (optional)",
+            "description": null,
+            "groupTitle": "Fields",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "alpha",
+            "title": "Significance level",
+            "description": "A p-value below this calls the association significant.",
+            "groupTitle": "Test",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.0001,
+            "numMax": 0.5,
+            "mandatory": true,
+            "defaultValue": 0.05,
+            "showAsSlider": false
+        },
+        {
+            "name": "yates",
+            "title": "Yates correction for 2 x 2 tables",
+            "description": null,
+            "groupTitle": "Test",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "include_blank",
+            "title": "Include blank values as a category",
+            "description": null,
+            "groupTitle": "Test",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "cells",
+            "label": "Cells",
+            "displayName": "Table cells",
+            "tooltip": "One row per row / column combination: count, shares, expected count, adjusted residual, chi-square contribution."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "test",
+            "label": "Chi-square",
+            "displayName": "Chi-square test",
+            "tooltip": "Chi-square, degrees of freedom, p-value, Cramer's V, sample size, smallest expected count, verdict."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

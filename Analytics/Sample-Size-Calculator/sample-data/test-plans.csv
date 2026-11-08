@@ -1,0 +1,7 @@
+Scenario,Type,Baseline,Effect,Relative Effect,SD,Margin,Population,Daily Traffic
+Checkout redesign (10% lift),PROPORTION,0.032,0.10,Yes,,,,18000
+Checkout redesign (5% lift),PROPORTION,0.032,0.05,Yes,,,,18000
+Email subject line,PROPORTION,0.21,0.02,No,,,,40000
+Basket value promotion (GBP 2),MEAN,46.5,2,No,38,,,9000
+Customer survey (+/- 3 points),SURVEY,0.5,,,,0.03,,
+Staff survey (+/- 5 points),SURVEY,0.5,,,,0.05,1200,

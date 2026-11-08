@@ -1,0 +1,125 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Period Comparison",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACYElEQVR42u3cv2/McRzH8een0SZUIiHBxCIh6SAmFmIwSUWsNonNijCYbPoXiJnJ1sZiIH5EGCwGjYQdMUg4Sa/py+AiJZr7fC9tfLjnY2kv971vvvd+5vsr1ytIkiRJkiRJkiRJkiRJkiRJkiRJkiTpF0kmktxJ0s9w/SQ3nVpbAWfS3YHa9U844g23eYTXTBtwTBjQgDKgDDiuNv0jl+KbgfPAHqAMWXwJuFdKeeIe2I4ZYG9FPIAp4KSH0LZMdlx+yoAyoAwoAxpQ4xowyekknyo/QllMss8kbe2BF4HtlcvuBy6YpK2AXT8L22ISz4EG/J8kuZqkV3EOXknyIMm0AdtyrfJQXoDjwBkDtqXredg9UAaUAQ0oA2qjDf2bmCQFOAscrAi+Arwopdx1tO3sgbuAQ5XLTgBHkux0tO0EnBxhvVOO1nOgDGhAGVAG1Oj3gfp5P7wbOAfsqFj8C3CnlPLGPbAdhyvjAWwFTngIbUuT388woBcxMqAMaEAZUAaUAQ0oA8qAMqABZUAZUAY0oAwoA8qABpQBZUB1CLg0wnr7g5+9jq/7tk7b0F/1e9dt6FWss8s2fB1hfr11C1hKeQ8858fXp4dZAV4CHwaPrwMfK7flHXBrjedeAW+BVA7u/qrHVzoM8Rkwv8ZzTzu8lx7wcDC/14P3tVzxumXgNrBYG3DNf+Of5ChwCtjmgeqv+gzMl1IeVwdMcgO45OyaMldKuTw04GDPe+S8mnTs9z3xT+fAWefUrFlvI8bgNmLBsTRrYWjAwTF2zlk1eRHz2NuI/+w2QpIkSZI0Xr4DdWUkXeVU4c4AAAAASUVORK5CYII=",
+    "description": "Builds the standard month / QTD / YTD / moving annual total comparison versus prior periods per group, with a fiscal year start of your choice, plus a monthly trend table.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "ytd",
+        "mat",
+        "year on year",
+        "variance",
+        "finance",
+        "reporting",
+        "fiscal year",
+        "visokio-agents"
+    ],
+    "introductoryText": "The comparison table that finance and trading packs typically start with, per group (region, channel, product), as at a reporting month:\n\n| Column | Meaning |\n|---|---|\n| Month, Prior Month, Same Month Last Year | the reporting month and its comparators |\n| QTD, Prior Year QTD | quarter to date (quarters follow the fiscal year) |\n| YTD, Prior YTD | year to date, fiscal year starting in the month you choose (April for many UK organisations) |\n| MAT, Prior MAT | moving annual total: the last 12 months, and the 12 before |\n| Change and % Change | for month vs prior month, month vs last year, QTD, YTD and MAT |\n\nA *Total* row is added when there are groups. The reporting month is the latest **complete** month in the data unless you set a date. A second output gives the monthly **trend table** per group: value, same month last year, % change, YTD cumulative, MAT and fiscal year label.\n\nInput is transactions or daily / monthly totals with a date and a value; everything is summed by month first.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "date_field",
+            "title": "Date field",
+            "description": "Date of each value.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Value field",
+            "description": "Sales, revenue, units, cost...",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Group by (optional)",
+            "description": "One comparison per value, such as Region.",
+            "groupTitle": "Data",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "as_of",
+            "title": "Reporting date (optional)",
+            "description": "Any date in the reporting month, such as 2025-09-30. Empty = latest complete month in the data.",
+            "groupTitle": "Periods",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "fiscal_year_start",
+            "title": "Fiscal year starts in month",
+            "description": "1 = January, 4 = April.",
+            "groupTitle": "Periods",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 12,
+            "mandatory": true,
+            "defaultValue": 1,
+            "showAsSlider": false
+        },
+        {
+            "name": "complete_months_only",
+            "title": "Use the latest complete month",
+            "description": "When no reporting date is set and the last month in the data is partial, report the month before.",
+            "groupTitle": "Periods",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "comparison",
+            "label": "Comparison",
+            "displayName": "Period comparison",
+            "tooltip": "Per group (and total): month, prior month, same month last year, QTD, YTD, MAT and their comparators, with changes."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "trend",
+            "label": "Monthly trend",
+            "displayName": "Monthly trend",
+            "tooltip": "Per group and month: value, same month last year, % change, YTD, MAT, fiscal year."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

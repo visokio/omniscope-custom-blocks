@@ -1,0 +1,202 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Forecast Accuracy",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Compares forecasts with actuals per item and model: MAE, RMSE, MAPE, sMAPE, WAPE, bias and tracking signal, with flags, best model per item and a model ranking.",
+    "category": "Analytics",
+    "subcategory": "Supply Chain",
+    "tags": [
+        "forecast accuracy",
+        "wape",
+        "mape",
+        "bias",
+        "tracking signal",
+        "demand planning",
+        "supply chain",
+        "visokio-agents"
+    ],
+    "introductoryText": "Measures how good forecasts are, for one model or several side by side (statistical forecast, sales team, naive), per item and overall:\n\n| Measure | Meaning |\n|---|---|\n| MAE, RMSE | average absolute error, and root mean squared error (punishes big misses) |\n| MAPE, sMAPE | average percentage error (rows with actual 0 excluded), and its symmetric version |\n| **WAPE**, Accuracy | total absolute error / total actual (the measure most supply chains report), and 1 - WAPE |\n| **Bias** | total (forecast - actual) / total actual: positive = over-forecasting |\n| **Tracking signal** | cumulative error / MAE in period order; beyond about +/-4 the forecast is consistently off |\n\nItems with bias beyond a limit or an out-of-control tracking signal are **flagged**, each item's **best model** is marked, and the models are ranked overall. A row-level output gives every error for charts and drill-down.\n\nInput: one row per item and period with the actual and one or more forecast fields.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "actual_field",
+            "title": "Actual field",
+            "description": "The value that actually happened, such as units sold.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "forecast_fields",
+            "title": "Forecast fields",
+            "description": "One or more forecasts (models) to evaluate.",
+            "groupTitle": "Data",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": true,
+            "fieldTypes": []
+        },
+        {
+            "name": "item_fields",
+            "title": "Item fields (optional)",
+            "description": "For example SKU, or SKU and Location.",
+            "groupTitle": "Data",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "period_field",
+            "title": "Period field (optional)",
+            "description": "Orders rows for the tracking signal.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "best_by",
+            "title": "Pick the best model by",
+            "description": "The measure used to pick each item's best model and to rank the models.",
+            "groupTitle": "Rules",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "WAPE",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WAPE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "MAE",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MAE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "RMSE",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "RMSE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "MAPE",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MAPE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Accuracy",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ACCURACY",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "WAPE"
+        },
+        {
+            "name": "bias_limit",
+            "title": "Bias limit",
+            "description": "Flag items whose bias exceeds this (0.1 = 10%).",
+            "groupTitle": "Rules",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 10,
+            "mandatory": true,
+            "defaultValue": 0.1,
+            "showAsSlider": false
+        },
+        {
+            "name": "tracking_limit",
+            "title": "Tracking signal limit",
+            "description": null,
+            "groupTitle": "Rules",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 100,
+            "mandatory": true,
+            "defaultValue": 4.0,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "items",
+            "label": "By item",
+            "displayName": "Accuracy by item",
+            "tooltip": "Per item and model: periods, totals, MAE, RMSE, MAPE, sMAPE, WAPE, accuracy, bias, tracking signal, flags, rank, best model."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "models",
+            "label": "By model",
+            "displayName": "Accuracy by model",
+            "tooltip": "Per model: the same measures over all items, items where best, rank."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "errors",
+            "label": "Errors",
+            "displayName": "Errors by row",
+            "tooltip": "Per item, period and model: actual, forecast, error, absolute and percentage error."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

@@ -1,0 +1,137 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Funnel Analysis",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACfElEQVR42u3dv2qTURyH8ecXlYIgSBWcgoM6ubl4B44OopfgPbjq0EkoIpkddHAQXBwUHL2A1l2ImyL4J4MgTftzqDRCQfKG97ycY57PXA7hPE1omi8tSJIkSZIkSdL/L7p8cWaOgW3gBnDG6+vVD+AlcC8iPvce8E+8HWDTuy7qA3AtImbLfPGow8HbxhvEJWCrxDNw5svmYL5GxLm+A6b3OuAPJxFLtRl5VW0zoAFlQBnQgDKgDKiCAfe8rsEclAj43nsdzLREwIfe62AmvQeMiOfAgy5Pb63kGfBo6S5dT8/M68At4Kx33asZ8CYi3noVkiRJqluUPHzNd6Qr7TyrCeiO9EinnWdXJT+NcEd6qNPOs6ZnoDvShaV3njUFdEf690UvufOs6SVUAzCgAWVAGdCAMqAMqIoCuiNdOGgxoDvShWmLAd2RLkyaC+iO9EinnWfney796Nd4R+rOU5IkSSovM8eZ+SIzZ1mf75n5JDMv1HRnUVM82tiRFt15dlXTpxGt7EiL7jxbfga2tCMttvNsOWBTO9JSO8+WX0JlQAPKgDKgDGhAGVDrFbClHemBAY9raUc6NeBxLe1IJ+i4zLyfmftZt6eZeaKWO4sKI9a6I3XnKUmSJNX5NqLD240xcBMYAydXPGaPw5ngq4j4ZMDh4l0B7tLfb5J+AY9bjDhqMF4At3t+7BvAnRa/mVv8OOk8UGKTeTEzNw1Y3kbBs08bUAaUAQ0oA8qAMqABZcB+7Rc8Ow1Y3hdgXijeNwMWFhFz4F2Bo3ci4qcBh/Ea2O3xvCmH/+uvOc1+oAuQmVeBy8CpFY+YAx+B3YhY9z9MK0mSJEmSpH/6DfH+3FO1E055AAAAAElFTkSuQmCC",
+    "description": "Builds conversion funnels from event data: users reaching each ordered step within an optional time window, conversion, drop-off and time between steps, per segment.",
+    "category": "Analytics",
+    "subcategory": "Marketing",
+    "tags": [
+        "funnel",
+        "conversion",
+        "drop-off",
+        "events",
+        "web analytics",
+        "product analytics",
+        "e-commerce",
+        "visokio-agents"
+    ],
+    "introductoryText": "Measures a conversion funnel from raw event data: how many users reach each step (for example *view product, add to basket, begin checkout, purchase*), where they drop off, and how long each step takes.\n\n- Steps are listed in order; event names are matched ignoring case. Other events are ignored.\n- **In order**: a step only counts if it happens after the user reached the previous step (untick to count any order)\n- Optional **time window**: every step must happen within N hours of the user's first step (for example 48 hours)\n- **Segments** such as device or channel (taken from each user's first event) give one funnel per segment\n\n**Funnel output**, per segment and step: users, conversion from the start, conversion from the previous step, drop-off and the median hours from the previous step.\n**Users output**: one row per user with the furthest step reached, whether they converted, each step's time and hours to convert, for remarketing lists or deeper analysis.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "user_field",
+            "title": "User field",
+            "description": "Identifies the person or session moving through the funnel.",
+            "groupTitle": "Events",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "event_field",
+            "title": "Event name field",
+            "description": "Holds the event names listed in the funnel steps.",
+            "groupTitle": "Events",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "time_field",
+            "title": "Event time field",
+            "description": "When each event happened.",
+            "groupTitle": "Events",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "segment_fields",
+            "title": "Segment by (optional)",
+            "description": "For example Device or Channel.",
+            "groupTitle": "Events",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "steps",
+            "title": "Funnel steps, in order",
+            "description": "Event names separated by commas or ->, for example: view_product, add_to_basket, begin_checkout, purchase",
+            "groupTitle": "Funnel",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": ""
+        },
+        {
+            "name": "ordered",
+            "title": "Steps must happen in order",
+            "description": "Ticked: a step counts only after the previous one. Unticked: any order.",
+            "groupTitle": "Funnel",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "window_hours",
+            "title": "Time window (hours)",
+            "description": "All steps within this many hours of the first step. 0 = no limit.",
+            "groupTitle": "Funnel",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "funnel",
+            "label": "Funnel",
+            "displayName": "Funnel",
+            "tooltip": "Per segment and step: users, conversion from start and previous step, drop-off, median hours from previous step."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "users",
+            "label": "Users",
+            "displayName": "Users",
+            "tooltip": "Per user: segment, steps reached, furthest step, converted, step times, hours to convert."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

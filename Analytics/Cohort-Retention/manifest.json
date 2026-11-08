@@ -1,0 +1,176 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Cohort Retention",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAFYklEQVR42u2dS2xUVRjHf19bKhRqa0QQRAUC+AgmRBKM0ZhofAVZAG4MiQ8WuNKNWxNJ3LMxrnyQmLhwYQQfISYG3dQgGiPio6VAUCoWJSm2UqCl0+Pi3jGHmyKe+13odPL/JU3mTDv/c+f+Zs6d2/PNuSCEEEIIIYQQQgghrg6W8schhDXAFqAr5WHAQeBNM7tQyFsN3AW0J+TVgENm9k0hy4AVwPzE5zUB/GpmfxTy2oDbEp8rwBhw2MxGCnkded6cxLxRoM/MxlwCc3n7E3d2zG4z2xTl3Qtsc7z4dpnZx1HePcCdJbMCsNfMBqK89cDCknkXgA/N7O88qx3YBHSUzBsGPjKzieIvWhJCnnLIA9gYQlgate9zjh6PFNornCPRHZG8Toc8gFnAqqh9k0Me+SiwZKpfpAjsrmDIvj663eHMmldotzvzrqkw60rnlRIoGhAJlEAhgUICJVBIoJBAIYESKJpUYKigv1BhXmjwfRuu4L4rJfB75waMA0ej9oAzb7DQHnLm/RXdHiGbZvIwHN0+XYHAYa/At4HdDnkvmlm8EbuA4yXzzgDvFu77Ejjn2Dnf1Rv5vGUP2dxj2RfXoSjvFHDAIa+3OF/5b3by+ziEW4AbEt/6R4oTnHmWkU3bzE7IqwEni5PDeV4L2dRLS2LesJmFKfLaSJ/QHa/PA06RNxuYm5h31szOIYRoQFJrYp4GnqNcTczLZnayMNytJ6uJmZWQNwn0kZUYjEd57cDdZDUxKUPoBeAXM+stPNfOPC91CD2fH7MGGkpgCOEx4FNHXweAtWY2medtADY78nrMbGe0fQ8Btzry9plZX/Ti2gx0Oj7y7zGzPxvpPPBxZ19ruLhOZLUzb12hvcSZtyy6fa1DXv2NsbTRTuTnVNBf/AnMWydSfHyrM6+twqxiXkMIFA2IBEqgkEAhgRIoJFBIoJBACRRNKnCigv7ijJoza/Iy7VRChVlVZVQq8HNnX0NEZQZArzPvSKE96MyLZw5GgLPOvFMNJdDMPgBeKbFhAfgZeNLMzkf3f0JWdzJW4pXdD+ws3N8DnCjxyp8AjhHVrJhZDdhLuUKpceAHMzuqAV4IIRqalJKKFmAHWU1Md+Ix8CCwLV7bJV83ZSvp68RM5h+AdprZ6SivC7if9JqY+jFwX37sa1qBzwDvOPr6HVheX7AmhLAFeNiR95OZ7Yi27wlggSPvoJl928zngeucfS0mW6mozjJn3u2F9nxn3o3NfiJfRY1HXD7orTtpdTwX776YkQKFBAoJFBIogUIChQQKCZRAIYHiagk8W0F/cca4M6v4eG/NTq3ZBb6Pr1CnP/+p87Vz24vr1hxz5g3MRIGp35HfALxA2n/+A9n83XYzOxZlGfAg2SxH6nzgEbJl/c9Fea1k3wJeRPp84ADw41RLjQghRHVDqAHLSS+p6DezM1PktZBNpKZeemdwqquYSOB/y5sL7AEeKNHPeWCrmb0X5S0AXqJcGcQw8Fp8TNVpxOV5vqQ8yNZCeytfPKfORsrXsHQBz+r9lyZwlbOvucDKqL3QmXez9KUJtAr6swrzTPr0rzQJFBIoJFAChQQKCRQSKIFCAkVjChyqoL/4EjSjzqxR6Uu/9M6Io68vuLhu5TN8NTY90pc+obuS7DvyZWpi3iheQibPW8slLnJ/CWpkF9H6SjUsQoiZNYR2A49SYpkRM9uv3T2NhBAWhxB+C+V5VXtxegVuDz5qeSGTmKbTiEUV9KU6lmkUKCRQSKCQQAkUEigkUEigBAoJFBIogf+L4xX0d0K7fJoIIVwXQuh1zEa8rr1YPakTuvPIJnSTa2LMTEVIQgghhBAi4x9APDFhp6hc+wAAAABJRU5ErkJggg==",
+    "description": "Builds acquisition cohorts from activity or order data and measures retention and revenue per cohort over time, with an average retention curve.",
+    "category": "Analytics",
+    "subcategory": "Marketing",
+    "tags": [
+        "cohort",
+        "retention",
+        "churn",
+        "lifetime value",
+        "subscription",
+        "saas",
+        "e-commerce",
+        "visokio-agents"
+    ],
+    "introductoryText": "Answers the questions every subscription, app and e-commerce business asks: *how many of the customers we won in March are still with us?* and *are newer customers sticking better than older ones?*\n\nEach customer belongs to the **cohort** of the period (week, month, quarter, year) of their first activity. For each cohort and each later period the block counts the customers still active, so you get:\n\n- the **cohort matrix** (long format, ready for a Pivot table or heat map): cohort, period number (0 = acquisition period), active customers, **retention %**, and if a revenue field is chosen, revenue, revenue per cohort customer and **cumulative revenue per customer** (a simple lifetime value curve)\n- the **average retention curve** across cohorts (weighted by cohort size, and the plain mean of cohorts)\n- a **customer table**: cohort, last active period, periods active, active in the latest period\n\nPeriods with no activity count as zero; recent cohorts simply have fewer periods. Input is any table with a customer and a date per activity or order.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "customer_field",
+            "title": "Customer field",
+            "description": "Identifies a customer; the first date seen sets the cohort.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "date_field",
+            "title": "Activity or order date",
+            "description": "Date of each activity or order.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "revenue_field",
+            "title": "Revenue field (optional)",
+            "description": "Adds revenue, revenue per cohort customer and cumulative revenue per customer.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "period",
+            "title": "Cohort period",
+            "description": "Length of a cohort, and of each step along the retention curve.",
+            "groupTitle": "Cohorts",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Month",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Week (Monday to Sunday)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WEEK",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Quarter",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "QUARTER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Year",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "YEAR",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MONTH"
+        },
+        {
+            "name": "max_periods",
+            "title": "Periods to follow",
+            "description": "How many periods after acquisition to track.",
+            "groupTitle": "Cohorts",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 520,
+            "mandatory": true,
+            "defaultValue": 24,
+            "showAsSlider": false
+        },
+        {
+            "name": "day_first",
+            "title": "Text dates are day first",
+            "description": "Read 03/04/2025 as 3 April.",
+            "groupTitle": "Cohorts",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "matrix",
+            "label": "Matrix",
+            "displayName": "Cohort matrix",
+            "tooltip": "Cohort x period number: active customers, retention, revenue, cumulative revenue per customer."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "curve",
+            "label": "Curve",
+            "displayName": "Retention curve",
+            "tooltip": "Average retention by period number across cohorts (weighted and mean)."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "customers",
+            "label": "Customers",
+            "displayName": "Customer cohorts",
+            "tooltip": "Per customer: cohort, last active period, periods active, active in the latest period."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

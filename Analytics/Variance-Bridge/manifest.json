@@ -1,0 +1,206 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Variance Bridge",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACaElEQVR42u3dMU8TYRyA8eePLQQG4+KgiRpFwUUcjBiMo4bdoX4Dv4Ffh8XEBFzcdXOCGCObA9rgqjFqjA5o/w5odGhre73S43h+K7zvXd+nPe5N0wKSJEmSJEmSJEmSJElSvURVTiQzV4A7wPECwzvADrAeEZ+7zD0LtIDLQLPA/N+A5xHxtGoBpyoS7xRwt2C8P49jAbjX4+erwJWC8QDmgNXMXDJgd2dKuhrM95m/DBcNON7zODbm+acMKAPKgAaUAWVAGdCAMqAMaEAZUAaUAQ0oA8qAOlQBf5Y0T8eAk9EuKeKuAScgIj4Aj4CPI7zy3gLrRy1gY9BfzMxFYA1YHmbcP94BDyJio0fEbWDbv2rjewWuATcLxgM4CzzMzEsu+2QCLpdwvGnglss+mYCNko7ZdNndB8qABpQBZUADyoAyoAxowBrrVGweAw5pp6R5Kvd+Y+OIBHzG/jdgLAEzBcZ/BzaBl4d2BbI89+v27MjM25n5uuB6dDLzVWZe9xI6mXizwGNgseAUAVwFnmTmjAEP3gJwooR5Thd5EhiwWvcRTQO6D5QBZUAZ0IAyoAwoAxpQBpQBZUADyoAyoAxoQBlQBjSgDCgDyoAGlAFlQBnQgDKgDCgDGlA1CrhX0jH3araGZT6eH8MO6Pvx4Myc5+/nv18AKyOeYAf4mpnXahRwGngPnBxxni/AXJe1+RQRb3oNih7hzgEblPNF5xrdFtCKiN1BA24ar3oRI+LGfwNm5nn2/wuKqudCRLS9C63zXejvwlsuTSUvoe1BtxEtI1bvJmbgu9Ae2whNRt9thCRJknTwfgEp1fwdvfNUYwAAAABJRU5ErkJggg==",
+    "description": "Bridges two totals (budget vs actual, year on year) by category as waterfall steps with favourable / adverse labels, per group.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "variance analysis",
+        "budget vs actual",
+        "waterfall",
+        "bridge",
+        "management accounts",
+        "favourable",
+        "adverse",
+        "visokio-agents"
+    ],
+    "introductoryText": "Explains the difference between **two totals** (budget and actual, last year and this year, forecast and outturn) as a **waterfall of category variances**, ready for a bridge chart.\n\n- Values are summed per category; steps ordered by the **size of the variance** (or by name), with an optional **Other** step for the smaller ones\n- Each step has its **bar start and end** for a waterfall chart, and its share of the total variance\n- **Favourable / adverse** labels: higher is better for revenue-like measures, lower is better for costs\n- Optionally **one bridge per group** (region, business unit)\n\nPrice-Volume-Mix Bridge splits a revenue change into price, volume and mix; this block bridges any two totals by category.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "category_field",
+            "title": "Category field",
+            "description": "Each category becomes a step of the bridge, such as a cost line.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_field",
+            "title": "One bridge per (optional)",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "base_field",
+            "title": "Base value (for example Budget)",
+            "description": "The value the bridge starts from.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "current_field",
+            "title": "Current value (for example Actual)",
+            "description": "The value the bridge ends at.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "base_label",
+            "title": "Base label",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Budget"
+        },
+        {
+            "name": "current_label",
+            "title": "Current label",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Actual"
+        },
+        {
+            "name": "better_when",
+            "title": "Better when",
+            "description": "Sets which variances are favourable: higher for revenue, lower for costs.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Higher (revenue, profit)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "HIGHER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Lower (costs)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LOWER",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "HIGHER"
+        },
+        {
+            "name": "order",
+            "title": "Order steps by",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Size of variance",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SIZE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Category name",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NAME",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "SIZE"
+        },
+        {
+            "name": "top_n",
+            "title": "Steps before Other",
+            "description": "0 = all categories.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1000,
+            "mandatory": false,
+            "defaultValue": 0,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "bridge",
+            "label": "Bridge",
+            "displayName": "Bridge",
+            "tooltip": "Steps: base total, category variances, current total, with bar start / end, direction and share of variance."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "categories",
+            "label": "Categories",
+            "displayName": "Categories",
+            "tooltip": "Per category: base, current, variance, variance %, favourable / adverse."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

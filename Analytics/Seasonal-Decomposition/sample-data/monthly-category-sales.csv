@@ -1,0 +1,180 @@
+Month,Category,Sales (£k)
+2021-01-01,Garden furniture,58.3
+2021-02-01,Garden furniture,83.4
+2021-03-01,Garden furniture,123.8
+2021-04-01,Garden furniture,151.7
+2021-05-01,Garden furniture,186.2
+2021-06-01,Garden furniture,199.4
+2021-07-01,Garden furniture,170.4
+2021-08-01,Garden furniture,167.7
+2021-09-01,Garden furniture,122.1
+2021-10-01,Garden furniture,101.4
+2021-11-01,Garden furniture,69.1
+2021-12-01,Garden furniture,56.1
+2022-01-01,Garden furniture,68.2
+2022-02-01,Garden furniture,95.0
+2022-03-01,Garden furniture,132.6
+2022-04-01,Garden furniture,179.0
+2022-05-01,Garden furniture,200.1
+2022-06-01,Garden furniture,223.0
+2022-07-01,Garden furniture,203.6
+2022-08-01,Garden furniture,169.9
+2022-09-01,Garden furniture,124.9
+2022-10-01,Garden furniture,90.9
+2022-11-01,Garden furniture,72.4
+2022-12-01,Garden furniture,64.1
+2023-01-01,Garden furniture,77.8
+2023-02-01,Garden furniture,97.9
+2023-03-01,Garden furniture,140.7
+2023-04-01,Garden furniture,172.5
+2023-05-01,Garden furniture,205.0
+2023-06-01,Garden furniture,196.0
+2023-07-01,Garden furniture,219.8
+2023-08-01,Garden furniture,177.5
+2023-09-01,Garden furniture,144.8
+2023-10-01,Garden furniture,108.3
+2023-11-01,Garden furniture,78.3
+2023-12-01,Garden furniture,62.2
+2024-01-01,Garden furniture,83.9
+2024-02-01,Garden furniture,112.7
+2024-03-01,Garden furniture,154.4
+2024-04-01,Garden furniture,186.8
+2024-05-01,Garden furniture,207.0
+2024-06-01,Garden furniture,218.3
+2024-07-01,Garden furniture,225.4
+2024-08-01,Garden furniture,199.5
+2024-09-01,Garden furniture,150.6
+2024-10-01,Garden furniture,124.3
+2024-11-01,Garden furniture,84.0
+2024-12-01,Garden furniture,75.1
+2025-01-01,Garden furniture,87.5
+2025-02-01,Garden furniture,110.4
+2025-03-01,Garden furniture,169.9
+2025-04-01,Garden furniture,212.3
+2025-05-01,Garden furniture,226.5
+2025-06-01,Garden furniture,264.6
+2025-07-01,Garden furniture,257.8
+2025-08-01,Garden furniture,223.0
+2025-09-01,Garden furniture,176.6
+2025-10-01,Garden furniture,113.7
+2025-11-01,Garden furniture,87.8
+2025-12-01,Garden furniture,74.8
+2021-01-01,Home heating,130.9
+2021-02-01,Home heating,125.5
+2021-03-01,Home heating,116.0
+2021-04-01,Home heating,92.8
+2021-05-01,Home heating,66.3
+2021-06-01,Home heating,56.8
+2021-07-01,Home heating,52.9
+2021-08-01,Home heating,55.0
+2021-09-01,Home heating,63.5
+2021-10-01,Home heating,85.5
+2021-11-01,Home heating,107.1
+2021-12-01,Home heating,112.4
+2022-01-01,Home heating,126.5
+2022-02-01,Home heating,114.1
+2022-03-01,Home heating,111.5
+2022-04-01,Home heating,90.3
+2022-05-01,Home heating,67.3
+2022-06-01,Home heating,49.8
+2022-07-01,Home heating,48.4
+2022-08-01,Home heating,51.2
+2022-09-01,Home heating,64.7
+2022-10-01,Home heating,91.1
+2022-11-01,Home heating,101.5
+2022-12-01,Home heating,111.2
+2023-01-01,Home heating,129.3
+2023-02-01,Home heating,129.5
+2023-03-01,Home heating,113.1
+2023-04-01,Home heating,88.6
+2023-05-01,Home heating,72.8
+2023-06-01,Home heating,50.9
+2023-07-01,Home heating,51.7
+2023-08-01,Home heating,57.0
+2023-09-01,Home heating,64.3
+2023-10-01,Home heating,86.0
+2023-11-01,Home heating,96.4
+2023-12-01,Home heating,110.6
+2024-01-01,Home heating,124.9
+2024-02-01,Home heating,109.4
+2024-03-01,Home heating,103.3
+2024-04-01,Home heating,85.2
+2024-05-01,Home heating,64.8
+2024-06-01,Home heating,53.1
+2024-07-01,Home heating,50.0
+2024-08-01,Home heating,50.9
+2024-09-01,Home heating,67.1
+2024-10-01,Home heating,88.5
+2024-11-01,Home heating,98.4
+2024-12-01,Home heating,110.1
+2025-01-01,Home heating,104.2
+2025-02-01,Home heating,115.9
+2025-03-01,Home heating,105.1
+2025-04-01,Home heating,83.1
+2025-05-01,Home heating,69.5
+2025-06-01,Home heating,53.2
+2025-07-01,Home heating,46.3
+2025-08-01,Home heating,49.2
+2025-09-01,Home heating,59.7
+2025-10-01,Home heating,80.9
+2025-11-01,Home heating,100.8
+2025-12-01,Home heating,110.9
+2021-01-01,Kitchenware,163.3
+2021-02-01,Kitchenware,156.8
+2021-03-01,Kitchenware,156.7
+2021-04-01,Kitchenware,130.7
+2021-05-01,Kitchenware,134.6
+2021-06-01,Kitchenware,135.3
+2021-07-01,Kitchenware,142.7
+2021-08-01,Kitchenware,150.3
+2021-09-01,Kitchenware,153.3
+2021-10-01,Kitchenware,160.2
+2021-11-01,Kitchenware,162.5
+2021-12-01,Kitchenware,232.6
+2022-01-01,Kitchenware,179.1
+2022-02-01,Kitchenware,169.5
+2022-03-01,Kitchenware,153.1
+2022-04-01,Kitchenware,141.5
+2022-05-01,Kitchenware,151.9
+2022-06-01,Kitchenware,141.4
+2022-07-01,Kitchenware,148.1
+2022-08-01,Kitchenware,166.1
+2022-09-01,Kitchenware,150.3
+2022-10-01,Kitchenware,166.5
+2022-11-01,Kitchenware,184.4
+2022-12-01,Kitchenware,237.8
+2023-01-01,Kitchenware,173.0
+2023-02-01,Kitchenware,175.3
+2023-03-01,Kitchenware,161.6
+2023-04-01,Kitchenware,152.7
+2023-05-01,Kitchenware,153.4
+2023-06-01,Kitchenware,149.9
+2023-08-01,Kitchenware,164.7
+2023-09-01,Kitchenware,183.5
+2023-10-01,Kitchenware,174.2
+2023-11-01,Kitchenware,193.8
+2023-12-01,Kitchenware,224.6
+2024-01-01,Kitchenware,175.4
+2024-02-01,Kitchenware,171.6
+2024-03-01,Kitchenware,180.9
+2024-04-01,Kitchenware,166.5
+2024-05-01,Kitchenware,144.8
+2024-06-01,Kitchenware,165.7
+2024-07-01,Kitchenware,166.7
+2024-08-01,Kitchenware,165.9
+2024-09-01,Kitchenware,176.6
+2024-10-01,Kitchenware,190.2
+2024-11-01,Kitchenware,186.8
+2024-12-01,Kitchenware,283.1
+2025-01-01,Kitchenware,195.8
+2025-02-01,Kitchenware,191.5
+2025-03-01,Kitchenware,180.1
+2025-04-01,Kitchenware,167.0
+2025-05-01,Kitchenware,157.9
+2025-06-01,Kitchenware,165.8
+2025-07-01,Kitchenware,156.4
+2025-08-01,Kitchenware,166.4
+2025-09-01,Kitchenware,179.9
+2025-10-01,Kitchenware,207.6
+2025-11-01,Kitchenware,198.2
+2025-12-01,Kitchenware,252.4

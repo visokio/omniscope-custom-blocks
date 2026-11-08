@@ -1,0 +1,239 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Linear Optimisation",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Solves linear and integer programmes given as data (variables with objective and bounds, constraints in long format) with the HiGHS solver: optimal plan, slack, binding constraints and shadow prices.",
+    "category": "Analytics",
+    "subcategory": "Prescriptive",
+    "tags": [
+        "optimisation",
+        "linear programming",
+        "integer programming",
+        "product mix",
+        "allocation",
+        "prescriptive",
+        "visokio-agents"
+    ],
+    "introductoryText": "Finds the **best plan** under constraints: the product mix that maximises profit within machine, labour and material capacity; the cheapest blend that meets a specification; the staffing that covers demand at least cost. The model is given as **data**, so planners can maintain it in a spreadsheet or database:\n\n**Input 1, decision variables**: one row per variable (product, route, shift) with its objective coefficient (profit or cost per unit), and optionally a lower bound (minimum, contract commitments), an upper bound (maximum demand) and a whole-number flag.\n\n**Input 2, constraints** in long format: one row per constraint and variable with the coefficient (for example hours per unit), plus the constraint's sense (`<=`, `>=` or `=`) and limit (capacity), repeated on each row.\n\nOutputs:\n- **Solution**: the optimal value of every variable, its contribution to the objective, whether it sits at a bound, and its reduced cost\n- **Constraints**: amount used, limit, slack, **binding** yes / no and the **shadow price** (how much the objective would improve per extra unit of that resource; continuous models only)\n- **Summary**: status (optimal, infeasible, unbounded), objective value, counts and the solver message\n\nUses the HiGHS solver in scipy (installed automatically through the block's dependencies).",
+    "dependencies": "scipy",
+    "options": [
+        {
+            "name": "objective_sense",
+            "title": "Goal",
+            "description": "Whether the best plan has the highest or the lowest objective.",
+            "groupTitle": "Objective",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Maximise (profit, output)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MAXIMISE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Minimise (cost, time)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MINIMISE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MAXIMISE"
+        },
+        {
+            "name": "var_name_field",
+            "title": "Variable name",
+            "description": "Names each decision variable, such as a product to make.",
+            "groupTitle": "Variables (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "objective_field",
+            "title": "Objective coefficient",
+            "description": "Profit or cost per unit.",
+            "groupTitle": "Variables (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "lower_field",
+            "title": "Lower bound (optional)",
+            "description": "Minimum value; empty means 0.",
+            "groupTitle": "Variables (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "upper_field",
+            "title": "Upper bound (optional)",
+            "description": "Maximum value; empty means no limit.",
+            "groupTitle": "Variables (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "integer_field",
+            "title": "Whole-number flag (optional)",
+            "description": "Yes / true / 1 for variables that must be whole numbers.",
+            "groupTitle": "Variables (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "all_integer",
+            "title": "All variables are whole numbers",
+            "description": null,
+            "groupTitle": "Variables (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "constraint_field",
+            "title": "Constraint name",
+            "description": "Names each constraint, such as a resource; one row per variable that uses it.",
+            "groupTitle": "Constraints (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "constraint_var_field",
+            "title": "Variable",
+            "description": "Must match the variable names in input 1.",
+            "groupTitle": "Constraints (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "coefficient_field",
+            "title": "Coefficient",
+            "description": "Amount of the constraint used by one unit of the variable.",
+            "groupTitle": "Constraints (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "sense_field",
+            "title": "Sense",
+            "description": "<=, >= or = (also: at most, at least, exactly).",
+            "groupTitle": "Constraints (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "limit_field",
+            "title": "Limit",
+            "description": "Right-hand side, such as capacity.",
+            "groupTitle": "Constraints (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "time_limit",
+            "title": "Time limit (seconds)",
+            "description": null,
+            "groupTitle": "Constraints (input 2)",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 3600,
+            "mandatory": true,
+            "defaultValue": 60.0,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "solution",
+            "label": "Solution",
+            "displayName": "Solution",
+            "tooltip": "Input 1 with Optimal Value, Objective Contribution, At Bound, Reduced Cost."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "constraints",
+            "label": "Constraints",
+            "displayName": "Constraints",
+            "tooltip": "Per constraint: sense, limit, used, slack, binding, shadow price."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Status, objective value, variable and constraint counts, solver message."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

@@ -1,0 +1,225 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Reconciliation Matcher",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACf0lEQVR42u3asWpUURSF4X/bRANqNIVVKiHpRAUhr2BhHsaHMGVeQLAXFUyhCD6AWAliEcFG7CQ6mYCk2xZeKzHk5s7ck535vzrMOWt29uQOWSBJkiRJkiRJkiRJQGauZeazzJzm/E0y80lm3jDv/0WfMMAH4PrI7+MX4G5ETMceXoW8F3q88E6DMAA3gUcNzi2Rt88GToHLjT7NfkTE6sgbWCJvnw1sFYa/m5CZ65n5fE5/k6bda6+flbyz3sBs/Ay1AbwDrs35nJ/AJrDXMmxExKw3sLXtEYZHd8Z2lTel0gZOgSvn8KyF2UAVH+Dbc3rWwnyE+hBTeQMj4nP3xr4ADudwxGH32pvdWeduA78Ca43ueRARKyN/kS+Rt88Gvmz4i/amwZkl8vbZwKvAe2B95DD7wO2I+DbyBpbIe+INjIgD4B7wGJiM9F3saYvhLWJeSZIkSZIkzZTNbJvZp2Ez+xg2s4vntZldPK/NbJvZo7HUNHADW7OZXXwDbWYX30AVH6DNbB9ifIhpGchm9sANtJl9BvPazC6e12Z28bw2s80rSZIkSZKk2bOZbTP7NGxmH8NmdvG8NrOL57WZbTN7NJaaBm5gazazi2+gzeziG6jiA7SZ7UOMDzEtA9nMHriBNrPPYF6b2cXz2swuntdmtnklSZIkSZJ0ItHnhzNzBdjiz//mluZ8tyPgI/AqIg4d1cABdsN7CCyPfMd9YCcijhzXv/r8O2mrwfAAVoH7jmr4ADca3vOOoxo+wKWG91x2VMMHqOIDnDS8pw8wMxjgp4b33HNUwwf4Gvje4I6/gF1HNZsv8heBB8At4NIIH5t7wG7XT5EkSZIkaeH9BqAgE0+GeyyoAAAAAElFTkSuQmCC",
+    "description": "Matches two ledgers one-to-one on amount, reference and date with tolerances, plus group matches, and lists the unmatched items on each side.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "reconciliation",
+        "bank reconciliation",
+        "matching",
+        "accounts payable",
+        "accounts receivable",
+        "cash",
+        "audit",
+        "finance",
+        "visokio-agents"
+    ],
+    "introductoryText": "Matches the items of two ledgers and lists what is left on each side: bank statement against cash book, invoices against payments, a supplier statement against the purchase ledger, card settlements against sales.\n\nMatching runs in passes, each **one-to-one** and best match first:\n\n1. **Exact**: same amount and same reference (references are compared ignoring spaces, punctuation and case), dates within the window\n2. **Amount and date**: amount within the tolerance and dates within the window; the closest date wins, then the closest amount, then a matching reference\n3. **Group**: several items with the same reference that add up to one item on the other side (one payment for three invoices, a deposit banked in two parts)\n\nFields that must agree (account, currency, company) restrict every pass. Side 2 amounts can be **sign-flipped** when one side records credits as negatives.\n\nOutputs: both inputs with match status, match ID and rule, one row per match with the amounts and any difference, and a summary of matched and unmatched items and amounts.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "amount_field_a",
+            "title": "Amount",
+            "description": "Amount of each item in input 1.",
+            "groupTitle": "Input 1",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "date_field_a",
+            "title": "Date (optional)",
+            "description": "Date of each item in input 1, for the date window.",
+            "groupTitle": "Input 1",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "reference_field_a",
+            "title": "Reference (optional)",
+            "description": "Reference or narrative in input 1, compared with input 2's.",
+            "groupTitle": "Input 1",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "amount_field_b",
+            "title": "Amount",
+            "description": "Amount of each item in input 2.",
+            "groupTitle": "Input 2",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "date_field_b",
+            "title": "Date (optional)",
+            "description": "Date of each item in input 2.",
+            "groupTitle": "Input 2",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "reference_field_b",
+            "title": "Reference (optional)",
+            "description": "Reference in input 2.",
+            "groupTitle": "Input 2",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "match_fields",
+            "title": "Fields that must agree (optional)",
+            "description": "Same field names in both inputs, such as Account or Currency.",
+            "groupTitle": "Matching",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "tolerance",
+            "title": "Amount tolerance",
+            "description": "For example 0.01 for rounding differences.",
+            "groupTitle": "Matching",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "date_window",
+            "title": "Date window (days)",
+            "description": "Maximum days between matched items.",
+            "groupTitle": "Matching",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 3.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "sign",
+            "title": "Input 2 amounts",
+            "description": "Choose Opposite when one side records as negative what the other records as positive.",
+            "groupTitle": "Matching",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Same sign as input 1",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SAME",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Opposite sign (flip)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "OPPOSITE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "SAME"
+        },
+        {
+            "name": "group_matching",
+            "title": "Match groups with the same reference",
+            "description": "One item against several that add up to it.",
+            "groupTitle": "Matching",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "side1",
+            "label": "Items 1",
+            "displayName": "Input 1 items",
+            "tooltip": "Input 1 with Match Status, Match ID and Match Rule."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "side2",
+            "label": "Items 2",
+            "displayName": "Input 2 items",
+            "tooltip": "Input 2 with Match Status, Match ID and Match Rule."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "matches",
+            "label": "Matches",
+            "displayName": "Matches",
+            "tooltip": "One row per match: rule, items and amount on each side, difference, date difference, references."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Matched and unmatched items and amounts per side, and matches per rule."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

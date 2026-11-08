@@ -1,0 +1,186 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Find Nearest",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Finds the k nearest points in a second input for each point in the first, by great-circle distance, with an optional distance limit and a catchment summary per destination.",
+    "category": "Analytics",
+    "subcategory": "Geo",
+    "tags": [
+        "nearest",
+        "distance",
+        "spatial",
+        "geo",
+        "catchment",
+        "latitude",
+        "longitude",
+        "visokio-agents"
+    ],
+    "introductoryText": "For each point in the **first input** (customers, properties, incidents, vehicles) finds the **nearest points in the second input** (stores, branches, depots, engineers, competitors) by straight-line (great-circle) distance on the earth's surface.\n\n- **k nearest**: the single nearest, or the nearest 3, 5 or more, each with its rank\n- **Maximum distance**: only matches within, say, 25 km; points with nothing in range are kept and marked *None within distance* (or dropped)\n- Distance in **kilometres or miles**, plus the **bearing** and compass **direction** from the point to its match\n- All fields of the matched destination are appended (prefixed *Nearest:*)\n- A second output gives a **catchment summary** per destination: how many points have it as their nearest, mean, median and furthest distance, share of points\n\nLatitude and longitude in decimal degrees (WGS84). Pure numpy: fine for hundreds of thousands of points against thousands of destinations.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "origin_lat",
+            "title": "Latitude",
+            "description": "Latitude of each point in input 1, in decimal degrees.",
+            "groupTitle": "Points to search from (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "origin_lon",
+            "title": "Longitude",
+            "description": "Longitude of each point in input 1, in decimal degrees.",
+            "groupTitle": "Points to search from (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "dest_lat",
+            "title": "Latitude",
+            "description": "Latitude of each candidate in input 2, in decimal degrees.",
+            "groupTitle": "Points to find (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "dest_lon",
+            "title": "Longitude",
+            "description": "Longitude of each candidate in input 2, in decimal degrees.",
+            "groupTitle": "Points to find (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "dest_id",
+            "title": "Name or ID (for the summary)",
+            "description": "Optional field naming each destination in the catchment summary.",
+            "groupTitle": "Points to find (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "k",
+            "title": "Number of nearest points",
+            "description": "1 for the nearest only; more gives one row per match, ranked.",
+            "groupTitle": "Search",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 1000,
+            "mandatory": true,
+            "defaultValue": 1,
+            "showAsSlider": false
+        },
+        {
+            "name": "max_distance",
+            "title": "Maximum distance",
+            "description": "0 = no limit.",
+            "groupTitle": "Search",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "unit",
+            "title": "Distance unit",
+            "description": "Unit for distances and the maximum distance.",
+            "groupTitle": "Search",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Kilometres",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "KM",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Miles",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MILES",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "KM"
+        },
+        {
+            "name": "keep_unmatched",
+            "title": "Keep points with no match",
+            "description": "Keep points with no destination in range (or invalid coordinates), with an empty match.",
+            "groupTitle": "Search",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "nearest",
+            "label": "Nearest",
+            "displayName": "Nearest matches",
+            "tooltip": "Input 1 records with the matched destination's fields, Nearest Rank, distance, bearing, direction and match status."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "catchments",
+            "label": "Catchments",
+            "displayName": "Catchment summary",
+            "tooltip": "One row per destination: points nearest to it, mean / median / furthest distance, share of points."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

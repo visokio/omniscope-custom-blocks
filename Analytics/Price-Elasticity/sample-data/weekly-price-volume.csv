@@ -1,0 +1,625 @@
+Week,Product,Average Price,Units Sold,On Promotion
+2024-01-01,Own-brand milk 2L,1.38,3825,0
+2024-01-08,Own-brand milk 2L,1.1,5395,1
+2024-01-15,Own-brand milk 2L,1.16,5790,1
+2024-01-22,Own-brand milk 2L,1.52,3792,0
+2024-01-29,Own-brand milk 2L,1.3,4037,0
+2024-02-05,Own-brand milk 2L,1.45,3700,0
+2024-02-12,Own-brand milk 2L,1.6,3336,0
+2024-02-19,Own-brand milk 2L,1.04,5803,1
+2024-02-26,Own-brand milk 2L,1.45,3763,0
+2024-03-04,Own-brand milk 2L,1.6,3828,0
+2024-03-11,Own-brand milk 2L,1.45,4337,0
+2024-03-18,Own-brand milk 2L,1.38,4282,0
+2024-03-25,Own-brand milk 2L,1.04,5029,1
+2024-04-01,Own-brand milk 2L,1.38,4128,0
+2024-04-08,Own-brand milk 2L,1.16,6116,1
+2024-04-15,Own-brand milk 2L,1.3,4243,0
+2024-04-22,Own-brand milk 2L,1.3,3935,0
+2024-04-29,Own-brand milk 2L,1.22,5650,1
+2024-05-06,Own-brand milk 2L,1.45,4386,0
+2024-05-13,Own-brand milk 2L,1.45,3593,0
+2024-05-20,Own-brand milk 2L,1.38,3661,0
+2024-05-27,Own-brand milk 2L,1.52,3825,0
+2024-06-03,Own-brand milk 2L,1.38,3417,0
+2024-06-10,Own-brand milk 2L,1.45,3866,0
+2024-06-17,Own-brand milk 2L,1.52,3630,0
+2024-06-24,Own-brand milk 2L,1.6,3832,0
+2024-07-01,Own-brand milk 2L,1.38,3448,0
+2024-07-08,Own-brand milk 2L,1.52,3813,0
+2024-07-15,Own-brand milk 2L,1.45,4265,0
+2024-07-22,Own-brand milk 2L,1.38,3961,0
+2024-07-29,Own-brand milk 2L,1.38,3640,0
+2024-08-05,Own-brand milk 2L,1.45,3720,0
+2024-08-12,Own-brand milk 2L,1.28,5150,1
+2024-08-19,Own-brand milk 2L,1.1,5449,1
+2024-08-26,Own-brand milk 2L,1.6,4439,0
+2024-09-02,Own-brand milk 2L,1.38,3610,0
+2024-09-09,Own-brand milk 2L,1.3,3959,0
+2024-09-16,Own-brand milk 2L,1.52,4196,0
+2024-09-23,Own-brand milk 2L,1.45,3851,0
+2024-09-30,Own-brand milk 2L,1.3,4280,0
+2024-10-07,Own-brand milk 2L,1.38,4007,0
+2024-10-14,Own-brand milk 2L,1.45,4037,0
+2024-10-21,Own-brand milk 2L,1.45,4331,0
+2024-10-28,Own-brand milk 2L,1.38,4389,0
+2024-11-04,Own-brand milk 2L,1.6,3517,0
+2024-11-11,Own-brand milk 2L,1.38,4222,0
+2024-11-18,Own-brand milk 2L,1.3,3691,0
+2024-11-25,Own-brand milk 2L,1.38,3847,0
+2024-12-02,Own-brand milk 2L,1.38,4637,0
+2024-12-09,Own-brand milk 2L,1.45,3473,0
+2024-12-16,Own-brand milk 2L,1.45,3999,0
+2024-12-23,Own-brand milk 2L,1.6,3605,0
+2024-12-30,Own-brand milk 2L,1.6,3381,0
+2025-01-06,Own-brand milk 2L,1.6,3490,0
+2025-01-13,Own-brand milk 2L,1.38,3695,0
+2025-01-20,Own-brand milk 2L,1.52,4169,0
+2025-01-27,Own-brand milk 2L,1.52,4293,0
+2025-02-03,Own-brand milk 2L,1.6,3942,0
+2025-02-10,Own-brand milk 2L,1.22,4670,1
+2025-02-17,Own-brand milk 2L,1.3,4111,0
+2025-02-24,Own-brand milk 2L,1.6,4357,0
+2025-03-03,Own-brand milk 2L,1.52,3788,0
+2025-03-10,Own-brand milk 2L,1.1,4644,1
+2025-03-17,Own-brand milk 2L,1.45,3926,0
+2025-03-24,Own-brand milk 2L,1.45,4328,0
+2025-03-31,Own-brand milk 2L,1.3,4121,0
+2025-04-07,Own-brand milk 2L,1.52,4061,0
+2025-04-14,Own-brand milk 2L,1.45,3751,0
+2025-04-21,Own-brand milk 2L,1.45,3680,0
+2025-04-28,Own-brand milk 2L,1.28,4761,1
+2025-05-05,Own-brand milk 2L,1.52,3415,0
+2025-05-12,Own-brand milk 2L,1.45,3556,0
+2025-05-19,Own-brand milk 2L,1.3,4113,0
+2025-05-26,Own-brand milk 2L,1.45,4048,0
+2025-06-02,Own-brand milk 2L,1.38,3830,0
+2025-06-09,Own-brand milk 2L,1.16,4806,1
+2025-06-16,Own-brand milk 2L,1.45,3998,0
+2025-06-23,Own-brand milk 2L,1.45,3632,0
+2025-06-30,Own-brand milk 2L,1.16,5669,1
+2025-07-07,Own-brand milk 2L,1.45,3906,0
+2025-07-14,Own-brand milk 2L,1.52,4029,0
+2025-07-21,Own-brand milk 2L,1.52,3823,0
+2025-07-28,Own-brand milk 2L,1.38,4736,0
+2025-08-04,Own-brand milk 2L,1.45,4049,0
+2025-08-11,Own-brand milk 2L,1.38,4009,0
+2025-08-18,Own-brand milk 2L,1.1,5400,1
+2025-08-25,Own-brand milk 2L,1.16,5055,1
+2025-09-01,Own-brand milk 2L,1.52,4005,0
+2025-09-08,Own-brand milk 2L,1.3,4126,0
+2025-09-15,Own-brand milk 2L,1.04,5940,1
+2025-09-22,Own-brand milk 2L,1.1,5538,1
+2025-09-29,Own-brand milk 2L,1.6,3957,0
+2025-10-06,Own-brand milk 2L,1.3,4083,0
+2025-10-13,Own-brand milk 2L,1.6,4397,0
+2025-10-20,Own-brand milk 2L,1.3,4061,0
+2025-10-27,Own-brand milk 2L,1.6,4237,0
+2025-11-03,Own-brand milk 2L,1.3,3699,0
+2025-11-10,Own-brand milk 2L,1.28,5262,1
+2025-11-17,Own-brand milk 2L,1.3,3926,0
+2025-11-24,Own-brand milk 2L,1.16,4705,1
+2025-12-01,Own-brand milk 2L,1.52,3459,0
+2025-12-08,Own-brand milk 2L,1.6,4259,0
+2025-12-15,Own-brand milk 2L,1.52,4385,0
+2025-12-22,Own-brand milk 2L,1.6,3729,0
+2024-01-01,Premium coffee 200g,6.05,498,0
+2024-01-08,Premium coffee 200g,5.5,631,0
+2024-01-15,Premium coffee 200g,3.96,1284,1
+2024-01-22,Premium coffee 200g,5.5,637,0
+2024-01-29,Premium coffee 200g,3.96,1195,1
+2024-02-05,Premium coffee 200g,4.84,875,1
+2024-02-12,Premium coffee 200g,5.5,654,0
+2024-02-19,Premium coffee 200g,4.95,710,0
+2024-02-26,Premium coffee 200g,4.84,871,1
+2024-03-04,Premium coffee 200g,5.78,558,0
+2024-03-11,Premium coffee 200g,5.5,617,0
+2024-03-18,Premium coffee 200g,5.78,528,0
+2024-03-25,Premium coffee 200g,5.5,595,0
+2024-04-01,Premium coffee 200g,4.95,703,0
+2024-04-08,Premium coffee 200g,6.05,558,0
+2024-04-15,Premium coffee 200g,5.5,610,0
+2024-04-22,Premium coffee 200g,4.95,727,0
+2024-04-29,Premium coffee 200g,5.5,569,0
+2024-05-06,Premium coffee 200g,5.5,632,0
+2024-05-13,Premium coffee 200g,5.78,575,0
+2024-05-20,Premium coffee 200g,6.05,507,0
+2024-05-27,Premium coffee 200g,5.5,582,0
+2024-06-03,Premium coffee 200g,4.95,716,0
+2024-06-10,Premium coffee 200g,4.95,869,0
+2024-06-17,Premium coffee 200g,6.05,577,0
+2024-06-24,Premium coffee 200g,4.95,677,0
+2024-07-01,Premium coffee 200g,5.5,709,0
+2024-07-08,Premium coffee 200g,4.95,673,0
+2024-07-15,Premium coffee 200g,6.05,533,0
+2024-07-22,Premium coffee 200g,3.96,1150,1
+2024-07-29,Premium coffee 200g,5.5,603,0
+2024-08-05,Premium coffee 200g,5.78,500,0
+2024-08-12,Premium coffee 200g,4.95,744,0
+2024-08-19,Premium coffee 200g,5.78,496,0
+2024-08-26,Premium coffee 200g,5.78,474,0
+2024-09-02,Premium coffee 200g,6.05,474,0
+2024-09-09,Premium coffee 200g,4.4,961,1
+2024-09-16,Premium coffee 200g,5.5,574,0
+2024-09-23,Premium coffee 200g,5.78,577,0
+2024-09-30,Premium coffee 200g,4.95,829,0
+2024-10-07,Premium coffee 200g,6.05,488,0
+2024-10-14,Premium coffee 200g,6.05,559,0
+2024-10-21,Premium coffee 200g,5.22,570,0
+2024-10-28,Premium coffee 200g,5.78,544,0
+2024-11-04,Premium coffee 200g,5.5,631,0
+2024-11-11,Premium coffee 200g,5.5,605,0
+2024-11-18,Premium coffee 200g,5.5,571,0
+2024-11-25,Premium coffee 200g,5.5,618,0
+2024-12-02,Premium coffee 200g,5.22,589,0
+2024-12-09,Premium coffee 200g,4.95,687,0
+2024-12-16,Premium coffee 200g,3.96,1096,1
+2024-12-23,Premium coffee 200g,5.5,624,0
+2024-12-30,Premium coffee 200g,4.18,1172,1
+2025-01-06,Premium coffee 200g,5.22,644,0
+2025-01-13,Premium coffee 200g,5.22,651,0
+2025-01-20,Premium coffee 200g,5.5,590,0
+2025-01-27,Premium coffee 200g,4.18,1059,1
+2025-02-03,Premium coffee 200g,5.78,517,0
+2025-02-10,Premium coffee 200g,5.78,421,0
+2025-02-17,Premium coffee 200g,4.4,991,1
+2025-02-24,Premium coffee 200g,4.95,727,0
+2025-03-03,Premium coffee 200g,5.5,605,0
+2025-03-10,Premium coffee 200g,5.22,666,0
+2025-03-17,Premium coffee 200g,5.5,527,0
+2025-03-24,Premium coffee 200g,4.62,1006,1
+2025-03-31,Premium coffee 200g,3.96,1273,1
+2025-04-07,Premium coffee 200g,5.5,619,0
+2025-04-14,Premium coffee 200g,5.5,545,0
+2025-04-21,Premium coffee 200g,5.5,655,0
+2025-04-28,Premium coffee 200g,5.5,630,0
+2025-05-05,Premium coffee 200g,6.05,593,0
+2025-05-12,Premium coffee 200g,5.22,662,0
+2025-05-19,Premium coffee 200g,5.78,538,0
+2025-05-26,Premium coffee 200g,6.05,460,0
+2025-06-02,Premium coffee 200g,5.78,605,0
+2025-06-09,Premium coffee 200g,4.18,1137,1
+2025-06-16,Premium coffee 200g,5.78,493,0
+2025-06-23,Premium coffee 200g,5.78,545,0
+2025-06-30,Premium coffee 200g,5.78,503,0
+2025-07-07,Premium coffee 200g,5.5,523,0
+2025-07-14,Premium coffee 200g,5.5,502,0
+2025-07-21,Premium coffee 200g,6.05,535,0
+2025-07-28,Premium coffee 200g,6.05,450,0
+2025-08-04,Premium coffee 200g,6.05,540,0
+2025-08-11,Premium coffee 200g,4.95,762,0
+2025-08-18,Premium coffee 200g,3.96,1356,1
+2025-08-25,Premium coffee 200g,5.5,542,0
+2025-09-01,Premium coffee 200g,6.05,531,0
+2025-09-08,Premium coffee 200g,6.05,508,0
+2025-09-15,Premium coffee 200g,5.5,626,0
+2025-09-22,Premium coffee 200g,5.78,595,0
+2025-09-29,Premium coffee 200g,4.95,613,0
+2025-10-06,Premium coffee 200g,5.5,556,0
+2025-10-13,Premium coffee 200g,4.4,982,1
+2025-10-20,Premium coffee 200g,5.5,691,0
+2025-10-27,Premium coffee 200g,4.84,1018,1
+2025-11-03,Premium coffee 200g,5.22,594,0
+2025-11-10,Premium coffee 200g,5.78,488,0
+2025-11-17,Premium coffee 200g,4.18,1090,1
+2025-11-24,Premium coffee 200g,5.22,742,0
+2025-12-01,Premium coffee 200g,5.5,598,0
+2025-12-08,Premium coffee 200g,3.96,1272,1
+2025-12-15,Premium coffee 200g,5.5,556,0
+2025-12-22,Premium coffee 200g,4.62,973,1
+2024-01-01,Sparkling water 6-pack,3.2,861,0
+2024-01-08,Sparkling water 6-pack,3.2,1014,0
+2024-01-15,Sparkling water 6-pack,2.56,1106,1
+2024-01-22,Sparkling water 6-pack,3.2,888,0
+2024-01-29,Sparkling water 6-pack,3.2,816,0
+2024-02-05,Sparkling water 6-pack,2.56,1597,1
+2024-02-12,Sparkling water 6-pack,2.56,1365,1
+2024-02-19,Sparkling water 6-pack,3.2,1015,0
+2024-02-26,Sparkling water 6-pack,2.3,1672,1
+2024-03-04,Sparkling water 6-pack,3.04,960,0
+2024-03-11,Sparkling water 6-pack,2.88,1020,0
+2024-03-18,Sparkling water 6-pack,3.2,881,0
+2024-03-25,Sparkling water 6-pack,3.2,856,0
+2024-04-01,Sparkling water 6-pack,2.43,1490,1
+2024-04-08,Sparkling water 6-pack,3.52,755,0
+2024-04-15,Sparkling water 6-pack,3.36,923,0
+2024-04-22,Sparkling water 6-pack,2.56,1423,1
+2024-04-29,Sparkling water 6-pack,3.04,967,0
+2024-05-06,Sparkling water 6-pack,2.88,966,0
+2024-05-13,Sparkling water 6-pack,2.88,1150,0
+2024-05-20,Sparkling water 6-pack,2.88,1021,0
+2024-05-27,Sparkling water 6-pack,3.52,884,0
+2024-06-03,Sparkling water 6-pack,3.36,892,0
+2024-06-10,Sparkling water 6-pack,3.2,921,0
+2024-06-17,Sparkling water 6-pack,3.52,796,0
+2024-06-24,Sparkling water 6-pack,3.04,1025,0
+2024-07-01,Sparkling water 6-pack,3.52,768,0
+2024-07-08,Sparkling water 6-pack,2.88,907,0
+2024-07-15,Sparkling water 6-pack,3.36,800,0
+2024-07-22,Sparkling water 6-pack,3.2,850,0
+2024-07-29,Sparkling water 6-pack,2.56,1544,1
+2024-08-05,Sparkling water 6-pack,2.88,924,0
+2024-08-12,Sparkling water 6-pack,3.04,877,0
+2024-08-19,Sparkling water 6-pack,3.04,763,0
+2024-08-26,Sparkling water 6-pack,3.04,881,0
+2024-09-02,Sparkling water 6-pack,3.2,861,0
+2024-09-09,Sparkling water 6-pack,3.04,1003,0
+2024-09-16,Sparkling water 6-pack,3.2,840,0
+2024-09-23,Sparkling water 6-pack,2.88,1019,0
+2024-09-30,Sparkling water 6-pack,3.2,984,0
+2024-10-07,Sparkling water 6-pack,3.52,759,0
+2024-10-14,Sparkling water 6-pack,2.56,1544,1
+2024-10-21,Sparkling water 6-pack,2.43,1559,1
+2024-10-28,Sparkling water 6-pack,2.82,1274,1
+2024-11-04,Sparkling water 6-pack,3.2,968,0
+2024-11-11,Sparkling water 6-pack,2.88,1021,0
+2024-11-18,Sparkling water 6-pack,2.88,982,0
+2024-11-25,Sparkling water 6-pack,2.43,1438,1
+2024-12-02,Sparkling water 6-pack,2.88,1110,0
+2024-12-09,Sparkling water 6-pack,2.56,1407,1
+2024-12-16,Sparkling water 6-pack,3.2,845,0
+2024-12-23,Sparkling water 6-pack,3.2,925,0
+2024-12-30,Sparkling water 6-pack,3.04,943,0
+2025-01-06,Sparkling water 6-pack,3.2,804,0
+2025-01-13,Sparkling water 6-pack,2.56,1383,1
+2025-01-20,Sparkling water 6-pack,2.3,1673,1
+2025-01-27,Sparkling water 6-pack,3.2,868,0
+2025-02-03,Sparkling water 6-pack,3.36,877,0
+2025-02-10,Sparkling water 6-pack,3.52,762,0
+2025-02-17,Sparkling water 6-pack,3.2,888,0
+2025-02-24,Sparkling water 6-pack,2.88,1047,0
+2025-03-03,Sparkling water 6-pack,3.2,913,0
+2025-03-10,Sparkling water 6-pack,2.69,1455,1
+2025-03-17,Sparkling water 6-pack,3.52,715,0
+2025-03-24,Sparkling water 6-pack,3.2,823,0
+2025-03-31,Sparkling water 6-pack,2.82,1218,1
+2025-04-07,Sparkling water 6-pack,2.82,1276,1
+2025-04-14,Sparkling water 6-pack,2.88,979,0
+2025-04-21,Sparkling water 6-pack,3.36,951,0
+2025-04-28,Sparkling water 6-pack,3.36,834,0
+2025-05-05,Sparkling water 6-pack,2.69,1356,1
+2025-05-12,Sparkling water 6-pack,2.88,1030,0
+2025-05-19,Sparkling water 6-pack,2.88,1008,0
+2025-05-26,Sparkling water 6-pack,3.36,818,0
+2025-06-02,Sparkling water 6-pack,3.2,691,0
+2025-06-09,Sparkling water 6-pack,3.2,782,0
+2025-06-16,Sparkling water 6-pack,3.2,797,0
+2025-06-23,Sparkling water 6-pack,3.04,978,0
+2025-06-30,Sparkling water 6-pack,3.36,688,0
+2025-07-07,Sparkling water 6-pack,3.04,1016,0
+2025-07-14,Sparkling water 6-pack,3.2,869,0
+2025-07-21,Sparkling water 6-pack,3.2,938,0
+2025-07-28,Sparkling water 6-pack,3.04,896,0
+2025-08-04,Sparkling water 6-pack,3.36,845,0
+2025-08-11,Sparkling water 6-pack,3.2,894,0
+2025-08-18,Sparkling water 6-pack,3.52,765,0
+2025-08-25,Sparkling water 6-pack,3.52,746,0
+2025-09-01,Sparkling water 6-pack,2.3,1500,1
+2025-09-08,Sparkling water 6-pack,3.36,825,0
+2025-09-15,Sparkling water 6-pack,3.04,953,0
+2025-09-22,Sparkling water 6-pack,3.2,822,0
+2025-09-29,Sparkling water 6-pack,3.52,850,0
+2025-10-06,Sparkling water 6-pack,2.69,1421,1
+2025-10-13,Sparkling water 6-pack,3.2,839,0
+2025-10-20,Sparkling water 6-pack,2.43,1783,1
+2025-10-27,Sparkling water 6-pack,2.88,1084,0
+2025-11-03,Sparkling water 6-pack,3.52,806,0
+2025-11-10,Sparkling water 6-pack,3.36,862,0
+2025-11-17,Sparkling water 6-pack,3.2,946,0
+2025-11-24,Sparkling water 6-pack,2.88,1073,0
+2025-12-01,Sparkling water 6-pack,3.36,809,0
+2025-12-08,Sparkling water 6-pack,3.36,899,0
+2025-12-15,Sparkling water 6-pack,2.88,1154,0
+2025-12-22,Sparkling water 6-pack,3.2,861,0
+2024-01-01,Chocolate bar,0.9,2250,0
+2024-01-08,Chocolate bar,1.04,1851,0
+2024-01-15,Chocolate bar,0.95,2468,0
+2024-01-22,Chocolate bar,0.9,2807,0
+2024-01-29,Chocolate bar,0.9,3082,0
+2024-02-05,Chocolate bar,0.95,2701,0
+2024-02-12,Chocolate bar,0.86,3483,0
+2024-02-19,Chocolate bar,0.95,2419,0
+2024-02-26,Chocolate bar,0.86,3484,0
+2024-03-04,Chocolate bar,0.86,3218,0
+2024-03-11,Chocolate bar,0.95,2495,0
+2024-03-18,Chocolate bar,0.86,3135,0
+2024-03-25,Chocolate bar,1.0,2297,0
+2024-04-01,Chocolate bar,0.95,2831,0
+2024-04-08,Chocolate bar,0.95,2337,0
+2024-04-15,Chocolate bar,0.95,2822,0
+2024-04-22,Chocolate bar,0.95,2375,0
+2024-04-29,Chocolate bar,0.76,5628,1
+2024-05-06,Chocolate bar,0.9,2842,0
+2024-05-13,Chocolate bar,0.95,2699,0
+2024-05-20,Chocolate bar,0.95,2248,0
+2024-05-27,Chocolate bar,0.8,4137,1
+2024-06-03,Chocolate bar,0.9,3032,0
+2024-06-10,Chocolate bar,1.04,2064,0
+2024-06-17,Chocolate bar,0.95,2315,0
+2024-06-24,Chocolate bar,1.0,2227,0
+2024-07-01,Chocolate bar,1.0,2100,0
+2024-07-08,Chocolate bar,0.86,3036,0
+2024-07-15,Chocolate bar,1.04,2228,0
+2024-07-22,Chocolate bar,0.86,3031,0
+2024-07-29,Chocolate bar,0.86,3216,0
+2024-08-05,Chocolate bar,0.76,5169,1
+2024-08-12,Chocolate bar,1.04,2215,0
+2024-08-19,Chocolate bar,1.04,1899,0
+2024-08-26,Chocolate bar,0.95,2399,0
+2024-09-02,Chocolate bar,0.76,4922,1
+2024-09-09,Chocolate bar,0.95,2242,0
+2024-09-16,Chocolate bar,0.86,2805,0
+2024-09-23,Chocolate bar,1.0,2357,0
+2024-09-30,Chocolate bar,0.9,2977,0
+2024-10-07,Chocolate bar,0.86,2984,0
+2024-10-14,Chocolate bar,1.04,2111,0
+2024-10-21,Chocolate bar,0.95,2210,0
+2024-10-28,Chocolate bar,0.68,7055,1
+2024-11-04,Chocolate bar,0.95,2824,0
+2024-11-11,Chocolate bar,0.76,4916,1
+2024-11-18,Chocolate bar,0.76,5054,1
+2024-11-25,Chocolate bar,0.9,3039,0
+2024-12-02,Chocolate bar,0.95,2381,0
+2024-12-09,Chocolate bar,1.04,1756,0
+2024-12-16,Chocolate bar,0.95,2737,0
+2024-12-23,Chocolate bar,0.86,3223,0
+2024-12-30,Chocolate bar,0.68,6611,1
+2025-01-06,Chocolate bar,0.86,3372,0
+2025-01-13,Chocolate bar,1.0,2274,0
+2025-01-20,Chocolate bar,0.9,2623,0
+2025-01-27,Chocolate bar,1.04,1966,0
+2025-02-03,Chocolate bar,0.86,3002,0
+2025-02-10,Chocolate bar,0.86,2511,0
+2025-02-17,Chocolate bar,0.9,2897,0
+2025-02-24,Chocolate bar,1.0,2109,0
+2025-03-03,Chocolate bar,0.9,2578,0
+2025-03-10,Chocolate bar,0.86,3189,0
+2025-03-17,Chocolate bar,1.04,2161,0
+2025-03-24,Chocolate bar,0.86,3381,0
+2025-03-31,Chocolate bar,0.86,3151,0
+2025-04-07,Chocolate bar,0.95,2623,0
+2025-04-14,Chocolate bar,0.9,3322,0
+2025-04-21,Chocolate bar,0.86,3184,0
+2025-04-28,Chocolate bar,0.9,2548,0
+2025-05-05,Chocolate bar,1.0,2519,0
+2025-05-12,Chocolate bar,1.0,2182,0
+2025-05-19,Chocolate bar,0.95,2496,0
+2025-05-26,Chocolate bar,0.76,5843,1
+2025-06-02,Chocolate bar,1.0,2042,0
+2025-06-09,Chocolate bar,0.86,3100,0
+2025-06-16,Chocolate bar,0.95,2712,0
+2025-06-23,Chocolate bar,1.04,1871,0
+2025-06-30,Chocolate bar,0.76,4458,1
+2025-07-07,Chocolate bar,0.95,2835,0
+2025-07-14,Chocolate bar,1.0,2040,0
+2025-07-21,Chocolate bar,0.9,2677,0
+2025-07-28,Chocolate bar,1.0,2365,0
+2025-08-04,Chocolate bar,0.72,6212,1
+2025-08-11,Chocolate bar,0.9,2613,0
+2025-08-18,Chocolate bar,0.9,2895,0
+2025-08-25,Chocolate bar,1.0,2294,0
+2025-09-01,Chocolate bar,0.95,2410,0
+2025-09-08,Chocolate bar,0.9,3320,0
+2025-09-15,Chocolate bar,1.0,2526,0
+2025-09-22,Chocolate bar,0.8,4637,1
+2025-09-29,Chocolate bar,1.04,2057,0
+2025-10-06,Chocolate bar,1.0,2316,0
+2025-10-13,Chocolate bar,0.9,3500,0
+2025-10-20,Chocolate bar,0.9,2981,0
+2025-10-27,Chocolate bar,0.8,4625,1
+2025-11-03,Chocolate bar,0.95,2416,0
+2025-11-10,Chocolate bar,0.95,2368,0
+2025-11-17,Chocolate bar,1.0,2500,0
+2025-11-24,Chocolate bar,0.95,2306,0
+2025-12-01,Chocolate bar,0.76,5134,1
+2025-12-08,Chocolate bar,1.0,2108,0
+2025-12-15,Chocolate bar,0.9,3104,0
+2025-12-22,Chocolate bar,0.9,3116,0
+2024-01-01,Toilet roll 9-pack,3.84,1096,1
+2024-01-08,Toilet roll 9-pack,4.03,1017,1
+2024-01-15,Toilet roll 9-pack,5.28,756,0
+2024-01-22,Toilet roll 9-pack,5.28,773,0
+2024-01-29,Toilet roll 9-pack,4.8,805,0
+2024-02-05,Toilet roll 9-pack,4.22,1159,1
+2024-02-12,Toilet roll 9-pack,4.03,1111,1
+2024-02-19,Toilet roll 9-pack,5.28,746,0
+2024-02-26,Toilet roll 9-pack,5.28,731,0
+2024-03-04,Toilet roll 9-pack,5.28,684,0
+2024-03-11,Toilet roll 9-pack,4.8,783,0
+2024-03-18,Toilet roll 9-pack,5.04,776,0
+2024-03-25,Toilet roll 9-pack,5.28,746,0
+2024-04-01,Toilet roll 9-pack,4.32,937,0
+2024-04-08,Toilet roll 9-pack,4.8,702,0
+2024-04-15,Toilet roll 9-pack,4.22,1186,1
+2024-04-22,Toilet roll 9-pack,3.84,1118,1
+2024-04-29,Toilet roll 9-pack,5.28,652,0
+2024-05-06,Toilet roll 9-pack,5.04,707,0
+2024-05-13,Toilet roll 9-pack,4.8,853,0
+2024-05-20,Toilet roll 9-pack,4.32,766,0
+2024-05-27,Toilet roll 9-pack,4.8,718,0
+2024-06-03,Toilet roll 9-pack,5.04,809,0
+2024-06-10,Toilet roll 9-pack,5.28,678,0
+2024-06-17,Toilet roll 9-pack,4.8,792,0
+2024-06-24,Toilet roll 9-pack,4.32,745,0
+2024-07-01,Toilet roll 9-pack,4.8,900,0
+2024-07-08,Toilet roll 9-pack,5.04,812,0
+2024-07-15,Toilet roll 9-pack,4.8,756,0
+2024-07-22,Toilet roll 9-pack,4.56,932,0
+2024-07-29,Toilet roll 9-pack,5.04,639,0
+2024-08-05,Toilet roll 9-pack,3.65,1137,1
+2024-08-12,Toilet roll 9-pack,4.32,830,0
+2024-08-19,Toilet roll 9-pack,4.8,745,0
+2024-08-26,Toilet roll 9-pack,4.56,851,0
+2024-09-02,Toilet roll 9-pack,4.56,779,0
+2024-09-09,Toilet roll 9-pack,3.84,1164,1
+2024-09-16,Toilet roll 9-pack,3.84,1123,1
+2024-09-23,Toilet roll 9-pack,5.28,791,0
+2024-09-30,Toilet roll 9-pack,4.32,839,0
+2024-10-07,Toilet roll 9-pack,5.04,785,0
+2024-10-14,Toilet roll 9-pack,4.32,803,0
+2024-10-21,Toilet roll 9-pack,4.32,770,0
+2024-10-28,Toilet roll 9-pack,5.04,906,0
+2024-11-04,Toilet roll 9-pack,4.8,622,0
+2024-11-11,Toilet roll 9-pack,4.32,870,0
+2024-11-18,Toilet roll 9-pack,4.8,775,0
+2024-11-25,Toilet roll 9-pack,5.28,750,0
+2024-12-02,Toilet roll 9-pack,5.04,729,0
+2024-12-09,Toilet roll 9-pack,4.56,812,0
+2024-12-16,Toilet roll 9-pack,5.04,698,0
+2024-12-23,Toilet roll 9-pack,4.32,780,0
+2024-12-30,Toilet roll 9-pack,5.28,601,0
+2025-01-06,Toilet roll 9-pack,3.46,1214,1
+2025-01-13,Toilet roll 9-pack,3.84,1236,1
+2025-01-20,Toilet roll 9-pack,5.28,737,0
+2025-01-27,Toilet roll 9-pack,4.8,756,0
+2025-02-03,Toilet roll 9-pack,4.22,1037,1
+2025-02-10,Toilet roll 9-pack,5.04,894,0
+2025-02-17,Toilet roll 9-pack,4.8,884,0
+2025-02-24,Toilet roll 9-pack,4.8,803,0
+2025-03-03,Toilet roll 9-pack,4.32,934,0
+2025-03-10,Toilet roll 9-pack,4.8,777,0
+2025-03-17,Toilet roll 9-pack,4.8,820,0
+2025-03-24,Toilet roll 9-pack,5.04,825,0
+2025-03-31,Toilet roll 9-pack,5.28,794,0
+2025-04-07,Toilet roll 9-pack,4.56,763,0
+2025-04-14,Toilet roll 9-pack,4.8,723,0
+2025-04-21,Toilet roll 9-pack,5.28,694,0
+2025-04-28,Toilet roll 9-pack,5.04,714,0
+2025-05-05,Toilet roll 9-pack,4.32,757,0
+2025-05-12,Toilet roll 9-pack,4.56,833,0
+2025-05-19,Toilet roll 9-pack,5.28,701,0
+2025-05-26,Toilet roll 9-pack,5.04,825,0
+2025-06-02,Toilet roll 9-pack,5.04,848,0
+2025-06-09,Toilet roll 9-pack,4.56,755,0
+2025-06-16,Toilet roll 9-pack,4.32,803,0
+2025-06-23,Toilet roll 9-pack,4.32,1017,0
+2025-06-30,Toilet roll 9-pack,4.32,780,0
+2025-07-07,Toilet roll 9-pack,4.32,1036,0
+2025-07-14,Toilet roll 9-pack,4.32,834,0
+2025-07-21,Toilet roll 9-pack,5.04,762,0
+2025-07-28,Toilet roll 9-pack,3.84,1239,1
+2025-08-04,Toilet roll 9-pack,4.56,1000,0
+2025-08-11,Toilet roll 9-pack,3.84,998,1
+2025-08-18,Toilet roll 9-pack,4.8,800,0
+2025-08-25,Toilet roll 9-pack,5.04,979,0
+2025-09-01,Toilet roll 9-pack,4.22,1116,1
+2025-09-08,Toilet roll 9-pack,5.04,663,0
+2025-09-15,Toilet roll 9-pack,4.8,739,0
+2025-09-22,Toilet roll 9-pack,5.28,761,0
+2025-09-29,Toilet roll 9-pack,4.32,848,0
+2025-10-06,Toilet roll 9-pack,3.46,1301,1
+2025-10-13,Toilet roll 9-pack,5.28,689,0
+2025-10-20,Toilet roll 9-pack,3.65,1231,1
+2025-10-27,Toilet roll 9-pack,4.8,794,0
+2025-11-03,Toilet roll 9-pack,5.04,693,0
+2025-11-10,Toilet roll 9-pack,4.8,813,0
+2025-11-17,Toilet roll 9-pack,5.28,668,0
+2025-11-24,Toilet roll 9-pack,5.04,708,0
+2025-12-01,Toilet roll 9-pack,5.04,737,0
+2025-12-08,Toilet roll 9-pack,4.8,772,0
+2025-12-15,Toilet roll 9-pack,4.8,903,0
+2025-12-22,Toilet roll 9-pack,4.32,756,0
+2024-01-01,Ready meal,3.94,959,0
+2024-01-08,Ready meal,3.75,1073,0
+2024-01-15,Ready meal,4.12,944,0
+2024-01-22,Ready meal,3.75,1095,0
+2024-01-29,Ready meal,3.94,1094,0
+2024-02-05,Ready meal,3.3,1576,1
+2024-02-12,Ready meal,3.75,1115,0
+2024-02-19,Ready meal,3.75,991,0
+2024-02-26,Ready meal,3.38,1469,0
+2024-03-04,Ready meal,4.12,920,0
+2024-03-11,Ready meal,3.94,1180,0
+2024-03-18,Ready meal,3.75,1006,0
+2024-03-25,Ready meal,3.94,1156,0
+2024-04-01,Ready meal,3.94,1043,0
+2024-04-08,Ready meal,3.38,1496,0
+2024-04-15,Ready meal,3.94,1072,0
+2024-04-22,Ready meal,3.38,1286,0
+2024-04-29,Ready meal,4.12,901,0
+2024-05-06,Ready meal,3.75,879,0
+2024-05-13,Ready meal,2.85,2009,1
+2024-05-20,Ready meal,3.94,1112,0
+2024-05-27,Ready meal,3.15,1922,1
+2024-06-03,Ready meal,3.3,1694,1
+2024-06-10,Ready meal,3.38,1113,0
+2024-06-17,Ready meal,3.75,897,0
+2024-06-24,Ready meal,3.3,1735,1
+2024-07-01,Ready meal,3.75,1225,0
+2024-07-08,Ready meal,2.7,2370,1
+2024-07-15,Ready meal,3.56,1207,0
+2024-07-22,Ready meal,4.12,904,0
+2024-07-29,Ready meal,3.56,1313,0
+2024-08-05,Ready meal,3.38,1326,0
+2024-08-12,Ready meal,3.75,1131,0
+2024-08-19,Ready meal,3.0,1855,1
+2024-08-26,Ready meal,3.38,1199,0
+2024-09-02,Ready meal,3.56,1193,0
+2024-09-09,Ready meal,3.75,1100,0
+2024-09-16,Ready meal,3.75,1184,0
+2024-09-23,Ready meal,3.94,916,0
+2024-09-30,Ready meal,4.12,954,0
+2024-10-07,Ready meal,3.75,1058,0
+2024-10-14,Ready meal,3.75,1067,0
+2024-10-21,Ready meal,3.0,1722,1
+2024-10-28,Ready meal,3.75,1229,0
+2024-11-04,Ready meal,4.12,1082,0
+2024-11-11,Ready meal,3.56,1295,0
+2024-11-18,Ready meal,4.12,837,0
+2024-11-25,Ready meal,3.75,1056,0
+2024-12-02,Ready meal,3.38,1076,0
+2024-12-09,Ready meal,2.7,2519,1
+2024-12-16,Ready meal,3.75,1117,0
+2024-12-23,Ready meal,3.56,1136,0
+2024-12-30,Ready meal,3.56,1121,0
+2025-01-06,Ready meal,3.94,1002,0
+2025-01-13,Ready meal,3.56,1275,0
+2025-01-20,Ready meal,3.38,1405,0
+2025-01-27,Ready meal,3.38,1347,0
+2025-02-03,Ready meal,3.94,1111,0
+2025-02-10,Ready meal,3.0,1903,1
+2025-02-17,Ready meal,3.75,1191,0
+2025-02-24,Ready meal,3.56,1262,0
+2025-03-03,Ready meal,3.75,1113,0
+2025-03-10,Ready meal,3.75,1010,0
+2025-03-17,Ready meal,4.12,923,0
+2025-03-24,Ready meal,4.12,921,0
+2025-03-31,Ready meal,3.56,1155,0
+2025-04-07,Ready meal,4.12,954,0
+2025-04-14,Ready meal,3.75,1095,0
+2025-04-21,Ready meal,3.94,1026,0
+2025-04-28,Ready meal,2.7,2022,1
+2025-05-05,Ready meal,2.85,2259,1
+2025-05-12,Ready meal,3.75,1143,0
+2025-05-19,Ready meal,3.38,1284,0
+2025-05-26,Ready meal,3.56,1317,0
+2025-06-02,Ready meal,3.38,1228,0
+2025-06-09,Ready meal,3.56,1107,0
+2025-06-16,Ready meal,3.15,1729,1
+2025-06-23,Ready meal,3.94,969,0
+2025-06-30,Ready meal,3.56,1084,0
+2025-07-07,Ready meal,3.56,1337,0
+2025-07-14,Ready meal,3.75,1091,0
+2025-07-21,Ready meal,3.56,1238,0
+2025-07-28,Ready meal,3.75,1196,0
+2025-08-04,Ready meal,3.75,1133,0
+2025-08-11,Ready meal,3.56,1258,0
+2025-08-18,Ready meal,3.56,1054,0
+2025-08-25,Ready meal,3.75,1067,0
+2025-09-01,Ready meal,3.94,963,0
+2025-09-08,Ready meal,3.0,1837,1
+2025-09-15,Ready meal,3.94,1011,0
+2025-09-22,Ready meal,2.85,2234,1
+2025-09-29,Ready meal,3.38,1202,0
+2025-10-06,Ready meal,3.75,1082,0
+2025-10-13,Ready meal,3.38,1283,0
+2025-10-20,Ready meal,3.75,1187,0
+2025-10-27,Ready meal,3.94,1070,0
+2025-11-03,Ready meal,3.56,1126,0
+2025-11-10,Ready meal,4.12,1014,0
+2025-11-17,Ready meal,3.94,1061,0
+2025-11-24,Ready meal,3.38,1456,0
+2025-12-01,Ready meal,4.12,999,0
+2025-12-08,Ready meal,3.56,1134,0
+2025-12-15,Ready meal,3.75,949,0
+2025-12-22,Ready meal,2.85,2416,1

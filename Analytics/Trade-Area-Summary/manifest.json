@@ -1,0 +1,185 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Trade Area Summary",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Counts and sums points within several radii of each site, with exclusive and shared catchment, and the nearest site and distance band per point.",
+    "category": "Analytics",
+    "subcategory": "Geo",
+    "tags": [
+        "trade area",
+        "catchment",
+        "radius",
+        "haversine",
+        "store network",
+        "geo",
+        "location analytics",
+        "visokio-agents"
+    ],
+    "introductoryText": "For each **site** (store, branch, depot, clinic, school), how many **points** (customers, households, competitors, incidents) lie within each of several **radii**, what value they carry, and how much of that is **shared with other sites**.\n\n- Great-circle (haversine) distances in kilometres or miles, from latitude and longitude\n- Per site and radius: points and value within, share of all points and value, **exclusive** points (no other site within the same radius), shared points, average distance\n- Per point: **nearest site** and distance, a **distance band** (0-1 km, 1-3 km...), and how many sites reach it within the largest radius\n\nConnect the sites to input 1 and the points to input 2. Rows without valid coordinates are kept and marked. Find Nearest gives the k nearest sites per point; this block summarises catchments by radius.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "site_field",
+            "title": "Site name",
+            "description": "Names each site, such as a store or branch.",
+            "groupTitle": "Sites (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "site_lat",
+            "title": "Latitude",
+            "description": "Latitude of each site, in decimal degrees.",
+            "groupTitle": "Sites (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "site_lon",
+            "title": "Longitude",
+            "description": "Longitude of each site, in decimal degrees.",
+            "groupTitle": "Sites (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "point_lat",
+            "title": "Latitude",
+            "description": "Latitude of each point in input 2, in decimal degrees.",
+            "groupTitle": "Points (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "point_lon",
+            "title": "Longitude",
+            "description": "Longitude of each point in input 2, in decimal degrees.",
+            "groupTitle": "Points (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "point_value",
+            "title": "Value (optional)",
+            "description": "For example annual spend or households.",
+            "groupTitle": "Points (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "point_id",
+            "title": "Point ID (optional)",
+            "description": "Identifies each point in the per-point output.",
+            "groupTitle": "Points (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "radii",
+            "title": "Radii",
+            "description": "Comma-separated, for example: 1, 3, 5, 10",
+            "groupTitle": "Radii",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "1, 3, 5, 10"
+        },
+        {
+            "name": "unit",
+            "title": "Unit",
+            "description": "Unit for the radii and distances.",
+            "groupTitle": "Radii",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Kilometres",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "KM",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Miles",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MILES",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "KM"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "sites",
+            "label": "Sites",
+            "displayName": "Sites",
+            "tooltip": "Per site and radius: points and value within, shares, exclusive and shared points, average distance."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "points",
+            "label": "Points",
+            "displayName": "Points",
+            "tooltip": "The points with nearest site, distance, distance band and number of sites within the largest radius."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

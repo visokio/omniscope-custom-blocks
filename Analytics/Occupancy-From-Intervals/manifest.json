@@ -1,0 +1,182 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Occupancy From Intervals",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADyklEQVR42u2dsUuVURiHn1eU2rKlRVvaJFoaxIKioaGhISkIwqncWiT8BwraGiSIwKbWsqbmQKJyMXCqwVoSShC8k5RZb4NXiDA/8vs+fc85vwfCwYT7+njee869v/seEEIIIYQQQgghhBB7g6XyQN393o6FmE2WKLBHf8MSKCRQSKAEiuJ2oe5uwCXgGnAKOAL07XNNP4DPwEvgoZm9k+bt5Q24+2uPzU93v+/uvVqBf8kD5oDBROp8AYya2Ubxz4HdtvkkIXkAF4G7WoGbAkeB5wnWugGcMLMPpe9CxxKttRe4qWMEDCdc7wW1UPdvwIFE6/1uZgdLX4ErCdfbUQuF2YTrXZBAmE643hkd5DefB2eAy4nVuggcN7N1CXTvB94AQ4nUuQacyfF10V29G2FmHeAs8CqBGr8A5/Wi9vYrscfdb7j7fMAXsj+6+213P5SzA2tQ5mHgKO29nTRR8f2p7tcN4KuZLZewiFJKpY1UtPU59UQhhBBCCO1CG9+FDlbsQpdKFJhSWqvqHDipFbj/qyxizrQureZULZC8ATbTbqczXjC/gAfAraYijhZIXko507o0llPtCSAvxZxpXRrLqVoAganmTOvSSE41wqeTxiiTRnKqEQQOUy61c6oRWmjKOdO61M6pRliBKwWvwE4OLXS2YIELOQicLlhg7ZxqlIN8ijnTujSSU40isJ+0cqZ1aSynGmJKRWI507o0mlMNM2bEzFaAc8A4kGMI9xNwBxgys7eN/d6iVrtNznSi4kemgpbSak417Bu6ZrYKrP4hdLni/8+XuI3VpCYJFBIoJLBUFCsUQohw7c7cfdTdn7r7kruv78Encte7n8p95O4nZWH38iLMEc1+Tmgrm5iA+c5s54Q2fowImu/Mdk5o4yswcL4zyzmhbRzko+Y7s5wT2obAyPnOC7kKbLKFRs53ZjcntI0VGDnf2VELrSZyvnNBAquJnO+cyVVg0wf5iPnOLOeEtiWwn1j5zmznhLbRQqPlOzUntMZK3M85okXMCW2lhf5DZttzRLcoak6oEKKIFtpgK9Y98m3vQoUECgmUQCGBYq/IOnZXwj33vRnLizp/tA841v133d1rzQ+1jOUVcc99T4byirrn3jIUWNQ99znuQou65z5HgUXdc59jCy3qnvvehMRc2fEv0WwrebYCDCQqsJPzOXCk4vtbAme7B/cU+e/8ao7PgUXdc5+dQDObBZ4l+NAXgcdagZuMA+8TerxrwNXdhI+zFKh77vM5UmR/z70VJHOv8qlVKL8qhBBCCCGEEGLX/AYZhZdBwmj0rgAAAABJRU5ErkJggg==",
+    "description": "Occupancy over time from start and end times: average and peak concurrency per bucket, utilisation against capacity and time over capacity, per group.",
+    "category": "Analytics",
+    "subcategory": "Operations",
+    "tags": [
+        "occupancy",
+        "concurrency",
+        "utilisation",
+        "capacity",
+        "bed management",
+        "car parks",
+        "bookings",
+        "visokio-agents"
+    ],
+    "introductoryText": "Turns **start and end times** into **occupancy over time**: beds in a ward, cars in a car park, staff on site, concurrent users, rooms booked, machines running.\n\n- Per group (ward, site, car park) and **time bucket** (15 minutes, hour, day): **average occupancy** (time-weighted), **peak occupancy**, arrivals and departures, and **utilisation** against a capacity\n- Per group: the overall **peak** and when it was first reached, average occupancy and utilisation, **hours over capacity** and the median duration\n- Capacity as one number or **per group** (`Ward A=24, Ward B=18`); an optional **weight** counts an interval as several (people in a booking)\n- Intervals with no end are treated as still in progress at the **as-of** time\n\nThe calculation is exact (a sweep over every start and end), not a sample of time points.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "start_field",
+            "title": "Start time",
+            "description": "When each stay, booking or session began.",
+            "groupTitle": "Intervals",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "end_field",
+            "title": "End time",
+            "description": "Empty = still in progress.",
+            "groupTitle": "Intervals",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_field",
+            "title": "Group (optional)",
+            "description": "For example Ward or Car Park.",
+            "groupTitle": "Intervals",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "weight_field",
+            "title": "Weight (optional)",
+            "description": "For example people in a booking.",
+            "groupTitle": "Intervals",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "as_of",
+            "title": "As of (for open intervals)",
+            "description": "Default: the latest time in the data.",
+            "groupTitle": "Intervals",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "bucket",
+            "title": "Time bucket",
+            "description": "Length of each time slot the occupancy is measured in.",
+            "groupTitle": "Occupancy",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Hour",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "HOUR",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "15 minutes",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "15MIN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Day",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DAY",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "HOUR"
+        },
+        {
+            "name": "capacity",
+            "title": "Capacity",
+            "description": "0 = none.",
+            "groupTitle": "Occupancy",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "capacity_by_group",
+            "title": "Capacity by group",
+            "description": "For example: Ward A=24, Ward B=18",
+            "groupTitle": "Occupancy",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "occupancy",
+            "label": "Occupancy",
+            "displayName": "Occupancy",
+            "tooltip": "Per group and bucket: average and peak occupancy, arrivals, departures, capacity, utilisation, over capacity."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Per group: intervals, period, peak and when, average occupancy and utilisation, hours over capacity, median duration."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

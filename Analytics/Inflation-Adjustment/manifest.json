@@ -1,0 +1,162 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Inflation Adjustment",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAFVklEQVR42u2dS2xVRRjHf18LQiIqPqgsCI+AG4wxcYGirFgYEB8JUahviQasyAoVQqJLUdwRlLIgMUF5iDEYhMBGNIAiCxPjYwFGDF0oiGKMSJu2fC7OtBik98Wdc8/c+/9tmt7OnTOdX+c738yZzgUhhBBCCCGEEEIIIYQQQgghRsTUBfni7pOBOeHbQ2Z2Ur2ShrjR7v62uw/4RQbCa6PVQ8UXuMFHZoN6qOBh090HSwgcDKG1atrUvblwd5m+bgtlJLCgXFunMhLYbEigBIpGMqrKbOohYFm44V7X5H3zJ3AY6DazT5Iege4+1t13AruA+S0gD2A8sADY7e7b3X1syiNwC/BwC0eqxeFrZ3Ij0N0fbHF5wxLd/b4UQ+jzcjfMshQFzpa3Ye5JUeB4eRvmBs0D08YkUEigqH4emDc/AtuBA8APwOnwegcwE5gb5mTTpbD8PDBPjrv7QnevZH7a5u6PuPtPeTawxj5cWkHVS1MPoe8Ct5vZR2Z2oWw2YXbBzHYCt5GtFOke2EDWmtkSM/un6rTQ7JyZPQWsk8AGjTwzW3PF+b3ZKuA9Ccw/WVlex/q6gJ8lMD9W1RI2S4zCv4HVEpjf6NsVod4PgRMSGJ9tlWSbNYzCwTCHlMDIfBax7gMSGJ/vE61bAgNnItb9mwQKCSzDhIh1d0hgfGZGrPtWCYzP3ETrlsBAZyWPjarF3du5uI9TAiMyHVgYod7FwFQJzId17n51HUffNcBaZaH5MQ3YWCd5BmwCJktgvjzp7m/WQd5bwKOaBzaGV9x9i7uPqzFsvg+s1ES+sTwBfOvunRVuamp398eA71px5A1RtG2FU4FtwOvuvgP4lGxh+hTZruibwyR9aFvhFFqcou4LnUb2ZH01IpkQKiRQAkWZ3ClFgWflbZjfUxT4pbwN80WKAjfKW3H7oqzAcMjNDrljq5ntSzWJeabFJW4Fnk02CzWzXjPrJJxcBPzRIgnLx8B8M3vczHqL2MiqVmLMbC+wV9FU80AhgUICJVAklcSI8rj7LOAB4Hrga+CDKt47DlgE3EG2hLnbzI6qV/MR1+bumy5zfEiPu3dXcMxIdyh7KZti7J8V/xe4JuLxNCMeAqEPv6qPvFHAr8CNERcVJprZgJKYOEyKKI9Q96Tkkxh3n0i2nDcDyOsTv/qB48AeMzs1QplzObTjXNIhNMh7EWjU6fG9wHozOz1C+74CZkW69lEzuzP1eeCCBsojXHtBiZ+vBAYiXHeAEpuWUxI4o8htMLNDwGsRrvlqqDt5gUX4lMsxZX7+BtkjqHqxlzKH+LVKFjoI/BJS/cFYFzEzB5ZQn5OieoCnyx2G1OxLaX3AvpAE9IVkYwxwFzAvxqg2s7Pu3gkcBK66gsy308zKHsXS1uTyus3s4JC80MF9ZvY52Qal/kgj8Sjw8hVU8ZKZVbQDrpkF7jOznhKdfBLYHzGcrif7t7dq2RneSysLHAAqWcU/EvOeCLwAHKui/DHguWou0KwCz/w3bJYYJb1EPPLLzP4iezx0voLi54FF4T0tL7AwmNk3wIoKiq4IZZFAmBCyzZKED3W8KQeJm4HNJYpsDmWQwIz2MFUox+xQNg+6gHcuuecOhte6aq20meeB89z9RMg2Lzf6pgD35hhK+4Hl4USOOeHlQyO1TwKzSXqXu+8HjgztrA5hc3aQl/vyXBC2tV71NftKzGjgfmC+uw8dAtvRTLeOVtmV1g5MbMZfLKW/xP4CtKFPAmvnuNqQtsA9ZNsaGsX50IZiLRSkFO/dvYNsW8Mt1P6oppawObSpqWVOwxdCCCGEEEIIIYQQQogi8S9oGGdh6zfJOQAAAABJRU5ErkJggg==",
+    "description": "Restates money values in real terms of a base period using a price index table, per series, with the index used and cumulative inflation.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "inflation",
+        "real terms",
+        "CPI",
+        "price index",
+        "constant prices",
+        "deflator",
+        "finance",
+        "visokio-agents"
+    ],
+    "introductoryText": "Restates money values in **real terms** (the prices of a base period) using a **price index table** you provide, such as a consumer or producer price index, optionally per country or index series.\n\n- Each row takes the index **in force at its date** (the latest index period on or before it, up to a maximum age)\n- Real value = nominal value x index at base / index at the row's date, for one or more money fields\n- **Base period** of your choice (default: the latest index period); months can be written as *2025-06*\n- The index table comes back with **cumulative inflation to the base**, month-on-month and year-on-year change\n\nRows that cannot be adjusted (no date, no index early enough, index too old) say why. No index data is included: connect the published series you use.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "date_field",
+            "title": "Date field",
+            "description": "Date of each value, matched to the index period it falls in.",
+            "groupTitle": "Values (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_fields",
+            "title": "Money fields to adjust",
+            "description": "Money amounts to restate in base-period prices; each gets a new real-terms field.",
+            "groupTitle": "Values (input 1)",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": true,
+            "fieldTypes": []
+        },
+        {
+            "name": "key_field",
+            "title": "Key (optional)",
+            "description": "For example Country, matched to the index key.",
+            "groupTitle": "Values (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "index_date_field",
+            "title": "Index period",
+            "description": "The month or date each index value applies to.",
+            "groupTitle": "Price index (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "index_value_field",
+            "title": "Index value",
+            "description": "The price index, such as CPI.",
+            "groupTitle": "Price index (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "index_key_field",
+            "title": "Index key (optional)",
+            "description": null,
+            "groupTitle": "Price index (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "base_period",
+            "title": "Base period",
+            "description": "A date or month, for example 2025-06. Default: latest index period.",
+            "groupTitle": "Price index (input 2)",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "max_age_days",
+            "title": "Maximum index age (days)",
+            "description": null,
+            "groupTitle": "Price index (input 2)",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 400,
+            "showAsSlider": false
+        },
+        {
+            "name": "suffix",
+            "title": "Suffix for real-terms fields",
+            "description": null,
+            "groupTitle": "Price index (input 2)",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": " (real)"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "rows",
+            "label": "Rows",
+            "displayName": "Rows",
+            "tooltip": "The input with index period used, index at date and at base, inflation factor, real values and status."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "index",
+            "label": "Index",
+            "displayName": "Index",
+            "tooltip": "The index table with inflation to base, month-on-month and year-on-year change."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

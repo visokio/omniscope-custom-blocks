@@ -1,0 +1,158 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Point-to-Point Distance",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Great-circle distance, bearing, direction and midpoint between two latitude / longitude pairs per row, with optional road distance and travel time estimates.",
+    "category": "Analytics",
+    "subcategory": "Geo",
+    "tags": [
+        "distance",
+        "haversine",
+        "bearing",
+        "geo",
+        "journeys",
+        "logistics",
+        "travel time",
+        "visokio-agents"
+    ],
+    "introductoryText": "For each row, the **great-circle distance** between two locations (from and to latitude / longitude): journeys, deliveries, patient travel, customer to store.\n\n- Distance in kilometres or miles (haversine on a spherical Earth, accurate to about 0.5% for most purposes)\n- Initial **compass bearing** and direction (N, NE, E...), and the **midpoint**\n- Optional **estimated road distance** (straight line times a factor, for example 1.3) and **travel time** at an average speed\n- Rows with missing or impossible coordinates are kept and marked\n\nFind Nearest finds the nearest locations from another table; Trade Area Summary counts points around sites. This block measures one pair per row.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "from_lat",
+            "title": "From latitude",
+            "description": "Latitude of the starting point, in decimal degrees.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "from_lon",
+            "title": "From longitude",
+            "description": "Longitude of the starting point, in decimal degrees.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "to_lat",
+            "title": "To latitude",
+            "description": "Latitude of the destination, in decimal degrees.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "to_lon",
+            "title": "To longitude",
+            "description": "Longitude of the destination, in decimal degrees.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "unit",
+            "title": "Unit",
+            "description": "Unit for distances; speed is then km/h or mph.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Kilometres",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "KM",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Miles",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MILES",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "KM"
+        },
+        {
+            "name": "road_factor",
+            "title": "Road distance factor (optional)",
+            "description": "For example 1.3; 0 = none.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 10,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "speed",
+            "title": "Average speed for travel time (optional)",
+            "description": "In km/h or mph; needs a road factor.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1000,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "distances",
+            "label": "Distances",
+            "displayName": "Distances",
+            "tooltip": "The input with distance, bearing, direction, midpoint, optional road distance and minutes, valid flag."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

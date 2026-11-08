@@ -1,0 +1,13 @@
+Delivery,Depot,Depot Lat,Depot Lon,Drop Postcode Area,Drop Lat,Drop Lon
+D001,Leeds,53.7965,-1.5478,York,53.9590,-1.0815
+D002,Leeds,53.7965,-1.5478,Harrogate,53.9921,-1.5418
+D003,Leeds,53.7965,-1.5478,Sheffield,53.3811,-1.4701
+D004,Leeds,53.7965,-1.5478,Manchester,53.4808,-2.2426
+D005,Bristol,51.4545,-2.5879,Bath,51.3811,-2.3590
+D006,Bristol,51.4545,-2.5879,Cardiff,51.4816,-3.1791
+D007,Bristol,51.4545,-2.5879,Exeter,50.7184,-3.5339
+D008,Bristol,51.4545,-2.5879,Swindon,51.5558,-1.7797
+D009,Glasgow,55.8642,-4.2518,Edinburgh,55.9533,-3.1883
+D010,Glasgow,55.8642,-4.2518,Stirling,56.1165,-3.9369
+D011,Glasgow,55.8642,-4.2518,Aberdeen,57.1497,-2.0943
+D012,Glasgow,55.8642,-4.2518,Unknown,,

@@ -1,0 +1,7 @@
+Criterion,Weight,Better When,Minimum,Maximum
+Annual Price (GBP k),35,Lower,,
+Quality Score,25,Higher,6.5,
+Lead Time (days),10,Lower,,
+On-Time Delivery %,15,Higher,90.0,
+Carbon (kg CO2e per unit),10,Lower,,
+Financial Risk Score,5,Lower,,70.0

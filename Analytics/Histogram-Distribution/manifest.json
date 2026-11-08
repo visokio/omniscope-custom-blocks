@@ -1,0 +1,154 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Histogram and Distribution",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Histograms with automatic bin widths shared across groups, and distribution statistics (percentiles, skewness, kurtosis) per group.",
+    "category": "Analytics",
+    "subcategory": "Statistics",
+    "tags": [
+        "histogram",
+        "distribution",
+        "binning",
+        "percentiles",
+        "skewness",
+        "descriptive statistics",
+        "Freedman-Diaconis",
+        "visokio-agents"
+    ],
+    "introductoryText": "Bins a numeric field into a **histogram**, overall or **per group**, with the bin width chosen automatically or by you, plus the **summary statistics** analysts look at next.\n\n- Bin width by the **Freedman-Diaconis** rule (twice the interquartile range over the cube root of the count; robust to outliers), **Sturges**, a number of bins, or a fixed width\n- The same bins for every group, so histograms line up; optionally clip the range to percentiles so a few extreme values do not squash the chart (values outside are counted as below or above range)\n- Statistics per group: count, missing, mean, standard deviation, minimum, P1, P5, quartiles, median, P95, P99, maximum, skewness and excess kurtosis",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "value_field",
+            "title": "Value field",
+            "description": "The numbers to bin and describe.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_field",
+            "title": "Per group (optional)",
+            "description": "One histogram per value, all on the same bins so they can be compared.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "bin_rule",
+            "title": "Bin width rule",
+            "description": "How the bin width is chosen when you do not set one. Freedman-Diaconis copes better with outliers.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Freedman-Diaconis",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FD",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Sturges",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "STURGES",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "FD"
+        },
+        {
+            "name": "bins",
+            "title": "Number of bins (optional)",
+            "description": "0 = use the rule.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 2000,
+            "mandatory": false,
+            "defaultValue": 0,
+            "showAsSlider": false
+        },
+        {
+            "name": "bin_width",
+            "title": "Bin width (optional)",
+            "description": "0 = use the rule or the number of bins.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "clip_percentile",
+            "title": "Clip range to percentiles",
+            "description": "For example 1 = from P1 to P99; 0 = full range.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 49,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "histogram",
+            "label": "Histogram",
+            "displayName": "Histogram",
+            "tooltip": "Per group and bin: from, to, midpoint, count, share, cumulative share."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Per group: count, missing, mean, standard deviation, percentiles, skewness, kurtosis, below / above range."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

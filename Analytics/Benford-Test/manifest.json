@@ -1,0 +1,184 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Benford's Law Test",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Tests whether amounts follow Benford's law (first, first-two or second digit), overall or per group, with chi-square, MAD conformity and flagged records for follow-up.",
+    "category": "Analytics",
+    "subcategory": "Audit",
+    "tags": [
+        "benford",
+        "fraud",
+        "audit",
+        "forensic",
+        "anomaly",
+        "digits",
+        "data quality",
+        "visokio-agents"
+    ],
+    "introductoryText": "In many real-world sets of amounts (invoices, expenses, payments, claims, populations) about 30% of values start with 1 and under 5% with 9: **Benford's law**. Invented or manipulated figures usually do not follow it, so a deviation is a well-established *screening* signal for auditors and fraud teams. It is not proof: some data legitimately does not follow Benford (prices set by policy, capped amounts, assigned numbers).\n\n- **First digit** test (1 to 9), **first two digits** (10 to 99, sharper, needs more data) or **second digit** (0 to 9)\n- Overall or **per group**: department, supplier, employee, cost centre\n- Per digit: observed vs expected share and a z-statistic (with continuity correction); over- and under-represented digits flagged\n- Per group: **chi-square** and p-value, **mean absolute deviation (MAD)** with Nigrini's conformity bands (*Close*, *Acceptable*, *Marginally acceptable*, *Nonconformity*). Because MAD bands assume large samples, a group is only called *Nonconformity* when the chi-square test is also significant; the expected MAD for a conforming group of that size is shown for comparison\n- The **records** behind the over-represented digits of nonconforming groups, ready for follow-up\n\nAmounts below a minimum (default 10) are ignored, as is usual for first-digit tests; negative amounts are tested on their absolute value. Pure Python: no packages needed.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "value_field",
+            "title": "Amount field",
+            "description": "The amounts to test, such as invoice or expense values.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Test separately for each (optional)",
+            "description": "For example Department, Supplier or Employee.",
+            "groupTitle": "Data",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "test",
+            "title": "Test",
+            "description": "Which digits to compare with Benford's law. First two digits is the finer test usually used in audit.",
+            "groupTitle": "Test",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "First digit (1-9)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FIRST",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "First two digits (10-99)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FIRST_TWO",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Second digit (0-9)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SECOND",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "FIRST"
+        },
+        {
+            "name": "min_value",
+            "title": "Ignore amounts below",
+            "description": "Small amounts distort first-digit tests; 10 is the usual floor.",
+            "groupTitle": "Test",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 10.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_records",
+            "title": "Minimum values per group",
+            "description": "Groups with fewer values get no conformity verdict.",
+            "groupTitle": "Test",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 1000000,
+            "mandatory": true,
+            "defaultValue": 100,
+            "showAsSlider": false
+        },
+        {
+            "name": "p_threshold",
+            "title": "Significance for nonconformity",
+            "description": "A group is only called nonconforming when its MAD is in the nonconformity band and the chi-square p-value is below this.",
+            "groupTitle": "Test",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1,
+            "mandatory": true,
+            "defaultValue": 0.01,
+            "showAsSlider": false
+        },
+        {
+            "name": "z_threshold",
+            "title": "Z threshold for flagging digits",
+            "description": "1.96 is about 95% confidence; 2.57 about 99%.",
+            "groupTitle": "Test",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 10,
+            "mandatory": true,
+            "defaultValue": 1.96,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "digits",
+            "label": "Digits",
+            "displayName": "Digit distribution",
+            "tooltip": "Per group and digit: count, observed and expected share, difference, z-statistic, flag."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Conformity summary",
+            "tooltip": "Per group: values tested, chi-square, p-value, MAD, conformity verdict, over-represented digits."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "flagged",
+            "label": "Flagged",
+            "displayName": "Flagged records",
+            "tooltip": "Input records whose tested digits are over-represented in a nonconforming group."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

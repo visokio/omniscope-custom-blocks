@@ -1,0 +1,182 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Customer Lifetime Value",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Historical and predictive customer lifetime value from orders (BG/NBD and Gamma-Gamma), with probability active, discounting and a holdout check.",
+    "category": "Analytics",
+    "subcategory": "Marketing",
+    "tags": [
+        "CLV",
+        "customer lifetime value",
+        "BG/NBD",
+        "Gamma-Gamma",
+        "churn",
+        "retention",
+        "customer analytics",
+        "RFM",
+        "visokio-agents"
+    ],
+    "introductoryText": "**Customer lifetime value** from order history: what each customer has spent, how likely they are to still be active, and what they are expected to spend in the coming months.\n\nThe prediction uses the standard *buy till you die* models used in retail and subscription-free businesses:\n\n- **BG/NBD** for how often each customer buys and the probability they are still active (a customer who used to buy weekly and has not bought for three months is probably gone; one who buys twice a year probably is not)\n- **Gamma-Gamma** for the expected value per order, shrinking each customer's average towards the overall average when they have few orders\n\nPredicted CLV = expected purchases in each future month x expected order value x margin, discounted at the annual rate you choose.\n\nOptional **holdout check**: the model is fitted again on data up to N months before the end and its predicted purchases are compared with what customers actually did, so you can see how far to trust it.\n\nPurchases are counted per customer per day; days with zero or negative net value (refunds) are dropped. Needs the *scipy* package, which is installed with the block.",
+    "dependencies": "scipy",
+    "options": [
+        {
+            "name": "customer_field",
+            "title": "Customer field",
+            "description": "Identifies a customer.",
+            "groupTitle": "Orders",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "date_field",
+            "title": "Order date field",
+            "description": "Date of each order.",
+            "groupTitle": "Orders",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Order value field",
+            "description": "Revenue or profit per order line.",
+            "groupTitle": "Orders",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Summarise by (optional)",
+            "description": "For example acquisition channel or region (taken from each customer's first order).",
+            "groupTitle": "Orders",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "as_of",
+            "title": "As of date (optional)",
+            "description": "Default: the latest order date.",
+            "groupTitle": "Prediction",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "horizon_months",
+            "title": "Horizon (months)",
+            "description": "How far ahead the predicted value runs.",
+            "groupTitle": "Prediction",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 240,
+            "mandatory": true,
+            "defaultValue": 12,
+            "showAsSlider": false
+        },
+        {
+            "name": "discount_rate",
+            "title": "Annual discount rate",
+            "description": "For example 0.1 for 10%.",
+            "groupTitle": "Prediction",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1,
+            "mandatory": true,
+            "defaultValue": 0.1,
+            "showAsSlider": false
+        },
+        {
+            "name": "margin",
+            "title": "Margin",
+            "description": "Share of order value that is profit; 1 = predict revenue.",
+            "groupTitle": "Prediction",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 10,
+            "mandatory": true,
+            "defaultValue": 1.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "holdout_months",
+            "title": "Holdout check (months)",
+            "description": "0 = no check.",
+            "groupTitle": "Prediction",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 60,
+            "mandatory": false,
+            "defaultValue": 0,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "customers",
+            "label": "Customers",
+            "displayName": "Customers",
+            "tooltip": "Per customer: history, probability active, status, expected purchases and order value, predicted CLV, CLV tier."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Overall and per group: customers, active share, revenue to date, predicted CLV total, average and concentration."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "model",
+            "label": "Model",
+            "displayName": "Model",
+            "tooltip": "Fitted BG/NBD and Gamma-Gamma parameters, checks and holdout accuracy."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "validation",
+            "label": "Holdout",
+            "displayName": "Holdout check",
+            "tooltip": "Actual vs predicted purchases in the holdout period by number of earlier repeat purchases."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

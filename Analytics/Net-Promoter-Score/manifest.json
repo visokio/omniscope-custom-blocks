@@ -1,0 +1,192 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Net Promoter Score",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Net Promoter Score per group and period from 0-10 answers, with margin of error, confidence interval, weights, significance vs the rest and vs the previous period.",
+    "category": "Analytics",
+    "subcategory": "Marketing",
+    "tags": [
+        "NPS",
+        "net promoter score",
+        "survey",
+        "customer experience",
+        "CX",
+        "voice of the customer",
+        "confidence interval",
+        "visokio-agents"
+    ],
+    "introductoryText": "Calculates **Net Promoter Score** from 0 to 10 \"how likely are you to recommend\" answers, with the statistics usually left out of NPS dashboards.\n\n- Promoters (9-10), passives (7-8) and detractors (0-6): counts and shares\n- **NPS** = % promoters - % detractors, from -100 to +100\n- **Margin of error and confidence interval**, so small groups are not over-read\n- Optional **survey weights** (the effective sample size is used for the error)\n- Per **group** (region, store, channel, agent): whether the group is significantly higher or lower than the rest\n- Per **period** (month, quarter, year): the change from the previous period and whether it is significant\n\nBlank answers and values that are not whole numbers from 0 to 10 (such as *Don't know*) are skipped and counted in the status message.\n\nOutputs: the NPS table, the 0-10 score distribution per group, and the responses with their **NPS Category** and **NPS Points** (+100 / 0 / -100; the average of the points is the NPS, so it can be re-aggregated in any Report).",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "score_field",
+            "title": "Score field (0-10)",
+            "description": "The answer to the likelihood-to-recommend question, from 0 to 10.",
+            "groupTitle": "Survey",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Group by (optional)",
+            "description": "For example Region or Channel.",
+            "groupTitle": "Survey",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "weight_field",
+            "title": "Weight field (optional)",
+            "description": "Survey weights; leave empty for unweighted.",
+            "groupTitle": "Survey",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "date_field",
+            "title": "Date field (optional)",
+            "description": "Needed to report by period.",
+            "groupTitle": "Reporting",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "period",
+            "title": "Report by period",
+            "description": "Adds a row per period, compared with the period before. Needs a date field.",
+            "groupTitle": "Reporting",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "None",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Month",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Quarter",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "QUARTER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Year",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "YEAR",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "NONE"
+        },
+        {
+            "name": "confidence",
+            "title": "Confidence level",
+            "description": "For the margin of error and significance tests.",
+            "groupTitle": "Reporting",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.5,
+            "numMax": 0.999,
+            "mandatory": true,
+            "defaultValue": 0.95,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_responses",
+            "title": "Small sample below",
+            "description": "Rows with fewer responses are flagged.",
+            "groupTitle": "Reporting",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 30,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "nps",
+            "label": "NPS",
+            "displayName": "NPS",
+            "tooltip": "Per group (and period): counts, shares, NPS, standard error, margin of error, confidence interval, vs rest, change vs previous period."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "distribution",
+            "label": "Distribution",
+            "displayName": "Score distribution",
+            "tooltip": "Per group: responses and share for each score 0 to 10."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "responses",
+            "label": "Responses",
+            "displayName": "Responses",
+            "tooltip": "The input with NPS Category and NPS Points (+100 / 0 / -100)."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

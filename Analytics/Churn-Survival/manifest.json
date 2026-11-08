@@ -1,0 +1,212 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Churn Survival Curves",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAD9ElEQVR42u2dT0tVQRiHnwktrYQ2LloEukgwCAoXShTt76JNCH0HQaiVHyJaBH6KqMiFuGoVolC0aVULBVfhIkFDXeTbolFC9HrOnHPmztzze5beuffc5nH+/N6ZEIQQQgghhBBCtAlXpJGZjQIdYML/6Duw7JzbVhcmLtDLmweGT720D7yWxN5yqUCbzhny8D/rqAvTF3g78DWRiMChwNdEIgKFBAoJFBLYjww0+eFmdgt4ATwCrgV+zD7wDXgL/OzS7hDYcM7tSGA98jq+0+vYqd4HngFLwGaXdkdmtgZ8cM790RRabeTVJe+YQeAJMHLBv+eBb6c1sAIvGsqIg8C9Au0emNkNCQznYYPf+WaBNg4Yk8A0uVyw3ZAEhvNJG/y8Bb4CDtS9mQp0zm0BTyUx4xzonFs2s4mSQX6swNr1C/gCTElfw5UYPxKfl8iPnwuI+Q1sFGg3bmYhXzuris5AH/9yTlUYpdlUdFTMPr9fsqjoSGB3kq/oSOAFyziJV3RyFRgzngxJYP1sAobIU6Df4q9KX94xYsmvUTNtXsuzFejz2Tsz+wiMA1cCPmaczCs6OQqc9BWbouwBa8Cirwyd4Cs1dVd0olZychR4NWDUPAbmzGzWObdS8r0hFZ1olZw2rR3XgTf+vk6MzWGUSk7bFv/rwFzE5zVeyWnj7m065l6Lhis5qQncjfCM/68lxqjoDLVJ4Hrk522SeUUnNYGLftsfK0vukHlFJ6kY4ZzbMrNZ4I3fcMSg6YrORTmyUm5MLgc651bM7I7fLc6UFDnpc2KZ51Wp6BSp5BTJkcG5Mckg7ysmC2XfV/BOTbfp9GvJ50E9pbjj3GjAe8WIfCmdGyUwscmnbG6UwGr0/OKyBKaVI43u/4FVAhPPkatl48SANCSRI4/4d2a5lH0OzHAUVr0Z0F9BPvPp9Gvs52oNzJw2jsCyd2qOOfdujQTGJeROzTFV7tZoCk2EmHdrJLBBiXMSmDfTElg/uxGfNSKB9bPetmmg3wRGvVMjgTXj89lsmyT2XQ6seKfmJOxT8m6NBNY/EhdC31/lbo2mUCGBEigkUEigaOsuNBKh54qnqXTOKIHhVDlXPE3wOaOm0HQIOmeUwPQkzklg3kxLYHV2c/miEng267k8WwLPplfninv+2RJYhR6dK+4Bs2WzoHLg+RLrOFdUkE9gJC6k/B01hWaOBEqgkEAhgRIoJFBIoJBACRQSKCRQFMJd1MDMXqqbonIIfAeWnXPbGoH5cQW4C8yb2agE5ssw0JHAvLldh8AD9WPeu9Af6qae8aMOgcvAvvoyOvu+76vFCB8lRv2COkHYnzoVDcUIIYQQQgghhBDt4i8wMid7OmljugAAAABJRU5ErkJggg==",
+    "description": "Kaplan-Meier retention curves with censoring, confidence bands, median lifetime, milestone retention and log-rank tests between groups.",
+    "category": "Analytics",
+    "subcategory": "Statistics",
+    "tags": [
+        "survival analysis",
+        "Kaplan-Meier",
+        "churn",
+        "retention",
+        "log-rank",
+        "censoring",
+        "customer lifetime",
+        "subscriptions",
+        "visokio-agents"
+    ],
+    "introductoryText": "**Kaplan-Meier retention curves** from start and end dates: customers, subscriptions, contracts, members, employees, machines. Customers who are still active are counted correctly as *censored* instead of being dropped or treated as churned.\n\n- **Retention** at each point in time with a **confidence band** (Greenwood variance, log-log interval), with the numbers at risk, ended and censored\n- **Median lifetime** with its confidence interval, **retention at milestones** you choose (for example 3, 6, 12 and 24 months) and the **restricted mean lifetime** up to a common horizon\n- Per **group** (plan, channel, region, cohort): **log-rank tests** across all groups and of each group against the rest\n\nUse start and end dates (an empty end date means still active at the *as of* date), or a duration field with an optional event flag. An optional event field marks which endings count (for example only cancellations, not upgrades).\n\nPython, no extra packages. The public R *Survival* block offers Kaplan-Meier and Fleming-Harrington curves; this block adds the churn-oriented summaries and log-rank tests.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "start_field",
+            "title": "Start date",
+            "description": "Date each customer or subscription started.",
+            "groupTitle": "Lifetimes",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "end_field",
+            "title": "End date",
+            "description": "Empty = still active.",
+            "groupTitle": "Lifetimes",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "duration_field",
+            "title": "Or a duration field",
+            "description": "Instead of dates, in the unit below.",
+            "groupTitle": "Lifetimes",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "event_field",
+            "title": "Event field (optional)",
+            "description": "Yes / true / 1 = ended (churned). Other values are censored.",
+            "groupTitle": "Lifetimes",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_field",
+            "title": "Compare groups (optional)",
+            "description": "For example Plan or Channel.",
+            "groupTitle": "Lifetimes",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "as_of",
+            "title": "As of date (optional)",
+            "description": "Default: the latest date in the data.",
+            "groupTitle": "Lifetimes",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "unit",
+            "title": "Time unit",
+            "description": "Unit for lifetimes, the curve and the milestones.",
+            "groupTitle": "Reporting",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Months",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Weeks",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WEEK",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Days",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DAY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Years",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "YEAR",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MONTH"
+        },
+        {
+            "name": "milestones",
+            "title": "Retention milestones",
+            "description": "In the time unit, for example: 3, 6, 12, 24",
+            "groupTitle": "Reporting",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "3, 6, 12, 24"
+        },
+        {
+            "name": "confidence",
+            "title": "Confidence level",
+            "description": null,
+            "groupTitle": "Reporting",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.5,
+            "numMax": 0.999,
+            "mandatory": true,
+            "defaultValue": 0.95,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "curve",
+            "label": "Curve",
+            "displayName": "Curve",
+            "tooltip": "Per group and time: at risk, ended, censored, retention, confidence band, churned share."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Per group: customers, ended, censored, median lifetime and CI, retention at milestones, restricted mean, log-rank vs rest."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "tests",
+            "label": "Tests",
+            "displayName": "Tests",
+            "tooltip": "Log-rank test across all groups."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

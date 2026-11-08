@@ -1,0 +1,261 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Sample Size Calculator",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Sample size and power for A/B tests on proportions or means and for survey margins of error, per scenario, with days needed and power curves.",
+    "category": "Analytics",
+    "subcategory": "Statistics",
+    "tags": [
+        "sample size",
+        "power analysis",
+        "A/B testing",
+        "experiment design",
+        "survey",
+        "margin of error",
+        "statistics",
+        "visokio-agents"
+    ],
+    "introductoryText": "Works out **how many observations an A/B test or survey needs** before you run it.\n\n- **Proportion** (two groups): conversion or response rates; give the baseline rate and the smallest lift worth detecting, relative (10%) or absolute (2 points)\n- **Mean** (two groups): averages such as basket value; give the standard deviation and the smallest difference\n- **Survey** (one sample): estimate a proportion to a margin of error, with an optional finite population (a staff survey of 1,200 needs fewer responses)\n\nSignificance level, power, one or two-sided tests and unequal group sizes are options. With **daily traffic**, the block also says how many days the test needs to run.\n\nEach row of the optional input is a **scenario** (columns matched by name: Scenario, Type, Baseline, Effect, Relative Effect, SD, Margin, Population, Alpha, Power, Sides, Ratio, Daily Traffic); anything a row does not give comes from the options. Without an input, the options describe one scenario.\n\nOutputs: sample sizes per scenario, and a **power curve** for each two-group scenario. Pair with the A/B Test block to analyse the results afterwards.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "test_type",
+            "title": "Type",
+            "description": null,
+            "groupTitle": "Scenario defaults",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Proportion (two groups)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PROPORTION",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Mean (two groups)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MEAN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Survey margin of error",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SURVEY",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "PROPORTION"
+        },
+        {
+            "name": "baseline",
+            "title": "Baseline (rate or mean)",
+            "description": "For example 0.05 for a 5% conversion rate.",
+            "groupTitle": "Scenario defaults",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 0.05,
+            "showAsSlider": false
+        },
+        {
+            "name": "effect",
+            "title": "Smallest effect to detect",
+            "description": "Relative (0.1 = 10% lift) or absolute.",
+            "groupTitle": "Scenario defaults",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 0.1,
+            "showAsSlider": false
+        },
+        {
+            "name": "relative_effect",
+            "title": "Effect is relative to the baseline",
+            "description": null,
+            "groupTitle": "Scenario defaults",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "sd",
+            "title": "Standard deviation (means)",
+            "description": null,
+            "groupTitle": "Scenario defaults",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 1.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "margin",
+            "title": "Margin of error (survey)",
+            "description": "For example 0.03 for plus or minus 3 points.",
+            "groupTitle": "Scenario defaults",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.0001,
+            "numMax": 0.5,
+            "mandatory": false,
+            "defaultValue": 0.03,
+            "showAsSlider": false
+        },
+        {
+            "name": "population",
+            "title": "Population size (survey, optional)",
+            "description": "0 = very large.",
+            "groupTitle": "Scenario defaults",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "daily_traffic",
+            "title": "Daily traffic (optional)",
+            "description": "Visitors or customers per day across both groups.",
+            "groupTitle": "Scenario defaults",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "alpha",
+            "title": "Significance level",
+            "description": "Chance of calling a difference real when it is not; 0.05 is usual.",
+            "groupTitle": "Test settings",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.0001,
+            "numMax": 0.5,
+            "mandatory": true,
+            "defaultValue": 0.05,
+            "showAsSlider": false
+        },
+        {
+            "name": "power",
+            "title": "Power",
+            "description": "Chance of detecting the effect if it is there; 0.8 is usual.",
+            "groupTitle": "Test settings",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.5,
+            "numMax": 0.9999,
+            "mandatory": true,
+            "defaultValue": 0.8,
+            "showAsSlider": false
+        },
+        {
+            "name": "sides",
+            "title": "Test",
+            "description": "Two-sided detects a change in either direction; one-sided only the expected direction, and needs fewer records.",
+            "groupTitle": "Test settings",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Two-sided",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "2",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "One-sided",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "1",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "2"
+        },
+        {
+            "name": "ratio",
+            "title": "Group 2 size relative to group 1",
+            "description": "1 = equal groups.",
+            "groupTitle": "Test settings",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.01,
+            "numMax": 100,
+            "mandatory": true,
+            "defaultValue": 1.0,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "sizes",
+            "label": "Sample sizes",
+            "displayName": "Sample sizes",
+            "tooltip": "Per scenario: inputs, absolute and relative effect, sample size per group and total, days needed."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "power_curve",
+            "label": "Power curve",
+            "displayName": "Power curve",
+            "tooltip": "Per two-group scenario: power at sample sizes from 10% to 200% of the required size."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

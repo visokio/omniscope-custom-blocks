@@ -1,0 +1,159 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Cost Allocation",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEBUlEQVR42u2dS4scVRiGn8/MJSaZMePKe3aGbARduYm40FG8IaMu3Lh2ERQclATcZ6MEMY4E8hOEYARNSBRRBJeCBMyICzMXEQlOdxJpJpHXRddGZWq6a6pOVXW/z266mOm3v6dPnTp1Tp0BY4wxxhhjjDHjRIzih5I0CdwDzGYvdYH1iLhp5c0UNiHpWUkfS7okaVP/ZzM7tiTpGUkTrlz94mYkHZX0m4ZnXdI7kva5kvXIe0XSmnbOqqSXXNF04qYlnVb5nJI07QpXf8r8UtVxUdKMK12NvClJ51U9X7klViPwtNJxyhUv/4IlNQseyJfU7wE/ZQPzlKwChyLiepPrc1sLvmRHapAHcB/wulvgDu+wACvAXTVFWAceiIi/3QKL8VSN8sha/hM+hRbnOWdot8DHGpDhcfeBxfq/SeAGMFlzlE1gb0Tccgscvv+ZbECOqZquglsvcNZZRmMcaFoqsOssvojxRUxt36z+AqSfGxBluany2tAHftOADF+7DyzOZ87Q0j4w6wcngCvA3TVFWAMO+GZ28X7wFvBBjRFONFle41tg1gr30Z/QvTfxW6/Qn9C94T5wZ63wOvBmDW/9RtPltYps3WYqllzx8gVOSTrnZYXtljiTLb6tigt+VqJ6idMVnU6XJE25wulELkhaKUHcFUkvuqI1DTEkvV3wKaU1SYuS9rqS9YvcJelpSScldXKkdSR9KGle0i5XrpkycwWO2ueNERSobW4MjNRn9pIKCzQWaCzQAo0FGgs0FmiBpkWUeldC0oPAceBJwBvm/JtrwAXgWEQsN05gJu97YM6ucvkTeLQsiWWeQo9b3kDMZbVqXAvs0ODn6BpGNyLuaJpA2csQhS9pVsRXoR5GGAs0hUm28XeqmfCmzMinuiZwC/Qp1FigsUALNBZoLNBYoAUaCzQWaCzQAs1YCewWPFY2Y5WjTIEXCx4rm7HKMdB8oKT7gRPAPMXWey7kzI91gDPA0Yj4fZsc+4EXgIPAVpvxbAA9YPd/Xu8BG5Le2+L3esCPwOcRca0NOWCARU2ZvB+AOyv+xv4CPBIR3ZyivQXsGeBvzQGHgQPZz78C39Jfk7kdV+nvUthrco5hBH4CpPonwR9FxJEtcrwGPJQox3cRcabJOYbpA+cT9huv5hw7mDDHwy3IMbDAlM845J2mU25At6cFOTwO9DjQWKCxQAs0Fmgs0FigBRoLNBZoLNACzegIXEmYJ29T8o2EOXotyDGwwE8TBj6fc+xSwhyXW5BjYIHvAssJwl4FFnOOfwH8kSDHX8DZFuQABtzoR9Is8D7wMrC/5KBd4BywGBGr2+TYDTxPf0nD7RWcri4DZyOi04YcxhhjjDHGGGOMMcYYMy78A0u7QO/KN266AAAAAElFTkSuQmCC",
+    "description": "Apportions cost pools to departments, products or customers by drivers, with penny-exact largest-remainder rounding and a list of unallocated pools.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "cost allocation",
+        "apportionment",
+        "overheads",
+        "activity-based costing",
+        "recharges",
+        "management accounts",
+        "rounding",
+        "visokio-agents"
+    ],
+    "introductoryText": "Apportions **cost pools** (IT, facilities, HR, finance) to **receivers** (departments, products, customers, sites) in proportion to a **driver** (headcount, floor area, users, tickets, revenue).\n\n- Each pool names its own driver; a default driver can apply to pools without one\n- Driver values in **long form** (receiver, driver, value) or **wide form** (one numeric column per driver)\n- **Penny-exact rounding** (largest-remainder method): the allocations of every pool add up to the pool exactly, at the number of decimals you choose\n- Pools that cannot be allocated (no driver values, or an amount that is not a number) are listed with the reason\n\nOutputs: every allocation with share and driver value, a summary per receiver (total, from each pool, share of all costs), and the unallocated pools.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "pool_field",
+            "title": "Pool name",
+            "description": "Names each cost pool, such as IT or Facilities.",
+            "groupTitle": "Cost pools (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "amount_field",
+            "title": "Amount",
+            "description": "The cost of each pool to be shared out.",
+            "groupTitle": "Cost pools (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "pool_driver_field",
+            "title": "Driver for the pool (optional)",
+            "description": "Which driver shares out this pool, such as Headcount or Floor Area.",
+            "groupTitle": "Cost pools (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "receiver_field",
+            "title": "Receiver",
+            "description": "The department, product or customer receiving a share.",
+            "groupTitle": "Drivers (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "driver_field",
+            "title": "Driver name (long form)",
+            "description": "Leave empty for wide form (one column per driver).",
+            "groupTitle": "Drivers (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Driver value (long form)",
+            "description": "Size of the driver for each receiver, when drivers come one per row.",
+            "groupTitle": "Drivers (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "default_driver",
+            "title": "Default driver",
+            "description": "For pools without one.",
+            "groupTitle": "Options",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "decimals",
+            "title": "Decimals",
+            "description": "2 = to the penny.",
+            "groupTitle": "Options",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 6,
+            "mandatory": true,
+            "defaultValue": 2,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "allocations",
+            "label": "Allocations",
+            "displayName": "Allocations",
+            "tooltip": "Per pool and receiver: driver, driver value, share, allocated amount."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "receivers",
+            "label": "Receivers",
+            "displayName": "Receivers",
+            "tooltip": "Per receiver: total allocated, from each pool, share of all costs."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "unallocated",
+            "label": "Unallocated",
+            "displayName": "Unallocated",
+            "tooltip": "Pools that could not be allocated, with the reason."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

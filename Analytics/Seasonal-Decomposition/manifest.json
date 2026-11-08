@@ -1,0 +1,208 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Seasonal Decomposition",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAHTklEQVR42u2dW4xV1RnHfx9CrIAN1gvU6Chqqg7RmCYNFi/lwUTjXRMNUaIPfWiIvvQBjTExNr4VHnqB2hrFakz0wTiSqi8Sgy2iqEGKCgYFFUWlUeMFBS0z/z6chR2GM+estW9n73O+f0JmhnP2Wvv7fvtb+1uXvTa4XC6Xy+VyuVwuV5LMXVAPSToD+Hn4c52Z7XSv1BvYmZKWSHpM0ic6WPslrZQ0zT3VDGCTaYU3oT0EBiwEfhV+zs5QzBgwt1NzOtVdXStgEzUFWAA4wIYAS5YDrDewMWC9A2xuhN3brTvhAGvWJAaNAn8DfutZaDOAAewG1gLPA8+Y2fsxB9kAATsFuAg4PwA7scen9B/gZWAdsAbYaGZKLcQcWLOA9S3AQQHWNwAHFVhjATqwhgF0YA0D6MAaBtCBNQygA2sYQAfWMIAOrGEAHVjDAEo6CbiUeg7+rjWzrQygLALcNOAPwG+AwxxY8wCuAG5xYA0EKGkIeJfW4hoHVkN1m5FfUCI8B1YBQAfWcIDraa2MmuLAGipJKyKXgX8Slo0vCetNXDUBOC08aLHfgTW7Iz9Ea9SFMMrxlrvP5XK5XC5X7ZOYjBnsCcDJwAnhvz4E3jOzD/skQ/8xcBpwPHAM8BnwMfCOmX3RVKOGJN0laXOHPuPm8J2hJkKTdKukZyV9P4l9+yW9IOlOSSc2xbCjJP1e0l7Fa284ZlYD7JsuaamkT5Wm7yU9LGlenY27UNIuZdduSRfV2L55kt5QPv1X0h8lHVk3424LJ6cCDLythvCWSNqn4rRT0sI6GGaSlqt4LZdkNYF3u8rRfkl3S5rSS+P+rPL0pxrAW67yNSJpei+Mu7MC4+7oIbylqk4bJB1bpXGLJI1VYNiYpEU9gHe9pFFVq7eydqks0bizgA3AEQmH/RN4Ovx+GXBhwrF7gflm9npF8LLYtxVYDewC5tBaKzs/Q/U7gIVm9kFZxs2QtDXhqvpI0sVtyrkkfBarLZJmVABvRqgrVp9LWtwuEZF0jqTVGSLxndI6/pL+nnAiGyXN6VDWnPCdWD1YAcAHEy+qkyPKvErSx4kQt0k6rmjjrkg4gZclHRU5cvNKQrlXlAgvxb7XUpIOST+V9HwixFcL6/BLmpUwyrIj5eqRNDscE6NdZQy5Jdr3XqeWpUMdUyXdnwhxjaTDizDwvsgKv5I0nKH8YUlfR9axqgSAqyLr/jrPeGYY+PhdIsS/FDGzEJtS35ijnhsTjLq4QHiXJNS7uAd9zNFcMzahzxejByqMhPfDPFwR00I7q7KvzfhxrBaVDbCRDq36gmlT/11VAIxpQnvVpDWuyW5zHitLbUJDJZ1WZv+1h0lFI5OmCecyRdKjeTY9j6mk3crs0rbF7/duS8/8G5rTG8K/oZKN6uuBg177tyqD+nroru/V74PnRclqDrGvp68GJRKvq2iCdayo0RbXoRD7egnHoEDs60VUgwLxnhLgLavLMsZBgdjXC4kHBWJfL+UfFIgzw+rmbxPAfReeT5jlHqwPyL5+nK3RHfkMMPv6gVKXy+VyNeMeGPbUPjBj/qaZvVvT++ZcYF7dz7MygGEq5hrgnAkfPWdmz9QInAFX8f/tww5oHbC6KRumW8FOORu4Fpg5yVceNrPNBUTKFjPbkRPeNbQ2tG2n9cDIwLy5pUPUTdQeYJmZfZNQ9mHA1cAvJ3y0KTj5m4LhNQqiVRB1E7XJzB6JLHs6cDNwaocL4onYqE6AVxjECbnANuDtIi+KPC/+OILWjPe5GQ7v2pRKOgb4NRDzJNC/g6P3dIF3NXBe4rluAB5PdXoH/3wJbAReKGI3J6so6pKaUklnAIuBHyWW2TYaM0RerkiM9M8osAV4CdiWNSqtwqiLakolnRuMz7oFx0HRmCPykiMxh38yR6VVGHUdm9KQrFxLtufL20Yj8HrOyIuOxIL8cyAq15nZ9sIASrqc1vuSUh14dpfMdA+wDFCXZCWrdhP3jqf14eeCVIgJGXiq1prZU92+NDUC3txEeD+k95K209qOcbKrciZwA62tGo+OKHsfrd0cYp+JiIU3Mu7vbhAXBL+MAGeV0Cod0EJJXUeGYl78MZwSdeOTiADxCeCmDsedHln+Z8AqM9tdYHM+MZpGEiCeSvlvcBum9eqjXACTou6QNtpss6RNOZuY7cBDZvbtuDK352y6DrmfmZkSIM5O9M+aMJI0H/hJZf3A0ITekqcjHe4TSzNGzIZQx2iByVXHbkEB3Y5J/RPK/lnIVIfp/Eq/ld2a0DxJTNJQVnD0TQnGjwH/MLN/FTiUF92nKwBiV/+EJ39/MUlURiUxKd2I3NMuYel6jJP3AY+kvlwkIhpTO+RZICYN742r57Rx+UC0fytdExPZlP6QrOSoo100ZpomSoSY1CpVcg8sAWKnpvSgZCVnPYVN1EZATI66xgLscE99EXhysmSl1woQrwQu6HXU9Rxg0RHi5+1yuVwul8vlcrlcLpfL5XK5XP2t/wGyhZMzVR1DXwAAAABJRU5ErkJggg==",
+    "description": "Splits time series into trend, seasonal and residual components (additive or multiplicative) with seasonally adjusted values, seasonal indices and strength measures.",
+    "category": "Analytics",
+    "subcategory": "Time Series",
+    "tags": [
+        "seasonality",
+        "decomposition",
+        "trend",
+        "seasonally adjusted",
+        "time series",
+        "visokio-agents"
+    ],
+    "introductoryText": "Explains a time series rather than forecasting it: how much is **trend**, how much is the **seasonal** pattern that repeats every year (or week), and what is left over (**residual**: promotions, one-offs, noise).\n\n- Classical decomposition with a centred moving average, **additive** (seasonal effect in units) or **multiplicative** (seasonal effect in %)\n- **Seasonally adjusted** values: the series with the seasonal pattern removed, so month-on-month changes mean something\n- **Seasonal indices** per season (January to December, Q1 to Q4, Monday to Sunday) with the effect versus trend\n- Per series: **seasonality strength** and **trend strength** (0 to 1), peak and trough season, trend change over the period, residual spread\n- Several series at once (per category, store, region); duplicate dates are summed and missing periods interpolated (and flagged); the trend can be extended to the ends of the series\n\nNeeds at least two full seasons per series. Complements Omniscope's Time Series Forecast block: decompose to understand, forecast to plan.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "date_field",
+            "title": "Date field",
+            "description": "Date of each value.",
+            "groupTitle": "Series",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Value field",
+            "description": "The series to decompose, such as monthly sales.",
+            "groupTitle": "Series",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Series (optional)",
+            "description": "One decomposition per combination of these fields, such as Category.",
+            "groupTitle": "Series",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "frequency",
+            "title": "Data frequency",
+            "description": "Spacing of the data, which sets the default season length.",
+            "groupTitle": "Series",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Monthly",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Quarterly",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "QUARTER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Weekly",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WEEK",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Daily",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DAY",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MONTH"
+        },
+        {
+            "name": "model",
+            "title": "Model",
+            "description": "Multiplicative when the seasonal swing grows with the level; additive when it stays the same size.",
+            "groupTitle": "Decomposition",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Additive (seasonal effect in units)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ADDITIVE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Multiplicative (seasonal effect in %)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MULTIPLICATIVE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "ADDITIVE"
+        },
+        {
+            "name": "season_length",
+            "title": "Season length (optional)",
+            "description": "Periods per cycle. 0 = automatic: 12 for monthly, 4 quarterly, 52 weekly, 7 daily.",
+            "groupTitle": "Decomposition",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1000,
+            "mandatory": false,
+            "defaultValue": 0,
+            "showAsSlider": false
+        },
+        {
+            "name": "extend_trend",
+            "title": "Extend the trend to the ends",
+            "description": "Fill the first and last half-season of the trend with a straight-line continuation.",
+            "groupTitle": "Decomposition",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "components",
+            "label": "Components",
+            "displayName": "Components",
+            "tooltip": "One row per series and period: value, trend, seasonal, residual, seasonally adjusted, interpolated flag."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "indices",
+            "label": "Indices",
+            "displayName": "Seasonal indices",
+            "tooltip": "One row per series and season: seasonal index and effect versus trend."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Per series: seasonality and trend strength, peak and trough season, trend change, residual spread."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}
