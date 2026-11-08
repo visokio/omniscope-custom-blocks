@@ -1,0 +1,15 @@
+{
+  "_comment": "Canned responses for https://www.example.com/: path -> file, or a redirect, or a status. Paths not listed are 404.",
+  "/": {"file": "index.html"},
+  "/robots.txt": {"file": "robots.txt", "type": "text/plain"},
+  "/about/": {"file": "about/index.html"},
+  "/about/team.html": {"file": "about/team.html"},
+  "/products/index.html": {"file": "products/index.html"},
+  "/products/pots.html": {"file": "products/pots.html"},
+  "/products/tools.html": {"file": "products/tools.html"},
+  "/products/deep/spades.html": {"file": "products/deep/spades.html"},
+  "/products/catalogue.pdf": {"type": "application/pdf", "body": "%PDF-1.4 not a real PDF"},
+  "/contact": {"redirect": "/contact/"},
+  "/contact/": {"file": "contact/index.html"},
+  "/private/stock.html": {"file": "private/stock.html"}
+}
