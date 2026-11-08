@@ -11,22 +11,25 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": null,
-    "description": "Executes a SQL query on a Snowflake database.",
+    "icon": "data:image/png;base64,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",
+    "description": "Runs a SQL query on Snowflake, signing in with a password or a key pair, and outputs the result.",
     "category": "Inputs",
     "subcategory": "Databases",
     "tags": [
         "snowflake",
         "database",
-        "sql"
+        "sql",
+        "query",
+        "key-pair",
+        "connector"
     ],
-    "introductoryText": "# Snowflake Custom SQL Executor\n\nUse this block to connect and execute SQL queries on a Snowflake database. Provide the necessary connection details and SQL statement.\n\nThe data is retrieved in full (in memory). For better performance please user the core **Database Input block* (select *Snowflake* in the connection options).",
+    "introductoryText": "Runs a SQL query on Snowflake and brings the result into the workflow. The whole result is read into memory. The core **Database** block also connects to Snowflake (choose Snowflake as the connection) and is the better choice for large tables; this block is a short Python script you can open and adapt, for example to set session parameters or reshape the result.\n\n**How to set it up**\n\n1. Enter the **Account identifier** (the part of your Snowflake address before `.snowflakecomputing.com`, for example `myorg-myaccount`) and the **User**.\n2. Sign in with a **Password**, or with a key pair: the path of the **Private key file** (PEM, PKCS#8) on the Omniscope server and, if the key is encrypted, its **Private key password**. Snowflake accounts that block password sign-in need the key pair. The key file wins when both are given.\n3. Optionally choose the **Warehouse**, **Database**, **Schema** and **Role**; empty ones use the user's defaults.\n4. Type the **SQL query**. Name tables in full (`database.schema.table`) unless you set the database and schema.\n\nSnowflake returns unquoted column names in capitals. NUMBER values with decimals arrive as decimal numbers, TIMESTAMP_TZ and TIMESTAMP_LTZ in UTC, TIME as text.",
     "dependencies": "snowflake-connector-python",
     "options": [
         {
             "name": "account",
-            "title": "Snowflake Account",
-            "description": "The Snowflake account identifier (e.g. 'kkpgiqe-sf91461').",
+            "title": "Account identifier",
+            "description": "The part of your Snowflake address before .snowflakecomputing.com, for example myorg-myaccount (or a locator such as xy12345.eu-west-1).",
             "groupTitle": "Connection",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -35,8 +38,8 @@
         },
         {
             "name": "user",
-            "title": "Username",
-            "description": "The username for the Snowflake connection.",
+            "title": "User",
+            "description": "The Snowflake user to sign in as.",
             "groupTitle": "Connection",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -46,36 +49,76 @@
         {
             "name": "password",
             "title": "Password",
-            "description": "The password for the Snowflake user.",
+            "description": "The user's password. Leave empty when signing in with a private key file.",
             "groupTitle": "Connection",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
-            "mandatory": true
+            "mandatory": false
+        },
+        {
+            "name": "private_key_file",
+            "title": "Private key file",
+            "description": "For key-pair sign-in: the path, on the Omniscope server, of the user's private key (PEM, PKCS#8). Used instead of the password. Keep it outside any shared folder.",
+            "groupTitle": "Connection",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null,
+            "readOnly": true
+        },
+        {
+            "name": "private_key_password",
+            "title": "Private key password",
+            "description": "The passphrase of an encrypted private key. Leave empty for an unencrypted key.",
+            "groupTitle": "Connection",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": false
         },
         {
             "name": "warehouse",
             "title": "Warehouse",
-            "description": "The Snowflake warehouse to use. E.g. COMPUTE_WH",
-            "groupTitle": "Connection",
+            "description": "Optional. The warehouse that runs the query, for example COMPUTE_WH. Empty: the user's default warehouse.",
+            "groupTitle": "Context",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
-            "mandatory": true,
+            "mandatory": false,
             "defaultValue": null
         },
         {
             "name": "database",
             "title": "Database",
-            "description": "The Snowflake database name. E.g. SNOWFLAKE_SAMPLE_DATA",
-            "groupTitle": "Connection",
+            "description": "Optional. The database for table names that don't name one, for example SALES. Empty: the user's default.",
+            "groupTitle": "Context",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
-            "mandatory": true,
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "schema",
+            "title": "Schema",
+            "description": "Optional. The schema for table names that don't name one, for example PUBLIC.",
+            "groupTitle": "Context",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "role",
+            "title": "Role",
+            "description": "Optional. The role to use, for example ANALYST. Empty: the user's default role.",
+            "groupTitle": "Context",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
             "defaultValue": null
         },
         {
             "name": "custom_sql",
-            "title": "Custom SQL Query",
-            "description": "Custom SQL statement to execute. Use schema.table syntax",
+            "title": "SQL query",
+            "description": "The query to run, for example SELECT REGION, SUM(AMOUNT) AS AMOUNT FROM SALES.PUBLIC.ORDERS GROUP BY REGION.",
             "groupTitle": "Query",
             "width": "THREE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -87,9 +130,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "Query Results",
-            "displayName": "Query Results",
-            "tooltip": null
+            "label": "Results",
+            "displayName": "Query results",
+            "tooltip": "One record per row the query returns, with the query's columns as fields."
         }
     ],
     "docker": {

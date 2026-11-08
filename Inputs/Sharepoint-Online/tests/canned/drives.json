@@ -1,0 +1,16 @@
+{
+  "value": [
+    {
+      "id": "b!Docs0000000000000000000000000000000000000000000000000001",
+      "name": "Documents",
+      "driveType": "documentLibrary",
+      "webUrl": "https://contoso.sharepoint.com/sites/Finance/Shared%20Documents"
+    },
+    {
+      "id": "b!Board000000000000000000000000000000000000000000000000002",
+      "name": "Board papers",
+      "driveType": "documentLibrary",
+      "webUrl": "https://contoso.sharepoint.com/sites/Finance/Board%20papers"
+    }
+  ]
+}

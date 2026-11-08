@@ -1,0 +1,212 @@
+[
+ {
+  "_id": {
+   "$oid": "6650a1b2c3d4e5f6a7b8c900"
+  },
+  "name": "Amira Haddad",
+  "age": 19,
+  "course": "Data Science",
+  "fees": {
+   "$numberDecimal": "9250.00"
+  },
+  "enrolled": {
+   "$date": "2025-09-22T09:00:00Z"
+  },
+  "address": {
+   "town": "Leeds",
+   "postcode": "LS2"
+  },
+  "modules": [
+   "Statistics 1",
+   "Python for analysts"
+  ]
+ },
+ {
+  "_id": {
+   "$oid": "6650a1b2c3d4e5f6a7b8c901"
+  },
+  "name": "Ben Carter",
+  "age": 22,
+  "course": "Economics",
+  "fees": {
+   "$numberDecimal": "9250.00"
+  },
+  "enrolled": {
+   "$date": "2025-09-23T09:01:00Z"
+  },
+  "address": {
+   "town": "York",
+   "postcode": "YO1"
+  },
+  "modules": [
+   "Econometrics",
+   "Statistics 1"
+  ]
+ },
+ {
+  "_id": {
+   "$oid": "6650a1b2c3d4e5f6a7b8c902"
+  },
+  "name": "Chloe Evans",
+  "age": 20,
+  "course": "Data Science",
+  "fees": {
+   "$numberDecimal": "11400.50"
+  },
+  "enrolled": {
+   "$date": "2025-09-24T09:02:00Z"
+  },
+  "address": {
+   "town": "Leeds",
+   "postcode": "LS6"
+  },
+  "modules": [
+   "Statistics 1",
+   "Databases",
+   "Python for analysts"
+  ]
+ },
+ {
+  "_id": {
+   "$oid": "6650a1b2c3d4e5f6a7b8c903"
+  },
+  "name": "Daniel Kim",
+  "age": 24,
+  "course": "Geography",
+  "fees": {
+   "$numberDecimal": "9250.00"
+  },
+  "enrolled": {
+   "$date": "2025-09-25T09:03:00Z"
+  },
+  "address": {
+   "town": "Sheffield",
+   "postcode": "S10"
+  },
+  "modules": [
+   "GIS"
+  ]
+ },
+ {
+  "_id": {
+   "$oid": "6650a1b2c3d4e5f6a7b8c904"
+  },
+  "name": "Erin Walsh",
+  "age": 21,
+  "course": "Economics",
+  "fees": {
+   "$numberDecimal": "9250.00"
+  },
+  "enrolled": {
+   "$date": "2025-09-26T09:04:00Z"
+  },
+  "address": {
+   "town": "Leeds",
+   "postcode": "LS1"
+  },
+  "modules": [
+   "Econometrics"
+  ]
+ },
+ {
+  "_id": {
+   "$oid": "6650a1b2c3d4e5f6a7b8c905"
+  },
+  "name": "Farid Aziz",
+  "age": "unknown",
+  "course": "Data Science",
+  "fees": {
+   "$numberDecimal": "11400.50"
+  },
+  "enrolled": {
+   "$date": "2025-09-22T09:05:00Z"
+  },
+  "address": {
+   "town": "Bradford",
+   "postcode": "BD7"
+  },
+  "modules": [
+   "Databases"
+  ]
+ },
+ {
+  "_id": {
+   "$oid": "6650a1b2c3d4e5f6a7b8c906"
+  },
+  "name": "Grace Liu",
+  "age": 19,
+  "course": "Geography",
+  "fees": {
+   "$numberDecimal": "9250.00"
+  },
+  "enrolled": {
+   "$date": "2025-09-23T09:06:00Z"
+  },
+  "address": {
+   "town": "York",
+   "postcode": "YO10"
+  },
+  "modules": []
+ },
+ {
+  "_id": {
+   "$oid": "6650a1b2c3d4e5f6a7b8c907"
+  },
+  "name": "Harry Dunn",
+  "age": 23,
+  "course": "Data Science",
+  "fees": {
+   "$numberDecimal": "11400.50"
+  },
+  "enrolled": {
+   "$date": "2025-09-24T09:07:00Z"
+  },
+  "modules": [
+   "Statistics 1",
+   "Machine learning"
+  ]
+ },
+ {
+  "_id": {
+   "$oid": "6650a1b2c3d4e5f6a7b8c908"
+  },
+  "name": "Isla Murray",
+  "age": 20,
+  "course": "Economics",
+  "fees": {
+   "$numberDecimal": "9250.00"
+  },
+  "enrolled": {
+   "$date": "2025-09-25T09:08:00Z"
+  },
+  "address": {
+   "town": "Harrogate",
+   "postcode": "HG1"
+  },
+  "modules": [
+   "Statistics 1"
+  ]
+ },
+ {
+  "_id": {
+   "$oid": "6650a1b2c3d4e5f6a7b8c909"
+  },
+  "name": "Jamal Reid",
+  "age": 21,
+  "course": "Geography",
+  "fees": {
+   "$numberDecimal": "9250.00"
+  },
+  "enrolled": {
+   "$date": "2025-09-26T09:09:00Z"
+  },
+  "address": {
+   "town": "Leeds",
+   "postcode": "LS7"
+  },
+  "modules": [
+   "GIS",
+   "Statistics 1"
+  ]
+ }
+]

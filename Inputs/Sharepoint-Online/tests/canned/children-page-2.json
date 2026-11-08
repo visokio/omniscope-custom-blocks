@@ -1,0 +1,36 @@
+{
+  "value": [
+    {
+      "id": "01FILEHEADCOUNT00000000000000002",
+      "name": "headcount.csv",
+      "size": 70,
+      "lastModifiedDateTime": "2025-03-11T16:40:02Z",
+      "webUrl": "https://contoso.sharepoint.com/sites/Finance/Shared%20Documents/Reports/headcount.csv",
+      "file": {
+        "mimeType": "text/csv"
+      },
+      "parentReference": {
+        "driveType": "documentLibrary",
+        "driveId": "b!Docs0000000000000000000000000000000000000000000000000001",
+        "id": "01FOLDERREPORTS0000000000000000001",
+        "path": "/drives/b!Docs0000000000000000000000000000000000000000000000000001/root:/Reports"
+      }
+    },
+    {
+      "id": "01FILEBUDGET000000000000000000001",
+      "name": "budget-2025.csv",
+      "size": 201,
+      "lastModifiedDateTime": "2025-03-10T08:12:45Z",
+      "webUrl": "https://contoso.sharepoint.com/sites/Finance/Shared%20Documents/Reports/budget-2025.csv",
+      "file": {
+        "mimeType": "text/csv"
+      },
+      "parentReference": {
+        "driveType": "documentLibrary",
+        "driveId": "b!Docs0000000000000000000000000000000000000000000000000001",
+        "id": "01FOLDERREPORTS0000000000000000001",
+        "path": "/drives/b!Docs0000000000000000000000000000000000000000000000000001/root:/Reports"
+      }
+    }
+  ]
+}

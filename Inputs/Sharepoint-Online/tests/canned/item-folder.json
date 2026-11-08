@@ -1,0 +1,13 @@
+{
+  "id": "01FOLDERREPORTS0000000000000000001",
+  "name": "Reports",
+  "folder": {
+    "childCount": 4
+  },
+  "webUrl": "https://contoso.sharepoint.com/sites/Finance/Shared%20Documents/Reports",
+  "parentReference": {
+    "driveType": "documentLibrary",
+    "driveId": "b!Docs0000000000000000000000000000000000000000000000000001",
+    "path": "/drives/b!Docs0000000000000000000000000000000000000000000000000001/root:"
+  }
+}

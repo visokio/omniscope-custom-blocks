@@ -1,0 +1,4 @@
+Cookie name,Cookie value,Domain,Path,Secure,Expires,Additional attributes
+csrf,tok-4b9f2e,portal.example.com,/,False,,"{""HttpOnly"": null}"
+portal_session,s-7f31,portal.example.com,/,False,,"{""HttpOnly"": null}"
+remember_me,yes,portal.example.com,/,False,2099-04-01 12:00:00,{}

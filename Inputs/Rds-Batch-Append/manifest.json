@@ -12,23 +12,26 @@
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
     "icon": "data:image/png;base64,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",
-    "description": "Reads multiple rds files either from an upstream block, or a folder, and appends them",
+    "description": "Appends many .rds files saved from R into one output: every .rds file in a folder, or the files listed in an input field. Files with different fields can be lined up first.",
     "category": "Inputs",
     "subcategory": "R",
     "tags": [
         "rds",
         "batch",
-        "append"
+        "append",
+        "r",
+        "folder",
+        "import"
     ],
-    "introductoryText": "This block takes a list of .rds files and appends them together. The list can be supplied via input from an upstream block, in which case also the field containing the path has to be specified. \nAlternatively it is possible to specify a folder and whether this folder should be scanned recursively for .rds files.\n\nBy selecting \"scan first\", reading will take twice as long as with this option the files are first scanned for their schema. This ensures however that the output will contain all fields from all input files.",
+    "introductoryText": "Reads data frames saved from R with `saveRDS()` and appends them into one output.\n\n**How to set it up**: choose a **Folder** (every file ending in .rds is read, in name order; tick **Recursive** to include subfolders), or connect an input with a field of file paths and choose it in **Path field** (the folder is then ignored).\n\n**When the files don't all have the same fields**: with **Scan files first** ticked (the default) every file is read twice: once to collect all the fields, then to append, so the output has every field from every file and a file without a field gets empty values. Whole numbers in one file and decimals in another become decimals. Untick it to take the fields from the first file and choose, under Schema, what happens when a later file has extra fields (left out), lacks fields (filled with empty values) or has a field of another type (converted): show a warning, stop with an error, or carry on silently.\n\nFactors become text and dates become date-times at midnight UTC. Tick **Add source field** to record each record's file.",
     "dependencies": "",
     "options": [
         {
             "name": "pathField",
             "title": "Path field",
-            "description": "If an input is connected from upstream, select the field that contains the full path to the rds files to append",
+            "description": "When an input is connected: the field holding the full path of each .rds file. Empty paths are skipped.",
             "groupTitle": "Read file names from first input",
-            "width": "TWO",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": false,
             "inputIndex": 0,
@@ -38,9 +41,9 @@
         {
             "name": "folder",
             "title": "Folder",
-            "description": "Select the folder that contains the rds files to append. In case a file list is supplied from a block upstream, this option is ignored",
+            "description": "The folder to read every .rds file from (name ends in .rds, any case). Ignored when an input is connected.",
             "groupTitle": "Read file names from folder",
-            "width": "TWO",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
             "mandatory": false,
             "defaultValue": null,
@@ -49,7 +52,7 @@
         {
             "name": "recursive",
             "title": "Recursive",
-            "description": "Select if you wish to search the folder recursively for rds files",
+            "description": "Also read .rds files in subfolders.",
             "groupTitle": "Read file names from folder",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
@@ -57,17 +60,17 @@
         },
         {
             "name": "scanFirst",
-            "title": "Scan files first in case not all files have the same schema",
-            "description": "If selected, all files are first scanned and their schema derived. This ensures that the output will contain all fields that appear in any rds files",
+            "title": "Scan files first",
+            "description": "Read every file once to collect all their fields before appending: the output has every field from every file, filled with empty values where a file lacks one. Takes about twice as long. Untick to take the fields from the first file.",
             "groupTitle": "Schema",
-            "width": "TWO",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
             "defaultValue": true
         },
         {
             "name": "actionAdditionalFields",
             "title": "Additional fields",
-            "description": "Select what to do when additional fields are encountered in one of the rds files (does not occur when the files are scanned first)",
+            "description": "Without Scan files first: what to do when a file has fields the first file did not. Warning and Silently ignore leave those fields out.",
             "groupTitle": "Schema",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -111,7 +114,7 @@
         {
             "name": "actionMissingFields",
             "title": "Missing fields",
-            "description": "Select what to do when some fields are missing in one of the rds files (does not occur when the files are scanned first)",
+            "description": "Without Scan files first: what to do when a file lacks fields the first file had. Warning and Silently ignore fill them with empty values.",
             "groupTitle": "Schema",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -155,7 +158,7 @@
         {
             "name": "actionIncorrectFieldType",
             "title": "Incorrect field type",
-            "description": "Select what to do when a field data type doesn't match the schema",
+            "description": "What to do when a field's type differs from the schema (text in a number field, say): convert the values, with or without a warning, or stop. Values that can't be converted become empty. Whole numbers where decimals are expected are always converted silently.",
             "groupTitle": "Schema",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -163,7 +166,7 @@
             "choices": [
                 {
                     "name": null,
-                    "title": "Display warning and coerce",
+                    "title": "Display warning and convert",
                     "description": null,
                     "groupTitle": null,
                     "width": null,
@@ -183,7 +186,7 @@
                 },
                 {
                     "name": null,
-                    "title": "Silently coerce",
+                    "title": "Silently convert",
                     "description": null,
                     "groupTitle": null,
                     "width": null,
@@ -199,7 +202,7 @@
         {
             "name": "addSourceField",
             "title": "Add source field",
-            "description": null,
+            "description": "Add a field with the path of the file each record came from.",
             "groupTitle": "Source",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
@@ -208,7 +211,7 @@
         {
             "name": "sourceFieldName",
             "title": "Source field name",
-            "description": null,
+            "description": "Name of the source field. Empty: Source.",
             "groupTitle": "Source",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -220,9 +223,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
+            "label": "Appended",
+            "displayName": "Appended records",
+            "tooltip": "The records of every file, one after the other, in file name order (or input order), with the fields lined up."
         }
     ],
     "docker": {

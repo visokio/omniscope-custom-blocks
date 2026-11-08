@@ -1,0 +1,11 @@
+_id,name,age,course,fees,enrolled,address,modules
+6650a1b2c3d4e5f6a7b8c900,Amira Haddad,19,Data Science,9250.0,2025-09-22 09:00:00,"{""town"": ""Leeds"", ""postcode"": ""LS2""}","[""Statistics 1"", ""Python for analysts""]"
+6650a1b2c3d4e5f6a7b8c901,Ben Carter,22,Economics,9250.0,2025-09-23 09:01:00,"{""town"": ""York"", ""postcode"": ""YO1""}","[""Econometrics"", ""Statistics 1""]"
+6650a1b2c3d4e5f6a7b8c902,Chloe Evans,20,Data Science,11400.5,2025-09-24 09:02:00,"{""town"": ""Leeds"", ""postcode"": ""LS6""}","[""Statistics 1"", ""Databases"", ""Python for analysts""]"
+6650a1b2c3d4e5f6a7b8c903,Daniel Kim,24,Geography,9250.0,2025-09-25 09:03:00,"{""town"": ""Sheffield"", ""postcode"": ""S10""}","[""GIS""]"
+6650a1b2c3d4e5f6a7b8c904,Erin Walsh,21,Economics,9250.0,2025-09-26 09:04:00,"{""town"": ""Leeds"", ""postcode"": ""LS1""}","[""Econometrics""]"
+6650a1b2c3d4e5f6a7b8c905,Farid Aziz,unknown,Data Science,11400.5,2025-09-22 09:05:00,"{""town"": ""Bradford"", ""postcode"": ""BD7""}","[""Databases""]"
+6650a1b2c3d4e5f6a7b8c906,Grace Liu,19,Geography,9250.0,2025-09-23 09:06:00,"{""town"": ""York"", ""postcode"": ""YO10""}",[]
+6650a1b2c3d4e5f6a7b8c907,Harry Dunn,23,Data Science,11400.5,2025-09-24 09:07:00,,"[""Statistics 1"", ""Machine learning""]"
+6650a1b2c3d4e5f6a7b8c908,Isla Murray,20,Economics,9250.0,2025-09-25 09:08:00,"{""town"": ""Harrogate"", ""postcode"": ""HG1""}","[""Statistics 1""]"
+6650a1b2c3d4e5f6a7b8c909,Jamal Reid,21,Geography,9250.0,2025-09-26 09:09:00,"{""town"": ""Leeds"", ""postcode"": ""LS7""}","[""GIS"", ""Statistics 1""]"

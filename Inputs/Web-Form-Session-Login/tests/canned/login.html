@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Supplier portal - Sign in</title></head>
+<body>
+  <header>
+    <form action="/newsletter" method="post" class="newsletter">
+      <label>Get our updates <input type="email" name="newsletter_email" placeholder="you@example.com"></label>
+      <button type="submit" name="subscribe" value="1">Subscribe</button>
+    </form>
+  </header>
+  <main>
+    <h1>Sign in</h1>
+    <form action="/session" method="POST" id="login">
+      <input type="hidden" name="authenticity_token" value="tok-4b9f2e">
+      <label>E-mail <input type="email" name="email" autocomplete="username"></label>
+      <label>Password <input type="Password" name="pass" autocomplete="current-password"></label>
+      <label><input type="checkbox" name="remember" value="1"> Remember me</label>
+      <button type="submit" name="commit" value="Sign in">Sign in</button>
+    </form>
+  </main>
+</body>
+</html>
