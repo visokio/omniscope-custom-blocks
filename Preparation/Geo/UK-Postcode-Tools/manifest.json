@@ -1,0 +1,96 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "UK Postcode Tools",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADF0lEQVR42u3dO4tdVRiH8ec9OAZvRJSMhZoYjArRJBoMkdQKwc4U5gtYWvgVRLAQIYWtYBsHLSzF0s4UimOTIQmKY2FAmUwwheL8U8w2xHhBHc9lrf386mHO7PWcd7H3ucwGSZIkSZIkSepftX4ASR4DngWeAZ4AHgIeBG4H7h1+bAP4GfgOWAfOA58D56rqgk+D2Uc7keSdJJeycxeH33XClZ1utKUkryRZzfSsDo9xmyv+/8Y7lWQts7OW5JQrv/Nwe5KsZH5WkuyxxH+LdyjJ15m/9SRHLfLv4r2Q5GoWx9Ukz3sZ8c/iPQd8Aty9YH/aNeBkVX1qwL+/pjsH7F7QzWEDOLZI146TBYq3Czi7wPEYXhj4MMkdBvyjN4AWThYOA6+7hf5++g4AXwG7GjnP+gU4VFXnncBtZxqKB7AEvOUEbk/fk8Aqbb6wfqSqvhz7BL5Gu++KvDrqCUxyF3AZuLPRgNeA5ar6aawT+GLD8Rj+9pNj3kJfon1zPYZ5b6HfA8uNB7xcVQ+MbgKT7O8gHsBykn1j3EKP04/jYwx4sKOAT40x4CMdBRzlFrrPgDs3s09fDZ8tOQ3sHZ44hzsKeCTJ28AWcAF4v6qu9DaBp4dt87fHXOoo4NJN6/k48HKPW+jevzjoHty6kx3oMeBkXtv3DCdw5us6z5OYSUcBJ2N44F8Zj60eA47pW0Df9BhwBVjrfBK3gEvDsc7E3N6NSJKeylXVXNZygjx7kgFlQAOqQc28nDXrs7xWzpKdQLdQGVAGNKAMKAOq1+vA3t69cAJlQAPKgDKgAWVAGVAGNKAMKAPKgAaUAWVAGdCAMqAMKAMaUAaUAWVAA8qAMqAMaEAZUIsaMMnDST5Isnnrjdl7W8g/uff8RpL3kkz1vko1zXjAF8B9Ix+Si8DRqtpsbQLPGA+AR4E3W5zATeAe+wHwY1Xd31pAv9N+80JP6X+9eRbqWagMqIUM+K3Le8OVFgN+ZLcbPm7xMmI38Bnbt2Mbsx+Ap6tqvakJHG6AeAx4F9gYYbhNtu/gMrV4kiRJkiRJmqXr35+WIM/F+usAAAAASUVORK5CYII=",
+    "description": "Validates, standardises and extracts UK postcodes and splits them into area, district and sector with area name and country, offline.",
+    "category": "Preparation",
+    "subcategory": "Geo",
+    "tags": [
+        "postcode",
+        "uk",
+        "address",
+        "validation",
+        "data quality",
+        "geography",
+        "visokio-agents"
+    ],
+    "introductoryText": "Cleans and enriches **UK postcodes**, offline:\n\n- **Validates** each value against the official UK postcode format and the list of postcode areas, with the reason when it fails (wrong length, invalid outward or inward code, unknown area)\n- **Standardises** to upper case with a single space (`ls15hd` becomes `LS1 5HD`), and fixes the common slip of the letter O for zero in the inward code\n- **Extracts** the postcode from a free-text address field when asked\n- **Splits** into **area** (`LS`), **district** (`LS1`), **sector** (`LS1 5`) and adds the **area name** (Leeds) and **country** (England, Scotland, Wales, Northern Ireland, Channel Islands, Isle of Man; cross-border areas are labelled as such)\n\nThe second output counts records per postcode area and per problem, a quick data-quality and geography summary.\n\nFormat and area checks only: a well-formed postcode that does not exist cannot be detected without a lookup service (such as the ONS Postcode Directory, which can be joined afterwards on the formatted postcode).",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "postcode_field",
+            "title": "Postcode or address field",
+            "description": null,
+            "groupTitle": "Postcodes",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "extract_from_text",
+            "title": "Find the postcode inside the text",
+            "description": "Tick when the field is a full address rather than just a postcode.",
+            "groupTitle": "Postcodes",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "replace_field",
+            "title": "Replace the field with the formatted postcode",
+            "description": "Otherwise a new field is added. Ignored when extracting from text.",
+            "groupTitle": "Postcodes",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "prefix",
+            "title": "Prefix for new fields",
+            "description": "New fields are '<prefix> Valid', '<prefix> Area' and so on.",
+            "groupTitle": "Postcodes",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Postcode"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "postcodes",
+            "label": "Postcodes",
+            "displayName": "Postcodes",
+            "tooltip": "The input with formatted postcode, validity, problem, area, district, sector, area name and country."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "areas",
+            "label": "Areas",
+            "displayName": "Area summary",
+            "tooltip": "Records per country and postcode area, plus counts per problem for invalid postcodes."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

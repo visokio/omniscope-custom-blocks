@@ -1,0 +1,13 @@
+Supplier ID,Name,Email,Phone,Postcode,VAT Number,Last Updated
+S001,Northgate Packaging,orders@northgate-example.co.uk,0113 496 0001,LS1 4AP,GB123456789,2024-03-01
+S002,NORTHGATE PACKAGING LTD,Orders@Northgate-Example.co.uk,,LS1 4AP,,2025-06-12
+S003,Northgate Packaging,,(0113) 4960001,LS14AP,GB123456789,2023-11-20
+S004,Riverside Logistics,info@riverside-example.com,0161 496 0222,M1 1AE,GB987654321,2025-01-15
+S005,Riverside Logistics,accounts@riverside-example.com,0161 4960222,M1 1AE,,2024-09-02
+S006,Elm Office Supplies,sales@elm-example.co.uk,020 7946 0333,EC1A 1BB,GB555666777,2025-02-28
+S007,Oak Tree Catering,hello@oaktree-example.co.uk,0117 496 0444,BS1 5TR,,2025-04-10
+S008,Oak Tree Catering Ltd,hello@oaktree-example.co.uk,,BS1 5TR,GB222333444,2023-05-05
+S009,Birch Cleaning Co,birch@example.org,0131 496 0555,EH1 1YZ,GB111222333,2025-07-01
+S010,Willow IT Services,support@willow-example.com,029 2018 0666,CF10 1EP,GB444555666,2024-12-12
+S011,Willow I.T. Services,,029 20180666,CF10 1EP,GB444555666,2025-08-30
+S012,Ash Print Works,print@ash-example.co.uk,0114 496 0777,S1 2HE,,2025-03-03

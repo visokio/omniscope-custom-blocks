@@ -1,0 +1,258 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Fuzzy Match",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADk0lEQVR42u2dP2hVZxiHf28w0WoHFUQRGi0UdDIgGDCDWGNB3BxasHVwUNDFwUUR3XQW2oiDi1ZBSFftVKIOpRYranVwEFQc3MTFJJIbfw4eIYK5OefeG3O/7zwPZMi951++5573nO89P3IlAAAAAAAAAAAAAAAAAAAAWGBsh+0Dtu/annC6jNu+ZXtX3eRdcX4cS9lLVBB4QNKFHD+bknZGxFiKB99TYdlDmRaXkHSiDmfghKQlmUocj4hluQt0ztf4iIgUj7tHkDQIRCAgEBCIQEAgIBAQiMDZGM94HCbqIPB2xgIf1kHgGX149JIj57MXWDwvO56hvIuSLqV68JU78EUM4bikQUlfJfp3TxZl85yk3yOi5cpie6WknyRtkrRO0vrirWeSnkv6X9JoRLzilquLsD1s+w/bkyViG5PFssOM3MKLW2t7tI0MzqjttRX212/75+KnHwPtydtv+3UHglSvbe+fY1+9ts/ZbsxYr1G81ouNauLC9ul5SMSdth2z7HOkyXojWCkvr9f25XmMNV623feZsjndZJ3pj+WUVtrcnJW0bx63v0/SNdtfz3jtxznc9EgaQmCJGwhJh7/Arn6QNGb7m+L3PWVXXISmpgy18CH/2FetOkfeIulBcX0bKrH8v5yBnaMhaUTSpohYGhFLi4n9SPFeWVZIOlWiwXIvIp4y7OXmYNNz3IQ8sj3QZBsDxTKd5CR2yktsdjs/Znt5iW0sL5btBG9tf4uZatOI2SbUfRW202f7agcE/oqV1stpWy0t2z22f2uzg7MKGwv/YThasgk+k3e2f2H0ukfigO2HJeU1bB9h1LpP4mLbB20/aCLvvu0ds20jGMaukblN0nZJGyS9kfRS0k1JN9t54AwA8wkltP3SRyYmUXFkYhIVRyYmYXlkYhIVRyYmYXlkYhKHTEzCZx+ZmMQhE1MTyMR0awklE5O+RDIxGUwjyMRkUk7JxACZmFwkkonJQOKXzcQUjdfBYqK5OuFGwJSkF5LGIuJxl8hsKRMTFeXtlbQ5sxPhekTcSPXgq3RiBjOUJ0m7bX9XB4FbM70UhaThOghck/H9xPo6CMz5yUVvHQQCAgGBgEAEAgIBgYBABEJCAqcyHoepOgh8nrHAl3UQ+Jfy/d6If7IXGBFPJP2Zobw7kv5L9eBb+d6IjZK+l9SvdLv4jaJs/i3pLv/GAwAAAAAAAAAAAAAAAAAAAD7lPTw8uwt+MEaXAAAAAElFTkSuQmCC",
+    "description": "Finds near-duplicate records within one input (with group IDs), or the best matching record in a second input, using fuzzy text similarity.",
+    "category": "Preparation",
+    "subcategory": "Join",
+    "tags": [
+        "fuzzy",
+        "match",
+        "de-duplicate",
+        "record linkage",
+        "join",
+        "visokio-agents"
+    ],
+    "introductoryText": "Finds records that refer to the same thing even when they are written differently: \"Acme Widgets Ltd\", \"ACME Widgets Limited\" and \"Acme Widget Ltd.\".\n\n**One input connected: de-duplicate.** Every record gets a *Group ID*; records that match each other (directly or through a chain of matches) share it. The first record of each group is marked as the group master.\n\n**Two inputs connected: lookup.** Every record of the first input gets its best match (or best few) from the second input, such as invoices matched to a supplier master list, with the matched fields appended.\n\nText is normalised first (case, accents, punctuation, \"&\" vs \"and\", and optionally company suffixes such as Ltd, Limited, plc, Inc). Choose a similarity measure, a threshold, an optional second field (for example the address) and an optional field that must match exactly (for example the postcode), which also speeds up large inputs.\n\nThe second output lists every matching pair with its score, for review and audit.\n\nPure Python: no packages to install.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "match_field",
+            "title": "Match field",
+            "description": "The text field to compare, such as a company or customer name.",
+            "groupTitle": "Fields to compare",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "reference_field",
+            "title": "Match field in second input",
+            "description": "Lookup mode only. Leave empty to use the field with the same name as the match field.",
+            "groupTitle": "Fields to compare",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "second_field",
+            "title": "Second field to compare (optional)",
+            "description": "An extra field compared with the same measure, such as an address line. Blended into the score using the weight below.",
+            "groupTitle": "Fields to compare",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "second_reference_field",
+            "title": "Second field in second input",
+            "description": "Lookup mode only. Leave empty to use the field with the same name.",
+            "groupTitle": "Fields to compare",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "second_weight",
+            "title": "Weight of second field",
+            "description": "Share of the score that comes from the second field, from 0 to 1.",
+            "groupTitle": "Fields to compare",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1,
+            "mandatory": false,
+            "defaultValue": 0.3,
+            "showAsSlider": true
+        },
+        {
+            "name": "block_field",
+            "title": "Must match exactly (optional)",
+            "description": "Only records with the same value in this field are compared, such as postcode or country. Improves precision and speeds up large inputs.",
+            "groupTitle": "Fields to compare",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "block_reference_field",
+            "title": "Must match exactly, second input",
+            "description": "Lookup mode only. Leave empty to use the field with the same name.",
+            "groupTitle": "Fields to compare",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "algorithm",
+            "title": "Similarity measure",
+            "description": "How the similarity of two values is scored, from 0 (nothing in common) to 1 (identical after clean-up).",
+            "groupTitle": "Matching",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Jaro-Winkler, any word order (recommended for names)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TOKEN_SORT_JW",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Jaro-Winkler",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "JW",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Levenshtein edit distance",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LEVENSHTEIN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Word set (ignores extra words)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TOKEN_SET",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Character trigrams",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TRIGRAM",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "TOKEN_SORT_JW"
+        },
+        {
+            "name": "threshold",
+            "title": "Match threshold",
+            "description": "Pairs scoring at or above this value count as a match. 0.85 to 0.92 suits company names.",
+            "groupTitle": "Matching",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1,
+            "mandatory": true,
+            "defaultValue": 0.88,
+            "showAsSlider": true
+        },
+        {
+            "name": "max_matches",
+            "title": "Matches per record (lookup mode)",
+            "description": "How many of the best matches to return for each record of the first input.",
+            "groupTitle": "Matching",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 50,
+            "mandatory": true,
+            "defaultValue": 1,
+            "showAsSlider": false
+        },
+        {
+            "name": "normalise",
+            "title": "Ignore case, accents and punctuation",
+            "description": "Compare \"Café & Co.\" and \"cafe and co\" as the same text.",
+            "groupTitle": "Text clean-up",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "ignore_suffixes",
+            "title": "Ignore company suffixes",
+            "description": "Drop words such as Ltd, Limited, plc, LLP, Inc, Corp, Co, GmbH and The before comparing.",
+            "groupTitle": "Text clean-up",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "ignore_words",
+            "title": "Other words to ignore",
+            "description": "Comma-separated words to drop before comparing, such as services, group.",
+            "groupTitle": "Text clean-up",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "matched",
+            "label": "Matched",
+            "displayName": "Matched records",
+            "tooltip": "De-duplicate: the input with Group ID, Group Size, Is Group Master and Best Match Score. Lookup: the first input with the best match from the second input appended."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "pairs",
+            "label": "Pairs",
+            "displayName": "Match pairs",
+            "tooltip": "Every pair scoring at or above the threshold, with both values and the score."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

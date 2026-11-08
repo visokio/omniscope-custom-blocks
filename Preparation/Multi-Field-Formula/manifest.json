@@ -1,0 +1,535 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Multi-Field Formula",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAC/0lEQVR42u2cTUtUUQCG3zOVVrgQQjdC0MaPjRERRPgHWuTfUKhFVrRu4b4Whbh3OxuDwn36ByLBhQS5cBHJlCETYm+bC7XIcc7HHbN5HnAj99z7zHnGM/fM4EgAAAAAAAAAcGYIqQNtX5U0I2mIacziu6R3IYRPPQlo+4KkF5LmJJ1j/otwJGlZ0sMQwmHdAV9Kus+c18KrEMKD2gJWy+ZHSQ3muhZ+SroWs5zGhrhDvFppVHOsugLCP1g8ho3qzxzqW0I3agtYrc1LzHNtLMVuJ84nXGShuvlhG1F+G7Fwmhv55ROGzPVoMs6aR2838h2C+oTlN/Ri1vrNg7vQPrsLBQICAYGAfR3Q9pjtadsDCWMHqrFjBe708Ii82KTtdf+mZfup7eCTCdWxrT9+t257Eo88j25lR23vHiPzrAvh447ZtT2KR5pHTMDFDjJHXQh3OmYRjzSPmNfAW5nnaSSeG49CAfdrfHndxyPt3DEBmzUKN/Go+dy2G7bXXJ412w080jxiI47Y3ikou2N7BI88j1jp27Z/FJA9tD2DRxmPWOknBYQf41HWI0Y42G5myL62HfAo6xErPWx7O0F22/YwHvV4xEpft30QIdu2fROPej1ipecjhOfx6I1HrPRKF7IrePTWI0Z4yPZmB9lN20N49NYjVnrK9t5fZPdsT+FxOh6x0uPV7fS36qdpexyP0/UAAAD4H0l6/61662dW0oSkwcjhbUnvJb0JIWR9qo1H2rdUDEt6JOly5pPni6TnIYR2xqT1vUfKJ7+zBWQl6Yqkuxnj8UgMOFFwCb+RMRaPxICDBYVznrl4iH9uOfMQkIBAQCAgAYGAQEAgIAGBgEBAICABgYBAQCAgAYGAQEAgIAGBgEBAICABgYBAQAICAYGAQEACAgGBgEBAAgIBgYBAQAICAYGAUDJgq+D12xlj8UgM+KGg8FbGWDwSA76V9LmA7IGk1YzxeCj9K5cvSronaVrSpYRlYkvSagjha84jxgMAAAAAAAAAAACgP/gFFjgFSWWD88YAAAAASUVORK5CYII=",
+    "description": "Applies one operation (round, scale, share of row or column total, index to base, z-score, fill, text case...) to many fields chosen by list, name pattern or type, with optional row statistics.",
+    "category": "Preparation",
+    "subcategory": "Formula",
+    "tags": [
+        "multi-field",
+        "formula",
+        "bulk",
+        "wide data",
+        "percent of total",
+        "index",
+        "visokio-agents"
+    ],
+    "introductoryText": "One operation applied to many fields, for the common cases. Typical for wide tables such as one column per month.\n\n**Choose the fields** explicitly, by a **name pattern** (a regular expression such as `2025$` or `^(Jan|Feb|Mar)`, so new columns are picked up automatically), or simply all number or text fields.\n\n**Number operations**: round, multiply, divide, add, subtract, **share of row total** (each field as a share of the selected fields' row total), **share of column total**, **index to a base field** (base = 100) or difference from it, z-score, min-max scaling, log, absolute value, floor / cap at a value, fill missing with a value, convert text to numbers.\n\n**Text operations**: upper, lower, title case, trim (and collapse spaces), add a prefix or suffix, fill missing text, length.\n\n**Replace** the fields or **add new ones** with a suffix, and optionally add **row statistics** across the selected fields: sum, mean, minimum, maximum, count, standard deviation.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fields",
+            "title": "Fields",
+            "description": "Leave empty to use a name pattern or all fields.",
+            "groupTitle": "Fields",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "field_pattern",
+            "title": "Field name pattern (regular expression)",
+            "description": "Adds every field whose name matches, for example 2025$ for all 2025 columns.",
+            "groupTitle": "Fields",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "type_filter",
+            "title": "Only fields of type",
+            "description": null,
+            "groupTitle": "Fields",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Any type",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ANY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Numbers",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NUMBER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Text",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TEXT",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "ANY"
+        },
+        {
+            "name": "operation",
+            "title": "Operation",
+            "description": "What to do to every chosen field.",
+            "groupTitle": "Operation",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Round",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ROUND",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Multiply by value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MULTIPLY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Divide by value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DIVIDE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Add value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ADD",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Subtract value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SUBTRACT",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Share of row total",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ROW_SHARE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Share of column total",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "COLUMN_SHARE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Index to base field (base = 100)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "INDEX_TO_BASE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Difference from base field",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DIFF_FROM_BASE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Z-score",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ZSCORE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Min-max scale (0 to 1)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MINMAX",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Natural log",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LOG",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Absolute value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ABS",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Floor at value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CLIP_MIN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Cap at value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CLIP_MAX",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Fill missing with value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FILL",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Convert text to number",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TO_NUMBER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Text: UPPER",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "UPPER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Text: lower",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LOWER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Text: Title Case",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TITLE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Text: trim spaces",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TRIM",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Text: add prefix",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PREFIX",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Text: add suffix",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SUFFIX",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Text: fill missing",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FILL_TEXT",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Text: length",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LENGTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "None (row statistics only)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "ROUND"
+        },
+        {
+            "name": "value",
+            "title": "Value",
+            "description": "For multiply, divide, add, subtract, floor, cap and fill.",
+            "groupTitle": "Operation",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "decimals",
+            "title": "Decimal places (round)",
+            "description": null,
+            "groupTitle": "Operation",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": -10,
+            "numMax": 15,
+            "mandatory": true,
+            "defaultValue": 2,
+            "showAsSlider": false
+        },
+        {
+            "name": "base_field",
+            "title": "Base field (index / difference)",
+            "description": null,
+            "groupTitle": "Operation",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "text_value",
+            "title": "Text (prefix, suffix, fill)",
+            "description": null,
+            "groupTitle": "Operation",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "output",
+            "title": "Results",
+            "description": "Overwrite the fields, or add new ones next to them.",
+            "groupTitle": "Output",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Replace the fields",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "REPLACE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Add new fields",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ADD",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "REPLACE"
+        },
+        {
+            "name": "suffix",
+            "title": "Suffix for new fields",
+            "description": "Added to the name of each new field.",
+            "groupTitle": "Output",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": " (new)"
+        },
+        {
+            "name": "row_sum",
+            "title": "Row sum",
+            "description": "Adds the total of the chosen fields for each row.",
+            "groupTitle": "Output",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "row_mean",
+            "title": "Row mean",
+            "description": null,
+            "groupTitle": "Output",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "row_min",
+            "title": "Row minimum",
+            "description": null,
+            "groupTitle": "Output",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "row_max",
+            "title": "Row maximum",
+            "description": null,
+            "groupTitle": "Output",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "row_count",
+            "title": "Row count of values",
+            "description": null,
+            "groupTitle": "Output",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "row_std",
+            "title": "Row standard deviation",
+            "description": null,
+            "groupTitle": "Output",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "Result",
+            "displayName": "Output 1",
+            "tooltip": "The input with the operation applied (or new fields added) and any row statistics."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

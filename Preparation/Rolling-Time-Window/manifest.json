@@ -1,0 +1,116 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Rolling Time Window",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Trailing time-window aggregates per key (count, sum, mean, min, max, distinct) for several windows, such as transactions per card in the last 24 hours.",
+    "category": "Preparation",
+    "subcategory": "Window",
+    "tags": [
+        "rolling window",
+        "time window",
+        "velocity",
+        "fraud features",
+        "moving aggregate",
+        "feature engineering",
+        "visokio-agents"
+    ],
+    "introductoryText": "For every row, aggregates the rows of the **same key** within a **trailing time window** ending at its timestamp: transactions in the last 24 hours per card, orders in the last 30 days per customer, alarms in the last hour per machine.\n\n- Windows are measured in **time**, not rows, so irregular data is handled correctly; several windows at once (`1h, 24h, 7d, 30d`)\n- Per window: **count**, **sum**, **mean**, **minimum** and **maximum** of a value, and **distinct** values of another field (for example distinct merchants)\n- Include or exclude the current row (excluded is typical for fraud and velocity features)\n\nMulti-Row Formula covers windows of a fixed number of rows; this block covers windows of a fixed length of time. Minimum, maximum and distinct counts are computed for keys with up to 50,000 rows.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "key_field",
+            "title": "Key field",
+            "description": "For example Card or Customer.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "time_field",
+            "title": "Timestamp field",
+            "description": "Date and time of each event.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Value field (optional)",
+            "description": "The amount to sum, average and take the minimum and maximum of.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "distinct_field",
+            "title": "Count distinct (optional)",
+            "description": "For example Merchant.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "windows",
+            "title": "Windows",
+            "description": "For example: 30min, 1h, 24h, 7d, 4w",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "1h, 24h, 7d, 30d"
+        },
+        {
+            "name": "include_current",
+            "title": "Include the current row",
+            "description": "Unticked, each window covers only earlier rows: useful for scoring a new transaction against its history.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "rows",
+            "label": "Rows",
+            "displayName": "Rows",
+            "tooltip": "The input with count, sum, mean, min, max and distinct per window."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

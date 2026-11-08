@@ -1,0 +1,113 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Sequence Gap Finder",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADr0lEQVR42u3bz4tVZRzH8fd3GjOTwIIW5RRpP4gggqJIrIVpBBJMFBLWPxBtbFGtclFERaD9kJBW08KKaBltCjFCx6IkS4oka0IiotKmwCJ15ttiTjBczjhnnnvuzJ3h/YJZzMM53/s838+597kXzgFJkiRJkiRJkiRNk5kjOT8+y8zldrz9AC/IzMM9Du+PzFxrt3sX4nWZ+WePwpvMzPvtcu9DfLBHAe6wu/MX4usth/dpZp5vZ+d3PzzUUngnM/Mquzr/IV6TmeMt7HvDdnPhQtzSZYDP28WFD3FXYXgHM3OZHVz4AJdl5ugcw/s1M1fbvf4J8crMPNEwvInMvMeu9V+I91ZfSmbzjN3q3xB3zhLevsw8z0719364f4bwfsnMy+1S/4d4RWb+VrPv3W13Fk+Im6vQ/rfdriy+EF+owtvrvrc4AxzMzLcz81K7IUmSJEmSpHLR5KDMXAk8B2wBLmtwyingXWBbRPxVU+9mYCdwG7CiQb0fge0Rseccc7wJuB0YmqHmGeA4cAQ4EBE5Q53VwMvAJmBVg7mdAHYBz0bERE29+4CngRuAwVlqTVbzezQiRtsM8E3goYILZB+wcXqzMnOomuSqgnoPR8RbNfN7AFg3hzrfAiOdDa9u6v0cuLFgbjsi4vGOehuAvU37PM2/wK0RcWS2AwcahHcxsLXwHb4BWN8xtrUwPICnZnjnrZtjneuBjTXjdxSGB7AtMy/qGHukIDyA5cATTQ4caHDMmsJJTG/WdGtbrEX1sVlifWZ2ruvqLuY2CFzb47UWBdhNeHWv0U29unOHCmutBC5pea3R47UWBdjvVnRx7oWLffGDLF2HgLFqv920VBc5sIQDHIuIT6pvvBigDFAGKAM0QBmgDFAGaIAyQBmgAcoAZYAyQAOUAcoAZYAGKAPUPFjKtxWuyUwov43fABfYLdWfH6F97u8FOnfRBJhdvka2WK/u3OOFtf4BTnaMTfb5WosCPAZMdDGRYx3/H22xFsBoYa2DNQ95Hu2y4T+0WO/7VgKsnrB9pXASh4EDHWNvAD8V1nutZn7fMPUg6VyMAR/UjO8HPiqc256IGO8YexE4XVBrEtjd5h74JFOPCf/e8Phx4B1gc0Sc7mj4OHAn8GHDxSXwHfAY8OoMF9n7wAjw9Tn2tTNMPar9HrA7Is7W1ElguLrITjVc68/AS0w9zNlZ7yvgLuDLhh/PZ4EvgOGI+NgfSZIkSZIkSZIkSZIkSZIkSZIkSZIkSVLb/gPVCMZ7pGsq5gAAAABJRU5ErkJggg==",
+    "description": "Finds missing, duplicate and out-of-order numbers in invoice, cheque or ticket sequences, per series, with a completeness summary.",
+    "category": "Preparation",
+    "subcategory": "Audit",
+    "tags": [
+        "sequence gaps",
+        "completeness",
+        "audit",
+        "invoices",
+        "duplicates",
+        "controls",
+        "fraud",
+        "visokio-agents"
+    ],
+    "introductoryText": "Checks numbered documents (invoices, credit notes, cheques, purchase orders, tickets) for **missing numbers**, **duplicates** and numbers **issued out of date order**, per series: the completeness test auditors run on document sequences.\n\n- Numbers can carry a prefix (*INV-000123*): the digits at the end are the sequence number and the rest is the series, unless you give a series field\n- Gaps are listed with the missing numbers (up to a limit per gap), formatted like the originals\n- With a date field, documents dated earlier than a lower-numbered document are flagged\n- Summary per series: first and last number, expected count, missing, gaps, duplicates, out of order and completeness",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "number_field",
+            "title": "Document number field",
+            "description": "The document number, with or without a text prefix.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "series_field",
+            "title": "Series field (optional)",
+            "description": "Default: the text before the digits.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "date_field",
+            "title": "Document date (optional)",
+            "description": "For the date order check.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "max_missing_listed",
+            "title": "Missing numbers listed per gap",
+            "description": "A longer gap lists this many numbers and then '...'.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 10000,
+            "mandatory": true,
+            "defaultValue": 20,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "gaps",
+            "label": "Gaps",
+            "displayName": "Gaps",
+            "tooltip": "Per gap: series, last number before, first after, missing count, missing numbers."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "problems",
+            "label": "Problems",
+            "displayName": "Problems",
+            "tooltip": "Per problem document: duplicate number or dated before an earlier number."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Per series: documents, first and last number, expected, missing, gaps, duplicates, out of order, completeness."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

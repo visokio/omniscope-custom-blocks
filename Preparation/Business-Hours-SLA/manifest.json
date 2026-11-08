@@ -1,0 +1,286 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Business Hours and SLA",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Elapsed business hours between timestamps within opening hours, excluding weekends and holidays, with SLA due times and met / breached status.",
+    "category": "Preparation",
+    "subcategory": "Date",
+    "tags": [
+        "business hours",
+        "SLA",
+        "service desk",
+        "working hours",
+        "response time",
+        "holidays",
+        "tickets",
+        "visokio-agents"
+    ],
+    "introductoryText": "Measures **elapsed working time** between two timestamps (opened and resolved) counting only **opening hours on working days**, skipping weekends and **public holidays**, and checks each item against its **service level**.\n\n- Opening hours such as 09:00 to 17:30; working days Monday to Friday (or Sunday to Thursday, Monday to Saturday, every day)\n- Public holidays for England and Wales, Scotland, Northern Ireland or US federal (the rules used by the Working Days block), plus your own closure dates\n- SLA targets in **business hours**: from a field, by **priority** (`P1=4, P2=8, P3=24`), or one value for all\n- Items still open are measured to the **as-of** time\n- Per item: business and calendar hours elapsed, **SLA due** time, status (**Met, Breached, Open, Open and breached**) and business hours to spare or over; per priority: counts, met rate and medians\n\nOvernight shifts (closing after midnight) are not supported.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "start_field",
+            "title": "Opened (start) field",
+            "description": "When each item was opened.",
+            "groupTitle": "Items",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "end_field",
+            "title": "Resolved (end) field",
+            "description": "Empty = still open.",
+            "groupTitle": "Items",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "priority_field",
+            "title": "Priority field (optional)",
+            "description": "Priority of each item, for the SLA hours by priority.",
+            "groupTitle": "Items",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "sla_field",
+            "title": "SLA hours field (optional)",
+            "description": null,
+            "groupTitle": "Items",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "sla_by_priority",
+            "title": "SLA hours by priority",
+            "description": "For example: P1=4, P2=8, P3=24, P4=40",
+            "groupTitle": "Items",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "sla_hours",
+            "title": "SLA hours for everything else",
+            "description": "0 = none.",
+            "groupTitle": "Items",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "as_of",
+            "title": "As of (for open items)",
+            "description": "Default: the latest time in the data.",
+            "groupTitle": "Items",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "open_time",
+            "title": "Opening time",
+            "description": "Start of the working day, as HH:MM.",
+            "groupTitle": "Working time",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "09:00"
+        },
+        {
+            "name": "close_time",
+            "title": "Closing time",
+            "description": "End of the working day, as HH:MM.",
+            "groupTitle": "Working time",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": "17:30"
+        },
+        {
+            "name": "weekend",
+            "title": "Weekend",
+            "description": null,
+            "groupTitle": "Working time",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Saturday and Sunday",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SAT_SUN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Friday and Saturday",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FRI_SAT",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Sunday only",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SUN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "No weekend",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "SAT_SUN"
+        },
+        {
+            "name": "region",
+            "title": "Public holidays",
+            "description": "Public holidays that do not count as working time.",
+            "groupTitle": "Working time",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "England and Wales",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ENGLAND_WALES",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Scotland",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SCOTLAND",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Northern Ireland",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NI",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "US federal",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "US",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "None",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "ENGLAND_WALES"
+        },
+        {
+            "name": "custom_holidays",
+            "title": "Extra closure dates",
+            "description": "Comma-separated, for example: 2025-12-24, 2025-12-31",
+            "groupTitle": "Working time",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "items",
+            "label": "Items",
+            "displayName": "Items",
+            "tooltip": "The input with business and calendar hours, open flag, SLA hours, SLA due, SLA status and hours to spare."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Per priority and overall: items, closed, open, met, breached, met rate, median hours."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

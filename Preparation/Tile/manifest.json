@@ -1,0 +1,186 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Tile",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEL0lEQVR42u2dT2sdVRyGn7m5af40JtWGmlotalDTNpqk1YbSBguJxVarVNRUL4aCf8BqI6igUOiyG9241IWI6MKV7v0A4qYg+CH8DiKvi3sEMdfcJDNn5szc94FscnPvmTtP3t+cMzPnDBhjjDHGGGOMMcYYY4wxxhhjTI2QNNTjd/ua+F1bDZR3HLjU46Xbki5bYNry5oBrwEiPl+8CfpT0ggWmKW8GeKPPdxoCvpN0wgLTkpcBL/9P8nol8etex0kLrI4V4MFd/P1pYNMC00jfGLC2h7fekjRtgdVzARjfw/sOADctsNr0TQFncnzEu5KOWGB1nAfaOd4/AnxkgdWkbz+wXMBHvVPnY2GdE3gWKOL02H7gPQssN33tnMe+/3Jd0qgFlsfJMCAvikPA6xZYbvksmvctsJzy+QAQo+u/JOmUBcZnOeJnv22BcdO3D1iM2MRrYXhigZF4HIjZW5wErlhgPJ4soY0NC4xTPqeA2RKaWg0dJQssmFMlbW8L6FhgnMF7WWxYYLHl8ygwU2KTxyQ9ZYHFls+y2bDAYtLXAhYqaPqqpGELzM+jwEQF7U4DqxaYn8UK275qgfnKZxuYr3ATrqR+nTD1BB4j7qmzfkwCFy2wnuXzH9YtcG/lczgksGoup3yFIuUEHqeYm5byMg48Z4G7ZymhbVm3wN2Vz1HgsYQ26VK4GmKBO2QeSOksyCjwogXunIUEt2ndAndWPifonj5LjQuSDlngztKX4uzZNt1ZwBbYh5OkS8cCty+fB4GjCQs8I+lhC9w+fVnCAjMSm0ORmsAF0qdjgb3L5xHKve9lr8xJWrTArTxBfXjFArdSpzkJ0xZoLNBYoAUaCzQWaIHGAo0FGgu0QGOB/ZB0vmk7UtLsQAiUdD8J3ltSAAuSDgxCAj8krXs+i9yXK40WKOlu4M0GH5KWwyr6jU3gDbpz7prKKHCukQLDFK0bA9AxXJE00sQEXiehK9kRGafY5aCrFxh6Z58M0PBsVdJ4kxL4KXBwgASO0X2mRf0FhpX/Nhk8VsoYF5aRwM/Df+SgMQw8X2uBks6R0D2UFbAY+xRbK6K8MeAr0p7rUAYvxVxzLWYCb5PGMiFVcy8RFwtqRUrf2oB2XLbr0DxSC4FhGvK3+Frjv8mAjqTJpAWG5zr8ABy2sy1MBIlDSQoMT5L+sqwBbE2ZpbuQbJZiAj8DrtlRX5aKHB+2C0heC/iCmj79qyKeDmuh/pRlmSoTGC6bfEMNVrZNkLPAlKTvsyz7s/QSKmkO+MXycjEPfCDpcGkCJY1IugncIa0VBevKDLApaS2U1TglNJwO6gC3gIe83wtlGHgWOC3pZ+BOlmV/FSJQ0gngVeAt4D7v66jcQ3dRvYuSfgV+y7Lsj7wJ/N37tXQmgWfCz8dljQONMcYYY4wxxhhjjDHGmCj8DQX5LPVpYfPWAAAAAElFTkSuQmCC",
+    "description": "Assigns records to tiles of a numeric field: quantiles, equal-sum Pareto bands, equal width, standard-deviation bands or manual cut points, optionally within groups.",
+    "category": "Preparation",
+    "subcategory": "Binning",
+    "tags": [
+        "tile",
+        "binning",
+        "quantile",
+        "decile",
+        "pareto",
+        "bands",
+        "visokio-agents"
+    ],
+    "introductoryText": "Puts each record into a numbered band (tile) of a numeric field, by one of five methods:\n\n- **Equal records**: quartiles, deciles, percentiles; each tile has the same number of records\n- **Equal sum**: each tile holds the same share of the total, so you see how *few* customers make up the first quarter of revenue\n- **Equal width**: tiles of equal value range between minimum and maximum\n- **Smart tile**: bands by standard deviations from the mean, labelled *Extremely low* to *Extremely high*\n- **Manual**: your own cut points, such as 1000, 5000, 20000\n\nTiles can be computed **within groups** (deciles per region), numbered from the lowest or the highest values. Each record gets *Tile Number* and *Tile Range* (or *Tile Label* for smart tiles); the second output summarises each tile: records, minimum, maximum, total and shares.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "value_field",
+            "title": "Value field",
+            "description": "The numeric field to tile.",
+            "groupTitle": "Field and method",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "method",
+            "title": "Method",
+            "description": "How the tile boundaries are set.",
+            "groupTitle": "Field and method",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Equal records (quantiles)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "EQUAL_RECORDS",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Equal sum (Pareto bands)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "EQUAL_SUM",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Equal width",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "EQUAL_WIDTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Smart tile (standard deviations)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SMART",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Manual cut points",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MANUAL",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "EQUAL_RECORDS"
+        },
+        {
+            "name": "tiles",
+            "title": "Number of tiles",
+            "description": "4 for quartiles, 10 for deciles, 100 for percentiles. Not used by smart and manual tiles.",
+            "groupTitle": "Field and method",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 1000,
+            "mandatory": true,
+            "defaultValue": 4,
+            "showAsSlider": false
+        },
+        {
+            "name": "cut_points",
+            "title": "Manual cut points",
+            "description": "Comma-separated upper bounds, such as 1000, 5000, 20000 (values equal to a cut point go to the next tile up).",
+            "groupTitle": "Field and method",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "group_fields",
+            "title": "Within groups (optional)",
+            "description": "Tile separately within each combination of these fields.",
+            "groupTitle": "Options",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "highest_first",
+            "title": "Tile 1 = highest values",
+            "description": "Untick for tile 1 = lowest values.",
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "field_prefix",
+            "title": "Name of new fields",
+            "description": "New fields are '<name> Number' and '<name> Range'.",
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Tile"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "tiled",
+            "label": "Tiled",
+            "displayName": "Tiled data",
+            "tooltip": "The input with Tile Number and Tile Range (or Tile Label)."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Tile summary",
+            "tooltip": "One row per (group and) tile: records, minimum, maximum, total, share of total, share of records."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

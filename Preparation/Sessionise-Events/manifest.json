@@ -1,0 +1,139 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Sessionise Events",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACOElEQVR42u3dz2oTURzF8fNLFVtw604EhQg+gdCKawm+hwtFLPgYLkSU4hv4BHkCKfgKuhBcCSIICrWIHhfOoqSJufMnN3cu38+y85vMnJxmMpcOVAIAAAAAAAAAAAAAAADqEilDtq9Imkm6KenSls/5VNJ7SfOI+NLlBWrKE4lhH0vaK+yX70TSi7aha8szSZiZFRhWzTnNOuxXVZ6UAqcFfwVMM+1TbJ6UAncLDrybaZ9i80yEUaNACsQ2Xei9kIx4uskTtP0s68J4ZHn4BHIJBQWCAikQFAgKxAYK/Nlx21CGPn5VeVIK/NBx21CGPn5VeVIKnOvfHxsXnTTbNm3o41eVp8sjFVLPRxraGvr4teUBAAAAAAAAACxh+7btue3vtr/ZfmP7xrbmydMu7H3bpz7vq+1buefJ0y7snu3PXu2d7Z1c8+RpH/ie17uba5487R9qupowM80439fo80w2ML+Tcb6v0efhscKRo0AKBAWCAikQFAgKBAVSICgQFAgKpEBQICgQFEiBoEBQICiQAkGBoEBQYB1W/tsB29ck3ZF0+cyPDxJe88B2rvm+xpDnh6S3EfFp2cZYUtxFSc8lPdCwj7Gju9+SXkt6EhG/1hX4UtJD3rMivYqIRysLbC6bH/luLNYfSdfPXk4Xi9qnvOJvOve5C614GXHcfExR7iX0eGWBzbX1iPepWEeLy4ll68DD5uaGZUR5y4jDtevANQt55PffhTwAAAAAAAAAAAAAAADO+QuIiZVQEt6hvAAAAABJRU5ErkJggg==",
+    "description": "Groups each user's timestamped events into sessions by an inactivity gap, adding session IDs to events and producing a session summary with duration, landing and exit events.",
+    "category": "Preparation",
+    "subcategory": "Date",
+    "tags": [
+        "sessions",
+        "clickstream",
+        "web analytics",
+        "events",
+        "logs",
+        "sessionisation",
+        "visokio-agents"
+    ],
+    "introductoryText": "Turns a raw stream of timestamped events (web or app clicks, machine log lines, card transactions, door entries) into **sessions**, the way web analytics tools do: for each user or device, a new session starts when the gap since their previous event is longer than a timeout (30 minutes by default) or, optionally, when a session reaches a maximum length.\n\n**Events output**: every input row with *Session ID*, *Session Number* (per user), *Event Number In Session*, *Seconds Since Previous Event* and *Is Session Start*.\n\n**Sessions output**: one row per session with start, end, duration, number of events, first event (landing page) and last event (exit page), total value (such as order value) and a bounce flag (one-event sessions).\n\nEvents can arrive in any order; they are sorted by user and time. Rows without a user or a valid timestamp are kept in the events output without a session.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "user_field",
+            "title": "User or device field",
+            "description": "Who the events belong to: visitor ID, device, card number, badge.",
+            "groupTitle": "Events",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "time_field",
+            "title": "Timestamp field",
+            "description": "Date and time of each event.",
+            "groupTitle": "Events",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "event_field",
+            "title": "Event name field (optional)",
+            "description": "Page, screen or event type; gives the first and last event of each session.",
+            "groupTitle": "Events",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Value field (optional)",
+            "description": "Summed per session, such as order value.",
+            "groupTitle": "Events",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "gap_minutes",
+            "title": "Inactivity gap (minutes)",
+            "description": "A gap longer than this starts a new session. 30 is the web analytics convention.",
+            "groupTitle": "Sessions",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.001,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 30.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "max_session_hours",
+            "title": "Maximum session length (hours)",
+            "description": "Optional: split sessions longer than this. 0 = no limit.",
+            "groupTitle": "Sessions",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "day_first",
+            "title": "Text dates are day first",
+            "description": "Read 03/04/2025 as 3 April.",
+            "groupTitle": "Sessions",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "events",
+            "label": "Events",
+            "displayName": "Events with sessions",
+            "tooltip": "Input events with Session ID, Session Number, Event Number In Session, Seconds Since Previous Event, Is Session Start."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "sessions",
+            "label": "Sessions",
+            "displayName": "Sessions",
+            "tooltip": "One row per session: user, start, end, duration, events, first and last event, total value, bounce."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

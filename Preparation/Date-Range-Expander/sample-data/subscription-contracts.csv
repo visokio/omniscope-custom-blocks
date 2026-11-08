@@ -1,0 +1,13 @@
+Contract ID,Customer,Plan,Start Date,End Date,Contract Value
+SUB-001,Northwind Analytics,Enterprise,2025-01-15,2026-01-14,48000
+SUB-002,Blue Harbour Retail,Team,2025-02-01,2025-07-31,6000
+SUB-003,Kestrel Logistics,Enterprise,2025-03-10,2026-03-09,52000
+SUB-004,Greenfield Councils,Public Sector,2025-04-01,2027-03-31,90000
+SUB-005,Oakridge Dental Group,Team,2025-04-20,2025-10-19,4800
+SUB-006,Pinnacle Insurance,Enterprise,2025-06-01,2026-05-31,60000
+SUB-007,Marlow Foods,Team,2025-07-01,2025-12-31,5400
+SUB-008,Arden Housing,Public Sector,2025-09-01,2026-08-31,30000
+SUB-009,Corvid Security,Team,2025-10-15,2026-04-14,7200
+SUB-010,Thistle Energy,Enterprise,2025-11-01,2026-10-31,56000
+SUB-011,Harbourside Clinic,Team,2025-12-01,,3600
+SUB-012,Lumen Media,Team,2025-08-01,2025-06-30,3000

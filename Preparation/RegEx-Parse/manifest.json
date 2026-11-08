@@ -1,0 +1,266 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "RegEx Parse",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAE+ElEQVR42u2dTYhWVRjHf4+NfYrEEEVDEbTIKbMiCoakclzl2FgtUjeOOxcuKtqErlpJQR9+UGC0aVrlppG+XAQJEalEmDWjUySENYvAEcQQsZl/C+/E4Of7ce5973vv/7d8ed8zzzm/Offcc55z7gVjjDHGGGOMMXUi3AQgaTHwPPBo9tGPwFhEnHbrlF/eWkkndSknJa11C5Vb3jpJs7oys5LWuaVKetm8Qs+7XE9cXNZ6LKixwxeA3ga+15uNjxZYMh7O6bsWWBC3NPHdRRZoLNBYoAUaCzQWaCzQAk0Z6ClzcFVL89QqbXWVNM8pSa9KWthm+bvVOLvb/FsLs5hP1SJt1UCaR5KOSRoqu0BJQ1msqkXaqok0zxxfSuovm0BJ/VlsjdJS2qqMNzGNpnnmWAX8nAm5rQT/gLdKegM4nMXWKC2lrcoosJXUTQ+wCZiU9LKkng6IWyBpBJgEXgNuKKLuZRSoNn7bC2zPeuQzBcpbkd1RfgTcXmTdyyjwSIIy+oGvJH0m6d4cxd0taRT4hjRJ3yNVEPgpMJ2orGeBcUnbJC1KKG6RpG3Ar8CGRMVOA2NdLzCb1G5u81I6nxuBLdn4OCIp2hAX88a5LVnZqYaNza1M6Eu5lBYRnwDrE/ZEgL5sjDogaaAFeQPAgayMvoRxTQPrszpXbjWmV9IOSf8qLbOSfm/i+xOSZhLHMCNpVNIdVB1J90vap+qwX9Ij1A1Jw032nLJxot1xuAoSr88m66e7SNw/kl6XdBPmf5F92fLZTInFzUraI+keG7uyyMckfVdCeT9IWm5Djc/PXpT0RwnETUnaJMm7HVoQeXM21pztgLhz2ZRnsU0kWqMsUF6ua651FrlC0uEcxR0tMuvRNUtpxj3Pl1DfxPgmxtMI44m8l9K8lObFbC9mp5M3LOm400ndJ84J3S4V5y0V3boSk53Y+Q14CbguYdGHgCeAr5v4zbfA8uy3KVfBNgATdT2d1Cx/zR9/WjncMretMCsr9RWhtqeTrsXZy23sbed00tzG3sQrPrU9nXQ1PgeWRsTWiDiTKsCIOBMRW4H7gI8TFVvr00kXcxRYFRHDEXE8r0Aj4kREjACDwE+dqHvVTidNA68AyyJiX1EBR8R+Lpx73wj8XWTdq3I66TzwAbAkInZExEzRQUfEbESMAkuAN4FzBdW9629ifMS6TDRxOmkSWB0RQxFxrIT1OBYRQ8DqLNZrXTo3V+pxI37MSGOU9kE/EbFH0j4q8GCciDgPvCPpQ/x+imQ9vLAemCdO+3c5FmiBxgKNBVqgsUBTPMkn8pKWAWuAB4C7so//BCaAvRHxi5u9nBPjlZIONTApPihpsATxvt3ERP6tKovrkfR+C1sIdnXisZDz4t7YRKwjVZW3sMmUycV80SmJqsgLINtthPcSbObZ2cH46/sKVklPJ9yRtbKD9ejqlyC38+jFQ8DjieI4GBEDHZRYr9eQS3ooh/MCS30vX9xEfjiHWNZYR3ECl+UQy4PWUZzAO3OIpc86ihOoHGKRdRQncCqHWKasoziB4znEMm4dxQncm0MsY9ZR7FzwYMI54Pdu0eIFPpVQ4KBbtDMSdyWQ965bsnMCe7KUUDtP+etxS3Ze4s4W5G23vPKNiQcauWGR9KRbLA2Rg8ilwHNcuqlpnAubmibc7MYYY4wxxhhjjDHGGGOMMcYYYyrPf4dxfwtyz2LOAAAAAElFTkSuQmCC",
+    "description": "Applies a regular expression to a text field: parse capture groups into fields, replace with back-references, tokenise matches into columns or rows, or flag matches.",
+    "category": "Preparation",
+    "subcategory": "Parse",
+    "tags": [
+        "regex",
+        "regular expression",
+        "parse",
+        "extract",
+        "tokenise",
+        "replace",
+        "visokio-agents"
+    ],
+    "introductoryText": "Regular expressions on a text field, with four modes:\n\n- **Parse**: each capture group `( )` becomes a new field. Named groups such as `(?P<Order>...)` name the fields; otherwise list names in *Output field names*\n- **Replace**: replace every match; use `\\1` or `$1` to insert captured text (for example, mask card numbers but keep the last four digits)\n- **Tokenise**: every match (or its first group) becomes a new **column** (up to a maximum) or a new **row**, such as all SKUs mentioned in a note\n- **Match**: a Yes / No field saying whether the text matches the pattern **anywhere**, **at the start** or **completely** (validation)\n\nCase can be ignored; text that is missing stays missing. Python regular expression syntax. Omniscope formulas can already search and replace with regular expressions; this block adds capture groups into fields, tokenising into rows, and a Yes / No match mode.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "field",
+            "title": "Text field",
+            "description": "The text to apply the regular expression to.",
+            "groupTitle": "Pattern",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": [
+                "STRING"
+            ]
+        },
+        {
+            "name": "mode",
+            "title": "Mode",
+            "description": "What to do with each match.",
+            "groupTitle": "Pattern",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Parse: capture groups to fields",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PARSE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Replace",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "REPLACE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Tokenise: each match to a column or row",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TOKENISE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Match: Yes / No",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MATCH",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "PARSE"
+        },
+        {
+            "name": "pattern",
+            "title": "Regular expression",
+            "description": "For example Order #(?P<Order>[A-Z]-\\d+) or [\\w.+-]+@[\\w-]+\\.[\\w.]+",
+            "groupTitle": "Pattern",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": ""
+        },
+        {
+            "name": "ignore_case",
+            "title": "Ignore case",
+            "description": "Upper and lower case match each other.",
+            "groupTitle": "Pattern",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "output_names",
+            "title": "Output field names",
+            "description": "Comma-separated, in group (or token) order. Optional when the groups are named.",
+            "groupTitle": "Parse and tokenise",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "tokenise_to",
+            "title": "Tokenise into",
+            "description": null,
+            "groupTitle": "Parse and tokenise",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Columns",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "COLUMNS",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Rows",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ROWS",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "COLUMNS"
+        },
+        {
+            "name": "max_columns",
+            "title": "Maximum token columns",
+            "description": null,
+            "groupTitle": "Parse and tokenise",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 100,
+            "mandatory": true,
+            "defaultValue": 5,
+            "showAsSlider": false
+        },
+        {
+            "name": "keep_unmatched",
+            "title": "Keep rows with no tokens (rows mode)",
+            "description": null,
+            "groupTitle": "Parse and tokenise",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "replacement",
+            "title": "Replacement text",
+            "description": "Use \\1 or $1 for the first capture group.",
+            "groupTitle": "Replace and match",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "match_type",
+            "title": "Match",
+            "description": null,
+            "groupTitle": "Replace and match",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Anywhere in the text",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CONTAINS",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "At the start",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "START",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "The whole text",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FULL",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "CONTAINS"
+        },
+        {
+            "name": "output_field",
+            "title": "Output field name (replace / match / rows)",
+            "description": "Replace mode: leave empty to overwrite the text field.",
+            "groupTitle": "Replace and match",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "Result",
+            "displayName": "Output 1",
+            "tooltip": "The input with parsed, replaced, tokenised or match fields."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

@@ -1,0 +1,235 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Subtotals and Rollup",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADtUlEQVR42u3dy2sdZRiA8edNo01F0RhddNHqwpqFIroQBKGuRLowK0EQ3AjqpriIK/8CV4qXnYKKXQgKIhZvO3HhBYQqwUJ1U4430JoaLfGgNK+LTC9Jz+TcZoYzPc8PsmjmMJTvaaYznek7IEmSJEnSkDJzITMXXInmxZjh5oFHgf3FtzrAkYg47dK2I+BTF8U7pxMRLw25n+uAJWAR2D3lTbrACvBhRPzd78MzY8S7vkc8gP3FtmHiLQN3GA+AOeBu4HBmztUWELhqxG3bLQ35+WmxAByqM2BVFm1V6q42BPSwOcaRbMY1ajcDGlDTHvBPM+x4TTjxAb+zU6kTbQj4EfC7rS6xDrw/8QEjogu8CHwF/GM3usC3wHMRsdbvw7OT8DsuIr5TfMmzUAPKgDKg+pqIk5jMnAUO4g3dc2ehK8CXEXF24gNm5m7gMLDXn6fzbgFuz8xXI2Jj0g+hh4zX0wHgvjb8HXinrUrd24aAV9up1LWehbZbGNDrQBlwZ+tmKPVfnQFzxG3b/WCnUp06A/5VEiqLbYP6gAEeHZhCG8DR2gIWz+2v9Ni0Msgz/RftZxV4GfjZZuedAl6JiJ/GPk3d8RiaeSXwIBeeID4GHI2If0fc3wKwZ8rjdYE/IiL9cyxJUoUnMZn5AHA/cI3LV4s14L2I+LzSgJm5C3gTeMQ1bsTzEfF0ldeBy8Zr1HJmPlzlT+BJ4CbXtVHHI+K2qgKexbsXTduIiF1VHUKN17wZo0x7YRlQBlQVAb290bysMuAJ17Nxv1UZ8A3Xs3Fv9fvAMBfys8C7bN6BV/2OAQcj4kwlAYuIATwBPATMu8a1WAM+AV4Y9dEUSZKmQYy7g8zcA9xa/PL7iHDaUlsCZubNwGNcmCy7DrwWESdH2FcAN+CQg25EnKo9YGbOAM/0uJw4DTzb7z/nb9vXgeLSxJeHbPoVeDsifuz3wXH+MfvGkmvB+WLboPH2AY8bb4u9wJODvL5hnIBXjLhtuyW8K9LLXLE2tQWsyj5blVpsQ8BZO41+JPPQ1XIGNODYvNM/xtpMQkAHnpc704aAX9up1DdtCPgpcNxWl/gF+LjOU/j1EbdtEREbmfk6cA+bL4F0yMHmA2Sf1TrwNSJWM7ND71ewrg65rwS+KL7U4FnoEbZOE+oU31OrznV9DbmkqeSUisnjlIrLhFMqWs4pFZcBp1S0nFMqWs4pFVNfWAaUAVVFQJ9daZ5TKlrOKRUt55SKFnNKRUs5pUKSJEmSJEmSJElV+R8pewriTKHioQAAAABJRU5ErkJggg==",
+    "description": "Aggregates by a hierarchy of fields with subtotal rows at every level and a grand total, shares of parent and total, in report order.",
+    "category": "Preparation",
+    "subcategory": "Aggregate",
+    "tags": [
+        "subtotals",
+        "rollup",
+        "grouping sets",
+        "hierarchy",
+        "finance table",
+        "management accounts",
+        "aggregate",
+        "visokio-agents"
+    ],
+    "introductoryText": "Aggregates by a **hierarchy of fields** (for example *Division > Region > Site*) and adds a **subtotal row for every level** and a **grand total**, in report order, as in a finance or management table.\n\n- Each row has its **level**, a **row type** (Detail, Subtotal, Grand total) and an **indented label** (one dot per level, for example *· · Leeds*) ready for a table view\n- Sum, mean, median, minimum, maximum or count of one or more value fields, plus the number of rows\n- For the first value field: **share of parent** and **share of grand total**\n- Children sorted by value (largest first) or by name; subtotals before or after their children\n\nAn *Order* field keeps the report order whatever the downstream sorting.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "group_fields",
+            "title": "Group fields, outermost first",
+            "description": "For example Division, Region, Site.",
+            "groupTitle": null,
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": true,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_fields",
+            "title": "Value fields",
+            "description": "The numbers to aggregate at every level.",
+            "groupTitle": null,
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "aggregation",
+            "title": "Aggregate",
+            "description": "How values are combined into subtotals.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Sum",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SUM",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Mean",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MEAN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Median",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MEDIAN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Minimum",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MIN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Maximum",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MAX",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Count of values",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "COUNT",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "SUM"
+        },
+        {
+            "name": "sort",
+            "title": "Order children by",
+            "description": "Order of rows under each subtotal.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "First value, largest first",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "VALUE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Name",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NAME",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "VALUE"
+        },
+        {
+            "name": "subtotal_position",
+            "title": "Subtotals",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Before their children",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "BEFORE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "After their children",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "AFTER",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "BEFORE"
+        },
+        {
+            "name": "grand_total",
+            "title": "Grand total row",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "total_label",
+            "title": "Total label",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Total"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "rollup",
+            "label": "Rollup",
+            "displayName": "Rollup",
+            "tooltip": "Order, group fields, level, row type, indented label, rows, values, share of parent, share of total."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

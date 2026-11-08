@@ -1,0 +1,230 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Date Range Expander",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADvElEQVR42u2cv4sdVRxHz/e5oK6Fq60i/koKG0s1aCJIEAtXRdDGRv+E9MHGSlTsg1hki6jEKBESFI0YwbCFkMKIsrghcW0issHIitns1+LdIoTd7L6ZuZN9L+eUy53PvPmevTNz78wdEBERERERERERERERqUl0EZKZe4FXgKeAe4E7LO26XATOAseADyPi1xsqMDN3AgeA3boZmVXgfWB/RPzbu8DM3A18Btyli1acBGYjYrk3gaXnnVJeZ3wL7I2I1VE3HDTc4QHldcrTwP5eemC5YfnSmnfOCrAzIn6v3QNftdZVuB14o49T6JPWuhrP9yHwHutcjYf7EHjFOldj0IfABetcjaU+BH5hnavxXR8CPyi3vNI9H1cXGBHngXetdeeciIhvqg/ky2B+CviqzCBIe/4CHouIheo9sPTCVeClJudsWVfei03kNRZYJC4DzwJvA5f10Oy0WXreycYeuvgVmbkDeB14DngAuFM363IJOM/wEdJHTa55IiLSGTGpB5aZM+V6DLDY9JUFBfYv7hbgBeDxq+6y1xi+AvJ5REzUZPxgAv8pZ4Fd1xzboPxtdtIOdjBhvW+miNqIXaWNArcp929yWYjSRoHblNs6aqNAUaAoUIGiQFGgbMjUGA/a7wMeYfhK+hJweoRtbwUeZfiS8gpwJiLOjWMdYgzFBfAyw7nOq7kInAGe2CTihyL+2ofOp4DDEZEKrCvwGYZP/mtwLCK+9hpYT94A2FNxF3vKPhRYiRlgumL+dNmHAivx34Ts4+YUGBGXgJp3i+fKPhRYkaMMn7B3zVrJdiBfuRcuAscrRB8v2QrsgRPATx3m/VwyUWA/vTCBQwzXFbRlGTg0bgP4ce+BRMQKMEe7Jd9XgLmI+Gdc6zDWk9ll/rLNjcfRiDg7zjUY+6cREfE98GODTU+XbVHgjedT4MII7S8An0zCgU+EwPK5xoNsbZ3iZeBgm088KrCOxD+AI1toeqS0RYHbT+I8MH+dJvOlzcQwxeRxmOHXcNdd3DJpB+vyMhEREREREdloXDXIzH2ZuZCZa7k5f2bmm+WrEWa1yOpK4L5sxjtmtcvqZCYmMxeAhxq4XwXujoi/zWqWdT1Gmcx+sGHnnQJ2mNUqqxOBbeZNw6xWWZ0IlG2IAhUoChQFKlAUKAoUBSpQFCgKFAUqUBQoChQFKhCgzWc40qxWWZ0I/KXFj/nNrFZZnQh8q+EPmltnbZ5Zo2V1Q2a+lpmLW3y/cSkz38vMabPaZ4mIiIiIiIiIiIjczPwP2gw+TonEq5kAAAAASUVORK5CYII=",
+    "description": "Expands each start / end date range into one row per day, week, month, quarter or year, with days in each period and amounts prorated by days.",
+    "category": "Preparation",
+    "subcategory": "Date",
+    "tags": [
+        "generate rows",
+        "date range",
+        "prorate",
+        "revenue recognition",
+        "calendar",
+        "visokio-agents"
+    ],
+    "introductoryText": "Turns each record with a start and an end date into **one row per day, week, month, quarter or year** that the range covers.\n\nEach output row carries the period label, its start and end, the **number of days of the range inside that period** and the share of the whole range. Choose amount fields to **prorate**: a 12-month contract worth 12,000 becomes a value per month weighted by days, ready for revenue recognition, budget phasing or occupancy counts.\n\n- End date inclusive (contracts, leave) or exclusive (hotel check-out, rentals)\n- Missing end dates can mean *still active* (today), a single day, or be skipped\n- Text dates are parsed, day first by default (31/01/2025)\n- Records that cannot be expanded (no start date, end before start) go to the second output with a reason\n\nWeeks run Monday to Sunday; quarters and years are calendar quarters and years.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "start_field",
+            "title": "Start date",
+            "description": "Date (or date text) the range starts on.",
+            "groupTitle": "Date range",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "end_field",
+            "title": "End date",
+            "description": "Date (or date text) the range ends on.",
+            "groupTitle": "Date range",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "inclusive_end",
+            "title": "End date is included",
+            "description": "Ticked: a range 1 to 3 January covers 3 days (contracts, absences). Unticked: it covers 2 days (hotel nights, rentals).",
+            "groupTitle": "Date range",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "missing_end",
+            "title": "When the end date is missing",
+            "description": "What to do with a range that has no end date.",
+            "groupTitle": "Date range",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Use today (still active)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TODAY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Use the start date (one day)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "START",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Skip the record",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SKIP",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "TODAY"
+        },
+        {
+            "name": "day_first",
+            "title": "Text dates are day first",
+            "description": "Read 03/04/2025 as 3 April (UK style). Untick for 4 March (US style). ISO dates (2025-04-03) are always read correctly.",
+            "groupTitle": "Date range",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "frequency",
+            "title": "One row per",
+            "description": "Size of the periods each range is split into.",
+            "groupTitle": "Periods and amounts",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Day",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DAY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Week (Monday to Sunday)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WEEK",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Month",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Quarter",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "QUARTER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Year",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "YEAR",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MONTH"
+        },
+        {
+            "name": "prorate_fields",
+            "title": "Amounts to prorate",
+            "description": "Number fields split across periods in proportion to the days in each period. Each gets a new field '<name> (prorated)'.",
+            "groupTitle": "Periods and amounts",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "max_periods",
+            "title": "Maximum periods per record",
+            "description": "Safety limit: records spanning more periods than this are skipped.",
+            "groupTitle": "Periods and amounts",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 1000000,
+            "mandatory": true,
+            "defaultValue": 5000,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "expanded",
+            "label": "Expanded",
+            "displayName": "Expanded periods",
+            "tooltip": "One row per record and period, with Period, Period Start, Period End, Period Number, Days In Period, Days In Range, Share Of Range and prorated amounts."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "skipped",
+            "label": "Skipped",
+            "displayName": "Skipped records",
+            "tooltip": "Records that could not be expanded, with the reason."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

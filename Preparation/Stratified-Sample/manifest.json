@@ -1,0 +1,194 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Stratified Sample",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEE0lEQVR42u2dTW8NURyHn9NexEtZoUVZS0iriZewwRdgJV6W9r6LD2DbiBVfAItGiuRqbazR3GKHNqlwOxZzrkuCzn9mzr1zz/k9SdPkZs65k3ly5p45L78BIYQQQgghhBBCCCGEiB9nLZBlWQs4B8wBk8B2XcZKbAArwDPn3OugArMs2wfcBg7pugdhCbjvnPtRtEDL2PLqkOd8HVPAHv/ZV+AD0AGyhAXOApvAfO0C/W2zirxxf4JngF3/OGYdeAEsA91EJc5lWfbKOfemyMFjloornNQEcAO4+B95ALuBS8AtYG/CLfFC0QMtAg+WPJm9Xoil/H7gZsISj4UQuKPkbfOqb1lWdgNXfB2psTOEwLI/yvsrlD8AzKhzOhyBzndYqnKmzPOqBFbn8BYdFsutdEqqBi9wssa6JHAIAvc0tC4JFGkIXGtoXRJYkNUa6+pI1eAFdsjHNutofR+kavACM/KB6ao8J+0ZiqF2YpaBTxXKfwReS1M9AjdK1N8FHpW8la75spsJetkIIfBtyZP5Qj5B+cnY8ubJJ3pT5GMIgQsVTqgn8ckWrXEdeJy4PIB20QOta2JuUm1it/edU/5vwn/21T92rKrDQge465zrhhDYAq6TTxOJMPLuOec+B2mBv4k8CZwHjmCYfBR/5Zt/zm0Di0VbnhBCCCGEEEKINNH+wOGj/YERsYRxf+CYseVJXlhmgWuWApbppHOSNxDmsiw7HkLgnK7twGjU/kBhpzH7A0U5GrM/UASmpUsw2qkZKQuMIjUjVYET5Pvvt+qY9VIzTgAPyVfXNYoUfwOjSs1ITWB0qRmpCZwlstSMlARGmZqRksAoUzNSEhhlakZKAqNMzdBQ2oiTksAoUzNSEhhlakZKAqNMzUhJYJSpGal1YqJLzUhNYHSpGSk+RkSVmpHqfGBP4gz52Oa/ZifW/W/eMg3Nq0l5Rr5Lvi/9FSOcmqE1MbmgDiOaiKihtBEndFaaKEejstJEuefN2gUu6LoOjHbtAv3btNq6tsHpAIuhOjEPyDchinDy7lnitpSVNnyUlSaEEEIIIYQQojDKSquPbfQnhL8AReOylJU2ZI6SL8uYpj80uQm8A176/0VZwpiV5owt747k/WIMuMzWGz6XyN9YU3RNTds5N285iaIoK+1PLlFst+4scNFQr7LSBsA0trfXnPK32qIoKy0wZ0uUOW04VllpgXub0yVb7baCxyorLSATJa/bOAF29kqgnUYt9JVAO2uUW2bfJcDeCq0LtfPd+HDe4z220ZnaBWpdaJ/nJcq8NByrdaGBWcG2Oq9tbLVaFzoAnpDvbCoi46mhXtO6UL1DtzrT9Aezx3/rsLz3t9oVozy9Q3dItOjniVqmk7QuVAghhBBCCCFEYX4CP0MQoZoaC7oAAAAASUVORK5CYII=",
+    "description": "Draws a reproducible random sample within strata: proportional with a minimum per stratum, equal, fixed number or percentage, with sampling weights and an allocation table.",
+    "category": "Preparation",
+    "subcategory": "Sampling",
+    "tags": [
+        "sample",
+        "stratified",
+        "audit sampling",
+        "random",
+        "split",
+        "survey",
+        "visokio-agents"
+    ],
+    "introductoryText": "Draws a random sample in which **every group (stratum) is represented**: regions, risk bands, customer segments, store formats. A simple random sample can miss small groups entirely; a stratified one cannot.\n\n- **Proportional**: a total sample size split across strata in proportion to their size, with a **minimum per stratum** so small groups still get a few records (largest-remainder rounding, never more than a stratum holds)\n- **Equal**: a total sample size split equally across strata\n- **Fixed number per stratum**: for example 10 from each\n- **Percentage per stratum**: for example 5% of each\n\nSampling is without replacement and **reproducible**: the same seed gives the same sample. Each sampled record gets a **Sample Weight** (stratum population / stratum sample size) for estimating population totals, and its stratum label. The **remainder** output holds the records not sampled (for train / test splits or control groups), and the **allocation** output shows population, sample size, fraction and weight per stratum.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "strata_fields",
+            "title": "Strata fields",
+            "description": "Sample within each combination of these fields. Leave empty for a simple random sample.",
+            "groupTitle": "Strata",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "method",
+            "title": "Allocation",
+            "description": "How the sample is split between strata.",
+            "groupTitle": "Sample size",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Total sample, proportional to stratum size",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PROPORTIONAL",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Total sample, equal per stratum",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "EQUAL",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Fixed number per stratum",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FIXED",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Percentage per stratum",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PERCENT",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "PROPORTIONAL"
+        },
+        {
+            "name": "total_n",
+            "title": "Total sample size",
+            "description": "For proportional and equal allocation.",
+            "groupTitle": "Sample size",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 100,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_per_stratum",
+            "title": "Minimum per stratum",
+            "description": "Proportional allocation only: each stratum gets at least this many (or all its records, if fewer).",
+            "groupTitle": "Sample size",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 1,
+            "showAsSlider": false
+        },
+        {
+            "name": "per_stratum_n",
+            "title": "Records per stratum",
+            "description": "For the fixed-number method.",
+            "groupTitle": "Sample size",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 10,
+            "showAsSlider": false
+        },
+        {
+            "name": "percent",
+            "title": "Percentage per stratum",
+            "description": "For the percentage method, 0 to 100.",
+            "groupTitle": "Sample size",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 100,
+            "mandatory": true,
+            "defaultValue": 10.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "seed",
+            "title": "Random seed",
+            "description": "The same seed always gives the same sample.",
+            "groupTitle": "Sample size",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 42,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "sample",
+            "label": "Sample",
+            "displayName": "Sample",
+            "tooltip": "Sampled records with Sample Weight and Stratum."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "remainder",
+            "label": "Not sampled",
+            "displayName": "Not sampled",
+            "tooltip": "All records not in the sample."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "allocation",
+            "label": "Allocation",
+            "displayName": "Allocation",
+            "tooltip": "Per stratum: population, sample size, sampling fraction, weight, shares."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

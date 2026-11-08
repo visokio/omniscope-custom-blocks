@@ -1,0 +1,134 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Age and Tenure",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAC2klEQVR42u3dPWtTYRjG8esuarR1aHHspkIXUcTBzyC+DI6tIOpQECe/iNDiIuJkBQeXgq+DoCjiIuJ7Vx2r0NoqtREvh2Ro1R7TJCTPOc//B51y7haef87JIck5lQAAAACg/GyH7bO2HzR/ztiOsswT0L7mv10ty3zu8Sa8sfHU5wlovypYwDepz+ceb4//b3eq8/0wkFjD/R1u0+/57AMOt7DNSMLz2Qf81sI2ywnPZx/wQwvbvE94PvuTmAHbnwpOID7aHkh1Pvs9MCJ+SZou2GSquU2S82jsBTXbT/7x7H9se1vq82gs4pDtadufbc/bnrI9VJZ5AOjf4XPM9lPb9TWvP/Xmxzqjqc8TsLF4G7mX+nzPz9wTDFiXtGWDh1cjopbyfO7vxKhg8SRpawnmsw8IAhIQBAQBQUACgoAgIAhIQBAQBAQBCQgCFqgXPPazBPPZB3xY8NizEsznzfao7fu2V//4UtEj23tTn++16HGcYUknJI1JqlXsubci6bWkOxGxVLmAzXgXJQ1W/CDyRdKliFip2mvgiQziSdIuSUeqeBIzltFL+cEqBqxlFHCwigFBQBCQgCAgCAgCEhAEBAEJCAK2ZCGjdV2pYsC3GQWcq2LAu5LmM4j3XdJsr/5Yr79SsV3ScTVuW7yjgofNOUmzEbFYuoC2a5ImJY1L2ieJm8OttyjphaTLEXErqYDNW1DdlnSATi25Kel0RPzoe8DmnveceJs2ExGnUjiJmSReWyZsH00h4AQt2nYhhUPokqSdtGjLQkSM9Dug6dBBgIiOGvBeaMkRkIAgIAhIQBAQBAQBCQgCgoAgIAFBQBAQBCQgCAgCgoAEBAGRVsCvLGP/1q4bAbkRePvepRBwmg5tm+n0F3Tr+sDr4iKXzXop6XBErKZwEnNOjYsW0Xq8Y53G69oeuGZPPCnpvKRDkobptM6yGv+W4IakK92IBwAAAAAAAAC5+A3tNUiPl+eLZgAAAABJRU5ErkJggg==",
+    "description": "Exact age or service in years, months and days, decimal years, bands, next anniversary and upcoming milestones, with 29 February handled.",
+    "category": "Preparation",
+    "subcategory": "Date",
+    "tags": [
+        "age",
+        "tenure",
+        "length of service",
+        "anniversary",
+        "date difference",
+        "HR",
+        "age bands",
+        "visokio-agents"
+    ],
+    "introductoryText": "Exact **age or length of service** between a start date (date of birth, joining date, contract start) and an as-of date.\n\n- **Completed years, months and days**, and **decimal years**\n- A **band** from your boundaries (default 18, 25, 35, 45, 55, 65 gives *Under 18, 18-24, 25-34...65+*; a one-year band is labelled with that year alone, such as *1*), with a count per band\n- The **next anniversary** and the days until it, and an **upcoming milestone** flag (for example 10 years' service within 90 days)\n- Someone born on 29 February has their anniversary on 28 February in non-leap years\n- An optional **end date** (for example a leaving date) is used instead of the as-of date where it is filled; leavers (an end date before the as-of date) get no upcoming milestone",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "start_field",
+            "title": "Start date (birth, joining)",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "end_field",
+            "title": "End date (optional)",
+            "description": "For example a leaving date.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "as_of",
+            "title": "As of date",
+            "description": "Default: today.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "bands",
+            "title": "Band boundaries (years)",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "18, 25, 35, 45, 55, 65"
+        },
+        {
+            "name": "milestones",
+            "title": "Milestones (years)",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "5, 10, 15, 20, 25, 30, 40"
+        },
+        {
+            "name": "milestone_window_days",
+            "title": "Milestone window (days)",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 3660,
+            "mandatory": true,
+            "defaultValue": 90,
+            "showAsSlider": false
+        },
+        {
+            "name": "prefix",
+            "title": "Prefix for new fields (optional)",
+            "description": "For example 'Age ' or 'Service '.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "rows",
+            "label": "Rows",
+            "displayName": "Rows",
+            "tooltip": "The input with years, months, days, decimal years, band, next anniversary, days to it and upcoming milestone."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "bands",
+            "label": "Bands",
+            "displayName": "Bands",
+            "tooltip": "Rows and share per band."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

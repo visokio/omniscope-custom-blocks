@@ -1,0 +1,61 @@
+Listing ID,Region,Property Type,Bedrooms,Floor Area (sqm),Asking Price,Agent,Listed On
+L1000,North West,Flat,3,55,189000,Harper & Co,2025-06-01
+L1001,North West,Terraced,3,80,221000,Northside Homes,2025-06-03
+L1002,North West,Semi-detached,3,98,270000,,2025-06-05
+L1003,North West,Detached,3,,339000,Coast Estates,2025-06-07
+L1004,London,Flat,1,65,426000,Harper & Co,2025-06-09
+L1005,London,Terraced,3,-999,521000,Northside Homes,2025-06-11
+L1006,London,Semi-detached,2,111,633000,Brick Lane Lettings,2025-06-13
+L1007,London,Detached,5,,1056000,Coast Estates,2025-06-15
+L1008,South West,Flat,1,49,240000,Harper & Co,2025-06-17
+L1009,South West,Terraced,,78,253000,Northside Homes,2025-06-19
+L1010,South West,Semi-detached,4,95,329000,Brick Lane Lettings,2025-06-21
+L1011,South West,Detached,3,131,574000,Coast Estates,2025-06-23
+L1012,Yorkshire,Flat,3,,165000,Harper & Co,2025-06-25
+L1013,Yorkshire,Terraced,2,89,260000,Northside Homes,2025-06-27
+L1014,Yorkshire,Semi-detached,4,101,319000,Brick Lane Lettings,2025-06-29
+L1015,Yorkshire,Detached,,156,406000,Coast Estates,2025-07-01
+L1016,North West,Flat,1,57,186000,Harper & Co,2025-07-03
+L1017,North West,Terraced,2,72,213000,Northside Homes,2025-07-05
+L1018,North West,Semi-detached,4,,275000,Brick Lane Lettings,2025-07-07
+L1019,North West,Detached,4,170,385000,,2025-07-09
+L1020,London,Flat,3,64,424000,Harper & Co,2025-07-11
+L1021,London,Terraced,4,89,593000,Northside Homes,2025-07-13
+L1022,London,Semi-detached,2,,685000,Brick Lane Lettings,2025-07-15
+L1023,London,Detached,3,126,1022000,Coast Estates,2025-07-17
+L1024,South West,Flat,1,53,221000,Harper & Co,2025-07-19
+L1025,South West,Terraced,4,85,324000,Northside Homes,2025-07-21
+L1026,South West,Semi-detached,2,-999,370000,Brick Lane Lettings,2025-07-23
+L1027,South West,Detached,4,169,542000,Coast Estates,2025-07-25
+L1028,Yorkshire,Flat,3,62,175000,Harper & Co,2025-07-27
+L1029,Yorkshire,Terraced,2,,273000,Northside Homes,2025-07-29
+L1030,Yorkshire,Semi-detached,2,128,315000,Brick Lane Lettings,2025-07-31
+L1031,Yorkshire,Detached,,169,438000,Coast Estates,2025-08-02
+L1032,North West,Flat,2,48,147000,Harper & Co,2025-08-04
+L1033,North West,Terraced,4,,258000,Northside Homes,2025-08-06
+L1034,North West,Semi-detached,4,85,236000,Brick Lane Lettings,2025-08-08
+L1035,North West,Detached,3,165,479000,Coast Estates,2025-08-10
+L1036,London,Flat,1,68,376000,,2025-08-12
+L1037,London,Terraced,4,92,627000,Northside Homes,2025-08-14
+L1038,London,Semi-detached,3,-999,665000,Brick Lane Lettings,2025-08-16
+L1039,London,Detached,5,160,968000,Coast Estates,2025-08-18
+L1040,South West,Flat,2,50,238000,Harper & Co,2025-08-20
+L1041,South West,Terraced,4,,307000,Northside Homes,2025-08-22
+L1042,South West,Semi-detached,3,89,419000,Brick Lane Lettings,2025-08-24
+L1043,South West,Detached,3,156,490000,Coast Estates,2025-08-26
+L1044,Yorkshire,Flat,,64,216000,Harper & Co,2025-08-28
+L1045,Yorkshire,Terraced,2,86,231000,Northside Homes,2025-08-30
+L1046,Yorkshire,Semi-detached,3,87,363000,Brick Lane Lettings,2025-09-01
+L1047,Yorkshire,Detached,3,,413000,Coast Estates,2025-09-03
+L1048,North West,Flat,3,59,163000,Harper & Co,2025-09-05
+L1049,North West,Terraced,3,81,232000,Northside Homes,2025-09-07
+L1050,North West,Semi-detached,2,119,297000,,2025-09-09
+L1051,North West,Detached,3,152,430000,Coast Estates,2025-09-11
+L1052,London,Flat,,41,431000,Harper & Co,2025-09-13
+L1053,London,Terraced,2,79,573000,Northside Homes,2025-09-15
+L1054,London,Semi-detached,4,112,698000,Brick Lane Lettings,2025-09-17
+L1055,London,Detached,3,,977000,Coast Estates,2025-09-19
+L1056,South West,Flat,3,50,220000,Harper & Co,2025-09-21
+L1057,South West,Terraced,2,73,296000,Northside Homes,2025-09-23
+L1058,South West,Semi-detached,3,104,361000,Brick Lane Lettings,2025-09-25
+L1059,South West,Detached,3,123,568000,Coast Estates,2025-09-27

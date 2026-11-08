@@ -1,0 +1,25 @@
+Customer ID,Address,Postcode
+C001,"12 Larch Row, Leeds LS1 5HD",ls15hd
+C002,"Flat 3, 48 Bramble Street, Manchester, M3 2EG",M3  2EG
+C003,"7 Thistle Court Edinburgh EH2 2PR",EH2 2PR
+C004,"Unit 4 Heron Business Park, Cardiff CF10 5AF",CF105AF
+C005,"27 Willow Street, Bristol",BS1 4D
+C006,"5 Linen Yard Belfast BT1 5AB",bt1 5ab
+C007,"The Old Croft, Lerwick, Shetland ZE1 0AA",ZE1 0AA
+C008,"14 Ashgrove Lane Glasgow G1 3DX",G1 3DX
+C009,"La Petite Rue, St Peter Port GY1 1AA",GY1 1AA
+C010,"99 Marigold Street London W3 7TN",W3 7TN
+C011,"3 Orchard Mews, London NW5 2RX",NW5 2RX
+C012,"Quayside Unit 6, Plymouth PL1 2LR",PL1 2LR
+C013,"Tanners Lane Chester CH1 2HU",CH12HU
+C014,"Somewhere without a postcode",
+C015,"22 Sorrel Road, Norwich NR1 1EF",NR1 1EF
+C016,"41 Cobden Terrace London SW9 8LP",SW9 8LP
+C017,"Weavers Close, Galashiels TD1 1BX",TD1 1BX
+C018,"8 Gorse Avenue, Swansea SA1 5LB",SA1 5LB
+C019,"Typo House, York YO1 OAB",YO1 OAB
+C020,"Fake Lane QQ1 1AA",QQ1 1AA
+C021,"4 Fernleigh Road, Douglas IM1 1AA",IM1 1AA
+C022,"Hill Farm, Shrewsbury SY3 8LA",SY3 8LA
+C023,"9 Granite Row Aberdeen AB101AB",AB101AB
+C024,"18 Cutler Walk Sheffield S1 2HE",S1 2HE

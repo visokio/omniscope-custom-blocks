@@ -1,0 +1,159 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Data Validation Rules",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEy0lEQVR42u2cz4uVVRjHP8+MMxJuplZBFOMikIwCEZSpRUFEkBgWgRCZ0Eowl9GfUG2zWibmkFEgRqGLSoqcHGoxVJa7LKKEsAzthzYzT4t7pib13nvOe8977/vj+1mN+vreM+fznjPne97zDAghhBBCCCGEEEIIIYQQFcdG3QB3vw24N/zxEzP7XlpqgLtPuPvL7r7o/7EY/m5CPVRteebus96d/eqlagt8wXuzFKZWUUF5ezyOneqt/owNWd424CV1ez1H3mZ3vxQ5+jSFVkzeenc/5/G8EnHPte6+z91PJTwYVeaCu3/o7o+VkgOL5jV3vwk4CWyI/KiPgQfN7HKPe94CvAfc3dBn/k3gqV59kCuvTUaMko8SnsJvgvB+91zw5nMo1/S3v8eHHO0mMWS9NxIafM7d10e0Z5+3h4cH3uYKCwpPlRiR9VZzyd03R7ZpvkUCjw0aI2YirtkOvLVaorvvAZ6NfE6WgJ1m9nnk9Xe0aP23dVg58F+JBbLeM2b2bsL1y8rp8RfMJXTYduA4cBgYj/w/L5rZq4nf1KctEvj1QAJDVEjp4PuBdZHXHgaeK/BNtWknZ3bgHBhe7bwdRlgu+ma9Pm06BDzRcHkLwBYzuzLQHGtmfwOPA+9katgZYMeAIfXpEHabLG9bP3mpT/1kiAyDEJX1Etr0qLu/7+6/NiAyXHT3OXff22+DZFCJRwo28A9334oY+cZ0kZG4GOKFqJDElJG4V71WX4nPq7fqO53Ourupp6ovUccDR4RlFKkDukIIIYQQQihGDClHKn7UdANA9YE1lqf6wJoLVH1gjeWpPjAjqg8U0fJUH1hjeaoPVH3g/+6p+sBMeU31gaoPVH2g6gNVH9gV1QeOFtUHNj2nqz6w2qg+sOaoPrDGLKD6wFrLU32g6gOvL1H1gTXfmFZ9YEMkqj6wJRJVH1jj6VT1gTWRqOOBI0L1gUIIIYQQQgghRJODvLtPASvv9L41swsFg3+W+0hgfIePA4/QOeq28iZ/GTgFHDWzpWHeR6QL3AHc0+WfTwMH+3V+kLcL2NjlkpNmdkRa4hmLlDdF55BvNzYCu4KgovIAZsJniZwCgemI0dpVYqS8lRlhWlryC4zlGokJ8kSJAs8CniqxgDwPnyWGvIjptrAhceRpEVNyjChzKoxayV7VpmlgE3AzMFlzF38BPwDzZvZzKUE+SHwSuDNz488AB8xsMbIdE3ROi29q4KBaAo6b2YnsAkuSmCrPgN0tWBQdM7MPsq9CwxT3OvDVsOUF7mrJivah8Msc8seITBKLyAPY0qL1yX2l5cBVEk8XXLC8VkAewK0tWmTePuwgH8s4xY80rmmRwLWlCRwwVmwAdrt7ERk/tUjg+VIEZsqERSXOt0jgl9kFZg70RSR+BnzXAnkX6ZSi5xNY0m5MkkQzWwYOAD82WN7vYZH3Z7YgX7WttLAb8wCdN/vrGiLuMvAFnZ2Y32KzRqzASm5mu/sYcCNwQwPk/ZJ6pGRNZCdN0fuN/HVHU/g6ZdTOuPuJlANOYUo9T0vJ+Ub+mqkwPE0HE8K+3siXJLDwz7ECEkUJAs/S/41810VIgkS9kS9DYPiZNDfICjJS4pwO+Kahg71tEXjVilRH64UQQgghRHH+ASzMVPqwtoVNAAAAAElFTkSuQmCC",
+    "description": "Validates data against a rules table or typed rules (not empty, unique, ranges, lists, patterns, emails, postcodes, field comparisons) with violations per row and per rule.",
+    "category": "Preparation",
+    "subcategory": "Data quality",
+    "tags": [
+        "data validation",
+        "data quality",
+        "rules",
+        "checks",
+        "audit",
+        "master data",
+        "testing",
+        "visokio-agents"
+    ],
+    "introductoryText": "Checks data against a list of **validation rules** and reports every violation, a summary per rule and a pass / fail flag per row.\n\nRules come from a **rules table on input 2** (Field, Check, Value, Severity, optional Rule Name), so business users can maintain them, or are typed in the options one per line: `Field | CHECK | value | severity`.\n\n**Checks**: NOT_EMPTY, UNIQUE, MIN, MAX, BETWEEN (`low..high`), ALLOWED and NOT_ALLOWED (`a|b|c`), PATTERN (regular expression), MIN_LENGTH, MAX_LENGTH, IS_NUMBER, IS_DATE, NOT_FUTURE, EMAIL, UK_POSTCODE, COMPARE with another field (`<= Credit Limit`), REQUIRED_IF another field has a value (`Country = UK`).\n\n**Severity** is Error or Warning; a row is *Valid* when it has no errors. Empty values pass every check except NOT_EMPTY and REQUIRED_IF, so each problem is reported once.\n\nOutputs: one row per violation (with your key fields), one row per rule with failures, rate, status and examples, and the input with error and warning counts.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "rules",
+            "title": "Rules (one per line)",
+            "description": "Field | CHECK | value | severity, for example: Email | EMAIL | | Error",
+            "groupTitle": "Rules",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "key_fields",
+            "title": "Key fields for the violations list",
+            "description": "For example Customer ID.",
+            "groupTitle": "Rules",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "examples",
+            "title": "Example values per rule",
+            "description": null,
+            "groupTitle": "Rules",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 50,
+            "mandatory": true,
+            "defaultValue": 3,
+            "showAsSlider": false
+        },
+        {
+            "name": "rule_field_field",
+            "title": "Field column",
+            "description": "Column of the rules table naming the field to check.",
+            "groupTitle": "Rules table (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "rule_check_field",
+            "title": "Check column",
+            "description": "Column naming the check, such as NOT_EMPTY or BETWEEN.",
+            "groupTitle": "Rules table (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "rule_value_field",
+            "title": "Value column",
+            "description": "Column with the check's value, such as a range or list.",
+            "groupTitle": "Rules table (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "rule_severity_field",
+            "title": "Severity column",
+            "description": "Column with Error or Warning.",
+            "groupTitle": "Rules table (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "rule_name_field",
+            "title": "Rule name column",
+            "description": "Column with a readable name for each rule.",
+            "groupTitle": "Rules table (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "violations",
+            "label": "Violations",
+            "displayName": "Violations",
+            "tooltip": "One row per failed check: row number, key fields, rule, field, check, severity, value found."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "rules",
+            "label": "Rules",
+            "displayName": "Rule summary",
+            "tooltip": "Per rule: rows checked, rows failing, failure rate, status, example values, first failing row."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "rows",
+            "label": "Rows",
+            "displayName": "Rows",
+            "tooltip": "The input with Errors, Warnings, Failed Rules and Valid."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}
