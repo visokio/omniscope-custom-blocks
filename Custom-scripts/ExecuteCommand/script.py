@@ -1,72 +1,101 @@
-from omniscope.api import OmniscopeApi
-from urllib.parse import unquote
-import subprocess
-import shlex
+"""Execute Command: runs one command, or one command per record, on the machine that runs the block, and passes the
+input records through."""
 import os
+import shlex
+import subprocess
+
 import pandas as pd
+from omniscope.api import OmniscopeApi
 
-omniscope_api = OmniscopeApi()
-    
-command = omniscope_api.get_option("command")
+api = OmniscopeApi()
 
-ignore_errors = omniscope_api.get_option("ignoreErrors")
-auto_cmd = omniscope_api.get_option("auto_cmd")
-commands_field = omniscope_api.get_option("commands_field")
+command = api.get_option("command")
+commands_field = api.get_option("commands_field")
+ignore_errors = bool(api.get_option("ignoreErrors"))
+auto_cmd = bool(api.get_option("auto_cmd"))
+timeout = api.get_option("timeout")
 
-input_data = omniscope_api.read_input_records(input_number=0)
+input_data = api.read_input_records(input_number=0)
 
-def get_commands(data, commands_field, auto_cmd):
-    cmds = []
-    for index, row in data.iterrows():
-        cmd = row[commands_field]
-        if auto_cmd:
-            cmds.append("cmd /c " + cmd)
-        else:
-            cmds.append(cmd)
-    return cmds
-    
-    
-cmds = []
-if commands_field is not None:
-    cmds = get_commands(input_data, commands_field, auto_cmd)
+timeout = None if timeout in (None, "", 0) else float(timeout)
+if timeout is not None and timeout < 0:
+    api.abort("Time limit must be 0 (no limit) or a number of seconds.")
+
+if commands_field:
+    if input_data is None:
+        api.abort("\"Field with commands\" is set, but nothing is connected to the block's input.")
+    if commands_field not in input_data.columns:
+        api.abort(f"{commands_field} is not in the input.")
+    values = input_data[commands_field]
+    commands = [None if pd.isna(v) or str(v).strip() == "" else str(v).strip() for v in values]
 else:
-    if auto_cmd:
-        cmds.append("cmd /c " + command)
-    else:
-        cmds.append(command)
+    if command is None or str(command).strip() == "":
+        api.abort("Enter a Command, or choose a Field with commands.")
+    commands = [str(command).strip()]
 
-isPosix = False
-if os.name == 'posix':
-    isPosix = True
-    
-stdout = []
-stderr = []
-codes = []
-for cmd in cmds:
+windows = os.name == "nt"
 
-    result = subprocess.run(shlex.split(cmd,posix=isPosix), capture_output=True)
 
-    if (result.returncode != 0):
-    
-        if (ignoreErrors):
-            omniscope_api.update_message("Command failed, but ignored. Return code:"+str(result.returncode)+". Check execution logs.");
-        else:
-            omniscope_api.abort(message="Command failed. Return code:"+str(result.returncode)+". Check execution logs.")
-    codes.append(result.returncode)
-    stderr.append(result.stderr.decode("utf-8"))
-    stdout.append(result.stdout.decode("utf-8"))
+def run(cmd):
+    """Runs one command; returns (exit code, output, errors, problem)."""
+    full = "cmd /c " + cmd if auto_cmd else cmd
+    # No shell: on Windows the command line goes to the program as typed (Windows splits it); elsewhere it is
+    # split into the program and its arguments like a shell would, but without pipes, redirects or variables.
+    try:
+        args = full if windows else shlex.split(full)
+    except ValueError as exc:  # an unclosed quote
+        return None, "", "", f"Can't read the command: {exc}"
+    program = full.split()[0] if windows else args[0]
+    try:
+        result = subprocess.run(args, capture_output=True, timeout=timeout)
+    except FileNotFoundError:
+        return None, "", "", f"Program not found: {program}"
+    except PermissionError:
+        return None, "", "", "Permission denied: the program can't be run"
+    except subprocess.TimeoutExpired as exc:
+        out = (exc.stdout or b"").decode("utf-8", errors="replace")
+        err = (exc.stderr or b"").decode("utf-8", errors="replace")
+        return None, out, err, f"Stopped after the time limit of {timeout:g} seconds"
+    out = result.stdout.decode("utf-8", errors="replace")
+    err = result.stderr.decode("utf-8", errors="replace")
+    problem = None if result.returncode == 0 else f"Exit code {result.returncode}"
+    return result.returncode, out, err, problem
 
-output_data_2 = pd.DataFrame({"cmd": cmds, "code": codes, "stdout": stdout, "stderr": stderr})
 
-# read the records associated to the first block input
+def last_lines(text, n=5, width=600):
+    lines = [l for l in text.strip().splitlines() if l.strip()]
+    return " | ".join(lines[-n:])[-width:]
 
-output_data = input_data
 
-#write the output records in the first output
-if output_data is not None:
-    omniscope_api.write_output_records(output_data, output_number=0)
+rows = []
+skipped = 0
+for cmd in commands:
+    if cmd is None:
+        skipped += 1
+        continue
+    code, out, err, problem = run(cmd)
+    # trailing line breaks dropped, so "4\n" compares equal to "4" in later blocks
+    rows.append({"cmd": cmd, "code": code, "stdout": out.rstrip("\r\n"), "stderr": err.rstrip("\r\n"),
+                 "error": problem})
+    if problem is not None:
+        detail = last_lines(err) or last_lines(out)
+        text = f"Command failed ({problem}): {cmd}" + (f" -- {detail}" if detail else "")
+        if not ignore_errors:
+            api.abort(text)
+        api.update_message(text)
 
-if output_data_2 is not None:
-    omniscope_api.write_output_records(output_data_2, output_number=1)
-    
-omniscope_api.close()
+results = pd.DataFrame(rows, columns=["cmd", "code", "stdout", "stderr", "error"])
+results["code"] = pd.array(results["code"].tolist(), dtype="Int64")
+for c in ("cmd", "stdout", "stderr", "error"):
+    results[c] = results[c].astype(object)
+
+if input_data is not None:
+    api.write_output(input_data, "Output Data")
+api.write_output(results, "Output Data 2")
+
+failed = int(results["error"].notna().sum())
+message = f"Ran {len(results)} command{'s' if len(results) != 1 else ''}"
+message += f", {failed} failed (carried on, as set)." if failed else "."
+if skipped:
+    message += f" {skipped} records with no command were skipped."
+api.commit(message)

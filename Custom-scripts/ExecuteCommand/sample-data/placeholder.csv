@@ -1,0 +1,4 @@
+cmd,code,stdout,stderr,error
+python --version,0,Python 3.11.2,,
+"python -c ""print('Hello from the server')""",0,Hello from the server,,
+"python -c ""print(2 + 2)""",0,4,,
