@@ -6,6 +6,8 @@ options, sample data and a demo project.
 Community views (charts and other views for reports) are in [omniscope-custom-views](https://github.com/visokio/omniscope-custom-views)
 ([gallery](https://visokio.github.io/omniscope-custom-views/)).
 
+To compare community and core blocks and views in one list, with filters, use the [Blocks and Views Explorer](https://public.omniscope.me/Community/Blocks+and+Views+Explorer.iox/r/Report/).
+
 [![Checks](https://github.com/visokio/omniscope-custom-blocks/actions/workflows/checks.yml/badge.svg)](https://github.com/visokio/omniscope-custom-blocks/actions/workflows/checks.yml)
 
 Community blocks for [Omniscope](https://visokio.com/) workflows, written in Python or R: analytics, data
