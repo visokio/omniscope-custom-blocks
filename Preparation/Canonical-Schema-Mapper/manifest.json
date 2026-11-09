@@ -11,34 +11,50 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": "data:image/png;base64,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",
-    "description": "Enforces a stable, business-defined schema by mapping aliases to canonical fields, coalescing values, and applying consistent types and defaults.",
+    "icon": "data:image/png;base64,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",
+    "description": "Maps the many names a field goes by (aliases) to one canonical name, combines fields that hold the same thing, and converts each to a set type with an optional default, following rules kept as data (typed into the block or in a CSV file), working through the data in chunks so large inputs never have to fit in memory.",
     "category": "Preparation",
     "subcategory": null,
     "tags": [
         "field",
         "streaming",
         "rename",
-        "name"
+        "name",
+        "schema",
+        "schema drift",
+        "alias",
+        "mapping",
+        "coalesce",
+        "type conversion"
     ],
-    "introductoryText": "### Canonical Schema Block\n\n#### The Canonical Schema Mapper enforces a stable, business-defined schema using a simple rules file. It maps multiple possible input field names (aliases) to canonical fields, coalesces values when multiple variants exist, applies consistent data types, and fills defaults to guarantee a stable output schema. Optional passthrough allows unmapped fields to flow through unchanged.\n\n#### Use this block when you need **contract-level stability**: production pipelines, shared dashboards, automated reporting, or operational workflows. It replaces brittle combinations of Field Organiser + formulas by providing a single, declarative place to define what each field means and how schema drift should be handled.\n\n#### What it does\n\n- Outputs a stable canonical schema (fixed columns, fixed order)\n- Coalesces when multiple aliases exist\n- Casts to specified types\n- Fills defaults \n\n#### Options (required)\n- Schema Rules CSV file (required, path to CSV file containing the rules)\nRequired columns:\n- canonical\n- aliases (pipe-separated or comma-separated list)\nOptional columns:\n- type (string, number, date, datetime, boolean)\n- default (string value)\n\n#### Example rules file\n```csv\ncanonical,aliases,type,default\norder_id,order_id|OrderID|order id|ORDER_ID,string,\norder_date,order_date|OrderDate|order date|ORDER_DATE,datetime,1970-01-01\nqty,qty|Qty|quantity|QTY,number,0\nsku,sku|SKU|sku_id|Sku,string,",
+    "introductoryText": "Gives data from sources that name their fields differently one agreed set of field names and types, using rules kept as data: a rules CSV typed into the block, or a rules file. For a fixed mapping set up once, the core **Define schema** block does this in its own settings; this block is for rules you keep in a table and change without editing the workflow. The block works through the data in chunks (it streams), so it suits very large inputs.\n\n**How it works**: each rule names a canonical field and the other names (aliases) it may arrive under. Every input field whose name matches the canonical name or an alias becomes that canonical field. If several input fields match, they are combined: each record takes the first value present, in the order the aliases are listed. The value is then converted to the rule's type; values that can't be converted become empty, and the block's message counts them. Empty values get the rule's default, if it has one.\n\n**How to set it up**: write the rules in **Schema rules**, one rule per line or rules separated by semicolons, as CSV: `canonical, aliases, type, default, format`. A heading row is optional. Or leave it empty and choose a CSV file with the same columns in **Schema rules file**; rules written in the block take precedence. The columns:\n\n- `canonical`: the field name to output.\n- `aliases`: other names for it, separated by `|` (or by commas, in a quoted cell).\n- `type` (optional): `string` (the default), `number`, `integer`, `date`, `datetime` or `boolean`.\n- `default` (optional): the value for empty and unreadable values. Write dates as `2025-01-31`.\n- `format` (optional): for dates written as text, the format, such as `%d/%m/%Y` for 31/01/2025. Without it, text dates are read as ISO dates (2025-01-31) or month first; ISO dates are always read.\n\n```\norder_id, OrderID|Order No; order_date, Order Date|OrderDate, date, , %d/%m/%Y; quantity, Qty|Quantity|Units, integer; paid, Paid|Is Paid, boolean, false\n```\n\nBy default each canonical field takes the place of the first input field it came from, and canonical fields with no matching input field are left out. Tick **Output every canonical field** for a fixed schema: all canonical fields, in the rules' order, then any unmapped fields.",
     "dependencies": "",
     "options": [
         {
-            "name": "rules",
-            "title": "Schema rules CSV file",
-            "description": "A CSV file with rename rules, it has the columns \"Current Name\" and \"New Name.\"",
+            "name": "rulesText",
+            "title": "Schema rules",
+            "description": "Rules written in the block as CSV, one rule per line or rules separated by semicolons: canonical, aliases, type, default, format (heading row optional). Takes precedence over the file.",
             "groupTitle": "Rules",
-            "width": "TWO",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "rules",
+            "title": "Schema rules file",
+            "description": "A CSV file of rules (columns canonical, aliases and, optionally, type, default and format). Used when Schema rules is empty.",
+            "groupTitle": "Rules",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
-            "mandatory": true,
+            "mandatory": false,
             "defaultValue": null,
             "readOnly": true
         },
         {
             "name": "passthrough_unmapped",
-            "title": "Passthrough unmapped",
-            "description": null,
+            "title": "Keep unmapped fields",
+            "description": "Pass input fields that match no rule through unchanged. Untick to output the canonical fields only.",
             "groupTitle": "Options",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
@@ -46,30 +62,39 @@
         },
         {
             "name": "prefer_non_empty_strings",
-            "title": "Prefer non empty strings",
-            "description": null,
+            "title": "Treat blank text as missing",
+            "description": "When combining aliases, skip text that is empty or only spaces and take the next alias's value; blank text also gets the default.",
             "groupTitle": "Options",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
-            "defaultValue": null
+            "defaultValue": true
         },
         {
             "name": "auto_normalise_aliases",
-            "title": "Auto normalise aliases",
-            "description": null,
+            "title": "Match names loosely",
+            "description": "Ignore case, and treat spaces, hyphens and underscores alike when matching field names to aliases (Order Date, order_date and ORDER-DATE match). Untick to match names exactly.",
             "groupTitle": "Options",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
-            "defaultValue": null
+            "defaultValue": true
+        },
+        {
+            "name": "add_missing_canonical",
+            "title": "Output every canonical field",
+            "description": "Output all canonical fields, in the rules' order, even when no input field matches one (it is filled with its default, or left empty). Unmapped fields follow. Unticked, only matched canonical fields are output, in the input's order.",
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
         }
     ],
     "blockOutputs": [
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output",
-            "tooltip": null
+            "label": "Canonical",
+            "displayName": "Canonical records",
+            "tooltip": "The input with its fields renamed, combined and converted as the rules say."
         }
     ],
     "docker": {

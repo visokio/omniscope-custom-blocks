@@ -1,0 +1,150 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Price Elasticity",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Estimates price elasticity of demand per product with a log-log regression (optional control drivers), with confidence intervals, revenue impact and demand curves.",
+    "category": "Analytics",
+    "subcategory": "Pricing",
+    "tags": [
+        "price elasticity",
+        "pricing",
+        "demand",
+        "regression",
+        "revenue management",
+        "retail",
+        "visokio-agents"
+    ],
+    "introductoryText": "Estimates how sensitive demand is to price, per product or segment, from historical price and volume observations (for example weekly sales).\n\nThe model is the standard **log-log regression**: log(volume) = a + b x log(price) (+ optional control drivers such as a promotion flag, distribution or seasonal dummies). The **elasticity** b means a 1% price rise changes volume by about b%:\n\n- |b| > 1, **elastic**: a price rise loses more volume than it gains in price, so revenue falls\n- |b| < 1, **inelastic**: a price rise raises revenue\n\nPer product you get the elasticity, its **confidence interval** and **p-value**, R squared, the observed price range, the estimated **volume and revenue effect** of a chosen price change and a one-line interpretation (including a warning when volume appears to rise with price, a sign of confounding). A **demand curve** output gives predicted volume and revenue across the observed price range, and an observations output adds fitted volumes.\n\nEstimates are only as good as the price variation in the data: prices that never change give no estimate, and effects outside the observed price range are extrapolation.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "price_field",
+            "title": "Price field",
+            "description": "Price for each observation, such as the average price in a week.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "volume_field",
+            "title": "Volume field",
+            "description": "Units sold (or another quantity).",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Estimate separately for each",
+            "description": "For example Product, or Product and Region.",
+            "groupTitle": "Data",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "control_fields",
+            "title": "Control drivers (optional)",
+            "description": "Numeric drivers to hold constant, such as a 0 / 1 promotion flag.",
+            "groupTitle": "Model",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "confidence",
+            "title": "Confidence level",
+            "description": "For the confidence interval on each elasticity.",
+            "groupTitle": "Model",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.5,
+            "numMax": 0.999,
+            "mandatory": true,
+            "defaultValue": 0.95,
+            "showAsSlider": false
+        },
+        {
+            "name": "price_change_pct",
+            "title": "Price change to evaluate (%)",
+            "description": "Used for the volume and revenue effect columns.",
+            "groupTitle": "Model",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": -50,
+            "numMax": 100,
+            "mandatory": true,
+            "defaultValue": 5.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_observations",
+            "title": "Minimum observations",
+            "description": null,
+            "groupTitle": "Model",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 3,
+            "numMax": 100000,
+            "mandatory": true,
+            "defaultValue": 12,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "elasticities",
+            "label": "Elasticities",
+            "displayName": "Elasticities",
+            "tooltip": "Per product: elasticity, confidence interval, p-value, R squared, price range, volume and revenue effect, interpretation."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "curves",
+            "label": "Demand curves",
+            "displayName": "Demand curves",
+            "tooltip": "Per product: predicted volume and revenue at 25 prices across the observed range."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "observations",
+            "label": "Observations",
+            "displayName": "Observations",
+            "tooltip": "The input with Fitted Volume and Used In Model."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

@@ -1,0 +1,149 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Product Recommendations",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAD30lEQVR42u3dS2hcZRjG8f8bRKVaK0o1aFsF60ZFEMHrRkQMiODC4mUhuFBcCkLBC6JBcaW4cOHOrZuKLVastbQiVoug2AjWKImXWkdqVWqJqUmbx0Xi1szlO2fOO+f5rWe+c2b+eb8zQ5IZMDMzMzMzMzMzMzNruGjLA5V0I/AAcAMwDswBU8AOYHtELPrHoZnhxiXt1P87tBLYGhbvCkk/qzvzkm73s9aceGskTas3xySt97PXjIAvqT8v+9lrxnVvrs+AHUljWR7r2Ig2fBJY0+d9x4FNDji86bsEeGzAZRxwiJ4Czh5wjSUHHM70bQAeLbDUcQccjqeBswqs82OWBxwjNH2bgG8LBDwaERd7Auv3TKHpm830oMdGZPouAx4utNyMA9bvWeDMQmt5AmuevsuBhwou6YA1e67g9KXbQiP59G0GDgFnFFx2Q0Qc8QTWN30l450EOt5C65m+K1n+E4mSvo+IJQesx2Th6Ut3/UsbUNJVwP0VLD3rgPVd+8YcMGFASVcDWypa3ltoTde+qs473QRGsum7BjhYUUAB50TEvCewOi9UeM6/ZIuXKqCk64B7KjxEuu0z2wROVrzlzzhgddN3PXB3xYdJOYGRJOC7wF0VH+Yn4LcaHs4C8DvwNbAP2BsRCyMbUNJNwKeMrg7wCvBaPyEzBNwFTDD6DgL3RsTMyASUdAuwn/Y4AtwcEYdH5UXMJO1yKbBT0rmVBpS0UdI2SX/18F8/C5I+kzTR5TFuBe6gfa4FnqhsC5W0EfgSuKDPE1wC7ouIt1Y5zj7gNtrpBLA5Io5WMYGvDhDvv2O+LmndKrdrazyAtcCDVW2hdxY4wfUt3R57MVFVwLWFTvBCN1r1Wpj+VWibXeSAuYUD5vanA+b2jQPm9rED5vaBA+Y1B3zigHntiYh/HDCv97u9oQM6oBU2HRGzDpjXe73c2AETb58O2DwngY8cMK8PI+JvB2zJ9umAyV/AOGCz/BAR0w7YoulzwOTXPwdsjgVgrwPmtT8iTjhgXrv6vaMDOqANqAN85YCJ3z5EhBywZW8fHLAZTgN7HDCvAxHxhwO2dPt0wMRvHxxw+I4Bnztg4u2zxAesO2Di7dMBh2cJ2O2AeX3RzUeIOGBzvVNqIQccjjcdMK/dEfGdA+Z0GthackEHrNdkREwNO+DhQsc+3rJ4bwAvll60n4A7Chx3nh7/iSOxUyx/v/0jg/zithhJ6yRNazCPd3Gc7E5J2r7yTWuViT4jnsfyB3VvAc7v8m6LLH9d6vMR8XY3ARNN2eLKJeFXYAo4AGyLiA5mZmZmZmZmZmZmZmap/QuBcTKD6WY8vQAAAABJRU5ErkJggg==",
+    "description": "Item-to-item recommendations from purchase history: top new products per customer with the reason, and similar products per product.",
+    "category": "Analytics",
+    "subcategory": "Retail",
+    "tags": [
+        "recommendations",
+        "collaborative filtering",
+        "cross-sell",
+        "next best product",
+        "personalisation",
+        "retail",
+        "e-commerce",
+        "visokio-agents"
+    ],
+    "introductoryText": "**\"Customers who bought X also bought Y\"**, turned into a ranked list of products each customer has not bought yet.\n\n- **Item-to-item collaborative filtering**: two products are similar when the same customers buy them (cosine similarity), with optional **shrinkage** so pairs seen with few customers count less\n- A customer's score for a product is the sum of its similarity to everything they bought; already-bought products are left out\n- Every recommendation says **\"because you bought\"** which product, for explainable offers and emails\n- The **most similar products per product**, for \"you may also like\" on a product page\n\nProducts bought by fewer customers than the minimum are left out. Works from a plain list of purchases (customer, product); repeats are ignored. Handles up to 8,000 products.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "customer_field",
+            "title": "Customer field",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "product_field",
+            "title": "Product field",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "top_n",
+            "title": "Recommendations per customer",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 100,
+            "mandatory": true,
+            "defaultValue": 5,
+            "showAsSlider": false
+        },
+        {
+            "name": "similar_per_product",
+            "title": "Similar products per product",
+            "description": "0 = none.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 100,
+            "mandatory": false,
+            "defaultValue": 10,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_customers",
+            "title": "Minimum customers per product",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 5,
+            "showAsSlider": false
+        },
+        {
+            "name": "shrinkage",
+            "title": "Shrinkage",
+            "description": "0 = none; 10 down-weights pairs bought together by few customers.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 10.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "exclude_bought",
+            "title": "Leave out products already bought",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "recommendations",
+            "label": "Recommendations",
+            "displayName": "Recommendations",
+            "tooltip": "Per customer: rank, recommended product, score, because you bought, similarity, products bought."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "similar",
+            "label": "Similar",
+            "displayName": "Similar products",
+            "tooltip": "Per product: similar products with similarity and customers who bought both."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "coverage",
+            "label": "Coverage",
+            "displayName": "Coverage",
+            "tooltip": "Customers; products in the data, split into products scored and products left out; products recommended at least once."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

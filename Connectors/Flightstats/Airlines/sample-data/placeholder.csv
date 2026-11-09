@@ -1,0 +1,13 @@
+"fs","iata","icao","name","phoneNumber","active"
+"ZQ","ZQ","ZQA","Kestrel Coastal Airways","+44 20 7946 0101",TRUE
+"XK","XK","XKN","Northmoor Air","+44 161 496 0102",TRUE
+"QV","QV","QVL","Valebridge Aviation",,TRUE
+"J7","J7","JSV","Juniper Sky","+353 20 910 0103",TRUE
+"WY*",,"WYF","Westry Freight",,TRUE
+"H3","H3",,"Harbourline Commuter","+44 113 496 0104",TRUE
+"LP","LP","LPX","Lowland Express","+44 141 496 0105",TRUE
+"RB","RB","RBR","Redbeck Regional",,TRUE
+"TF","TF","TFA","Thornfield Air Charter","+44 113 496 0106",TRUE
+"MZ","MZ","MZE","Merrow Island Air",,TRUE
+"OY","OY","OYP","Orrin Bay Airlines","+44 117 496 0107",TRUE
+"KD","KD","KDS","Kingsdale Shuttle",,TRUE

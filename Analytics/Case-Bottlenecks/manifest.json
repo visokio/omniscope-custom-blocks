@@ -1,0 +1,147 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Case Duration and Bottlenecks",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "From an event log: case durations and rework, the slowest and costliest handovers between activities, and activity statistics.",
+    "category": "Analytics",
+    "subcategory": "Process",
+    "tags": [
+        "process mining",
+        "bottlenecks",
+        "cycle time",
+        "event log",
+        "rework",
+        "case management",
+        "operations",
+        "visokio-agents"
+    ],
+    "introductoryText": "Measures processes from an **event log** (case, activity, timestamp): orders, claims, applications, tickets, patient visits.\n\n- **Per case**: start, end, **duration**, steps, **rework** (an activity repeated), first and last activity, the **route** taken and how common that route is\n- **Per handover** (activity A followed by activity B): how often it happens and how long it takes (median, average, 90th percentile, **total waiting**), ranked so the **slowest** and the **costliest** handovers come first\n- **Per activity**: occurrences, cases, rework, median time until the next step, and how often it is the last step\n\nDurations in hours or days. Events are ordered by time within each case, so the log can be in any order. Path Analysis shows the most common routes in more detail.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "case_field",
+            "title": "Case field",
+            "description": "Identifies a case, such as a claim, ticket or order number.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "activity_field",
+            "title": "Activity field",
+            "description": "The name of the step recorded in each event.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "time_field",
+            "title": "Timestamp field",
+            "description": "When the event happened; orders the events within each case.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "unit",
+            "title": "Durations in",
+            "description": "Unit for durations and waiting times.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Hours",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "HOURS",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Days",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DAYS",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "HOURS"
+        },
+        {
+            "name": "max_variant_steps",
+            "title": "Steps shown in a route",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 2,
+            "numMax": 100,
+            "mandatory": true,
+            "defaultValue": 12,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "cases",
+            "label": "Cases",
+            "displayName": "Cases",
+            "tooltip": "Per case: start, end, duration, steps, rework, first and last activity, route, variant rank, slowest 10%."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "handovers",
+            "label": "Handovers",
+            "displayName": "Handovers",
+            "tooltip": "Per pair of consecutive activities: count, cases, median / average / 90th percentile / total time, share of waiting, ranks."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "activities",
+            "label": "Activities",
+            "displayName": "Activities",
+            "tooltip": "Per activity: occurrences, cases, rework, median time to next step, times last step."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

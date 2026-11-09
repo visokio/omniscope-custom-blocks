@@ -1,0 +1,7 @@
+Warehouse,Lines below reorder level,Message
+Leeds,12,Leeds: 12 lines below reorder level. Details: http://127.0.0.1:24679/Operations/Stock.iox/r/Report/#Leeds
+Bristol,3,Bristol: 3 lines below reorder level. Details: http://127.0.0.1:24679/Operations/Stock.iox/r/Report/#Bristol
+Glasgow,0,
+Norwich,7,Norwich: 7 lines below reorder level (garden & outdoor < 5 days' cover). Details: http://127.0.0.1:24679/Operations/Stock.iox/r/Report/#Norwich
+Cardiff,1,Cardiff: 1 line below reorder level. Details: http://127.0.0.1:24679/Operations/Stock.iox/r/Report/#Cardiff
+Reading,5,Reading: 5 lines below reorder level. Details: http://127.0.0.1:24679/Operations/Stock.iox/r/Report/#Reading

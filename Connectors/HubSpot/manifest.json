@@ -11,30 +11,35 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAACslBMVEUAAAD/AAD/f3//VVX/fz//Zmb/f1X/bUj/f1//cVX/f0z/c1z/f1X/dWL/f1v/d1X/f1//eFr/f1X/eF3/f1n/f1z/eVj/dFX/elv/dVj/elX/dlv/e1f/d1X/e1r/d1f/e1z/eFr/eFz/fFn/eFf/fFv/eVn/fFf/eVv/fFj/eVb/fFr/d1b/elr/eFr/elj/eln/elv/eFn/e1f/eVr/e1n/e1r/e1f/eVr/e1j/eVf/e1r/eFf/eln/eFj/elf/elj/eFr/eln/eFj/elr/eVn/elj/eVr/eln/eVj/e1r/eVj/e1f/eVn/e1j/eVf/e1n/eFf/eln/eFj/eFn/elj/eVr/eln/eVj/elr/eVn/elj/eVn/eln/eVj/eln/eVj/elj/eVn/elj/eVj/e1n/eVj/eFf/eln/eVj/elr/eVn/elj/eVn/eln/eVj/eln/elj/eVn/elj/eVj/eVj/elj/eVn/elj/eVj/eln/eVj/eVn/eln/eVj/eln/eVn/elj/eVn/eln/eVj/eln/eVj/elj/eVn/eVj/eln/eVj/elj/eVn/elj/eVj/eln/eVj/eln/eln/eVj/eln/eVn/eVj/eln/eVj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eVj/eln/eVn/elj/eVn/elj/eVj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eln/eVj/eln/eVn/elj/eVn/elj/eVj/eln/elj/eVn/elj/eVj/eln/eln/eVn/elj/eVn/eln/eVj/eln/eln/eVj/eln/eVj/elj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eVn/elj/eVn/eln/eVj/eln/elk85MxoAAAA5XRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQWFxgZGhscHR4fICEiJCUmJygpKissLS8wMzQ2ODk6Ozw+QEFCQ0RGR0hJS0xNTk9QUVJTVFVWV1hZWltdXl9hYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ent8fX+AgYKEhYaHiImKi4yNjo+QkZKTlJWWl5mam5ydnp+goaKjpKWoqqusrq+w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",
-    "description": "Retrieves contacts, companies, deals and lists",
+    "icon": "data:image/png;base64,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",
+    "description": "Loads HubSpot companies, contacts, leads, deals, lists, forms, form submissions and associations into records, following every page, or searches contacts and companies.",
     "category": "Connectors",
-    "subcategory": null,
+    "subcategory": "CRM",
     "tags": [
         "hubspot",
-        "crm"
+        "crm",
+        "contacts",
+        "companies",
+        "deals",
+        "marketing",
+        "forms"
     ],
-    "introductoryText": "### HubSpot connector\n- Retrieve contact, companies, deals and lists.\n- Search for a contact\n\n![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAACslBMVEUAAAD/AAD/f3//VVX/fz//Zmb/f1X/bUj/f1//cVX/f0z/c1z/f1X/dWL/f1v/d1X/f1//eFr/f1X/eF3/f1n/f1z/eVj/dFX/elv/dVj/elX/dlv/e1f/d1X/e1r/d1f/e1z/eFr/eFz/fFn/eFf/fFv/eVn/fFf/eVv/fFj/eVb/fFr/d1b/elr/eFr/elj/eln/elv/eFn/e1f/eVr/e1n/e1r/e1f/eVr/e1j/eVf/e1r/eFf/eln/eFj/elf/elj/eFr/eln/eFj/elr/eVn/elj/eVr/eln/eVj/e1r/eVj/e1f/eVn/e1j/eVf/e1n/eFf/eln/eFj/eFn/elj/eVr/eln/eVj/elr/eVn/elj/eVn/eln/eVj/eln/eVj/elj/eVn/elj/eVj/e1n/eVj/eFf/eln/eVj/elr/eVn/elj/eVn/eln/eVj/eln/elj/eVn/elj/eVj/eVj/elj/eVn/elj/eVj/eln/eVj/eVn/eln/eVj/eln/eVn/elj/eVn/eln/eVj/eln/eVj/elj/eVn/eVj/eln/eVj/elj/eVn/elj/eVj/eln/eVj/eln/eln/eVj/eln/eVn/eVj/eln/eVj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eVj/eln/eVn/elj/eVn/elj/eVj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eln/eVj/eln/eVn/elj/eVn/elj/eVj/eln/elj/eVn/elj/eVj/eln/eln/eVn/elj/eVn/eln/eVj/eln/eln/eVj/eln/eVj/elj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eVn/elj/eVn/eln/eVj/eln/elk85MxoAAAA5XRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQWFxgZGhscHR4fICEiJCUmJygpKissLS8wMzQ2ODk6Ozw+QEFCQ0RGR0hJS0xNTk9QUVJTVFVWV1hZWltdXl9hYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ent8fX+AgYKEhYaHiImKi4yNjo+QkZKTlJWWl5mam5ydnp+goaKjpKWoqqusrq+w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)",
+    "introductoryText": "### HubSpot connector\n\nLoads records from your HubSpot account, one action at a time:\n\n- **Companies, Contacts, Leads, Deals**: every record, with the properties you name (or HubSpot's defaults).\n- **Lists**, **Forms**, and the **Form submissions** of one form.\n- **Search contacts / companies**: records matching a text, such as a name or e-mail domain.\n- **Associations**: which records of one object are linked to which of another (contacts to companies, deals to contacts...).\n\n**How to set it up**: copy the access token of a HubSpot private app with the read scopes for the objects you need (such as `crm.objects.contacts.read`) into the block. HubSpot stopped new private apps being created on 26 October 2026; existing ones (now listed as legacy apps) keep working. See the block's README.\n\nEvery page is loaded. Dates come out as dates (UTC); property values are text, as HubSpot sends them.\n\n![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAACslBMVEUAAAD/AAD/f3//VVX/fz//Zmb/f1X/bUj/f1//cVX/f0z/c1z/f1X/dWL/f1v/d1X/f1//eFr/f1X/eF3/f1n/f1z/eVj/dFX/elv/dVj/elX/dlv/e1f/d1X/e1r/d1f/e1z/eFr/eFz/fFn/eFf/fFv/eVn/fFf/eVv/fFj/eVb/fFr/d1b/elr/eFr/elj/eln/elv/eFn/e1f/eVr/e1n/e1r/e1f/eVr/e1j/eVf/e1r/eFf/eln/eFj/elf/elj/eFr/eln/eFj/elr/eVn/elj/eVr/eln/eVj/e1r/eVj/e1f/eVn/e1j/eVf/e1n/eFf/eln/eFj/eFn/elj/eVr/eln/eVj/elr/eVn/elj/eVn/eln/eVj/eln/eVj/elj/eVn/elj/eVj/e1n/eVj/eFf/eln/eVj/elr/eVn/elj/eVn/eln/eVj/eln/elj/eVn/elj/eVj/eVj/elj/eVn/elj/eVj/eln/eVj/eVn/eln/eVj/eln/eVn/elj/eVn/eln/eVj/eln/eVj/elj/eVn/eVj/eln/eVj/elj/eVn/elj/eVj/eln/eVj/eln/eln/eVj/eln/eVn/eVj/eln/eVj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eVj/eln/eVn/elj/eVn/elj/eVj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eln/eVj/eln/eVn/elj/eVn/elj/eVj/eln/elj/eVn/elj/eVj/eln/eln/eVn/elj/eVn/eln/eVj/eln/eln/eVj/eln/eVj/elj/eVn/elj/eVj/eln/eVj/elj/eVn/elj/eVn/eln/eVj/eln/eVn/elj/eVn/eln/eVj/eln/elk85MxoAAAA5XRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQWFxgZGhscHR4fICEiJCUmJygpKissLS8wMzQ2ODk6Ozw+QEFCQ0RGR0hJS0xNTk9QUVJTVFVWV1hZWltdXl9hYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ent8fX+AgYKEhYaHiImKi4yNjo+QkZKTlJWWl5mam5ydnp+goaKjpKWoqqusrq+w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)",
     "dependencies": "requests",
     "options": [
         {
             "name": "key",
-            "title": "API key",
-            "description": "This is your private app access token. Create one from the HubSpot settings -> Account setup -> Integrations -> Private apps",
-            "groupTitle": "Auth",
+            "title": "Private app access token",
+            "description": "The access token of a HubSpot private app (Settings > Integrations > Private apps), with read scopes for the objects you load.",
+            "groupTitle": "Authentication",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
             "mandatory": true
         },
         {
             "name": "object",
-            "title": "Object",
-            "description": "What objects to retrieve",
+            "title": "Action",
+            "description": "What to load.",
             "groupTitle": "Retrieve",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
@@ -102,7 +107,7 @@
                 },
                 {
                     "name": null,
-                    "title": "Form submissions",
+                    "title": "Form submissions (form ID below)",
                     "description": null,
                     "groupTitle": null,
                     "width": null,
@@ -112,7 +117,7 @@
                 },
                 {
                     "name": null,
-                    "title": "Search contact",
+                    "title": "Search contacts",
                     "description": null,
                     "groupTitle": null,
                     "width": null,
@@ -122,7 +127,17 @@
                 },
                 {
                     "name": null,
-                    "title": "Associations for Object IDs",
+                    "title": "Search companies",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "search_company",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Associations between objects",
                     "description": null,
                     "groupTitle": null,
                     "width": null,
@@ -137,8 +152,18 @@
         },
         {
             "name": "params",
-            "title": "Search Params",
-            "description": "optional parameters for search methods",
+            "title": "Search text or form ID",
+            "description": "For the search actions, the text to look for (in names, e-mail addresses, domains and other default searchable properties). For Form submissions, the form's ID, as listed by the Forms action.",
+            "groupTitle": "Retrieve",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "properties",
+            "title": "Properties",
+            "description": "Optional, comma-separated HubSpot property names to load for Companies, Contacts, Leads, Deals and the searches, such as name, domain, industry, annualrevenue. Empty: HubSpot's default properties (for contacts: e-mail, first and last name, lifecycle stage).",
             "groupTitle": "Retrieve",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -147,28 +172,28 @@
         },
         {
             "name": "from_object_type",
-            "title": "From Object",
-            "description": null,
+            "title": "From object",
+            "description": "For Associations: the object type to start from, such as contacts, companies or deals.",
             "groupTitle": "Associations",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
-            "defaultValue": "Contacts"
+            "defaultValue": "contacts"
         },
         {
             "name": "to_object_type",
-            "title": "To Object",
-            "description": null,
+            "title": "To object",
+            "description": "For Associations: the object type to find links to.",
             "groupTitle": "Associations",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
-            "defaultValue": "Companies"
+            "defaultValue": "companies"
         },
         {
             "name": "object_ids",
-            "title": "Object IDs",
-            "description": "comma separated IDs",
+            "title": "From object IDs",
+            "description": "For Associations, optional: comma-separated record IDs of the From object. Empty: every record of the From object.",
             "groupTitle": "Associations",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -180,9 +205,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output",
-            "tooltip": null
+            "label": "Records",
+            "displayName": "Records",
+            "tooltip": "One record per HubSpot record, list, form, submission or association, depending on the action"
         }
     ],
     "docker": {

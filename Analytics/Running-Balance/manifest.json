@@ -1,0 +1,140 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Running Balance",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Running balances per account from opening balances and dated transactions, with lowest balance, days below zero or a limit, and average daily balance.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "running balance",
+        "ledger",
+        "overdraft",
+        "credit control",
+        "cash",
+        "average daily balance",
+        "accounts",
+        "visokio-agents"
+    ],
+    "introductoryText": "**Running balance per account** from an opening balance and dated transactions: bank and customer accounts, loyalty points, budgets, stock in units.\n\n- Per transaction: the **balance after it**, and whether the account is **below zero** (or below a limit, such as an overdraft limit)\n- Per account: opening and closing balance, total in and out, **lowest balance and when**, **days below zero** (or the limit) and the **average daily balance** (time-weighted, to the as-of date)\n- **Opening balances** from an optional second input (account, balance); otherwise accounts start at zero\n- Transactions on the same date keep their input order",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "account_field",
+            "title": "Account",
+            "description": "Identifies the account each transaction belongs to.",
+            "groupTitle": "Transactions (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "date_field",
+            "title": "Date",
+            "description": "Date of each transaction.",
+            "groupTitle": "Transactions (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "amount_field",
+            "title": "Amount (in positive, out negative)",
+            "description": "Money in as positive, money out as negative.",
+            "groupTitle": "Transactions (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "limit",
+            "title": "Limit (optional)",
+            "description": "For example 500 for an overdraft limit of 500; 0 = none.",
+            "groupTitle": "Transactions (input 1)",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "as_of",
+            "title": "As of date",
+            "description": "Default: the latest transaction date.",
+            "groupTitle": "Transactions (input 1)",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "opening_account_field",
+            "title": "Account",
+            "description": "Account in the opening balances table, matched to input 1.",
+            "groupTitle": "Opening balances (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "opening_balance_field",
+            "title": "Opening balance",
+            "description": "Balance before the first transaction.",
+            "groupTitle": "Opening balances (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "transactions",
+            "label": "Transactions",
+            "displayName": "Transactions",
+            "tooltip": "The input with Balance After, Below Zero (and Below Limit)."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "accounts",
+            "label": "Accounts",
+            "displayName": "Accounts",
+            "tooltip": "Per account: opening, in, out, closing, lowest balance and date, days below zero / limit, average daily balance."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

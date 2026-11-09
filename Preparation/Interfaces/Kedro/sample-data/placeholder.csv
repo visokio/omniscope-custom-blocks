@@ -1,0 +1,6 @@
+Region,Orders,Units,Sales,Target,Target met
+Midlands,7,67,707.9,600,True
+North,5,49,702.7,800,False
+South East,6,76,962.6,900,True
+South West,9,134,1790.1,1500,True
+Wales,5,58,464.8,500,False

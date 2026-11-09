@@ -1,30 +1,52 @@
 # Attribute Analysis
 
-Given a dataset in which each record represents an edge between two nodes of a network, and each node has an associated categorical attribute, the block analyses connections between attributes, based on connections between associated nodes. The result of the analysis is a list of records in which each record specifies a connection from one attribute to another. The connection contains a probability field, which gives an answer to the question that if a node has the specified categorical attribute, how probable it is that it has a connection to another node with the linked categorical attribute.
+From a list of connections (each record: a node, the node it connects to, and the first node's category), measures how much each category's connections lead to nodes it shares with each other category, such as which departments work on the same projects.
 
-## Language
-R
+Each input record is one connection from a **From** node to a **To** node, with the From node's **Category**. Typical inputs:
 
-## Input fields
-### from.field
-Specifies the source of the connection
-### to.field
-Specifies the target of the connection
-### category.field
-Specifies the field containing the categorical attribute
+- people (From) assigned to projects (To), with each person's department (Category): which departments work together?
+- customers (From) buying products (To), with each customer's segment: which segments buy the same things?
+- authors (From) writing in journals (To), with each author's field.
 
-## Output
-The output consists of three fields:
-### from
-Specifies the source of the categorical attribute
-### to
-Specifies the target of the categorical attribute
-### probability
-Specifies the probability that if a node has the categorical attribute specified by "from", it will have a connection to a node with the categorical atribute specified by "to".
+For each ordered pair of categories A and B, the block gives a **Probability**: the share of A's connections that lead to a To node that B also connects to. In more detail:
 
+- Each category's connections share a total weight of 1 (each of A's connections weighs 1 / number of A's connections), so a large category does not outweigh a small one.
+- At each To node, the categories connected to it are mixed in proportion to their weight there.
+- For one of A's connections to node T, the other categories at T (not A itself) are rescaled to add up to 1, and the connection is split between them.
+- Probability(A, B) adds up, over all A's connections, the connection's weight times B's part at its To node.
 
-## Dependencies
-data.table
+So A's probabilities add up to at most 1. What is missing from 1 is the share of A's connections to To nodes that no other category connects to. A category paired with itself is not listed. The measure is not symmetric: Probability(A, B) and Probability(B, A) differ when A and B have different numbers of connections or spread them differently.
+
+Records with a missing From, To or Category are left out. Node names and categories are compared as text, so numeric IDs work. Each connection record counts once; a repeated record counts twice.
+
+## Inputs
+- **Input 1**: one record per connection, with a From field, a To field and a Category field (the From node's category).
+
+## Options
+
+| Group | Option | Name in script | Type | Description |
+|---|---|---|---|---|
+| Connections | From field | `from` | Field | The node each connection starts from: the one that has the category. |
+| Connections | To field | `to` | Field | The node each connection leads to. Categories are compared through the To nodes they share. |
+| Category | Category field | `category` | Field | The From node's category. |
+
+## Outputs
+- **Category links** (`Output Data`): one record per pair of categories that share at least one To node, sorted by From category and then by Probability, highest first:
+  - **From category**, **To category** (text);
+  - **Probability** (0 to 1): the share of the From category's connections that lead to To nodes shared with the To category;
+  - **Connections** (whole number): the From category's number of connections, to judge how much data a probability rests on.
+
+## Limits
+
+- In tests, 200,000 connections among 20,000 From nodes, 5,000 To nodes and 20 categories took under a second.
+- Memory grows with the number of categories that meet at the same To nodes (pairs are built per To node).
+
+## Language and libraries
+R, with the **data.table** package (licence: MPL-2.0). Install it on the Omniscope server's R if it is missing (`install.packages("data.table")`).
 
 ## Source
-[script.R](https://github.com/visokio/omniscope-custom-blocks/blob/master/Analytics/Network%20Analysis/Attribute%20Analysis/R/script.R)
+[script.R](script.R)
+
+The `R/` folder holds an older stand-alone version of the script (for Omniscope's general R block); it is not listed in the block library.
+
+The sample data in `sample-data/` is invented for the demo; `sample-data/make-sample.R` generates it.

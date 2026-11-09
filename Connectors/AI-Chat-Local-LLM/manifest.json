@@ -11,39 +11,45 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": "data:image/png;base64,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",
-    "description": "Executes a one-off prompt to a local LLM and returns the generated text result",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADs0lEQVR42u2dwYtVZRiHn3dGLVPQnRMtQgha5ky1URCcNvNfuJm0XTuD9u1aFBSiDgjSWgU3EYykYUrhzWgTTZq7MWhhIt6wmftzcU8gQnO/O+fce875zu+Bu5s599z3Oe/7vd+53/0OGGOMMcYYY4wxxhhjTP7EuP8g6W3gJLAIvA7scBhLsQHcB1aBMxHx00QESnoF+BI4vh3xJi3MwArwYUT0KxNYyPsGOOIYT4XrwFKKxJnEA35heVPlKPB5JRlYjHk/umzWUk4XIuJO2Qw8aXm1NZgnqiihxxzL2nivihL6r6cKtfE0Il4qK1Bj1OzfgMeO+5bsBd5MrqMR5YYvpfG7pLfsJjmmC5LupgS2ijcbxcDyti2xEQJ/tY5tx3atrMCZCs7DY972+bvsAWYcw3ZjgRZoLNBYYFeZ+i0ySTsZfjU1D8wBsy2P4SbwAOgBNyJiI1uBkvYD7wMHMkqCWeC14vWupJWIeJhdCS0yLzd5LzIHLEvakZ3AomzmLO95iYdzFDjfod5iIUeBcx0SOJejwNkOCcxyDDQWaCzQAo0FGgs0FmiBxgKNBVqgsUBjgcYCLdBY4BZsdiiuGzkKfNAhges5Cux1SGAvR4E3OpKF68DN7AQWK5ZXMpe4DqxMc3X2VFdmR8RDSZ8xXDc5D7xK+3fA2CjE9YCbWS+tfy4Trxev/0XSp4mHHABXIuK7Lk4j2n7194ELEbHW1XlgmwX+BZyPiD+7PJFvq8C1IvP6dJw2CrwFXIqITUyrBHa6WWm7wM43K20W6GalxQLdrLRY4PfA5YgYWNNkBe6dxIlFxMUOxH//xN8hcbvJeefC2HF9pynbTUrSvWJ3e5Mu714VAqvccvm/puORFW3JPuCNMYaSKCvwKbDTca+FkZuep3yhe99xrI0/Rv1BisCrjmNtrFYh8CzDRwqY6TIoYl9OYET0GK5lMdPlXET8XLoLLRqZ3cDXDJ+qZSbPNYaPn/unihJKcS9yCTjncjrxsnkmVV5yBr6QjYcYPlVrETgI7HLcy00Vim5zFTibUjZzvsNxO+Hmxu2cPrN/nWSBxgKNBVqgsUBjgcYCLdCYckgKScvFnZW+6uOJpGuSlmxlPHlfqXl8ZDtpApfVTAaSFj0GjuaDhl5bAXzcxJNqWgb2gZcbKvFJROxxBm5Nk38L0bgLvokCbzVY4C8WOJpPaO6yjdNuM9PGwVMN7ELPSwrbSZe4JOnbYjJdF31JP0g6bnnGGGOMMcYYY4wxxhhTH88A0sdXshfORdYAAAAASUVORK5CYII=",
+    "description": "Sends a prompt from each record to a language model on your own server, through an OpenAI-compatible endpoint, and adds the reply as a Response field.",
     "category": "Code & AI",
     "subcategory": null,
-    "tags": [ 
-        "LLM",
-        "NLP"
+    "tags": [
+        "llm",
+        "ai",
+        "prompt",
+        "text generation",
+        "classification",
+        "local",
+        "self-hosted",
+        "openai-compatible"
     ],
-    "introductoryText": "![LLM](data:image/png;base64,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)\n### AI Chat with Local LLM\n#### Executes a one-off prompt request for each row in the input block, and outputs the results using a local LLM model compatible with the OpenAI API.\n\n#### You can use this block to chat with a local LLM model like *LLamafile AI*. See instructions [here](https://github.com/Mozilla-Ocho/llamafile?tab=readme-ov-file#quickstart)",
+    "introductoryText": "![LLM](data:image/png;base64,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)\n\nSends the prompt in each record to a language model served on your own machine or network through an **OpenAI-compatible** chat completions endpoint (as offered by llama.cpp, llamafile, Ollama, LM Studio, vLLM and others) and adds the reply to the record, in a **Response** field, with a **Truncated** field that is true when a reply was cut short.\n\n**To set it up**\n\n1. Enter the **Endpoint**: the server's address ending in `/v1`, for example `http://localhost:8080/v1`. The address is resolved on the Omniscope server, not your browser; if Omniscope runs Python in Docker, `localhost` is the container.\n2. Enter the **Model** name your server expects (servers that hold one model ignore it).\n3. Choose the **User prompt field**, and optionally a **System prompt field** with the instructions.\n\nPrompts are sent several at a time (Requests at a time, under Advanced). If any request fails, the block stops with the service's error message and no output.\n\nThe data goes only to the endpoint you enter. Requests at a time is 1 by default, as many local servers answer one request at a time.",
     "dependencies": "openai",
     "options": [
         {
             "name": "ModelEndpoint",
             "title": "Endpoint",
-            "description": "An OpenAI-compatible endpoint, e.g. when using LLamafile locally -> http://localhost:8080/v1",
+            "description": "The base address of an OpenAI-compatible API, usually ending in /v1, for example http://localhost:8080/v1 (llama.cpp, llamafile) or http://localhost:11434/v1 (Ollama). Resolved on the Omniscope server.",
             "groupTitle": null,
-            "width": "ONE_AND_HALF",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true
         },
         {
             "name": "ApiKey",
-            "title": "API Key",
-            "description": "sk-no-key-required",
+            "title": "API key",
+            "description": "Optional. Only if your server asks for one; most local servers don't.",
             "groupTitle": null,
-            "width": "ONE_AND_HALF",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
             "mandatory": false
         },
         {
             "name": "Model",
             "title": "Model",
-            "description": "E.g. LLaMA_CPP",
+            "description": "The model name your server expects, for example the name listed by its /v1/models page. Servers that hold one model (llama.cpp, llamafile) accept any name.",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -51,22 +57,21 @@
             "defaultValue": "LLaMA_CPP"
         },
         {
-            "name": "Temperature",
-            "title": "Temperature",
-            "description": "The model temperature typically from 0 to 1",
+            "name": "Prompt",
+            "title": "User prompt field",
+            "description": "The field holding each record's prompt: the instruction and the text to work on. Build it with a Formula block if it combines several fields. Numbers and dates are sent as text; records with an empty prompt are not sent.",
             "groupTitle": null,
             "width": "ONE",
-            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
-            "numMin": 0,
-            "numMax": 1,
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": 0.8,
-            "showAsSlider": true
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
         },
         {
             "name": "SystemPrompt",
-            "title": "System Prompt",
-            "description": "Helps set the behavior of the model / AI assistant",
+            "title": "System prompt field",
+            "description": "Optional. A field holding instructions that set the model's role, rules and answer format, for example \"Reply with one category only: Billing, Delivery or Other\". Usually the same text on every record.",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
@@ -76,25 +81,52 @@
             "fieldTypes": []
         },
         {
-            "name": "Prompt",
-            "title": "User Prompt",
-            "description": "Point to the field that contains the prompt to execute",
-            "groupTitle": null,
-            "width": "ONE",
-            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
-            "mandatory": true,
-            "inputIndex": 0,
+            "name": "Temperature",
+            "title": "Temperature",
+            "description": "Optional, 0 to 2. Lower values make replies more consistent, higher values more varied. Leave empty to use the model's default. Some servers cap it at 1 or ignore it.",
+            "groupTitle": "Advanced",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 2,
+            "mandatory": false,
             "defaultValue": null,
-            "fieldTypes": []
+            "showAsSlider": false
+        },
+        {
+            "name": "MaxTokens",
+            "title": "Maximum response length (tokens)",
+            "description": "Optional. The most tokens each reply may use. A token is roughly three-quarters of a word. Replies that reach the limit are cut short and marked in the Truncated field. Empty: the server's default.",
+            "groupTitle": "Advanced",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null,
+            "showAsSlider": false
+        },
+        {
+            "name": "Concurrency",
+            "title": "Requests at a time",
+            "description": "How many requests are sent at the same time, 1 to 16. Higher finishes large inputs sooner; lower it if the service reports a rate limit. Most local servers answer one request at a time unless set up for more.",
+            "groupTitle": "Advanced",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 16,
+            "mandatory": true,
+            "defaultValue": 1,
+            "showAsSlider": false
         }
     ],
     "blockOutputs": [
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output",
-            "tooltip": null
+            "label": "Replies",
+            "displayName": "Records with replies",
+            "tooltip": "The input records with two fields added: Response (the model's reply) and Truncated (true if the reply stopped at the maximum response length). Records with an empty prompt have both empty."
         }
     ],
     "docker": {

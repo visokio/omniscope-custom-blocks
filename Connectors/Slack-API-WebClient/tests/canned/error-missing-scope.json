@@ -1,0 +1,6 @@
+{
+ "ok": false,
+ "error": "missing_scope",
+ "needed": "channels:read",
+ "provided": "chat:write"
+}

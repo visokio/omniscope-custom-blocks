@@ -1,0 +1,432 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Salesforce REST OAuth",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": null,
+    "description": "Loads Salesforce data through OAuth 2.0 and the REST API, with a simple object picker that automatically loads all available fields.",
+    "category": "Connectors",
+    "subcategory": "CRM",
+    "tags": [
+        "salesforce",
+        "crm",
+        "oauth",
+        "rest",
+        "soql"
+    ],
+    "introductoryText": "### Salesforce REST OAuth\n\nThe easiest way to use this connector is **Simple - Load object**: choose a familiar Salesforce object such as Accounts, Contacts or Opportunities. The block automatically discovers every field available to the OAuth Run As user and loads the records into Omniscope. You do not need to know Salesforce field API names or write SOQL.\n\n#### Salesforce setup\n1. In Salesforce Setup, create/configure an **External Client App** with OAuth enabled and the **Manage user data via APIs (`api`)** scope.\n2. Enable the **Client Credentials Flow** and configure its **Run As** user in the app policies. That user's Salesforce permissions determine which objects and fields this block can read.\n3. Copy the app **Consumer Key** and **Consumer Secret** into the OAuth options below.\n4. Use your Salesforce **My Domain URL**, e.g. `https://your-company.my.salesforce.com`.\n\n#### Load modes\n- **Simple - Load object (recommended):** choose a common Salesforce object; all available fields are discovered and selected automatically.\n- **Query Builder:** for advanced users who want to specify an object, fields, WHERE and ORDER BY.\n- **Custom SOQL:** for expert Salesforce users who want full SOQL control.\n\nThe optional schema actions can still list every object available to the authenticated user or describe an object's fields. Records are loaded through the synchronous REST Query API with automatic pagination.",
+    "dependencies": "requests",
+    "options": [
+        {
+            "name": "authBaseUrl",
+            "title": "Salesforce My Domain URL",
+            "description": "HTTPS My Domain URL used for OAuth, e.g. https://acme.my.salesforce.com. My Domain is recommended for External Client Apps.",
+            "groupTitle": "OAuth 2.0",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "clientId",
+            "title": "Client ID / Consumer Key",
+            "description": "Consumer Key from the Salesforce External Client App OAuth settings.",
+            "groupTitle": "OAuth 2.0",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": null
+        },
+        {
+            "name": "clientSecret",
+            "title": "Client Secret / Consumer Secret",
+            "description": "Consumer Secret from the Salesforce External Client App. Omniscope masks this value.",
+            "groupTitle": "OAuth 2.0",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": true
+        },
+        {
+            "name": "operation",
+            "title": "Action",
+            "description": "Load data is the normal choice. Schema utilities are available for advanced discovery/troubleshooting.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Load data",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "query",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Advanced - List available objects",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "list_objects",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Advanced - Describe fields for object",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "describe_fields",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "query"
+        },
+        {
+            "name": "queryMode",
+            "title": "Load mode",
+            "description": "Simple mode automatically discovers and loads every available field. Query Builder and Custom SOQL are retained for advanced use.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Simple - Load object (recommended)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "simple",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Advanced - Query Builder",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "builder",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Advanced - Custom SOQL",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "soql",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "simple"
+        },
+        {
+            "name": "simpleObject",
+            "title": "Salesforce object",
+            "description": "Choose the data you want. In Simple mode the connector automatically discovers and loads all fields available for this object.",
+            "groupTitle": "Simple",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Accounts",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Account",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Contacts",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Contact",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Leads",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Lead",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Opportunities",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Opportunity",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Cases",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Case",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Campaigns",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Campaign",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Tasks",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Task",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Events",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Event",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Users",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "User",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Products",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Product2",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Price Books",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Pricebook2",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Orders",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Order",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Contracts",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Contract",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Assets",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Asset",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "Account"
+        },
+        {
+            "name": "includeDeleted",
+            "title": "Include deleted/archived records",
+            "description": "Uses the REST queryAll resource instead of query. Relevant only to Query data.",
+            "groupTitle": "Load options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "No",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "false",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Yes",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "true",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "false"
+        },
+        {
+            "name": "maxRecords",
+            "title": "Maximum records",
+            "description": "Connector-side safety cap across all REST pages. Use 0 for no connector-side cap.",
+            "groupTitle": "Load options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "100000"
+        },
+        {
+            "name": "objectName",
+            "title": "Object API name (advanced)",
+            "description": "Used by Query Builder and Describe fields, e.g. Account or MyObject__c. Simple mode does not use this option.",
+            "groupTitle": "Advanced query",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Account"
+        },
+        {
+            "name": "fields",
+            "title": "Fields (advanced)",
+            "description": "Comma-separated Salesforce field API names used only by Query Builder. Simple mode discovers all fields automatically.",
+            "groupTitle": "Advanced query",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Id, Name"
+        },
+        {
+            "name": "whereClause",
+            "title": "WHERE clause (advanced)",
+            "description": "Optional Query Builder WHERE expression without the word WHERE, e.g. CreatedDate = LAST_N_DAYS:30.",
+            "groupTitle": "Advanced query",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "orderBy",
+            "title": "ORDER BY clause (advanced)",
+            "description": "Optional Query Builder ORDER BY expression without the words ORDER BY, e.g. CreatedDate DESC.",
+            "groupTitle": "Advanced query",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "soql",
+            "title": "Custom SOQL (advanced)",
+            "description": "SOQL used when Query mode is Custom SOQL, e.g. SELECT Id, Name, Owner.Name FROM Account.",
+            "groupTitle": "Advanced query",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "SELECT Id, Name FROM Account"
+        },
+        {
+            "name": "apiVersion",
+            "title": "REST API version",
+            "description": "Use 'auto' to discover the latest REST API version exposed by the org, or specify a version such as 67.0.",
+            "groupTitle": "Advanced",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "auto"
+        },
+        {
+            "name": "timeoutSeconds",
+            "title": "HTTP timeout (seconds)",
+            "description": "Timeout for each OAuth/REST request. Transient 429 and 5xx responses are retried automatically.",
+            "groupTitle": "Advanced",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "60"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "1",
+            "displayName": "Output",
+            "tooltip": "Salesforce records or optional schema metadata"
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": true,
+    "apiMode": "BATCH"
+}

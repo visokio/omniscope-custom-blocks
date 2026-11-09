@@ -1,0 +1,120 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Price Index",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEIklEQVR42u3du2tUQRQG8O9EgyBRgha2UVMptiKCgSBYiZ2NheBfoZ2xEGJtKyj+A2IQhGgnimCjIZEE1FiLTxQU8jgWOwuLJtn7nHvOzPfBFgt7b2bntzNzZ+4jAMMwDMMwDMMwDMMwDMMwTPqRFL6Eqs4AuG6iQkWi1ukI8XxnhHgEJB4BiZcNIPEcAxLPMSDxHAMSzzEg8XbO7szx3gB4AmA1vD8C4ByAE/xpNICn7WVRVad2+NvTqvq2yo4p1z7eY1XdW6AMY6o6T0B7LW9vibKMlW2JxGs3UxXKdJaANvBe1yjbolXAESt4EaYKT2psO895YPfzvNUa234gYPeT9CSuPjAD2MEKy+Ea2x7l5C7uActWWahR3iUehXaL1890hfKe4zTCBp6GSflYifLuU9UVAtrA62e+CGLAe8qlNFt4gy3x7JBuc6XKjmPXrcTAg93zeUthkv4+1MVR9E4nHatcoZEv7JWM8dqp0FSuzOaZdMeAxHMMSDzHgMRzDEg8x4DEcwxIPMeAxPsvM24Aifc/nojccAFIPBt4lQCJZwevagv8TTMbeJUAReQWgGu06x6v7vThquabNIaQTBHTGv8zQzSHJ00hApjlmFe5/vYDOBheGwBWReR7NMAMEGvhqeouAAcGkP59jf6zySaAlwAeishGFMCEEUvjqeokerdpHwpA4xXr+rmIPIgGmCBiKTxVFQAXAZxsqjoB3NypO238jHxC88Qq3eZUg3j9BjbR9EpMDohVx7wzsQ80W7sqzTFiJTxV3RPGuqbzvRNAp4h1jjbXAKy3UKYvnQE6Q6w1VRCRTQBvGy7TGoCfnQI6QWxqkv4IwK8mW5+IaOeAxhEbW2ERka8AbqN3z8Vm290nEPlZaSJyK9zAM5sa3sB3/ALgbjiouQJgsk3A6PfIG2qJba5t7gJwqSaeTUAjiG3jXQZwPEYX2tlTKjpE9IJnG7AjRE94CuCbacDIiJ7wAOCHiKybB4yEaA3vY4HPfC6yIzPPzG4R0RreEoA76J153ymfXAG2hGgR776I/AGwPOSzC+4AG0a0itdveXPYftntlYi8K1RfMJqaZ/at4/X3dQDAefQea7I7HHU+A/Bs2BqoecAaiC7wttjvaOhay/VYMJ6SiNbwlgHcKzIdqBrz/7mlxJiYHZ4LwIKIWeK5ARyCmC2eK8BtELPGc3EQs03lzgTQmZzx3AK2/ONwg+euCyUeAZPCI6BzPAI6x8se0Dte1oAp4GULmApeloAp4WUHmBpeVoAp4mUDmCoekMFaaFuXQbAFxsuFVPGSB1TVcQCnU8XLoQVOlBgm3OFlO5FPBS8HwI/o3aaVJF7ygOEZYy9SxQMiP+Sgo8yFcfDUwA+28OMczf9IcxnkwhHp4fC28ANVGYZhGIZhGIZhEstf1FZP5ss9YM4AAAAASUVORK5CYII=",
+    "description": "Laspeyres, Paasche and Fisher price indices, value and volume indices from item prices and quantities per period, per group.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "price index",
+        "Laspeyres",
+        "Paasche",
+        "Fisher",
+        "cost index",
+        "inflation",
+        "procurement",
+        "visokio-agents"
+    ],
+    "introductoryText": "Builds **your own price index** from prices and quantities per item and period: a cost index for what you buy, a price index for what you sell, a basket index for a category.\n\n- **Laspeyres** (base-period quantities), **Paasche** (current-period quantities) and **Fisher** (their geometric mean)\n- A **value index** and the implied **volume index** (value / Fisher), so spend growth splits into price and volume\n- Indices are 100 in the **base period** (default: the first); items need a price in both periods compared, and counts of compared and missing items are shown\n- Optionally one index per **group** (category, supplier, region)\n\nPairs with Inflation Adjustment, which uses an index table to restate values in real terms.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "item_field",
+            "title": "Item field",
+            "description": "Identifies an item whose price is tracked.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "period_field",
+            "title": "Period field",
+            "description": "The period of each price and quantity, such as Year.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "price_field",
+            "title": "Unit price field",
+            "description": "Price paid per unit.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "quantity_field",
+            "title": "Quantity field",
+            "description": "Units bought, used to weight the items.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_field",
+            "title": "One index per (optional)",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "base_period",
+            "title": "Base period",
+            "description": "Default: the first period.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "index",
+            "label": "Index",
+            "displayName": "Index",
+            "tooltip": "Per group and period: items compared and missing, Laspeyres, Paasche, Fisher, value and volume indices, change."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

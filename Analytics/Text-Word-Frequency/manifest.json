@@ -1,0 +1,162 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Text Word Frequency",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAFRklEQVR42u2dT2wVVRSHv99rYwFFqkaiMeIf1JqgAlEDCdomohg0YkIwYuLejQutMXHrwqXRrXGncakgJChaFjTQSLQBC2JIgVSNGjESWg2tlPa4eJJoM699M3Nf586b8y15nXPuO9/MMHfmvDvgOI7jOI7jOI7jOI7jOI7T/ij2AZpZDbgLWL7IqcclnfZdJJ+8zWZ2xopjxMwe8iMwm7yHgSGgs+ChTABrJY21hUAzWwHcCXTlzD0JjEq62CDPIPBoJHXaJWl7kfUIItDMeoGnAh4VfwOfSBpOyDUJLIlE4EVJVxdZj0bUUshbA2wLfErrAnaa2R0Jn8UiD2BZBPXIJxDY2sLT+NMlvMaKoh5pBK5sYTFuLaHAKOqRRmCthQPuKKHAKOpRwyk1aQReaOE4pkpYuyjqkUbgdy0c8KkSCoyiHmkEfgb83oo5FrAnaeYSkSyLoB5BJvJLgGeAB4ClAU4Tp4A9ksYTcn0P3BuJwN8k3VRkPUqHmb1h8fCuXy6lF9hpZnsjkHfUzK6JtU6KXKKAl4AdQPcip58A9gPvSLrkh5TjOI7jOI7jZJ5GmNktQC+L3+a3EBeAAUnnXWtjea+a2aTFy4SZvehHYLK8Z4HdJfhOs0CfpEMu8P8CjwP3leR7HZb0SIPv0QPcw8JtgFPAiYX6QVPEI0S+PAKnKb7JtlkuSeqaM/4a8AKwPmWsg5L2JtQja7xM+RqR5nlgZ4nOLFcl/FtvxmL3mdm6gPGy5sstsOxsyrHtE4HjZclXeYHdObZdGThelnyVF6jA2yqGsVZJoAXe1mIYa5UE5mlA+itwvCz5Ki/w6xzbHgscL0u+3AKnSyRrNml+BZzMEOtn4POA8bLmyz2R/wZ4sCQCz0panfAdBGykuTbAK21+g5JmGtQkTTzy5sv3v6rZTisP/TiJEt80s5nI5X1oZh1VcZLleeAGYDuL3+a3EBPAfkkDfqg5juM4juM4TlTTiDac2z5J/QFq0W2S48BuSUO+WzYnrsPMPorwRsTbbqc5ga9HfDfp+ZacQs2sk3ozTw/NteUdB76a52ZwmnhpmTe/mY0Bt0W6f52UtCaoQDPrAl4Gbk45mFHgfUmzgeIRKP8M8T4PnZXU1P3ctIvdZSn23UBfwHih8sf8MLsW/A+BdTkGtClwvBD524I0AvOs1LAicLwQ+SsnsMzzTblAyPOY3wLHC5G/cgJ/yZHnfOB4IfJXTuDBHHmGAscLkb9aAiUdA77IcDoaBgYDxiNEfuqrAsZK0y2cWXpiVgH302RbnqTRQPHSMm9+MzsAPBapwBFJayt9ddbEjrgBOEyc63XvkPRxTNOI6JB0BHiO1i6dnJZJ4JVm5VX6CPzPkXg9sBm4ruChjFPvyv4Vx3Ecx3Ecx4l7OlTyKUAX0A9soYCXJAO7gPckTbvA9PKWA4eo/zq2SAaArZIuF5G8zHdi3opAHsDjwGulOALNrJv6a0db0QY4lyttgfsk/ZkwlnPAjZHsTD9JWhW1wH/l9ZPwPtkW8wf1l29MzRlPVC/HklTI2SxN0m0FyAO4gda9r7b01xJpBPYUWKD1OLkFdhU4zmWuqv2uQh3Ks9TWjKvKL/CHAsd5zlXlF7iP5EXkFoMvXVVOgZJ+BD6g3rexWEwDn0oaSfgspmbdyaISp1qJXtIJMztL/SdbS1s8tinqqw5ONPj8APWmpBg4UrkJaF7M7HbgW+DagodyGdgoadinEenOBmPU1+o8WuAwTgNbipJX6iNwztG4mmJeknxaUtv+8slxHMdxHMdxHMdxHMdxHMdxHAf+AW3FTadSufQHAAAAAElFTkSuQmCC",
+    "description": "Word and phrase counts in a text field, overall and per group, with stop words, n-grams and the terms most distinctive of each group.",
+    "category": "Analytics",
+    "subcategory": "Text",
+    "tags": [
+        "text analytics",
+        "word frequency",
+        "n-grams",
+        "word cloud",
+        "survey comments",
+        "voice of the customer",
+        "log-odds",
+        "keywords",
+        "visokio-agents"
+    ],
+    "introductoryText": "Counts the words and short phrases in a text field (survey comments, complaints, reviews, ticket descriptions, call notes), overall and per group, and finds the words most **distinctive** of each group.\n\n- Words are lower-cased; English **stop words** (the, and, was...) are removed, plus any you add; numbers are dropped unless you keep them\n- **Phrases** of up to 4 consecutive remaining words (for example *call back*, *wait on hold*)\n- For each term: occurrences, the **number of rows using it** and the share of rows, and its rank\n- With **groups** (channel, product, NPS category): the share of rows in the other groups and a **distinctiveness z-score** (weighted log-odds with an informative prior, Monroe et al. 2008); z above 1.96 is flagged\n\nA second output returns the rows with their word count, the number of terms kept and which of the top terms they use, so comments can be filtered by term in a Report.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "text_field",
+            "title": "Text field",
+            "description": "The free text to count words in, such as comments.",
+            "groupTitle": "Text",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Compare groups (optional)",
+            "description": "For example Channel, Product or NPS Category.",
+            "groupTitle": "Text",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "max_ngram",
+            "title": "Longest phrase (words)",
+            "description": "1 = single words only.",
+            "groupTitle": "Terms",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 4,
+            "mandatory": true,
+            "defaultValue": 2,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_word_length",
+            "title": "Shortest word (letters)",
+            "description": null,
+            "groupTitle": "Terms",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 20,
+            "mandatory": true,
+            "defaultValue": 2,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_documents",
+            "title": "Minimum rows using a term",
+            "description": "Rarer terms are left out.",
+            "groupTitle": "Terms",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 2,
+            "showAsSlider": false
+        },
+        {
+            "name": "top_n",
+            "title": "Top terms per group",
+            "description": "0 = all.",
+            "groupTitle": "Terms",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0,
+            "showAsSlider": false
+        },
+        {
+            "name": "remove_stop_words",
+            "title": "Remove English stop words",
+            "description": null,
+            "groupTitle": "Terms",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "extra_stop_words",
+            "title": "Extra stop words",
+            "description": "Comma-separated, for example your brand name.",
+            "groupTitle": "Terms",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "keep_numbers",
+            "title": "Keep numbers",
+            "description": null,
+            "groupTitle": "Terms",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "terms",
+            "label": "Terms",
+            "displayName": "Terms",
+            "tooltip": "Per group and term: occurrences, rows using it, share of rows, rank, share in other groups, distinctiveness z."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "rows",
+            "label": "Rows",
+            "displayName": "Rows",
+            "tooltip": "The input with Word Count, Terms Kept and Top Terms Used."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

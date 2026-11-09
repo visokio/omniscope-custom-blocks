@@ -1,0 +1,281 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Multi-Row Formula",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAFXElEQVR42u2dXYgWVRjHf49t7Sp+1SZZaFhZm1Fhu9oHeRVmKGVRWGHdRBAGRpgiSRIEUVCRN1E3QRClIWFmZmqBQkoQJZH0sdGHpWmW6bpu5Qf5dPHOwhK7e2Z23pl3Zuf/uz1nzu6e3z7PO+fd+e8LQgghhBBCCCGEEEIIMfyxMnyT7j4ZWAXMAcYMcydHgXeAx83sYOkFRvK+AM6pWHH9ALSbWfdgk0aU4AdZVUF5AJcAzwyHCuyuQNsciMNm1lp2gV7pmxQzK3sLFYPQlHM1jQDagVuA6cA0YGLUIk8AHwIrzOw7qSnQMcLdJwAPAYuASYHpR4DreyWqhQ7eQi1jcc3AEmAFMDbBpevM7C4JbKBAd28D3opaZVK6zWycBIYFNmUk76bo3YSxiEwZkYG8ucCmlPI+kpoG3MS4ewewHRidYhndxDTiHOjuI4E1KeQdA9b1lSfyPQc+DVwac+4B4PWoVX4FHDKzU9LRoBbq7jcAHwNnBKb+A6wEXjKzkzHXVgvNoQKfiyHvV2CemX2ZcO29wOSK+jua+V1odOMyK8aNyewhyAN4t8IFuCWPY8SSGHMWm9m3Q1x/JVDFm5o/gaWZCnT3VmBBYNp7ZrY6xWvAUWAm8CrQVQFx3cBaYLqZ7cv0K7n73R5mhu4VsyNtC705ML7dzD7TNhdX4OzA+Bva4oLi7hNitM8LtVPFrcApgfHvzewXbXFxBV4UGO/U9hZbYKg9/qztLbbAlsD479reYgt0bV+5BZ7O+IgiMhZ4IjA+UdtbbIF7AuNTtb3FPshfFTjE97j7Znd/290Xurtp14olcKS7n/b4bI6e0BZ1xFJK3A1cmeCSfcC9ZrYz4dcZD8wH2oDmYe7kOLAb2GRmx7J8DQTYmHD+JGCbuy+N21IjeY8BV1dAXu/5eiaw2N1bshb4/hCuORN4AVgXyQkxHxhVwe7YCszNWuAnwMEhXnsH8Lm7twfmtVX4Je6aTAWa2b/AiymWuBjY6e6LBpnTXGGBo7KuQICXqT2Ak6bnv+Lub7r7aERuB/neKuxJWYW9LAT2u/s8aclRYMTz0ethWsYAG919jtTkKDDKNdwDHKrT2fQ1qcm3AjGzvcD9wMk6LHe+1OQsMJK4Bbg9ejdBlE1gnxaYdt0DUtMAgVHQZS1wVpplgAekJmeBdUjoQi2le6uZbZWa/CswSUK3P1YDF5jZJmnJWWCU0H10iJcfBx42s/uiNwVEAvJM6PbHj8ACM9s1yJwuYHxF/RzPvAJjJnT7Yz3QEZAHtX+CUFU6MxdIvIRuX04By4A7zawrxvwPgD8qKO9vYEOcM1ua6msF9ic4Ngz1kYoW4DZqf5UfWYG22QlsiNLJ2REzoauHmgp8ExNK6B4GtlH7D0xrzEyP4xcJd/8pUHUPapeKK08J3ZIf5KcExpXQLbhAJXRLLlAJ3ZILVEK35AJ1JCi5QCV0Sy5QCd2SC9wTGFdCt+AHeSV0Sy5QCd0CoIRu8VBCt+QooTtMUEJ3GKCEbslRQlcH+XAV1jOh+6m7XyEtOQqMqFdCdxqww90vk5ocBdY5oXs28KzU5FuB9U7ozpaanAVGEnsTun9pa0soMJK4GegAdqVYRp+h2yiBkcRO4DpgOeG/G/6fI9Q+d140SmCf17HlCQ/i3wCz9Bm6DRTo7ubuT1F7n/TcBJeuBq41s6+lpbEVuAx4MsHaSuimoKnO1dcMPJHgEiV0w7/cuVbgVGBczLnrUUI3RGfeArtizFFCNx7ZJ3QHaKM7gBsHGFZCN17bzCehO8BmX+7uv+mhpnywjCSeBzwCzAB6UEJXCCGEEEIIIYQQQpSe/wCF+kvk3ACH/wAAAABJRU5ErkJggg==",
+    "description": "Window calculations across rows within groups: previous / next value, change, % change, running total, rolling mean / sum / min / max over rows or days, rank and share of group.",
+    "category": "Preparation",
+    "subcategory": "Formula",
+    "tags": [
+        "multi-row",
+        "lag",
+        "lead",
+        "running total",
+        "rolling",
+        "moving average",
+        "window",
+        "visokio-agents"
+    ],
+    "introductoryText": "Calculations that look at **other rows**: the previous or next value, the change since last time, running totals, rolling averages and ranks, each **within a group** (per store, customer, product) and **in the order you choose** (usually by date).\n\n| Tick | New field (for value field *Sales*) |\n|---|---|\n| Previous value / Next value | *Sales Previous*, *Sales Next* (any field type) |\n| Change / % change | *Sales Change*, *Sales % Change* (vs the previous row) |\n| Running total | *Sales Running Total* |\n| Rolling mean / sum / min / max | *Sales Rolling Mean (7 days)* and so on |\n| Rank in group | *Sales Rank* (1 = highest) |\n| Share of group total | *Sales Share Of Group* |\n| Row number in group | *Row Number* |\n\nRolling windows count either **rows** (the last 7 records) or **days** (the last 7 calendar days, so gaps in the data are handled properly). The output keeps the input order unless you untick that option.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "value_fields",
+            "title": "Value fields",
+            "description": "Fields to calculate on. Previous / next work for any field; the other calculations need numbers.",
+            "groupTitle": "Fields",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Group by (optional)",
+            "description": "Calculations restart for each combination of these fields, for example Store or Customer.",
+            "groupTitle": "Fields",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "sort_fields",
+            "title": "Order by",
+            "description": "Order of rows within each group, usually a date. For rolling windows in days choose exactly one date field.",
+            "groupTitle": "Fields",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "calc_previous",
+            "title": "Previous value",
+            "description": null,
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "calc_next",
+            "title": "Next value",
+            "description": null,
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "calc_change",
+            "title": "Change vs previous",
+            "description": null,
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "calc_pct_change",
+            "title": "% change vs previous",
+            "description": "As a fraction: 0.05 means up 5%.",
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "calc_running_total",
+            "title": "Running total",
+            "description": "Cumulative sum within each group.",
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "calc_rolling_mean",
+            "title": "Rolling mean",
+            "description": "Average over the rolling window.",
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "calc_rolling_sum",
+            "title": "Rolling sum",
+            "description": null,
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "calc_rolling_min",
+            "title": "Rolling minimum",
+            "description": null,
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "calc_rolling_max",
+            "title": "Rolling maximum",
+            "description": null,
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "calc_rank",
+            "title": "Rank in group",
+            "description": "1 = highest value in the group; ties share the lower rank.",
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "calc_share",
+            "title": "Share of group total",
+            "description": null,
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "calc_row_number",
+            "title": "Row number in group",
+            "description": null,
+            "groupTitle": "Calculations",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "offset",
+            "title": "Rows back / forward",
+            "description": "For previous, next and change: 1 compares with the row just before; 7 with daily data compares with the same weekday last week.",
+            "groupTitle": "Offsets and windows",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 100000,
+            "mandatory": true,
+            "defaultValue": 1,
+            "showAsSlider": false
+        },
+        {
+            "name": "window",
+            "title": "Rolling window size",
+            "description": "Rows or days in each rolling window.",
+            "groupTitle": "Offsets and windows",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 100000,
+            "mandatory": true,
+            "defaultValue": 7,
+            "showAsSlider": false
+        },
+        {
+            "name": "window_unit",
+            "title": "Rolling window counts",
+            "description": "Whether the window counts rows or days of the date in Order by.",
+            "groupTitle": "Offsets and windows",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Rows",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ROWS",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Days (uses the date in Order by)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DAYS",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "ROWS"
+        },
+        {
+            "name": "full_window",
+            "title": "Only when the window is full",
+            "description": "Leave rolling values empty until a full window of rows (or days) is available.",
+            "groupTitle": "Offsets and windows",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "descending",
+            "title": "Order descending",
+            "description": "Tick to process newest first.",
+            "groupTitle": "Order",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "keep_order",
+            "title": "Keep input row order",
+            "description": "Untick to output rows sorted by group and order fields.",
+            "groupTitle": "Order",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "Output Data",
+            "label": "Result",
+            "displayName": "Output 1",
+            "tooltip": "The input with the new calculated fields."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

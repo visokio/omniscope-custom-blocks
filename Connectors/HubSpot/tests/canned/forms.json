@@ -1,0 +1,16 @@
+[
+ {
+  "guid": "3f1c0f9e-0000-4000-8000-000000000001",
+  "name": "Catalogue request",
+  "createdAt": 1735725600000,
+  "formFieldGroups": [
+   {
+    "fields": [
+     {
+      "name": "email"
+     }
+    ]
+   }
+  ]
+ }
+]

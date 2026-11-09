@@ -1,0 +1,163 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Data Compare",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACJ0lEQVR42u3cMUpcQRyA8W8WESsxnUVkIeAFbMVCUlrY5yLmCBFyjXgAwVIsxMImF1gI7AFkxUZZi0nhFOmEzNs37n++D+z0zbz9rc8ZdAQzMzMzMzMzMzOz+KX3PiHn/LPR3G5SSldDXzTnnBvdz3lK6fvQF5184DfXcc75JNA3y1nO+UdPgCIGABQxAKCIAQBFDAAoYgBAEQMAihgAUMQAgCIGAOwecRLkprtFnAS66S4RIwECHAe7n7PeALtLQAFNQBNQQBPQBDQBBTQBTUATsIc2Kr/+E3AETIHNFc91CcyBW2Cx6hcmpZRWef2hzmhsVOJ9A7ZGerNtAvvAHnAxBmL0R+jRiHj/tlXGtkrAacN5T6VzEdM94LzhvOfS1QPeAi8N5vxSxrZKwEVZDc7KEn/VLctYrkAH3AcugMuIL0zDs/QuYnyEmoAmoAkooAloH3kfCG//b22HcX4f+Ahk2YYD/AJ8BbZHmu8TcA38ka7+EfoZOB0RjzLWaRnbKgEPG/0MnZSxrRJgt+G8d6WrB1w2nPdSunrAWcN5z6SrB7wDHhrM+aGMbZXbiGfgF3DAuH8X+ht4lW6YfeArcF8+bM0eoSagCSigCWgCmoACWn8beU/o/mee0PV8RPUj1BO6aw7oCV0XMdYS0BO6aw7oCd01B/SEboB9oCd0XcSYgAKagCagCSigCWgCmoACmoAmoAkooAloApqZmZmZmZmZmZlZr/0FxhW9jZLseqwAAAAASUVORK5CYII=",
+    "description": "Compares two versions of a dataset by key: added, removed and changed records, field-level differences with tolerances, and schema differences.",
+    "category": "Preparation",
+    "subcategory": "Audit",
+    "tags": [
+        "compare",
+        "diff",
+        "reconcile",
+        "migration testing",
+        "change detection",
+        "audit",
+        "snapshot",
+        "data quality",
+        "visokio-agents"
+    ],
+    "introductoryText": "Compares two versions of a dataset (before and after a migration, source and target, last month's extract and this month's) and shows exactly what changed.\n\n- Records are matched on **key fields** (for example Customer ID); without keys, whole rows are matched\n- Each record is **Added**, **Removed**, **Changed** or **Unchanged**, with the list of changed fields\n- One row per **changed value** with old and new value and the numeric change\n- A **field summary**: how many values changed per field, field types on each side, and fields that exist on one side only\n- **Tolerances** for numbers (absolute and relative), and options to ignore case, trim spaces and treat blank text as null, so cosmetic differences do not drown out real ones\n- **Duplicate keys** are reported and left out of the comparison rather than matched arbitrarily\n\nConnect the old (before) data to input 1 and the new (after) data to input 2.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "key_fields",
+            "title": "Key fields",
+            "description": "Identify a record in both inputs. Leave empty to match whole rows.",
+            "groupTitle": "Matching",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "compare_fields",
+            "title": "Fields to compare (optional)",
+            "description": "Default: all fields in both inputs except keys and ignored fields.",
+            "groupTitle": "Matching",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "ignore_fields",
+            "title": "Fields to ignore",
+            "description": "For example load timestamps.",
+            "groupTitle": "Matching",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "tolerance",
+            "title": "Numeric tolerance",
+            "description": "Differences up to this amount are not changes.",
+            "groupTitle": "What counts as a change",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "relative_tolerance",
+            "title": "Relative tolerance",
+            "description": "For example 0.001 = 0.1% of the old value.",
+            "groupTitle": "What counts as a change",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "ignore_case",
+            "title": "Ignore case",
+            "description": "Text that differs only in upper and lower case is not a change.",
+            "groupTitle": "What counts as a change",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "trim",
+            "title": "Trim spaces",
+            "description": "Spaces at the start or end of text are ignored.",
+            "groupTitle": "What counts as a change",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "blank_is_null",
+            "title": "Blank text equals null",
+            "description": "Empty text and a missing value count as the same.",
+            "groupTitle": "What counts as a change",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "include_unchanged",
+            "title": "List unchanged records",
+            "description": null,
+            "groupTitle": "What counts as a change",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "records",
+            "label": "Records",
+            "displayName": "Records",
+            "tooltip": "One row per record: key, status (Added, Removed, Changed, Unchanged, Duplicate key), number and names of changed fields, row numbers."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "differences",
+            "label": "Differences",
+            "displayName": "Differences",
+            "tooltip": "One row per changed value: key, field, old value, new value, numeric change."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "fields",
+            "label": "Fields",
+            "displayName": "Field summary",
+            "tooltip": "Per field: compared, key, only in old, only in new or ignored; types; values changed and share."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

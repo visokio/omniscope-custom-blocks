@@ -1,0 +1,147 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Point in Polygon",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Finds which polygon (territory, zone, area) each latitude / longitude point falls in, from GeoJSON or WKT shapes, and counts points per polygon.",
+    "category": "Analytics",
+    "subcategory": "Geo",
+    "tags": [
+        "point in polygon",
+        "spatial join",
+        "geojson",
+        "wkt",
+        "territory",
+        "geo",
+        "visokio-agents"
+    ],
+    "introductoryText": "Tags each point (customer, property, incident, vehicle position) with the **area it falls in**: sales territory, delivery zone, council or ward, flood zone, catchment. The areas are polygons, one per row of the second input, with the shape in a text field:\n\n- **GeoJSON** geometry (`Polygon`, `MultiPolygon`, or a `Feature`), as exported by most GIS tools and open-data portals\n- **WKT** (`POLYGON ((lon lat, ...))`, `MULTIPOLYGON`), as stored in many databases\n\nHoles are respected (a region *outside* a city, for example), and points on overlapping polygons can return the first match or all matches. Every polygon's other fields are appended to its points (prefixed *Polygon:*), and the second output counts the points (and sums a value) per polygon, with a note for any geometry that could not be read.\n\nCoordinates are longitude / latitude in decimal degrees (WGS84). Pure numpy: no GIS libraries to install.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "lat_field",
+            "title": "Latitude",
+            "description": "Latitude of each point, in decimal degrees.",
+            "groupTitle": "Points (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "lon_field",
+            "title": "Longitude",
+            "description": "Longitude of each point, in decimal degrees.",
+            "groupTitle": "Points (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Value to sum per polygon (optional)",
+            "description": "A number to total per polygon, such as spend.",
+            "groupTitle": "Points (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "geometry_field",
+            "title": "Geometry (GeoJSON or WKT)",
+            "description": "The shape of each polygon in input 2, as GeoJSON or WKT text.",
+            "groupTitle": "Polygons (input 2)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "match_mode",
+            "title": "Points in overlapping polygons",
+            "description": "Where polygons overlap: keep only the first match, or a row for each.",
+            "groupTitle": "Matching",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "First matching polygon",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FIRST",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "One row per matching polygon",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ALL",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "FIRST"
+        },
+        {
+            "name": "keep_unmatched",
+            "title": "Keep points outside all polygons",
+            "description": null,
+            "groupTitle": "Matching",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "points",
+            "label": "Points",
+            "displayName": "Points with polygon",
+            "tooltip": "Input 1 with the containing polygon's fields, Polygon Row, Polygons Containing Point and Match Status."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "polygons",
+            "label": "Polygons",
+            "displayName": "Polygon summary",
+            "tooltip": "Input 2 (without geometry) with the number of points (and value) in each polygon and a geometry status."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

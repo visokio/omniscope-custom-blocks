@@ -1,0 +1,137 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Price-Volume-Mix Bridge",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Decomposes revenue change between two periods into volume, mix, price, new and lost product effects that add up exactly, per item and optional group.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "price volume mix",
+        "pvm",
+        "variance analysis",
+        "revenue bridge",
+        "waterfall",
+        "finance",
+        "commercial",
+        "visokio-agents"
+    ],
+    "introductoryText": "Explains *why* revenue changed between a base period and a current period, the bridge finance and commercial teams present every month or year:\n\n- **Volume**: more or fewer units overall, valued at base prices and base mix\n- **Mix**: customers buying more of the higher- or lower-priced items\n- **Price**: price changes on the units sold in the current period\n- **New products** and **Lost products**: revenue from items sold in only one of the two periods\n\nThe effects are computed per item (product, SKU, service) and **add up exactly** to the revenue change. Optionally per group (region, channel). The bridge output has one row per step with start and end values for a waterfall chart; the item output shows every item's volumes, prices and effects.\n\nChoose the period field and the two values to compare (by default the first and last values in sort order).",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "period_field",
+            "title": "Period field",
+            "description": "For example Year, or a field with values such as FY24 / FY25.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "item_field",
+            "title": "Item field",
+            "description": "The level at which price and mix are measured, such as Product or SKU.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "volume_field",
+            "title": "Volume field",
+            "description": "Units, kilograms, contracts...",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "revenue_field",
+            "title": "Revenue field",
+            "description": "Revenue for the item in the period; price is revenue divided by volume.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Bridge separately for each (optional)",
+            "description": "For example Region.",
+            "groupTitle": "Data",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "base_period",
+            "title": "Base period value",
+            "description": "Empty = the first value of the period field.",
+            "groupTitle": "Periods",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "current_period",
+            "title": "Current period value",
+            "description": "Empty = the last value of the period field.",
+            "groupTitle": "Periods",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "bridge",
+            "label": "Bridge",
+            "displayName": "Bridge",
+            "tooltip": "Per (group and) step: base revenue, volume, mix, price, new, lost, current revenue, with bar start / end for waterfall charts."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "items",
+            "label": "Item effects",
+            "displayName": "Item effects",
+            "tooltip": "Per (group and) item: status, volumes, revenues, prices, volume / mix / price / new-lost effects."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

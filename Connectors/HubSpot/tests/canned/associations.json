@@ -1,0 +1,31 @@
+{
+ "status": "COMPLETE",
+ "results": [
+  {
+   "from": {
+    "id": "501"
+   },
+   "to": [
+    {
+     "id": "9001",
+     "type": "contact_to_company"
+    }
+   ]
+  },
+  {
+   "from": {
+    "id": "503"
+   },
+   "to": [
+    {
+     "id": "9003",
+     "type": "contact_to_company"
+    },
+    {
+     "id": "9008",
+     "type": "contact_to_company"
+    }
+   ]
+  }
+ ]
+}

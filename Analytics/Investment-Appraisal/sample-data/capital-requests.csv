@@ -1,0 +1,36 @@
+Project,Year,Cash Flow (GBP k)
+Warehouse automation,0,-2400
+Warehouse automation,1,380
+Warehouse automation,2,620
+Warehouse automation,3,700
+Warehouse automation,4,720
+Warehouse automation,5,720
+Warehouse automation,6,700
+Warehouse automation,7,650
+Solar panels on depots,0,-850
+Solar panels on depots,1,95
+Solar panels on depots,2,105
+Solar panels on depots,3,110
+Solar panels on depots,4,115
+Solar panels on depots,5,120
+Solar panels on depots,6,120
+Solar panels on depots,7,125
+Solar panels on depots,8,125
+Solar panels on depots,9,130
+Solar panels on depots,10,130
+New CRM system,0,-600
+New CRM system,1,-250
+New CRM system,2,280
+New CRM system,3,420
+New CRM system,4,450
+New CRM system,5,450
+Fleet replacement,0,-1500
+Fleet replacement,1,520
+Fleet replacement,2,520
+Fleet replacement,3,520
+Fleet replacement,4,300
+Fleet replacement,5,150
+Store refit with closure costs,0,-1000
+Store refit with closure costs,1,1800
+Store refit with closure costs,2,600
+Store refit with closure costs,3,-1450

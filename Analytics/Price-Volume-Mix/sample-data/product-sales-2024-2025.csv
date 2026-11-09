@@ -1,0 +1,33 @@
+Year,Region,Product,Category,Units,Revenue
+2024,North,Classic tea 80s,Tea,22836,54872.95
+2024,South,Classic tea 80s,Tea,27178,65441.18
+2025,North,Classic tea 80s,Tea,23504,59799.56
+2025,South,Classic tea 80s,Tea,28133,71829.16
+2024,North,Earl Grey 50s,Tea,9338,26963.43
+2024,South,Earl Grey 50s,Tea,10845,31672.29
+2025,North,Earl Grey 50s,Tea,10110,31224.39
+2025,South,Earl Grey 50s,Tea,12681,38730.77
+2024,North,Green tea 40s,Tea,6616,17321.36
+2024,South,Green tea 40s,Tea,8124,21288.21
+2025,North,Green tea 40s,Tea,7780,20246.81
+2025,South,Green tea 40s,Tea,9185,24160.79
+2024,North,House blend coffee 227g,Coffee,13461,51053.3
+2024,South,House blend coffee 227g,Coffee,16901,63937.56
+2025,North,House blend coffee 227g,Coffee,12429,50660.47
+2025,South,House blend coffee 227g,Coffee,15092,61554.16
+2024,North,Single origin coffee 227g,Coffee,3401,20006.33
+2024,South,Single origin coffee 227g,Coffee,4206,24884.05
+2025,North,Single origin coffee 227g,Coffee,6529,40582.91
+2025,South,Single origin coffee 227g,Coffee,7996,49487.49
+2024,North,Coffee pods 10s,Coffee,10809,34770.82
+2024,South,Coffee pods 10s,Coffee,13127,41846.35
+2025,North,Coffee pods 10s,Coffee,13107,43205.15
+2025,South,Coffee pods 10s,Coffee,16128,53722.86
+2024,North,Hot chocolate 300g,Cocoa,3906,12043.12
+2024,South,Hot chocolate 300g,Cocoa,4904,15251.81
+2025,North,Hot chocolate 300g,Cocoa,3481,10739.42
+2025,South,Hot chocolate 300g,Cocoa,4186,12953.84
+2025,North,Oat drink 1L,Dairy alternatives,7410,13641.47
+2025,South,Oat drink 1L,Dairy alternatives,8775,16183.99
+2024,North,Decaf coffee 227g,Coffee,2362,9348.43
+2024,South,Decaf coffee 227g,Coffee,2734,10928.18

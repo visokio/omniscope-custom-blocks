@@ -1,0 +1,106 @@
+{
+ "airlines": [
+  {
+   "fs": "ZQ",
+   "iata": "ZQ",
+   "icao": "ZQA",
+   "name": "Kestrel Coastal Airways",
+   "phoneNumber": "+44 20 7946 0101",
+   "active": true
+  },
+  {
+   "fs": "XK",
+   "iata": "XK",
+   "icao": "XKN",
+   "name": "Northmoor Air",
+   "phoneNumber": "+44 161 496 0102",
+   "active": true
+  },
+  {
+   "fs": "QV",
+   "iata": "QV",
+   "icao": "QVL",
+   "name": "Valebridge Aviation",
+   "active": true
+  },
+  {
+   "fs": "J7",
+   "iata": "J7",
+   "icao": "JSV",
+   "name": "Juniper Sky",
+   "phoneNumber": "+353 20 910 0103",
+   "active": true
+  },
+  {
+   "fs": "WY*",
+   "icao": "WYF",
+   "name": "Westry Freight",
+   "active": true
+  },
+  {
+   "fs": "H3",
+   "iata": "H3",
+   "name": "Harbourline Commuter",
+   "phoneNumber": "+44 113 496 0104",
+   "active": true
+  },
+  {
+   "fs": "LP",
+   "iata": "LP",
+   "icao": "LPX",
+   "name": "Lowland Express",
+   "phoneNumber": "+44 141 496 0105",
+   "active": true
+  },
+  {
+   "fs": "RB",
+   "iata": "RB",
+   "icao": "RBR",
+   "name": "Redbeck Regional",
+   "active": true
+  },
+  {
+   "fs": "TF",
+   "iata": "TF",
+   "icao": "TFA",
+   "name": "Thornfield Air Charter",
+   "phoneNumber": "+44 113 496 0106",
+   "active": true
+  },
+  {
+   "fs": "MZ",
+   "iata": "MZ",
+   "icao": "MZE",
+   "name": "Merrow Island Air",
+   "active": true
+  },
+  {
+   "fs": "OY",
+   "iata": "OY",
+   "icao": "OYP",
+   "name": "Orrin Bay Airlines",
+   "phoneNumber": "+44 117 496 0107",
+   "active": true
+  },
+  {
+   "fs": "KD",
+   "iata": "KD",
+   "icao": "KDS",
+   "name": "Kingsdale Shuttle",
+   "active": true
+  },
+  {
+   "fs": "PX",
+   "iata": "PX",
+   "icao": "PXO",
+   "name": "Penhallow Airways",
+   "active": false
+  },
+  {
+   "fs": "GA*",
+   "icao": "GAH",
+   "name": "Glenhaven Air Taxi",
+   "active": false
+  }
+ ]
+}

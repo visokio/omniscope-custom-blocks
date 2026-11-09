@@ -1,0 +1,37 @@
+[
+ {
+  "id": "64c0c0ffee00000000000l01",
+  "name": "To plan",
+  "closed": false,
+  "pos": 16384,
+  "idBoard": "64b0c0ffee0000000000b001"
+ },
+ {
+  "id": "64c0c0ffee00000000000l02",
+  "name": "Writing",
+  "closed": false,
+  "pos": 32768,
+  "idBoard": "64b0c0ffee0000000000b001"
+ },
+ {
+  "id": "64c0c0ffee00000000000l03",
+  "name": "Design",
+  "closed": false,
+  "pos": 49152,
+  "idBoard": "64b0c0ffee0000000000b001"
+ },
+ {
+  "id": "64c0c0ffee00000000000l04",
+  "name": "Scheduled",
+  "closed": false,
+  "pos": 65536,
+  "idBoard": "64b0c0ffee0000000000b001"
+ },
+ {
+  "id": "64c0c0ffee00000000000l05",
+  "name": "Published",
+  "closed": false,
+  "pos": 81920,
+  "idBoard": "64b0c0ffee0000000000b001"
+ }
+]

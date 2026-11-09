@@ -1,0 +1,28 @@
+{
+ "offset": 2,
+ "hasMore": false,
+ "total": 2,
+ "lists": [
+  {
+   "listId": "11",
+   "name": "Spring newsletter",
+   "processingType": "MANUAL",
+   "objectTypeId": "0-1",
+   "size": 240,
+   "createdAt": "2025-02-01T10:00:00.000Z",
+   "filtersUpdatedAt": null
+  },
+  {
+   "listId": "12",
+   "name": "Trade customers",
+   "processingType": "DYNAMIC",
+   "objectTypeId": "0-1",
+   "size": 75,
+   "createdAt": "2025-02-14T10:00:00.000Z",
+   "filterBranch": {
+    "filterBranchType": "OR",
+    "filters": []
+   }
+  }
+ ]
+}

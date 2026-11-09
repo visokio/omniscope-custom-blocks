@@ -1,0 +1,143 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Top N With Other",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACx0lEQVR42u3csWrVYBjG8f8rSrUoFjt0aSfBLkVU8A6K4GD33oU4eQWu9QIEx4IIYgel0CtwEqxDBye7FKn0HEUKDp/LUaQngaScc5J8+f/G8BJyvqdJmpOnBUmSJEmSJM1G1BlOKa0AW8AD4JrLN1ED4A3wNCKOJh7gKLyPwA3Xeqq+APciYlhl+EKNHW8Z3kzcBJ5N4wwcetmcme8RsTjpAJPrOsNfTiIqZXPBpeo2AzRAGaAM0ABlgGp3gF9drpkZTCPAt67rzOxWfuCvOphSug58AG65vlN1DNyJiMOJnoERMQDuAy+AE9d54obAqzrhSZIkSc2wlVbfudpjjQdoK21MrfbYtNhKO79a7bE2nIG20sZVbo+1IUBbaUULWLE91oZLqFrIAA1QBigDNEAZoNodoK20cYMuBWgrbdxu0wdgK+38arXHGj8DbaX9Y3tMkiRJqi6ltJJSep1SGqbuOEkpvUwpLeWYSZ9aaa1okTX2IE/3W2mtaJE1eQbm0EprvEXWZIBZtNKabpE1eQmVAcoAZYAGKAOUAYr+tdIGfQ4wh1babm4B9qmV1ooWWWNnYIdbabbIJEmSJElSO9T5Ku1xweb9iNgrmN0EzhZpjyJiu2B2HVgbO7CI5wWza8B6wXFsn/3Xj6Mi72bB7F5E7Hfl8xXN/e9ijbCXC7aVfTW1VDJfZKHG7NWS2Usl25ZL9tG1z1fK94EdZ4AGqCbVuQcW3Q9OSmaPKm77u4+qr3l+lsz+Ltl2WLKPrn0+SVKDD/KjB80FYANYBeYyW4tT4BPwLiJ+ZBfgKLwnwHzmP9THwFZEnOb2GLHRg/AAFoGHOT4Hrvbo1nI3xwDnehTgfI4BygBlgDJAA5QBygBVM8CTHq3LaY4Bfu5RgAc5Bvge+NaD8H4BO1052Lqvky4Dj4DbwJUML5sHwM7or5ElSZIkSWqdP4BVg7K0kDsmAAAAAElFTkSuQmCC",
+    "description": "Keeps the top N items per group by value and rolls the rest into an Other row, with ranks, shares and cumulative shares.",
+    "category": "Preparation",
+    "subcategory": "Aggregate",
+    "tags": [
+        "top N",
+        "other",
+        "ranking",
+        "reporting",
+        "pie chart",
+        "pareto",
+        "aggregate",
+        "visokio-agents"
+    ],
+    "introductoryText": "Keeps the **N largest items per group** and rolls everything else into one **Other** row, so charts and tables stay readable: top 10 products per region, top 5 suppliers per category plus Other.\n\n- Values are summed per group and item first; ties are broken by name so results are repeatable\n- Optionally also require a **minimum share** of the group (or use only the share, with N = 0)\n- Extra value fields (units, margin) are carried along and summed into Other too\n- Each row has its **rank**, **share of group**, **cumulative share** and, for Other, how many items it holds",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "item_field",
+            "title": "Item field",
+            "description": "For example Product or Supplier.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Rank by value",
+            "description": "The number items are ranked on, such as revenue.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Per group (optional)",
+            "description": "For example Region.",
+            "groupTitle": null,
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "extra_value_fields",
+            "title": "Other values to carry (optional)",
+            "description": "Other numbers to total into the Other row alongside the ranking value.",
+            "groupTitle": null,
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "top_n",
+            "title": "Top N",
+            "description": "0 = no limit (use the minimum share).",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 10,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_share",
+            "title": "Minimum share of group",
+            "description": "For example 0.02; 0 = none.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "include_other",
+            "title": "Add an Other row",
+            "description": "Adds a row totalling the items outside the top N.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "other_label",
+            "title": "Label for Other",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Other"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "top",
+            "label": "Top N",
+            "displayName": "Top N with Other",
+            "tooltip": "Per group: kept items and an Other row, with rank, values, share of group, cumulative share, items included."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

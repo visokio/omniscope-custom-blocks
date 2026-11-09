@@ -1,0 +1,208 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Likert Survey Summary",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADlklEQVR42u2dPYtdRRiAn3djxCWiiyZCIioq0YiYiERFQTs1QiBgJYIfjVb+BFNYWFhZ+BEQ0thqEYiEGCxEgxhFTAqjEQtdXZSIq/hxb8TVsdi1ucxNds35mDk+Tzmc+74z8zDncOa+dy6IiIiIiIiIiIiIDJ8ooRMppfXAJmDmPEONImLxLHkCuA6Y63G48xHxw2AEppS2Ao8Bsw2F/BR4LSL+msizATgE3Nv3kIHnImJvE8FmCliADzUoD+Bm4I5M+1MFyPt30TyTUrp9KAI3thBzS6bthsIeXzuGIjAGlqfTuZ9BqkaBChQFigIVKAoUBYoCFdg1f7YQcynTNips7kdDEXi8hZgnM21vAH8XIu834J0mApXwddIFwP3A9cC68ww3Bo5FxPEpuXYDT9POBvpqWQCej4j3fQCIiIiISJ008hqRUtoMXFXAe+XvwBcR8ceUfs6tvLLMNZjza+DtySq4agSmlO5iubKslJqT08CLETGe6OcW4EPgyhZyvgnsiYjONwqaWDH3UVbB0BXA3Zn2J1uSB7B7ZR6oUeAlBT4acrfIzS3nvKZWgdIjClSgKFAUqEBRoChQFKhA+Z8JHBU4rnGmbbHlnD/VKvDdwuQtAZ9k2vcDv7SU8xvgSB+Dber7wO00UxbYxMr7OCK+n9LPrcATNFtWuAC8Oi2niIiIiMjwiNI7uHLC4E5WV7Y4Aj6adhpgSulW4BHg0oKHPA/sO9upi7UJ3APcs4aPnAFeiIgfM/KOARdWsLBOAbdFxDl3uWrYC925xusvAu7MtD9ciTyAG4EHV3NhDQJnG/rMXGWPt8uHIlAUqEBRoChQFKhAUaAoUBSowK74L+V6ueqz+crcLAxF4EFgLSdA/Ax8kGl/Bfi8EnnvAW+t5sKoYTQppY3AtZy7bHEMnIqIM1PiXMzyYQSbCh7ut8CRiFjyASEiIiIiZdL6a0RKaRbYRTenGY6AoxFxckpfHmX510ldlhXOA89GxIlaBT4O3NLlayPwckR8NdGPB4DDPS2UReCmiDjddOAudmK29XBX2Z5p39Xjne4yWjrNsAuB63uYsFzOWfplQ60CpUUUqEBRoChQgaJAUaAoUIFNkwoZaxpi/i4EftfDZOU2jU/0LPCzWgW+Dvza4UR9Sb6scD9woCd5L0XE0TYCd1JWmFJax/J/GrV9muF48nSKTF+uptuywgVPMhQRERERERERERERkXr5B1i6v155OAy7AAAAAElFTkSuQmCC",
+    "description": "Summarises Likert-scale survey questions: answer distributions, mean scores, top-2-box, net scores and neutral shares, per question and segment.",
+    "category": "Analytics",
+    "subcategory": "Survey",
+    "tags": [
+        "survey",
+        "likert",
+        "engagement",
+        "satisfaction",
+        "top 2 box",
+        "net score",
+        "questionnaire",
+        "visokio-agents"
+    ],
+    "introductoryText": "Summarises survey questions answered on an agreement or satisfaction scale (*Strongly disagree* to *Strongly agree*, *Very dissatisfied* to *Very satisfied*, or 1 to 5), straight from the export where each respondent is a row and each statement a column.\n\nPer question (and per segment, such as department or region):\n\n- **Distribution** of answers, with counts, shares and a signed *diverging share* ready for the classic diverging bar chart\n- **Mean score**, **top-2-box** (% agree / satisfied), **bottom-2-box**, **neutral** share and **net score** (top minus bottom)\n- Responses, no-answer and unrecognised counts, and a reliability flag for small groups\n- A **tidy long table** (respondent, question, answer, score) for any further analysis\n\nAnswer text is matched ignoring case and punctuation; numbers 1 to N are accepted too; *N/A*, *Don't know* and *Prefer not to say* count as no answer. Built-in scales: agree (5 and 4 point), satisfaction, likelihood, frequency, numeric, or your own labels.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "question_fields",
+            "title": "Question fields",
+            "description": "One field per survey statement.",
+            "groupTitle": "Questions",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": true,
+            "fieldTypes": []
+        },
+        {
+            "name": "segment_fields",
+            "title": "Break down by (optional)",
+            "description": "For example Department or Region.",
+            "groupTitle": "Questions",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "scale",
+            "title": "Answer scale",
+            "description": "How the answers are worded, lowest to highest. Numbers and custom labels cover other scales.",
+            "groupTitle": "Scale",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Agree, 5 point (Strongly disagree ... Strongly agree)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "AGREE5",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Agree, 4 point (no neutral)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "AGREE4",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Satisfaction, 5 point",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SAT5",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Likelihood, 5 point",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LIKELY5",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Frequency (Never ... Always)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FREQ5",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Numbers (1 to N)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NUMERIC",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Custom labels",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CUSTOM",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "AGREE5"
+        },
+        {
+            "name": "custom_labels",
+            "title": "Custom labels (lowest first)",
+            "description": "Comma-separated, for example Poor, Fair, Good, Very good, Excellent.",
+            "groupTitle": "Scale",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "box_size",
+            "title": "Top / bottom box size",
+            "description": "2 = top-2-box (Agree + Strongly agree).",
+            "groupTitle": "Scale",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 5,
+            "mandatory": true,
+            "defaultValue": 2,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_responses",
+            "title": "Minimum responses to report reliably",
+            "description": null,
+            "groupTitle": "Scale",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 100000,
+            "mandatory": true,
+            "defaultValue": 5,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Questions",
+            "displayName": "Question summary",
+            "tooltip": "Per question (and segment): responses, mean, top / bottom box, neutral, net score, rank, reliability."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "distribution",
+            "label": "Answers",
+            "displayName": "Answer distribution",
+            "tooltip": "Per question (and segment) and answer: count, share, diverging share."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "responses",
+            "label": "Responses",
+            "displayName": "Responses (long)",
+            "tooltip": "One row per respondent and question: answer label and score."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

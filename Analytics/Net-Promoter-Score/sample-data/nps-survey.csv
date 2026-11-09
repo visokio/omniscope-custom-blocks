@@ -1,0 +1,3201 @@
+Response ID,Response Date,Region,Channel,Likelihood To Recommend
+R02809,2025-01-01,Midlands,Store,9
+R02285,2025-01-01,Midlands,Online,10
+R02779,2025-01-01,London,Online,6
+R00105,2025-01-01,North,Online,9
+R00713,2025-01-01,Midlands,Online,5
+R01347,2025-01-01,South West,Online,9
+R01031,2025-01-01,London,Online,8
+R02231,2025-01-01,Scotland,Store,8
+R02228,2025-01-01,North,Store,8
+R01908,2025-01-01,Midlands,Store,6
+R00337,2025-01-01,Scotland,Store,8
+R01824,2025-01-02,North,Store,6
+R02769,2025-01-02,North,Online,7
+R00779,2025-01-02,Scotland,Store,9
+R01535,2025-01-02,Midlands,Store,6
+R00112,2025-01-02,London,Store,7
+R03178,2025-01-02,Scotland,Online,9
+R00565,2025-01-02,Scotland,Contact Centre,7
+R00562,2025-01-03,Midlands,Contact Centre,5
+R01813,2025-01-03,Midlands,Online,7
+R00534,2025-01-03,South West,Contact Centre,5
+R00686,2025-01-03,Midlands,Store,10
+R00127,2025-01-03,North,Online,10
+R00087,2025-01-03,London,Store,8
+R02937,2025-01-04,North,Store,6
+R00154,2025-01-04,Midlands,Online,5
+R02001,2025-01-04,North,Contact Centre,5
+R03006,2025-01-04,London,Online,6
+R01360,2025-01-04,London,Store,6
+R01663,2025-01-04,Scotland,Online,6
+R01750,2025-01-04,Midlands,Store,8
+R02863,2025-01-04,South West,Store,3
+R00802,2025-01-05,North,Store,8
+R00015,2025-01-05,London,Online,10
+R00590,2025-01-05,Midlands,Store,3
+R00540,2025-01-05,London,Store,10
+R02217,2025-01-05,Midlands,Online,10
+R03110,2025-01-05,London,Store,9
+R01118,2025-01-05,London,Online,6
+R00440,2025-01-05,North,Contact Centre,5
+R02488,2025-01-05,North,Contact Centre,6
+R02677,2025-01-05,South West,Contact Centre,6
+R03015,2025-01-05,South West,Online,8
+R02129,2025-01-05,London,Store,9
+R00512,2025-01-05,London,Contact Centre,6
+R00944,2025-01-05,North,Store,8
+R01615,2025-01-05,South West,Online,9
+R00919,2025-01-05,North,Online,7
+R01656,2025-01-05,London,Online,6
+R01668,2025-01-05,Midlands,Store,9
+R01821,2025-01-05,London,Online,8
+R03012,2025-01-06,London,Contact Centre,8
+R02388,2025-01-06,South West,Online,9
+R00913,2025-01-06,South West,Store,7
+R02178,2025-01-06,London,Online,5
+R01459,2025-01-06,North,Store,4
+R02832,2025-01-06,London,Store,6
+R01427,2025-01-06,North,Online,6
+R00785,2025-01-06,North,Online,10
+R01510,2025-01-06,South West,Store,8
+R00443,2025-01-06,London,Store,5
+R02405,2025-01-06,Midlands,Store,4
+R02765,2025-01-06,London,Contact Centre,9
+R02465,2025-01-07,London,Online,7
+R00307,2025-01-07,London,Store,5
+R01177,2025-01-07,North,Online,9
+R03180,2025-01-07,London,Store,8
+R01140,2025-01-07,South West,Online,7
+R02582,2025-01-07,London,Online,5
+R00050,2025-01-07,Scotland,Online,6
+R00902,2025-01-07,South West,Store,10
+R02975,2025-01-07,Midlands,Store,9
+R02798,2025-01-07,Scotland,Store,6
+R01747,2025-01-07,London,Contact Centre,6
+R03078,2025-01-07,Midlands,Store,10
+R02762,2025-01-07,Midlands,Store,4
+R00216,2025-01-07,North,Online,10
+R02179,2025-01-08,Scotland,Online,4
+R00230,2025-01-08,North,Online,7
+R02337,2025-01-08,Midlands,Store,5
+R00673,2025-01-08,Scotland,Online,4
+R00991,2025-01-08,Midlands,Store,7
+R01761,2025-01-08,Midlands,Online,7
+R01735,2025-01-08,North,Store,6
+R00625,2025-01-08,North,Contact Centre,5
+R00470,2025-01-08,Midlands,Contact Centre,6
+R00358,2025-01-08,Scotland,Contact Centre,6
+R02703,2025-01-08,Midlands,Store,9
+R02741,2025-01-09,South West,Store,10
+R01826,2025-01-09,North,Online,8
+R00955,2025-01-09,North,Online,9
+R02168,2025-01-09,South West,Online,9
+R01949,2025-01-09,London,Online,6
+R02840,2025-01-09,Midlands,Contact Centre,6
+R01642,2025-01-09,Midlands,Contact Centre,6
+R00947,2025-01-09,Midlands,Store,9
+R03176,2025-01-09,South West,Online,7
+R02104,2025-01-09,Midlands,Online,6
+R02466,2025-01-09,Midlands,Store,7
+R02408,2025-01-09,Scotland,Store,6
+R01507,2025-01-09,North,Online,8
+R01752,2025-01-09,North,Store,5
+R01661,2025-01-09,Midlands,Online,10
+R02245,2025-01-10,London,Store,4
+R01876,2025-01-10,Scotland,Contact Centre,
+R02895,2025-01-10,Midlands,Online,8
+R02294,2025-01-10,Scotland,Online,9
+R01770,2025-01-10,Midlands,Store,6
+R01203,2025-01-10,Midlands,Online,8
+R02095,2025-01-10,Midlands,Online,8
+R00314,2025-01-11,Midlands,Store,6
+R02152,2025-01-11,North,Contact Centre,5
+R02674,2025-01-11,North,Online,8
+R00891,2025-01-11,South West,Store,9
+R01169,2025-01-11,North,Online,9
+R00798,2025-01-11,Midlands,Store,8
+R00911,2025-01-11,Midlands,Online,7
+R01346,2025-01-11,North,Contact Centre,7
+R03031,2025-01-11,Midlands,Online,7
+R02274,2025-01-11,Midlands,Store,10
+R00274,2025-01-11,North,Store,8
+R01823,2025-01-11,London,Store,10
+R02380,2025-01-11,South West,Online,8
+R00665,2025-01-11,South West,Online,7
+R01701,2025-01-11,North,Online,9
+R01935,2025-01-12,Scotland,Store,7
+R01517,2025-01-12,North,Contact Centre,9
+R00195,2025-01-12,Scotland,Online,6
+R02743,2025-01-12,North,Store,5
+R01647,2025-01-12,South West,Online,8
+R00778,2025-01-12,South West,Store,8
+R02634,2025-01-12,London,Store,8
+R02271,2025-01-12,Midlands,Store,10
+R01028,2025-01-12,North,Online,10
+R02413,2025-01-12,London,Contact Centre,Don't know
+R02567,2025-01-13,Scotland,Store,5
+R01263,2025-01-13,Scotland,Store,8
+R02617,2025-01-13,London,Contact Centre,5
+R02134,2025-01-13,Midlands,Online,7
+R00450,2025-01-13,Midlands,Store,5
+R01699,2025-01-13,North,Store,8
+R01390,2025-01-13,Scotland,Online,10
+R02101,2025-01-13,London,Online,7
+R00295,2025-01-13,South West,Store,10
+R03189,2025-01-13,London,Contact Centre,4
+R00967,2025-01-13,Midlands,Online,8
+R01637,2025-01-13,North,Store,7
+R00631,2025-01-14,London,Online,10
+R01913,2025-01-14,London,Store,8
+R02267,2025-01-14,South West,Store,9
+R02586,2025-01-14,North,Store,7
+R02434,2025-01-14,North,Online,8
+R00760,2025-01-14,Midlands,Contact Centre,5
+R01643,2025-01-14,North,Store,8
+R01185,2025-01-14,North,Store,8
+R00761,2025-01-14,South West,Store,7
+R02002,2025-01-14,Scotland,Store,9
+R00400,2025-01-14,Midlands,Contact Centre,3
+R01349,2025-01-14,Midlands,Online,Don't know
+R01816,2025-01-15,Scotland,Contact Centre,8
+R02330,2025-01-15,Scotland,Online,8
+R02519,2025-01-15,London,Online,8
+R01855,2025-01-15,London,Store,8
+R00885,2025-01-15,Scotland,Online,9
+R01726,2025-01-15,London,Online,7
+R00809,2025-01-15,North,Online,5
+R00743,2025-01-15,London,Online,7
+R02143,2025-01-15,North,Online,8
+R03112,2025-01-15,Midlands,Online,7
+R00009,2025-01-15,Midlands,Store,10
+R02629,2025-01-15,South West,Online,5
+R01616,2025-01-15,North,Online,10
+R02573,2025-01-16,Midlands,Online,10
+R01540,2025-01-16,Scotland,Online,9
+R00563,2025-01-16,South West,Store,6
+R02888,2025-01-16,North,Store,7
+R02933,2025-01-16,Scotland,Contact Centre,8
+R01962,2025-01-16,South West,Online,5
+R01303,2025-01-16,London,Online,
+R02533,2025-01-16,London,Online,3
+R00788,2025-01-16,North,Store,9
+R01286,2025-01-16,North,Store,7
+R00994,2025-01-16,North,Online,7
+R02256,2025-01-17,South West,Store,6
+R01922,2025-01-17,London,Online,8
+R01630,2025-01-17,London,Contact Centre,6
+R02167,2025-01-17,North,Store,7
+R01587,2025-01-18,North,Online,6
+R01354,2025-01-18,North,Online,10
+R01624,2025-01-18,North,Contact Centre,4
+R00520,2025-01-18,South West,Store,9
+R01742,2025-01-18,North,Store,2
+R02109,2025-01-18,Scotland,Store,7
+R00763,2025-01-19,Midlands,Contact Centre,9
+R00988,2025-01-19,Midlands,Store,4
+R01992,2025-01-19,London,Contact Centre,9
+R02662,2025-01-19,London,Contact Centre,7
+R01863,2025-01-19,London,Contact Centre,9
+R00219,2025-01-19,Midlands,Online,7
+R02926,2025-01-20,North,Online,6
+R01513,2025-01-20,North,Store,3
+R01014,2025-01-20,London,Contact Centre,7
+R03025,2025-01-20,Scotland,Online,10
+R00441,2025-01-20,South West,Online,8
+R01126,2025-01-21,North,Online,9
+R02082,2025-01-21,London,Online,9
+R01279,2025-01-21,Midlands,Contact Centre,3
+R00102,2025-01-21,Scotland,Store,8
+R03032,2025-01-21,North,Online,9
+R02874,2025-01-21,North,Store,8
+R01954,2025-01-21,North,Online,9
+R02928,2025-01-21,North,Online,10
+R01110,2025-01-21,Midlands,Contact Centre,8
+R01609,2025-01-21,Midlands,Contact Centre,7
+R02181,2025-01-21,London,Store,5
+R03148,2025-01-21,North,Store,10
+R01732,2025-01-22,South West,Store,6
+R00603,2025-01-22,North,Online,8
+R02458,2025-01-22,London,Online,6
+R01721,2025-01-22,London,Online,7
+R03000,2025-01-22,Midlands,Contact Centre,6
+R01151,2025-01-22,Midlands,Store,8
+R01565,2025-01-22,North,Online,10
+R02048,2025-01-22,South West,Online,10
+R02425,2025-01-23,South West,Store,7
+R02501,2025-01-23,North,Online,10
+R00096,2025-01-23,Scotland,Store,9
+R01074,2025-01-23,North,Online,6
+R00054,2025-01-23,South West,Store,5
+R01019,2025-01-23,London,Store,7
+R01460,2025-01-23,North,Online,9
+R01352,2025-01-23,South West,Online,4
+R00780,2025-01-23,South West,Online,10
+R02118,2025-01-23,Scotland,Store,10
+R00784,2025-01-23,North,Contact Centre,9
+R02325,2025-01-24,London,Online,7
+R02136,2025-01-24,North,Online,8
+R00270,2025-01-24,Scotland,Contact Centre,6
+R01482,2025-01-24,Midlands,Online,7
+R00531,2025-01-24,Midlands,Online,8
+R00707,2025-01-24,North,Store,7
+R00882,2025-01-25,Midlands,Online,5
+R00209,2025-01-25,North,Online,8
+R00246,2025-01-25,Midlands,Store,10
+R03074,2025-01-25,Midlands,Online,7
+R00757,2025-01-25,London,Store,4
+R00858,2025-01-25,North,Contact Centre,10
+R02186,2025-01-25,North,Online,7
+R02635,2025-01-25,Scotland,Online,10
+R03079,2025-01-25,London,Online,6
+R01857,2025-01-25,Midlands,Online,7
+R00156,2025-01-25,Midlands,Contact Centre,9
+R02945,2025-01-26,Scotland,Contact Centre,9
+R02116,2025-01-26,South West,Store,7
+R02729,2025-01-26,South West,Store,5
+R01884,2025-01-26,South West,Contact Centre,1
+R01919,2025-01-26,Midlands,Store,7
+R01658,2025-01-26,London,Contact Centre,4
+R00687,2025-01-27,London,Online,2
+R00497,2025-01-27,Midlands,Store,8
+R00487,2025-01-27,North,Online,10
+R00473,2025-01-27,North,Online,9
+R00848,2025-01-27,North,Online,9
+R03200,2025-01-27,Scotland,Contact Centre,8
+R02900,2025-01-27,Midlands,Online,5
+R01490,2025-01-27,South West,Online,10
+R01966,2025-01-27,London,Online,5
+R01503,2025-01-27,London,Online,10
+R02883,2025-01-27,South West,Store,7
+R02917,2025-01-27,South West,Store,10
+R02772,2025-01-28,North,Online,4
+R00436,2025-01-28,North,Online,7
+R01278,2025-01-28,South West,Store,2
+R02237,2025-01-28,London,Online,7
+R00896,2025-01-28,London,Store,10
+R02844,2025-01-28,North,Store,Don't know
+R00387,2025-01-29,South West,Store,10
+R02454,2025-01-29,North,Online,10
+R02247,2025-01-29,London,Store,9
+R00533,2025-01-29,Midlands,Online,4
+R01425,2025-01-29,London,Online,7
+R02367,2025-01-29,London,Contact Centre,1
+R00817,2025-01-30,London,Online,8
+R01838,2025-01-30,North,Online,9
+R00048,2025-01-30,Midlands,Online,5
+R02851,2025-01-30,London,Store,4
+R00332,2025-01-30,Scotland,Online,7
+R01632,2025-01-30,Scotland,Online,5
+R01634,2025-01-30,North,Store,2
+R01887,2025-01-31,Scotland,Online,8
+R00463,2025-01-31,Scotland,Online,9
+R01692,2025-01-31,North,Store,6
+R00006,2025-01-31,Midlands,Online,7
+R01318,2025-01-31,London,Store,8
+R00638,2025-01-31,London,Store,7
+R00281,2025-01-31,London,Online,10
+R02710,2025-02-01,South West,Online,7
+R02766,2025-02-01,London,Store,7
+R01152,2025-02-01,North,Store,8
+R02205,2025-02-01,London,Contact Centre,0
+R01858,2025-02-01,North,Store,4
+R00818,2025-02-01,London,Online,6
+R00356,2025-02-01,London,Contact Centre,7
+R00505,2025-02-01,London,Online,8
+R01588,2025-02-01,North,Store,6
+R01611,2025-02-01,South West,Store,7
+R00190,2025-02-01,Scotland,Store,9
+R02412,2025-02-01,South West,Store,10
+R00475,2025-02-01,Scotland,Online,8
+R01280,2025-02-02,North,Online,8
+R01399,2025-02-02,Midlands,Store,5
+R02681,2025-02-02,London,Store,8
+R01341,2025-02-02,London,Store,6
+R00339,2025-02-02,London,Store,9
+R01356,2025-02-02,North,Online,10
+R01956,2025-02-02,London,Store,9
+R00500,2025-02-02,London,Store,8
+R01739,2025-02-02,South West,Online,8
+R02697,2025-02-02,North,Store,5
+R02689,2025-02-03,Midlands,Online,10
+R00888,2025-02-03,South West,Store,7
+R03063,2025-02-03,London,Store,7
+R00814,2025-02-03,Midlands,Store,6
+R01420,2025-02-03,Scotland,Contact Centre,6
+R02786,2025-02-03,London,Store,9
+R00437,2025-02-04,London,Store,5
+R01156,2025-02-04,Scotland,Contact Centre,9
+R01711,2025-02-04,North,Store,10
+R01859,2025-02-04,South West,Contact Centre,6
+R02263,2025-02-05,South West,Online,10
+R02447,2025-02-05,London,Online,7
+R01550,2025-02-05,South West,Store,10
+R00413,2025-02-05,North,Store,8
+R02485,2025-02-05,North,Online,7
+R00768,2025-02-05,Midlands,Store,9
+R01343,2025-02-05,Midlands,Online,6
+R00359,2025-02-06,North,Store,9
+R01046,2025-02-06,London,Store,6
+R00900,2025-02-06,London,Online,10
+R00578,2025-02-06,North,Contact Centre,5
+R01192,2025-02-06,Midlands,Online,6
+R02209,2025-02-06,North,Store,7
+R01639,2025-02-07,Scotland,Store,9
+R00460,2025-02-07,South West,Online,9
+R01099,2025-02-07,North,Store,7
+R00918,2025-02-07,Scotland,Online,10
+R01078,2025-02-07,London,Store,5
+R03122,2025-02-07,London,Contact Centre,2
+R02146,2025-02-07,London,Store,10
+R02802,2025-02-07,Midlands,Contact Centre,9
+R01846,2025-02-07,Midlands,Store,5
+R02042,2025-02-07,London,Contact Centre,3
+R01969,2025-02-07,Midlands,Online,9
+R01867,2025-02-07,North,Store,9
+R00411,2025-02-08,Midlands,Store,8
+R02180,2025-02-08,Scotland,Store,10
+R00067,2025-02-08,North,Contact Centre,6
+R02103,2025-02-08,North,Online,10
+R01955,2025-02-08,Scotland,Contact Centre,6
+R01897,2025-02-08,London,Online,8
+R01423,2025-02-08,Midlands,Contact Centre,6
+R01474,2025-02-08,Midlands,Store,8
+R01842,2025-02-08,North,Store,3
+R00515,2025-02-08,Midlands,Contact Centre,1
+R00494,2025-02-08,Scotland,Online,6
+R02349,2025-02-08,North,Contact Centre,6
+R02312,2025-02-08,London,Store,10
+R01013,2025-02-09,South West,Store,8
+R00575,2025-02-09,Midlands,Store,9
+R01302,2025-02-09,Midlands,Store,8
+R02824,2025-02-09,Scotland,Store,5
+R01600,2025-02-09,South West,Online,7
+R00153,2025-02-09,Scotland,Contact Centre,10
+R00226,2025-02-09,Midlands,Store,7
+R03125,2025-02-10,London,Online,6
+R01773,2025-02-10,South West,Contact Centre,7
+R01698,2025-02-10,South West,Contact Centre,6
+R03108,2025-02-10,London,Online,6
+R01703,2025-02-10,North,Contact Centre,6
+R03166,2025-02-10,Midlands,Store,9
+R00479,2025-02-10,North,Store,7
+R02007,2025-02-10,North,Online,9
+R00579,2025-02-11,London,Online,10
+R01748,2025-02-11,Scotland,Contact Centre,9
+R01626,2025-02-11,North,Store,5
+R00630,2025-02-11,South West,Online,8
+R02069,2025-02-12,North,Contact Centre,10
+R02402,2025-02-12,Midlands,Online,9
+R02056,2025-02-12,North,Store,7
+R02039,2025-02-12,London,Contact Centre,5
+R01158,2025-02-12,London,Store,9
+R00483,2025-02-12,Midlands,Store,6
+R00714,2025-02-12,Midlands,Store,6
+R02890,2025-02-12,North,Online,3
+R02498,2025-02-12,Scotland,Online,7
+R00677,2025-02-12,North,Online,7
+R00849,2025-02-12,London,Store,7
+R01320,2025-02-12,Midlands,Online,9
+R00815,2025-02-12,London,Online,5
+R00404,2025-02-12,North,Online,5
+R01657,2025-02-13,North,Contact Centre,7
+R03150,2025-02-13,North,Store,4
+R01378,2025-02-13,London,Online,7
+R00288,2025-02-13,North,Store,7
+R00957,2025-02-13,South West,Store,9
+R02791,2025-02-13,South West,Online,10
+R00028,2025-02-13,Scotland,Store,4
+R02096,2025-02-13,North,Contact Centre,7
+R02387,2025-02-13,North,Store,7
+R02870,2025-02-13,London,Contact Centre,7
+R00240,2025-02-14,Scotland,Store,10
+R01304,2025-02-14,South West,Store,8
+R02278,2025-02-14,Scotland,Contact Centre,9
+R00435,2025-02-14,London,Online,7
+R02268,2025-02-14,London,Store,7
+R02695,2025-02-14,London,Online,8
+R00649,2025-02-14,Midlands,Online,9
+R02759,2025-02-14,London,Online,8
+R01825,2025-02-14,London,Contact Centre,6
+R02645,2025-02-14,Midlands,Online,7
+R00305,2025-02-14,Scotland,Store,10
+R00890,2025-02-14,Midlands,Online,7
+R01947,2025-02-15,Midlands,Store,8
+R02347,2025-02-15,London,Online,8
+R00046,2025-02-15,Scotland,Contact Centre,9
+R02365,2025-02-15,London,Store,5
+R02906,2025-02-15,Midlands,Store,9
+R02385,2025-02-15,London,Contact Centre,10
+R01792,2025-02-15,North,Store,8
+R02428,2025-02-15,North,Online,7
+R01674,2025-02-15,London,Store,3
+R00750,2025-02-16,London,Online,9
+R00852,2025-02-16,North,Store,5
+R01036,2025-02-16,South West,Store,10
+R00020,2025-02-16,London,Store,7
+R03113,2025-02-16,Midlands,Contact Centre,5
+R00017,2025-02-16,London,Online,9
+R02345,2025-02-16,Midlands,Online,8
+R00910,2025-02-17,Midlands,Store,10
+R01680,2025-02-17,Midlands,Store,9
+R00830,2025-02-17,South West,Online,8
+R00548,2025-02-17,Midlands,Store,9
+R02361,2025-02-17,North,Online,9
+R00781,2025-02-17,North,Store,5
+R00196,2025-02-17,South West,Store,10
+R01368,2025-02-17,South West,Online,7
+R00666,2025-02-17,North,Contact Centre,6
+R01043,2025-02-18,North,Online,10
+R02939,2025-02-18,Scotland,Online,8
+R02907,2025-02-18,London,Online,5
+R03011,2025-02-19,Midlands,Online,6
+R01754,2025-02-19,London,Online,6
+R02175,2025-02-19,Midlands,Store,7
+R00723,2025-02-19,London,Store,9
+R00063,2025-02-19,Midlands,Store,4
+R01221,2025-02-19,South West,Online,7
+R01189,2025-02-20,North,Online,9
+R00569,2025-02-20,Scotland,Store,5
+R00580,2025-02-20,Midlands,Store,9
+R01029,2025-02-20,North,Store,9
+R02327,2025-02-20,North,Contact Centre,9
+R00753,2025-02-20,Scotland,Store,10
+R01400,2025-02-20,Midlands,Online,7
+R01567,2025-02-20,North,Contact Centre,7
+R01530,2025-02-20,Scotland,Store,10
+R03107,2025-02-20,Midlands,Store,7
+R02550,2025-02-21,North,Store,10
+R01471,2025-02-21,North,Online,9
+R00417,2025-02-21,Scotland,Online,10
+R00929,2025-02-21,North,Online,8
+R02314,2025-02-21,North,Online,8
+R03136,2025-02-21,Midlands,Store,6
+R03143,2025-02-21,North,Online,6
+R00931,2025-02-22,Midlands,Online,6
+R00232,2025-02-22,Midlands,Store,7
+R00408,2025-02-22,South West,Store,10
+R00925,2025-02-22,London,Store,6
+R02700,2025-02-22,Midlands,Online,5
+R01344,2025-02-22,Midlands,Online,6
+R01708,2025-02-23,Midlands,Online,6
+R00824,2025-02-23,London,Online,5
+R02790,2025-02-23,North,Online,8
+R00244,2025-02-23,Scotland,Store,0
+R01401,2025-02-23,Midlands,Online,9
+R02233,2025-02-24,Scotland,Online,10
+R02620,2025-02-24,South West,Store,10
+R00144,2025-02-24,London,Contact Centre,4
+R02838,2025-02-24,South West,Store,8
+R01736,2025-02-24,South West,Online,10
+R01088,2025-02-24,London,Store,9
+R01395,2025-02-24,Midlands,Store,10
+R01213,2025-02-24,South West,Store,5
+R02655,2025-02-24,Scotland,Online,9
+R00825,2025-02-24,Midlands,Contact Centre,6
+R02505,2025-02-25,London,Store,
+R02265,2025-02-25,Midlands,Contact Centre,9
+R01574,2025-02-25,Scotland,Contact Centre,10
+R01812,2025-02-25,London,Online,8
+R01413,2025-02-25,South West,Store,8
+R01290,2025-02-25,London,Store,10
+R01798,2025-02-25,Scotland,Online,9
+R01554,2025-02-25,Midlands,Online,7
+R00045,2025-02-25,Scotland,Online,10
+R02202,2025-02-25,London,Online,7
+R00790,2025-02-25,South West,Store,8
+R00393,2025-02-25,Scotland,Contact Centre,8
+R02545,2025-02-25,Midlands,Online,9
+R00587,2025-02-25,London,Store,8
+R01592,2025-02-25,North,Online,6
+R01207,2025-02-25,London,Store,7
+R00125,2025-02-26,Scotland,Online,8
+R02730,2025-02-26,London,Online,9
+R00975,2025-02-26,North,Contact Centre,6
+R00242,2025-02-26,North,Store,9
+R02715,2025-02-26,Midlands,Online,7
+R00544,2025-02-27,Midlands,Online,10
+R02529,2025-02-27,North,Store,10
+R03051,2025-02-27,South West,Online,5
+R03163,2025-02-27,Midlands,Contact Centre,4
+R00962,2025-02-27,North,Online,7
+R00982,2025-02-27,Scotland,Online,10
+R01689,2025-02-27,London,Online,9
+R01463,2025-02-28,North,Contact Centre,5
+R00201,2025-02-28,London,Store,7
+R02463,2025-02-28,North,Store,8
+R01473,2025-02-28,North,Contact Centre,5
+R00282,2025-02-28,South West,Store,10
+R03123,2025-02-28,Midlands,Online,7
+R02081,2025-02-28,Midlands,Store,10
+R01144,2025-02-28,North,Store,10
+R02289,2025-02-28,North,Online,4
+R02627,2025-02-28,London,Online,7
+R03087,2025-02-28,North,Contact Centre,9
+R01943,2025-02-28,North,Online,6
+R00227,2025-02-28,Scotland,Contact Centre,4
+R01886,2025-02-28,Scotland,Online,8
+R03019,2025-02-28,North,Online,7
+R01253,2025-02-28,Midlands,Store,10
+R00510,2025-02-28,Midlands,Store,7
+R02709,2025-02-28,Scotland,Online,10
+R01818,2025-02-28,Midlands,Online,9
+R02092,2025-03-01,London,Contact Centre,7
+R01967,2025-03-01,Midlands,Store,9
+R03172,2025-03-01,London,Store,8
+R02436,2025-03-01,North,Contact Centre,7
+R02144,2025-03-01,London,Store,8
+R00820,2025-03-01,North,Store,10
+R00205,2025-03-01,South West,Online,10
+R01127,2025-03-01,North,Store,9
+R01988,2025-03-01,Midlands,Online,10
+R01428,2025-03-02,Scotland,Contact Centre,7
+R02468,2025-03-02,Midlands,Online,9
+R01176,2025-03-02,London,Online,7
+R03069,2025-03-02,Scotland,Contact Centre,8
+R01520,2025-03-02,North,Contact Centre,5
+R00964,2025-03-02,Scotland,Online,5
+R01477,2025-03-02,Midlands,Store,5
+R00946,2025-03-02,London,Store,8
+R00795,2025-03-02,North,Online,7
+R02580,2025-03-02,Midlands,Online,8
+R02949,2025-03-02,North,Online,5
+R00808,2025-03-02,London,Store,4
+R01178,2025-03-02,North,Store,5
+R00283,2025-03-02,Midlands,Online,9
+R02319,2025-03-02,Midlands,Online,8
+R00715,2025-03-03,North,Store,9
+R03073,2025-03-03,North,Store,4
+R00342,2025-03-03,Scotland,Online,9
+R03159,2025-03-03,Midlands,Store,7
+R03193,2025-03-03,North,Online,7
+R02028,2025-03-03,London,Online,8
+R01429,2025-03-03,South West,Online,10
+R00222,2025-03-04,Midlands,Contact Centre,6
+R01910,2025-03-04,South West,Store,5
+R00764,2025-03-04,North,Store,7
+R02159,2025-03-04,North,Store,7
+R00829,2025-03-04,North,Contact Centre,7
+R01702,2025-03-04,North,Store,7
+R00801,2025-03-04,Midlands,Online,7
+R00439,2025-03-04,North,Store,6
+R02471,2025-03-05,South West,Online,10
+R00175,2025-03-05,Midlands,Store,10
+R02197,2025-03-05,Midlands,Contact Centre,6
+R00189,2025-03-05,London,Online,9
+R01252,2025-03-05,Midlands,Online,9
+R00758,2025-03-05,London,Online,10
+R01900,2025-03-05,South West,Online,7
+R03198,2025-03-06,South West,Store,7
+R00642,2025-03-06,Midlands,Online,10
+R03124,2025-03-06,North,Online,10
+R01633,2025-03-06,South West,Online,10
+R01338,2025-03-06,North,Online,9
+R02174,2025-03-06,Midlands,Store,10
+R01141,2025-03-06,Midlands,Contact Centre,5
+R01912,2025-03-06,London,Online,5
+R00409,2025-03-06,North,Online,10
+R00669,2025-03-06,Scotland,Contact Centre,9
+R00044,2025-03-06,Scotland,Store,7
+R01032,2025-03-07,Midlands,Store,8
+R02395,2025-03-07,London,Online,5
+R00403,2025-03-07,North,Contact Centre,6
+R02618,2025-03-07,Scotland,Online,5
+R00405,2025-03-07,North,Store,7
+R02525,2025-03-07,North,Contact Centre,5
+R02068,2025-03-07,London,Store,8
+R02460,2025-03-08,Scotland,Online,10
+R03192,2025-03-08,North,Contact Centre,6
+R00235,2025-03-08,Midlands,Online,10
+R01984,2025-03-08,London,Store,9
+R02025,2025-03-08,London,Store,10
+R02038,2025-03-08,London,Online,6
+R02807,2025-03-08,North,Contact Centre,7
+R02943,2025-03-08,Scotland,Store,10
+R03156,2025-03-08,Midlands,Store,8
+R02125,2025-03-08,Scotland,Store,8
+R02331,2025-03-08,South West,Contact Centre,7
+R00635,2025-03-09,North,Online,10
+R02694,2025-03-09,Scotland,Online,8
+R00077,2025-03-09,London,Store,6
+R01914,2025-03-09,North,Online,9
+R00898,2025-03-09,London,Contact Centre,8
+R01326,2025-03-09,South West,Online,7
+R01149,2025-03-09,North,Store,8
+R02668,2025-03-09,Midlands,Store,9
+R00538,2025-03-09,Scotland,Online,8
+R02542,2025-03-10,Midlands,Store,9
+R00385,2025-03-10,South West,Store,8
+R00878,2025-03-10,North,Online,7
+R00465,2025-03-10,South West,Online,10
+R01837,2025-03-10,Midlands,Online,7
+R00024,2025-03-10,Midlands,Online,8
+R03152,2025-03-10,Scotland,Online,8
+R02145,2025-03-10,North,Contact Centre,9
+R02903,2025-03-10,Midlands,Store,6
+R00126,2025-03-10,South West,Online,7
+R01655,2025-03-10,Midlands,Contact Centre,7
+R00255,2025-03-10,London,Online,10
+R00032,2025-03-11,London,Store,8
+R01069,2025-03-11,London,Store,6
+R02811,2025-03-11,North,Contact Centre,7
+R01238,2025-03-11,Midlands,Store,8
+R02089,2025-03-11,South West,Contact Centre,9
+R00827,2025-03-11,Midlands,Store,7
+R01016,2025-03-11,North,Store,8
+R01223,2025-03-11,London,Contact Centre,4
+R00459,2025-03-11,London,Store,7
+R00617,2025-03-11,North,Store,5
+R00427,2025-03-11,South West,Store,10
+R01404,2025-03-12,London,Online,9
+R01809,2025-03-12,North,Online,8
+R01528,2025-03-12,South West,Online,8
+R02438,2025-03-12,Midlands,Online,9
+R01814,2025-03-12,Midlands,Store,7
+R01045,2025-03-12,London,Store,9
+R02415,2025-03-12,Midlands,Contact Centre,9
+R01879,2025-03-12,North,Contact Centre,6
+R03003,2025-03-13,London,Store,7
+R02014,2025-03-13,Midlands,Online,5
+R02693,2025-03-14,Midlands,Online,10
+R02532,2025-03-14,South West,Online,10
+R00532,2025-03-14,Scotland,Contact Centre,7
+R02757,2025-03-14,South West,Store,10
+R02131,2025-03-14,North,Store,6
+R00658,2025-03-14,Scotland,Contact Centre,8
+R03007,2025-03-14,Midlands,Store,3
+R00654,2025-03-14,London,Online,6
+R01268,2025-03-14,South West,Online,9
+R00296,2025-03-14,London,Store,7
+R02986,2025-03-15,Scotland,Online,5
+R01546,2025-03-15,Midlands,Online,5
+R01436,2025-03-15,Scotland,Contact Centre,4
+R03067,2025-03-15,London,Contact Centre,8
+R00384,2025-03-15,North,Store,9
+R01180,2025-03-15,Midlands,Online,6
+R01166,2025-03-15,Midlands,Online,7
+R00572,2025-03-16,London,Online,10
+R02305,2025-03-16,North,Online,9
+R00292,2025-03-16,South West,Store,8
+R01259,2025-03-16,Midlands,Store,9
+R02675,2025-03-16,South West,Online,10
+R00664,2025-03-16,London,Online,9
+R01779,2025-03-16,North,Online,9
+R01172,2025-03-17,Midlands,Store,8
+R02000,2025-03-17,North,Online,8
+R03071,2025-03-17,North,Contact Centre,5
+R02373,2025-03-17,London,Store,6
+R02128,2025-03-17,Scotland,Online,7
+R03013,2025-03-17,Scotland,Online,7
+R01738,2025-03-17,London,Contact Centre,7
+R02474,2025-03-17,North,Online,10
+R01686,2025-03-18,London,Online,7
+R00334,2025-03-18,London,Online,3
+R01777,2025-03-18,Midlands,Online,6
+R01982,2025-03-18,South West,Online,6
+R02734,2025-03-18,Scotland,Store,8
+R02699,2025-03-18,Scotland,Store,5
+R01774,2025-03-18,London,Online,10
+R03114,2025-03-18,Midlands,Online,9
+R02649,2025-03-18,Scotland,Online,10
+R02909,2025-03-18,London,Store,10
+R00678,2025-03-18,Midlands,Store,10
+R02833,2025-03-18,South West,Store,9
+R03098,2025-03-18,London,Online,9
+R02469,2025-03-18,London,Store,7
+R00851,2025-03-18,London,Contact Centre,1
+R00523,2025-03-19,Scotland,Online,7
+R01715,2025-03-19,South West,Store,6
+R00726,2025-03-19,North,Online,9
+R01210,2025-03-19,London,Store,7
+R00325,2025-03-19,Scotland,Contact Centre,8
+R01375,2025-03-19,Midlands,Online,5
+R00477,2025-03-19,South West,Online,6
+R01612,2025-03-19,Midlands,Online,9
+R02196,2025-03-19,South West,Online,7
+R02023,2025-03-20,Scotland,Online,5
+R01631,2025-03-20,Midlands,Online,10
+R01005,2025-03-21,Scotland,Online,7
+R00225,2025-03-21,Scotland,Online,4
+R02489,2025-03-21,Scotland,Store,5
+R02238,2025-03-21,South West,Contact Centre,6
+R02223,2025-03-21,Midlands,Online,9
+R02787,2025-03-21,London,Store,10
+R00833,2025-03-21,London,Online,10
+R00737,2025-03-21,London,Store,7
+R02032,2025-03-21,South West,Online,10
+R03179,2025-03-21,Scotland,Online,5
+R02334,2025-03-21,London,Online,6
+R00364,2025-03-21,Midlands,Store,6
+R02368,2025-03-22,North,Contact Centre,6
+R01599,2025-03-22,North,Store,10
+R02558,2025-03-22,North,Online,8
+R01081,2025-03-22,Scotland,Store,6
+R01035,2025-03-22,Scotland,Online,3
+R00796,2025-03-22,Midlands,Store,8
+R02535,2025-03-22,London,Store,10
+R02386,2025-03-22,Scotland,Store,8
+R00379,2025-03-22,South West,Contact Centre,
+R00698,2025-03-22,Scotland,Store,8
+R03106,2025-03-22,South West,Online,8
+R02482,2025-03-23,South West,Online,10
+R02137,2025-03-23,North,Store,8
+R00481,2025-03-23,South West,Online,10
+R01758,2025-03-24,South West,Online,9
+R01772,2025-03-24,London,Online,10
+R02280,2025-03-24,Scotland,Online,6
+R00285,2025-03-24,Midlands,Online,7
+R00705,2025-03-25,North,Store,8
+R02935,2025-03-25,Midlands,Online,7
+R02646,2025-03-25,Scotland,Online,3
+R00123,2025-03-25,Midlands,Online,10
+R01027,2025-03-25,London,Contact Centre,6
+R01978,2025-03-25,North,Online,7
+R00392,2025-03-25,North,Store,4
+R00382,2025-03-25,London,Store,5
+R02123,2025-03-25,London,Online,7
+R01313,2025-03-25,North,Store,6
+R01755,2025-03-25,London,Store,5
+R00336,2025-03-26,South West,Store,9
+R02913,2025-03-26,North,Contact Centre,7
+R02628,2025-03-26,North,Online,10
+R02872,2025-03-26,London,Online,2
+R03155,2025-03-26,Midlands,Online,4
+R03131,2025-03-27,Midlands,Contact Centre,6
+R02182,2025-03-27,Scotland,Online,9
+R02957,2025-03-27,Scotland,Online,10
+R00372,2025-03-27,London,Online,8
+R00493,2025-03-27,Midlands,Contact Centre,5
+R03058,2025-03-27,Midlands,Online,9
+R02776,2025-03-27,London,Store,8
+R00234,2025-03-27,Midlands,Store,6
+R00135,2025-03-27,London,Contact Centre,9
+R00979,2025-03-28,North,Online,4
+R01139,2025-03-28,London,Contact Centre,5
+R00776,2025-03-28,Midlands,Contact Centre,5
+R00688,2025-03-28,South West,Store,9
+R01905,2025-03-29,Scotland,Store,5
+R00410,2025-03-29,South West,Store,7
+R02889,2025-03-29,London,Online,6
+R02764,2025-03-29,South West,Contact Centre,10
+R00059,2025-03-29,London,Contact Centre,6
+R00194,2025-03-29,Midlands,Contact Centre,4
+R00486,2025-03-29,Scotland,Online,6
+R00188,2025-03-29,Midlands,Store,5
+R01727,2025-03-29,Midlands,Online,5
+R00267,2025-03-30,Midlands,Online,9
+R02346,2025-03-30,Midlands,Store,7
+R02400,2025-03-30,Midlands,Contact Centre,5
+R00115,2025-03-30,North,Online,7
+R00605,2025-03-30,London,Store,4
+R02731,2025-03-31,Scotland,Store,5
+R02045,2025-03-31,Scotland,Store,6
+R00595,2025-03-31,London,Store,7
+R01484,2025-03-31,Scotland,Online,6
+R01115,2025-03-31,South West,Online,10
+R00074,2025-03-31,Scotland,Contact Centre,6
+R02130,2025-04-01,London,Store,10
+R02588,2025-04-01,London,Online,8
+R01054,2025-04-01,South West,Store,10
+R02513,2025-04-01,Midlands,Store,9
+R01619,2025-04-01,Midlands,Contact Centre,7
+R01288,2025-04-01,Scotland,Store,7
+R01649,2025-04-01,North,Store,7
+R01683,2025-04-02,London,Store,7
+R01614,2025-04-02,Scotland,Store,6
+R03046,2025-04-02,North,Online,9
+R01065,2025-04-02,North,Online,6
+R00072,2025-04-02,Midlands,Online,6
+R02432,2025-04-02,Midlands,Store,10
+R00180,2025-04-02,North,Contact Centre,2
+R01916,2025-04-02,Scotland,Store,9
+R02990,2025-04-02,Scotland,Online,6
+R02982,2025-04-02,Scotland,Online,8
+R02848,2025-04-02,North,Store,8
+R00615,2025-04-02,Midlands,Online,8
+R02430,2025-04-02,North,Store,7
+R00545,2025-04-02,South West,Online,6
+R00593,2025-04-02,Scotland,Online,10
+R02536,2025-04-02,North,Online,10
+R02088,2025-04-03,Midlands,Online,5
+R01421,2025-04-03,North,Online,8
+R02843,2025-04-03,Midlands,Contact Centre,4
+R00624,2025-04-03,North,Online,5
+R02512,2025-04-03,North,Store,8
+R01350,2025-04-03,South West,Online,6
+R01920,2025-04-03,Midlands,Online,9
+R02005,2025-04-03,London,Store,8
+R02602,2025-04-03,North,Online,3
+R01239,2025-04-04,Scotland,Store,8
+R01594,2025-04-04,North,Store,8
+R02080,2025-04-04,London,Online,8
+R00052,2025-04-04,North,Store,9
+R01205,2025-04-04,South West,Online,7
+R00039,2025-04-04,London,Store,6
+R00178,2025-04-04,London,Store,6
+R00893,2025-04-04,Midlands,Online,8
+R00775,2025-04-04,London,Store,6
+R00184,2025-04-04,North,Online,6
+R03028,2025-04-05,Midlands,Store,8
+R03187,2025-04-05,North,Online,9
+R00237,2025-04-05,Midlands,Store,6
+R03027,2025-04-05,London,Store,4
+R01055,2025-04-05,Midlands,Online,7
+R00093,2025-04-05,Midlands,Store,8
+R02396,2025-04-05,South West,Contact Centre,5
+R00286,2025-04-05,Scotland,Online,8
+R02449,2025-04-05,South West,Store,
+R02815,2025-04-06,London,Store,9
+R00276,2025-04-06,Scotland,Store,8
+R01403,2025-04-06,Midlands,Store,8
+R03057,2025-04-06,London,Contact Centre,4
+R02250,2025-04-06,South West,Online,5
+R02067,2025-04-06,London,Online,7
+R02086,2025-04-06,South West,Contact Centre,5
+R00552,2025-04-06,Midlands,Online,9
+R02407,2025-04-07,North,Online,7
+R00010,2025-04-07,London,Store,8
+R01434,2025-04-07,London,Store,8
+R02433,2025-04-07,South West,Online,6
+R02199,2025-04-07,Midlands,Contact Centre,4
+R00895,2025-04-07,North,Store,8
+R02696,2025-04-07,Midlands,Online,10
+R00672,2025-04-07,Scotland,Online,7
+R00943,2025-04-07,North,Store,6
+R02148,2025-04-07,Midlands,Store,10
+R00691,2025-04-07,Midlands,Online,8
+R00716,2025-04-07,London,Store,8
+R00995,2025-04-08,London,Store,8
+R02414,2025-04-08,Midlands,Online,10
+R01225,2025-04-08,South West,Online,8
+R00272,2025-04-08,Midlands,Online,9
+R02770,2025-04-08,North,Contact Centre,8
+R01316,2025-04-08,Midlands,Contact Centre,10
+R02286,2025-04-08,Midlands,Online,5
+R01371,2025-04-08,Midlands,Online,7
+R01502,2025-04-08,North,Store,8
+R00064,2025-04-08,Midlands,Online,6
+R02112,2025-04-09,Scotland,Contact Centre,6
+R00932,2025-04-09,Midlands,Store,9
+R02955,2025-04-09,Midlands,Online,7
+R02763,2025-04-09,Midlands,Online,10
+R02919,2025-04-09,Midlands,Contact Centre,9
+R01021,2025-04-09,South West,Online,6
+R01582,2025-04-09,Scotland,Store,9
+R01669,2025-04-09,North,Store,8
+R01097,2025-04-10,London,Store,6
+R03118,2025-04-10,North,Online,10
+R01815,2025-04-10,London,Online,6
+R02120,2025-04-10,North,Store,10
+R02584,2025-04-10,London,Store,6
+R02363,2025-04-10,Midlands,Contact Centre,6
+R01989,2025-04-10,London,Online,8
+R01396,2025-04-10,Midlands,Store,7
+R00066,2025-04-10,South West,Store,7
+R01068,2025-04-11,Scotland,Online,8
+R00354,2025-04-11,Midlands,Online,8
+R01381,2025-04-11,Scotland,Store,5
+R01925,2025-04-11,North,Store,9
+R01561,2025-04-11,Scotland,Online,8
+R00832,2025-04-11,London,Store,6
+R01163,2025-04-11,Scotland,Online,9
+R00637,2025-04-12,London,Online,6
+R02847,2025-04-12,South West,Online,5
+R00971,2025-04-12,Scotland,Online,8
+R01033,2025-04-12,Scotland,Store,7
+R01483,2025-04-12,South West,Online,7
+R01849,2025-04-13,Midlands,Store,9
+R01198,2025-04-13,Midlands,Online,6
+R02461,2025-04-13,London,Store,3
+R00909,2025-04-13,Midlands,Online,10
+R01652,2025-04-13,South West,Contact Centre,5
+R02077,2025-04-13,North,Store,6
+R01295,2025-04-13,Scotland,Contact Centre,4
+R02184,2025-04-13,North,Online,8
+R01883,2025-04-14,London,Contact Centre,10
+R02511,2025-04-14,London,Contact Centre,5
+R02102,2025-04-14,Midlands,Online,7
+R02643,2025-04-14,South West,Store,10
+R01281,2025-04-14,London,Store,6
+R02369,2025-04-14,Scotland,Contact Centre,7
+R01275,2025-04-15,North,Store,10
+R02341,2025-04-15,South West,Online,10
+R02553,2025-04-15,Scotland,Contact Centre,7
+R00185,2025-04-15,London,Store,4
+R02856,2025-04-15,Midlands,Contact Centre,7
+R01345,2025-04-15,South West,Store,9
+R02952,2025-04-15,North,Online,9
+R02343,2025-04-16,South West,Store,6
+R02687,2025-04-16,London,Online,10
+R00560,2025-04-16,Scotland,Online,7
+R00181,2025-04-16,Midlands,Store,10
+R02899,2025-04-16,Scotland,Store,4
+R00674,2025-04-16,North,Contact Centre,6
+R01090,2025-04-16,South West,Store,7
+R00238,2025-04-16,South West,Contact Centre,10
+R01258,2025-04-16,Scotland,Store,10
+R02142,2025-04-16,London,Contact Centre,6
+R00863,2025-04-17,Scotland,Contact Centre,5
+R00287,2025-04-17,North,Store,6
+R02569,2025-04-17,London,Store,6
+R02515,2025-04-17,South West,Online,10
+R01830,2025-04-17,South West,Online,8
+R03075,2025-04-17,Midlands,Online,8
+R01948,2025-04-17,London,Store,5
+R02332,2025-04-17,South West,Online,10
+R01104,2025-04-17,London,Store,8
+R00352,2025-04-17,South West,Store,8
+R02854,2025-04-17,Scotland,Store,7
+R00974,2025-04-17,North,Contact Centre,7
+R01723,2025-04-18,London,Online,8
+R02962,2025-04-18,South West,Contact Centre,8
+R00811,2025-04-18,Scotland,Store,7
+R02111,2025-04-18,Midlands,Online,5
+R02806,2025-04-18,South West,Contact Centre,7
+R02212,2025-04-19,London,Store,6
+R00628,2025-04-19,South West,Contact Centre,3
+R01248,2025-04-19,London,Online,10
+R00558,2025-04-19,Midlands,Store,7
+R02591,2025-04-19,Scotland,Store,10
+R02071,2025-04-19,London,Contact Centre,6
+R03147,2025-04-19,North,Contact Centre,6
+R00935,2025-04-19,London,Store,6
+R01526,2025-04-19,London,Store,8
+R02800,2025-04-19,North,Store,8
+R02417,2025-04-20,London,Store,7
+R02078,2025-04-20,Midlands,Store,8
+R00835,2025-04-20,London,Store,8
+R00116,2025-04-20,London,Online,10
+R01456,2025-04-20,North,Online,5
+R03089,2025-04-20,South West,Online,7
+R00977,2025-04-20,Midlands,Store,10
+R01601,2025-04-21,Midlands,Online,6
+R00221,2025-04-21,North,Store,4
+R02721,2025-04-21,Scotland,Store,9
+R02370,2025-04-21,Midlands,Online,6
+R01047,2025-04-21,Scotland,Store,9
+R01067,2025-04-21,London,Online,4
+R01929,2025-04-21,Scotland,Store,6
+R00799,2025-04-21,South West,Online,9
+R00259,2025-04-21,North,Store,7
+R01975,2025-04-21,Midlands,Store,6
+R02869,2025-04-22,Scotland,Store,5
+R01603,2025-04-22,South West,Store,7
+R01523,2025-04-22,London,Store,8
+R02829,2025-04-22,South West,Online,8
+R00519,2025-04-22,Midlands,Store,6
+R01771,2025-04-22,North,Store,7
+R01393,2025-04-22,Midlands,Online,10
+R01957,2025-04-22,North,Store,9
+R01786,2025-04-22,Scotland,Store,6
+R03077,2025-04-23,London,Store,8
+R00745,2025-04-23,Midlands,Online,10
+R02165,2025-04-23,South West,Online,8
+R01891,2025-04-23,Midlands,Contact Centre,9
+R01324,2025-04-23,South West,Store,6
+R00865,2025-04-23,London,Online,9
+R00301,2025-04-23,Midlands,Store,4
+R02309,2025-04-24,North,Online,5
+R00877,2025-04-24,London,Store,10
+R00363,2025-04-24,Midlands,Contact Centre,6
+R00945,2025-04-24,Scotland,Online,10
+R01325,2025-04-24,Midlands,Store,9
+R02133,2025-04-24,North,Online,6
+R00585,2025-04-24,Midlands,Online,10
+R00805,2025-04-25,Midlands,Online,8
+R00290,2025-04-25,Scotland,Store,7
+R00708,2025-04-25,Midlands,Store,10
+R02678,2025-04-25,Scotland,Store,7
+R00042,2025-04-25,Midlands,Online,10
+R01563,2025-04-25,South West,Store,7
+R02261,2025-04-25,Midlands,Store,7
+R00807,2025-04-25,North,Online,5
+R01331,2025-04-25,Midlands,Online,7
+R01486,2025-04-25,London,Online,9
+R01348,2025-04-25,Scotland,Online,10
+R00656,2025-04-26,London,Online,10
+R00724,2025-04-26,Midlands,Store,8
+R02667,2025-04-26,London,Online,9
+R03040,2025-04-26,South West,Online,10
+R01006,2025-04-26,South West,Online,9
+R01804,2025-04-26,Midlands,Contact Centre,5
+R02155,2025-04-26,South West,Online,6
+R02630,2025-04-27,North,Online,3
+R01531,2025-04-27,London,Store,7
+R02723,2025-04-27,London,Online,9
+R00747,2025-04-27,Midlands,Online,8
+R00157,2025-04-28,South West,Online,10
+R01330,2025-04-28,Scotland,Online,5
+R01323,2025-04-28,London,Store,5
+R00712,2025-04-28,London,Online,8
+R02670,2025-04-28,Scotland,Online,9
+R02739,2025-04-28,Scotland,Online,8
+R01990,2025-04-29,Midlands,Store,7
+R01987,2025-04-29,London,Contact Centre,4
+R01767,2025-04-29,North,Store,10
+R01524,2025-04-29,Midlands,Store,Don't know
+R00838,2025-04-29,Midlands,Contact Centre,9
+R02390,2025-04-29,Midlands,Store,8
+R02823,2025-04-29,North,Online,6
+R02399,2025-04-29,South West,Store,9
+R00316,2025-04-30,London,Online,8
+R02177,2025-04-30,North,Store,8
+R02817,2025-04-30,Midlands,Store,7
+R02980,2025-04-30,North,Store,6
+R01233,2025-05-01,North,Store,9
+R03173,2025-05-01,Midlands,Store,5
+R01201,2025-05-01,North,Contact Centre,1
+R00133,2025-05-01,London,Store,9
+R02277,2025-05-01,London,Store,8
+R00503,2025-05-01,North,Online,10
+R01026,2025-05-01,London,Online,8
+R00752,2025-05-02,South West,Store,8
+R01892,2025-05-02,Midlands,Store,6
+R00787,2025-05-02,London,Contact Centre,8
+R02290,2025-05-02,London,Store,9
+R01227,2025-05-02,South West,Store,7
+R01322,2025-05-02,Scotland,Online,8
+R03105,2025-05-02,London,Contact Centre,5
+R00160,2025-05-02,South West,Online,7
+R02692,2025-05-02,London,Contact Centre,7
+R01391,2025-05-03,London,Online,7
+R02193,2025-05-03,Midlands,Online,8
+R00113,2025-05-03,North,Online,7
+R00984,2025-05-03,Midlands,Store,8
+R03104,2025-05-03,South West,Store,6
+R00312,2025-05-04,London,Store,10
+R02850,2025-05-04,London,Online,6
+R00600,2025-05-04,London,Online,10
+R00233,2025-05-04,Scotland,Store,7
+R02748,2025-05-04,Scotland,Store,6
+R00025,2025-05-04,North,Store,6
+R01756,2025-05-04,Scotland,Store,6
+R02426,2025-05-04,North,Online,7
+R02781,2025-05-04,North,Online,10
+R01307,2025-05-05,London,Online,7
+R02483,2025-05-05,Midlands,Store,8
+R01161,2025-05-05,North,Store,9
+R00586,2025-05-05,Scotland,Online,10
+R02768,2025-05-05,North,Online,10
+R02867,2025-05-05,London,Store,5
+R00169,2025-05-05,London,Contact Centre,10
+R00897,2025-05-05,Midlands,Online,9
+R03171,2025-05-05,London,Store,5
+R02257,2025-05-05,London,Online,6
+R01638,2025-05-05,Midlands,Store,9
+R00228,2025-05-05,North,Contact Centre,9
+R02300,2025-05-05,South West,Online,6
+R02796,2025-05-05,North,Store,6
+R02427,2025-05-06,South West,Online,8
+R00146,2025-05-06,London,Contact Centre,8
+R01691,2025-05-06,London,Store,7
+R02797,2025-05-06,North,Online,9
+R02457,2025-05-07,North,Contact Centre,3
+R00306,2025-05-07,North,Contact Centre,10
+R00293,2025-05-07,Midlands,Online,7
+R00655,2025-05-07,South West,Store,10
+R02107,2025-05-07,London,Online,6
+R00719,2025-05-07,Scotland,Store,6
+R02429,2025-05-07,Midlands,Store,7
+R02562,2025-05-07,London,Store,7
+R01640,2025-05-08,London,Store,7
+R02224,2025-05-08,London,Store,7
+R02965,2025-05-08,North,Online,7
+R00462,2025-05-08,Midlands,Store,8
+R01365,2025-05-08,Scotland,Store,10
+R00845,2025-05-08,London,Online,8
+R01625,2025-05-08,Scotland,Store,5
+R02859,2025-05-08,Midlands,Contact Centre,9
+R01909,2025-05-08,North,Online,6
+R01604,2025-05-08,South West,Online,5
+R02020,2025-05-09,Midlands,Store,10
+R02266,2025-05-09,London,Store,7
+R00527,2025-05-09,Midlands,Store,8
+R01462,2025-05-09,North,Online,9
+R00859,2025-05-09,North,Online,8
+R01224,2025-05-09,London,Online,8
+R00860,2025-05-10,London,Online,Don't know
+R00998,2025-05-10,North,Store,9
+R00551,2025-05-10,Scotland,Contact Centre,5
+R00378,2025-05-10,North,Store,9
+R02682,2025-05-10,Midlands,Online,10
+R01296,2025-05-10,North,Store,10
+R02259,2025-05-10,Scotland,Online,8
+R01617,2025-05-10,North,Online,10
+R02188,2025-05-10,Scotland,Contact Centre,10
+R02040,2025-05-11,South West,Store,10
+R01353,2025-05-11,South West,Store,7
+R00652,2025-05-11,London,Online,9
+R01672,2025-05-11,South West,Online,10
+R01854,2025-05-11,South West,Store,6
+R02560,2025-05-11,South West,Online,9
+R01445,2025-05-11,North,Store,7
+R00047,2025-05-12,London,Online,8
+R02522,2025-05-12,London,Store,7
+R02293,2025-05-12,Midlands,Store,5
+R01960,2025-05-12,Midlands,Contact Centre,9
+R00309,2025-05-12,Midlands,Contact Centre,5
+R00668,2025-05-12,Scotland,Online,8
+R01023,2025-05-12,Scotland,Online,6
+R01310,2025-05-12,South West,Contact Centre,7
+R00915,2025-05-12,London,Contact Centre,8
+R02406,2025-05-12,London,Store,10
+R02444,2025-05-12,Midlands,Contact Centre,8
+R00220,2025-05-12,North,Online,9
+R02509,2025-05-12,Midlands,Contact Centre,
+R01889,2025-05-13,London,Online,7
+R01541,2025-05-13,London,Store,9
+R01066,2025-05-13,South West,Online,5
+R00711,2025-05-13,North,Store,10
+R00468,2025-05-13,London,Online,10
+R00517,2025-05-13,North,Store,9
+R03103,2025-05-13,Midlands,Contact Centre,5
+R00256,2025-05-13,South West,Store,9
+R00343,2025-05-14,London,Contact Centre,7
+R02016,2025-05-14,Midlands,Contact Centre,5
+R01667,2025-05-14,London,Contact Centre,6
+R02221,2025-05-14,South West,Store,9
+R02865,2025-05-14,North,Contact Centre,10
+R01544,2025-05-14,Midlands,Store,5
+R00509,2025-05-14,North,Contact Centre,8
+R01319,2025-05-14,Midlands,Store,8
+R00007,2025-05-15,North,Online,9
+R01904,2025-05-15,Midlands,Contact Centre,6
+R00249,2025-05-15,North,Store,8
+R02706,2025-05-15,Midlands,Store,3
+R00321,2025-05-15,London,Online,8
+R01679,2025-05-15,South West,Online,10
+R02009,2025-05-15,London,Store,9
+R01759,2025-05-15,Midlands,Store,4
+R00496,2025-05-15,North,Store,8
+R00454,2025-05-16,North,Online,3
+R01038,2025-05-16,London,Store,6
+R01931,2025-05-16,Midlands,Online,5
+R01000,2025-05-16,Scotland,Online,10
+R02777,2025-05-16,Scotland,Store,8
+R01085,2025-05-16,North,Store,5
+R03157,2025-05-16,London,Store,6
+R02204,2025-05-16,North,Online,10
+R02774,2025-05-16,London,Contact Centre,9
+R02275,2025-05-16,London,Online,9
+R02524,2025-05-16,North,Contact Centre,8
+R00203,2025-05-17,Scotland,Contact Centre,5
+R01986,2025-05-17,London,Online,9
+R01784,2025-05-17,London,Store,8
+R02298,2025-05-17,North,Contact Centre,7
+R01111,2025-05-17,London,Online,10
+R02366,2025-05-17,Midlands,Online,8
+R00949,2025-05-17,South West,Store,7
+R01580,2025-05-18,North,Online,7
+R00626,2025-05-18,North,Store,9
+R00899,2025-05-18,London,Contact Centre,6
+R02333,2025-05-18,London,Online,10
+R00722,2025-05-18,Scotland,Store,6
+R02283,2025-05-18,North,Online,10
+R02679,2025-05-18,North,Contact Centre,9
+R02660,2025-05-18,North,Online,10
+R01705,2025-05-18,London,Online,5
+R02339,2025-05-18,North,Store,10
+R00596,2025-05-18,North,Store,9
+R02598,2025-05-18,North,Store,8
+R01194,2025-05-18,Midlands,Online,8
+R02200,2025-05-19,South West,Store,9
+R00612,2025-05-19,North,Online,Don't know
+R03005,2025-05-19,Midlands,Online,10
+R02122,2025-05-19,London,Online,8
+R01262,2025-05-19,North,Online,9
+R01586,2025-05-19,North,Store,7
+R02183,2025-05-19,London,Online,6
+R02891,2025-05-19,North,Online,10
+R02708,2025-05-19,London,Contact Centre,7
+R01098,2025-05-19,North,Online,8
+R01944,2025-05-19,London,Store,10
+R00613,2025-05-19,South West,Online,7
+R01551,2025-05-20,Scotland,Contact Centre,7
+R00119,2025-05-20,London,Online,8
+R02881,2025-05-20,North,Store,8
+R02296,2025-05-20,Midlands,Online,5
+R00376,2025-05-20,North,Store,3
+R02944,2025-05-20,London,Store,6
+R02492,2025-05-20,London,Store,6
+R02979,2025-05-20,South West,Online,9
+R01977,2025-05-20,North,Store,8
+R02987,2025-05-20,North,Online,8
+R02963,2025-05-20,Scotland,Online,8
+R03142,2025-05-21,North,Online,8
+R02450,2025-05-21,South West,Store,6
+R01010,2025-05-21,Midlands,Store,9
+R02656,2025-05-21,North,Online,10
+R01583,2025-05-21,Scotland,Online,8
+R02070,2025-05-21,London,Store,9
+R01448,2025-05-21,South West,Online,10
+R02836,2025-05-22,North,Store,5
+R01782,2025-05-22,Midlands,Store,4
+R00841,2025-05-22,North,Store,9
+R02424,2025-05-22,London,Store,9
+R03038,2025-05-22,Scotland,Contact Centre,8
+R00727,2025-05-22,Midlands,Online,5
+R02853,2025-05-22,North,Store,6
+R03062,2025-05-22,London,Store,9
+R02773,2025-05-22,North,Online,9
+R02336,2025-05-22,North,Online,7
+R03045,2025-05-23,North,Online,6
+R03174,2025-05-23,North,Online,6
+R01040,2025-05-23,North,Online,9
+R03034,2025-05-23,London,Contact Centre,7
+R01945,2025-05-23,London,Store,4
+R01933,2025-05-23,North,Online,8
+R01778,2025-05-23,Midlands,Contact Centre,6
+R01123,2025-05-23,South West,Online,10
+R01720,2025-05-23,Midlands,Contact Centre,8
+R01435,2025-05-23,London,Online,
+R00457,2025-05-24,Midlands,Store,4
+R00431,2025-05-24,North,Contact Centre,6
+R03115,2025-05-24,Midlands,Online,7
+R01733,2025-05-24,Midlands,Contact Centre,6
+R00594,2025-05-24,London,Store,3
+R00328,2025-05-24,North,Online,4
+R01119,2025-05-24,North,Online,10
+R01329,2025-05-24,Scotland,Store,7
+R01559,2025-05-24,North,Online,8
+R03153,2025-05-24,London,Online,8
+R01431,2025-05-24,Scotland,Store,10
+R02281,2025-05-24,London,Online,8
+R01493,2025-05-24,South West,Online,10
+R02608,2025-05-25,London,Online,9
+R02995,2025-05-25,London,Online,8
+R01333,2025-05-25,Midlands,Contact Centre,8
+R00922,2025-05-25,South West,Contact Centre,9
+R00095,2025-05-25,Scotland,Online,10
+R01757,2025-05-25,South West,Online,6
+R02978,2025-05-25,North,Store,7
+R01808,2025-05-25,Scotland,Contact Centre,
+R01785,2025-05-25,London,Online,6
+R02631,2025-05-25,Scotland,Online,10
+R01893,2025-05-26,North,Contact Centre,7
+R00299,2025-05-26,London,Online,10
+R01457,2025-05-26,Midlands,Online,4
+R01870,2025-05-26,London,Contact Centre,6
+R00738,2025-05-26,London,Contact Centre,7
+R00038,2025-05-26,North,Online,8
+R02253,2025-05-26,North,Online,10
+R02904,2025-05-26,London,Online,4
+R01113,2025-05-27,Midlands,Online,9
+R01384,2025-05-27,London,Store,9
+R02740,2025-05-27,London,Online,4
+R00868,2025-05-27,Midlands,Online,8
+R00163,2025-05-27,North,Online,10
+R02557,2025-05-27,London,Online,6
+R01247,2025-05-27,Scotland,Online,8
+R02680,2025-05-27,Scotland,Store,6
+R02476,2025-05-27,London,Store,6
+R01666,2025-05-27,London,Online,2
+R00555,2025-05-28,South West,Contact Centre,7
+R01094,2025-05-28,Midlands,Contact Centre,7
+R03146,2025-05-28,Midlands,Online,8
+R03036,2025-05-28,London,Store,10
+R02074,2025-05-28,North,Online,9
+R01979,2025-05-28,Scotland,Contact Centre,8
+R02784,2025-05-28,North,Store,8
+R00073,2025-05-29,North,Contact Centre,3
+R02150,2025-05-29,Scotland,Store,6
+R01142,2025-05-29,London,Store,3
+R00464,2025-05-29,South West,Online,10
+R00269,2025-05-29,Midlands,Store,9
+R00530,2025-05-29,Scotland,Online,8
+R02981,2025-05-29,North,Store,7
+R00414,2025-05-29,North,Online,10
+R03048,2025-05-30,Midlands,Online,7
+R01270,2025-05-30,South West,Online,7
+R00211,2025-05-30,North,Online,7
+R02094,2025-05-30,South West,Online,9
+R02210,2025-05-30,Midlands,Online,10
+R01195,2025-05-30,London,Online,9
+R02615,2025-05-30,London,Online,7
+R00547,2025-05-30,North,Online,8
+R00344,2025-05-31,London,Store,10
+R01940,2025-05-31,London,Online,4
+R02299,2025-05-31,Midlands,Store,8
+R01878,2025-05-31,Scotland,Online,8
+R02187,2025-05-31,South West,Contact Centre,10
+R00695,2025-05-31,South West,Online,10
+R02720,2025-05-31,London,Online,10
+R02135,2025-05-31,Midlands,Store,9
+R01508,2025-06-01,North,Contact Centre,8
+R00161,2025-06-01,South West,Online,9
+R02310,2025-06-01,London,Store,9
+R01590,2025-06-01,North,Online,8
+R00329,2025-06-01,London,Online,8
+R00057,2025-06-01,Scotland,Store,8
+R02494,2025-06-01,London,Contact Centre,6
+R01993,2025-06-01,Midlands,Online,3
+R02510,2025-06-01,Scotland,Store,7
+R02841,2025-06-01,Midlands,Store,7
+R02898,2025-06-01,South West,Online,5
+R01117,2025-06-01,South West,Contact Centre,6
+R02983,2025-06-02,Midlands,Store,10
+R02083,2025-06-02,London,Online,10
+R00108,2025-06-02,South West,Online,7
+R01102,2025-06-02,Midlands,Store,7
+R01514,2025-06-02,Midlands,Contact Centre,8
+R01693,2025-06-02,London,Contact Centre,9
+R02008,2025-06-02,Scotland,Store,9
+R01454,2025-06-02,Midlands,Store,10
+R02688,2025-06-02,South West,Online,10
+R01928,2025-06-02,London,Contact Centre,3
+R01556,2025-06-02,South West,Store,7
+R00822,2025-06-02,Midlands,Online,6
+R01186,2025-06-03,Midlands,Store,7
+R00495,2025-06-03,North,Contact Centre,5
+R02745,2025-06-03,Scotland,Store,7
+R02920,2025-06-03,London,Online,8
+R02639,2025-06-03,London,Online,10
+R00419,2025-06-04,Midlands,Online,5
+R00317,2025-06-04,London,Store,8
+R01745,2025-06-04,North,Store,9
+R01958,2025-06-04,Scotland,Online,8
+R02378,2025-06-04,London,Store,6
+R00690,2025-06-04,North,Store,6
+R00279,2025-06-04,London,Contact Centre,3
+R02162,2025-06-04,London,Store,7
+R01974,2025-06-04,Midlands,Store,5
+R02587,2025-06-04,London,Online,7
+R02284,2025-06-05,London,Store,5
+R00627,2025-06-05,Scotland,Online,9
+R00193,2025-06-05,London,Contact Centre,6
+R01585,2025-06-05,North,Contact Centre,7
+R01048,2025-06-05,Midlands,Store,7
+R01261,2025-06-05,London,Store,3
+R01084,2025-06-05,London,Online,6
+R02046,2025-06-05,North,Contact Centre,9
+R02818,2025-06-05,North,Online,5
+R00340,2025-06-05,North,Online,10
+R01573,2025-06-05,Midlands,Online,10
+R01358,2025-06-05,South West,Online,9
+R02480,2025-06-05,Midlands,Store,10
+R02825,2025-06-06,London,Store,
+R01776,2025-06-06,Scotland,Contact Centre,6
+R00800,2025-06-06,London,Online,7
+R03026,2025-06-06,North,Store,7
+R00928,2025-06-06,North,Online,9
+R02808,2025-06-06,London,Online,10
+R00676,2025-06-06,Midlands,Store,5
+R03196,2025-06-06,North,Online,9
+R01370,2025-06-06,North,Contact Centre,6
+R02362,2025-06-06,South West,Store,9
+R02609,2025-06-06,Scotland,Online,10
+R00223,2025-06-07,Midlands,Contact Centre,4
+R00362,2025-06-07,North,Store,10
+R01219,2025-06-07,London,Store,1
+R00989,2025-06-07,North,Store,5
+R00456,2025-06-07,North,Online,5
+R01899,2025-06-07,North,Online,8
+R00484,2025-06-07,Scotland,Contact Centre,8
+R02923,2025-06-07,London,Store,8
+R00061,2025-06-07,South West,Contact Centre,7
+R00879,2025-06-07,Scotland,Online,6
+R02969,2025-06-07,South West,Store,10
+R02886,2025-06-07,Midlands,Contact Centre,3
+R00224,2025-06-08,London,Online,8
+R02375,2025-06-08,London,Online,9
+R02738,2025-06-08,Midlands,Contact Centre,9
+R01430,2025-06-08,London,Store,6
+R00026,2025-06-08,London,Contact Centre,9
+R01646,2025-06-08,South West,Online,10
+R00965,2025-06-08,Scotland,Contact Centre,6
+R01518,2025-06-08,Midlands,Store,10
+R02839,2025-06-08,Midlands,Online,8
+R00399,2025-06-08,South West,Online,7
+R00537,2025-06-08,Midlands,Store,9
+R00749,2025-06-08,Midlands,Store,
+R03084,2025-06-09,Midlands,Store,7
+R00826,2025-06-09,Scotland,Store,8
+R01129,2025-06-09,South West,Store,6
+R02827,2025-06-09,North,Online,7
+R01675,2025-06-09,North,Online,8
+R02124,2025-06-09,South West,Online,4
+R01197,2025-06-09,London,Online,9
+R02526,2025-06-09,South West,Store,8
+R02938,2025-06-09,Midlands,Online,6
+R01829,2025-06-09,Scotland,Contact Centre,5
+R02724,2025-06-09,London,Online,9
+R00782,2025-06-10,North,Store,8
+R02521,2025-06-10,South West,Online,10
+R00933,2025-06-10,Scotland,Store,10
+R02222,2025-06-10,London,Store,5
+R00589,2025-06-10,London,Online,10
+R01018,2025-06-10,London,Online,8
+R01710,2025-06-10,London,Online,7
+R02673,2025-06-10,North,Online,9
+R02749,2025-06-10,Scotland,Store,7
+R00783,2025-06-10,Scotland,Store,5
+R01265,2025-06-11,Midlands,Online,3
+R02810,2025-06-11,Midlands,Store,7
+R00524,2025-06-11,Scotland,Online,9
+R02520,2025-06-11,Midlands,Store,10
+R01240,2025-06-11,London,Contact Centre,4
+R03119,2025-06-11,Midlands,Store,4
+R01607,2025-06-11,Midlands,Online,8
+R02242,2025-06-12,Scotland,Store,8
+R00250,2025-06-12,London,Store,9
+R00291,2025-06-12,North,Online,10
+R01339,2025-06-12,London,Contact Centre,3
+R02563,2025-06-12,North,Store,7
+R01817,2025-06-12,North,Store,7
+R00528,2025-06-12,Midlands,Store,3
+R01519,2025-06-12,South West,Online,8
+R01498,2025-06-12,North,Contact Centre,10
+R01728,2025-06-12,London,Store,8
+R02711,2025-06-12,London,Online,6
+R00079,2025-06-12,Midlands,Store,5
+R02055,2025-06-12,London,Online,8
+R00171,2025-06-13,Midlands,Online,5
+R02079,2025-06-13,South West,Online,8
+R02279,2025-06-13,North,Online,6
+R01831,2025-06-13,Scotland,Store,9
+R01552,2025-06-13,North,Contact Centre,10
+R01202,2025-06-13,Scotland,Store,8
+R00608,2025-06-13,North,Online,7
+R02650,2025-06-13,North,Online,4
+R00319,2025-06-13,Midlands,Store,8
+R02318,2025-06-13,South West,Online,9
+R02214,2025-06-13,South West,Contact Centre,9
+R02172,2025-06-13,South West,Online,7
+R02897,2025-06-14,London,Online,8
+R00755,2025-06-14,South West,Contact Centre,6
+R02034,2025-06-14,North,Online,7
+R01571,2025-06-14,Midlands,Online,6
+R01112,2025-06-14,Scotland,Contact Centre,7
+R02664,2025-06-14,Midlands,Contact Centre,9
+R00088,2025-06-14,London,Online,8
+R02075,2025-06-15,Scotland,Store,5
+R00137,2025-06-15,Midlands,Online,7
+R01191,2025-06-15,North,Store,10
+R00121,2025-06-15,Midlands,Store,10
+R01060,2025-06-15,Scotland,Online,7
+R00883,2025-06-16,London,Contact Centre,9
+R02464,2025-06-16,South West,Store,10
+R01444,2025-06-16,London,Online,8
+R02994,2025-06-16,Midlands,Contact Centre,9
+R01465,2025-06-16,South West,Store,7
+R02539,2025-06-16,Midlands,Store,8
+R03041,2025-06-16,London,Online,9
+R01706,2025-06-16,North,Store,7
+R01664,2025-06-16,North,Online,5
+R00051,2025-06-16,Scotland,Online,8
+R01718,2025-06-16,Midlands,Online,6
+R01053,2025-06-16,London,Contact Centre,10
+R03190,2025-06-17,North,Store,6
+R00996,2025-06-17,North,Contact Centre,8
+R01455,2025-06-17,London,Online,8
+R02842,2025-06-17,London,Store,6
+R01146,2025-06-17,North,Store,6
+R01030,2025-06-17,Midlands,Online,10
+R01392,2025-06-17,London,Contact Centre,7
+R01833,2025-06-17,South West,Store,8
+R02950,2025-06-18,South West,Online,10
+R02442,2025-06-18,Scotland,Contact Centre,10
+R02683,2025-06-18,Midlands,Contact Centre,6
+R00204,2025-06-18,North,Store,9
+R01959,2025-06-18,London,Store,5
+R02230,2025-06-18,South West,Online,5
+R01171,2025-06-18,Midlands,Store,8
+R01008,2025-06-18,North,Online,5
+R02360,2025-06-18,London,Online,8
+R02921,2025-06-18,North,Contact Centre,7
+R01367,2025-06-19,North,Online,7
+R00772,2025-06-19,Midlands,Online,6
+R00948,2025-06-19,South West,Contact Centre,6
+R01071,2025-06-19,North,Online,10
+R00448,2025-06-19,London,Online,6
+R03004,2025-06-19,Scotland,Store,9
+R00685,2025-06-20,London,Online,6
+R00709,2025-06-20,Scotland,Online,10
+R00999,2025-06-20,Scotland,Online,9
+R00843,2025-06-20,London,Store,9
+R02151,2025-06-21,Midlands,Online,5
+R03199,2025-06-21,North,Store,9
+R01130,2025-06-21,North,Online,8
+R02058,2025-06-21,North,Online,7
+R00591,2025-06-21,North,Online,6
+R02576,2025-06-21,North,Online,10
+R01480,2025-06-21,North,Online,5
+R02918,2025-06-21,London,Online,9
+R02061,2025-06-21,North,Online,10
+R01447,2025-06-21,North,Store,10
+R03039,2025-06-21,South West,Contact Centre,10
+R01932,2025-06-21,Scotland,Store,10
+R01865,2025-06-21,Scotland,Online,10
+R00353,2025-06-22,Scotland,Contact Centre,1
+R01446,2025-06-22,South West,Online,10
+R03092,2025-06-22,London,Contact Centre,5
+R00014,2025-06-22,London,Online,7
+R01797,2025-06-22,Midlands,Online,9
+R01086,2025-06-22,North,Online,9
+R03154,2025-06-22,London,Online,6
+R02153,2025-06-22,North,Store,9
+R00434,2025-06-22,Scotland,Store,8
+R00927,2025-06-22,Midlands,Contact Centre,7
+R02927,2025-06-22,North,Online,8
+R01305,2025-06-23,South West,Store,8
+R02961,2025-06-23,Midlands,Store,9
+R02555,2025-06-23,London,Store,8
+R00693,2025-06-23,North,Contact Centre,4
+R02577,2025-06-23,South West,Store,7
+R02010,2025-06-23,North,Store,3
+R02566,2025-06-24,London,Store,4
+R01461,2025-06-24,North,Store,4
+R00942,2025-06-24,London,Online,9
+R00331,2025-06-24,North,Store,3
+R00035,2025-06-24,London,Contact Centre,8
+R02019,2025-06-24,North,Online,5
+R00934,2025-06-24,North,Store,8
+R01539,2025-06-24,Midlands,Store,7
+R00166,2025-06-25,London,Store,10
+R01059,2025-06-25,Midlands,Online,9
+R02571,2025-06-25,London,Online,7
+R00383,2025-06-25,Midlands,Online,7
+R01007,2025-06-25,Midlands,Contact Centre,5
+R00541,2025-06-25,Midlands,Online,8
+R00021,2025-06-25,Midlands,Online,7
+R00870,2025-06-25,London,Online,8
+R00639,2025-06-25,South West,Online,10
+R02912,2025-06-26,North,Online,8
+R00186,2025-06-26,South West,Online,8
+R01923,2025-06-26,South West,Store,7
+R00001,2025-06-26,Midlands,Online,10
+R00905,2025-06-26,Midlands,Store,9
+R00461,2025-06-26,South West,Online,4
+R00938,2025-06-26,North,Contact Centre,5
+R00151,2025-06-27,South West,Contact Centre,9
+R01079,2025-06-27,South West,Contact Centre,8
+R03017,2025-06-27,North,Online,9
+R02313,2025-06-27,Scotland,Store,
+R00370,2025-06-27,London,Contact Centre,5
+R00597,2025-06-27,South West,Online,6
+R00733,2025-06-28,North,Online,7
+R01980,2025-06-28,Scotland,Store,5
+R03030,2025-06-28,London,Online,8
+R01170,2025-06-28,London,Store,8
+R00844,2025-06-28,London,Contact Centre,7
+R02301,2025-06-28,South West,Online,10
+R00720,2025-06-28,Midlands,Online,8
+R02819,2025-06-28,London,Store,10
+R03068,2025-06-29,Midlands,Store,10
+R02610,2025-06-29,London,Online,6
+R01309,2025-06-29,London,Contact Centre,6
+R02507,2025-06-29,South West,Contact Centre,6
+R01387,2025-06-29,London,Online,6
+R00036,2025-06-29,London,Online,6
+R03053,2025-06-30,South West,Online,9
+R02246,2025-06-30,Midlands,Store,9
+R02727,2025-06-30,North,Store,7
+R01620,2025-06-30,Midlands,Store,6
+R01334,2025-06-30,North,Store,7
+R00892,2025-06-30,North,Store,8
+R00542,2025-06-30,South West,Contact Centre,6
+R02805,2025-06-30,London,Online,8
+R00592,2025-07-01,North,Store,7
+R02473,2025-07-01,North,Contact Centre,4
+R00170,2025-07-01,North,Store,6
+R00725,2025-07-01,Scotland,Online,9
+R00629,2025-07-01,London,Online,10
+R01406,2025-07-01,Midlands,Online,8
+R00098,2025-07-01,London,Online,10
+R01249,2025-07-01,London,Store,7
+R01464,2025-07-01,South West,Online,9
+R00734,2025-07-01,North,Store,6
+R01389,2025-07-01,London,Online,6
+R00148,2025-07-01,London,Store,8
+R02316,2025-07-02,North,Online,6
+R00836,2025-07-02,Scotland,Online,10
+R02161,2025-07-02,North,Online,7
+R01983,2025-07-02,Scotland,Store,10
+R02374,2025-07-02,North,Online,8
+R01273,2025-07-02,London,Online,5
+R02270,2025-07-02,London,Store,10
+R01487,2025-07-02,Midlands,Online,8
+R02132,2025-07-02,London,Online,10
+R02788,2025-07-02,Scotland,Store,10
+R00415,2025-07-02,North,Contact Centre,9
+R01542,2025-07-02,South West,Store,9
+R02663,2025-07-02,London,Contact Centre,5
+R00986,2025-07-03,North,Online,10
+R02572,2025-07-03,London,Store,5
+R00746,2025-07-04,London,Online,10
+R02799,2025-07-04,North,Store,7
+R01103,2025-07-04,Scotland,Contact Centre,9
+R01494,2025-07-04,London,Store,10
+R02401,2025-07-04,Midlands,Online,10
+R00469,2025-07-04,Midlands,Store,9
+R00145,2025-07-04,London,Online,8
+R02574,2025-07-04,North,Store,5
+R01606,2025-07-04,London,Contact Centre,7
+R01282,2025-07-04,Scotland,Contact Centre,5
+R00831,2025-07-04,North,Store,5
+R00377,2025-07-04,Midlands,Contact Centre,4
+R03170,2025-07-04,Midlands,Online,10
+R02340,2025-07-05,South West,Online,7
+R00983,2025-07-05,Midlands,Store,6
+R00167,2025-07-05,Midlands,Store,9
+R03054,2025-07-05,North,Store,4
+R03186,2025-07-05,South West,Store,10
+R03167,2025-07-05,London,Store,6
+R00029,2025-07-06,London,Store,4
+R02441,2025-07-06,North,Contact Centre,8
+R00308,2025-07-06,Midlands,Store,7
+R01621,2025-07-06,Midlands,Store,10
+R02500,2025-07-06,South West,Store,5
+R00543,2025-07-06,London,Store,8
+R00338,2025-07-06,London,Online,7
+R01051,2025-07-06,North,Online,8
+R02976,2025-07-06,North,Store,6
+R02443,2025-07-07,London,Store,8
+R03120,2025-07-07,Midlands,Contact Centre,6
+R03052,2025-07-07,London,Online,8
+R00906,2025-07-07,Midlands,Store,9
+R02098,2025-07-07,Scotland,Store,7
+R00375,2025-07-07,Midlands,Online,5
+R01236,2025-07-07,London,Online,6
+R00930,2025-07-07,Midlands,Contact Centre,7
+R03061,2025-07-07,North,Online,6
+R01231,2025-07-08,South West,Store,6
+R00661,2025-07-08,Midlands,Store,6
+R00557,2025-07-08,Midlands,Store,8
+R02208,2025-07-08,North,Store,7
+R01366,2025-07-08,North,Store,7
+R01584,2025-07-09,Scotland,Store,8
+R01128,2025-07-09,Midlands,Online,4
+R01215,2025-07-09,Midlands,Store,9
+R00699,2025-07-09,London,Store,10
+R02746,2025-07-09,North,Online,7
+R01377,2025-07-09,London,Online,10
+R01150,2025-07-09,Midlands,Online,8
+R02239,2025-07-10,South West,Online,10
+R00765,2025-07-10,South West,Online,7
+R00345,2025-07-10,London,Store,7
+R01875,2025-07-10,Midlands,Contact Centre,5
+R01272,2025-07-10,London,Online,7
+R00490,2025-07-10,London,Online,7
+R01277,2025-07-10,London,Online,10
+R02012,2025-07-10,London,Online,8
+R02484,2025-07-10,North,Contact Centre,3
+R00959,2025-07-11,Scotland,Store,9
+R00128,2025-07-11,Midlands,Store,7
+R02311,2025-07-11,Scotland,Contact Centre,6
+R01866,2025-07-11,North,Store,6
+R01578,2025-07-11,London,Online,8
+R02157,2025-07-11,London,Contact Centre,6
+R02479,2025-07-11,Midlands,Online,9
+R00511,2025-07-11,South West,Online,6
+R01380,2025-07-11,Midlands,Contact Centre,5
+R02475,2025-07-11,Scotland,Store,8
+R01002,2025-07-12,South West,Store,10
+R03024,2025-07-12,Midlands,Contact Centre,9
+R02785,2025-07-12,South West,Online,8
+R01283,2025-07-12,South West,Online,10
+R00003,2025-07-12,Midlands,Store,9
+R01411,2025-07-12,Scotland,Store,9
+R01681,2025-07-12,London,Contact Centre,8
+R01386,2025-07-12,London,Online,7
+R00124,2025-07-12,London,Online,8
+R01820,2025-07-13,London,Store,8
+R02113,2025-07-13,Scotland,Online,10
+R02999,2025-07-13,North,Contact Centre,8
+R00266,2025-07-13,North,Online,8
+R02047,2025-07-13,North,Store,8
+R02410,2025-07-13,South West,Online,6
+R01533,2025-07-13,Midlands,Contact Centre,5
+R00573,2025-07-14,London,Store,10
+R00513,2025-07-14,North,Online,9
+R01529,2025-07-14,North,Online,10
+R00663,2025-07-14,London,Online,7
+R00861,2025-07-14,Midlands,Contact Centre,
+R01479,2025-07-14,North,Online,8
+R02959,2025-07-14,Scotland,Online,3
+R02892,2025-07-14,South West,Store,9
+R00004,2025-07-14,South West,Online,7
+R02672,2025-07-14,Midlands,Store,8
+R01906,2025-07-15,London,Contact Centre,6
+R00703,2025-07-15,Midlands,Store,10
+R02669,2025-07-15,London,Store,10
+R02716,2025-07-15,London,Contact Centre,4
+R00951,2025-07-15,Midlands,Online,10
+R00455,2025-07-15,London,Contact Centre,9
+R01022,2025-07-15,Midlands,Contact Centre,5
+R01851,2025-07-15,London,Store,10
+R03059,2025-07-15,South West,Online,8
+R02814,2025-07-15,Midlands,Store,8
+R00390,2025-07-15,North,Store,9
+R01545,2025-07-16,North,Online,3
+R02158,2025-07-16,South West,Store,9
+R03117,2025-07-16,London,Store,6
+R00452,2025-07-16,London,Online,10
+R00923,2025-07-16,London,Online,5
+R01789,2025-07-16,London,Store,7
+R02623,2025-07-16,London,Contact Centre,
+R00546,2025-07-16,North,Online,8
+R00675,2025-07-16,London,Store,8
+R00089,2025-07-16,South West,Online,4
+R01856,2025-07-16,Scotland,Online,8
+R02073,2025-07-17,North,Online,6
+R02383,2025-07-17,South West,Store,8
+R01670,2025-07-17,South West,Online,10
+R03139,2025-07-17,London,Online,5
+R01591,2025-07-17,Scotland,Online,9
+R00280,2025-07-18,Midlands,Store,8
+R02862,2025-07-18,London,Online,9
+R01515,2025-07-18,North,Online,10
+R00806,2025-07-18,Scotland,Online,9
+R03169,2025-07-18,South West,Online,10
+R01662,2025-07-18,South West,Store,10
+R02636,2025-07-18,Scotland,Online,10
+R01806,2025-07-19,London,Store,5
+R02752,2025-07-19,South West,Contact Centre,5
+R02910,2025-07-19,London,Store,10
+R00420,2025-07-19,London,Online,7
+R02565,2025-07-19,Scotland,Store,7
+R01644,2025-07-19,London,Contact Centre,9
+R00202,2025-07-19,Scotland,Store,8
+R00264,2025-07-19,Scotland,Online,8
+R01596,2025-07-19,Scotland,Store,8
+R00694,2025-07-20,London,Contact Centre,6
+R00754,2025-07-20,North,Store,8
+R01467,2025-07-20,Scotland,Online,10
+R01695,2025-07-20,London,Online,8
+R00508,2025-07-20,South West,Store,7
+R00480,2025-07-20,Midlands,Store,6
+R02359,2025-07-20,London,Online,6
+R00406,2025-07-20,Scotland,Online,7
+R02248,2025-07-20,Scotland,Contact Centre,2
+R01810,2025-07-21,North,Contact Centre,5
+R00969,2025-07-21,Midlands,Online,7
+R02044,2025-07-21,London,Contact Centre,2
+R00518,2025-07-21,North,Online,9
+R01133,2025-07-21,North,Online,8
+R02090,2025-07-21,South West,Store,6
+R02099,2025-07-21,Scotland,Contact Centre,8
+R02100,2025-07-21,London,Contact Centre,3
+R01965,2025-07-21,Midlands,Contact Centre,7
+R00056,2025-07-21,London,Store,
+R01242,2025-07-21,North,Online,9
+R02351,2025-07-21,North,Online,6
+R01440,2025-07-21,Scotland,Online,8
+R02503,2025-07-22,South West,Online,9
+R01534,2025-07-22,Scotland,Online,10
+R02596,2025-07-22,North,Online,8
+R01211,2025-07-22,North,Online,9
+R01885,2025-07-22,Midlands,Contact Centre,6
+R00069,2025-07-22,London,Store,8
+R02344,2025-07-22,Scotland,Online,7
+R02624,2025-07-22,South West,Online,8
+R01335,2025-07-22,London,Online,8
+R01184,2025-07-22,North,Online,7
+R01890,2025-07-22,Midlands,Online,10
+R02194,2025-07-22,North,Online,7
+R02297,2025-07-22,Midlands,Store,9
+R02260,2025-07-23,London,Online,9
+R00323,2025-07-23,North,Store,
+R00231,2025-07-23,London,Contact Centre,7
+R01682,2025-07-23,Midlands,Online,8
+R01131,2025-07-23,South West,Online,9
+R00762,2025-07-23,South West,Contact Centre,4
+R00492,2025-07-23,Scotland,Online,6
+R01850,2025-07-23,London,Contact Centre,5
+R01861,2025-07-23,London,Store,
+R01737,2025-07-24,Scotland,Store,3
+R01495,2025-07-24,South West,Store,10
+R00777,2025-07-24,South West,Store,10
+R01418,2025-07-24,London,Store,8
+R00416,2025-07-24,London,Store,7
+R01138,2025-07-24,London,Contact Centre,6
+R00921,2025-07-24,Scotland,Online,6
+R00109,2025-07-24,London,Store,8
+R02091,2025-07-25,London,Store,9
+R02548,2025-07-25,Midlands,Online,10
+R00389,2025-07-25,Scotland,Contact Centre,9
+R02486,2025-07-25,London,Store,8
+R00114,2025-07-25,Midlands,Contact Centre,6
+R01937,2025-07-25,London,Store,10
+R02873,2025-07-25,Scotland,Store,7
+R01228,2025-07-25,London,Contact Centre,5
+R02594,2025-07-25,Midlands,Store,8
+R03065,2025-07-25,Scotland,Store,7
+R00355,2025-07-25,North,Store,6
+R01058,2025-07-26,Midlands,Contact Centre,5
+R02642,2025-07-26,London,Store,7
+R02105,2025-07-26,North,Store,9
+R00867,2025-07-26,North,Online,6
+R00812,2025-07-26,London,Online,10
+R01790,2025-07-26,London,Online,6
+R02666,2025-07-26,North,Online,8
+R02546,2025-07-26,Scotland,Store,7
+R01472,2025-07-26,North,Online,10
+R00683,2025-07-26,South West,Store,6
+R01077,2025-07-26,London,Store,7
+R02822,2025-07-26,London,Online,10
+R01414,2025-07-27,London,Store,10
+R02733,2025-07-27,London,Contact Centre,5
+R02554,2025-07-27,South West,Store,6
+R00584,2025-07-27,North,Store,2
+R01383,2025-07-28,North,Store,8
+R02243,2025-07-28,Midlands,Online,
+R02422,2025-07-28,Midlands,Store,9
+R01613,2025-07-28,London,Store,7
+R02619,2025-07-29,South West,Store,8
+R00055,2025-07-29,North,Store,7
+R00963,2025-07-29,London,Online,9
+R02581,2025-07-29,South West,Contact Centre,6
+R00793,2025-07-29,North,Store,8
+R00692,2025-07-29,London,Online,7
+R01719,2025-07-29,Midlands,Store,7
+R01017,2025-07-29,London,Online,7
+R02191,2025-07-30,South West,Contact Centre,7
+R00485,2025-07-30,Scotland,Store,8
+R01712,2025-07-30,London,Store,9
+R00645,2025-07-30,Scotland,Online,9
+R02932,2025-07-30,South West,Store,10
+R00131,2025-07-30,Midlands,Store,10
+R02304,2025-07-30,Scotland,Store,5
+R01961,2025-07-30,London,Contact Centre,4
+R02722,2025-07-30,London,Store,9
+R01852,2025-07-30,Scotland,Store,8
+R02106,2025-07-30,South West,Online,10
+R01628,2025-07-30,North,Store,9
+R00341,2025-07-30,North,Store,8
+R02004,2025-07-31,Midlands,Store,5
+R02328,2025-07-31,North,Online,8
+R01650,2025-07-31,London,Store,9
+R01903,2025-07-31,London,Online,7
+R01153,2025-07-31,Midlands,Store,9
+R01274,2025-07-31,Scotland,Store,8
+R00111,2025-07-31,London,Store,5
+R00529,2025-08-01,North,Store,6
+R00791,2025-08-01,North,Store,6
+R02707,2025-08-01,London,Store,9
+R01880,2025-08-01,Scotland,Contact Centre,7
+R01287,2025-08-01,Midlands,Online,6
+R02235,2025-08-01,North,Online,10
+R00917,2025-08-02,Midlands,Online,7
+R01359,2025-08-02,London,Store,5
+R01645,2025-08-02,London,Online,8
+R00327,2025-08-02,North,Online,10
+R02684,2025-08-03,North,Online,4
+R03035,2025-08-03,South West,Online,10
+R00553,2025-08-03,London,Store,9
+R00031,2025-08-03,London,Online,8
+R00581,2025-08-03,London,Store,8
+R02882,2025-08-03,North,Store,8
+R00662,2025-08-03,Scotland,Online,6
+R00937,2025-08-03,London,Online,8
+R01488,2025-08-04,London,Contact Centre,3
+R02654,2025-08-04,South West,Store,10
+R02376,2025-08-04,London,Store,7
+R01419,2025-08-04,London,Contact Centre,7
+R03018,2025-08-04,London,Online,10
+R00696,2025-08-04,London,Store,4
+R02502,2025-08-05,North,Online,9
+R02219,2025-08-05,Scotland,Online,10
+R01222,2025-08-05,Midlands,Online,9
+R02372,2025-08-05,North,Online,9
+R02894,2025-08-05,London,Store,5
+R02992,2025-08-05,London,Online,10
+R01379,2025-08-06,Midlands,Store,7
+R01091,2025-08-06,Midlands,Store,8
+R03037,2025-08-06,Scotland,Online,7
+R02198,2025-08-06,London,Online,8
+R01108,2025-08-06,Scotland,Store,9
+R01819,2025-08-07,Midlands,Store,8
+R00620,2025-08-07,London,Online,9
+R01930,2025-08-07,Scotland,Store,10
+R02552,2025-08-07,Scotland,Online,9
+R01558,2025-08-07,South West,Store,9
+R01874,2025-08-07,Midlands,Online,9
+R00847,2025-08-08,Midlands,Store,4
+R01004,2025-08-08,Midlands,Online,8
+R01627,2025-08-08,Scotland,Store,7
+R01175,2025-08-08,Midlands,Contact Centre,4
+R00078,2025-08-08,Midlands,Online,5
+R01451,2025-08-09,Midlands,Store,10
+R02398,2025-08-09,South West,Store,5
+R01469,2025-08-09,Midlands,Online,10
+R01690,2025-08-09,North,Online,6
+R01217,2025-08-09,London,Online,8
+R00526,2025-08-09,Scotland,Store,7
+R03188,2025-08-09,Scotland,Store,8
+R02353,2025-08-10,South West,Online,6
+R01398,2025-08-10,North,Online,10
+R00218,2025-08-10,Midlands,Contact Centre,10
+R00043,2025-08-10,Scotland,Store,
+R00395,2025-08-10,London,Store,8
+R03009,2025-08-11,North,Online,8
+R03175,2025-08-11,London,Online,9
+R03144,2025-08-11,Scotland,Store,9
+R02225,2025-08-12,London,Online,7
+R00874,2025-08-12,North,Contact Centre,6
+R02665,2025-08-12,South West,Store,6
+R02568,2025-08-12,London,Online,6
+R00182,2025-08-12,North,Store,10
+R01871,2025-08-12,Scotland,Store,7
+R02445,2025-08-12,London,Store,8
+R00887,2025-08-12,Midlands,Online,10
+R01340,2025-08-13,Midlands,Online,10
+R02356,2025-08-13,Scotland,Contact Centre,9
+R00407,2025-08-13,Midlands,Contact Centre,7
+R02878,2025-08-13,London,Contact Centre,5
+R02269,2025-08-14,North,Store,10
+R01548,2025-08-14,North,Store,9
+R02421,2025-08-14,London,Store,3
+R01121,2025-08-14,Midlands,Store,6
+R02742,2025-08-14,Scotland,Online,5
+R00030,2025-08-14,London,Online,8
+R03086,2025-08-14,Scotland,Contact Centre,7
+R02686,2025-08-14,North,Store,7
+R01243,2025-08-14,North,Store,7
+R00424,2025-08-15,London,Store,10
+R00271,2025-08-15,London,Online,10
+R02411,2025-08-16,North,Online,8
+R02834,2025-08-16,South West,Online,6
+R02948,2025-08-16,North,Online,8
+R00653,2025-08-16,North,Store,8
+R02885,2025-08-16,Midlands,Online,9
+R02653,2025-08-16,Scotland,Contact Centre,5
+R00429,2025-08-16,London,Online,7
+R02022,2025-08-16,North,Contact Centre,7
+R01799,2025-08-17,London,Online,8
+R01543,2025-08-17,North,Store,9
+R02462,2025-08-17,North,Contact Centre,8
+R02338,2025-08-17,South West,Online,10
+R01788,2025-08-17,Midlands,Online,9
+R00467,2025-08-17,Midlands,Store,9
+R01355,2025-08-17,Scotland,Store,9
+R02499,2025-08-17,North,Store,8
+R02579,2025-08-18,Scotland,Online,10
+R02559,2025-08-18,London,Store,2
+R00839,2025-08-18,Scotland,Contact Centre,8
+R01376,2025-08-18,Scotland,Store,9
+R01409,2025-08-18,Midlands,Contact Centre,6
+R00152,2025-08-18,Midlands,Online,9
+R00488,2025-08-18,Midlands,Online,7
+R01491,2025-08-18,North,Online,9
+R00926,2025-08-18,London,Contact Centre,5
+R02803,2025-08-18,North,Store,10
+R00881,2025-08-18,Scotland,Contact Centre,Don't know
+R01894,2025-08-18,Scotland,Online,10
+R01449,2025-08-18,London,Store,6
+R02192,2025-08-18,North,Contact Centre,5
+R02264,2025-08-19,South West,Online,10
+R00853,2025-08-19,North,Store,8
+R02416,2025-08-19,North,Store,7
+R00718,2025-08-19,London,Contact Centre,10
+R00034,2025-08-19,Midlands,Online,8
+R03081,2025-08-19,London,Store,8
+R01557,2025-08-19,North,Online,8
+R03050,2025-08-20,Midlands,Contact Centre,4
+R00950,2025-08-20,Scotland,Store,9
+R01458,2025-08-20,North,Store,7
+R02117,2025-08-20,Midlands,Online,9
+R01148,2025-08-20,North,Contact Centre,8
+R01234,2025-08-20,North,Store,8
+R00869,2025-08-20,North,Online,10
+R00360,2025-08-20,London,Contact Centre,7
+R02732,2025-08-21,South West,Store,4
+R01052,2025-08-21,London,Contact Centre,5
+R01125,2025-08-21,Midlands,Online,5
+R01385,2025-08-21,Scotland,Store,5
+R00689,2025-08-21,Midlands,Online,8
+R00177,2025-08-21,Scotland,Online,7
+R01105,2025-08-21,Scotland,Contact Centre,7
+R01475,2025-08-21,Midlands,Store,5
+R00174,2025-08-21,London,Online,6
+R01492,2025-08-21,London,Store,10
+R00786,2025-08-21,Scotland,Online,10
+R02504,2025-08-21,London,Store,6
+R01610,2025-08-21,Midlands,Contact Centre,8
+R00449,2025-08-21,London,Store,
+R01840,2025-08-21,London,Store,10
+R02537,2025-08-21,London,Online,10
+R02551,2025-08-21,Scotland,Store,5
+R00554,2025-08-21,Midlands,Online,4
+R00303,2025-08-21,London,Store,9
+R00940,2025-08-22,Midlands,Store,6
+R02887,2025-08-22,London,Store,8
+R00083,2025-08-22,North,Online,8
+R00011,2025-08-22,South West,Online,10
+R00621,2025-08-22,North,Online,10
+R00636,2025-08-22,London,Store,10
+R01229,2025-08-22,London,Online,4
+R00122,2025-08-22,London,Online,7
+R01062,2025-08-22,Midlands,Contact Centre,6
+R02751,2025-08-22,North,Online,7
+R00871,2025-08-22,Scotland,Store,5
+R02140,2025-08-22,North,Online,10
+R01200,2025-08-23,London,Store,9
+R00084,2025-08-23,North,Online,10
+R01082,2025-08-23,London,Store,10
+R00609,2025-08-23,London,Online,8
+R00816,2025-08-23,Midlands,Online,10
+R00214,2025-08-23,South West,Online,9
+R01684,2025-08-23,Midlands,Online,8
+R01284,2025-08-23,Midlands,Store,8
+R00889,2025-08-23,Midlands,Online,9
+R01862,2025-08-23,London,Online,6
+R02605,2025-08-24,London,Online,10
+R00159,2025-08-24,London,Online,6
+R00401,2025-08-24,South West,Store,8
+R03029,2025-08-24,London,Store,6
+R02049,2025-08-24,Midlands,Online,6
+R01137,2025-08-25,London,Store,6
+R00075,2025-08-25,London,Online,8
+R00176,2025-08-25,South West,Online,10
+R02876,2025-08-25,Scotland,Contact Centre,10
+R03095,2025-08-25,South West,Store,7
+R02713,2025-08-25,Midlands,Store,10
+R00857,2025-08-25,Scotland,Store,6
+R00278,2025-08-25,North,Store,8
+R02864,2025-08-25,North,Online,10
+R00936,2025-08-26,London,Contact Centre,7
+R00273,2025-08-26,North,Online,10
+R00374,2025-08-26,Midlands,Store,8
+R02717,2025-08-26,Scotland,Contact Centre,8
+R01020,2025-08-26,Midlands,Online,7
+R01973,2025-08-26,North,Contact Centre,7
+R01336,2025-08-26,North,Online,10
+R01921,2025-08-26,Midlands,Online,8
+R01598,2025-08-26,Scotland,Online,10
+R03162,2025-08-27,Midlands,Store,9
+R01665,2025-08-27,North,Store,7
+R01694,2025-08-27,North,Online,5
+R00351,2025-08-27,Scotland,Contact Centre,3
+R02453,2025-08-27,North,Store,3
+R00361,2025-08-27,London,Online,10
+R00445,2025-08-27,London,Store,6
+R01995,2025-08-27,Midlands,Store,9
+R02974,2025-08-28,Midlands,Online,8
+R01822,2025-08-28,Midlands,Online,10
+R00732,2025-08-28,Scotland,Online,9
+R00304,2025-08-28,North,Store,9
+R00643,2025-08-28,South West,Online,8
+R03195,2025-08-28,London,Store,8
+R00739,2025-08-28,London,Online,3
+R00425,2025-08-28,Midlands,Store,8
+R00213,2025-08-28,South West,Online,9
+R00576,2025-08-29,London,Online,9
+R00147,2025-08-29,North,Store,9
+R00651,2025-08-29,North,Contact Centre,4
+R01811,2025-08-29,North,Online,9
+R00150,2025-08-29,South West,Online,4
+R03066,2025-08-29,North,Store,6
+R02051,2025-08-29,Scotland,Online,10
+R02712,2025-08-29,London,Store,7
+R02409,2025-08-29,South West,Store,9
+R02141,2025-08-29,Midlands,Store,8
+R00396,2025-08-30,North,Store,7
+R00252,2025-08-30,London,Online,5
+R01589,2025-08-30,South West,Store,6
+R00985,2025-08-30,North,Online,9
+R02147,2025-08-30,Midlands,Online,10
+R01075,2025-08-30,North,Contact Centre,4
+R01832,2025-08-30,Midlands,Store,6
+R01147,2025-08-30,North,Online,8
+R01214,2025-08-31,Midlands,Online,10
+R00426,2025-08-31,Midlands,Online,8
+R03070,2025-08-31,London,Store,8
+R02641,2025-08-31,South West,Contact Centre,7
+R01671,2025-08-31,North,Online,7
+R01254,2025-08-31,North,Contact Centre,8
+R01836,2025-08-31,Midlands,Store,8
+R01181,2025-08-31,Midlands,Online,7
+R01361,2025-08-31,London,Online,7
+R00388,2025-08-31,Scotland,Online,3
+R01187,2025-08-31,Midlands,Online,10
+R02477,2025-09-01,Midlands,Store,10
+R00402,2025-09-01,North,Contact Centre,8
+R02163,2025-09-01,North,Online,6
+R01873,2025-09-01,North,Store,8
+R01793,2025-09-01,North,Online,10
+R00903,2025-09-01,Midlands,Online,9
+R01050,2025-09-01,Scotland,Store,10
+R02767,2025-09-02,North,Online,10
+R01044,2025-09-02,North,Online,7
+R00472,2025-09-02,Midlands,Online,
+R01073,2025-09-02,London,Online,7
+R00068,2025-09-02,North,Store,8
+R01869,2025-09-02,Midlands,Store,9
+R00570,2025-09-02,Midlands,Store,5
+R02377,2025-09-02,London,Online,7
+R01704,2025-09-02,London,Store,7
+R02448,2025-09-02,Scotland,Store,9
+R00521,2025-09-02,Midlands,Contact Centre,4
+R02637,2025-09-02,North,Online,10
+R00976,2025-09-02,London,Online,10
+R00577,2025-09-03,Midlands,Store,8
+R01056,2025-09-03,South West,Online,9
+R01076,2025-09-03,South West,Online,9
+R01122,2025-09-03,Midlands,Online,9
+R00311,2025-09-03,Scotland,Contact Centre,4
+R02625,2025-09-03,Midlands,Online,7
+R01946,2025-09-03,Midlands,Contact Centre,5
+R02357,2025-09-03,London,Contact Centre,6
+R00729,2025-09-03,Midlands,Online,4
+R01641,2025-09-04,Scotland,Store,7
+R00506,2025-09-04,Midlands,Store,9
+R00717,2025-09-04,North,Contact Centre,6
+R01951,2025-09-04,North,Online,6
+R02119,2025-09-04,Scotland,Store,8
+R00549,2025-09-04,North,Online,10
+R01155,2025-09-04,North,Online,8
+R02452,2025-09-04,North,Store,8
+R01496,2025-09-04,Scotland,Contact Centre,6
+R01342,2025-09-05,Midlands,Store,7
+R02287,2025-09-05,Midlands,Contact Centre,4
+R02481,2025-09-05,Midlands,Online,3
+R02726,2025-09-05,North,Store,6
+R01257,2025-09-05,North,Store,7
+R01807,2025-09-05,North,Online,8
+R03072,2025-09-05,North,Contact Centre,6
+R03111,2025-09-05,London,Store,6
+R03001,2025-09-05,London,Online,5
+R01003,2025-09-05,South West,Online,7
+R00058,2025-09-05,North,Online,9
+R00130,2025-09-05,Midlands,Contact Centre,5
+R02578,2025-09-05,London,Online,9
+R02997,2025-09-05,London,Online,4
+R00134,2025-09-05,North,Online,10
+R00198,2025-09-05,North,Store,5
+R02929,2025-09-05,Midlands,Online,7
+R01466,2025-09-05,North,Contact Centre,5
+R00476,2025-09-05,London,Contact Centre,8
+R01232,2025-09-05,North,Online,6
+R01106,2025-09-05,Midlands,Online,5
+R01525,2025-09-06,Midlands,Store,8
+R01285,2025-09-06,North,Contact Centre,8
+R01536,2025-09-06,London,Online,9
+R00397,2025-09-06,London,Contact Centre,7
+R00641,2025-09-06,North,Contact Centre,6
+R01311,2025-09-06,London,Online,7
+R02621,2025-09-06,South West,Online,9
+R01500,2025-09-07,Midlands,Contact Centre,7
+R02391,2025-09-07,Scotland,Online,6
+R00263,2025-09-07,Scotland,Online,10
+R02972,2025-09-07,South West,Store,9
+R02902,2025-09-07,London,Online,10
+R01926,2025-09-08,Scotland,Store,8
+R02977,2025-09-08,Scotland,Online,5
+R00482,2025-09-08,London,Online,7
+R01709,2025-09-08,Midlands,Contact Centre,2
+R00771,2025-09-08,Midlands,Contact Centre,5
+R02659,2025-09-09,London,Store,7
+R00598,2025-09-09,London,Store,10
+R00101,2025-09-09,Scotland,Contact Centre,7
+R01159,2025-09-09,Scotland,Store,9
+R03184,2025-09-09,North,Online,8
+R02324,2025-09-09,North,Online,6
+R01183,2025-09-09,Midlands,Online,8
+R02064,2025-09-10,Scotland,Contact Centre,8
+R02783,2025-09-10,South West,Online,10
+R01308,2025-09-10,North,Store,5
+R01314,2025-09-10,London,Store,10
+R00803,2025-09-10,Midlands,Store,8
+R00386,2025-09-10,Midlands,Store,4
+R01143,2025-09-10,London,Online,10
+R01369,2025-09-10,London,Online,10
+R02517,2025-09-10,South West,Store,
+R02924,2025-09-11,Midlands,Store,7
+R00236,2025-09-11,Scotland,Contact Centre,7
+R00992,2025-09-11,Midlands,Store,6
+R02516,2025-09-11,London,Online,5
+R01648,2025-09-11,North,Online,8
+R02160,2025-09-11,North,Online,10
+R02685,2025-09-11,Midlands,Online,6
+R02166,2025-09-11,Scotland,Contact Centre,6
+R01135,2025-09-11,North,Contact Centre,5
+R02322,2025-09-11,London,Online,4
+R00094,2025-09-12,Midlands,Contact Centre,9
+R03116,2025-09-12,North,Store,9
+R00320,2025-09-12,Scotland,Contact Centre,3
+R01991,2025-09-12,London,Store,9
+R02036,2025-09-12,Midlands,Store,4
+R02922,2025-09-12,North,Store,8
+R02991,2025-09-12,London,Online,9
+R00561,2025-09-13,North,Online,10
+R00731,2025-09-13,Midlands,Store,10
+R00258,2025-09-13,Midlands,Online,9
+R01963,2025-09-13,North,Contact Centre,2
+R02037,2025-09-13,Scotland,Online,10
+R01516,2025-09-13,South West,Contact Centre,4
+R00117,2025-09-13,London,Store,10
+R00501,2025-09-13,Midlands,Store,7
+R00862,2025-09-13,London,Online,4
+R03044,2025-09-13,South West,Store,5
+R01107,2025-09-13,South West,Store,7
+R00837,2025-09-13,London,Store,8
+R02273,2025-09-14,Scotland,Online,4
+R00251,2025-09-14,South West,Store,7
+R02215,2025-09-14,Midlands,Store,7
+R02871,2025-09-14,Midlands,Store,10
+R03145,2025-09-14,North,Online,10
+R02911,2025-09-14,North,Store,9
+R02603,2025-09-14,Midlands,Online,10
+R01555,2025-09-14,London,Store,10
+R01841,2025-09-14,Scotland,Store,7
+R01301,2025-09-14,North,Store,9
+R00474,2025-09-14,Midlands,Online,10
+R02262,2025-09-15,Midlands,Contact Centre,3
+R00987,2025-09-15,North,Store,7
+R01907,2025-09-15,South West,Store,10
+R01145,2025-09-15,London,Store,9
+R02611,2025-09-15,North,Online,8
+R00499,2025-09-15,Scotland,Store,7
+R00268,2025-09-15,London,Store,8
+R00960,2025-09-15,London,Store,4
+R02491,2025-09-16,London,Contact Centre,8
+R01860,2025-09-16,Midlands,Online,9
+R00966,2025-09-16,London,Online,10
+R01196,2025-09-16,North,Store,9
+R00313,2025-09-16,South West,Online,10
+R01623,2025-09-16,Scotland,Store,8
+R02272,2025-09-16,Midlands,Store,10
+R00539,2025-09-16,Midlands,Online,7
+R01976,2025-09-16,South West,Store,6
+R02758,2025-09-16,Midlands,Store,5
+R00607,2025-09-17,North,Store,6
+R00347,2025-09-17,North,Contact Centre,5
+R02029,2025-09-17,London,Online,8
+R02213,2025-09-17,Midlands,Online,7
+R01800,2025-09-17,London,Contact Centre,5
+R02575,2025-09-17,South West,Online,8
+R01256,2025-09-17,London,Store,4
+R02564,2025-09-17,South West,Store,8
+R00381,2025-09-17,North,Store,6
+R02528,2025-09-18,North,Store,10
+R01327,2025-09-18,Scotland,Store,9
+R00168,2025-09-18,London,Contact Centre,6
+R00735,2025-09-18,North,Contact Centre,6
+R00164,2025-09-18,Midlands,Contact Centre,6
+R01717,2025-09-18,Midlands,Online,8
+R02085,2025-09-18,North,Online,9
+R03135,2025-09-18,Scotland,Online,9
+R02320,2025-09-19,North,Contact Centre,5
+R00740,2025-09-19,North,Store,10
+R00191,2025-09-19,North,Store,10
+R03191,2025-09-19,North,Online,10
+R01537,2025-09-19,Midlands,Online,5
+R02435,2025-09-19,Midlands,Store,9
+R00502,2025-09-19,North,Store,5
+R02931,2025-09-19,London,Online,8
+R01289,2025-09-19,London,Contact Centre,5
+R01509,2025-09-19,London,Online,5
+R01206,2025-09-19,London,Contact Centre,5
+R00371,2025-09-20,South West,Store,7
+R00721,2025-09-20,Midlands,Contact Centre,8
+R00794,2025-09-20,Scotland,Contact Centre,8
+R02252,2025-09-20,Midlands,Store,5
+R03151,2025-09-20,North,Store,10
+R01505,2025-09-20,Scotland,Online,9
+R00770,2025-09-20,Midlands,Online,10
+R00369,2025-09-20,North,Online,9
+R02493,2025-09-20,London,Store,9
+R02154,2025-09-21,South West,Online,9
+R01593,2025-09-21,London,Store,7
+R01635,2025-09-21,Midlands,Online,10
+R01009,2025-09-21,Midlands,Online,7
+R00667,2025-09-21,North,Online,8
+R02251,2025-09-21,London,Store,5
+R01864,2025-09-21,North,Online,10
+R03055,2025-09-21,Midlands,Contact Centre,6
+R02440,2025-09-22,North,Online,10
+R00567,2025-09-22,Midlands,Store,6
+R02879,2025-09-22,London,Store,4
+R00040,2025-09-22,London,Store,8
+R00489,2025-09-22,North,Online,4
+R02170,2025-09-22,North,Online,10
+R01996,2025-09-22,North,Contact Centre,3
+R01015,2025-09-23,North,Store,7
+R01291,2025-09-23,Midlands,Online,9
+R00855,2025-09-23,London,Store,7
+R00254,2025-09-23,Scotland,Online,10
+R03014,2025-09-23,South West,Online,9
+R00769,2025-09-23,Scotland,Store,8
+R02750,2025-09-23,North,Online,10
+R00002,2025-09-23,Scotland,Store,7
+R00646,2025-09-23,Midlands,Online,7
+R00568,2025-09-23,Scotland,Store,6
+R00904,2025-09-23,North,Store,5
+R01095,2025-09-23,North,Store,9
+R01441,2025-09-23,London,Online,9
+R02207,2025-09-23,London,Online,10
+R00606,2025-09-23,Midlands,Online,4
+R00522,2025-09-23,North,Store,8
+R03076,2025-09-23,London,Store,7
+R01092,2025-09-24,South West,Store,10
+R00275,2025-09-24,North,Contact Centre,4
+R02389,2025-09-24,South West,Contact Centre,3
+R03138,2025-09-24,North,Online,7
+R00535,2025-09-24,South West,Store,10
+R01204,2025-09-24,North,Online,10
+R03016,2025-09-24,Midlands,Store,10
+R02648,2025-09-24,North,Store,6
+R02849,2025-09-24,South West,Store,6
+R00100,2025-09-24,Scotland,Store,5
+R00284,2025-09-25,South West,Store,7
+R00968,2025-09-25,North,Store,7
+R01408,2025-09-25,London,Contact Centre,4
+R00671,2025-09-25,Midlands,Online,6
+R02958,2025-09-25,Scotland,Store,8
+R02622,2025-09-25,North,Online,10
+R02437,2025-09-25,Scotland,Store,7
+R00970,2025-09-25,London,Contact Centre,5
+R00289,2025-09-25,London,Store,7
+R00192,2025-09-26,London,Online,8
+R01269,2025-09-26,London,Store,9
+R02404,2025-09-26,South West,Store,10
+R02908,2025-09-26,Midlands,Store,9
+R01950,2025-09-26,Midlands,Store,10
+R01569,2025-09-26,Midlands,Store,10
+R01415,2025-09-26,Scotland,Store,6
+R00583,2025-09-26,Scotland,Store,7
+R02701,2025-09-26,South West,Contact Centre,8
+R02451,2025-09-26,South West,Store,9
+R00143,2025-09-26,South West,Online,8
+R01881,2025-09-26,Midlands,Store,9
+R02303,2025-09-26,North,Online,7
+R02804,2025-09-27,South West,Contact Centre,4
+R01235,2025-09-27,Midlands,Store,4
+R02652,2025-09-27,South West,Online,5
+R02455,2025-09-27,North,Online,7
+R01964,2025-09-27,Scotland,Contact Centre,9
+R00350,2025-09-27,North,Contact Centre,8
+R02234,2025-09-27,London,Contact Centre,9
+R03140,2025-09-27,Midlands,Store,8
+R00070,2025-09-27,London,Store,6
+R02593,2025-09-27,London,Store,7
+R01037,2025-09-27,London,Contact Centre,8
+R02189,2025-09-27,South West,Online,9
+R02837,2025-09-27,North,Store,8
+R00728,2025-09-27,London,Store,9
+R02795,2025-09-27,London,Store,6
+R00432,2025-09-27,South West,Contact Centre,4
+R01827,2025-09-27,South West,Online,10
+R02544,2025-09-28,Scotland,Online,10
+R01896,2025-09-28,North,Store,10
+R02072,2025-09-28,North,Store,8
+R02397,2025-09-28,North,Online,7
+R01527,2025-09-28,Midlands,Online,2
+R02226,2025-09-28,Midlands,Online,7
+R00644,2025-09-28,Midlands,Store,5
+R02821,2025-09-28,London,Store,9
+R01971,2025-09-28,Midlands,Online,8
+R00939,2025-09-28,London,Store,5
+R00257,2025-09-28,London,Online,10
+R00080,2025-09-28,Scotland,Store,10
+R01468,2025-09-29,North,Store,10
+R01452,2025-09-29,Scotland,Online,10
+R02996,2025-09-29,North,Online,10
+R03010,2025-09-29,North,Online,7
+R02127,2025-09-29,London,Online,7
+R01843,2025-09-30,North,Online,9
+R02115,2025-09-30,Midlands,Online,10
+R01453,2025-09-30,South West,Store,5
+R00265,2025-09-30,Midlands,Online,9
+R00208,2025-09-30,South West,Online,8
+R01725,2025-09-30,London,Contact Centre,8
+R00149,2025-09-30,London,Online,10
+R01673,2025-10-01,North,Store,9
+R03088,2025-10-01,North,Online,8
+R00430,2025-10-01,Scotland,Store,8
+R00958,2025-10-01,London,Store,9
+R02431,2025-10-01,London,Store,7
+R02518,2025-10-01,Scotland,Online,9
+R01731,2025-10-01,London,Contact Centre,8
+R02985,2025-10-01,Midlands,Online,9
+R01412,2025-10-01,Midlands,Online,9
+R00894,2025-10-01,Scotland,Store,7
+R02534,2025-10-01,Midlands,Store,6
+R02530,2025-10-01,London,Store,7
+R00248,2025-10-01,London,Online,5
+R03085,2025-10-01,North,Store,9
+R03049,2025-10-02,London,Online,
+R01660,2025-10-02,Midlands,Online,9
+R02543,2025-10-02,Midlands,Store,9
+R01734,2025-10-02,London,Online,8
+R03097,2025-10-02,North,Store,10
+R00019,2025-10-02,North,Contact Centre,8
+R00294,2025-10-03,North,Online,8
+R01968,2025-10-03,London,Store,8
+R00197,2025-10-03,Midlands,Online,9
+R03165,2025-10-03,South West,Online,10
+R00574,2025-10-03,Scotland,Contact Centre,7
+R00914,2025-10-03,North,Online,10
+R01255,2025-10-04,London,Online,9
+R02308,2025-10-04,Midlands,Store,7
+R00744,2025-10-04,Scotland,Store,10
+R01001,2025-10-04,London,Online,8
+R00961,2025-10-04,North,Store,6
+R00366,2025-10-04,North,Contact Centre,4
+R00090,2025-10-04,North,Contact Centre,10
+R01476,2025-10-05,London,Online,7
+R01938,2025-10-05,North,Contact Centre,8
+R01363,2025-10-05,Scotland,Contact Centre,7
+R00200,2025-10-05,North,Online,6
+R01351,2025-10-05,Scotland,Store,8
+R00380,2025-10-05,London,Store,8
+R01497,2025-10-05,Scotland,Contact Centre,10
+R02232,2025-10-05,North,Contact Centre,2
+R00262,2025-10-05,Midlands,Store,9
+R01063,2025-10-05,London,Store,8
+R01424,2025-10-05,Scotland,Online,10
+R00941,2025-10-05,North,Store,9
+R00525,2025-10-06,London,Online,10
+R01251,2025-10-06,Scotland,Store,8
+R00422,2025-10-06,London,Online,9
+R02110,2025-10-06,South West,Store,10
+R03090,2025-10-06,London,Store,6
+R00033,2025-10-06,London,Store,6
+R00697,2025-10-06,South West,Store,7
+R00789,2025-10-06,London,Store,8
+R00349,2025-10-06,Midlands,Contact Centre,8
+R00679,2025-10-06,London,Store,8
+R00013,2025-10-07,North,Online,8
+R01564,2025-10-07,Scotland,Store,
+R00247,2025-10-07,South West,Online,9
+R01237,2025-10-07,Scotland,Contact Centre,8
+R02633,2025-10-07,North,Online,8
+R00357,2025-10-07,Scotland,Store,8
+R02905,2025-10-07,South West,Store,8
+R00706,2025-10-07,Midlands,Online,9
+R00446,2025-10-07,Midlands,Online,7
+R03096,2025-10-07,Midlands,Store,4
+R02893,2025-10-07,London,Online,6
+R00104,2025-10-07,South West,Store,7
+R02793,2025-10-07,Midlands,Online,9
+R00660,2025-10-07,North,Online,10
+R02556,2025-10-08,Scotland,Online,6
+R02024,2025-10-08,North,Contact Centre,5
+R03002,2025-10-08,London,Online,7
+R00444,2025-10-08,North,Store,9
+R02970,2025-10-08,South West,Store,8
+R01382,2025-10-08,Scotland,Store,6
+R00433,2025-10-08,South West,Online,5
+R01402,2025-10-08,London,Store,4
+R02826,2025-10-08,Midlands,Online,9
+R00647,2025-10-08,London,Store,9
+R00756,2025-10-08,Scotland,Online,8
+R00421,2025-10-08,Scotland,Online,10
+R00261,2025-10-08,Scotland,Online,6
+R02156,2025-10-08,South West,Store,9
+R02467,2025-10-08,Scotland,Online,10
+R00536,2025-10-09,North,Contact Centre,8
+R02011,2025-10-09,North,Online,5
+R02801,2025-10-09,Scotland,Store,7
+R02018,2025-10-09,South West,Online,10
+R00302,2025-10-09,Midlands,Online,9
+R02857,2025-10-09,Midlands,Contact Centre,3
+R00700,2025-10-09,Scotland,Online,10
+R01114,2025-10-09,North,Online,8
+R01577,2025-10-09,Midlands,Online,7
+R01267,2025-10-10,London,Contact Centre,7
+R03181,2025-10-10,Scotland,Contact Centre,9
+R00804,2025-10-10,Scotland,Online,6
+R02589,2025-10-10,London,Store,8
+R00199,2025-10-10,South West,Online,9
+R00823,2025-10-10,North,Store,8
+R01264,2025-10-10,Scotland,Online,9
+R02203,2025-10-10,North,Online,8
+R02508,2025-10-11,Midlands,Online,10
+R02946,2025-10-11,London,Store,6
+R00438,2025-10-11,Scotland,Contact Centre,8
+R01636,2025-10-11,Scotland,Online,10
+R01173,2025-10-11,North,Online,7
+R03094,2025-10-11,South West,Store,8
+R01685,2025-10-11,Midlands,Contact Centre,8
+R01321,2025-10-11,Midlands,Contact Centre,9
+R01506,2025-10-11,Midlands,Store,10
+R02216,2025-10-12,Scotland,Online,5
+R03127,2025-10-12,South West,Contact Centre,8
+R00792,2025-10-13,London,Online,9
+R01072,2025-10-13,South West,Online,10
+R00901,2025-10-13,London,Contact Centre,5
+R01011,2025-10-13,North,Store,7
+R00588,2025-10-13,Midlands,Online,10
+R00162,2025-10-13,North,Online,8
+R01605,2025-10-13,Scotland,Contact Centre,10
+R01174,2025-10-13,London,Store,6
+R01244,2025-10-13,London,Online,10
+R01306,2025-10-14,Midlands,Online,9
+R02472,2025-10-14,Midlands,Store,8
+R03033,2025-10-14,North,Online,6
+R00348,2025-10-14,Midlands,Online,10
+R02877,2025-10-14,North,Store,10
+R00239,2025-10-14,London,Online,8
+R02828,2025-10-14,London,Online,5
+R02966,2025-10-14,North,Online,8
+R00759,2025-10-14,London,Store,10
+R00027,2025-10-14,London,Online,8
+R02258,2025-10-15,London,Store,7
+R02254,2025-10-15,Midlands,Store,10
+R01024,2025-10-15,London,Store,6
+R01093,2025-10-15,Midlands,Store,6
+R01796,2025-10-15,London,Store,6
+R03133,2025-10-15,London,Online,8
+R02626,2025-10-15,London,Online,10
+R00774,2025-10-15,Midlands,Store,10
+R01246,2025-10-16,London,Store,10
+R02583,2025-10-16,Midlands,Online,8
+R00682,2025-10-16,North,Store,7
+R01629,2025-10-16,London,Online,5
+R02570,2025-10-16,London,Online,9
+R01443,2025-10-16,South West,Store,8
+R01602,2025-10-16,South West,Online,10
+R02470,2025-10-16,South West,Contact Centre,9
+R02229,2025-10-17,London,Online,10
+R02816,2025-10-17,London,Store,10
+R00916,2025-10-17,North,Online,8
+R01250,2025-10-17,North,Contact Centre,5
+R02993,2025-10-18,Scotland,Online,6
+R01762,2025-10-18,Midlands,Store,5
+R01939,2025-10-18,Midlands,Online,5
+R02657,2025-10-18,Scotland,Online,9
+R00856,2025-10-18,London,Contact Centre,7
+R00391,2025-10-18,London,Online,6
+R00394,2025-10-19,Midlands,Online,8
+R02866,2025-10-19,London,Store,10
+R01795,2025-10-19,Midlands,Store,7
+R02292,2025-10-19,South West,Store,9
+R02348,2025-10-19,North,Store,9
+R00062,2025-10-19,Scotland,Online,7
+R02169,2025-10-20,South West,Store,8
+R02595,2025-10-20,Midlands,Store,4
+R01025,2025-10-20,South West,Contact Centre,6
+R02606,2025-10-20,North,Store,9
+R01848,2025-10-20,London,Store,9
+R00082,2025-10-20,London,Online,7
+R00623,2025-10-20,London,Contact Centre,9
+R02968,2025-10-21,South West,Contact Centre,7
+R02778,2025-10-21,North,Online,5
+R00566,2025-10-21,Scotland,Store,9
+R00373,2025-10-21,London,Store,
+R01422,2025-10-21,Scotland,Online,10
+R01918,2025-10-21,North,Online,7
+R00207,2025-10-22,Midlands,Online,10
+R02335,2025-10-22,London,Online,4
+R03132,2025-10-22,North,Store,9
+R02307,2025-10-22,Scotland,Online,7
+R02930,2025-10-22,Midlands,Online,10
+R00132,2025-10-22,Midlands,Online,5
+R02026,2025-10-22,London,Store,9
+R02041,2025-10-22,North,Store,9
+R02896,2025-10-22,London,Online,8
+R03043,2025-10-22,Scotland,Store,8
+R02496,2025-10-23,Midlands,Store,5
+R00981,2025-10-23,Scotland,Contact Centre,10
+R01300,2025-10-23,Midlands,Online,8
+R01164,2025-10-23,South West,Online,7
+R01317,2025-10-23,London,Online,7
+R01608,2025-10-23,Scotland,Online,6
+R00022,2025-10-23,North,Store,9
+R01746,2025-10-23,North,Online,8
+R02728,2025-10-23,London,Contact Centre,5
+R02964,2025-10-23,Midlands,Contact Centre,5
+R00365,2025-10-23,North,Online,10
+R02190,2025-10-23,London,Online,8
+R03020,2025-10-23,North,Online,10
+R00110,2025-10-23,North,Contact Centre,5
+R02381,2025-10-23,North,Online,9
+R02240,2025-10-23,London,Contact Centre,6
+R01089,2025-10-23,North,Store,7
+R02393,2025-10-23,Midlands,Online,8
+R01357,2025-10-23,North,Store,9
+R02736,2025-10-24,Scotland,Contact Centre,9
+R01915,2025-10-24,South West,Online,7
+R01902,2025-10-24,Midlands,Store,10
+R00092,2025-10-24,Scotland,Store,9
+R01839,2025-10-24,North,Online,10
+R01328,2025-10-24,South West,Store,9
+R00873,2025-10-24,London,Store,7
+R00324,2025-10-24,London,Store,7
+R00451,2025-10-24,Midlands,Store,7
+R02941,2025-10-24,London,Online,8
+R03126,2025-10-24,London,Online,8
+R00141,2025-10-24,London,Online,8
+R01271,2025-10-24,London,Contact Centre,8
+R02206,2025-10-25,London,Store,8
+R02291,2025-10-25,South West,Contact Centre,7
+R02691,2025-10-25,Midlands,Online,10
+R00924,2025-10-25,South West,Online,6
+R01501,2025-10-25,North,Online,8
+R03134,2025-10-25,South West,Contact Centre,8
+R01405,2025-10-25,Scotland,Store,8
+R01433,2025-10-25,South West,Store,8
+R00618,2025-10-25,South West,Store,6
+R01438,2025-10-26,London,Online,7
+R01100,2025-10-26,Scotland,Store,4
+R01101,2025-10-26,London,Online,10
+R00346,2025-10-26,Scotland,Store,9
+R02050,2025-10-26,North,Store,7
+R02782,2025-10-26,London,Online,8
+R00504,2025-10-26,Midlands,Online,8
+R00702,2025-10-26,North,Online,5
+R01765,2025-10-26,London,Online,8
+R01714,2025-10-26,South West,Online,7
+R02988,2025-10-27,Midlands,Store,8
+R01470,2025-10-27,South West,Online,6
+R02495,2025-10-27,Midlands,Online,7
+R03183,2025-10-27,Scotland,Store,10
+R02604,2025-10-27,Scotland,Online,10
+R00318,2025-10-27,North,Store,6
+R03022,2025-10-27,London,Online,7
+R02171,2025-10-27,London,Online,7
+R02702,2025-10-27,London,Store,8
+R01653,2025-10-27,North,Contact Centre,7
+R00229,2025-10-27,North,Online,7
+R01165,2025-10-27,South West,Store,8
+R00640,2025-10-27,London,Online,8
+R01437,2025-10-28,South West,Store,9
+R01332,2025-10-28,North,Store,8
+R00210,2025-10-28,North,Online,8
+R01659,2025-10-28,Scotland,Store,10
+R01716,2025-10-28,South West,Online,10
+R02062,2025-10-28,Scotland,Store,10
+R01888,2025-10-28,Midlands,Store,8
+R00423,2025-10-29,South West,Contact Centre,10
+R02771,2025-10-29,Midlands,Online,7
+R02054,2025-10-29,South West,Online,7
+R00766,2025-10-29,London,Online,4
+R01157,2025-10-29,London,Store,10
+R01199,2025-10-29,South West,Online,10
+R00215,2025-10-29,North,Online,7
+R01417,2025-10-29,Midlands,Online,5
+R00245,2025-10-29,North,Online,6
+R02478,2025-10-30,London,Online,10
+R00634,2025-10-30,London,Online,7
+R01895,2025-10-30,London,Store,9
+R02704,2025-10-30,London,Online,6
+R02954,2025-10-30,Midlands,Store,10
+R00498,2025-10-30,Midlands,Contact Centre,6
+R01998,2025-10-30,London,Contact Centre,5
+R01741,2025-10-30,Midlands,Online,8
+R00821,2025-10-30,Scotland,Store,9
+R01981,2025-10-30,North,Online,6
+R02951,2025-10-31,Midlands,Store,6
+R02323,2025-10-31,Midlands,Online,9
+R02358,2025-10-31,North,Store,4
+R02003,2025-10-31,Midlands,Store,10
+R03021,2025-10-31,London,Store,8
+R02915,2025-10-31,Midlands,Online,8
+R00060,2025-11-01,South West,Online,10
+R03083,2025-11-01,Scotland,Contact Centre,7
+R02364,2025-11-01,London,Contact Centre,6
+R00103,2025-11-01,Scotland,Store,7
+R02647,2025-11-01,Midlands,Online,6
+R00129,2025-11-01,South West,Store,4
+R01845,2025-11-01,North,Online,8
+R01787,2025-11-01,Midlands,Store,10
+R02255,2025-11-01,North,Store,6
+R01416,2025-11-02,North,Contact Centre,
+R02934,2025-11-02,North,Online,7
+R00767,2025-11-02,London,Contact Centre,5
+R00065,2025-11-02,North,Online,8
+R00622,2025-11-02,Midlands,Contact Centre,8
+R01061,2025-11-02,North,Contact Centre,8
+R02761,2025-11-03,London,Online,6
+R01297,2025-11-03,London,Store,6
+R01676,2025-11-03,Midlands,Contact Centre,6
+R02599,2025-11-03,Midlands,Contact Centre,9
+R02607,2025-11-03,London,Online,7
+R00602,2025-11-03,South West,Store,8
+R02861,2025-11-03,South West,Contact Centre,8
+R02942,2025-11-04,North,Store,8
+R02076,2025-11-04,Scotland,Online,8
+R01917,2025-11-04,Midlands,Contact Centre,7
+R02714,2025-11-04,Midlands,Online,8
+R02490,2025-11-04,South West,Online,5
+R01042,2025-11-04,North,Contact Centre,6
+R02244,2025-11-04,North,Store,8
+R02852,2025-11-04,South West,Store,9
+R01208,2025-11-04,London,Online,6
+R02276,2025-11-05,North,Online,10
+R00049,2025-11-05,South West,Store,8
+R01039,2025-11-05,North,Online,7
+R01566,2025-11-05,London,Store,6
+R01696,2025-11-05,Midlands,Contact Centre,9
+R01485,2025-11-05,Midlands,Online,8
+R02698,2025-11-05,Midlands,Contact Centre,6
+R01292,2025-11-06,North,Store,6
+R02661,2025-11-06,North,Store,5
+R00165,2025-11-06,Scotland,Store,9
+R01868,2025-11-06,Midlands,Online,5
+R01538,2025-11-06,North,Contact Centre,6
+R03164,2025-11-06,Scotland,Online,6
+R01049,2025-11-06,London,Contact Centre,7
+R00884,2025-11-06,Scotland,Online,10
+R01729,2025-11-06,London,Online,10
+R01276,2025-11-07,North,Store,7
+R02527,2025-11-07,London,Contact Centre,6
+R01618,2025-11-07,North,Online,10
+R00730,2025-11-07,Scotland,Store,7
+R01766,2025-11-07,London,Store,6
+R03101,2025-11-07,Scotland,Online,8
+R02753,2025-11-08,London,Online,8
+R00206,2025-11-08,Scotland,Store,6
+R02173,2025-11-08,North,Contact Centre,8
+R01124,2025-11-08,London,Online,9
+R01677,2025-11-08,Midlands,Contact Centre,9
+R01834,2025-11-08,North,Store,7
+R02035,2025-11-08,Scotland,Store,7
+R00071,2025-11-08,North,Store,10
+R02880,2025-11-08,North,Contact Centre,4
+R03182,2025-11-08,North,Online,10
+R02053,2025-11-09,South West,Contact Centre,10
+R02884,2025-11-09,North,Store,10
+R02644,2025-11-09,Midlands,Store,7
+R01722,2025-11-09,North,Online,10
+R02971,2025-11-09,South West,Store,9
+R00980,2025-11-09,Scotland,Store,9
+R01581,2025-11-09,London,Contact Centre,8
+R01160,2025-11-09,North,Store,9
+R01168,2025-11-09,North,Store,10
+R00736,2025-11-09,Midlands,Online,5
+R02403,2025-11-09,Scotland,Store,9
+R03168,2025-11-09,North,Online,8
+R01713,2025-11-10,London,Online,9
+R02547,2025-11-10,Midlands,Store,9
+R01872,2025-11-10,London,Contact Centre,6
+R00260,2025-11-10,North,Online,10
+R02640,2025-11-10,London,Contact Centre,8
+R03149,2025-11-10,Scotland,Online,7
+R01768,2025-11-10,Scotland,Store,10
+R00854,2025-11-11,North,Store,8
+R01478,2025-11-11,London,Store,9
+R02794,2025-11-11,North,Store,10
+R00142,2025-11-11,London,Store,8
+R01512,2025-11-11,Midlands,Online,10
+R01936,2025-11-11,South West,Store,7
+R02914,2025-11-11,South West,Contact Centre,5
+R00681,2025-11-11,South West,Store,7
+R01780,2025-11-11,London,Online,8
+R02352,2025-11-11,North,Store,7
+R01374,2025-11-11,London,Contact Centre,4
+R01730,2025-11-11,South West,Online,10
+R01700,2025-11-12,Scotland,Contact Centre,4
+R00632,2025-11-12,London,Store,
+R03060,2025-11-12,Midlands,Store,7
+R00012,2025-11-12,South West,Contact Centre,8
+R00326,2025-11-12,Scotland,Store,9
+R01688,2025-11-12,London,Online,8
+R00956,2025-11-12,Midlands,Store,10
+R00136,2025-11-12,Midlands,Store,10
+R01997,2025-11-12,London,Online,8
+R02201,2025-11-13,North,Online,9
+R02747,2025-11-13,Scotland,Store,7
+R03128,2025-11-13,Scotland,Online,8
+R02149,2025-11-13,London,Online,7
+R00907,2025-11-13,North,Store,8
+R02846,2025-11-13,South West,Contact Centre,5
+R03137,2025-11-14,Scotland,Online,5
+R03091,2025-11-14,South West,Online,9
+R01154,2025-11-14,Midlands,Store,6
+R02439,2025-11-14,London,Contact Centre,7
+R02967,2025-11-14,South West,Online,10
+R03064,2025-11-14,London,Online,9
+R02211,2025-11-14,South West,Online,6
+R02789,2025-11-14,London,Online,8
+R01294,2025-11-14,North,Store,5
+R02658,2025-11-14,South West,Online,10
+R02329,2025-11-14,North,Store,7
+R02052,2025-11-15,Midlands,Online,9
+R02936,2025-11-15,Midlands,Online,10
+R00187,2025-11-15,Midlands,Store,6
+R01568,2025-11-15,London,Online,9
+R01450,2025-11-15,London,Contact Centre,8
+R02030,2025-11-16,South West,Store,8
+R00954,2025-11-16,Scotland,Online,6
+R00611,2025-11-16,Midlands,Store,3
+R00828,2025-11-16,Midlands,Contact Centre,10
+R01182,2025-11-16,London,Contact Centre,5
+R00016,2025-11-17,London,Online,7
+R00864,2025-11-17,South West,Online,10
+R03109,2025-11-17,Midlands,Store,10
+R00556,2025-11-17,Midlands,Store,9
+R01952,2025-11-18,North,Store,7
+R02775,2025-11-18,Scotland,Online,9
+R02725,2025-11-18,London,Store,6
+R00834,2025-11-18,London,Store,10
+R02195,2025-11-18,North,Store,9
+R01397,2025-11-19,North,Online,10
+R02108,2025-11-19,Scotland,Online,8
+R02549,2025-11-19,South West,Online,7
+R02756,2025-11-19,London,Store,5
+R01934,2025-11-20,Midlands,Store,6
+R02612,2025-11-20,Scotland,Online,10
+R02601,2025-11-20,South West,Store,8
+R01266,2025-11-20,London,Online,9
+R03100,2025-11-20,London,Online,9
+R00097,2025-11-20,South West,Store,4
+R00953,2025-11-20,London,Store,7
+R01364,2025-11-20,Midlands,Online,10
+R01901,2025-11-20,Scotland,Online,6
+R02845,2025-11-20,Midlands,Online,7
+R02735,2025-11-21,North,Online,6
+R01760,2025-11-21,South West,Contact Centre,7
+R02066,2025-11-21,North,Contact Centre,10
+R02236,2025-11-21,London,Store,7
+R00604,2025-11-22,South West,Online,6
+R01999,2025-11-22,Midlands,Online,8
+R01753,2025-11-22,South West,Store,8
+R01226,2025-11-22,Midlands,Store,8
+R03080,2025-11-22,Scotland,Store,7
+R01805,2025-11-22,North,Store,
+R00748,2025-11-22,Midlands,Online,10
+R03158,2025-11-22,London,Store,8
+R01801,2025-11-22,Scotland,Online,10
+R01847,2025-11-22,South West,Contact Centre,7
+R02139,2025-11-22,North,Online,10
+R01442,2025-11-22,South West,Online,8
+R01927,2025-11-22,North,Online,8
+R02538,2025-11-23,South West,Online,10
+R00797,2025-11-23,North,Online,7
+R00872,2025-11-23,Scotland,Contact Centre,5
+R02780,2025-11-23,North,Store,10
+R03042,2025-11-23,North,Store,8
+R02121,2025-11-23,London,Store,6
+R02093,2025-11-23,London,Contact Centre,6
+R01572,2025-11-23,London,Online,8
+R00920,2025-11-23,Midlands,Online,10
+R01070,2025-11-24,London,Online,8
+R01426,2025-11-24,London,Online,8
+R02540,2025-11-24,Midlands,Store,10
+R02220,2025-11-24,South West,Store,7
+R01439,2025-11-24,North,Store,8
+R01576,2025-11-24,London,Online,7
+R01373,2025-11-25,Scotland,Store,5
+R02561,2025-11-25,Midlands,Contact Centre,7
+R01775,2025-11-25,London,Contact Centre,10
+R00005,2025-11-25,North,Online,8
+R03102,2025-11-25,London,Store,7
+R02671,2025-11-25,North,Online,9
+R02956,2025-11-25,London,Online,7
+R00751,2025-11-26,Midlands,Store,5
+R01570,2025-11-26,North,Online,10
+R02394,2025-11-26,North,Contact Centre,10
+R02651,2025-11-26,South West,Contact Centre,5
+R01835,2025-11-26,South West,Store,8
+R00614,2025-11-26,Midlands,Store,4
+R02459,2025-11-26,Midlands,Online,10
+R01597,2025-11-26,Midlands,Online,10
+R00140,2025-11-26,Midlands,Store,8
+R01697,2025-11-27,Scotland,Online,10
+R02600,2025-11-27,North,Online,10
+R02043,2025-11-27,London,Contact Centre,10
+R02420,2025-11-27,Scotland,Store,5
+R02514,2025-11-27,Midlands,Store,10
+R00850,2025-11-27,North,Online,9
+R01120,2025-11-27,London,Online,5
+R00973,2025-11-27,North,Online,10
+R00684,2025-11-27,South West,Contact Centre,9
+R03194,2025-11-27,London,Online,6
+R00908,2025-11-28,North,Store,8
+R02033,2025-11-28,Scotland,Store,9
+R02523,2025-11-28,Scotland,Store,9
+R01372,2025-11-28,Midlands,Online,9
+R00842,2025-11-28,South West,Store,10
+R00601,2025-11-28,North,Online,6
+R00659,2025-11-28,Midlands,Online,9
+R01562,2025-11-28,Scotland,Online,10
+R00277,2025-11-28,London,Online,10
+R00650,2025-11-28,South West,Contact Centre,7
+R00173,2025-11-28,Midlands,Store,7
+R02027,2025-11-29,Midlands,Store,7
+R01220,2025-11-29,Midlands,Online,7
+R02006,2025-11-29,South West,Store,7
+R02812,2025-11-29,South West,Store,10
+R01499,2025-11-30,North,Store,8
+R00155,2025-11-30,London,Online,8
+R00516,2025-11-30,London,Store,7
+R00819,2025-11-30,Midlands,Store,5
+R00599,2025-11-30,London,Contact Centre,6
+R02084,2025-11-30,South West,Online,7
+R00990,2025-11-30,Scotland,Contact Centre,8
+R02719,2025-11-30,Scotland,Online,7
+R02288,2025-11-30,South West,Store,10
+R01230,2025-11-30,North,Online,7
+R01083,2025-11-30,London,Online,7
+R00866,2025-12-01,London,Online,4
+R03177,2025-12-01,London,Store,9
+R02059,2025-12-01,Midlands,Online,10
+R02585,2025-12-01,North,Online,8
+R00876,2025-12-01,North,Online,5
+R02241,2025-12-01,South West,Online,6
+R00428,2025-12-01,South West,Online,6
+R02065,2025-12-02,London,Store,6
+R00138,2025-12-02,Scotland,Store,5
+R02947,2025-12-02,North,Store,6
+R00952,2025-12-02,London,Online,7
+R02953,2025-12-02,South West,Online,9
+R01293,2025-12-02,North,Store,9
+R02164,2025-12-02,London,Store,10
+R00158,2025-12-02,Midlands,Store,6
+R01162,2025-12-02,Scotland,Contact Centre,7
+R01994,2025-12-03,London,Online,10
+R02613,2025-12-03,London,Online,7
+R01080,2025-12-03,North,Contact Centre,7
+R00550,2025-12-03,Scotland,Online,10
+R01136,2025-12-03,South West,Store,10
+R00997,2025-12-03,Midlands,Store,5
+R01521,2025-12-03,Midlands,Online,10
+R01511,2025-12-03,North,Online,10
+R00680,2025-12-03,London,Online,9
+R02592,2025-12-03,South West,Store,7
+R02705,2025-12-04,North,Online,9
+R02835,2025-12-04,South West,Contact Centre,7
+R01179,2025-12-04,Scotland,Online,6
+R03160,2025-12-04,North,Contact Centre,10
+R01707,2025-12-04,London,Store,10
+R02013,2025-12-04,South West,Contact Centre,10
+R00813,2025-12-04,Midlands,Online,8
+R01687,2025-12-05,London,Store,7
+R01298,2025-12-05,Midlands,Online,8
+R00458,2025-12-05,London,Store,7
+R00875,2025-12-05,North,Online,8
+R00023,2025-12-05,London,Store,9
+R00846,2025-12-05,London,Store,7
+R02506,2025-12-05,Scotland,Store,4
+R00886,2025-12-05,South West,Store,6
+R01504,2025-12-05,North,Store,9
+R01828,2025-12-06,North,Store,7
+R01337,2025-12-06,South West,Online,6
+R00491,2025-12-06,Midlands,Online,5
+R00978,2025-12-06,North,Store,7
+R00315,2025-12-06,South West,Online,7
+R01970,2025-12-06,London,Store,8
+R02984,2025-12-07,London,Contact Centre,7
+R02218,2025-12-07,Scotland,Online,9
+R02060,2025-12-07,Midlands,Online,10
+R02185,2025-12-07,North,Store,8
+R02901,2025-12-07,South West,Contact Centre,8
+R00018,2025-12-07,Midlands,Store,8
+R00412,2025-12-07,Midlands,Contact Centre,4
+R02063,2025-12-07,Midlands,Store,7
+R00241,2025-12-07,London,Store,7
+R02597,2025-12-07,Midlands,Contact Centre,8
+R02379,2025-12-07,North,Online,10
+R02350,2025-12-07,North,Contact Centre,6
+R01064,2025-12-07,Scotland,Store,10
+R02676,2025-12-08,Midlands,Online,10
+R00041,2025-12-08,Scotland,Store,6
+R02973,2025-12-08,North,Store,6
+R02021,2025-12-08,London,Online,9
+R00106,2025-12-08,South West,Online,4
+R01132,2025-12-08,Scotland,Online,8
+R00582,2025-12-09,South West,Store,10
+R02916,2025-12-09,Scotland,Online,9
+R02858,2025-12-09,North,Online,7
+R00172,2025-12-09,London,Online,8
+R01953,2025-12-09,North,Store,4
+R01783,2025-12-09,Midlands,Store,5
+R02487,2025-12-09,North,Online,10
+R01985,2025-12-09,Scotland,Online,
+R00118,2025-12-09,North,Store,10
+R00514,2025-12-09,Scotland,Online,8
+R00773,2025-12-09,Midlands,Online,Don't know
+R01057,2025-12-09,Scotland,Online,6
+R00298,2025-12-09,London,Store,5
+R01791,2025-12-09,London,Online,10
+R03047,2025-12-09,North,Contact Centre,7
+R00183,2025-12-10,North,Online,8
+R01803,2025-12-10,North,Online,8
+R02541,2025-12-10,Midlands,Store,8
+R02638,2025-12-10,North,Online,5
+R01794,2025-12-10,Scotland,Store,10
+R01941,2025-12-10,London,Online,8
+R00633,2025-12-10,Midlands,Store,10
+R03008,2025-12-10,London,Store,7
+R00471,2025-12-10,North,Online,7
+R01532,2025-12-11,London,Online,9
+R00037,2025-12-11,Midlands,Online,8
+R02875,2025-12-11,South West,Online,9
+R02614,2025-12-11,North,Online,10
+R00322,2025-12-11,Midlands,Online,8
+R03023,2025-12-11,Scotland,Online,7
+R02295,2025-12-12,Midlands,Store,10
+R01362,2025-12-12,Midlands,Store,8
+R00335,2025-12-12,Midlands,Online,8
+R01651,2025-12-12,London,Online,7
+R01432,2025-12-12,Midlands,Online,4
+R02031,2025-12-12,Scotland,Store,9
+R01882,2025-12-12,London,Online,8
+R02317,2025-12-12,North,Online,7
+R00330,2025-12-12,Scotland,Store,10
+R00217,2025-12-12,Scotland,Store,10
+R01595,2025-12-13,North,Online,9
+R02384,2025-12-13,London,Store,6
+R02831,2025-12-13,London,Store,6
+R02306,2025-12-13,London,Contact Centre,5
+R03093,2025-12-13,North,Contact Centre,6
+R00710,2025-12-13,Midlands,Online,8
+R01034,2025-12-13,North,Store,8
+R00243,2025-12-13,London,Online,7
+R02813,2025-12-13,Midlands,Contact Centre,10
+R00367,2025-12-14,London,Online,2
+R01924,2025-12-14,South West,Contact Centre,8
+R02755,2025-12-14,North,Online,10
+R01167,2025-12-14,Scotland,Online,5
+R00368,2025-12-14,London,Online,9
+R00179,2025-12-14,London,Contact Centre,9
+R01769,2025-12-14,Midlands,Contact Centre,7
+R03141,2025-12-14,North,Store,8
+R02590,2025-12-14,Scotland,Contact Centre,6
+R01012,2025-12-14,North,Online,6
+R00099,2025-12-15,Midlands,Contact Centre,5
+R01743,2025-12-15,Midlands,Contact Centre,10
+R01654,2025-12-15,South West,Online,10
+R03121,2025-12-15,Scotland,Store,8
+R02315,2025-12-15,London,Store,9
+R02423,2025-12-15,Midlands,Online,7
+R00478,2025-12-15,Midlands,Online,10
+R02820,2025-12-15,South West,Store,8
+R02126,2025-12-15,Scotland,Store,7
+R01241,2025-12-15,North,Store,9
+R02855,2025-12-15,London,Online,4
+R01116,2025-12-15,Midlands,Store,Don't know
+R01216,2025-12-16,North,Online,9
+R01260,2025-12-16,Midlands,Store,4
+R01481,2025-12-16,North,Store,9
+R02382,2025-12-16,London,Contact Centre,7
+R01802,2025-12-17,South West,Contact Centre,7
+R01522,2025-12-17,North,Store,3
+R00972,2025-12-17,London,Store,8
+R00610,2025-12-17,London,Online,6
+R02282,2025-12-17,Midlands,Online,9
+R01087,2025-12-17,North,Contact Centre,6
+R01096,2025-12-17,South West,Store,9
+R00453,2025-12-17,London,Contact Centre,5
+R01041,2025-12-17,Midlands,Contact Centre,8
+R02792,2025-12-17,Midlands,Online,6
+R02830,2025-12-18,South West,Contact Centre,7
+R01134,2025-12-18,London,Store,9
+R02989,2025-12-18,South West,Online,10
+R01911,2025-12-18,London,Store,7
+R00447,2025-12-18,Midlands,Contact Centre,9
+R01218,2025-12-18,London,Contact Centre,7
+R00912,2025-12-18,Midlands,Contact Centre,8
+R00741,2025-12-18,North,Store,9
+R02392,2025-12-18,North,Online,10
+R02114,2025-12-18,North,Contact Centre,8
+R01410,2025-12-18,North,Contact Centre,7
+R02925,2025-12-18,London,Store,7
+R01489,2025-12-18,Scotland,Contact Centre,7
+R01751,2025-12-19,North,Contact Centre,6
+R01212,2025-12-19,North,Store,10
+R00507,2025-12-19,North,Contact Centre,7
+R00139,2025-12-19,London,Store,3
+R00310,2025-12-19,Midlands,Store,7
+R00564,2025-12-19,London,Contact Centre,7
+R00300,2025-12-19,North,Store,4
+R00120,2025-12-19,North,Online,6
+R02531,2025-12-20,London,Store,7
+R02355,2025-12-20,Midlands,Online,8
+R01549,2025-12-20,London,Contact Centre,4
+R02940,2025-12-20,South West,Contact Centre,8
+R02418,2025-12-20,London,Store,7
+R01388,2025-12-20,London,Store,9
+R01763,2025-12-20,North,Store,5
+R02138,2025-12-20,North,Store,10
+R01209,2025-12-20,Midlands,Store,9
+R03056,2025-12-21,South West,Store,10
+R02760,2025-12-21,Midlands,Store,8
+R02017,2025-12-21,Midlands,Online,9
+R00704,2025-12-21,London,Online,7
+R03161,2025-12-21,Midlands,Online,7
+R03099,2025-12-21,Scotland,Online,7
+R01394,2025-12-21,Midlands,Online,8
+R01553,2025-12-21,Scotland,Contact Centre,10
+R02446,2025-12-21,North,Store,10
+R01972,2025-12-21,Scotland,Store,4
+R01678,2025-12-22,Scotland,Online,8
+R02321,2025-12-22,South West,Store,8
+R00053,2025-12-22,London,Store,5
+R02087,2025-12-22,London,Contact Centre,7
+R01407,2025-12-22,North,Store,8
+R02868,2025-12-22,North,Online,10
+R01898,2025-12-22,Midlands,Store,8
+R00571,2025-12-23,North,Store,6
+R01724,2025-12-23,South West,Online,7
+R02744,2025-12-23,Midlands,Online,10
+R01245,2025-12-23,North,Online,7
+R02690,2025-12-23,North,Online,8
+R01193,2025-12-23,South West,Online,8
+R00442,2025-12-23,London,Online,7
+R02015,2025-12-23,London,Store,10
+R00008,2025-12-24,London,Store,7
+R02960,2025-12-24,South West,Online,6
+R02326,2025-12-24,South West,Online,9
+R02057,2025-12-24,Midlands,Store,9
+R00418,2025-12-24,London,Contact Centre,8
+R02342,2025-12-24,Midlands,Online,7
+R00810,2025-12-24,North,Store,6
+R03130,2025-12-24,North,Store,
+R00559,2025-12-24,London,Store,8
+R01622,2025-12-24,London,Online,8
+R01315,2025-12-24,London,Contact Centre,6
+R02616,2025-12-24,North,Online,10
+R01942,2025-12-25,North,Contact Centre,8
+R01853,2025-12-25,North,Store,10
+R00657,2025-12-25,South West,Contact Centre,9
+R01299,2025-12-25,North,Store,8
+R02456,2025-12-25,London,Contact Centre,9
+R00091,2025-12-25,Midlands,Online,10
+R03197,2025-12-25,North,Store,10
+R00086,2025-12-25,South West,Online,7
+R01844,2025-12-26,Scotland,Online,8
+R00742,2025-12-26,South West,Online,10
+R00648,2025-12-26,Scotland,Store,4
+R02497,2025-12-26,London,Contact Centre,6
+R01547,2025-12-26,London,Contact Centre,5
+R02227,2025-12-26,Midlands,Contact Centre,6
+R02737,2025-12-26,North,Online,10
+R01560,2025-12-26,North,Store,10
+R02754,2025-12-26,North,Store,9
+R03185,2025-12-26,London,Online,10
+R01188,2025-12-27,Scotland,Online,7
+R00076,2025-12-27,London,Online,3
+R02860,2025-12-27,North,Online,8
+R02249,2025-12-27,South West,Store,9
+R00081,2025-12-27,London,Store,9
+R00253,2025-12-27,London,Store,9
+R01579,2025-12-27,North,Online,10
+R00670,2025-12-27,Midlands,Store,7
+R00993,2025-12-27,Midlands,Online,10
+R00333,2025-12-28,London,Store,3
+R02419,2025-12-28,London,Online,10
+R00297,2025-12-28,Scotland,Contact Centre,4
+R01877,2025-12-28,Midlands,Online,7
+R01744,2025-12-28,London,Store,8
+R00619,2025-12-29,North,Online,9
+R00466,2025-12-29,Scotland,Contact Centre,9
+R00212,2025-12-29,South West,Store,6
+R03129,2025-12-29,South West,Store,10
+R02371,2025-12-29,North,Online,5
+R00398,2025-12-29,Midlands,Online,9
+R01781,2025-12-29,Scotland,Store,7
+R00107,2025-12-29,South West,Store,9
+R02632,2025-12-29,Midlands,Store,6
+R02302,2025-12-29,South West,Store,10
+R00840,2025-12-30,London,Online,9
+R00085,2025-12-30,North,Contact Centre,
+R02718,2025-12-30,Midlands,Store,Don't know
+R01575,2025-12-30,London,Store,5
+R03082,2025-12-30,Scotland,Online,9
+R01190,2025-12-30,Midlands,Store,9
+R02097,2025-12-30,South West,Store,10
+R00616,2025-12-30,Midlands,Store,8
+R01764,2025-12-30,North,Store,10
+R01312,2025-12-31,Midlands,Contact Centre,7
+R00701,2025-12-31,Scotland,Store,7
+R01749,2025-12-31,Midlands,Online,10
+R00880,2025-12-31,London,Online,10
+R01740,2025-12-31,North,Online,8
+R02176,2025-12-31,South West,Online,8
+R02354,2025-12-31,Midlands,Contact Centre,7
+R02998,2025-12-31,London,Store,9
+R01109,2025-12-31,London,Store,10

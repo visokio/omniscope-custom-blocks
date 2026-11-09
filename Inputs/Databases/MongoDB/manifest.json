@@ -11,23 +11,26 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": "data:image/png;base64,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",
-    "description": "A connector for MongoDB",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAARy0lEQVR42u2de5CkVXnGn6+7Z2ZvwHJZri4QWEAlCAFJBCqgwBZbJiBLFI1cogIGghFThkAgmooIUWMsEgiJZuUSQwohaiWCEARCBFMlEEIMV+XOCuxS4C4LOzsz3f3LH99zal6/9O7O7NxO7/ZX1dU90193n/M+7/2c876FuuQCivBnTVIhqS2pLmlA0taSFknaW9JCSTtI6vM9qyS9KOkZSU9IelXSoKQRfxeS2kVRABRFUdAtdCm6BTgTNwGHQdtJ0lGSjpZ0oKRtJfVLaviRrrbBakpaI+mnkn4g6Q5JT0t6M/2cH0q/2QNw8oHrs5SdIulESbtI2qoCmCIQHebaNmivSbpH0rWS7vP/CkkURdGOY+gBOE7wEtGAenhrF0kfNXhvkTTbKrDlx7oOwCmALzPArDD3pqQVlsYrJD1iaS2iWs0VyCJH4EywIoxvrqSlks6R9HZJcwIoCbTrJH3V0rWh61BJf2ob2W8bWhjI5yR9U9IyScujxHajfZwRBwWoAXU/zwLeA3wHWAG0/BgB1gH3Ae8FDgS2Awp/bkOPWcB+wEHAV4BBYAho+rvX+HvPBLbxZxoeU9HBoeqBl55NqATgW4ErgKcNWAsY9uN54GRgL6AvfMfGwKuF36oB2wKHA8sM4khgkpXAvwDHAgORsdbjGW/RwNUThwMLgPOB/7Z0JIkbttR9DDgAmFUBoxjHb0cwa/7N9wM/tSQO+3ebZqCrgP2DZmhsseBV1GUjEQOYDXwQuAN4LQCX1OX5wGFV4CY6lgBkvxnjjKBSh4G2f/8h4I+BXQLwjS1GrXawc40gfYcD3wCWm2CJeE3gFtu5eZMF3HqATEDMAo4EPhWAHPG4VgF3AacAcwIT1rcItWpC9QWuXwR8AXi0YufalsJTgUVR1U7x+GoByLlmnH8MKjwB+TP//6ig+vs2O/vYwUFp+O9tgd8D7gHWmigJuNXAR+w8pPtr0zzu6HHubolbTnkNB0fnUeCLwL6BAfq6HryKuqwDfX49ALwP+BbwSgCuaSD/3Fxfq0rEDM2jHhjwaOAsq9G21Wvb474H+CSwQ9W2dzOINaA/EOCdwJXAUwG4YXP1vXZgto6xYEZqP4YfxwOfB96oqPxXHa8uBQZ8f18u8xgvcDE229Pe2/3BhgwZuJeAjwOHTJedm6BaTUDOAz4M3NmBGZ82o74r3J8/kB3s3Da2Zd8zt0bgVgAXAEur6qoLGLQRgDkIOBt40fMaCvHjA8BFwF6dHLgcubMvcNti4GpLGI6jWgbyH4APBSLUs5zUGO2jX59shlwegGx7vrc6+TA/O/uY1GX4+0Dbh0c8kRSIA/yv1eVOAbhGlztrtTgHM+YyOzotMy5Oy10NLKnYx5kBskM8txtwLvAfwc1OwD0JfBY4ttOkN5P4th5Mx3zgd4EHAxMn+/g4cKlVbxGArM0I19mYnwR8E3g9pJ2wOrm8Yuc26xxixdE5CrjEDEyFsX8AfAJ4y7QydUh/FcAhwF8CLwQ713QC+hbg9BBH9c1AMD5joUhFrS71qspzgU5tL1vd6LBkdqLTdIA3xy70fwaPq+nBPQJ8Jnheja6Lg6bOPzjVjP2m6TZomj3jMGvXKviTnloCtgcutHfZDoN4GPgasGSm47mUvXEcdiKw1Qxnc2rBQ9/d/sDDwT6mLNTXgbdNWkgVjGxcp/uCbV384TsScDnYuUCsv3e6bkkOcWbFPh4DXAc8EbzVJnAzcOCkSWJYhZ5v8NaEYPVJ5y4X+t7+mY7nAniHAHebKNcCO06pfdl0+3iCpbFlYWgBtwH7VXOxEwGv30Hqa2F97MfA8dVcYQYcXgALge8HFfUKcNqUOwnjp+1A8FYfCQ7gsNdGdwxbQYpNUp1+/g3vQUku8GPAYX5vICP3vfA+mhvCck9KNP8rsHduudagMY700lTTQrIa+JyFpz5uAIMjsNAJ26SnVwDHpbxnRtxcAPs6kUAInOPrm4Gd436YXED0+H+9srD9PHDcuO132ObQZ49pdciqXAZsPdPrdB3AW+TguBUS5ulqh1DnGmCnjEF8j1V+MlXf8XbJsY83EGU/7wxLqwiPAIfn4NFVNMWulrxWRfKqILaCU7NTLkxYmcu2wF8EpnvZ8ePYNV7K6wEXOynb9BcuyVB17uw0XtqU22b9VwTxGodFOdnDerCHy4Mq/XbSeuPhhgV2w9v+oiccGBeZSF/an3llCGs2BF5Vna7zXpbcnJq0pnp2YLhnrFqLThqj1skDlXSwpL3CPedKul9SrSiK1kxPUuX5h8MkHaPyVBIa2zmPdE+fpCUqz0mQkT2sFUXRlPSkysM6UnmG42iNnuFYP4C+oSHpXZLmmzBtlQc/2rlMUtKOkr4oaR+PqzbOz7cl7S/pMpUnnrIRQj8/J+lO4zHXjDZ7rKppDnBTiKV+GLfNZWD3Gl4cHY/q7KRK0zrdrZ5zLrY9mYfFYX6PJQw2JoGoPCy5SKNHj6+W9JQkFUUxo1Lo33+7NcR4VGcnVVqzWjpI5XnDdi6q1PMcCf+aJ2mfTp7zL+wk9gcXGMQE6BNFUbQySQYPSLrcqpNxqs71qdIdDeDWyuu8ZDwfOUvSrpX/rdeJ2d5GvqqXZ/pq27HaOYx7ogRPjsGvSbpUUpGRQ0N47ldZD6A2FidmtieWj2UvpX+WpCtVno+fqPTF+bZVFkw4UtIeGTFsldFmjcULldEuMgIvEXmhynPxjUmSvioN9pV0oaRGptscO46psRHdm8vA+yR9xhIy2eMrHHP1SXqHuZ2Mwqbxo5rZlWLTAyboeY4lwN9D0gcd3Bc9ACfnakna3a50MUU2KqnpHSSdYTNS6wE4CYG7jfenbf+KKRpzEeixTcUL7wE4wfH1282fKvVZBXGBpPc6pCh6AE489psdJGIqXfyknhdIOtuSX+sBOLHwoS5psaTtpsE7LkJ8uUPPBk4cvJql7xSVKyPTEd6k799O5XJT9mo0SwBDPbKayhKS0zXOxCQLJJ2mMkNT6wE4MWmYpUodz2m46tPMOJt85XxOr61yMXNeB1CnVIP7MXsaf3Oz9UKLGfi9JOnzVJa1bPckcGLSMJNMk/3RuJ4EblyN9wDs4quXieldPQB7VxcDON3xXw5O1GYFYG2G7VAvkJ/g1ZphqWv1JHBTKDiazF6r0bY406HS4nrjm/79Xi503L57mcxOYK3V9G60isyTvR3MmbuQNCTpXpXdWabzWquyOdZwD8BNl8K2gfs7SS+pzIpMdWakbcBeUNnGZ3imz4N0u5dVl7TSQE6nGm1LWq1eLnRSCDki6W6r06naVhgdmJakl7tBfWYPYFCjX1LZTWwqd0wnAFdKusoM00tmT5IafVVlj7/WFHqGyfN9TdL3gzfcA3ASgvlhSV9T2Qu3NgUApu9bp7I967C65MoeQEtBW9JNKtukrtPk50jbVp9PS/qkpKGZLuawOUlgIvCwpPPt4heTaJ8SI4yoPEr+Sjd4n10FoKWwZgl5LKg4JlH6npD0qaIohl3qo2sBJFMQmyrLnXxM0o80esadCUpfzR7nnZKWd1sPi9p6nIZc3WccYH/D7v5E4kI816aku1Q2RibjzAtjATDlH3OVwkTc6yXdqtFSHJsy3lQg6FFJF6hcfcgVvJTQYIMA2tb8XL9YoyQ3EFse3x84XmtugipNdm+dpJsNYq5xX+H5vrpBAEP/9hUqs/Hp5gWh0EBOHLlG0scl/btGE92MURVh4K9zlqeWqeqM8enPOs2xU5mR11WmrdL7J0na2QDnUskogbBC5ZHoBGJrIyASwL5W0kWS3sw05ou0HpT0XCcm6wTIkF31If/9WypLbyWAc7KHqFxqOsNepCogUnkk8L6usqTImpw0i6tltYDtJf1moPnLkp7z+2zMiWk647HKH54lqT/Hc3JhMi9KOss2UZ5DzNYk4JoqU3IXW9OQmd1LtdDeYaZMTuVDHm8xJi5w182HXCmv7aq4e+TSYmA9Y665SPv3QrX6592zaMTVhy8bdw3q6Z1HqlS4JBR8fdH9CcdWIjoVlQP+xn0MUoXbd6f3swySRnssLHQP+J+4v9Ntbgt0lEsXFxmDV3icj4cmkvcCu4xZA4baze8Gng01K7/r0v7ZHjsOIM5218zb3ATk/UFScx17n8f+vlAaepVrl9fXJzidODHVzbzP3l3TjsESlQV3pEz3k9qxqRVFMejYbkRl3nRlKpqQY6wHNIqiGFFZRvoyj7mmMj97w4ZCpNr6HIOiKNaq3FD0jEbrh31FZc2WZi5tbDqlAg3WoJlvlaSXPa9WjuB5zEdIWqay6F5d5cLy9ZKeNeO1x/qFRaX5xx+6b1LqWPYwcFhqw5qjQ+PnhcA/ufnivPheTuCZjvsAt7sc9KBpfb37SIy/SXTw6ur+kmU2qoOh+dXhvm8gUwC3Bq4C/iRHxyX0TdrXvZ2aobvnfaEN3fg7mHVogLXIvYdSz8Am8D8W+xltd7oR7r4SuDgn79m06vfro+wpD4fQ53FgcVCvE3dv/XygK7ynNmktx4pfDlXt+zJpRZcY8GTghES4DGLVvgDiqW7N3rZQtN1gZWnQfsVk/XgC8QC3dxsKrWGGgbuA08J9/ZkAOQ/YKhNHJb0+zt07nw2NHwH+y63+6ptk98YB4i+5c+fK0Ec3ZT2W5dSONZPgvB7U5RVuIhbbkq9zn47DYzZmqg3v1pa4u4IkjoRO1l8Gjg2qo7EFAtfw6+2B3wceNH2aocva48BFwJ6B4WtTrg6CjTkA+DM3LoxdmbGTcx6wW/hcfTMHrtp6/LcdDvy8oi5Xuknz4uDQ9E2btqq01u4HjgW+6n53BCfnTauHD4cOzn3dtnFoE+zcB4DP284R8ppr3Uv+dGDbqrTOiFcVVMV8D+y7wBse8DpPYDlwCXBSNXm7majLxJy/4kT6MxU713RsdyGwdzQtM87MSRqDWt0T+CPgR8E+praozwKfAA7NNX7cRDs318wbey6mOT8FXO7+i1EL1XOcUIxzDvXAnwzcmIz3D4FTkou/oWx7jqm6OFbHbV+ynYta51XgRuBEYFYArpH7BBsByAE3u7/RzX3boW3caveLPaEizTmXgY7ALQHOAV6q2LlBS+K5wA5RWrvGZAT9nmKg7TzZu0PWIamYl4EzgeMjkBnbub2B33HcG+1cy4n+y0JmqphW73IKHZ0i5FQvdTK8Wek8/YoJs38u9jFqBDeJXAr8s21cerTtpF3rYL3eydvuaofNHNwflqmO8IRfMAGGAyff7lXpOTOlVuPqhTXJYuACa49WSDyvAv7N9nxOJzvX9Z52nICJkTy32cCHvO3htQBkWvH4tLs3NwJRi+lgtsB0vwp81PFsBG4d8IDDgl0Co22+qcOgRqv2cUcvGj8QEgDDIXNxuj3axlTaxxiXekwfcAhAcLxa9qqvBH457MHZLJMTY40fExHeBvy1idasAPm8Cbpz3DEwieNI3znHm7n+Nqj1pqVuBfBtryb0dwrEt5jEfUWt1sLWgn7gGOBb9k7bAcgh4Bo7CnMD0WubQrj4OX/focBZVo8jgYle96LrGcBWUYNEraIt8aqo1XrYG7kV8BETbnVIR6VtHecAhyQgo7NTkaiiAnT1/QFvaTjDdm6okj16DPic99fU4hi3aODGCGQN2A34rAm5LixbDdo+nuWdAttVQNoYgHO9knKil7+GKnnLFBYcHNR8I3im+ZwRyQ3IcAoqnb5tSHqrpPMkHafRbs7pdG1LZa/7ZRo9ofSGym2FLY2e75inspVOW9LRki5R2dpuINBhtaQHJf2VylO7g2kcaVtfpwMmPQA7gBg8zgTkbJWdps+T9E6VrXGKANqgv2JI0k9Ubop93QDtobKF6za+p1+jXTpReR7ySZWnlm5QechVqpQzyXFTcJG7Wg3jTH/Pl3S8pDMl7ee/G4Hg0v8/K1jXaOmQItyzRuXByZtUnrt/3v9PJ4Gzk7iuAbCDWi0CkIWk7SUdYTAPtUQOWLLqGq23Hc8FjlhC37CE3iLpdoM4HNVlYqDcy211jRfVwT6ma7bKho0HSTpY5db03QKgLdu2FVaTP5Z0v0Fbaztak9TuJuDS9X9oQjzHiDiL4gAAAABJRU5ErkJggg==",
+    "description": "Reads the documents of a MongoDB collection, all of them or those matching a JSON query, one record per document.",
     "category": "Inputs",
     "subcategory": "Databases",
     "tags": [
         "mongodb",
         "database",
-        "collection"
+        "collection",
+        "nosql",
+        "documents",
+        "connector"
     ],
-    "introductoryText": "# MongoDB connector\n\nUse this block to connect to MongoDB data bases. \n\n## Authentication\n\nEither use \"Url\", or \"Connection\" + \"Authentication\". The \"Url\" can contain any valid MongoDB connection url, which can itself contain a username and password. If an url is specified, the sections \"Connection\" and \"Authentication\" are ignored.\n\nIf authentication is required, specify a username, password and an authentication source. This could be \"admin\" for the admin database, or some other database in which your username is registered.\n\n## Custom Query\n\nIf \"Full Collection\" is ticked, then all data in the given collection is returned. In order to specify which records are to be returned a custom query can be entered. The query must be valid JSON and is formed like this:\n\nLet's say the collection is about students and contains a field \"age\" and we only want to return students of age greater or equal than 20. The query would look like this:\n\n{\"age\": {\"$gt\": 20}}\n\nIf the record contains an object \"address\" which itself contains fields \"streetname\", \"housenumber\" and we are interested in finding the student that lives in \"Park Lane\", we can form a query such as this:\n\n{\"address.streetname\": {\"$eq\": \"Park Lane\"}}\n\n## Flattening JSON\n\nThe connector will only return the first level of fields in the collection. If a field contains an object then it is necessary to connect the MongoDB connector to a JSON Normalise community block to further flatten the JSON records.",
+    "introductoryText": "Reads documents from a MongoDB collection into the workflow: one record per document, one field per top-level key.\n\n**How to set it up**\n\n1. Either enter a **Connection URL** (`mongodb://...` or `mongodb+srv://...`, which can hold the user name, password and options), or leave it empty and enter the **Host** and **Port**, and, if the server needs it, the **User**, **Password** and **Authentication database** (the database the user was created in; `admin` when empty). A connection URL, when given, is used instead of the other connection settings.\n2. Enter the **Database** and **Collection**.\n3. Leave **Whole collection** ticked to read every document, or untick it and type a **Custom query** in JSON, for example `{\"age\": {\"$gte\": 20}}` or `{\"address.town\": \"Leeds\"}`. Optionally set a **Limit**.\n\nNested objects and arrays arrive as JSON text: the community **JSON Normalise** and **JSON Expand fields** blocks turn them into fields. `_id` and other values Omniscope has no type for (ObjectId, UUID) arrive as text, Decimal128 as a decimal number. A key holding numbers in some documents and text in others arrives as text.",
     "dependencies": "pymongo",
     "options": [
         {
             "name": "connection_url",
-            "title": "Connection Url",
-            "description": null,
-            "groupTitle": "Url",
+            "title": "Connection URL",
+            "description": "Optional. A MongoDB connection string, for example mongodb+srv://user:password@cluster0.example.net/. When given, the connection and authentication settings below are not used.",
+            "groupTitle": "Connection URL",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
             "mandatory": false
@@ -35,7 +38,7 @@
         {
             "name": "host",
             "title": "Host",
-            "description": "Either the name of the host or its ip. If run locally, often either localhost or 127.0.0.1",
+            "description": "The server's name or IP address, for example db.example.com, or 127.0.0.1 for a server on the same machine.",
             "groupTitle": "Connection",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -45,7 +48,7 @@
         {
             "name": "port",
             "title": "Port",
-            "description": "The port on which the MongoDB server is running. Often  27017",
+            "description": "The port MongoDB listens on; usually 27017.",
             "groupTitle": "Connection",
             "width": "HALF",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
@@ -57,8 +60,8 @@
         },
         {
             "name": "user",
-            "title": "Username",
-            "description": "Your username (optional)",
+            "title": "User",
+            "description": "Optional. The user to sign in as; leave empty for a server without authentication.",
             "groupTitle": "Authentication",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -68,7 +71,7 @@
         {
             "name": "password",
             "title": "Password",
-            "description": "Your password (optional)",
+            "description": "The user's password.",
             "groupTitle": "Authentication",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
@@ -76,8 +79,8 @@
         },
         {
             "name": "auth_source",
-            "title": "Auth Source",
-            "description": null,
+            "title": "Authentication database",
+            "description": "Optional. The database the user was created in. Empty: admin.",
             "groupTitle": "Authentication",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -87,7 +90,7 @@
         {
             "name": "database",
             "title": "Database",
-            "description": "The name of the Database to connect to",
+            "description": "The database that holds the collection.",
             "groupTitle": "Database",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -97,7 +100,7 @@
         {
             "name": "collection",
             "title": "Collection",
-            "description": "The name of the Collection within the database to connect to",
+            "description": "The collection to read.",
             "groupTitle": "Database",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -106,8 +109,8 @@
         },
         {
             "name": "full_data",
-            "title": "Full Collection",
-            "description": "When ticked the full collection is returned, when unticked a custom query can be used",
+            "title": "Whole collection",
+            "description": "Ticked: every document is read and the custom query is ignored. Unticked: only the documents matching the custom query.",
             "groupTitle": "Query",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
@@ -115,8 +118,8 @@
         },
         {
             "name": "query",
-            "title": "Custom Query",
-            "description": "The query in valid json (e.g. { \"address\": \"Park Lane 38\" }) (optional)",
+            "title": "Custom query",
+            "description": "A MongoDB filter in JSON, used when \"Whole collection\" is unticked, for example {\"age\": {\"$gte\": 20}} or {\"address.town\": \"Leeds\"}. Names and text need double quotes.",
             "groupTitle": "Query",
             "width": "THREE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -126,11 +129,11 @@
         {
             "name": "limit",
             "title": "Limit",
-            "description": "Specifies the maximum number of records to return (optional)",
+            "description": "Optional. The most documents to read. Empty or 0: no limit.",
             "groupTitle": "Query",
             "width": "HALF",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
-            "numMin": null,
+            "numMin": 0,
             "numMax": null,
             "mandatory": false,
             "defaultValue": null,
@@ -141,9 +144,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
+            "label": "Documents",
+            "displayName": "Documents",
+            "tooltip": "One record per document, one field per top-level key; objects and arrays as JSON text."
         }
     ],
     "docker": {

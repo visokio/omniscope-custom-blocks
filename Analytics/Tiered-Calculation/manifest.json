@@ -1,0 +1,196 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Tiered Calculation",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAACiklEQVR42u3dsWoUQRyA8W9Or9NIXkCw8QGsQtDS97AT7QI2PkFKLSLBziplXkDBRoJtbAQbQaKtGK1izFhk0Wt0d7M3tzsz368+Lpf5sruzy58cSJIkSZIkSZIkSf8UXILliDFeB24DVwa+1Q/gTQjhk6u6mnDzGOOzGONpXJ7T5j3nrnD6gDsxnR1PoelPmx+BWaIfcQbc+N/pdGaGQTYTr+Gs+RkYMI21sT+AAaftDDgwYL52224nLrtGk/QLeA5stb3QgOm9B456vP5Fnxt5A6Z3BLzr+uIQwp6bmIoY0IAyoAxoQBlQBpQB61LNk5glzqwsumPA9OHmwFPgPnDJIzA/T4CHXgPzPW0+cBOTr83Sf8fSA65N4DOcGDDjszjwxYD5OgSO3YXmeeQdAq+9jUiv78xKm5/A59RHngH/6jWz4i5UBpQBDSgDyoAyoAFlQF3YZJ7ElDqzUnzA0mdWajgCi55ZKfoaWMPMSumbmOJnVkoPWPzMircRic/iJJ5ZMWBayWdWqrkPHOHIW8nMigEzn1kxYOYzK14DZUADyoAyoAxoQBlQBtQfnZ/EOLOSaUBnVvI/Ap1ZyfUa6MxK/psYZ1bchQ52YqaLBzzg/Pt7xpL9zMqoAZtvD9kd8fNlP7MyhV3oFudfFLnK24hiZlZS6/wNngs38vcSf6aiZlZ6Bwnh0bKPwMXT6V6M8ZZ/9+5CZUAZ0IAyoAxoQBlQBpQB69PpWWiM8SawDdwFrrpsSX0HXgKPQwgfBgds4r0F1l3blfoKbLRF7HIK3TbeKNabtR98BH5jGv8OpEbHIYRrbmIq34W+cplG07r2bmJK38Q0b7AB7DdbXKW/jdjvEk+SJEmSVJ/ff5pLyYSBFJMAAAAASUVORK5CYII=",
+    "description": "Applies tier tables (commission plans, tax bands, volume discounts) marginally or to the whole amount, per plan, with a breakdown by tier.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "tiers",
+        "bands",
+        "commission",
+        "tax bands",
+        "volume discount",
+        "rebates",
+        "tariffs",
+        "finance",
+        "visokio-agents"
+    ],
+    "introductoryText": "Applies a **tier table** to an amount: commission plans, tax bands, volume discounts, rebates and stepped tariffs.\n\n- **Marginal**: each slice of the amount is charged at its own tier's rate (income tax bands, commission accelerators)\n- **Whole amount**: the whole amount is charged at the rate of the tier it falls in, plus that tier's fixed amount (volume discount tables)\n- Tiers from a **table on input 2** (from, to, rate, optional fixed amount, optional **plan** key so different rows use different plans), or typed in the options: `0-10000: 0.02, 10000-50000: 0.05, 50000-: 0.08`\n- Rates as decimals (0.05) or percentages (5%); an empty *to* means up to the next tier, or no limit for the top tier\n\nOutputs: each row with the result, the effective rate and the tier reached, and a breakdown of the result by tier (for statements and checks).",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "amount_field",
+            "title": "Amount field",
+            "description": "The amount to apply the tiers to, such as sales.",
+            "groupTitle": "Amounts (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "plan_field",
+            "title": "Plan field (optional)",
+            "description": "Matches the plan key of the tier table.",
+            "groupTitle": "Amounts (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "mode",
+            "title": "Method",
+            "description": "Marginal applies each tier's rate to its own slice, as income tax does; whole applies the reached rate to everything.",
+            "groupTitle": "Amounts (input 1)",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Marginal (each slice at its tier's rate)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MARGINAL",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Whole amount at the reached tier's rate",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WHOLE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MARGINAL"
+        },
+        {
+            "name": "result_name",
+            "title": "Result field name",
+            "description": "Name of the new field holding the result.",
+            "groupTitle": "Amounts (input 1)",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Tiered Result"
+        },
+        {
+            "name": "tiers",
+            "title": "Tiers (if no input 2)",
+            "description": "from-to: rate, for example 0-10000: 0.02, 10000-: 0.05 (add + fixed for a fixed amount)",
+            "groupTitle": "Tiers",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "tier_plan_field",
+            "title": "Plan key (input 2)",
+            "description": "Plan name in the tier table, matched to the plan field of input 1.",
+            "groupTitle": "Tiers",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "tier_from_field",
+            "title": "From (input 2)",
+            "description": "Lower bound of each tier.",
+            "groupTitle": "Tiers",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "tier_to_field",
+            "title": "To (input 2)",
+            "description": "Upper bound of each tier; when empty, the next tier's lower bound.",
+            "groupTitle": "Tiers",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "tier_rate_field",
+            "title": "Rate (input 2)",
+            "description": "Rate for each tier, such as 0.05 for 5%.",
+            "groupTitle": "Tiers",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "tier_fixed_field",
+            "title": "Fixed amount (input 2)",
+            "description": null,
+            "groupTitle": "Tiers",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "rows",
+            "label": "Rows",
+            "displayName": "Rows",
+            "tooltip": "The input with the result, effective rate and tier reached."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "breakdown",
+            "label": "Breakdown",
+            "displayName": "Breakdown",
+            "tooltip": "Per row and tier: band, rate, amount in the tier, result in the tier."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

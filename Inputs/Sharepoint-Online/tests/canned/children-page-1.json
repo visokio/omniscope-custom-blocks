@@ -1,0 +1,32 @@
+{
+  "value": [
+    {
+      "id": "01FILESUPPLIERS00000000000000003",
+      "name": "suppliers.csv",
+      "size": 138,
+      "lastModifiedDateTime": "2025-02-27T11:05:30Z",
+      "webUrl": "https://contoso.sharepoint.com/sites/Finance/Shared%20Documents/Reports/suppliers.csv",
+      "file": {
+        "mimeType": "text/csv"
+      },
+      "parentReference": {
+        "driveType": "documentLibrary",
+        "driveId": "b!Docs0000000000000000000000000000000000000000000000000001",
+        "id": "01FOLDERREPORTS0000000000000000001",
+        "path": "/drives/b!Docs0000000000000000000000000000000000000000000000000001/root:/Reports"
+      }
+    },
+    {
+      "id": "01FOLDERARCHIVE0000000000000000004",
+      "name": "Archive",
+      "folder": {
+        "childCount": 12
+      },
+      "parentReference": {
+        "driveId": "b!Docs0000000000000000000000000000000000000000000000000001",
+        "id": "01FOLDERREPORTS0000000000000000001"
+      }
+    }
+  ],
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/drives/b!Docs0000000000000000000000000000000000000000000000000001/items/01FOLDERREPORTS0000000000000000001/children?$skiptoken=page2"
+}

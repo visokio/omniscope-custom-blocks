@@ -1,0 +1,13 @@
+id,Name,Email,Workshop,Seats,Paid,Tags,Booked on,Attachments
+rec01AbCdEfGhIjK,Ana Ribeiro,ana@example.com,Pottery for beginners,2.0,True,"[""weekend""]",2026-03-02,
+rec02AbCdEfGhIjK,Tom Hollis,tom@example.com,Watercolour landscapes,1.0,True,,2026-03-02,
+rec03AbCdEfGhIjK,Priya Nair,priya@example.com,Pottery for beginners,3.0,False,"[""weekend"", ""group""]",2026-03-03,
+rec04AbCdEfGhIjK,Callum Reid,callum@example.com,Life drawing,1.0,True,"[""evening""]",2026-03-04,"[{""id"": ""attQ1w2E3r4T5y6U7"", ""url"": ""https://example.com/form-4.pdf"", ""filename"": ""form-4.pdf"", ""size"": 48211, ""type"": ""application/pdf""}]"
+rec05AbCdEfGhIjK,Mei Chen,mei@example.com,Watercolour landscapes,2.0,False,,2026-03-05,
+rec06AbCdEfGhIjK,Joseph Okafor,joseph@example.com,Screen printing,1.0,True,"[""evening""]",2026-03-06,
+rec07AbCdEfGhIjK,Hannah Lewis,hannah@example.com,Life drawing,2.0,True,"[""evening"", ""group""]",2026-03-06,
+rec08AbCdEfGhIjK,Oskar Nowak,oskar@example.com,Pottery for beginners,1.0,False,"[""weekend""]",2026-03-09,
+rec09AbCdEfGhIjK,Fatima Rahman,fatima@example.com,Screen printing,4.0,True,"[""group""]",2026-03-10,
+rec10AbCdEfGhIjK,Ellie Marsh,ellie@example.com,Watercolour landscapes,1.0,True,"[""weekend""]",2026-03-11,
+rec11AbCdEfGhIjK,Dev Patel,dev@example.com,Life drawing,,False,,2026-03-12,
+rec12AbCdEfGhIjK,Sophie Grant,sophie@example.com,Screen printing,2.0,True,"[""evening""]",2026-03-13,

@@ -1,0 +1,2401 @@
+Subscription ID,Start Date,End Date,Plan,Channel
+S00001,2024-03-19,2024-08-10,Monthly (promo),Partner
+S00002,2023-03-02,2023-03-29,Monthly,Web
+S00003,2024-06-29,2025-12-06,Monthly (promo),Partner
+S00004,2023-09-29,2025-10-26,Monthly,Web
+S00005,2023-01-05,2023-01-10,Monthly,Partner
+S00006,2023-09-30,,Monthly (promo),Web
+S00007,2023-07-01,,Annual,Partner
+S00008,2025-04-02,,Annual,Web
+S00009,2025-01-07,2025-02-23,Monthly,Partner
+S00010,2024-07-19,,Annual,Web
+S00011,2023-07-29,,Monthly,Web
+S00012,2023-07-02,2023-10-01,Monthly (promo),Web
+S00013,2024-12-14,,Monthly,Web
+S00014,2024-06-22,,Monthly,Partner
+S00015,2024-11-09,,Monthly,Sales team
+S00016,2024-12-13,,Annual,Partner
+S00017,2025-03-18,,Annual,Sales team
+S00018,2024-07-15,2025-10-03,Monthly,Sales team
+S00019,2024-01-17,2024-06-12,Monthly,Partner
+S00020,2023-08-24,,Annual,Sales team
+S00021,2023-10-07,,Annual,Web
+S00022,2024-07-18,2024-12-17,Monthly (promo),Web
+S00023,2024-02-29,2025-03-20,Monthly,Partner
+S00024,2024-03-18,,Monthly,Web
+S00025,2024-12-16,2025-03-17,Monthly (promo),Web
+S00026,2024-03-04,2024-03-31,Monthly,Sales team
+S00027,2025-05-21,,Annual,Web
+S00028,2023-06-21,2025-11-08,Monthly,Web
+S00029,2023-09-18,,Monthly (promo),Web
+S00030,2023-05-14,2023-08-13,Monthly (promo),Web
+S00031,2024-09-18,2025-08-21,Monthly,Partner
+S00032,2023-12-18,,Annual,Sales team
+S00033,2024-08-20,,Monthly,Web
+S00034,2025-03-23,2025-11-19,Monthly (promo),Web
+S00035,2025-05-11,,Monthly,Web
+S00036,2025-04-01,,Annual,Web
+S00037,2023-08-13,2025-01-30,Monthly (promo),Web
+S00038,2024-02-26,,Annual,Web
+S00039,2024-12-22,,Annual,Web
+S00040,2024-07-10,2025-04-27,Annual,Web
+S00041,2025-06-09,,Annual,Sales team
+S00042,2025-05-19,,Monthly,Web
+S00043,2024-08-23,,Monthly,Sales team
+S00044,2025-01-25,,Monthly,Web
+S00045,2023-12-24,2024-04-19,Monthly (promo),Partner
+S00046,2025-02-09,,Annual,Sales team
+S00047,2025-06-05,2025-09-04,Monthly (promo),Partner
+S00048,2025-03-29,2025-12-06,Monthly,Web
+S00049,2025-01-04,,Monthly (promo),Web
+S00050,2025-03-07,,Monthly,Web
+S00051,2023-04-15,2025-03-13,Monthly,Partner
+S00052,2023-05-07,,Monthly (promo),Partner
+S00053,2024-01-26,2024-03-26,Monthly,Web
+S00054,2024-10-15,2025-05-28,Monthly (promo),Partner
+S00055,2023-01-26,2025-12-17,Monthly,Partner
+S00056,2024-12-27,2025-03-03,Monthly,Web
+S00057,2025-03-31,2025-05-08,Monthly,Partner
+S00058,2025-04-02,,Monthly,Sales team
+S00059,2024-12-14,2025-01-08,Monthly (promo),Web
+S00060,2024-08-21,2024-10-24,Monthly (promo),Web
+S00061,2024-07-13,2025-01-26,Monthly,Partner
+S00062,2024-05-11,,Monthly,Partner
+S00063,2023-09-01,2023-09-30,Monthly,Web
+S00064,2024-07-11,2025-01-21,Monthly (promo),Web
+S00065,2023-02-11,,Annual,Web
+S00066,2025-03-27,,Annual,Sales team
+S00067,2023-05-21,2025-05-30,Monthly,Partner
+S00068,2024-02-12,,Monthly,Web
+S00069,2025-05-02,,Monthly,Web
+S00070,2023-03-05,2023-06-04,Monthly (promo),Web
+S00071,2024-04-19,2024-08-15,Monthly,Partner
+S00072,2025-03-26,2025-09-10,Monthly,Partner
+S00073,2024-11-29,,Monthly,Web
+S00074,2025-04-06,,Annual,Web
+S00075,2023-12-10,2024-03-11,Annual,Web
+S00076,2024-06-22,2024-09-21,Monthly (promo),Web
+S00077,2023-08-02,2024-05-11,Monthly,Web
+S00078,2023-04-27,,Monthly,Web
+S00079,2023-10-13,2024-07-07,Monthly,Web
+S00080,2023-11-28,2024-01-20,Monthly,Web
+S00081,2023-10-03,,Annual,Partner
+S00082,2023-07-24,2024-06-27,Monthly,Web
+S00083,2023-09-28,,Monthly,Partner
+S00084,2025-04-08,2025-08-05,Monthly,Web
+S00085,2024-06-12,2024-07-08,Monthly,Partner
+S00086,2023-10-18,2025-11-12,Annual,Web
+S00087,2024-09-19,,Monthly,Web
+S00088,2024-08-29,2024-09-01,Monthly,Web
+S00089,2024-12-26,,Annual,Sales team
+S00090,2024-10-26,,Monthly,Web
+S00091,2024-07-12,2025-08-03,Monthly,Web
+S00092,2024-04-25,,Annual,Sales team
+S00093,2024-04-14,2025-04-22,Monthly,Web
+S00094,2025-03-27,2025-04-11,Monthly,Partner
+S00095,2025-02-25,,Monthly,Web
+S00096,2023-03-21,2025-07-04,Annual,Web
+S00097,2024-08-23,,Monthly,Web
+S00098,2023-07-03,,Annual,Sales team
+S00099,2025-04-11,,Annual,Web
+S00100,2024-08-20,,Annual,Web
+S00101,2025-04-22,,Monthly,Web
+S00102,2024-12-07,2025-12-07,Annual,Web
+S00103,2023-10-25,,Monthly,Web
+S00104,2023-07-15,2023-12-08,Monthly,Web
+S00105,2024-08-14,,Monthly,Web
+S00106,2024-10-27,2024-11-23,Monthly,Partner
+S00107,2023-02-09,2023-05-11,Monthly (promo),Web
+S00108,2024-07-04,2024-11-26,Monthly,Sales team
+S00109,2023-03-09,2024-01-21,Monthly (promo),Web
+S00110,2024-02-27,,Annual,Web
+S00111,2024-02-16,2024-05-17,Monthly (promo),Partner
+S00112,2025-02-19,,Monthly,Partner
+S00113,2023-04-12,2024-10-09,Monthly,Partner
+S00114,2024-08-29,2025-06-29,Monthly,Web
+S00115,2024-07-10,,Monthly,Web
+S00116,2023-06-08,2024-06-09,Monthly (promo),Web
+S00117,2023-06-17,,Annual,Partner
+S00118,2023-08-02,2025-07-06,Monthly (promo),Sales team
+S00119,2025-03-26,,Monthly (promo),Web
+S00120,2025-04-06,,Monthly (promo),Web
+S00121,2023-01-02,2023-03-07,Monthly,Partner
+S00122,2023-06-10,,Monthly,Partner
+S00123,2025-01-07,,Annual,Web
+S00124,2023-08-28,,Annual,Web
+S00125,2023-05-12,2023-05-20,Monthly,Web
+S00126,2024-01-27,2024-04-27,Monthly (promo),Web
+S00127,2025-03-13,2025-07-10,Monthly,Sales team
+S00128,2024-03-24,,Monthly,Sales team
+S00129,2023-06-01,,Annual,Partner
+S00130,2023-12-27,2024-03-27,Monthly (promo),Web
+S00131,2023-06-29,,Monthly (promo),Web
+S00132,2024-09-02,,Annual,Sales team
+S00133,2023-11-22,,Annual,Sales team
+S00134,2024-02-05,2025-11-24,Monthly,Web
+S00135,2023-05-19,2025-08-08,Monthly,Web
+S00136,2024-12-10,2025-12-19,Monthly (promo),Partner
+S00137,2024-06-15,2024-08-13,Monthly,Partner
+S00138,2024-11-02,,Monthly,Web
+S00139,2024-08-12,,Monthly,Web
+S00140,2023-05-10,,Monthly,Web
+S00141,2023-03-29,2025-02-24,Monthly,Sales team
+S00142,2023-12-16,,Monthly,Partner
+S00143,2025-02-18,,Monthly,Web
+S00144,2024-01-02,,Monthly,Partner
+S00145,2023-07-08,,Monthly,Web
+S00146,2023-09-20,2023-12-24,Monthly (promo),Web
+S00147,2024-10-10,,Annual,Web
+S00148,2023-09-10,2024-12-21,Monthly,Sales team
+S00149,2024-11-07,2024-12-23,Monthly (promo),Web
+S00150,2023-05-09,2025-05-08,Annual,Web
+S00151,2025-04-02,,Annual,Partner
+S00152,2023-02-08,2023-05-10,Monthly (promo),Web
+S00153,2025-03-14,,Annual,Partner
+S00154,2024-01-14,2025-10-18,Annual,Web
+S00155,2023-04-12,2024-04-05,Monthly,Web
+S00156,2023-04-21,2025-12-17,Annual,Web
+S00157,2023-08-02,2024-10-22,Monthly,Partner
+S00158,2025-05-31,2025-06-09,Monthly,Web
+S00159,2024-05-29,,Monthly,Web
+S00160,2025-05-26,2025-10-22,Annual,Web
+S00161,2024-01-04,2025-07-16,Monthly,Web
+S00162,2023-04-12,2023-07-12,Monthly (promo),Sales team
+S00163,2023-03-25,2023-05-18,Monthly,Web
+S00164,2024-12-05,2025-03-06,Monthly (promo),Partner
+S00165,2025-05-26,2025-07-22,Monthly (promo),Web
+S00166,2023-12-03,,Monthly,Web
+S00167,2024-06-17,,Monthly (promo),Web
+S00168,2025-03-25,,Annual,Web
+S00169,2023-01-16,,Annual,Web
+S00170,2024-05-17,2024-11-19,Monthly,Web
+S00171,2023-05-19,,Annual,Web
+S00172,2024-01-28,2024-05-05,Monthly,Sales team
+S00173,2024-08-22,,Monthly (promo),Partner
+S00174,2024-10-03,,Annual,Web
+S00175,2024-02-02,,Monthly,Partner
+S00176,2023-11-08,2023-11-28,Monthly,Web
+S00177,2025-04-25,,Monthly,Web
+S00178,2024-08-07,2024-11-06,Monthly (promo),Web
+S00179,2024-10-21,,Monthly,Partner
+S00180,2023-05-20,2024-01-18,Monthly,Web
+S00181,2025-06-09,,Monthly,Sales team
+S00182,2023-10-20,,Monthly,Web
+S00183,2023-04-20,,Monthly (promo),Sales team
+S00184,2025-01-07,2025-11-25,Monthly,Web
+S00185,2024-09-24,2025-07-14,Monthly,Sales team
+S00186,2024-07-26,,Monthly,Sales team
+S00187,2024-01-02,2025-07-13,Monthly,Web
+S00188,2024-03-09,2025-11-11,Monthly,Web
+S00189,2023-05-19,,Monthly,Web
+S00190,2024-11-26,2024-12-21,Monthly (promo),Web
+S00191,2024-08-29,,Monthly,Sales team
+S00192,2024-01-23,2024-03-10,Monthly,Web
+S00193,2024-07-30,2024-11-25,Monthly,Partner
+S00194,2023-10-27,2023-12-04,Monthly,Web
+S00195,2024-04-06,2025-07-27,Monthly (promo),Web
+S00196,2023-05-09,2025-07-17,Annual,Partner
+S00197,2023-04-16,2023-10-18,Monthly (promo),Web
+S00198,2025-02-22,2025-03-16,Monthly,Web
+S00199,2023-04-13,,Annual,Partner
+S00200,2023-07-21,,Annual,Sales team
+S00201,2024-03-26,2024-07-31,Monthly,Web
+S00202,2024-10-01,,Monthly,Partner
+S00203,2025-04-04,,Annual,Sales team
+S00204,2024-01-20,2024-07-25,Monthly,Web
+S00205,2024-06-17,2024-12-17,Monthly,Partner
+S00206,2025-01-18,,Monthly (promo),Web
+S00207,2023-05-13,,Annual,Web
+S00208,2023-07-01,2024-03-16,Monthly,Web
+S00209,2024-05-29,2025-11-25,Monthly,Web
+S00210,2024-01-08,2024-04-08,Monthly (promo),Sales team
+S00211,2025-03-15,,Monthly (promo),Sales team
+S00212,2023-07-25,2023-10-24,Monthly (promo),Partner
+S00213,2024-08-26,2024-11-10,Monthly,Web
+S00214,2023-12-24,,Monthly,Web
+S00215,2024-10-25,,Annual,Web
+S00216,2023-08-29,2024-04-23,Monthly (promo),Web
+S00217,2024-12-29,2025-01-20,Monthly (promo),Partner
+S00218,2024-01-18,2025-01-06,Monthly,Web
+S00219,2023-01-07,2023-07-11,Monthly,Web
+S00220,2023-06-04,2023-09-30,Monthly,Partner
+S00221,2024-12-21,,Monthly,Sales team
+S00222,2023-06-25,2024-07-28,Annual,Partner
+S00223,2025-06-14,,Monthly,Partner
+S00224,2025-04-06,2025-06-03,Monthly,Web
+S00225,2024-11-28,2025-07-10,Monthly,Web
+S00226,2024-07-16,,Monthly (promo),Web
+S00227,2025-03-16,2025-12-05,Monthly,Web
+S00228,2024-12-16,2025-03-12,Monthly,Partner
+S00229,2023-08-27,2024-06-11,Monthly,Web
+S00230,2024-12-22,2025-07-25,Monthly,Partner
+S00231,2024-11-27,,Monthly (promo),Web
+S00232,2024-09-09,2024-09-17,Monthly (promo),Web
+S00233,2023-08-08,2024-03-08,Monthly,Web
+S00234,2024-08-16,2025-10-13,Monthly,Web
+S00235,2024-11-06,,Monthly,Web
+S00236,2023-04-29,2024-01-04,Monthly,Web
+S00237,2024-07-24,,Annual,Partner
+S00238,2025-06-04,,Monthly,Partner
+S00239,2024-11-16,2025-11-16,Annual,Partner
+S00240,2024-09-19,,Annual,Web
+S00241,2024-09-13,,Monthly,Partner
+S00242,2023-10-06,,Annual,Web
+S00243,2023-01-03,2023-01-21,Monthly,Web
+S00244,2024-07-14,2025-01-12,Monthly,Web
+S00245,2025-01-08,2025-09-08,Monthly,Sales team
+S00246,2023-02-18,2024-12-10,Monthly,Partner
+S00247,2024-12-02,,Monthly,Web
+S00248,2023-03-30,,Monthly,Partner
+S00249,2023-06-04,2025-06-03,Annual,Partner
+S00250,2023-06-04,2025-06-12,Monthly,Web
+S00251,2023-10-15,,Annual,Partner
+S00252,2024-12-13,2025-07-31,Monthly (promo),Partner
+S00253,2024-09-15,,Annual,Web
+S00254,2023-12-21,2025-04-12,Monthly (promo),Web
+S00255,2023-04-06,2023-07-13,Monthly (promo),Sales team
+S00256,2024-01-22,,Annual,Web
+S00257,2023-05-05,,Annual,Web
+S00258,2023-10-29,2024-10-28,Annual,Web
+S00259,2024-12-08,,Monthly (promo),Web
+S00260,2025-01-23,2025-08-22,Monthly,Web
+S00261,2023-10-31,,Annual,Sales team
+S00262,2025-03-11,,Annual,Sales team
+S00263,2025-02-26,,Annual,Partner
+S00264,2024-04-05,,Annual,Partner
+S00265,2023-04-07,,Monthly,Partner
+S00266,2025-05-27,2025-08-26,Monthly (promo),Web
+S00267,2023-10-19,2024-11-27,Monthly,Partner
+S00268,2023-03-02,,Monthly (promo),Web
+S00269,2025-03-24,,Monthly,Sales team
+S00270,2023-07-24,2025-01-20,Monthly,Web
+S00271,2024-07-06,2024-11-18,Monthly,Web
+S00272,2023-02-18,2023-04-26,Monthly (promo),Web
+S00273,2024-11-02,,Monthly,Web
+S00274,2023-09-30,,Monthly (promo),Partner
+S00275,2023-01-25,2024-08-17,Monthly,Web
+S00276,2023-12-09,,Annual,Sales team
+S00277,2023-10-28,2023-11-15,Monthly,Partner
+S00278,2025-06-13,,Annual,Web
+S00279,2025-01-16,,Monthly,Partner
+S00280,2025-06-06,,Monthly,Sales team
+S00281,2024-09-13,2024-12-13,Monthly (promo),Web
+S00282,2024-07-21,2024-11-11,Monthly (promo),Sales team
+S00283,2025-01-09,,Annual,Web
+S00284,2025-05-11,,Monthly,Web
+S00285,2024-09-08,2025-04-06,Monthly (promo),Web
+S00286,2024-05-26,2024-08-25,Monthly (promo),Partner
+S00287,2024-11-28,,Monthly,Sales team
+S00288,2024-05-02,2025-09-15,Annual,Partner
+S00289,2024-02-22,,Annual,Web
+S00290,2024-03-21,2025-10-25,Monthly (promo),Web
+S00291,2024-11-14,2025-02-13,Monthly (promo),Partner
+S00292,2024-08-06,,Annual,Sales team
+S00293,2024-09-09,,Monthly (promo),Web
+S00294,2024-07-01,2024-09-16,Monthly (promo),Partner
+S00295,2025-02-21,,Annual,Web
+S00296,2023-05-02,2024-04-22,Monthly (promo),Web
+S00297,2024-03-10,,Monthly,Web
+S00298,2025-01-10,,Monthly,Web
+S00299,2024-01-06,2025-01-05,Monthly,Web
+S00300,2023-11-05,2024-02-04,Monthly (promo),Partner
+S00301,2025-02-10,,Annual,Sales team
+S00302,2023-06-21,2024-02-20,Monthly (promo),Partner
+S00303,2024-03-24,,Monthly,Partner
+S00304,2023-07-18,2024-07-17,Annual,Web
+S00305,2024-09-13,,Annual,Partner
+S00306,2023-02-18,2023-11-28,Monthly (promo),Web
+S00307,2024-04-14,,Annual,Sales team
+S00308,2024-11-12,,Annual,Web
+S00309,2024-09-05,,Monthly,Web
+S00310,2024-12-18,,Monthly (promo),Web
+S00311,2024-01-13,2025-09-27,Monthly,Web
+S00312,2024-12-15,2025-08-02,Monthly,Sales team
+S00313,2024-09-10,2024-10-03,Monthly,Partner
+S00314,2023-07-22,2024-12-19,Monthly (promo),Web
+S00315,2024-07-13,2024-07-16,Monthly,Partner
+S00316,2025-03-09,2025-10-09,Monthly,Web
+S00317,2023-11-24,2024-05-06,Monthly,Sales team
+S00318,2025-01-13,,Monthly,Web
+S00319,2023-05-04,2023-05-13,Monthly (promo),Sales team
+S00320,2024-06-20,,Monthly,Sales team
+S00321,2023-10-24,2025-01-09,Monthly,Partner
+S00322,2023-11-15,2024-10-29,Monthly,Web
+S00323,2024-11-21,2025-05-26,Monthly,Partner
+S00324,2024-06-15,2025-02-07,Monthly,Web
+S00325,2024-07-06,,Annual,Partner
+S00326,2023-01-31,2023-03-24,Monthly,Sales team
+S00327,2025-04-27,2025-08-02,Monthly (promo),Web
+S00328,2023-03-04,2024-07-13,Monthly,Web
+S00329,2024-01-31,2024-03-27,Monthly,Web
+S00330,2025-02-19,2025-07-24,Monthly,Partner
+S00331,2024-12-11,,Annual,Partner
+S00332,2023-07-16,2024-01-01,Monthly,Web
+S00333,2023-12-04,2024-05-30,Monthly (promo),Sales team
+S00334,2025-05-28,,Monthly,Sales team
+S00335,2024-11-23,,Monthly,Web
+S00336,2023-12-16,2024-07-18,Monthly,Web
+S00337,2025-05-10,2025-06-13,Monthly,Web
+S00338,2024-05-08,,Annual,Web
+S00339,2024-01-09,,Monthly,Web
+S00340,2023-07-20,,Annual,Web
+S00341,2024-02-27,2025-02-26,Annual,Partner
+S00342,2023-08-12,2023-09-24,Monthly,Sales team
+S00343,2023-02-27,,Annual,Web
+S00344,2024-06-12,2025-04-29,Monthly,Sales team
+S00345,2023-02-27,,Annual,Partner
+S00346,2024-05-23,,Monthly,Web
+S00347,2024-03-04,,Annual,Web
+S00348,2024-09-30,,Monthly,Web
+S00349,2023-03-26,2024-11-28,Monthly,Web
+S00350,2025-06-04,2025-07-16,Monthly,Web
+S00351,2023-07-30,2025-07-22,Monthly,Web
+S00352,2023-07-05,,Monthly,Web
+S00353,2023-10-10,,Annual,Partner
+S00354,2024-06-09,,Annual,Partner
+S00355,2023-02-28,,Annual,Partner
+S00356,2023-04-13,,Annual,Web
+S00357,2024-02-07,,Annual,Web
+S00358,2025-04-29,,Monthly (promo),Sales team
+S00359,2024-07-17,,Monthly (promo),Web
+S00360,2024-07-16,,Monthly (promo),Web
+S00361,2023-07-27,2023-10-07,Monthly,Web
+S00362,2024-03-17,,Monthly,Partner
+S00363,2024-09-02,2025-05-25,Monthly,Partner
+S00364,2024-05-04,,Annual,Partner
+S00365,2024-01-09,2025-10-05,Monthly,Web
+S00366,2024-05-17,,Annual,Web
+S00367,2024-07-16,,Annual,Web
+S00368,2024-06-21,,Monthly,Partner
+S00369,2025-04-07,,Annual,Web
+S00370,2024-11-14,2025-01-07,Monthly,Partner
+S00371,2023-09-12,2025-11-21,Monthly,Partner
+S00372,2024-08-27,2024-09-27,Monthly (promo),Web
+S00373,2024-09-21,2025-09-27,Monthly (promo),Sales team
+S00374,2024-06-01,,Monthly,Partner
+S00375,2024-07-10,2024-08-18,Monthly,Web
+S00376,2024-11-08,,Monthly,Web
+S00377,2023-04-06,,Annual,Web
+S00378,2023-05-11,2024-01-26,Monthly (promo),Web
+S00379,2024-02-20,2024-09-06,Monthly,Web
+S00380,2024-10-26,2024-12-23,Monthly,Web
+S00381,2024-09-04,,Monthly (promo),Web
+S00382,2024-05-04,,Monthly,Web
+S00383,2024-06-20,2024-07-05,Monthly,Sales team
+S00384,2024-10-30,,Annual,Partner
+S00385,2023-04-14,2023-07-14,Monthly (promo),Web
+S00386,2023-12-20,2025-06-23,Annual,Web
+S00387,2024-07-31,2024-08-14,Monthly,Web
+S00388,2024-11-29,2025-03-03,Monthly,Web
+S00389,2023-12-20,2025-12-19,Annual,Partner
+S00390,2024-06-24,,Monthly,Partner
+S00391,2025-05-16,,Monthly (promo),Web
+S00392,2025-01-12,2025-05-09,Monthly,Web
+S00393,2023-09-10,2023-12-10,Monthly (promo),Web
+S00394,2023-12-03,2025-07-13,Monthly,Web
+S00395,2023-01-26,2023-02-11,Monthly,Web
+S00396,2025-05-11,2025-08-10,Monthly (promo),Partner
+S00397,2024-02-03,2025-02-02,Annual,Sales team
+S00398,2024-03-20,2024-06-19,Monthly (promo),Web
+S00399,2023-03-10,2024-04-29,Monthly,Sales team
+S00400,2024-04-19,,Annual,Partner
+S00401,2024-10-01,,Annual,Web
+S00402,2023-08-18,2023-09-27,Monthly,Web
+S00403,2024-01-25,2024-06-03,Monthly (promo),Sales team
+S00404,2023-06-12,2023-09-11,Monthly (promo),Partner
+S00405,2024-06-18,2025-08-30,Monthly (promo),Web
+S00406,2024-03-05,2024-03-27,Monthly,Web
+S00407,2023-03-04,2025-07-13,Monthly,Web
+S00408,2024-09-22,,Annual,Partner
+S00409,2025-04-24,,Annual,Partner
+S00410,2024-07-29,2024-10-28,Monthly (promo),Web
+S00411,2024-05-20,,Annual,Sales team
+S00412,2025-03-17,,Monthly,Partner
+S00413,2024-04-13,,Annual,Partner
+S00414,2024-02-19,,Annual,Web
+S00415,2024-12-07,,Monthly,Partner
+S00416,2023-02-01,,Annual,Web
+S00417,2023-01-18,2024-01-12,Monthly,Web
+S00418,2023-03-29,2024-05-26,Monthly,Partner
+S00419,2023-06-24,2024-01-23,Monthly,Partner
+S00420,2023-03-05,2024-01-22,Monthly (promo),Partner
+S00421,2024-06-20,2024-06-20,Monthly,Web
+S00422,2023-07-11,2023-09-06,Monthly,Web
+S00423,2025-02-21,,Annual,Web
+S00424,2024-10-10,2025-04-08,Monthly,Web
+S00425,2024-09-10,,Monthly,Web
+S00426,2023-09-02,2023-12-02,Monthly (promo),Web
+S00427,2023-12-17,2024-02-10,Monthly,Web
+S00428,2024-09-28,,Annual,Partner
+S00429,2025-01-03,,Annual,Partner
+S00430,2023-10-03,,Annual,Web
+S00431,2025-01-25,,Annual,Sales team
+S00432,2025-04-21,2025-05-08,Monthly (promo),Partner
+S00433,2024-12-30,,Annual,Web
+S00434,2024-04-18,,Annual,Sales team
+S00435,2023-03-14,2025-01-04,Monthly,Partner
+S00436,2025-05-09,2025-08-08,Monthly (promo),Partner
+S00437,2024-05-30,2024-08-29,Monthly (promo),Partner
+S00438,2023-01-03,2023-09-09,Monthly,Partner
+S00439,2023-03-20,2023-11-25,Monthly (promo),Web
+S00440,2024-08-09,2024-09-04,Monthly,Web
+S00441,2023-07-25,,Annual,Partner
+S00442,2025-03-16,,Annual,Partner
+S00443,2024-12-15,,Annual,Sales team
+S00444,2024-10-14,,Monthly,Web
+S00445,2024-06-08,2025-12-30,Monthly,Sales team
+S00446,2023-11-27,2024-01-31,Monthly,Partner
+S00447,2025-06-05,,Monthly,Web
+S00448,2025-02-21,,Monthly,Web
+S00449,2024-05-23,2025-05-19,Monthly (promo),Web
+S00450,2025-04-23,,Monthly,Partner
+S00451,2023-10-27,2024-11-28,Monthly (promo),Web
+S00452,2023-05-27,2023-08-26,Monthly (promo),Web
+S00453,2023-06-13,,Annual,Web
+S00454,2023-03-28,2024-07-23,Monthly,Web
+S00455,2023-02-01,,Annual,Partner
+S00456,2024-06-15,,Annual,Web
+S00457,2023-12-08,,Annual,Web
+S00458,2024-04-16,2024-06-05,Monthly,Web
+S00459,2023-10-07,2024-12-13,Monthly,Sales team
+S00460,2023-08-11,2023-11-10,Monthly (promo),Partner
+S00461,2023-01-14,2023-04-15,Monthly (promo),Web
+S00462,2025-01-15,2025-08-22,Monthly (promo),Partner
+S00463,2023-06-28,2024-10-28,Monthly,Web
+S00464,2023-05-31,,Annual,Web
+S00465,2023-01-18,,Monthly,Web
+S00466,2024-03-31,,Monthly (promo),Partner
+S00467,2023-04-02,2024-10-07,Monthly,Partner
+S00468,2023-05-03,,Annual,Web
+S00469,2025-02-02,2025-07-20,Monthly (promo),Web
+S00470,2023-09-21,,Annual,Web
+S00471,2023-08-25,2025-08-24,Annual,Partner
+S00472,2023-12-07,2024-03-07,Monthly (promo),Sales team
+S00473,2025-03-11,,Monthly,Sales team
+S00474,2025-06-10,,Monthly,Web
+S00475,2023-07-06,,Annual,Web
+S00476,2025-05-12,2025-09-07,Monthly (promo),Partner
+S00477,2023-04-21,,Annual,Partner
+S00478,2024-05-29,,Annual,Sales team
+S00479,2023-07-22,2025-02-22,Annual,Web
+S00480,2023-01-27,2023-02-22,Monthly (promo),Web
+S00481,2023-08-11,,Annual,Partner
+S00482,2024-12-14,2025-12-14,Annual,Sales team
+S00483,2024-08-07,,Annual,Web
+S00484,2024-11-09,,Monthly (promo),Web
+S00485,2023-05-18,,Monthly (promo),Sales team
+S00486,2025-06-13,,Monthly,Web
+S00487,2025-01-28,,Monthly,Partner
+S00488,2023-10-23,,Annual,Sales team
+S00489,2025-03-12,,Annual,Web
+S00490,2024-07-18,2024-11-10,Monthly,Web
+S00491,2024-09-24,,Annual,Web
+S00492,2023-01-21,,Annual,Partner
+S00493,2024-11-11,2025-10-02,Monthly,Web
+S00494,2024-11-26,,Annual,Partner
+S00495,2023-05-14,2024-04-01,Monthly (promo),Partner
+S00496,2024-05-12,,Monthly (promo),Web
+S00497,2024-09-26,2024-12-26,Monthly (promo),Sales team
+S00498,2023-09-26,,Annual,Partner
+S00499,2023-02-19,2025-02-18,Annual,Web
+S00500,2024-07-26,,Annual,Partner
+S00501,2024-04-20,,Annual,Web
+S00502,2024-09-11,2024-09-12,Monthly (promo),Sales team
+S00503,2024-04-02,,Monthly (promo),Web
+S00504,2024-09-28,,Annual,Web
+S00505,2024-12-01,2025-12-01,Annual,Web
+S00506,2023-04-04,2025-02-17,Monthly,Web
+S00507,2023-09-08,2023-09-14,Monthly (promo),Partner
+S00508,2025-03-06,,Annual,Web
+S00509,2023-03-20,2023-10-07,Monthly,Web
+S00510,2025-04-19,,Monthly,Partner
+S00511,2023-08-11,,Monthly,Web
+S00512,2023-09-23,2024-06-20,Monthly (promo),Web
+S00513,2023-05-02,2023-09-10,Monthly,Partner
+S00514,2023-12-09,2024-03-09,Monthly (promo),Web
+S00515,2024-04-17,2024-05-21,Monthly,Web
+S00516,2023-10-09,,Monthly,Web
+S00517,2025-04-09,2025-09-03,Monthly,Web
+S00518,2023-04-16,2025-07-24,Monthly,Web
+S00519,2024-10-18,,Monthly,Web
+S00520,2023-10-06,2024-12-01,Annual,Partner
+S00521,2024-09-20,,Annual,Web
+S00522,2024-02-20,2025-01-27,Monthly,Partner
+S00523,2023-02-24,,Annual,Web
+S00524,2024-11-18,2025-02-08,Monthly (promo),Web
+S00525,2024-05-21,2024-08-20,Monthly (promo),Web
+S00526,2025-03-25,,Annual,Sales team
+S00527,2024-10-27,,Monthly,Web
+S00528,2024-09-18,2025-09-13,Monthly,Web
+S00529,2025-01-25,,Annual,Web
+S00530,2024-03-22,2025-03-22,Annual,Partner
+S00531,2023-07-20,,Annual,Web
+S00532,2023-06-02,2023-09-27,Monthly,Sales team
+S00533,2025-05-24,,Monthly,Web
+S00534,2024-10-17,2025-07-07,Annual,Sales team
+S00535,2023-01-15,2024-05-11,Monthly,Web
+S00536,2023-07-10,2023-07-10,Monthly,Partner
+S00537,2024-01-24,2024-08-10,Monthly,Web
+S00538,2024-11-23,,Annual,Web
+S00539,2024-10-05,2025-01-15,Monthly,Sales team
+S00540,2025-04-25,2025-07-25,Monthly (promo),Web
+S00541,2025-03-25,,Monthly,Web
+S00542,2024-01-03,2024-09-05,Monthly,Web
+S00543,2025-04-28,,Annual,Web
+S00544,2023-11-04,2024-05-30,Monthly,Sales team
+S00545,2024-09-20,2025-02-08,Monthly,Web
+S00546,2023-10-29,2024-03-15,Monthly,Sales team
+S00547,2023-04-23,2023-11-28,Monthly,Partner
+S00548,2023-06-11,2024-06-10,Annual,Web
+S00549,2023-06-05,,Monthly,Web
+S00550,2023-05-14,2023-09-06,Monthly (promo),Web
+S00551,2023-05-31,2023-08-30,Monthly (promo),Web
+S00552,2025-06-13,2025-11-13,Monthly,Sales team
+S00553,2025-06-12,2025-12-29,Monthly (promo),Sales team
+S00554,2024-04-25,2025-06-14,Monthly,Sales team
+S00555,2023-01-10,2025-05-24,Monthly,Web
+S00556,2024-10-13,,Annual,Partner
+S00557,2024-01-06,,Annual,Sales team
+S00558,2024-08-11,,Monthly,Web
+S00559,2025-03-01,2025-04-25,Monthly,Sales team
+S00560,2024-05-02,2024-09-10,Monthly (promo),Sales team
+S00561,2024-07-14,2024-10-13,Monthly (promo),Partner
+S00562,2023-07-09,,Monthly,Partner
+S00563,2023-06-02,2024-08-20,Monthly,Partner
+S00564,2024-11-04,,Annual,Web
+S00565,2024-03-12,,Annual,Web
+S00566,2024-01-28,,Monthly (promo),Partner
+S00567,2023-08-21,2024-07-25,Monthly,Partner
+S00568,2024-08-08,,Annual,Web
+S00569,2023-01-02,2025-03-26,Monthly (promo),Web
+S00570,2025-06-13,,Monthly,Partner
+S00571,2025-03-13,,Monthly,Web
+S00572,2024-09-04,2025-10-05,Monthly,Partner
+S00573,2024-03-03,,Monthly,Sales team
+S00574,2023-04-13,,Monthly,Partner
+S00575,2023-09-10,2024-08-11,Monthly,Partner
+S00576,2023-11-07,2024-02-19,Monthly (promo),Web
+S00577,2023-07-22,,Annual,Web
+S00578,2025-01-06,,Monthly,Web
+S00579,2024-07-03,2024-10-02,Monthly (promo),Partner
+S00580,2024-10-07,2025-01-06,Monthly (promo),Web
+S00581,2024-10-24,,Annual,Web
+S00582,2024-04-20,2025-12-07,Monthly (promo),Partner
+S00583,2024-04-07,,Annual,Web
+S00584,2023-10-06,2024-10-22,Monthly,Sales team
+S00585,2025-02-07,2025-04-06,Monthly (promo),Web
+S00586,2023-05-06,2023-05-16,Monthly (promo),Web
+S00587,2025-01-26,,Monthly,Partner
+S00588,2025-02-13,2025-06-23,Monthly,Web
+S00589,2023-07-26,2025-05-03,Monthly,Sales team
+S00590,2023-01-02,,Annual,Web
+S00591,2024-01-08,2024-03-18,Monthly,Web
+S00592,2024-04-09,2024-07-09,Monthly (promo),Web
+S00593,2024-01-05,,Monthly,Web
+S00594,2023-10-12,2024-12-19,Monthly (promo),Sales team
+S00595,2024-05-21,2024-10-01,Monthly,Web
+S00596,2024-11-26,2025-03-31,Monthly (promo),Partner
+S00597,2023-11-08,2024-05-13,Monthly (promo),Partner
+S00598,2023-01-17,,Annual,Web
+S00599,2023-06-02,,Monthly (promo),Web
+S00600,2023-12-10,2024-04-22,Monthly,Web
+S00601,2024-01-10,2024-10-18,Monthly,Web
+S00602,2024-08-28,,Monthly (promo),Partner
+S00603,2024-12-21,,Monthly,Partner
+S00604,2023-01-05,2025-03-30,Monthly,Web
+S00605,2024-04-27,,Annual,Web
+S00606,2023-10-02,2025-10-01,Annual,Web
+S00607,2024-11-20,2025-07-31,Monthly,Web
+S00608,2023-03-12,2024-09-07,Monthly (promo),Sales team
+S00609,2025-01-04,,Monthly,Web
+S00610,2024-08-16,,Annual,Partner
+S00611,2025-04-07,2025-07-07,Monthly (promo),Web
+S00612,2023-03-13,2024-09-20,Monthly,Partner
+S00613,2023-09-16,2024-07-10,Monthly,Partner
+S00614,2025-04-19,,Annual,Web
+S00615,2023-11-10,,Annual,Web
+S00616,2024-12-29,2025-10-27,Monthly,Web
+S00617,2023-07-17,2024-06-10,Monthly (promo),Web
+S00618,2024-10-15,,Annual,Partner
+S00619,2024-06-20,,Monthly (promo),Partner
+S00620,2025-01-03,,Monthly,Web
+S00621,2025-01-24,,Monthly,Web
+S00622,2023-05-18,2024-04-14,Monthly (promo),Web
+S00623,2024-04-29,,Annual,Web
+S00624,2024-10-13,,Monthly,Partner
+S00625,2024-04-24,,Annual,Web
+S00626,2024-07-08,,Annual,Web
+S00627,2024-09-04,2024-11-26,Monthly (promo),Partner
+S00628,2024-08-19,2025-08-19,Annual,Web
+S00629,2023-02-17,2025-12-02,Annual,Web
+S00630,2024-03-26,2025-07-07,Monthly (promo),Partner
+S00631,2023-06-02,2024-04-25,Monthly (promo),Web
+S00632,2023-03-18,,Monthly,Sales team
+S00633,2023-12-09,2024-06-08,Monthly,Web
+S00634,2024-11-26,,Monthly (promo),Partner
+S00635,2025-02-16,,Annual,Web
+S00636,2024-11-19,,Monthly,Sales team
+S00637,2025-04-06,2025-07-06,Monthly (promo),Web
+S00638,2025-01-05,,Monthly,Partner
+S00639,2023-10-23,2024-08-20,Monthly,Sales team
+S00640,2024-02-06,2024-04-16,Monthly (promo),Partner
+S00641,2023-06-08,2024-10-24,Annual,Sales team
+S00642,2024-01-11,,Annual,Sales team
+S00643,2023-02-03,,Monthly (promo),Partner
+S00644,2023-09-19,,Monthly,Web
+S00645,2024-04-29,2024-06-20,Monthly,Partner
+S00646,2024-07-26,,Annual,Web
+S00647,2024-12-08,,Monthly,Web
+S00648,2023-04-30,2023-07-30,Monthly (promo),Web
+S00649,2024-07-12,2024-08-30,Monthly,Partner
+S00650,2024-01-07,2025-12-02,Monthly,Web
+S00651,2024-07-05,,Monthly,Sales team
+S00652,2025-03-14,2025-06-13,Monthly (promo),Web
+S00653,2024-08-20,2024-10-13,Monthly,Web
+S00654,2024-02-19,2025-06-29,Monthly,Web
+S00655,2023-10-24,2024-03-04,Monthly,Sales team
+S00656,2025-02-02,,Annual,Sales team
+S00657,2024-12-29,,Monthly,Web
+S00658,2024-05-26,2025-11-26,Monthly,Web
+S00659,2023-12-27,2024-03-27,Monthly (promo),Web
+S00660,2024-02-29,2025-02-28,Annual,Partner
+S00661,2024-04-15,,Monthly (promo),Sales team
+S00662,2025-04-29,,Annual,Partner
+S00663,2025-04-10,,Monthly,Web
+S00664,2023-12-01,2024-03-01,Monthly (promo),Web
+S00665,2024-12-14,,Monthly,Sales team
+S00666,2023-02-19,2025-12-06,Monthly,Sales team
+S00667,2024-10-18,,Monthly,Web
+S00668,2025-04-18,,Annual,Partner
+S00669,2024-11-27,2025-06-03,Monthly,Web
+S00670,2024-07-01,2024-09-30,Monthly (promo),Partner
+S00671,2023-04-23,2024-04-22,Annual,Web
+S00672,2025-04-11,,Annual,Web
+S00673,2023-01-30,,Monthly,Web
+S00674,2024-04-28,2024-11-10,Monthly (promo),Sales team
+S00675,2024-08-25,2024-11-24,Monthly (promo),Partner
+S00676,2025-02-23,,Monthly,Partner
+S00677,2024-04-20,2024-06-03,Monthly,Partner
+S00678,2025-02-21,,Monthly,Web
+S00679,2024-09-25,,Monthly (promo),Web
+S00680,2024-04-27,2025-01-14,Monthly (promo),Web
+S00681,2023-08-18,,Monthly,Web
+S00682,2024-11-20,,Annual,Web
+S00683,2023-05-30,2023-10-29,Monthly,Web
+S00684,2023-07-04,2025-04-07,Monthly,Web
+S00685,2025-03-22,,Monthly,Web
+S00686,2024-10-28,2024-12-06,Monthly,Web
+S00687,2024-08-14,2025-04-18,Monthly,Web
+S00688,2023-07-22,2024-10-15,Monthly,Partner
+S00689,2023-08-24,2025-07-17,Annual,Sales team
+S00690,2024-06-09,2024-09-16,Monthly,Web
+S00691,2024-02-09,2025-02-08,Annual,Web
+S00692,2023-11-09,2024-11-08,Annual,Web
+S00693,2024-10-30,,Monthly,Sales team
+S00694,2023-03-14,,Annual,Sales team
+S00695,2023-06-24,2024-03-09,Monthly,Web
+S00696,2024-02-24,,Annual,Web
+S00697,2023-08-28,2024-08-27,Annual,Web
+S00698,2023-02-24,2025-05-08,Annual,Web
+S00699,2023-12-08,2024-09-23,Monthly (promo),Partner
+S00700,2023-06-29,2025-07-05,Annual,Partner
+S00701,2024-01-21,2024-04-26,Monthly,Partner
+S00702,2023-06-26,,Annual,Web
+S00703,2023-04-10,2023-04-26,Monthly,Web
+S00704,2023-12-02,,Monthly,Web
+S00705,2025-06-14,2025-08-03,Monthly,Web
+S00706,2023-03-22,,Annual,Web
+S00707,2024-01-21,2024-07-09,Monthly,Partner
+S00708,2024-10-24,2025-10-24,Annual,Partner
+S00709,2023-03-22,,Annual,Partner
+S00710,2024-09-14,2025-04-12,Annual,Web
+S00711,2024-03-31,2025-02-04,Annual,Sales team
+S00712,2024-09-30,,Annual,Web
+S00713,2023-10-19,2025-03-31,Monthly,Web
+S00714,2025-02-10,2025-05-12,Monthly (promo),Web
+S00715,2023-10-12,2024-01-22,Monthly,Web
+S00716,2025-03-16,,Annual,Web
+S00717,2025-05-23,,Monthly,Web
+S00718,2024-02-18,2024-03-12,Monthly,Partner
+S00719,2024-01-02,2024-01-08,Monthly,Sales team
+S00720,2024-10-14,2024-11-18,Monthly,Sales team
+S00721,2025-03-28,2025-05-05,Monthly,Web
+S00722,2025-03-30,,Monthly,Web
+S00723,2024-06-06,2025-08-13,Monthly (promo),Web
+S00724,2024-09-27,,Annual,Web
+S00725,2023-12-29,2024-07-25,Monthly,Partner
+S00726,2024-04-19,,Monthly (promo),Web
+S00727,2024-12-27,2025-01-01,Monthly (promo),Web
+S00728,2025-02-05,2025-05-16,Monthly,Partner
+S00729,2025-02-24,2025-10-13,Monthly (promo),Sales team
+S00730,2025-05-22,,Annual,Web
+S00731,2023-06-09,2025-10-03,Annual,Web
+S00732,2023-03-04,2024-12-02,Monthly,Web
+S00733,2024-11-07,2024-12-29,Monthly,Web
+S00734,2023-01-30,2024-01-08,Monthly,Web
+S00735,2024-07-01,2024-09-30,Monthly (promo),Web
+S00736,2023-06-05,2023-08-26,Monthly,Web
+S00737,2023-12-14,2025-10-17,Monthly,Web
+S00738,2023-10-05,,Annual,Partner
+S00739,2023-12-20,,Annual,Sales team
+S00740,2025-04-20,,Annual,Partner
+S00741,2024-11-05,,Monthly,Web
+S00742,2023-11-22,2024-07-21,Monthly (promo),Web
+S00743,2025-02-20,,Monthly,Web
+S00744,2025-02-10,,Annual,Sales team
+S00745,2024-06-27,,Monthly,Web
+S00746,2023-10-31,2024-03-16,Monthly,Partner
+S00747,2023-10-08,,Annual,Web
+S00748,2024-09-20,,Monthly,Partner
+S00749,2024-03-23,2024-07-16,Monthly (promo),Web
+S00750,2024-05-07,,Monthly,Web
+S00751,2025-02-19,,Annual,Web
+S00752,2025-01-20,,Annual,Web
+S00753,2023-06-22,2023-10-15,Monthly,Web
+S00754,2023-06-18,,Monthly,Partner
+S00755,2023-05-19,2024-04-14,Monthly (promo),Web
+S00756,2023-09-28,2024-09-27,Annual,Web
+S00757,2024-12-22,2025-12-15,Monthly,Web
+S00758,2025-06-18,,Monthly,Web
+S00759,2025-01-27,,Monthly,Web
+S00760,2024-05-20,2024-08-19,Monthly (promo),Web
+S00761,2024-05-08,,Annual,Web
+S00762,2024-11-04,2025-07-18,Monthly,Web
+S00763,2023-09-25,2023-11-15,Monthly (promo),Web
+S00764,2023-02-08,2025-01-09,Monthly,Web
+S00765,2023-05-15,,Annual,Web
+S00766,2023-05-05,2023-08-04,Monthly (promo),Partner
+S00767,2025-02-10,2025-07-07,Monthly,Web
+S00768,2025-06-04,,Annual,Web
+S00769,2024-10-15,2025-08-26,Monthly,Partner
+S00770,2023-03-25,2023-06-02,Monthly,Web
+S00771,2023-02-03,2023-03-19,Monthly,Web
+S00772,2023-08-17,2024-03-26,Monthly (promo),Web
+S00773,2025-03-18,2025-03-21,Monthly,Partner
+S00774,2024-03-06,2025-06-21,Monthly,Web
+S00775,2023-08-10,2024-06-25,Monthly (promo),Web
+S00776,2023-12-17,2024-07-17,Monthly,Web
+S00777,2024-03-14,2025-02-09,Monthly,Web
+S00778,2023-07-14,2023-11-19,Monthly,Web
+S00779,2024-04-26,2024-11-11,Monthly (promo),Web
+S00780,2023-01-06,2023-05-13,Monthly (promo),Sales team
+S00781,2025-04-12,,Monthly (promo),Partner
+S00782,2024-10-14,,Annual,Partner
+S00783,2025-05-17,,Monthly (promo),Partner
+S00784,2023-08-02,2023-10-08,Monthly,Partner
+S00785,2024-03-04,,Annual,Web
+S00786,2024-08-21,,Monthly,Web
+S00787,2024-09-03,2024-12-15,Monthly,Web
+S00788,2024-09-10,,Monthly,Web
+S00789,2024-05-18,,Monthly,Partner
+S00790,2024-09-01,,Monthly (promo),Partner
+S00791,2025-05-24,2025-09-30,Monthly,Sales team
+S00792,2024-12-19,2025-02-06,Monthly,Web
+S00793,2024-07-12,2025-01-28,Monthly,Web
+S00794,2024-01-23,2024-08-11,Monthly,Web
+S00795,2024-08-22,,Monthly,Web
+S00796,2023-12-09,2024-07-10,Monthly (promo),Web
+S00797,2024-01-20,,Annual,Web
+S00798,2024-06-17,2024-06-27,Monthly (promo),Partner
+S00799,2024-09-30,,Monthly,Web
+S00800,2023-02-23,2024-05-15,Monthly,Web
+S00801,2025-04-09,,Annual,Sales team
+S00802,2025-03-29,,Annual,Web
+S00803,2023-07-16,2023-10-15,Monthly (promo),Web
+S00804,2024-11-14,2025-04-01,Annual,Web
+S00805,2024-04-14,2024-11-01,Monthly (promo),Web
+S00806,2024-05-15,,Annual,Web
+S00807,2024-05-17,2024-06-05,Monthly (promo),Web
+S00808,2023-05-31,2023-06-18,Monthly,Sales team
+S00809,2024-09-16,,Annual,Partner
+S00810,2023-04-11,2023-06-27,Monthly,Web
+S00811,2024-03-21,2024-06-20,Monthly,Web
+S00812,2024-04-27,2024-05-18,Monthly,Web
+S00813,2023-06-10,2024-06-29,Monthly,Web
+S00814,2024-06-19,2025-09-28,Monthly,Partner
+S00815,2023-11-09,2024-11-17,Monthly,Partner
+S00816,2024-05-07,,Annual,Web
+S00817,2023-11-17,,Monthly,Partner
+S00818,2023-06-06,2024-01-02,Monthly,Web
+S00819,2023-10-24,2024-10-23,Annual,Sales team
+S00820,2025-05-29,,Monthly,Web
+S00821,2024-07-17,2025-07-17,Annual,Partner
+S00822,2025-06-14,,Monthly,Partner
+S00823,2024-06-18,,Annual,Web
+S00824,2025-03-01,,Annual,Web
+S00825,2024-10-25,,Monthly,Web
+S00826,2023-09-05,,Annual,Web
+S00827,2024-08-21,2025-04-02,Monthly,Web
+S00828,2025-04-09,,Monthly,Web
+S00829,2023-10-18,2024-01-17,Monthly (promo),Sales team
+S00830,2025-02-07,2025-07-28,Monthly,Web
+S00831,2024-10-09,2025-10-10,Monthly,Web
+S00832,2023-02-04,,Annual,Web
+S00833,2024-08-30,,Annual,Web
+S00834,2023-11-19,2024-11-04,Monthly (promo),Partner
+S00835,2025-06-05,,Monthly,Web
+S00836,2023-02-23,2024-06-13,Monthly,Sales team
+S00837,2023-05-24,2023-12-07,Monthly,Partner
+S00838,2024-07-17,2024-10-18,Monthly,Web
+S00839,2023-05-06,2023-10-13,Monthly (promo),Sales team
+S00840,2023-11-30,,Monthly,Partner
+S00841,2024-08-15,2025-07-31,Monthly,Sales team
+S00842,2023-02-04,2024-02-24,Monthly (promo),Partner
+S00843,2023-04-25,,Monthly (promo),Web
+S00844,2024-03-27,,Annual,Partner
+S00845,2023-07-05,2025-06-21,Monthly,Web
+S00846,2023-08-27,2023-09-11,Monthly,Web
+S00847,2024-06-07,2024-09-19,Monthly,Partner
+S00848,2023-05-28,2025-02-21,Monthly,Sales team
+S00849,2024-09-04,,Monthly,Web
+S00850,2024-04-24,,Annual,Web
+S00851,2023-04-12,2024-06-06,Monthly,Sales team
+S00852,2025-03-16,,Annual,Sales team
+S00853,2024-02-24,,Annual,Web
+S00854,2023-01-13,2023-12-03,Monthly,Web
+S00855,2023-08-02,2024-01-09,Monthly (promo),Partner
+S00856,2024-05-03,,Monthly,Partner
+S00857,2025-04-13,2025-06-30,Monthly,Web
+S00858,2023-03-30,2025-03-29,Annual,Web
+S00859,2024-11-18,2025-06-18,Monthly,Sales team
+S00860,2023-10-08,,Annual,Sales team
+S00861,2023-12-17,2024-02-05,Monthly,Web
+S00862,2023-05-19,,Annual,Web
+S00863,2023-12-16,2024-07-13,Monthly,Web
+S00864,2024-06-15,2025-08-12,Monthly (promo),Web
+S00865,2023-08-24,2023-12-31,Monthly,Sales team
+S00866,2024-06-02,2024-09-01,Monthly (promo),Web
+S00867,2024-02-18,,Monthly,Partner
+S00868,2023-09-21,,Annual,Web
+S00869,2024-08-29,,Annual,Web
+S00870,2024-07-31,,Annual,Partner
+S00871,2025-06-09,,Monthly,Web
+S00872,2023-04-15,2023-04-19,Monthly (promo),Web
+S00873,2025-04-20,2025-04-23,Monthly,Partner
+S00874,2024-06-21,,Monthly,Web
+S00875,2024-12-20,2024-12-24,Monthly,Web
+S00876,2023-12-22,2024-06-10,Monthly,Web
+S00877,2025-02-05,2025-12-28,Monthly,Sales team
+S00878,2023-06-23,,Monthly,Web
+S00879,2024-11-20,,Annual,Web
+S00880,2024-06-23,2024-07-18,Monthly (promo),Partner
+S00881,2023-03-04,2023-08-18,Monthly,Partner
+S00882,2024-08-23,,Annual,Web
+S00883,2023-12-06,2025-06-01,Annual,Web
+S00884,2023-05-11,2023-10-10,Monthly (promo),Web
+S00885,2023-11-26,,Monthly,Web
+S00886,2025-01-16,2025-06-04,Monthly,Web
+S00887,2023-02-19,2023-05-21,Monthly (promo),Partner
+S00888,2023-01-19,2024-03-04,Monthly (promo),Web
+S00889,2024-03-16,,Annual,Web
+S00890,2023-03-09,,Monthly,Web
+S00891,2024-11-06,2024-11-18,Monthly,Sales team
+S00892,2024-01-24,,Monthly,Web
+S00893,2023-04-22,,Monthly,Partner
+S00894,2025-06-07,,Annual,Sales team
+S00895,2024-08-05,2024-12-30,Monthly,Partner
+S00896,2023-11-03,,Annual,Web
+S00897,2023-11-24,2024-04-08,Annual,Web
+S00898,2024-10-18,2025-10-18,Annual,Web
+S00899,2025-04-22,2025-09-14,Monthly (promo),Partner
+S00900,2023-09-23,2023-11-28,Monthly (promo),Web
+S00901,2025-01-12,,Monthly,Web
+S00902,2023-09-07,2024-01-12,Monthly (promo),Web
+S00903,2024-08-17,,Monthly,Web
+S00904,2025-01-10,,Monthly,Web
+S00905,2025-03-01,,Monthly,Web
+S00906,2025-02-06,2025-06-17,Monthly,Web
+S00907,2024-01-06,2025-12-25,Monthly,Web
+S00908,2024-03-18,2024-05-30,Monthly,Web
+S00909,2024-09-29,2025-03-23,Monthly,Web
+S00910,2024-09-27,,Annual,Partner
+S00911,2023-11-24,2025-01-03,Monthly,Web
+S00912,2023-08-30,,Annual,Web
+S00913,2023-08-28,2024-08-27,Annual,Web
+S00914,2024-02-16,2024-11-24,Monthly,Partner
+S00915,2024-12-01,2025-05-22,Monthly (promo),Web
+S00916,2023-01-15,,Annual,Web
+S00917,2023-09-09,,Annual,Partner
+S00918,2023-09-23,2023-11-22,Monthly (promo),Web
+S00919,2023-06-07,,Annual,Partner
+S00920,2023-06-17,2024-07-14,Monthly,Sales team
+S00921,2024-06-06,2025-04-07,Monthly,Partner
+S00922,2025-03-13,2025-05-09,Monthly,Web
+S00923,2024-03-19,,Monthly,Web
+S00924,2024-04-25,2025-11-06,Monthly,Web
+S00925,2024-12-07,,Monthly,Web
+S00926,2023-05-06,2023-08-05,Monthly (promo),Partner
+S00927,2023-05-09,2025-05-04,Annual,Web
+S00928,2024-08-08,,Monthly (promo),Sales team
+S00929,2024-06-08,2024-09-07,Monthly (promo),Web
+S00930,2023-08-26,2024-01-21,Monthly,Sales team
+S00931,2023-08-16,2023-12-11,Monthly,Web
+S00932,2023-04-15,2025-09-21,Monthly (promo),Web
+S00933,2024-12-10,,Annual,Web
+S00934,2023-07-28,,Monthly,Web
+S00935,2024-07-02,,Annual,Web
+S00936,2025-02-22,,Monthly,Sales team
+S00937,2024-01-21,,Monthly,Partner
+S00938,2023-09-07,2023-12-07,Monthly (promo),Web
+S00939,2025-05-04,2025-07-07,Monthly,Web
+S00940,2024-08-07,,Annual,Sales team
+S00941,2024-02-28,2024-06-22,Monthly (promo),Sales team
+S00942,2024-01-19,2024-04-19,Monthly (promo),Web
+S00943,2023-07-18,2024-02-15,Monthly (promo),Web
+S00944,2024-01-23,,Annual,Partner
+S00945,2024-05-21,2024-08-20,Monthly (promo),Web
+S00946,2023-01-04,,Annual,Partner
+S00947,2023-05-31,2024-05-30,Annual,Sales team
+S00948,2025-05-30,,Monthly,Web
+S00949,2023-04-30,2025-09-26,Monthly,Sales team
+S00950,2024-08-15,2025-03-16,Monthly,Web
+S00951,2023-02-07,,Monthly (promo),Web
+S00952,2024-04-13,,Annual,Sales team
+S00953,2023-06-30,2025-07-15,Monthly,Web
+S00954,2023-05-12,2023-08-11,Monthly (promo),Web
+S00955,2025-02-18,,Annual,Sales team
+S00956,2023-11-25,2024-05-14,Monthly,Web
+S00957,2023-11-06,2023-11-11,Monthly,Web
+S00958,2024-09-24,2024-09-30,Monthly,Partner
+S00959,2024-12-19,,Monthly,Web
+S00960,2023-02-18,,Monthly,Web
+S00961,2025-03-28,,Annual,Web
+S00962,2024-01-12,,Annual,Web
+S00963,2023-03-25,,Annual,Web
+S00964,2024-07-15,2025-03-11,Monthly,Partner
+S00965,2023-05-07,2023-10-18,Monthly,Web
+S00966,2023-11-11,,Monthly,Web
+S00967,2023-05-19,2025-07-06,Monthly,Partner
+S00968,2025-05-28,,Monthly (promo),Web
+S00969,2024-05-28,,Annual,Web
+S00970,2024-05-08,2025-03-07,Monthly,Web
+S00971,2023-03-13,2024-11-28,Monthly (promo),Web
+S00972,2023-03-10,2023-04-24,Monthly,Sales team
+S00973,2023-01-19,,Annual,Sales team
+S00974,2024-05-07,,Monthly,Web
+S00975,2023-12-12,,Monthly,Sales team
+S00976,2023-05-20,,Monthly (promo),Web
+S00977,2024-10-11,,Annual,Web
+S00978,2023-02-27,2023-05-29,Monthly (promo),Web
+S00979,2023-11-18,2025-02-08,Monthly,Web
+S00980,2023-11-13,2024-03-20,Monthly,Partner
+S00981,2023-06-03,2024-12-18,Monthly,Partner
+S00982,2025-03-17,2025-04-12,Monthly (promo),Partner
+S00983,2024-01-16,2024-06-01,Monthly,Web
+S00984,2023-09-25,,Annual,Partner
+S00985,2024-09-11,2024-09-13,Monthly,Partner
+S00986,2024-11-26,2025-10-01,Monthly,Partner
+S00987,2023-04-27,2023-07-02,Monthly (promo),Partner
+S00988,2023-06-18,,Annual,Web
+S00989,2024-05-03,,Monthly (promo),Web
+S00990,2023-01-29,2023-11-07,Monthly,Partner
+S00991,2023-06-18,2024-03-21,Monthly,Sales team
+S00992,2023-04-30,2025-06-05,Monthly (promo),Web
+S00993,2024-01-29,,Annual,Web
+S00994,2023-05-04,,Monthly,Web
+S00995,2025-05-30,,Monthly (promo),Web
+S00996,2025-06-01,,Monthly,Web
+S00997,2024-01-23,,Annual,Sales team
+S00998,2024-06-23,2024-07-25,Monthly (promo),Sales team
+S00999,2024-06-04,,Annual,Web
+S01000,2023-03-18,2023-06-17,Monthly (promo),Web
+S01001,2023-07-14,2025-09-13,Monthly,Web
+S01002,2025-03-15,2025-05-15,Monthly (promo),Web
+S01003,2024-05-26,2024-06-27,Monthly,Sales team
+S01004,2024-10-08,2025-11-27,Monthly (promo),Partner
+S01005,2024-09-21,,Annual,Partner
+S01006,2025-01-07,2025-07-04,Monthly,Web
+S01007,2023-08-13,2024-08-12,Annual,Sales team
+S01008,2024-08-19,2024-10-13,Monthly,Web
+S01009,2024-05-05,2024-10-04,Monthly,Sales team
+S01010,2024-09-24,,Annual,Web
+S01011,2024-02-26,,Monthly (promo),Web
+S01012,2023-10-04,2023-10-16,Monthly,Web
+S01013,2025-05-27,2025-06-22,Monthly,Sales team
+S01014,2024-07-30,2024-11-07,Monthly,Web
+S01015,2024-09-18,2025-01-20,Monthly,Web
+S01016,2024-07-06,,Monthly,Web
+S01017,2025-05-08,,Monthly,Sales team
+S01018,2023-08-15,,Annual,Partner
+S01019,2024-12-14,2025-09-02,Monthly,Partner
+S01020,2024-07-18,2025-07-24,Monthly (promo),Web
+S01021,2023-11-25,2024-03-27,Monthly,Web
+S01022,2024-11-30,,Monthly,Sales team
+S01023,2024-03-13,,Monthly,Sales team
+S01024,2023-12-29,2025-11-20,Monthly,Web
+S01025,2025-02-06,,Annual,Web
+S01026,2025-01-30,2025-09-24,Monthly,Partner
+S01027,2023-02-19,2025-03-06,Monthly,Sales team
+S01028,2025-03-15,,Annual,Partner
+S01029,2025-06-09,,Annual,Web
+S01030,2023-09-11,2025-01-30,Monthly,Partner
+S01031,2023-10-13,2024-08-27,Monthly,Partner
+S01032,2024-12-14,,Annual,Sales team
+S01033,2024-11-15,,Annual,Web
+S01034,2025-01-19,,Annual,Web
+S01035,2023-12-07,,Monthly,Partner
+S01036,2023-12-07,2023-12-11,Monthly (promo),Web
+S01037,2023-05-09,2024-06-06,Monthly,Web
+S01038,2023-07-08,2024-02-10,Monthly,Web
+S01039,2023-01-26,2024-03-20,Monthly (promo),Web
+S01040,2025-02-16,,Monthly,Web
+S01041,2023-10-22,2023-12-13,Monthly,Web
+S01042,2024-04-03,,Monthly,Partner
+S01043,2024-12-23,2025-01-07,Monthly,Web
+S01044,2024-03-10,2024-06-09,Monthly (promo),Web
+S01045,2023-06-12,,Annual,Web
+S01046,2024-05-31,,Monthly,Web
+S01047,2024-12-26,2025-03-17,Monthly,Web
+S01048,2023-02-28,2024-02-28,Annual,Web
+S01049,2024-12-24,2025-01-12,Monthly,Partner
+S01050,2024-09-06,2024-10-07,Monthly,Sales team
+S01051,2023-02-07,2025-02-06,Annual,Sales team
+S01052,2023-09-29,,Monthly,Web
+S01053,2024-04-07,,Annual,Web
+S01054,2025-04-13,,Annual,Sales team
+S01055,2023-01-14,2023-04-15,Monthly (promo),Partner
+S01056,2023-06-12,,Monthly,Web
+S01057,2024-06-16,2024-06-18,Monthly,Sales team
+S01058,2024-03-20,,Annual,Web
+S01059,2023-01-14,2025-01-13,Annual,Web
+S01060,2023-09-14,2025-07-04,Monthly,Web
+S01061,2025-03-29,,Annual,Sales team
+S01062,2025-05-15,2025-10-18,Annual,Partner
+S01063,2023-05-27,2025-05-30,Monthly (promo),Sales team
+S01064,2023-11-23,2024-03-27,Monthly,Web
+S01065,2025-03-14,2025-06-13,Monthly (promo),Web
+S01066,2024-12-01,,Monthly (promo),Web
+S01067,2023-07-29,2023-10-28,Monthly (promo),Partner
+S01068,2023-10-17,2024-09-29,Monthly,Web
+S01069,2025-01-15,,Annual,Web
+S01070,2023-03-26,2024-01-26,Monthly (promo),Web
+S01071,2023-07-29,,Annual,Web
+S01072,2023-08-11,2025-08-10,Annual,Partner
+S01073,2023-05-11,2023-08-10,Monthly (promo),Web
+S01074,2023-01-09,2023-04-19,Monthly (promo),Web
+S01075,2023-12-26,2024-03-26,Monthly (promo),Web
+S01076,2023-03-28,2023-06-27,Monthly (promo),Partner
+S01077,2024-06-22,2024-07-06,Annual,Web
+S01078,2025-03-18,,Annual,Web
+S01079,2023-01-28,,Annual,Web
+S01080,2024-06-17,,Annual,Sales team
+S01081,2025-06-02,,Annual,Web
+S01082,2024-11-14,,Monthly (promo),Partner
+S01083,2024-01-10,,Annual,Partner
+S01084,2023-11-24,2024-12-27,Monthly,Web
+S01085,2023-09-29,,Monthly,Web
+S01086,2024-08-26,,Monthly,Partner
+S01087,2024-07-30,,Monthly,Web
+S01088,2023-08-21,2024-08-20,Annual,Web
+S01089,2023-02-06,,Monthly,Partner
+S01090,2024-09-22,2025-05-09,Monthly,Partner
+S01091,2024-11-24,,Annual,Partner
+S01092,2024-04-03,,Monthly,Web
+S01093,2024-01-17,,Annual,Partner
+S01094,2023-04-08,,Annual,Web
+S01095,2023-05-06,2024-03-15,Monthly,Web
+S01096,2024-10-14,,Monthly (promo),Partner
+S01097,2024-03-10,2024-03-12,Monthly,Web
+S01098,2023-09-17,,Monthly,Web
+S01099,2023-02-13,2023-05-15,Monthly (promo),Web
+S01100,2025-02-01,,Monthly,Partner
+S01101,2024-11-05,2025-01-17,Monthly (promo),Partner
+S01102,2023-01-29,2024-01-29,Annual,Partner
+S01103,2024-02-01,2025-01-10,Monthly,Partner
+S01104,2023-09-15,2023-10-04,Monthly,Partner
+S01105,2025-06-08,2025-09-07,Monthly (promo),Sales team
+S01106,2025-06-09,2025-08-17,Monthly,Sales team
+S01107,2024-02-12,2025-06-25,Monthly,Partner
+S01108,2023-08-06,2023-09-02,Monthly,Sales team
+S01109,2024-12-02,2025-08-05,Monthly,Partner
+S01110,2023-12-29,2025-11-21,Monthly,Sales team
+S01111,2024-07-19,2024-12-04,Monthly,Partner
+S01112,2023-06-18,,Monthly,Web
+S01113,2023-04-08,2025-09-14,Monthly,Sales team
+S01114,2023-11-11,,Monthly,Web
+S01115,2023-10-06,2024-09-27,Monthly,Web
+S01116,2024-09-30,2024-12-21,Monthly,Sales team
+S01117,2024-06-19,,Monthly,Web
+S01118,2023-05-08,2023-08-07,Monthly (promo),Partner
+S01119,2025-01-07,2025-03-06,Monthly,Sales team
+S01120,2024-02-29,,Annual,Sales team
+S01121,2023-08-30,,Monthly,Web
+S01122,2023-12-12,2024-12-11,Annual,Web
+S01123,2023-05-20,,Annual,Sales team
+S01124,2023-04-19,2023-07-27,Monthly,Web
+S01125,2024-01-22,2024-04-22,Monthly (promo),Web
+S01126,2023-11-07,2025-03-28,Monthly,Partner
+S01127,2025-01-28,,Annual,Web
+S01128,2023-08-06,,Annual,Web
+S01129,2023-09-16,2024-08-16,Annual,Partner
+S01130,2023-10-17,,Monthly,Web
+S01131,2023-03-07,2024-08-13,Monthly,Web
+S01132,2024-01-01,,Annual,Web
+S01133,2024-06-02,2024-11-08,Monthly,Web
+S01134,2023-03-30,2023-11-27,Monthly (promo),Web
+S01135,2024-12-04,,Monthly,Partner
+S01136,2023-09-10,,Annual,Partner
+S01137,2023-11-26,2024-01-18,Monthly,Web
+S01138,2024-07-26,2025-07-01,Monthly,Partner
+S01139,2024-07-15,2024-09-03,Monthly,Web
+S01140,2023-10-29,2025-10-28,Annual,Web
+S01141,2024-12-07,2025-04-24,Monthly (promo),Partner
+S01142,2025-04-29,2025-07-29,Monthly (promo),Partner
+S01143,2024-01-05,2024-01-22,Monthly,Web
+S01144,2024-02-13,2024-07-29,Monthly,Sales team
+S01145,2025-02-27,,Monthly,Web
+S01146,2023-03-24,2023-06-28,Monthly,Web
+S01147,2024-02-24,,Monthly,Web
+S01148,2024-04-06,,Annual,Partner
+S01149,2024-12-02,2024-12-21,Monthly (promo),Partner
+S01150,2023-06-13,2023-06-24,Monthly (promo),Partner
+S01151,2023-03-28,2023-04-03,Monthly,Sales team
+S01152,2023-11-06,2024-07-06,Monthly,Sales team
+S01153,2023-06-24,2023-06-28,Monthly,Web
+S01154,2025-05-27,,Monthly,Partner
+S01155,2024-10-09,2025-01-08,Monthly (promo),Web
+S01156,2023-04-02,2024-07-13,Monthly,Sales team
+S01157,2023-08-14,2025-08-29,Monthly (promo),Partner
+S01158,2025-03-28,,Monthly,Web
+S01159,2023-08-25,2025-08-24,Annual,Web
+S01160,2023-02-05,2023-07-25,Monthly,Web
+S01161,2024-06-12,2024-09-13,Monthly,Partner
+S01162,2024-11-08,,Annual,Web
+S01163,2024-10-24,,Annual,Sales team
+S01164,2025-01-27,2025-10-15,Monthly (promo),Partner
+S01165,2023-06-15,2024-03-27,Monthly (promo),Sales team
+S01166,2024-05-24,2025-05-10,Monthly,Web
+S01167,2023-03-29,,Annual,Web
+S01168,2023-05-13,2025-01-04,Monthly,Partner
+S01169,2024-10-03,,Annual,Web
+S01170,2023-02-04,2025-02-03,Annual,Web
+S01171,2023-11-24,2023-12-31,Monthly,Web
+S01172,2023-06-18,2024-05-05,Monthly (promo),Web
+S01173,2024-05-20,,Monthly,Web
+S01174,2023-02-17,,Annual,Web
+S01175,2023-03-09,,Monthly,Sales team
+S01176,2023-08-18,,Annual,Sales team
+S01177,2024-06-27,2024-12-21,Monthly,Web
+S01178,2025-01-19,,Monthly,Web
+S01179,2025-04-18,,Annual,Web
+S01180,2023-02-07,2023-10-05,Monthly,Sales team
+S01181,2023-03-31,,Annual,Partner
+S01182,2024-12-07,,Monthly,Partner
+S01183,2023-04-26,2024-04-25,Annual,Web
+S01184,2024-09-21,2025-05-19,Monthly,Web
+S01185,2024-10-03,,Monthly,Sales team
+S01186,2024-06-29,2024-08-13,Monthly (promo),Partner
+S01187,2023-07-27,,Annual,Sales team
+S01188,2025-03-26,,Annual,Web
+S01189,2024-02-05,2025-05-11,Monthly,Web
+S01190,2024-04-12,2024-05-05,Monthly,Web
+S01191,2024-06-29,2025-02-01,Monthly,Sales team
+S01192,2024-02-23,,Annual,Web
+S01193,2024-07-08,,Annual,Web
+S01194,2023-07-16,2025-07-13,Monthly,Sales team
+S01195,2023-09-18,2025-04-25,Monthly,Web
+S01196,2023-12-06,,Annual,Web
+S01197,2023-09-29,2024-07-02,Monthly,Web
+S01198,2023-02-21,,Annual,Sales team
+S01199,2025-04-16,,Monthly (promo),Web
+S01200,2024-08-06,2025-08-06,Annual,Partner
+S01201,2023-01-10,2024-10-19,Monthly (promo),Web
+S01202,2025-02-27,2025-08-10,Monthly (promo),Web
+S01203,2024-12-19,,Annual,Sales team
+S01204,2024-09-10,,Monthly,Partner
+S01205,2025-04-03,,Monthly,Sales team
+S01206,2024-06-24,2024-09-02,Monthly (promo),Web
+S01207,2023-01-12,2025-01-11,Annual,Web
+S01208,2025-05-30,,Annual,Web
+S01209,2023-04-02,,Annual,Web
+S01210,2023-09-26,2023-12-24,Monthly,Web
+S01211,2024-06-08,,Annual,Web
+S01212,2025-05-06,2025-05-15,Monthly,Web
+S01213,2023-09-29,2023-10-13,Monthly (promo),Web
+S01214,2024-04-21,,Monthly,Web
+S01215,2023-07-22,2024-01-04,Monthly,Web
+S01216,2024-03-23,2025-11-19,Monthly (promo),Partner
+S01217,2025-06-13,,Annual,Sales team
+S01218,2025-06-18,2025-06-22,Monthly (promo),Sales team
+S01219,2024-02-20,,Annual,Web
+S01220,2025-03-06,2025-05-29,Monthly,Web
+S01221,2023-10-06,2025-11-20,Monthly,Web
+S01222,2023-08-18,,Annual,Web
+S01223,2023-06-12,2023-12-19,Monthly,Web
+S01224,2025-01-15,2025-07-19,Monthly,Web
+S01225,2023-05-04,,Annual,Partner
+S01226,2024-11-12,,Monthly (promo),Partner
+S01227,2023-07-09,2025-07-04,Monthly,Partner
+S01228,2024-04-18,,Annual,Web
+S01229,2025-04-30,2025-05-19,Monthly (promo),Sales team
+S01230,2024-10-07,2025-01-06,Monthly (promo),Web
+S01231,2023-12-28,2024-12-27,Annual,Partner
+S01232,2023-06-15,2024-02-06,Monthly,Partner
+S01233,2024-02-08,2024-08-22,Monthly,Partner
+S01234,2023-03-21,,Annual,Web
+S01235,2024-01-10,,Monthly,Web
+S01236,2023-11-14,,Monthly,Web
+S01237,2024-06-15,2025-10-14,Monthly,Web
+S01238,2023-12-24,2024-03-24,Monthly (promo),Web
+S01239,2023-08-26,,Annual,Web
+S01240,2025-03-14,,Monthly,Web
+S01241,2023-06-22,2024-01-02,Monthly,Partner
+S01242,2024-08-03,,Annual,Partner
+S01243,2023-04-25,2023-11-12,Monthly,Web
+S01244,2024-10-25,2025-07-16,Monthly,Partner
+S01245,2024-02-15,2025-07-03,Monthly,Partner
+S01246,2024-06-14,2025-08-05,Monthly,Web
+S01247,2025-04-04,,Annual,Sales team
+S01248,2024-06-30,2024-12-09,Monthly,Web
+S01249,2024-05-29,,Annual,Web
+S01250,2025-02-19,2025-05-21,Monthly (promo),Web
+S01251,2024-02-08,,Annual,Sales team
+S01252,2025-01-22,,Annual,Web
+S01253,2023-10-24,,Annual,Web
+S01254,2023-03-13,2025-06-21,Monthly (promo),Web
+S01255,2025-03-26,2025-10-20,Monthly (promo),Partner
+S01256,2024-06-12,2024-08-05,Monthly,Partner
+S01257,2023-07-28,,Monthly,Web
+S01258,2023-04-10,2023-06-10,Monthly,Partner
+S01259,2025-03-16,,Annual,Partner
+S01260,2024-11-30,2025-05-30,Monthly,Web
+S01261,2024-07-05,,Annual,Web
+S01262,2024-06-04,2024-09-03,Monthly (promo),Web
+S01263,2024-01-07,2024-02-01,Monthly,Partner
+S01264,2023-08-24,2023-11-23,Monthly (promo),Web
+S01265,2023-12-15,,Annual,Partner
+S01266,2025-06-05,,Monthly,Partner
+S01267,2023-12-03,2024-03-03,Monthly (promo),Partner
+S01268,2024-03-01,,Monthly,Web
+S01269,2024-07-28,,Annual,Partner
+S01270,2023-10-10,,Annual,Web
+S01271,2024-12-05,,Monthly (promo),Partner
+S01272,2023-01-27,,Monthly,Web
+S01273,2024-10-01,2025-11-16,Annual,Web
+S01274,2023-03-01,2023-05-09,Monthly,Partner
+S01275,2023-06-24,2025-06-23,Annual,Web
+S01276,2025-04-03,,Monthly,Web
+S01277,2023-07-02,,Annual,Web
+S01278,2023-11-19,2025-05-09,Monthly,Web
+S01279,2024-05-19,,Monthly,Partner
+S01280,2023-07-10,2024-02-16,Monthly,Web
+S01281,2025-04-23,2025-05-07,Monthly,Web
+S01282,2025-05-15,2025-07-07,Monthly,Web
+S01283,2024-05-12,,Annual,Web
+S01284,2024-05-11,2024-08-04,Monthly,Web
+S01285,2024-04-12,,Annual,Web
+S01286,2023-12-24,,Annual,Web
+S01287,2024-05-08,2024-06-21,Monthly,Web
+S01288,2023-06-21,2023-08-01,Monthly,Web
+S01289,2024-11-18,2025-11-18,Annual,Partner
+S01290,2025-06-13,,Monthly,Web
+S01291,2023-06-09,2025-01-26,Monthly (promo),Web
+S01292,2024-04-07,,Annual,Web
+S01293,2024-10-04,,Annual,Web
+S01294,2024-02-20,2025-09-11,Monthly,Web
+S01295,2024-12-25,,Monthly,Partner
+S01296,2024-05-24,2025-09-17,Monthly,Sales team
+S01297,2023-07-24,2024-01-25,Monthly,Partner
+S01298,2023-12-30,2025-01-15,Annual,Web
+S01299,2023-01-06,2023-04-08,Monthly,Partner
+S01300,2024-08-15,,Annual,Web
+S01301,2024-03-09,,Annual,Partner
+S01302,2024-02-02,2024-06-28,Monthly,Partner
+S01303,2024-02-15,,Monthly,Web
+S01304,2024-03-21,2025-03-09,Monthly,Partner
+S01305,2023-08-21,,Annual,Partner
+S01306,2024-08-14,2024-10-31,Monthly,Web
+S01307,2024-08-26,,Annual,Partner
+S01308,2023-12-30,2025-01-01,Monthly,Web
+S01309,2023-09-29,2025-11-21,Monthly,Web
+S01310,2023-01-07,2023-02-26,Monthly,Web
+S01311,2023-01-08,,Annual,Partner
+S01312,2023-09-08,2025-06-20,Monthly,Sales team
+S01313,2023-07-29,2023-11-24,Monthly (promo),Web
+S01314,2023-11-16,2025-11-15,Annual,Sales team
+S01315,2023-03-05,,Annual,Web
+S01316,2025-01-11,,Annual,Partner
+S01317,2023-10-07,2025-07-16,Monthly,Sales team
+S01318,2023-10-20,,Annual,Partner
+S01319,2025-01-17,,Annual,Partner
+S01320,2023-01-02,2023-10-11,Monthly,Web
+S01321,2025-01-19,,Monthly (promo),Web
+S01322,2023-07-31,2023-11-09,Monthly (promo),Partner
+S01323,2023-08-06,2025-02-15,Monthly,Partner
+S01324,2025-05-14,2025-10-21,Monthly,Partner
+S01325,2025-04-01,,Annual,Web
+S01326,2025-06-18,,Annual,Partner
+S01327,2023-05-21,2024-05-19,Monthly,Web
+S01328,2025-02-03,,Monthly (promo),Web
+S01329,2025-04-10,,Monthly (promo),Sales team
+S01330,2025-03-25,,Annual,Partner
+S01331,2023-08-28,2023-11-27,Monthly (promo),Web
+S01332,2023-10-29,,Monthly,Web
+S01333,2024-01-11,,Monthly,Partner
+S01334,2025-01-22,,Annual,Web
+S01335,2025-05-06,,Annual,Partner
+S01336,2025-01-10,,Annual,Web
+S01337,2024-02-24,,Annual,Web
+S01338,2024-09-03,2025-01-24,Monthly,Sales team
+S01339,2025-02-10,,Monthly,Partner
+S01340,2023-10-27,,Monthly (promo),Sales team
+S01341,2024-09-17,2025-03-09,Monthly,Partner
+S01342,2023-03-07,2024-12-10,Monthly,Web
+S01343,2024-04-02,,Monthly,Web
+S01344,2024-10-07,,Monthly,Web
+S01345,2024-04-30,,Annual,Web
+S01346,2023-07-07,2025-07-05,Monthly (promo),Partner
+S01347,2023-01-01,,Monthly,Partner
+S01348,2025-04-12,2025-07-09,Monthly (promo),Web
+S01349,2023-02-08,2023-06-01,Monthly,Partner
+S01350,2023-02-14,,Annual,Web
+S01351,2024-10-15,2025-10-15,Annual,Sales team
+S01352,2023-04-21,2023-04-26,Monthly,Web
+S01353,2025-02-17,,Monthly (promo),Web
+S01354,2025-03-08,2025-06-07,Monthly (promo),Web
+S01355,2023-08-19,2025-04-03,Monthly,Web
+S01356,2024-01-03,,Monthly,Sales team
+S01357,2023-01-09,,Annual,Web
+S01358,2023-07-21,,Annual,Web
+S01359,2024-01-28,,Monthly,Web
+S01360,2023-03-29,2025-03-13,Monthly (promo),Partner
+S01361,2024-03-09,,Monthly,Web
+S01362,2025-06-10,,Annual,Partner
+S01363,2024-03-24,,Monthly (promo),Sales team
+S01364,2023-01-11,2024-01-11,Annual,Partner
+S01365,2024-11-19,,Annual,Sales team
+S01366,2023-10-18,,Annual,Sales team
+S01367,2024-05-16,,Annual,Web
+S01368,2023-04-22,2024-04-02,Monthly (promo),Sales team
+S01369,2024-07-23,2024-09-30,Monthly (promo),Sales team
+S01370,2025-04-17,,Monthly,Web
+S01371,2025-03-22,2025-04-22,Monthly,Web
+S01372,2024-11-24,2025-07-09,Monthly,Web
+S01373,2023-11-12,,Monthly,Partner
+S01374,2023-11-25,,Annual,Partner
+S01375,2024-01-21,,Monthly,Partner
+S01376,2024-09-10,,Monthly,Web
+S01377,2025-02-15,2025-09-15,Monthly (promo),Web
+S01378,2023-03-15,2024-10-24,Monthly (promo),Partner
+S01379,2025-05-22,,Monthly,Web
+S01380,2023-11-13,,Monthly,Web
+S01381,2025-01-23,,Monthly,Web
+S01382,2024-09-18,,Monthly,Web
+S01383,2023-01-18,2023-09-23,Monthly,Web
+S01384,2023-11-24,2024-02-23,Monthly (promo),Sales team
+S01385,2025-06-05,2025-09-22,Monthly,Web
+S01386,2025-03-15,,Monthly (promo),Web
+S01387,2023-12-09,2024-12-08,Annual,Partner
+S01388,2024-08-07,2024-11-06,Monthly (promo),Web
+S01389,2023-02-25,2023-05-27,Monthly (promo),Web
+S01390,2025-04-29,,Monthly,Web
+S01391,2024-11-20,,Annual,Sales team
+S01392,2024-03-10,,Annual,Web
+S01393,2024-05-31,2024-07-22,Monthly,Web
+S01394,2025-02-12,,Monthly,Web
+S01395,2024-02-24,2024-05-25,Monthly (promo),Sales team
+S01396,2024-10-11,,Annual,Web
+S01397,2023-02-02,2024-06-08,Monthly,Web
+S01398,2024-04-19,2024-07-16,Monthly,Web
+S01399,2024-05-04,2025-10-24,Annual,Web
+S01400,2024-02-09,2025-11-25,Monthly,Web
+S01401,2023-08-28,,Monthly,Web
+S01402,2023-06-20,2023-09-17,Monthly (promo),Web
+S01403,2023-05-01,,Annual,Partner
+S01404,2024-06-27,,Monthly,Web
+S01405,2024-05-04,2024-09-03,Monthly,Sales team
+S01406,2023-08-22,2023-11-21,Monthly (promo),Web
+S01407,2024-03-19,,Monthly,Web
+S01408,2024-05-20,,Annual,Web
+S01409,2024-08-03,2025-03-06,Monthly (promo),Web
+S01410,2024-01-15,2025-06-06,Monthly (promo),Web
+S01411,2024-09-08,,Monthly,Web
+S01412,2023-07-19,2023-10-18,Monthly (promo),Web
+S01413,2023-06-30,2024-01-16,Monthly (promo),Sales team
+S01414,2024-03-11,2025-04-27,Monthly,Sales team
+S01415,2023-07-12,2023-08-25,Monthly,Partner
+S01416,2024-06-27,,Monthly (promo),Sales team
+S01417,2023-12-11,2024-01-09,Monthly (promo),Web
+S01418,2023-03-25,,Annual,Web
+S01419,2023-05-06,,Annual,Web
+S01420,2024-11-22,,Annual,Web
+S01421,2024-11-06,,Annual,Sales team
+S01422,2024-11-29,,Annual,Web
+S01423,2024-06-20,2024-09-19,Monthly (promo),Web
+S01424,2023-04-28,2024-05-30,Monthly,Web
+S01425,2024-01-25,2024-04-25,Monthly (promo),Partner
+S01426,2023-02-01,2025-05-20,Monthly,Partner
+S01427,2024-10-22,,Monthly,Web
+S01428,2024-09-17,,Annual,Partner
+S01429,2025-04-02,2025-07-02,Monthly (promo),Web
+S01430,2023-07-01,,Monthly,Web
+S01431,2025-03-05,2025-05-30,Monthly,Web
+S01432,2023-09-02,2024-09-01,Annual,Web
+S01433,2024-01-18,,Annual,Partner
+S01434,2024-08-28,2025-04-03,Monthly,Web
+S01435,2025-02-06,,Annual,Web
+S01436,2024-05-06,2025-01-23,Monthly,Web
+S01437,2024-06-09,,Annual,Web
+S01438,2023-06-16,2023-10-22,Monthly,Web
+S01439,2024-09-03,,Monthly,Web
+S01440,2024-12-30,,Annual,Web
+S01441,2023-05-15,2023-08-14,Monthly (promo),Partner
+S01442,2023-06-19,2024-11-27,Monthly (promo),Web
+S01443,2023-01-29,2023-02-06,Monthly,Web
+S01444,2023-08-05,2024-05-23,Monthly,Web
+S01445,2023-01-03,2023-09-28,Monthly,Web
+S01446,2024-10-08,2025-01-07,Monthly (promo),Web
+S01447,2025-05-28,2025-10-30,Monthly,Web
+S01448,2024-06-26,,Monthly,Sales team
+S01449,2023-02-02,2023-02-09,Monthly,Web
+S01450,2023-12-27,2024-03-27,Monthly (promo),Partner
+S01451,2023-06-12,2024-06-11,Annual,Partner
+S01452,2025-03-22,,Annual,Web
+S01453,2023-01-21,2025-02-27,Annual,Web
+S01454,2024-01-21,2024-11-27,Monthly (promo),Web
+S01455,2024-02-02,,Monthly,Sales team
+S01456,2023-05-01,,Annual,Partner
+S01457,2024-10-03,2025-11-20,Annual,Web
+S01458,2023-11-04,,Annual,Web
+S01459,2023-12-03,,Annual,Partner
+S01460,2023-10-16,2024-12-30,Monthly,Web
+S01461,2023-11-20,2024-09-16,Monthly (promo),Partner
+S01462,2024-06-13,,Annual,Web
+S01463,2023-03-18,2025-03-03,Monthly,Partner
+S01464,2023-09-10,2023-12-10,Monthly (promo),Web
+S01465,2024-03-05,2024-06-03,Monthly,Partner
+S01466,2025-01-31,,Annual,Partner
+S01467,2024-04-14,2024-08-24,Monthly,Partner
+S01468,2025-04-25,,Annual,Sales team
+S01469,2023-01-23,2023-04-24,Monthly (promo),Web
+S01470,2024-10-15,,Monthly,Web
+S01471,2023-12-16,2025-08-12,Monthly,Web
+S01472,2024-04-25,,Annual,Partner
+S01473,2024-11-06,,Annual,Sales team
+S01474,2025-05-05,2025-06-04,Monthly,Web
+S01475,2024-06-27,2024-06-28,Monthly,Web
+S01476,2023-02-22,2025-02-21,Annual,Web
+S01477,2023-12-20,,Annual,Web
+S01478,2025-06-03,,Monthly,Web
+S01479,2023-09-15,2023-12-15,Monthly (promo),Web
+S01480,2024-01-01,,Monthly,Sales team
+S01481,2023-02-25,,Annual,Web
+S01482,2023-01-29,2025-01-28,Annual,Web
+S01483,2025-01-10,,Monthly (promo),Web
+S01484,2024-06-14,2025-01-19,Monthly,Web
+S01485,2023-09-19,,Annual,Web
+S01486,2024-03-18,,Annual,Web
+S01487,2023-10-17,2024-01-23,Monthly,Web
+S01488,2025-03-24,2025-06-21,Monthly,Sales team
+S01489,2023-05-10,2023-10-22,Monthly,Sales team
+S01490,2023-11-26,,Annual,Web
+S01491,2024-06-22,2024-09-21,Monthly (promo),Partner
+S01492,2025-04-09,,Annual,Web
+S01493,2025-06-14,2025-09-13,Monthly (promo),Web
+S01494,2024-03-12,,Monthly,Web
+S01495,2024-07-22,,Annual,Web
+S01496,2024-11-17,,Monthly (promo),Web
+S01497,2023-04-22,2023-05-22,Monthly,Web
+S01498,2024-07-17,2024-12-16,Monthly,Web
+S01499,2024-05-03,2024-08-02,Monthly (promo),Web
+S01500,2023-09-29,2023-12-15,Monthly,Web
+S01501,2023-10-03,2024-09-03,Monthly,Web
+S01502,2023-09-25,,Annual,Partner
+S01503,2023-10-17,,Monthly,Sales team
+S01504,2025-03-05,2025-08-19,Monthly,Sales team
+S01505,2024-04-21,,Annual,Web
+S01506,2024-08-10,2024-10-03,Monthly,Web
+S01507,2024-12-22,,Monthly,Web
+S01508,2023-01-04,2023-04-27,Monthly,Web
+S01509,2024-06-24,,Monthly,Web
+S01510,2025-05-16,,Monthly,Partner
+S01511,2023-03-15,,Annual,Sales team
+S01512,2024-01-09,2025-02-19,Monthly,Web
+S01513,2024-09-09,2024-12-09,Monthly (promo),Partner
+S01514,2023-06-27,2023-09-26,Monthly (promo),Partner
+S01515,2025-05-25,,Monthly,Web
+S01516,2025-05-31,,Monthly,Web
+S01517,2024-02-01,2024-05-06,Monthly (promo),Partner
+S01518,2023-05-22,2024-11-06,Monthly,Partner
+S01519,2023-10-04,,Annual,Web
+S01520,2024-01-22,,Monthly (promo),Web
+S01521,2023-06-07,2024-02-19,Monthly (promo),Web
+S01522,2023-07-30,,Monthly,Partner
+S01523,2023-06-07,2024-08-12,Monthly,Web
+S01524,2024-02-18,,Annual,Sales team
+S01525,2025-01-03,,Monthly,Web
+S01526,2024-08-09,,Monthly (promo),Web
+S01527,2024-12-10,,Monthly,Web
+S01528,2024-05-13,2024-11-21,Monthly,Web
+S01529,2025-04-04,,Annual,Partner
+S01530,2024-01-22,,Annual,Web
+S01531,2024-05-07,2025-09-04,Monthly,Partner
+S01532,2023-06-11,2023-06-25,Monthly,Web
+S01533,2023-05-25,2025-05-24,Annual,Web
+S01534,2024-05-19,,Monthly,Partner
+S01535,2023-09-30,,Annual,Sales team
+S01536,2024-04-12,,Annual,Web
+S01537,2023-08-18,2024-11-20,Monthly (promo),Web
+S01538,2025-03-16,,Annual,Partner
+S01539,2023-07-09,2023-12-15,Monthly,Web
+S01540,2024-05-09,,Annual,Partner
+S01541,2023-08-01,2024-10-03,Monthly,Web
+S01542,2024-09-25,2025-01-25,Monthly (promo),Web
+S01543,2023-05-12,2023-06-18,Monthly,Web
+S01544,2024-05-12,,Monthly,Web
+S01545,2024-10-03,,Annual,Web
+S01546,2025-01-01,2025-01-07,Monthly,Web
+S01547,2024-06-17,,Monthly,Sales team
+S01548,2023-09-23,2025-09-22,Annual,Partner
+S01549,2024-09-22,,Annual,Sales team
+S01550,2023-05-22,2025-01-22,Monthly,Web
+S01551,2025-05-17,,Monthly (promo),Partner
+S01552,2025-02-04,2025-05-30,Monthly,Web
+S01553,2023-10-23,2024-10-07,Monthly (promo),Sales team
+S01554,2023-05-08,,Monthly,Web
+S01555,2023-11-17,,Monthly,Web
+S01556,2023-04-20,2023-05-13,Monthly,Web
+S01557,2023-07-12,,Annual,Web
+S01558,2023-12-09,,Monthly,Web
+S01559,2024-08-16,,Monthly,Web
+S01560,2025-05-29,2025-06-14,Monthly,Partner
+S01561,2024-07-27,2024-08-22,Monthly (promo),Sales team
+S01562,2024-09-20,2025-09-01,Monthly,Web
+S01563,2024-05-15,2024-11-11,Monthly,Partner
+S01564,2025-02-03,,Monthly,Partner
+S01565,2023-02-21,2023-04-18,Monthly (promo),Web
+S01566,2023-09-19,2025-09-18,Annual,Web
+S01567,2023-12-17,2024-03-17,Monthly (promo),Web
+S01568,2023-12-01,,Annual,Partner
+S01569,2025-01-19,,Monthly,Web
+S01570,2023-12-01,,Monthly,Web
+S01571,2024-09-18,,Annual,Partner
+S01572,2025-06-02,,Annual,Sales team
+S01573,2023-12-13,2025-12-12,Annual,Partner
+S01574,2025-02-18,2025-03-31,Monthly (promo),Web
+S01575,2024-11-15,,Monthly,Partner
+S01576,2024-09-25,2024-10-10,Monthly,Web
+S01577,2023-02-13,2023-02-25,Monthly,Partner
+S01578,2024-08-01,,Annual,Partner
+S01579,2023-01-14,2023-06-06,Monthly,Partner
+S01580,2023-01-06,,Annual,Web
+S01581,2024-03-20,2024-06-19,Monthly (promo),Web
+S01582,2023-11-29,,Monthly,Web
+S01583,2024-05-31,,Annual,Sales team
+S01584,2023-02-08,2025-01-25,Monthly (promo),Web
+S01585,2024-01-06,,Annual,Web
+S01586,2023-03-22,2024-12-26,Monthly (promo),Web
+S01587,2025-06-03,,Monthly,Web
+S01588,2025-02-22,,Monthly,Web
+S01589,2023-07-24,,Annual,Web
+S01590,2024-11-15,2024-12-06,Monthly,Web
+S01591,2024-07-17,,Monthly,Partner
+S01592,2024-09-26,,Annual,Partner
+S01593,2025-06-08,,Annual,Web
+S01594,2025-06-07,,Monthly,Web
+S01595,2023-04-13,2025-10-31,Annual,Partner
+S01596,2024-05-09,2025-08-24,Monthly,Sales team
+S01597,2023-11-14,2024-02-13,Monthly (promo),Web
+S01598,2024-06-20,,Monthly,Web
+S01599,2024-01-11,,Monthly,Web
+S01600,2024-05-05,2025-02-22,Monthly,Web
+S01601,2023-05-02,2025-03-13,Annual,Sales team
+S01602,2024-01-19,2024-08-07,Monthly,Web
+S01603,2023-01-27,,Annual,Web
+S01604,2023-06-08,2025-05-10,Annual,Web
+S01605,2025-05-03,,Monthly,Web
+S01606,2023-06-14,2025-10-28,Monthly,Web
+S01607,2025-05-10,,Monthly,Sales team
+S01608,2025-01-15,,Monthly (promo),Partner
+S01609,2023-07-10,,Monthly,Sales team
+S01610,2024-03-15,2024-12-18,Monthly (promo),Web
+S01611,2024-03-12,2024-12-04,Monthly,Partner
+S01612,2024-12-02,,Monthly,Partner
+S01613,2025-03-29,,Monthly,Web
+S01614,2023-04-29,,Annual,Web
+S01615,2023-09-06,2023-12-06,Monthly (promo),Web
+S01616,2023-10-05,2024-09-27,Monthly,Web
+S01617,2024-07-18,,Monthly,Web
+S01618,2025-06-04,,Annual,Partner
+S01619,2023-02-08,,Monthly,Web
+S01620,2024-12-20,,Monthly,Partner
+S01621,2025-03-26,2025-06-04,Monthly,Partner
+S01622,2023-10-16,,Monthly,Web
+S01623,2023-07-05,2024-07-15,Monthly (promo),Web
+S01624,2023-01-04,,Annual,Web
+S01625,2023-01-03,,Annual,Partner
+S01626,2024-03-04,,Annual,Web
+S01627,2024-11-15,2025-03-07,Monthly,Web
+S01628,2023-12-18,2024-03-18,Monthly (promo),Web
+S01629,2023-08-01,2024-02-17,Monthly,Web
+S01630,2023-09-15,2024-04-05,Monthly,Web
+S01631,2024-12-10,,Annual,Partner
+S01632,2023-11-05,,Monthly,Sales team
+S01633,2024-05-29,2024-08-28,Monthly (promo),Sales team
+S01634,2025-05-19,,Annual,Web
+S01635,2024-06-03,2024-11-09,Monthly,Web
+S01636,2025-04-19,,Monthly,Web
+S01637,2024-12-13,,Monthly,Partner
+S01638,2023-04-10,2024-07-02,Monthly,Web
+S01639,2023-09-24,2023-12-02,Monthly (promo),Web
+S01640,2024-11-21,,Monthly (promo),Web
+S01641,2023-01-15,,Annual,Web
+S01642,2023-09-10,2023-12-10,Monthly (promo),Web
+S01643,2025-05-06,,Annual,Web
+S01644,2024-09-21,,Monthly (promo),Web
+S01645,2023-03-31,2024-08-04,Monthly,Partner
+S01646,2024-06-10,,Monthly,Web
+S01647,2024-08-17,2024-11-16,Monthly (promo),Sales team
+S01648,2024-07-24,2024-08-07,Monthly,Web
+S01649,2023-02-09,2024-04-12,Monthly,Web
+S01650,2023-10-16,2024-10-05,Monthly,Sales team
+S01651,2023-03-25,2023-07-29,Monthly (promo),Partner
+S01652,2024-06-12,2024-08-04,Monthly,Web
+S01653,2023-02-10,2023-11-08,Monthly,Web
+S01654,2023-10-31,2024-11-10,Monthly,Partner
+S01655,2024-08-31,2025-11-13,Monthly (promo),Partner
+S01656,2024-03-28,,Annual,Web
+S01657,2024-08-16,2025-02-02,Monthly,Sales team
+S01658,2025-03-11,,Annual,Web
+S01659,2025-01-24,,Monthly,Web
+S01660,2024-02-13,2024-04-03,Monthly,Sales team
+S01661,2023-09-22,,Monthly,Web
+S01662,2023-06-27,2024-10-22,Monthly,Web
+S01663,2024-11-28,,Annual,Sales team
+S01664,2023-07-18,2023-11-30,Monthly,Web
+S01665,2024-10-10,2025-05-06,Monthly,Partner
+S01666,2025-02-13,,Annual,Web
+S01667,2024-12-24,2025-03-25,Monthly (promo),Partner
+S01668,2023-02-15,2023-09-08,Monthly,Partner
+S01669,2023-12-19,2024-07-15,Monthly,Partner
+S01670,2025-03-01,,Annual,Partner
+S01671,2024-03-13,2025-11-07,Monthly,Web
+S01672,2023-06-21,2024-10-28,Monthly,Web
+S01673,2024-04-04,,Annual,Web
+S01674,2023-11-29,2025-12-01,Monthly,Web
+S01675,2024-10-26,,Annual,Web
+S01676,2023-12-22,,Monthly,Web
+S01677,2023-03-21,2023-07-23,Monthly (promo),Partner
+S01678,2023-12-29,,Monthly,Partner
+S01679,2024-09-09,2024-09-15,Monthly,Sales team
+S01680,2024-08-19,,Monthly,Web
+S01681,2024-10-31,2025-01-30,Monthly (promo),Partner
+S01682,2025-05-25,,Annual,Web
+S01683,2024-08-04,2024-11-03,Monthly (promo),Web
+S01684,2025-04-24,2025-07-24,Monthly (promo),Web
+S01685,2024-10-03,,Annual,Partner
+S01686,2023-09-27,2024-11-30,Annual,Partner
+S01687,2023-03-04,2025-03-03,Annual,Web
+S01688,2025-03-02,,Monthly (promo),Sales team
+S01689,2024-03-13,,Annual,Partner
+S01690,2024-11-13,,Annual,Web
+S01691,2024-11-14,2025-03-10,Monthly,Sales team
+S01692,2024-05-26,,Monthly,Sales team
+S01693,2025-05-06,2025-08-05,Monthly (promo),Partner
+S01694,2024-07-21,,Monthly,Web
+S01695,2024-05-06,2025-03-08,Monthly,Sales team
+S01696,2024-02-24,2025-06-10,Monthly (promo),Sales team
+S01697,2024-07-25,,Monthly (promo),Web
+S01698,2024-07-08,,Annual,Web
+S01699,2025-04-01,,Monthly,Sales team
+S01700,2023-11-13,2024-02-12,Monthly (promo),Partner
+S01701,2024-03-01,,Annual,Web
+S01702,2025-04-23,,Monthly,Partner
+S01703,2023-03-29,2025-08-29,Monthly,Sales team
+S01704,2024-03-14,,Annual,Sales team
+S01705,2023-11-14,2025-11-13,Annual,Partner
+S01706,2024-03-05,,Annual,Web
+S01707,2025-03-15,2025-11-22,Monthly,Web
+S01708,2024-09-15,2024-11-07,Monthly (promo),Partner
+S01709,2023-09-25,2025-05-13,Monthly,Web
+S01710,2023-01-29,2023-03-19,Monthly,Web
+S01711,2024-06-17,,Annual,Web
+S01712,2023-10-30,2024-01-29,Monthly (promo),Web
+S01713,2023-05-11,2023-08-10,Monthly (promo),Web
+S01714,2023-07-08,,Annual,Web
+S01715,2023-01-27,2025-01-26,Annual,Web
+S01716,2023-07-29,2023-10-21,Monthly,Web
+S01717,2024-02-28,,Annual,Sales team
+S01718,2024-07-15,2025-02-19,Monthly,Web
+S01719,2024-02-11,2025-01-17,Monthly,Web
+S01720,2023-10-11,,Annual,Web
+S01721,2023-08-20,2025-10-22,Annual,Web
+S01722,2024-12-25,,Monthly,Partner
+S01723,2025-04-27,,Monthly,Web
+S01724,2024-10-15,2025-04-11,Monthly,Partner
+S01725,2024-01-31,2024-02-19,Monthly (promo),Web
+S01726,2025-05-02,,Annual,Web
+S01727,2023-03-02,,Monthly,Web
+S01728,2024-01-16,2024-02-09,Monthly,Web
+S01729,2025-01-27,,Monthly,Web
+S01730,2025-01-23,,Annual,Partner
+S01731,2024-09-28,2025-12-14,Monthly,Web
+S01732,2023-05-26,2023-08-25,Monthly (promo),Web
+S01733,2025-05-29,,Monthly,Web
+S01734,2024-08-05,,Annual,Web
+S01735,2025-06-15,2025-09-14,Monthly (promo),Web
+S01736,2023-12-15,2024-02-21,Monthly,Sales team
+S01737,2023-08-14,2023-11-21,Monthly,Sales team
+S01738,2023-08-04,,Monthly,Web
+S01739,2023-12-28,2024-03-11,Monthly,Partner
+S01740,2024-01-07,,Monthly,Web
+S01741,2023-03-04,2024-04-27,Monthly,Partner
+S01742,2025-04-17,,Monthly (promo),Sales team
+S01743,2024-02-28,2025-12-18,Monthly,Web
+S01744,2023-11-22,,Monthly,Web
+S01745,2025-01-17,2025-01-28,Monthly,Partner
+S01746,2024-09-17,2025-07-20,Monthly (promo),Web
+S01747,2025-02-07,2025-05-09,Monthly (promo),Web
+S01748,2023-07-07,2025-01-10,Annual,Web
+S01749,2025-05-28,,Monthly,Web
+S01750,2023-01-23,,Monthly,Web
+S01751,2024-06-02,2024-07-18,Monthly (promo),Web
+S01752,2023-07-18,2023-10-17,Monthly (promo),Partner
+S01753,2024-02-21,2025-01-15,Monthly,Web
+S01754,2025-01-24,2025-03-30,Monthly,Web
+S01755,2025-03-20,,Annual,Partner
+S01756,2024-03-10,2025-03-10,Monthly,Partner
+S01757,2025-02-28,,Monthly,Partner
+S01758,2024-03-06,,Monthly,Web
+S01759,2025-03-14,,Monthly,Sales team
+S01760,2024-10-04,,Annual,Sales team
+S01761,2025-01-27,,Monthly (promo),Web
+S01762,2024-08-19,,Monthly,Web
+S01763,2023-07-03,,Annual,Sales team
+S01764,2024-10-15,,Monthly,Partner
+S01765,2023-07-05,2025-02-02,Monthly (promo),Web
+S01766,2023-05-03,2023-07-21,Monthly,Partner
+S01767,2023-07-20,2024-09-19,Monthly,Web
+S01768,2025-06-14,2025-07-14,Monthly (promo),Sales team
+S01769,2025-03-26,,Monthly,Partner
+S01770,2025-06-16,,Monthly,Partner
+S01771,2024-05-13,2024-11-12,Monthly,Partner
+S01772,2023-08-31,2025-08-30,Annual,Sales team
+S01773,2023-12-30,,Monthly,Partner
+S01774,2024-11-25,2024-12-21,Monthly,Web
+S01775,2023-09-07,2023-11-01,Monthly,Web
+S01776,2024-03-19,2025-04-17,Monthly,Web
+S01777,2025-06-16,,Annual,Web
+S01778,2025-02-23,2025-08-10,Monthly,Sales team
+S01779,2023-08-09,,Monthly (promo),Web
+S01780,2023-08-09,,Monthly,Partner
+S01781,2025-03-08,2025-12-09,Monthly,Web
+S01782,2023-09-14,2025-09-13,Annual,Web
+S01783,2023-05-13,,Annual,Web
+S01784,2024-12-20,2025-03-21,Monthly (promo),Sales team
+S01785,2024-03-26,,Monthly,Partner
+S01786,2024-10-26,,Annual,Web
+S01787,2024-05-13,,Annual,Web
+S01788,2025-05-19,,Annual,Web
+S01789,2024-06-03,2024-10-22,Monthly,Sales team
+S01790,2024-08-27,,Monthly,Partner
+S01791,2024-10-03,2025-01-02,Monthly (promo),Web
+S01792,2023-05-21,,Monthly,Partner
+S01793,2023-01-07,2025-01-06,Annual,Web
+S01794,2024-05-18,2025-09-07,Monthly,Partner
+S01795,2024-07-24,2024-10-08,Monthly (promo),Web
+S01796,2023-08-09,,Monthly,Partner
+S01797,2025-06-03,,Annual,Web
+S01798,2024-09-24,2024-12-19,Monthly,Web
+S01799,2025-05-07,,Annual,Web
+S01800,2025-03-02,,Monthly,Sales team
+S01801,2023-01-23,,Monthly (promo),Web
+S01802,2025-02-20,2025-04-09,Monthly,Partner
+S01803,2023-09-20,2023-12-20,Monthly (promo),Web
+S01804,2023-04-20,,Monthly,Web
+S01805,2025-03-07,,Annual,Web
+S01806,2024-03-08,2024-07-11,Monthly,Sales team
+S01807,2024-02-09,,Annual,Web
+S01808,2024-02-21,2025-02-20,Annual,Web
+S01809,2024-12-03,2025-08-10,Monthly,Web
+S01810,2024-05-19,,Annual,Sales team
+S01811,2024-06-16,2025-07-16,Monthly,Partner
+S01812,2023-08-23,2024-01-05,Annual,Partner
+S01813,2024-01-09,,Annual,Web
+S01814,2023-06-17,,Annual,Web
+S01815,2024-09-19,,Annual,Partner
+S01816,2023-11-21,2024-11-20,Annual,Partner
+S01817,2024-06-13,2024-12-12,Monthly (promo),Partner
+S01818,2024-07-10,2025-01-07,Monthly,Web
+S01819,2024-02-07,2025-02-06,Annual,Web
+S01820,2023-10-26,2024-08-01,Monthly,Partner
+S01821,2024-06-19,2024-09-18,Monthly (promo),Web
+S01822,2024-03-06,2025-11-13,Monthly,Partner
+S01823,2023-11-14,2025-04-12,Monthly (promo),Web
+S01824,2025-05-28,,Annual,Sales team
+S01825,2025-02-11,2025-10-26,Monthly,Partner
+S01826,2023-07-13,,Monthly,Web
+S01827,2024-02-04,,Annual,Sales team
+S01828,2023-07-18,2023-12-25,Monthly (promo),Web
+S01829,2025-04-25,,Monthly,Web
+S01830,2023-01-14,2024-06-11,Monthly,Partner
+S01831,2023-09-07,2025-10-17,Monthly,Web
+S01832,2023-09-11,2025-01-19,Monthly (promo),Web
+S01833,2024-09-13,,Monthly,Web
+S01834,2023-12-12,2025-12-11,Annual,Web
+S01835,2024-09-14,,Monthly,Web
+S01836,2023-11-29,2024-04-29,Monthly,Web
+S01837,2024-10-29,2025-01-28,Monthly (promo),Web
+S01838,2023-09-30,2024-10-21,Monthly,Web
+S01839,2023-03-10,2023-12-11,Monthly (promo),Web
+S01840,2024-06-17,,Monthly,Web
+S01841,2024-10-21,2024-12-16,Monthly,Web
+S01842,2024-05-14,,Monthly,Sales team
+S01843,2023-07-14,2024-12-03,Monthly,Web
+S01844,2024-07-22,,Annual,Web
+S01845,2024-07-05,2025-07-05,Annual,Web
+S01846,2024-02-12,,Monthly,Web
+S01847,2024-05-16,,Monthly,Web
+S01848,2023-04-05,,Annual,Web
+S01849,2024-11-13,2025-03-15,Monthly,Web
+S01850,2023-03-26,2023-05-09,Annual,Web
+S01851,2023-11-04,2023-11-18,Monthly,Web
+S01852,2025-03-21,,Annual,Partner
+S01853,2024-04-27,,Monthly,Web
+S01854,2023-05-09,2023-08-29,Monthly,Web
+S01855,2024-03-26,2024-09-21,Monthly,Partner
+S01856,2025-03-23,,Annual,Web
+S01857,2024-03-21,2024-11-25,Monthly (promo),Web
+S01858,2024-08-05,,Monthly,Web
+S01859,2024-08-08,2025-08-08,Annual,Partner
+S01860,2024-08-08,,Annual,Web
+S01861,2023-04-30,2023-07-30,Monthly (promo),Web
+S01862,2024-12-26,,Annual,Web
+S01863,2023-03-26,,Annual,Web
+S01864,2024-02-03,2025-08-14,Monthly,Sales team
+S01865,2023-03-20,2025-10-15,Monthly,Web
+S01866,2024-10-12,,Annual,Web
+S01867,2024-02-15,,Annual,Web
+S01868,2024-10-31,2025-03-06,Monthly,Web
+S01869,2023-02-14,,Monthly,Web
+S01870,2025-01-11,,Monthly (promo),Web
+S01871,2023-10-09,,Annual,Web
+S01872,2023-06-03,2023-11-26,Monthly,Web
+S01873,2023-06-27,2025-06-26,Annual,Web
+S01874,2024-05-27,2024-08-30,Monthly,Web
+S01875,2024-11-16,,Monthly,Partner
+S01876,2024-09-29,,Annual,Web
+S01877,2024-09-21,2024-10-30,Monthly,Web
+S01878,2025-06-08,,Monthly,Web
+S01879,2023-10-06,2024-09-24,Monthly,Web
+S01880,2024-05-05,2025-01-29,Monthly (promo),Partner
+S01881,2025-02-08,2025-08-23,Monthly,Web
+S01882,2023-12-22,,Annual,Sales team
+S01883,2025-01-30,,Annual,Sales team
+S01884,2023-03-13,2023-05-03,Monthly,Web
+S01885,2023-09-30,2024-02-07,Monthly,Web
+S01886,2023-08-13,2023-10-03,Monthly,Partner
+S01887,2024-12-12,,Annual,Web
+S01888,2025-05-29,,Monthly,Partner
+S01889,2023-04-02,,Annual,Partner
+S01890,2025-02-20,,Monthly,Partner
+S01891,2023-04-13,2025-02-09,Monthly,Web
+S01892,2025-05-25,,Annual,Web
+S01893,2023-11-28,2025-01-18,Monthly,Partner
+S01894,2023-06-29,,Annual,Sales team
+S01895,2024-02-03,2024-03-07,Monthly (promo),Web
+S01896,2024-06-12,2025-09-21,Monthly,Web
+S01897,2023-04-13,2024-11-29,Monthly,Partner
+S01898,2025-05-31,,Monthly (promo),Partner
+S01899,2025-03-27,,Monthly,Partner
+S01900,2023-04-03,2023-07-03,Monthly (promo),Partner
+S01901,2024-05-09,2024-07-04,Monthly,Web
+S01902,2025-03-15,2025-03-15,Monthly (promo),Web
+S01903,2023-03-30,2023-05-26,Monthly,Web
+S01904,2023-01-29,2023-12-06,Monthly,Web
+S01905,2024-06-30,2025-04-21,Monthly (promo),Web
+S01906,2025-02-10,,Monthly,Web
+S01907,2023-12-19,2024-03-19,Monthly (promo),Partner
+S01908,2024-07-13,2024-08-16,Monthly,Partner
+S01909,2024-08-14,2025-08-14,Annual,Web
+S01910,2023-09-12,,Annual,Web
+S01911,2025-03-01,,Annual,Sales team
+S01912,2024-11-17,2025-04-18,Monthly,Partner
+S01913,2024-06-27,2025-06-27,Annual,Web
+S01914,2023-01-17,2023-10-20,Monthly (promo),Web
+S01915,2024-10-20,2024-10-20,Monthly,Partner
+S01916,2025-05-03,,Annual,Partner
+S01917,2023-01-01,2025-01-09,Monthly (promo),Web
+S01918,2023-12-09,,Monthly (promo),Partner
+S01919,2023-01-12,,Monthly,Partner
+S01920,2024-09-20,,Annual,Partner
+S01921,2025-03-31,,Monthly,Web
+S01922,2023-06-08,2023-10-28,Monthly,Sales team
+S01923,2025-04-12,,Monthly,Partner
+S01924,2023-06-17,2025-08-15,Monthly,Partner
+S01925,2023-03-21,2023-04-20,Monthly,Web
+S01926,2023-09-16,,Monthly,Partner
+S01927,2023-10-19,,Monthly (promo),Sales team
+S01928,2023-09-08,2025-12-30,Monthly,Web
+S01929,2024-07-25,,Monthly,Web
+S01930,2023-06-26,,Monthly,Partner
+S01931,2023-04-02,2025-05-27,Monthly,Sales team
+S01932,2023-01-27,,Annual,Web
+S01933,2025-05-08,2025-05-19,Monthly,Partner
+S01934,2025-01-17,2025-02-24,Monthly,Web
+S01935,2023-12-11,2025-11-10,Monthly,Partner
+S01936,2025-06-01,,Monthly,Web
+S01937,2024-03-23,,Annual,Web
+S01938,2023-01-11,2025-12-21,Monthly,Sales team
+S01939,2024-05-26,2024-06-27,Monthly,Web
+S01940,2025-05-22,,Annual,Web
+S01941,2024-01-19,,Monthly,Web
+S01942,2023-04-01,,Annual,Web
+S01943,2023-01-24,2025-09-18,Monthly,Web
+S01944,2024-04-17,2025-10-28,Monthly,Web
+S01945,2024-02-25,,Monthly,Partner
+S01946,2023-05-31,2025-07-13,Monthly,Sales team
+S01947,2024-08-19,,Monthly,Partner
+S01948,2025-01-24,2025-03-09,Monthly,Web
+S01949,2023-01-25,,Monthly,Web
+S01950,2024-10-20,2025-10-20,Annual,Partner
+S01951,2024-09-17,2025-01-27,Monthly,Web
+S01952,2023-08-20,2025-04-07,Annual,Web
+S01953,2023-05-28,2023-08-27,Monthly (promo),Sales team
+S01954,2023-01-13,2024-10-19,Monthly,Partner
+S01955,2024-11-07,2025-02-06,Monthly (promo),Sales team
+S01956,2023-06-18,,Monthly (promo),Web
+S01957,2024-09-27,,Annual,Partner
+S01958,2023-03-11,2024-03-10,Annual,Sales team
+S01959,2024-06-10,2024-07-19,Monthly,Web
+S01960,2024-02-08,2024-08-30,Monthly,Web
+S01961,2024-10-09,2025-02-02,Monthly (promo),Web
+S01962,2023-06-06,2024-11-15,Monthly,Web
+S01963,2023-06-29,2024-08-22,Monthly,Web
+S01964,2024-11-19,,Annual,Partner
+S01965,2025-05-23,,Annual,Web
+S01966,2024-12-15,,Monthly,Web
+S01967,2024-02-01,,Annual,Web
+S01968,2024-04-29,2024-05-09,Monthly,Web
+S01969,2025-05-01,2025-06-19,Monthly,Partner
+S01970,2024-10-18,,Monthly,Web
+S01971,2023-10-03,2024-10-23,Monthly,Partner
+S01972,2024-08-10,,Monthly,Web
+S01973,2023-12-18,2025-10-10,Monthly (promo),Web
+S01974,2025-05-01,,Annual,Partner
+S01975,2025-03-29,,Monthly,Web
+S01976,2024-12-18,,Monthly,Partner
+S01977,2024-01-11,,Annual,Sales team
+S01978,2025-05-07,,Monthly (promo),Sales team
+S01979,2023-03-04,2023-11-24,Monthly (promo),Sales team
+S01980,2023-12-18,,Monthly,Web
+S01981,2024-10-17,,Annual,Web
+S01982,2023-10-09,2025-11-13,Annual,Partner
+S01983,2025-01-23,2025-07-25,Annual,Sales team
+S01984,2023-08-26,2023-09-24,Monthly,Web
+S01985,2025-01-03,,Monthly,Web
+S01986,2025-06-06,2025-09-02,Monthly,Web
+S01987,2024-10-26,2024-11-25,Monthly,Web
+S01988,2023-03-15,2023-04-08,Monthly,Partner
+S01989,2024-02-02,2025-04-05,Monthly (promo),Web
+S01990,2024-01-21,2024-04-21,Monthly (promo),Web
+S01991,2023-06-17,,Annual,Web
+S01992,2024-01-05,2024-04-05,Monthly (promo),Sales team
+S01993,2024-12-17,2025-03-18,Monthly (promo),Partner
+S01994,2023-06-26,2024-03-10,Monthly,Partner
+S01995,2024-03-09,2025-04-16,Monthly,Web
+S01996,2024-10-15,2025-11-12,Monthly (promo),Web
+S01997,2024-02-19,2024-07-12,Monthly (promo),Partner
+S01998,2024-01-17,,Annual,Web
+S01999,2023-03-02,2023-04-01,Monthly,Web
+S02000,2023-02-06,2023-06-09,Monthly (promo),Web
+S02001,2023-04-05,,Monthly,Web
+S02002,2025-01-05,,Annual,Web
+S02003,2023-05-31,,Monthly (promo),Partner
+S02004,2024-03-24,,Annual,Sales team
+S02005,2025-03-10,,Monthly (promo),Sales team
+S02006,2024-02-10,2025-02-09,Annual,Sales team
+S02007,2024-03-19,2024-09-24,Monthly,Web
+S02008,2024-07-04,2025-10-25,Monthly,Sales team
+S02009,2024-08-22,,Monthly (promo),Web
+S02010,2025-02-17,2025-02-17,Monthly (promo),Web
+S02011,2023-10-04,2023-11-28,Monthly,Web
+S02012,2023-08-11,,Annual,Web
+S02013,2023-09-22,2025-08-09,Annual,Web
+S02014,2024-06-11,,Annual,Partner
+S02015,2023-10-21,2023-10-29,Monthly (promo),Sales team
+S02016,2023-08-01,,Monthly (promo),Partner
+S02017,2024-10-12,2025-01-04,Monthly,Web
+S02018,2024-03-31,2025-04-11,Monthly,Web
+S02019,2023-10-13,,Annual,Partner
+S02020,2025-04-06,2025-04-27,Monthly,Web
+S02021,2024-10-26,2024-12-05,Monthly,Web
+S02022,2025-01-27,2025-11-24,Monthly,Web
+S02023,2024-10-18,2025-01-17,Monthly (promo),Web
+S02024,2023-06-21,2025-06-20,Annual,Sales team
+S02025,2024-12-10,,Annual,Sales team
+S02026,2024-05-27,2025-02-11,Monthly,Web
+S02027,2023-03-12,2023-06-11,Monthly (promo),Partner
+S02028,2025-04-03,,Annual,Sales team
+S02029,2024-04-23,2025-06-23,Monthly,Web
+S02030,2024-10-14,2025-01-29,Monthly,Partner
+S02031,2023-07-25,2024-10-26,Monthly,Web
+S02032,2025-03-16,,Monthly (promo),Sales team
+S02033,2024-04-29,,Annual,Sales team
+S02034,2025-01-15,,Annual,Sales team
+S02035,2024-07-05,,Monthly,Web
+S02036,2023-08-25,2024-06-06,Monthly,Web
+S02037,2023-05-11,,Annual,Web
+S02038,2023-07-10,2023-08-04,Monthly (promo),Web
+S02039,2023-12-25,2025-07-25,Monthly,Sales team
+S02040,2025-03-05,2025-07-03,Monthly,Web
+S02041,2023-08-19,,Monthly (promo),Web
+S02042,2025-05-23,,Monthly,Partner
+S02043,2024-02-04,,Monthly,Web
+S02044,2023-03-14,2025-05-27,Annual,Partner
+S02045,2024-01-02,2024-12-04,Monthly,Web
+S02046,2023-01-30,2025-10-19,Annual,Partner
+S02047,2023-08-23,2024-09-29,Monthly,Web
+S02048,2024-11-18,,Monthly,Web
+S02049,2024-08-20,2024-11-12,Monthly (promo),Sales team
+S02050,2024-02-15,,Monthly,Web
+S02051,2024-11-07,2024-11-29,Monthly (promo),Partner
+S02052,2024-01-11,,Monthly (promo),Web
+S02053,2025-04-12,,Annual,Sales team
+S02054,2025-05-16,,Annual,Sales team
+S02055,2023-05-29,2023-10-22,Monthly,Web
+S02056,2025-06-13,,Monthly,Web
+S02057,2024-03-18,,Annual,Web
+S02058,2025-05-16,,Monthly (promo),Sales team
+S02059,2023-05-19,2024-01-16,Monthly,Web
+S02060,2023-01-29,2023-08-22,Monthly,Web
+S02061,2023-12-01,,Monthly (promo),Sales team
+S02062,2024-05-30,2024-08-31,Monthly,Web
+S02063,2023-09-08,,Annual,Web
+S02064,2024-04-17,,Monthly,Sales team
+S02065,2023-10-13,2023-12-07,Monthly (promo),Web
+S02066,2023-10-08,,Annual,Web
+S02067,2025-04-20,2025-07-20,Monthly (promo),Web
+S02068,2023-01-15,2023-11-01,Monthly,Partner
+S02069,2023-02-27,,Monthly,Sales team
+S02070,2024-01-30,2024-11-29,Monthly (promo),Web
+S02071,2024-08-05,2025-08-09,Monthly (promo),Web
+S02072,2024-10-02,2025-07-19,Monthly,Web
+S02073,2023-07-10,,Monthly,Web
+S02074,2024-10-08,,Annual,Sales team
+S02075,2025-01-08,2025-04-09,Monthly (promo),Sales team
+S02076,2025-02-11,,Annual,Partner
+S02077,2023-09-20,2024-01-19,Monthly,Partner
+S02078,2025-01-25,,Monthly,Web
+S02079,2024-06-05,2025-11-03,Monthly (promo),Web
+S02080,2025-06-13,2025-07-29,Monthly,Web
+S02081,2024-03-11,2024-06-27,Monthly (promo),Partner
+S02082,2024-12-07,2024-12-17,Monthly,Web
+S02083,2024-06-26,2025-06-27,Monthly,Web
+S02084,2024-12-23,,Monthly,Sales team
+S02085,2023-12-01,2025-08-29,Monthly,Web
+S02086,2024-01-20,,Monthly,Web
+S02087,2023-04-16,2024-06-06,Monthly,Web
+S02088,2024-10-12,,Monthly,Web
+S02089,2023-06-11,2025-06-10,Annual,Partner
+S02090,2024-02-19,,Annual,Partner
+S02091,2024-11-07,,Monthly,Web
+S02092,2025-05-31,,Annual,Web
+S02093,2024-12-08,2025-03-09,Monthly (promo),Web
+S02094,2024-06-29,2025-07-03,Monthly,Web
+S02095,2024-10-27,2025-09-20,Monthly,Sales team
+S02096,2024-03-17,,Annual,Partner
+S02097,2023-12-18,2024-05-27,Monthly,Web
+S02098,2023-08-17,,Monthly,Web
+S02099,2023-04-08,2023-12-01,Monthly,Web
+S02100,2024-11-26,2025-08-20,Monthly,Web
+S02101,2025-01-27,,Annual,Web
+S02102,2025-03-05,2025-06-04,Monthly (promo),Sales team
+S02103,2024-08-14,,Monthly (promo),Web
+S02104,2025-01-15,2025-02-23,Monthly,Web
+S02105,2023-11-22,2024-11-22,Monthly,Web
+S02106,2024-05-14,,Monthly,Sales team
+S02107,2023-02-22,2024-08-24,Monthly,Web
+S02108,2023-08-08,2024-03-08,Monthly (promo),Web
+S02109,2024-11-04,2025-02-25,Monthly,Sales team
+S02110,2025-06-11,,Annual,Web
+S02111,2025-01-04,,Annual,Partner
+S02112,2023-08-08,2024-08-10,Monthly,Web
+S02113,2024-08-27,,Annual,Web
+S02114,2024-06-15,,Annual,Web
+S02115,2025-03-22,2025-06-21,Monthly (promo),Web
+S02116,2025-02-01,2025-05-03,Monthly (promo),Partner
+S02117,2024-01-19,2025-03-23,Monthly,Web
+S02118,2023-12-07,2024-03-07,Monthly (promo),Web
+S02119,2024-09-26,,Annual,Web
+S02120,2023-06-07,2023-09-06,Monthly (promo),Partner
+S02121,2025-03-13,2025-06-12,Monthly (promo),Web
+S02122,2024-11-13,2025-02-26,Monthly,Web
+S02123,2025-03-29,,Monthly,Web
+S02124,2023-01-09,,Annual,Partner
+S02125,2024-09-02,,Annual,Partner
+S02126,2024-03-08,,Annual,Web
+S02127,2024-08-02,2025-07-12,Monthly,Web
+S02128,2023-12-05,2024-03-05,Monthly (promo),Web
+S02129,2025-01-22,,Annual,Web
+S02130,2024-03-24,2024-10-04,Monthly,Web
+S02131,2024-07-02,,Monthly,Web
+S02132,2024-11-26,2024-12-09,Monthly,Sales team
+S02133,2023-05-29,2025-11-15,Annual,Web
+S02134,2023-09-12,2025-12-02,Monthly,Web
+S02135,2025-02-07,,Monthly,Web
+S02136,2024-08-04,,Annual,Web
+S02137,2024-05-24,,Annual,Web
+S02138,2024-12-25,2025-06-09,Monthly,Web
+S02139,2023-07-04,2023-10-03,Monthly (promo),Partner
+S02140,2024-12-19,2025-02-04,Monthly,Partner
+S02141,2024-11-17,,Monthly,Sales team
+S02142,2023-10-16,2025-02-13,Monthly,Sales team
+S02143,2023-02-21,,Monthly,Partner
+S02144,2024-04-14,2025-02-20,Monthly,Partner
+S02145,2024-06-14,,Monthly (promo),Sales team
+S02146,2025-02-12,2025-04-08,Monthly,Partner
+S02147,2023-03-27,,Annual,Web
+S02148,2024-11-01,2025-01-06,Monthly,Web
+S02149,2024-08-12,,Annual,Web
+S02150,2023-02-24,,Annual,Web
+S02151,2023-11-16,,Monthly,Web
+S02152,2024-07-16,2025-08-22,Monthly,Sales team
+S02153,2023-11-04,2024-03-26,Monthly,Sales team
+S02154,2023-03-20,2023-12-21,Monthly,Partner
+S02155,2023-06-07,2025-07-15,Monthly,Web
+S02156,2024-12-01,,Monthly,Sales team
+S02157,2024-08-18,,Monthly,Web
+S02158,2023-01-10,2023-03-13,Monthly,Web
+S02159,2023-12-17,,Annual,Web
+S02160,2023-07-24,2025-07-23,Annual,Sales team
+S02161,2023-09-25,2024-04-26,Monthly,Web
+S02162,2023-03-14,2023-12-29,Monthly (promo),Partner
+S02163,2024-09-27,,Monthly,Web
+S02164,2025-03-19,,Annual,Web
+S02165,2024-03-06,,Annual,Sales team
+S02166,2023-12-13,,Annual,Sales team
+S02167,2025-01-03,2025-03-24,Monthly,Partner
+S02168,2024-09-24,2025-04-11,Monthly,Web
+S02169,2024-02-08,,Annual,Web
+S02170,2024-02-19,,Monthly,Web
+S02171,2024-08-16,2024-11-01,Monthly,Partner
+S02172,2023-01-14,2025-03-12,Monthly,Web
+S02173,2024-08-13,,Monthly,Web
+S02174,2024-10-28,,Monthly (promo),Partner
+S02175,2025-04-15,,Annual,Web
+S02176,2023-03-15,2023-09-16,Monthly,Partner
+S02177,2023-05-08,2024-12-12,Monthly,Web
+S02178,2024-12-09,,Annual,Partner
+S02179,2023-01-04,2024-10-28,Monthly,Partner
+S02180,2023-06-23,2024-09-04,Monthly,Web
+S02181,2023-12-19,,Monthly,Sales team
+S02182,2023-09-17,2024-02-20,Monthly,Partner
+S02183,2025-04-03,2025-07-20,Monthly,Sales team
+S02184,2023-11-13,2024-04-20,Monthly (promo),Partner
+S02185,2024-09-15,2024-12-15,Monthly (promo),Partner
+S02186,2023-10-09,2025-06-16,Monthly,Partner
+S02187,2024-05-20,2024-06-06,Monthly (promo),Web
+S02188,2025-02-19,2025-04-20,Monthly,Web
+S02189,2023-09-05,2025-05-28,Annual,Sales team
+S02190,2023-11-03,,Monthly,Partner
+S02191,2025-05-22,,Monthly (promo),Web
+S02192,2025-01-08,2025-07-22,Monthly,Web
+S02193,2023-01-21,,Annual,Sales team
+S02194,2025-03-11,,Annual,Web
+S02195,2024-12-02,,Annual,Partner
+S02196,2023-10-21,2024-03-21,Monthly,Web
+S02197,2024-08-09,,Annual,Partner
+S02198,2024-01-06,,Monthly,Web
+S02199,2024-04-18,2024-07-18,Monthly (promo),Web
+S02200,2024-03-03,,Annual,Partner
+S02201,2025-03-26,2025-08-06,Monthly,Web
+S02202,2023-11-09,2024-05-30,Monthly,Web
+S02203,2024-08-19,,Monthly,Web
+S02204,2024-03-06,,Monthly,Partner
+S02205,2025-02-23,2025-07-03,Monthly,Web
+S02206,2024-12-01,,Annual,Web
+S02207,2024-02-17,,Annual,Web
+S02208,2023-08-10,2023-09-08,Monthly,Partner
+S02209,2024-10-06,2025-01-05,Monthly (promo),Web
+S02210,2023-11-18,,Monthly,Web
+S02211,2024-08-02,2025-10-08,Monthly,Web
+S02212,2024-03-26,2025-09-24,Monthly (promo),Partner
+S02213,2023-04-08,2023-08-24,Monthly,Web
+S02214,2024-08-10,2025-05-22,Monthly,Sales team
+S02215,2024-02-22,2024-03-25,Monthly,Partner
+S02216,2023-09-05,2023-12-05,Monthly (promo),Partner
+S02217,2025-06-17,,Monthly,Web
+S02218,2025-04-05,,Monthly,Web
+S02219,2023-10-17,2024-05-12,Monthly,Partner
+S02220,2024-02-16,2024-06-28,Monthly (promo),Web
+S02221,2024-04-06,,Monthly,Web
+S02222,2024-11-16,2025-11-16,Annual,Web
+S02223,2024-05-16,2024-08-15,Monthly (promo),Web
+S02224,2023-09-02,2025-06-11,Monthly (promo),Web
+S02225,2023-03-19,2024-04-16,Monthly,Partner
+S02226,2025-01-23,,Monthly,Web
+S02227,2023-12-17,2024-10-12,Monthly,Partner
+S02228,2024-01-25,,Monthly,Web
+S02229,2025-05-23,2025-05-29,Monthly,Partner
+S02230,2023-09-17,,Monthly,Partner
+S02231,2024-09-13,2025-01-04,Monthly,Partner
+S02232,2023-07-21,2025-04-27,Monthly,Web
+S02233,2025-04-03,,Monthly,Web
+S02234,2023-10-16,2025-10-15,Annual,Sales team
+S02235,2024-07-28,2024-10-27,Monthly (promo),Web
+S02236,2024-06-04,,Monthly,Web
+S02237,2025-06-18,,Monthly,Partner
+S02238,2023-03-28,2023-04-30,Monthly,Web
+S02239,2023-07-21,,Annual,Web
+S02240,2023-04-06,2024-11-17,Monthly (promo),Web
+S02241,2023-11-26,2025-08-21,Monthly,Partner
+S02242,2024-01-21,,Annual,Partner
+S02243,2025-01-24,2025-11-25,Monthly,Web
+S02244,2024-04-02,2024-11-11,Monthly,Partner
+S02245,2025-04-19,,Annual,Web
+S02246,2024-12-15,2025-08-14,Monthly,Web
+S02247,2024-12-15,2025-09-27,Monthly,Web
+S02248,2023-10-12,,Annual,Web
+S02249,2023-04-19,2023-05-09,Monthly,Partner
+S02250,2023-09-14,2025-08-14,Monthly,Web
+S02251,2024-06-03,2024-09-02,Monthly (promo),Web
+S02252,2023-07-23,,Annual,Sales team
+S02253,2023-02-21,2023-10-23,Monthly,Web
+S02254,2024-07-24,2025-11-15,Monthly,Web
+S02255,2024-12-12,,Monthly,Sales team
+S02256,2025-02-20,,Annual,Web
+S02257,2025-06-15,2025-08-08,Monthly,Partner
+S02258,2023-04-15,2025-05-06,Monthly,Web
+S02259,2023-01-17,2023-11-09,Monthly,Partner
+S02260,2024-09-02,2025-05-12,Annual,Partner
+S02261,2025-01-06,,Monthly,Web
+S02262,2025-05-22,2025-08-21,Monthly (promo),Partner
+S02263,2023-02-05,2023-05-07,Monthly (promo),Web
+S02264,2024-06-09,,Annual,Web
+S02265,2023-02-06,2023-05-08,Monthly (promo),Partner
+S02266,2023-03-09,2025-09-01,Monthly,Web
+S02267,2023-01-27,,Annual,Web
+S02268,2025-02-14,2025-10-16,Monthly,Partner
+S02269,2025-02-07,,Annual,Web
+S02270,2023-10-15,2023-12-15,Annual,Partner
+S02271,2025-01-11,,Annual,Web
+S02272,2024-03-18,,Annual,Partner
+S02273,2025-02-22,,Monthly (promo),Sales team
+S02274,2025-01-09,2025-06-25,Monthly,Web
+S02275,2023-02-24,,Annual,Web
+S02276,2024-07-13,2025-07-13,Annual,Web
+S02277,2024-10-15,2025-09-07,Monthly,Sales team
+S02278,2024-01-31,2024-04-16,Monthly,Partner
+S02279,2023-01-25,2023-03-27,Monthly,Web
+S02280,2024-06-03,,Annual,Web
+S02281,2023-03-05,2025-03-04,Annual,Partner
+S02282,2023-07-24,2023-07-25,Monthly,Web
+S02283,2024-12-05,,Annual,Web
+S02284,2023-02-05,2023-03-18,Monthly,Partner
+S02285,2025-05-24,,Annual,Sales team
+S02286,2023-09-01,2023-09-14,Monthly (promo),Web
+S02287,2024-11-02,2024-11-28,Monthly (promo),Web
+S02288,2023-12-19,,Annual,Partner
+S02289,2024-04-14,2024-07-14,Monthly (promo),Partner
+S02290,2024-04-02,2024-04-06,Monthly,Partner
+S02291,2024-03-24,,Annual,Partner
+S02292,2024-12-28,,Annual,Partner
+S02293,2023-03-12,2025-03-11,Annual,Web
+S02294,2024-03-31,2024-10-12,Monthly,Sales team
+S02295,2024-11-01,2025-01-31,Monthly (promo),Partner
+S02296,2023-02-14,2024-07-09,Monthly (promo),Web
+S02297,2023-01-28,,Monthly,Web
+S02298,2024-01-03,,Monthly,Sales team
+S02299,2024-10-12,,Monthly,Partner
+S02300,2024-04-25,2024-10-16,Monthly,Web
+S02301,2024-11-20,,Monthly,Web
+S02302,2023-05-08,,Annual,Partner
+S02303,2023-04-29,2025-04-28,Annual,Partner
+S02304,2023-12-27,2024-12-21,Monthly,Web
+S02305,2023-10-04,,Annual,Web
+S02306,2023-05-03,2024-08-16,Monthly,Sales team
+S02307,2023-10-30,2024-01-29,Monthly (promo),Web
+S02308,2023-03-10,2024-02-08,Monthly,Web
+S02309,2023-07-28,,Annual,Web
+S02310,2025-02-11,,Annual,Sales team
+S02311,2024-04-06,,Monthly,Web
+S02312,2024-09-27,,Annual,Web
+S02313,2023-08-12,2023-12-21,Monthly,Web
+S02314,2023-04-03,,Monthly,Partner
+S02315,2024-08-28,2025-07-25,Monthly,Partner
+S02316,2024-11-09,,Annual,Web
+S02317,2024-07-17,2024-10-16,Monthly (promo),Web
+S02318,2024-01-23,,Monthly,Partner
+S02319,2024-02-03,,Monthly (promo),Sales team
+S02320,2023-10-02,2024-01-04,Monthly,Web
+S02321,2024-03-22,2024-06-21,Monthly (promo),Partner
+S02322,2024-04-22,2024-08-27,Monthly (promo),Sales team
+S02323,2024-04-03,2024-07-30,Monthly,Web
+S02324,2023-01-18,2023-07-25,Monthly,Sales team
+S02325,2024-03-31,2024-09-25,Monthly,Web
+S02326,2025-04-17,2025-10-19,Monthly (promo),Web
+S02327,2024-06-09,2024-09-08,Monthly (promo),Web
+S02328,2024-06-05,2024-09-04,Monthly (promo),Web
+S02329,2024-09-07,2025-07-18,Monthly,Partner
+S02330,2024-03-01,2025-09-22,Monthly,Web
+S02331,2025-03-06,,Monthly,Web
+S02332,2024-08-09,2024-08-30,Monthly,Web
+S02333,2024-01-14,2024-04-14,Monthly (promo),Partner
+S02334,2024-09-01,2025-06-16,Monthly,Partner
+S02335,2023-10-17,,Annual,Web
+S02336,2023-01-01,,Annual,Sales team
+S02337,2024-09-15,,Annual,Web
+S02338,2024-07-08,2024-10-05,Monthly,Partner
+S02339,2025-05-11,,Annual,Web
+S02340,2025-01-30,2025-02-12,Monthly,Sales team
+S02341,2024-05-20,2024-07-22,Monthly,Sales team
+S02342,2025-04-13,,Monthly,Web
+S02343,2024-11-30,,Monthly,Web
+S02344,2023-01-28,2024-10-05,Monthly,Partner
+S02345,2025-01-29,,Monthly,Partner
+S02346,2023-09-16,2025-08-06,Monthly,Partner
+S02347,2025-05-17,,Annual,Sales team
+S02348,2024-01-06,,Monthly,Web
+S02349,2024-03-18,2024-08-27,Monthly,Web
+S02350,2023-11-21,,Monthly,Partner
+S02351,2025-03-16,2025-05-14,Monthly,Partner
+S02352,2024-10-13,,Monthly (promo),Web
+S02353,2023-08-18,2023-11-17,Monthly (promo),Partner
+S02354,2023-02-15,2024-02-15,Annual,Web
+S02355,2024-01-10,2024-09-14,Monthly,Web
+S02356,2023-11-25,2025-05-06,Monthly,Partner
+S02357,2024-06-26,,Monthly (promo),Sales team
+S02358,2023-03-15,2023-06-23,Monthly,Web
+S02359,2024-10-29,2025-01-28,Monthly (promo),Sales team
+S02360,2024-03-20,,Monthly,Partner
+S02361,2024-03-03,,Monthly,Web
+S02362,2025-02-22,,Monthly,Web
+S02363,2025-04-09,2025-08-22,Monthly,Web
+S02364,2024-04-15,2025-03-27,Monthly,Web
+S02365,2023-07-18,2023-09-26,Monthly (promo),Sales team
+S02366,2024-02-05,2025-02-27,Monthly,Web
+S02367,2025-06-06,,Annual,Partner
+S02368,2023-04-07,,Monthly,Sales team
+S02369,2025-03-26,2025-06-10,Monthly,Partner
+S02370,2024-12-23,,Monthly,Web
+S02371,2025-03-27,,Annual,Partner
+S02372,2023-03-07,2025-03-06,Annual,Web
+S02373,2023-09-07,,Monthly,Web
+S02374,2024-03-04,,Monthly,Web
+S02375,2023-10-06,2023-11-23,Monthly,Partner
+S02376,2025-01-29,2025-04-30,Monthly (promo),Partner
+S02377,2025-04-19,2025-09-15,Monthly,Partner
+S02378,2024-01-09,,Annual,Partner
+S02379,2024-05-02,2024-08-01,Monthly (promo),Web
+S02380,2023-11-05,2025-08-27,Monthly,Web
+S02381,2025-05-12,2025-08-11,Monthly (promo),Web
+S02382,2025-05-08,,Annual,Partner
+S02383,2023-06-23,,Monthly (promo),Web
+S02384,2024-06-29,2024-07-14,Monthly,Web
+S02385,2024-04-08,2025-02-09,Monthly (promo),Web
+S02386,2025-04-22,,Monthly,Partner
+S02387,2024-03-26,,Annual,Partner
+S02388,2023-01-16,2023-06-16,Monthly (promo),Partner
+S02389,2024-11-12,,Annual,Web
+S02390,2024-03-11,2025-07-27,Monthly,Web
+S02391,2025-02-17,2025-05-14,Monthly,Web
+S02392,2024-03-01,2024-12-22,Monthly (promo),Web
+S02393,2023-09-20,,Annual,Sales team
+S02394,2024-10-15,2025-01-14,Monthly (promo),Partner
+S02395,2023-11-19,2024-11-18,Annual,Sales team
+S02396,2024-11-06,,Annual,Web
+S02397,2025-02-14,,Monthly,Sales team
+S02398,2024-11-19,,Annual,Partner
+S02399,2024-03-05,,Annual,Partner
+S02400,2024-03-26,2025-01-24,Monthly (promo),Partner

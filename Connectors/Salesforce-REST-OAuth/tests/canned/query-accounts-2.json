@@ -1,0 +1,106 @@
+{
+ "totalSize": 12,
+ "done": true,
+ "records": [
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000007"
+   },
+   "Id": "001A00000000000007",
+   "IsDeleted": false,
+   "Name": "Riverside Parks Trust",
+   "Type": "Other",
+   "Industry": "Not For Profit",
+   "BillingStreet": "Riverside",
+   "BillingCity": "Hull",
+   "BillingPostalCode": "HU1 1NQ",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": null,
+   "NumberOfEmployees": 9,
+   "OwnerId": "005A00000000000001",
+   "CreatedDate": "2024-08-08T09:30:00.000+0000",
+   "LastActivityDate": null
+  },
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000008"
+   },
+   "Id": "001A00000000000008",
+   "IsDeleted": false,
+   "Name": "Pennine Tools",
+   "Type": "Customer - Direct",
+   "Industry": "Wholesale",
+   "BillingStreet": "Pennine Works",
+   "BillingCity": "Huddersfield",
+   "BillingPostalCode": "HD1 6PL",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": 7400000,
+   "NumberOfEmployees": 88,
+   "OwnerId": "005A00000000000002",
+   "CreatedDate": "2024-09-09T09:30:00.000+0000",
+   "LastActivityDate": "2025-03-18"
+  },
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000009"
+   },
+   "Id": "001A00000000000009",
+   "IsDeleted": false,
+   "Name": "Hollins Garden Design",
+   "Type": "Prospect",
+   "Industry": "Design",
+   "BillingStreet": "3 Hollins Way",
+   "BillingCity": "Ilkley",
+   "BillingPostalCode": "LS29 8AA",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": 410000,
+   "NumberOfEmployees": 6,
+   "OwnerId": "005A00000000000000",
+   "CreatedDate": "2024-10-01T09:30:00.000+0000",
+   "LastActivityDate": "2025-04-19"
+  },
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000010"
+   },
+   "Id": "001A00000000000010",
+   "IsDeleted": false,
+   "Name": "Dalesway Hotels",
+   "Type": "Customer - Direct",
+   "Industry": "Hospitality",
+   "BillingStreet": "Dalesway House",
+   "BillingCity": "Skipton",
+   "BillingPostalCode": "BD23 1JD",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": 12500000,
+   "NumberOfEmployees": 310,
+   "OwnerId": "005A00000000000001",
+   "CreatedDate": "2024-11-02T09:30:00.000+0000",
+   "LastActivityDate": "2025-05-20"
+  },
+  {
+   "attributes": {
+    "type": "Account",
+    "url": "/services/data/v62.0/sobjects/Account/001A00000000000011"
+   },
+   "Id": "001A00000000000011",
+   "IsDeleted": false,
+   "Name": "Abbey Fields School",
+   "Type": "Other",
+   "Industry": "Education",
+   "BillingStreet": "Abbey Fields",
+   "BillingCity": "Selby",
+   "BillingPostalCode": "YO8 4QS",
+   "BillingCountry": "United Kingdom",
+   "AnnualRevenue": null,
+   "NumberOfEmployees": 95,
+   "OwnerId": "005A00000000000002",
+   "CreatedDate": "2024-12-03T09:30:00.000+0000",
+   "LastActivityDate": null
+  }
+ ]
+}

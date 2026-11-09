@@ -1,0 +1,127 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Concentration Measures",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "HHI, Gini, top-N and top-20% shares and Lorenz curves for customer, supplier or market concentration, per group.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "concentration",
+        "HHI",
+        "Herfindahl",
+        "Gini",
+        "Lorenz curve",
+        "market share",
+        "supplier risk",
+        "customer concentration",
+        "visokio-agents"
+    ],
+    "introductoryText": "Measures **how concentrated a total is** among the entities that make it up: customers in revenue, suppliers in spend, firms in a market, products in sales, overall and per group (market, region, year).\n\n- **HHI** (Herfindahl-Hirschman index: sum of squared percentage shares, 0 to 10,000), normalised HHI and the **equivalent number of equal-sized entities**\n- **Gini coefficient** and the **Lorenz curve** (101 points per group, ready to chart against the equality line)\n- **Top-1, top-4 (CR4) and top-10 shares**, the share held by the **top 20%** of entities, and how many entities make up **50% and 80%** of the total\n- An **HHI band** with thresholds you can set (defaults 1,500 and 2,500, the bands used in the 2010 US Horizontal Merger Guidelines)\n\nValues are summed per entity first; entities with zero or negative totals are left out. Outputs: the measures per group, the Lorenz curve, and each entity with share, rank and cumulative share.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "entity_field",
+            "title": "Entity field",
+            "description": "For example Customer, Supplier or Company.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Value field",
+            "description": "For example Revenue or Spend.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Per group (optional)",
+            "description": "For example Year or Market.",
+            "groupTitle": null,
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "hhi_moderate",
+            "title": "HHI: moderately concentrated from",
+            "description": "HHI at or above this is labelled moderately concentrated.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 10000,
+            "mandatory": true,
+            "defaultValue": 1500.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "hhi_high",
+            "title": "HHI: highly concentrated above",
+            "description": "HHI above this is labelled highly concentrated.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 10000,
+            "mandatory": true,
+            "defaultValue": 2500.0,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Per group: entities, total, HHI, normalised HHI, equivalent entities, Gini, top shares, entities for 50% / 80%, band."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "lorenz",
+            "label": "Lorenz",
+            "displayName": "Lorenz curve",
+            "tooltip": "Per group: 101 points of cumulative share of entities vs cumulative share of total."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "entities",
+            "label": "Entities",
+            "displayName": "Entities",
+            "tooltip": "Per group and entity: value, share, rank, cumulative share, in top 20%."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

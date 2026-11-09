@@ -1,0 +1,48 @@
+{
+ "totalSize": 3,
+ "done": true,
+ "records": [
+  {
+   "attributes": {
+    "type": "Contact"
+   },
+   "Id": "003A1",
+   "LastName": "Natarajan",
+   "Owner": {
+    "attributes": {
+     "type": "User"
+    },
+    "Name": "Ada Example"
+   },
+   "Account": null
+  },
+  {
+   "attributes": {
+    "type": "Contact"
+   },
+   "Id": "003A2",
+   "LastName": "Okafor",
+   "Owner": null,
+   "Account": {
+    "attributes": {
+     "type": "Account"
+    },
+    "Name": "Marsh Lane Hardware"
+   }
+  },
+  {
+   "attributes": {
+    "type": "Contact"
+   },
+   "Id": "003A3",
+   "LastName": "Rossi",
+   "Owner": {
+    "attributes": {
+     "type": "User"
+    },
+    "Name": "Ben Example"
+   },
+   "Account": null
+  }
+ ]
+}

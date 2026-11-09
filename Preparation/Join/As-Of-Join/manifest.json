@@ -1,0 +1,196 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "As-Of Join",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAFfElEQVR42u2dXYhVVRTHf3tSZ8b8jGwstYcpJRCjkMzAeohKmCjrKSh6yIroIfNRsTJBG4Og8LXAl56CxI+0MIuywlH0JS2iKSktwj7Hr5nRW/57uBsyufeej3s+9hnX7+3O2Wfttdb/7HvW3vueM2AYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYhgGAa9eApB5gGXAXMMf/+TiwF9jqnPs1S4eL7q9q/iRxvFvSRknDas6wpH5JXVXrr2r+JHV+pqQDis9+f6VWor+q+ZPU+S7vUFIOSpoYen9V8ydNABuVng2h91c1f1wTJ+cB/cC9wGSr9UrlNPAhsNo5922kgF68AWC65S4o/gIWXypiR4OG/SZekEz32kSOwJPAFMtXkJxyzk2NGoFGhWgk4B5LS7DssSJmrBcxvsFiYIsvYY3ypxFbGomXdiLb38ZEdn3o/VXNn7RLSQMpl5K6Q++vav6kDaInYRD7JF1Tlf6q5k87V+Irks62cPyspPUZbSfF6e+CpB2Srhxr8Tcjiw3dGcBD/H9D8xj1Dc1tzrnfMk7cDOBF4LkWzb7xbd51zilnIQuNf0wgaUuC+85Sy1h4Ap5IWEB8IukOy1wY4vW2UcZvl7TAsliugI+qPf6R9Lak3rGQjyouZt+eQcyPAYclPWBDovgROKDsOOmrSBuBBYnXCdySockpwMMmYHHcCnRmbLPHBKzO/a8RX5uAxbE4Y3vHgB0mYDgjcF9Ce7OAZ600LKaA6YlRVc6StFpSLWE1+pokZ1nOV8BlESL8cFHbRZKOJhRxk2U5XwFXRwjwziXtr5K0NaGI/XYPzI/zEccHLv7gnPvTz/FWArWYfayStNyGSz4jcL5fx2xETdINLc5dIunnmKNwRNJCy3g+Ir7aJOlrYxZBcZfhjkiaYBnPR8THJX0h6XtJeyU9kuDciZLeiyniGst2mBdAp6T3Ywg4LOlay1iYInZLOhRDxI2WrXBF7JV0OsZ20zTLVrgirowxCp+yTIUr4BWSBiME3GmZClvEZyIEHJVkD7wGLOBkP3lvRbC/Lb3sn9B1zp0GPo5odrMJGDafRxxfYAKGzZcRx28yAcNmMOL4NBMwbIYijk81AcPmpAlY7Ur0HHCqRZNzofo+LoR5GDAf6L3oXjMEHAWOOOfOFOTKZ8D9LY4FGa8rUbjxwH3AEmB8k2Y1n7zdzrm/c/KjG1gLPA80exR6FHgDWOecGw0pXlfiqFvOf48kR3EM2Own3Vn6MRPYDtwW85QDwIPOuROhxNtRgnjjgCcSBANwPfCkv4qz8qML2JZAPIBFwM4kb97NO94yipil3sGkzAbuydCPl70gSVkIrAkl3mZv7J0B9AHzyPZpoAnUfx6f9sK5QP3ng7U2/ZgIPN1GEVcD3gRGCoh3L3AE2NXojRcdTcRbQX39L+tHua5uc9R3eBvtcmObFfh4b6OIeK/zWqxo9DBqI+N9QF6vhJoaiI3ZGdiYU3C83V6bSAHn5nj/6wzERhYvcp9UQrxzyy5ixOVF7vE2EnAwx/7OZ2Aji2WtLOaTZ0qIdzCOgLtiVFdpGQrExk8Z2DhecLwjXpvWAvpSdRNwmOwXcX/3pXFaLgB/ZODHd0A7S3M1b6OIeH/xWmxqNI0ofClNUh9wd8rT9zjnPsjIj35gVcrTNzjnXggh3jJWYnZTX+tL87X3UYZ+rAP2pzjvELAhlHgLF9Cvsm9OGNSPwFvOuVqGfoxS/8eNSUQcAPqccyOhxFvmdtI46tsrd9J6e+VT/1WS13ZSF/AS9e2kZovUw8DrwPo2tpNyibf0NzNImkTzDc6vitrQLerNu6HEaxiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGYRiGkQv/Ap5wzmjpTN+4AAAAAElFTkSuQmCC",
+    "description": "Joins each row to the record in force at its date (latest on or before, next, or nearest) per key, with a maximum gap and validity end dates.",
+    "category": "Preparation",
+    "subcategory": "Join",
+    "tags": [
+        "as-of join",
+        "point in time",
+        "effective date",
+        "exchange rates",
+        "price list",
+        "slowly changing dimension",
+        "temporal join",
+        "visokio-agents"
+    ],
+    "introductoryText": "Attaches to each row of input 1 the row of input 2 that was **in force at that row's date**, per key:\n\n- the latest **exchange rate** on or before each transaction date (weekends and holidays use the last published rate)\n- the **price list** or **tariff** effective at the order date\n- the **owner, grade, address or status** valid at the time (slowly changing dimensions)\n\nOptions:\n- **Direction**: latest on or before (default), next on or after, or nearest\n- **Maximum gap** in days, so a rate that is months old does not count\n- **End date** on input 2 for validity ranges (valid from / valid to)\n- Which input 2 fields to bring across (default: all except keys and dates); names that clash get a suffix\n\nEvery input 1 row is kept, in its original order, with **As Of Date**, **Days From As Of Date** and **As Of Status** (Matched, No record in range, Expired, No date).",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "left_date",
+            "title": "Date field",
+            "description": "Date of each row in input 1, such as an invoice date.",
+            "groupTitle": "Input 1 (rows)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "left_keys",
+            "title": "Key fields (optional)",
+            "description": "For example Currency or Product. Matched in order with the input 2 keys.",
+            "groupTitle": "Input 1 (rows)",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "right_date",
+            "title": "Effective date field",
+            "description": "Date from which each input 2 record applies, such as a rate date.",
+            "groupTitle": "Input 2 (dated reference table)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "right_end_date",
+            "title": "End date field (optional)",
+            "description": "Valid-to date, for validity ranges.",
+            "groupTitle": "Input 2 (dated reference table)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "right_keys",
+            "title": "Key fields",
+            "description": "Default: the same names as input 1.",
+            "groupTitle": "Input 2 (dated reference table)",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 1,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "fields_to_add",
+            "title": "Fields to bring across (optional)",
+            "description": "Default: all except keys and dates.",
+            "groupTitle": "Input 2 (dated reference table)",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 1,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "direction",
+            "title": "Direction",
+            "description": "Which reference record each row takes: the latest on or before its date, the next on or after, or the nearest.",
+            "groupTitle": "Matching",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Latest on or before",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "BACKWARD",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Next on or after",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FORWARD",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Nearest",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NEAREST",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "BACKWARD"
+        },
+        {
+            "name": "max_gap_days",
+            "title": "Maximum gap (days)",
+            "description": "0 = no limit.",
+            "groupTitle": "Matching",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "suffix",
+            "title": "Suffix for clashing names",
+            "description": null,
+            "groupTitle": "Matching",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": " (as of)"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "joined",
+            "label": "Joined",
+            "displayName": "Joined",
+            "tooltip": "Input 1 with the fields from input 2, As Of Date, Days From As Of Date and As Of Status."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Rows per status, with the average and largest gap for matched rows."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

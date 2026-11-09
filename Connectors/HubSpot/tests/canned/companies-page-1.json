@@ -1,0 +1,130 @@
+{
+ "results": [
+  {
+   "id": "9001",
+   "properties": {
+    "name": "Fernhill Garden Centre",
+    "domain": "fernhill-garden.example",
+    "industry": "Retail",
+    "city": "Leeds",
+    "createdate": "2024-01-03T09:10:00.000Z",
+    "hs_lastmodifieddate": "2025-03-01T12:00:00.000Z",
+    "hs_object_id": "9001"
+   },
+   "createdAt": "2024-01-03T09:10:00.000Z",
+   "updatedAt": "2025-03-01T12:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "9002",
+   "properties": {
+    "name": "Marsh Lane Hardware",
+    "domain": "marshlane.example",
+    "industry": "Retail",
+    "city": "York",
+    "createdate": "2024-02-04T09:11:00.000Z",
+    "hs_lastmodifieddate": "2025-03-02T12:00:00.000Z",
+    "hs_object_id": "9002"
+   },
+   "createdAt": "2024-02-04T09:11:00.000Z",
+   "updatedAt": "2025-03-02T12:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "9003",
+   "properties": {
+    "name": "Brookside Allotment Society",
+    "domain": "brookside-allotments.example",
+    "industry": "Non-profit",
+    "city": "Harrogate",
+    "createdate": "2024-03-05T09:12:00.000Z",
+    "hs_lastmodifieddate": "2025-03-03T12:00:00.000Z",
+    "hs_object_id": "9003"
+   },
+   "createdAt": "2024-03-05T09:12:00.000Z",
+   "updatedAt": "2025-03-03T12:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "9004",
+   "properties": {
+    "name": "Willow Bank Landscapes",
+    "domain": "willowbank.example",
+    "industry": "Construction",
+    "city": "Bradford",
+    "createdate": "2024-04-06T09:13:00.000Z",
+    "hs_lastmodifieddate": "2025-03-04T12:00:00.000Z",
+    "hs_object_id": "9004"
+   },
+   "createdAt": "2024-04-06T09:13:00.000Z",
+   "updatedAt": "2025-03-04T12:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "9005",
+   "properties": {
+    "name": "Oakfield Nurseries",
+    "domain": "oakfield-nurseries.example",
+    "industry": "Agriculture",
+    "city": "Wakefield",
+    "createdate": "2024-05-07T09:14:00.000Z",
+    "hs_lastmodifieddate": "2025-03-05T12:00:00.000Z",
+    "hs_object_id": "9005"
+   },
+   "createdAt": "2024-05-07T09:14:00.000Z",
+   "updatedAt": "2025-03-05T12:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "9006",
+   "properties": {
+    "name": "Greenway Estates",
+    "domain": "greenway-estates.example",
+    "industry": "Real estate",
+    "city": "Leeds",
+    "createdate": "2024-06-08T09:15:00.000Z",
+    "hs_lastmodifieddate": "2025-03-06T12:00:00.000Z",
+    "hs_object_id": "9006"
+   },
+   "createdAt": "2024-06-08T09:15:00.000Z",
+   "updatedAt": "2025-03-06T12:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "9007",
+   "properties": {
+    "name": "Kestrel Facilities",
+    "domain": "kestrel-fm.example",
+    "industry": "Facilities services",
+    "city": "Sheffield",
+    "createdate": "2024-07-09T09:16:00.000Z",
+    "hs_lastmodifieddate": "2025-03-07T12:00:00.000Z",
+    "hs_object_id": "9007"
+   },
+   "createdAt": "2024-07-09T09:16:00.000Z",
+   "updatedAt": "2025-03-07T12:00:00.000Z",
+   "archived": false
+  },
+  {
+   "id": "9008",
+   "properties": {
+    "name": "Riverside Parks Trust",
+    "domain": "riverside-parks.example",
+    "industry": "Non-profit",
+    "city": "Hull",
+    "createdate": "2024-08-10T09:17:00.000Z",
+    "hs_lastmodifieddate": "2025-03-08T12:00:00.000Z",
+    "hs_object_id": "9008"
+   },
+   "createdAt": "2024-08-10T09:17:00.000Z",
+   "updatedAt": "2025-03-08T12:00:00.000Z",
+   "archived": false
+  }
+ ],
+ "paging": {
+  "next": {
+   "after": "9009",
+   "link": "https://api.hubapi.com/crm/v3/objects/companies?after=9009"
+  }
+ }
+}

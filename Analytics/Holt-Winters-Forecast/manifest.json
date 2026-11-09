@@ -1,0 +1,321 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Holt-Winters Forecast",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Exponential smoothing forecasts per series with automatic trend and seasonality selection, prediction intervals and a holdout accuracy check.",
+    "category": "Analytics",
+    "subcategory": "Time Series",
+    "tags": [
+        "forecast",
+        "Holt-Winters",
+        "ETS",
+        "exponential smoothing",
+        "seasonality",
+        "prediction intervals",
+        "demand planning",
+        "time series",
+        "visokio-agents"
+    ],
+    "introductoryText": "**Exponential smoothing (Holt-Winters / ETS) forecasts** per series (product, store, region, cost centre) with trend and seasonality.\n\n- Models: level only, **additive or damped trend**, and **no, additive or multiplicative seasonality**; with *Automatic*, the model with the lowest AICc is chosen per series\n- Smoothing parameters fitted by least squares\n- **Prediction intervals** (80% and 95%) from simulated future paths using the model's own errors, so they widen with the horizon\n- Optional **holdout check**: the last N periods are forecast from earlier data and scored (MAE, RMSE, MAPE) against a seasonal naive forecast; **MASE** below 1 means the model beats \"same as last season\"\n\nRows are aggregated to day, week, month or quarter (sum); empty periods count as zero. Seasonality needs at least two full seasons of history.\n\nOutputs: actuals with fitted values, holdout forecasts and future forecasts with intervals in one table for charting, and one row per series describing the model and its accuracy. Needs the *scipy* package, which is installed with the block. Fitting takes roughly a second per series.",
+    "dependencies": "scipy",
+    "options": [
+        {
+            "name": "date_field",
+            "title": "Date field",
+            "description": "Date of each value; values are summed per period.",
+            "groupTitle": "History",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Value field",
+            "description": "The quantity to forecast, such as sales.",
+            "groupTitle": "History",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "series_fields",
+            "title": "One forecast per (optional)",
+            "description": "For example Product or Store.",
+            "groupTitle": "History",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "period",
+            "title": "Period",
+            "description": null,
+            "groupTitle": "History",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Month",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Week",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WEEK",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Day",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DAY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Quarter",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "QUARTER",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MONTH"
+        },
+        {
+            "name": "horizon",
+            "title": "Horizon (periods)",
+            "description": "How many periods to forecast past the last one in the data.",
+            "groupTitle": "Forecast",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 1000,
+            "mandatory": true,
+            "defaultValue": 12,
+            "showAsSlider": false
+        },
+        {
+            "name": "season_length",
+            "title": "Season length",
+            "description": "0 = default for the period (12 months, 52 weeks, 7 days, 4 quarters).",
+            "groupTitle": "Forecast",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 400,
+            "mandatory": false,
+            "defaultValue": 0,
+            "showAsSlider": false
+        },
+        {
+            "name": "trend",
+            "title": "Trend",
+            "description": "Automatic picks the trend with the best fit; a damped trend levels off over the horizon.",
+            "groupTitle": "Forecast",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Automatic",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "AUTO",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "None",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Additive",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ADDITIVE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Damped",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DAMPED",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "AUTO"
+        },
+        {
+            "name": "seasonality",
+            "title": "Seasonality",
+            "description": "Automatic picks the best fit. Multiplicative seasons grow with the level; additive ones stay the same size.",
+            "groupTitle": "Forecast",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Automatic",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "AUTO",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "None",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Additive",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ADDITIVE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Multiplicative",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MULTIPLICATIVE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "AUTO"
+        },
+        {
+            "name": "holdout",
+            "title": "Holdout check (periods)",
+            "description": "0 = no check.",
+            "groupTitle": "Forecast",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1000,
+            "mandatory": false,
+            "defaultValue": 0,
+            "showAsSlider": false
+        },
+        {
+            "name": "simulations",
+            "title": "Simulated paths for intervals",
+            "description": null,
+            "groupTitle": "Forecast",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 100,
+            "numMax": 20000,
+            "mandatory": true,
+            "defaultValue": 1000,
+            "showAsSlider": false
+        },
+        {
+            "name": "seed",
+            "title": "Random seed",
+            "description": null,
+            "groupTitle": "Forecast",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 1,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "forecast",
+            "label": "Forecast",
+            "displayName": "Forecast",
+            "tooltip": "Per series and period: row type (Actual, Holdout forecast, Forecast), actual, fitted, forecast, 80% and 95% intervals, horizon."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "models",
+            "label": "Models",
+            "displayName": "Models",
+            "tooltip": "Per series: model chosen, smoothing parameters, AICc, in-sample error, holdout accuracy and MASE."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

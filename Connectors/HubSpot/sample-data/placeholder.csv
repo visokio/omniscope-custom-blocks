@@ -1,0 +1,13 @@
+id,createdAt,updatedAt,archived,properties.name,properties.domain,properties.industry,properties.city,properties.createdate,properties.hs_lastmodifieddate,properties.hs_object_id
+9001,2024-01-03 09:10:00,2025-03-01 12:00:00,False,Fernhill Garden Centre,fernhill-garden.example,Retail,Leeds,2024-01-03 09:10:00,2025-03-01 12:00:00,9001
+9002,2024-02-04 09:11:00,2025-03-02 12:00:00,False,Marsh Lane Hardware,marshlane.example,Retail,York,2024-02-04 09:11:00,2025-03-02 12:00:00,9002
+9003,2024-03-05 09:12:00,2025-03-03 12:00:00,False,Brookside Allotment Society,brookside-allotments.example,Non-profit,Harrogate,2024-03-05 09:12:00,2025-03-03 12:00:00,9003
+9004,2024-04-06 09:13:00,2025-03-04 12:00:00,False,Willow Bank Landscapes,willowbank.example,Construction,Bradford,2024-04-06 09:13:00,2025-03-04 12:00:00,9004
+9005,2024-05-07 09:14:00,2025-03-05 12:00:00,False,Oakfield Nurseries,oakfield-nurseries.example,Agriculture,Wakefield,2024-05-07 09:14:00,2025-03-05 12:00:00,9005
+9006,2024-06-08 09:15:00,2025-03-06 12:00:00,False,Greenway Estates,greenway-estates.example,Real estate,Leeds,2024-06-08 09:15:00,2025-03-06 12:00:00,9006
+9007,2024-07-09 09:16:00,2025-03-07 12:00:00,False,Kestrel Facilities,kestrel-fm.example,Facilities services,Sheffield,2024-07-09 09:16:00,2025-03-07 12:00:00,9007
+9008,2024-08-10 09:17:00,2025-03-08 12:00:00,False,Riverside Parks Trust,riverside-parks.example,Non-profit,Hull,2024-08-10 09:17:00,2025-03-08 12:00:00,9008
+9009,2024-09-11 09:18:00,2025-03-09 12:00:00,False,Pennine Tools,pennine-tools.example,Wholesale,Huddersfield,2024-09-11 09:18:00,2025-03-09 12:00:00,9009
+9010,2024-10-12 09:19:00,2025-03-10 12:00:00,False,Hollins Garden Design,hollins-design.example,Design,Ilkley,2024-10-12 09:19:00,2025-03-10 12:00:00,9010
+9011,2024-11-13 09:20:00,2025-03-11 12:00:00,False,Dalesway Hotels,dalesway-hotels.example,Hospitality,Skipton,2024-11-13 09:20:00,2025-03-11 12:00:00,9011
+9012,2024-12-14 09:21:00,2025-03-12 12:00:00,False,Abbey Fields School,abbeyfields.example,Education,Selby,2024-12-14 09:21:00,2025-03-12 12:00:00,9012

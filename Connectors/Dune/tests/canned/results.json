@@ -1,0 +1,1604 @@
+{
+ "execution_id": "01K9ZQ4T7W2R8M5H3XJ6D1VYCE",
+ "query_id": 4100217,
+ "is_execution_finished": true,
+ "state": "QUERY_STATE_COMPLETED",
+ "submitted_at": "2026-10-01T06:00:02.114Z",
+ "expires_at": "2026-12-30T06:00:41.906Z",
+ "execution_started_at": "2026-10-01T06:00:02.530Z",
+ "execution_ended_at": "2026-10-01T06:00:41.906Z",
+ "result": {
+  "rows": [
+   {
+    "day": "2026-09-01 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 94277,
+    "volume_usd": 241530218.14,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "72639847596670492302325",
+    "venues": [
+     "aerodrome",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-01 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 81435,
+    "volume_usd": 250196476.99,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "36409462060795354744388",
+    "venues": [
+     "curve",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-01 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 101212,
+    "volume_usd": 260062577.55,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "23760718497346144041002",
+    "venues": [
+     "curve",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-01 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 46228,
+    "volume_usd": 117070269.39,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "10680431344000245538648",
+    "venues": [
+     "curve",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-02 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 98076,
+    "volume_usd": 180794911.95,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "59584623668896598024783",
+    "venues": [
+     "sushiswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-02 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 86581,
+    "volume_usd": 225774981.94,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "15727244418416956499933",
+    "venues": [
+     "uniswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-02 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 98723,
+    "volume_usd": 213357552.75,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "64646820007550005547099",
+    "venues": [
+     "aerodrome",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-02 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 40054,
+    "volume_usd": 102047350.95,
+    "is_weekend": false,
+    "top_pair": "USDC-USDT",
+    "largest_trade_wei": "25657680999475496654124",
+    "venues": [
+     "balancer",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-03 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 122829,
+    "volume_usd": 257397378.87,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "19802488748523065945386",
+    "venues": [
+     "uniswap",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-03 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 91865,
+    "volume_usd": 292656941.39,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "11068243897243479155669",
+    "venues": [
+     "sushiswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-03 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 73086,
+    "volume_usd": 175260115.9,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "7679914990382426728673",
+    "venues": [
+     "aerodrome",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-03 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 35933,
+    "volume_usd": 94177702.93,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "2094070304670578385724",
+    "venues": [
+     "uniswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-04 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 115985,
+    "volume_usd": 213868089.64,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "45058349941513302019193",
+    "venues": [
+     "aerodrome",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-04 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 62560,
+    "volume_usd": 116324699.27,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "70569621735253787200433",
+    "venues": [
+     "aerodrome",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-04 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 106769,
+    "volume_usd": 281219972.43,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "77624297892965228776931",
+    "venues": [
+     "balancer",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-04 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 41320,
+    "volume_usd": 115773265.81,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "40032900892813361443300",
+    "venues": [
+     "aerodrome",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-05 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 84679,
+    "volume_usd": 153780491.88,
+    "is_weekend": true,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "48584851435945647008127",
+    "venues": [
+     "uniswap",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-05 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 61397,
+    "volume_usd": 164854183.66,
+    "is_weekend": true,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "51242056513630289999218",
+    "venues": [
+     "sushiswap",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-05 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 81510,
+    "volume_usd": 186951969.84,
+    "is_weekend": true,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "74985058065190742365972",
+    "venues": [
+     "uniswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-05 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 36038,
+    "volume_usd": 65940660.28,
+    "is_weekend": true,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "69965513337352233782451",
+    "venues": [
+     "balancer",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-06 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 67983,
+    "volume_usd": 140000414.65,
+    "is_weekend": true,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "40911294709008987190738",
+    "venues": [
+     "balancer",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-06 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 45303,
+    "volume_usd": 133112879.74,
+    "is_weekend": true,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "20862258174875874696628",
+    "venues": [
+     "balancer",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-06 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 80475,
+    "volume_usd": 175204487.57,
+    "is_weekend": true,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "66775150688716751180621",
+    "venues": [
+     "uniswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-06 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 30461,
+    "volume_usd": 95306641.63,
+    "is_weekend": true,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "13067293367233126847540",
+    "venues": [
+     "balancer",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-07 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 133093,
+    "volume_usd": 323621360.22,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "6111978676278531803497",
+    "venues": [
+     "aerodrome",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-07 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 69235,
+    "volume_usd": 205675515.6,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "43111402938275681239855",
+    "venues": [
+     "balancer",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-07 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 115537,
+    "volume_usd": 263816715.2,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "79330260732710525370877",
+    "venues": [
+     "balancer",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-07 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 35273,
+    "volume_usd": 84079120.45,
+    "is_weekend": false,
+    "top_pair": "USDC-USDT",
+    "largest_trade_wei": "6375556875181824555286",
+    "venues": [
+     "sushiswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-08 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 91974,
+    "volume_usd": 227018830.15,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "66642925849975303069582",
+    "venues": [
+     "aerodrome",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-08 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 57357,
+    "volume_usd": 139913209.57,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "52550235407523896010059",
+    "venues": [
+     "curve",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-08 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 118330,
+    "volume_usd": 373845860.68,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "7811359418266388315176",
+    "venues": [
+     "uniswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-08 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 46827,
+    "volume_usd": 143269302.97,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "77040648620793656093065",
+    "venues": [
+     "balancer",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-09 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 119773,
+    "volume_usd": 303618541.15,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "52579191746142045390397",
+    "venues": [
+     "curve",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-09 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 96823,
+    "volume_usd": 247612527.1,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "30814011522825520827165",
+    "venues": [
+     "uniswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-09 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 81250,
+    "volume_usd": 236302680.77,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "2142236285358495027351",
+    "venues": [
+     "sushiswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-09 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 29048,
+    "volume_usd": 63323357.45,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "79537515866063736870477",
+    "venues": [
+     "sushiswap",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-10 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 108374,
+    "volume_usd": 312886220.48,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "19816530915415496989918",
+    "venues": [
+     "uniswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-10 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 76278,
+    "volume_usd": 140825628.18,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "76880965910903862885433",
+    "venues": [
+     "sushiswap",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-10 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 80480,
+    "volume_usd": 152951048.69,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "89643792790475448787321",
+    "venues": [
+     "balancer",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-10 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 33563,
+    "volume_usd": 106838810.8,
+    "is_weekend": false,
+    "top_pair": "USDC-USDT",
+    "largest_trade_wei": "84935039526144119302351",
+    "venues": [
+     "uniswap",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-11 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 127717,
+    "volume_usd": 331224819.86,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "82807300047504233999371",
+    "venues": [
+     "sushiswap",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-11 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 82162,
+    "volume_usd": 197536430.4,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "64536396366247130823853",
+    "venues": [
+     "sushiswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-11 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 72967,
+    "volume_usd": 153676428.14,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "11820673799274716633843",
+    "venues": [
+     "sushiswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-11 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 36942,
+    "volume_usd": 111991039.9,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "71136761343213590951400",
+    "venues": [
+     "uniswap",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-12 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 90040,
+    "volume_usd": 254563721.39,
+    "is_weekend": true,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "1751088367893541772224",
+    "venues": [
+     "sushiswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-12 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 49433,
+    "volume_usd": 115878018.52,
+    "is_weekend": true,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "16007612829016967356801",
+    "venues": [
+     "sushiswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-12 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 87187,
+    "volume_usd": 198618743.72,
+    "is_weekend": true,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "18392400922694109169877",
+    "venues": [
+     "sushiswap",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-12 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 30120,
+    "volume_usd": 87897574.02,
+    "is_weekend": true,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "86182773761663182696469",
+    "venues": [
+     "aerodrome",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-13 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 64803,
+    "volume_usd": 184594643.32,
+    "is_weekend": true,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "50004700146042958960275",
+    "venues": [
+     "aerodrome",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-13 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 68083,
+    "volume_usd": 145627936.2,
+    "is_weekend": true,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "69626499014508423314071",
+    "venues": [
+     "aerodrome",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-13 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 64242,
+    "volume_usd": 169549731.52,
+    "is_weekend": true,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "76601680730772368035644",
+    "venues": [
+     "curve",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-13 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 34286,
+    "volume_usd": 108135566.77,
+    "is_weekend": true,
+    "top_pair": "USDC-USDT",
+    "largest_trade_wei": "74098646358462929315183",
+    "venues": [
+     "curve",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-14 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 133844,
+    "volume_usd": 268900406.87,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "74062907552108086178499",
+    "venues": [
+     "aerodrome",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-14 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 80631,
+    "volume_usd": 242001636.62,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "31100512501451350706239",
+    "venues": [
+     "curve",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-14 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 122478,
+    "volume_usd": 366464875.8,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "45710840777491185119848",
+    "venues": [
+     "sushiswap",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-14 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 46677,
+    "volume_usd": 104095229.54,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "58845375638769099592917",
+    "venues": [
+     "curve",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-15 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 114193,
+    "volume_usd": 243728454.63,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "22709305369966782072035",
+    "venues": [
+     "sushiswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-15 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 85462,
+    "volume_usd": 178449774.12,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "5197687977921839593146",
+    "venues": [
+     "sushiswap",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-15 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 118259,
+    "volume_usd": 279134668.64,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "7935242677288561605869",
+    "venues": [
+     "sushiswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-15 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 46710,
+    "volume_usd": 126469651.51,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "40084514948292318799051",
+    "venues": [
+     "curve",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-16 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 117314,
+    "volume_usd": 322050421.55,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "39552473506576229379009",
+    "venues": [
+     "curve",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-16 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 69163,
+    "volume_usd": 165480320.99,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "18821139819465674099881",
+    "venues": [
+     "uniswap",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-16 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 117032,
+    "volume_usd": 258461513.94,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "2039227617814705474811",
+    "venues": [
+     "uniswap",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-16 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 34960,
+    "volume_usd": 81510846.24,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "89427129646961442479712",
+    "venues": [
+     "sushiswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-17 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 87525,
+    "volume_usd": 196610822.72,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "66369089326344445409741",
+    "venues": [
+     "uniswap",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-17 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 93261,
+    "volume_usd": 286522674.34,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "69064009037497611952001",
+    "venues": [
+     "balancer",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-17 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 77786,
+    "volume_usd": 242865690.89,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "82028541702157178389306",
+    "venues": [
+     "aerodrome",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-17 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 42004,
+    "volume_usd": 105520605.88,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "23608899254203655805492",
+    "venues": [
+     "curve",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-18 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 133395,
+    "volume_usd": 362503558.58,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "85595511067199487084638",
+    "venues": [
+     "curve",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-18 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 83089,
+    "volume_usd": 225123363.15,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "73891528981031203430114",
+    "venues": [
+     "balancer",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-18 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 110095,
+    "volume_usd": 214728110.84,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "83079778902686275314005",
+    "venues": [
+     "aerodrome",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-18 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 35543,
+    "volume_usd": 77205953.52,
+    "is_weekend": false,
+    "top_pair": "USDC-USDT",
+    "largest_trade_wei": "21639555399902731199802",
+    "venues": [
+     "uniswap",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-19 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 82712,
+    "volume_usd": 177506139.6,
+    "is_weekend": true,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "51301969826237278251337",
+    "venues": [
+     "sushiswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-19 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 59057,
+    "volume_usd": 170107459.99,
+    "is_weekend": true,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "41862334328177209678854",
+    "venues": [
+     "aerodrome",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-19 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 81600,
+    "volume_usd": 211352316.85,
+    "is_weekend": true,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "63969198520224602483171",
+    "venues": [
+     "sushiswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-19 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 30322,
+    "volume_usd": 60797417.78,
+    "is_weekend": true,
+    "top_pair": "USDC-USDT",
+    "largest_trade_wei": "83312944055769600789691",
+    "venues": [
+     "aerodrome",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-20 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 85576,
+    "volume_usd": 178246885.8,
+    "is_weekend": true,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "45286604913201668560940",
+    "venues": [
+     "uniswap",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-20 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 70072,
+    "volume_usd": 219258925.74,
+    "is_weekend": true,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "80966210854084276186328",
+    "venues": [
+     "balancer",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-20 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 55222,
+    "volume_usd": 114126171.24,
+    "is_weekend": true,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "36337725494025674741519",
+    "venues": [
+     "sushiswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-20 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 29247,
+    "volume_usd": 71501510.5,
+    "is_weekend": true,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "33014869402771143727936",
+    "venues": [
+     "uniswap",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-21 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 86694,
+    "volume_usd": 190428077.82,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "21478701064689716914601",
+    "venues": [
+     "sushiswap",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-21 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 82177,
+    "volume_usd": 153740822.7,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "77447613165896062449360",
+    "venues": [
+     "uniswap",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-21 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 101099,
+    "volume_usd": 313583985.39,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "52962089400779158753526",
+    "venues": [
+     "curve",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-21 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 46024,
+    "volume_usd": 121575907.34,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "31231657924775393027089",
+    "venues": [
+     "sushiswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-22 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 109100,
+    "volume_usd": 213047315.76,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "25307382316125550742207",
+    "venues": [
+     "sushiswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-22 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 75877,
+    "volume_usd": 143800477.43,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "74909633165304379537206",
+    "venues": [
+     "balancer",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-22 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 97077,
+    "volume_usd": 277634226.1,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "69809686675099179625396",
+    "venues": [
+     "uniswap",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-22 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 35705,
+    "volume_usd": 82812836.75,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "34820293959238575884340",
+    "venues": [
+     "uniswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-23 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 95520,
+    "volume_usd": 221365889.95,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "25039710168707035072131",
+    "venues": [
+     "curve",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-23 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 63172,
+    "volume_usd": 149417330.4,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "22029795209309679775660",
+    "venues": [
+     "uniswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-23 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 95907,
+    "volume_usd": 197445806.02,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "49025139389832046448944",
+    "venues": [
+     "sushiswap",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-23 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 42772,
+    "volume_usd": 80050472.71,
+    "is_weekend": false,
+    "top_pair": "USDC-USDT",
+    "largest_trade_wei": "75532162199464964313368",
+    "venues": [
+     "uniswap",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-24 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 94493,
+    "volume_usd": 221559481.98,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "8850831245776801949172",
+    "venues": [
+     "balancer",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-24 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 97214,
+    "volume_usd": 303188924.88,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "85785846946574804117780",
+    "venues": [
+     "balancer",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-24 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 115992,
+    "volume_usd": 310945038.11,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "9561018003057816490171",
+    "venues": [
+     "sushiswap",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-24 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 40437,
+    "volume_usd": 72993587.12,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "3879362141038941243856",
+    "venues": [
+     "curve",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-25 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 108910,
+    "volume_usd": 224871599.41,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "31332557625781938429394",
+    "venues": [
+     "sushiswap",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-25 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 89750,
+    "volume_usd": 276818246.57,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "47050125634439173249760",
+    "venues": [
+     "aerodrome",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-25 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 76740,
+    "volume_usd": 169657325.1,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "59909815152560377118957",
+    "venues": [
+     "aerodrome",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-25 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 39266,
+    "volume_usd": 113465792.35,
+    "is_weekend": false,
+    "top_pair": "USDC-USDT",
+    "largest_trade_wei": "59305250281191862444345",
+    "venues": [
+     "aerodrome",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-26 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 101557,
+    "volume_usd": 234389050.17,
+    "is_weekend": true,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "68168826944393150605338",
+    "venues": [
+     "sushiswap",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-26 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 50487,
+    "volume_usd": 102874351.15,
+    "is_weekend": true,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "59452141321671437690240",
+    "venues": [
+     "sushiswap",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-26 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 60232,
+    "volume_usd": 168347004.45,
+    "is_weekend": true,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "14899011589177637783120",
+    "venues": [
+     "uniswap",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-26 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 24735,
+    "volume_usd": 73737927.31,
+    "is_weekend": true,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "71493308375812090983195",
+    "venues": [
+     "balancer",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-27 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 60074,
+    "volume_usd": 124520074.68,
+    "is_weekend": true,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "48049691639308723027380",
+    "venues": [
+     "uniswap",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-27 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 44548,
+    "volume_usd": 120671377.88,
+    "is_weekend": true,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "35737287135024381689779",
+    "venues": [
+     "balancer",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-27 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 62913,
+    "volume_usd": 162783021.26,
+    "is_weekend": true,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "27830189456753517346742",
+    "venues": [
+     "aerodrome",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-27 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 21650,
+    "volume_usd": 63408767.6,
+    "is_weekend": true,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "16328624795671490184595",
+    "venues": [
+     "curve",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-28 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 85146,
+    "volume_usd": 208720823.25,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "53290975804380657729377",
+    "venues": [
+     "sushiswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-28 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 88668,
+    "volume_usd": 195833297.4,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "58347511017712767114708",
+    "venues": [
+     "curve",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-28 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 101115,
+    "volume_usd": 247715952.09,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "52615414717168008640223",
+    "venues": [
+     "balancer",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-28 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 38175,
+    "volume_usd": 72537763.9,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "79391391885162283741518",
+    "venues": [
+     "curve",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-29 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 101032,
+    "volume_usd": 322700396.93,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "67342439093701811877091",
+    "venues": [
+     "uniswap",
+     "balancer"
+    ]
+   },
+   {
+    "day": "2026-09-29 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 65151,
+    "volume_usd": 132347497.91,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "74167336745979996619019",
+    "venues": [
+     "sushiswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-29 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 125854,
+    "volume_usd": 388690869.17,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "3747350985972014480200",
+    "venues": [
+     "curve",
+     "uniswap"
+    ]
+   },
+   {
+    "day": "2026-09-29 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 28593,
+    "volume_usd": 57499376.02,
+    "is_weekend": false,
+    "top_pair": "WETH-USDC",
+    "largest_trade_wei": "7133027690815760496711",
+    "venues": [
+     "curve",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-30 00:00:00.000 UTC",
+    "chain": "ethereum",
+    "trades": 96558,
+    "volume_usd": 232256006.02,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "30731393829758966656831",
+    "venues": [
+     "balancer",
+     "curve"
+    ]
+   },
+   {
+    "day": "2026-09-30 00:00:00.000 UTC",
+    "chain": "arbitrum",
+    "trades": 60341,
+    "volume_usd": 133900704.88,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "32065747705921573746088",
+    "venues": [
+     "curve",
+     "sushiswap"
+    ]
+   },
+   {
+    "day": "2026-09-30 00:00:00.000 UTC",
+    "chain": "base",
+    "trades": 113187,
+    "volume_usd": 314727044.7,
+    "is_weekend": false,
+    "top_pair": "WETH-USDT",
+    "largest_trade_wei": "48139387077740226016143",
+    "venues": [
+     "sushiswap",
+     "aerodrome"
+    ]
+   },
+   {
+    "day": "2026-09-30 00:00:00.000 UTC",
+    "chain": "polygon",
+    "trades": 39044,
+    "volume_usd": null,
+    "is_weekend": false,
+    "top_pair": "WBTC-WETH",
+    "largest_trade_wei": "44586938929236135590332",
+    "venues": [
+     "balancer",
+     "uniswap"
+    ]
+   }
+  ],
+  "metadata": {
+   "column_names": [
+    "day",
+    "chain",
+    "trades",
+    "volume_usd",
+    "is_weekend",
+    "top_pair",
+    "largest_trade_wei",
+    "venues"
+   ],
+   "column_types": [
+    "timestamp(3) with time zone",
+    "varchar",
+    "bigint",
+    "double",
+    "boolean",
+    "varchar",
+    "uint256",
+    "array(varchar)"
+   ],
+   "row_count": 120,
+   "total_row_count": 120,
+   "result_set_bytes": 23110,
+   "total_result_set_bytes": 23110,
+   "datapoint_count": 960,
+   "pending_time_millis": 416,
+   "execution_time_millis": 39376
+  },
+  "update_type": "append"
+ }
+}

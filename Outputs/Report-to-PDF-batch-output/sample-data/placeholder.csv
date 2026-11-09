@@ -1,0 +1,7 @@
+Scenario,URL,PDF filename,PDF path
+north,http://127.0.0.1:24679/Sales/Regional%20Review.iox/r/Region%20Pack/s/north/#Summary,Region Pack-north.pdf,/data/reports/regions/Region Pack-north.pdf
+midlands,http://127.0.0.1:24679/Sales/Regional%20Review.iox/r/Region%20Pack/s/midlands/#Summary,Region Pack-midlands.pdf,/data/reports/regions/Region Pack-midlands.pdf
+south-east,http://127.0.0.1:24679/Sales/Regional%20Review.iox/r/Region%20Pack/s/south-east/#Summary,Region Pack-south-east.pdf,/data/reports/regions/Region Pack-south-east.pdf
+south-west,http://127.0.0.1:24679/Sales/Regional%20Review.iox/r/Region%20Pack/s/south-west/#Summary,Region Pack-south-west.pdf,/data/reports/regions/Region Pack-south-west.pdf
+scotland,http://127.0.0.1:24679/Sales/Regional%20Review.iox/r/Region%20Pack/s/scotland/#Summary,Region Pack-scotland.pdf,/data/reports/regions/Region Pack-scotland.pdf
+wales,http://127.0.0.1:24679/Sales/Regional%20Review.iox/r/Region%20Pack/s/wales/#Summary,Region Pack-wales.pdf,/data/reports/regions/Region Pack-wales.pdf

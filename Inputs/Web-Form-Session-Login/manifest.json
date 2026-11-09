@@ -11,20 +11,26 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": null,
-    "description": "Logs in to a website using form-based authentication",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADO0lEQVR42u2dO2sUURSAv7O+0FZFC/EBFhYiMUpAhYARJfgPrOy09LcIWvj4G4qv+AKx8JlAxEJQsRDxVSpGcy0yhYjrzu7Mzkx2vq/dOTu758s9c+7cvRMQERERERERERERERERkVEl+g1IKe0DTgNTwDZgpWksxE/gDTADXIiIZ0MRmFJaB5wHTg4iXvKlGbgMnImIb6UJzOTdAA6Z40q4D0znkdjJ+YbnlFcpk8DZUkZgds17ZNmspZyOR8TzoiPwtPJqazBPlVFCD5vL2jhSRgldcKpQGz8iYk1Rgck81lhHI6KMLlQaigIVKAoUBSpQFCgKFAUqUBQojSH1Zi6lNGam+s7reEppvldyqxCovMFzu7+owDJWIzoR4YrFYAI7wK//Chr2aoTyCuVu0SbGLlQUKAoUBSpQFCgKFAUqUBQoChQFKlCaTSXbxlJKAUwAB4FNjO52tQXgHXA7Il5WccLCC7q9FhwzeSeA8ZYNjisRcWfY+a2ihE60UB7A8ZTSzlG4Bh5o6eUpyLFFejkI3NziHmP7KDQx/ZxjPbAna3QS8AGYA740LC4vq0aiC83JbuDoX1VhCzAG3ATmGxLnPPAfbACOdfk8K7LX1jcgToFd2NNjStPJjqk7ToFd2DjgMVXHKVBGU+DHAY+pOk6BXZgD/vcz88XsmLrjFNiFTyw9UPZfGz1+AdeBzw2IaxxNmgfOA+//mFiTTaxnga8NimudwIU+7kh8Ae4OcI6q4/r57su+hL5tcZP4fhQE3mLpPmMbebjsBUbEK+BqC+U9Ah4PPb+9Dii6YvzH++xi6fHNW6ngLn1N/MzK5gPgSZ7dy0XzW5lAGU5+vZW2zFGgAkWBokAFigJFgaJABUqbBGa7j2Sw3HWaMAL3qmJg9lXxV9KL+ezJs47EPqpWSmkipfSiiif2/mB0l3+aTs9/AJmnhL4xj7Xxuoxr4G3zWBszZQi8SHt/01Ini1nuiwmMiKfAZfNZOZciYrZwE5M1MmuBa8Ckea2Ee8B0RHwvZR4YEd+AaeCS5XToZfNCXnm5R+Bfo3EMOAVMATuA1ea92FQh6zZngIt5yqaIiIiIiIiIiIiIiIiItIPfUevGh1USAugAAAAASUVORK5CYII=",
+    "description": "Logs in to a website through its HTML login form, as a browser would, and outputs the session cookies and every response header, for later HTTP requests that need the session.",
     "category": "Inputs",
     "subcategory": null,
-    "tags": ["form",
+    "tags": [
+        "form",
         "session",
-        "login"],
-    "introductoryText": "### Logs in to a website using form-based authentication, follows the browser-style redirect flow, and returns the resulting session cookies and response headers for use in downstream HTTP requests.",
-    "dependencies": "bs4",
+        "login",
+        "cookies",
+        "http",
+        "web scraping",
+        "authentication"
+    ],
+    "introductoryText": "Logs in to a website that uses an HTML login form: loads the login page, fills in the user name and password (keeping hidden fields such as anti-forgery tokens), submits the form and follows the redirects in one session.\n\n**How to set it up**: enter the address of the login page, the user name and the password.\n\n**Outputs**: *Cookies* has the session's cookies (name, value, domain, path, expiry); *Headers* has every response header of every request and redirect, for checking what the site did. Pass the cookies to later HTTP requests (for example as a Cookie header). The outputs hold a live session: treat them like a password.\n\nThe block stops with a message when the site answers with an error or still shows a password field after the login; untick *Stop if the login fails* to get the outputs anyway.",
+    "dependencies": "beautifulsoup4 requests",
     "options": [
         {
             "name": "url",
-            "title": "URL",
-            "description": null,
+            "title": "Login page URL",
+            "description": "The address of the page with the login form, such as https://portal.example.com/login.",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -33,22 +39,31 @@
         },
         {
             "name": "username",
-            "title": "Username",
-            "description": null,
+            "title": "User name",
+            "description": "Typed into the form's user name or e-mail field (the block picks the likeliest text field).",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
-            "defaultValue": "admin"
+            "defaultValue": null
         },
         {
             "name": "password",
             "title": "Password",
-            "description": null,
+            "description": "Typed into the form's password field.",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
             "mandatory": true
+        },
+        {
+            "name": "checkLogin",
+            "title": "Stop if the login fails",
+            "description": "Ticked: stop with a message if the site answers the login with an error status (400 or above) or still shows a password field afterwards. Unticked: always output the headers and cookies, to see what happened.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
         }
     ],
     "blockOutputs": [
@@ -56,15 +71,15 @@
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Headers",
             "label": "Headers",
-            "displayName": "Headers",
-            "tooltip": null
+            "displayName": "Response headers",
+            "tooltip": "One record per response header, for every request and redirect: stage, hop, request URL and cookies sent, status, redirect location, header name and value."
         },
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Cookies",
             "label": "Cookies",
-            "displayName": "Cookies",
-            "tooltip": null
+            "displayName": "Session cookies",
+            "tooltip": "The session's cookies after the login: name, value, domain, path, Secure, Expires (UTC; empty for session cookies) and other attributes."
         }
     ],
     "docker": {

@@ -1,0 +1,1410 @@
+{
+ "issues": [
+  {
+   "id": "20000",
+   "key": "SHOP-2",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20000",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Story",
+     "subtask": false
+    },
+    "summary": "Basket total ignores voucher after page refresh",
+    "status": {
+     "name": "Done",
+     "statusCategory": {
+      "key": "done",
+      "name": "Done"
+     }
+    },
+    "priority": {
+     "name": "Medium"
+    },
+    "assignee": {
+     "accountId": "acc-priya",
+     "displayName": "Priya Natarajan",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-elena",
+     "displayName": "Elena Rossi",
+     "active": true
+    },
+    "created": "2025-09-01T09:15:00.000+0100",
+    "updated": "2025-10-01T14:00:00.000+0100",
+    "duedate": "2025-11-01",
+    "resolutiondate": "2025-10-01T16:00:00.000+0100",
+    "resolution": {
+     "name": "Done"
+    },
+    "labels": [],
+    "components": [
+     {
+      "id": "200",
+      "name": "Checkout"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": null
+   }
+  },
+  {
+   "id": "20001",
+   "key": "SHOP-3",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20001",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Bug",
+     "subtask": false
+    },
+    "summary": "Add postcode lookup to delivery form",
+    "status": {
+     "name": "In Progress",
+     "statusCategory": {
+      "key": "inprogress",
+      "name": "In Progress"
+     }
+    },
+    "priority": {
+     "name": "High"
+    },
+    "assignee": {
+     "accountId": "acc-tom",
+     "displayName": "Tom Okafor",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-sam",
+     "displayName": "Sam Whitfield",
+     "active": true
+    },
+    "created": "2025-09-03T10:15:00.000+0100",
+    "updated": "2025-10-02T14:01:00.000+0100",
+    "duedate": null,
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [
+     "customer-reported"
+    ],
+    "components": [
+     {
+      "id": "201",
+      "name": "Search"
+     }
+    ],
+    "fixVersions": [],
+    "parent": null,
+    "customfield_10016": 2
+   }
+  },
+  {
+   "id": "20002",
+   "key": "SHOP-4",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20002",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Task",
+     "subtask": false
+    },
+    "summary": "Search results slow for long queries",
+    "status": {
+     "name": "In Review",
+     "statusCategory": {
+      "key": "inprogress",
+      "name": "In Progress"
+     }
+    },
+    "priority": {
+     "name": "Low"
+    },
+    "assignee": {
+     "accountId": "acc-elena",
+     "displayName": "Elena Rossi",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-hannah",
+     "displayName": "Hannah Lowe",
+     "active": true
+    },
+    "created": "2025-09-05T11:15:00.000+0100",
+    "updated": "2025-10-03T14:02:00.000+0100",
+    "duedate": null,
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [
+     "tech-debt"
+    ],
+    "components": [
+     {
+      "id": "202",
+      "name": "Accounts"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": 3
+   }
+  },
+  {
+   "id": "20003",
+   "key": "SHOP-5",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20003",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Story",
+     "subtask": false
+    },
+    "summary": "Password reset e-mail goes to spam",
+    "status": {
+     "name": "Done",
+     "statusCategory": {
+      "key": "done",
+      "name": "Done"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": {
+     "accountId": "acc-sam",
+     "displayName": "Sam Whitfield",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-priya",
+     "displayName": "Priya Natarajan",
+     "active": true
+    },
+    "created": "2025-09-07T12:15:00.000+0100",
+    "updated": "2025-10-04T14:03:00.000+0100",
+    "duedate": "2025-11-04",
+    "resolutiondate": "2025-10-04T16:00:00.000+0100",
+    "resolution": {
+     "name": "Done"
+    },
+    "labels": [],
+    "components": [
+     {
+      "id": "203",
+      "name": "Mobile app"
+     }
+    ],
+    "fixVersions": [],
+    "parent": null,
+    "customfield_10016": null
+   }
+  },
+  {
+   "id": "20004",
+   "key": "SHOP-6",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20004",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Bug",
+     "subtask": false
+    },
+    "summary": "Show stock level on product page",
+    "status": {
+     "name": "To Do",
+     "statusCategory": {
+      "key": "todo",
+      "name": "To Do"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": null,
+    "reporter": {
+     "accountId": "acc-tom",
+     "displayName": "Tom Okafor",
+     "active": true
+    },
+    "created": "2025-09-09T13:15:00.000+0100",
+    "updated": "2025-10-05T14:04:00.000+0100",
+    "duedate": null,
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [],
+    "components": [
+     {
+      "id": "200",
+      "name": "Checkout"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": 8
+   }
+  },
+  {
+   "id": "20005",
+   "key": "SHOP-7",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20005",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Task",
+     "subtask": false
+    },
+    "summary": "Mobile app crashes on order history",
+    "status": {
+     "name": "In Progress",
+     "statusCategory": {
+      "key": "inprogress",
+      "name": "In Progress"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": {
+     "accountId": "acc-priya",
+     "displayName": "Priya Natarajan",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-elena",
+     "displayName": "Elena Rossi",
+     "active": true
+    },
+    "created": "2025-09-11T14:15:00.000+0100",
+    "updated": "2025-10-06T14:05:00.000+0100",
+    "duedate": null,
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [
+     "customer-reported"
+    ],
+    "components": [
+     {
+      "id": "201",
+      "name": "Search"
+     }
+    ],
+    "fixVersions": [],
+    "parent": {
+     "id": "5000",
+     "key": "SHOP-1"
+    },
+    "customfield_10016": 1
+   }
+  },
+  {
+   "id": "20006",
+   "key": "SHOP-8",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20006",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Story",
+     "subtask": false
+    },
+    "summary": "Export order list to CSV",
+    "status": {
+     "name": "In Review",
+     "statusCategory": {
+      "key": "inprogress",
+      "name": "In Progress"
+     }
+    },
+    "priority": {
+     "name": "Medium"
+    },
+    "assignee": {
+     "accountId": "acc-tom",
+     "displayName": "Tom Okafor",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-sam",
+     "displayName": "Sam Whitfield",
+     "active": true
+    },
+    "created": "2025-09-13T15:15:00.000+0100",
+    "updated": "2025-10-07T14:06:00.000+0100",
+    "duedate": "2025-11-07",
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [],
+    "components": [
+     {
+      "id": "202",
+      "name": "Accounts"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": null
+   }
+  },
+  {
+   "id": "20007",
+   "key": "SHOP-9",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20007",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Bug",
+     "subtask": false
+    },
+    "summary": "Wrong VAT rate on gift cards",
+    "status": {
+     "name": "Done",
+     "statusCategory": {
+      "key": "done",
+      "name": "Done"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": {
+     "accountId": "acc-elena",
+     "displayName": "Elena Rossi",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-hannah",
+     "displayName": "Hannah Lowe",
+     "active": true
+    },
+    "created": "2025-09-15T16:15:00.000+0100",
+    "updated": "2025-10-08T14:07:00.000+0100",
+    "duedate": null,
+    "resolutiondate": "2025-10-08T16:00:00.000+0100",
+    "resolution": {
+     "name": "Done"
+    },
+    "labels": [
+     "tech-debt"
+    ],
+    "components": [
+     {
+      "id": "203",
+      "name": "Mobile app"
+     }
+    ],
+    "fixVersions": [],
+    "parent": null,
+    "customfield_10016": 3
+   }
+  },
+  {
+   "id": "20008",
+   "key": "SHOP-10",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20008",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Task",
+     "subtask": false
+    },
+    "summary": "Remember last used delivery address",
+    "status": {
+     "name": "To Do",
+     "statusCategory": {
+      "key": "todo",
+      "name": "To Do"
+     }
+    },
+    "priority": {
+     "name": "High"
+    },
+    "assignee": {
+     "accountId": "acc-sam",
+     "displayName": "Sam Whitfield",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-priya",
+     "displayName": "Priya Natarajan",
+     "active": true
+    },
+    "created": "2025-09-17T09:15:00.000+0100",
+    "updated": "2025-10-09T14:08:00.000+0100",
+    "duedate": null,
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [],
+    "components": [
+     {
+      "id": "200",
+      "name": "Checkout"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": 5
+   }
+  },
+  {
+   "id": "20009",
+   "key": "SHOP-11",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20009",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Story",
+     "subtask": false
+    },
+    "summary": "Filter search by brand",
+    "status": {
+     "name": "In Progress",
+     "statusCategory": {
+      "key": "inprogress",
+      "name": "In Progress"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": {
+     "accountId": "acc-hannah",
+     "displayName": "Hannah Lowe",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-tom",
+     "displayName": "Tom Okafor",
+     "active": true
+    },
+    "created": "2025-09-19T10:15:00.000+0100",
+    "updated": "2025-10-10T14:09:00.000+0100",
+    "duedate": "2025-11-10",
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [
+     "customer-reported"
+    ],
+    "components": [
+     {
+      "id": "201",
+      "name": "Search"
+     }
+    ],
+    "fixVersions": [],
+    "parent": null,
+    "customfield_10016": null
+   }
+  },
+  {
+   "id": "20010",
+   "key": "SHOP-12",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20010",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Bug",
+     "subtask": false
+    },
+    "summary": "Order confirmation shows wrong delivery date",
+    "status": {
+     "name": "In Review",
+     "statusCategory": {
+      "key": "inprogress",
+      "name": "In Progress"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": {
+     "accountId": "acc-priya",
+     "displayName": "Priya Natarajan",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-elena",
+     "displayName": "Elena Rossi",
+     "active": true
+    },
+    "created": "2025-09-21T11:15:00.000+0100",
+    "updated": "2025-10-11T14:10:00.000+0100",
+    "duedate": null,
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [],
+    "components": [
+     {
+      "id": "202",
+      "name": "Accounts"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": 1
+   }
+  },
+  {
+   "id": "20011",
+   "key": "SHOP-13",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20011",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Task",
+     "subtask": false
+    },
+    "summary": "Add dark mode to mobile app",
+    "status": {
+     "name": "Done",
+     "statusCategory": {
+      "key": "done",
+      "name": "Done"
+     }
+    },
+    "priority": {
+     "name": "Low"
+    },
+    "assignee": {
+     "accountId": "acc-tom",
+     "displayName": "Tom Okafor",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-sam",
+     "displayName": "Sam Whitfield",
+     "active": true
+    },
+    "created": "2025-09-23T12:15:00.000+0100",
+    "updated": "2025-10-12T14:11:00.000+0100",
+    "duedate": null,
+    "resolutiondate": "2025-10-12T16:00:00.000+0100",
+    "resolution": {
+     "name": "Done"
+    },
+    "labels": [],
+    "components": [
+     {
+      "id": "203",
+      "name": "Mobile app"
+     }
+    ],
+    "fixVersions": [],
+    "parent": {
+     "id": "5000",
+     "key": "SHOP-1"
+    },
+    "customfield_10016": 2
+   }
+  },
+  {
+   "id": "20012",
+   "key": "SHOP-14",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20012",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Story",
+     "subtask": false
+    },
+    "summary": "Duplicate accounts after social sign-in",
+    "status": {
+     "name": "To Do",
+     "statusCategory": {
+      "key": "todo",
+      "name": "To Do"
+     }
+    },
+    "priority": {
+     "name": "Low"
+    },
+    "assignee": {
+     "accountId": "acc-elena",
+     "displayName": "Elena Rossi",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-hannah",
+     "displayName": "Hannah Lowe",
+     "active": true
+    },
+    "created": "2025-09-25T13:15:00.000+0100",
+    "updated": "2025-10-13T14:12:00.000+0100",
+    "duedate": "2025-11-13",
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [
+     "tech-debt"
+    ],
+    "components": [
+     {
+      "id": "200",
+      "name": "Checkout"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": null
+   }
+  },
+  {
+   "id": "20013",
+   "key": "SHOP-15",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20013",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Bug",
+     "subtask": false
+    },
+    "summary": "Paginate order history",
+    "status": {
+     "name": "In Progress",
+     "statusCategory": {
+      "key": "inprogress",
+      "name": "In Progress"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": null,
+    "reporter": {
+     "accountId": "acc-priya",
+     "displayName": "Priya Natarajan",
+     "active": true
+    },
+    "created": "2025-09-27T14:15:00.000+0100",
+    "updated": "2025-10-14T14:13:00.000+0100",
+    "duedate": null,
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [
+     "customer-reported"
+    ],
+    "components": [
+     {
+      "id": "201",
+      "name": "Search"
+     }
+    ],
+    "fixVersions": [],
+    "parent": null,
+    "customfield_10016": 5
+   }
+  },
+  {
+   "id": "20014",
+   "key": "SHOP-16",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20014",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Task",
+     "subtask": false
+    },
+    "summary": "Improve product image loading",
+    "status": {
+     "name": "Done",
+     "statusCategory": {
+      "key": "done",
+      "name": "Done"
+     }
+    },
+    "priority": {
+     "name": "High"
+    },
+    "assignee": {
+     "accountId": "acc-hannah",
+     "displayName": "Hannah Lowe",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-tom",
+     "displayName": "Tom Okafor",
+     "active": true
+    },
+    "created": "2025-09-02T15:15:00.000+0100",
+    "updated": "2025-10-15T14:14:00.000+0100",
+    "duedate": null,
+    "resolutiondate": "2025-10-15T16:00:00.000+0100",
+    "resolution": {
+     "name": "Done"
+    },
+    "labels": [],
+    "components": [
+     {
+      "id": "202",
+      "name": "Accounts"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": 8
+   }
+  },
+  {
+   "id": "20015",
+   "key": "SHOP-17",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20015",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Story",
+     "subtask": false
+    },
+    "summary": "Allow nicknames on saved cards",
+    "status": {
+     "name": "Done",
+     "statusCategory": {
+      "key": "done",
+      "name": "Done"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": {
+     "accountId": "acc-priya",
+     "displayName": "Priya Natarajan",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-elena",
+     "displayName": "Elena Rossi",
+     "active": true
+    },
+    "created": "2025-09-04T16:15:00.000+0100",
+    "updated": "2025-10-16T14:15:00.000+0100",
+    "duedate": "2025-11-16",
+    "resolutiondate": "2025-10-16T16:00:00.000+0100",
+    "resolution": {
+     "name": "Done"
+    },
+    "labels": [],
+    "components": [
+     {
+      "id": "203",
+      "name": "Mobile app"
+     }
+    ],
+    "fixVersions": [],
+    "parent": null,
+    "customfield_10016": null
+   }
+  },
+  {
+   "id": "20016",
+   "key": "SHOP-18",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20016",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Bug",
+     "subtask": false
+    },
+    "summary": "Search misses products with accents",
+    "status": {
+     "name": "To Do",
+     "statusCategory": {
+      "key": "todo",
+      "name": "To Do"
+     }
+    },
+    "priority": {
+     "name": "Low"
+    },
+    "assignee": {
+     "accountId": "acc-tom",
+     "displayName": "Tom Okafor",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-sam",
+     "displayName": "Sam Whitfield",
+     "active": true
+    },
+    "created": "2025-09-06T09:15:00.000+0100",
+    "updated": "2025-10-17T14:16:00.000+0100",
+    "duedate": null,
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [],
+    "components": [
+     {
+      "id": "200",
+      "name": "Checkout"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": 2
+   }
+  },
+  {
+   "id": "20017",
+   "key": "SHOP-19",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20017",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Task",
+     "subtask": false
+    },
+    "summary": "Track parcel from order page",
+    "status": {
+     "name": "In Progress",
+     "statusCategory": {
+      "key": "inprogress",
+      "name": "In Progress"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": {
+     "accountId": "acc-elena",
+     "displayName": "Elena Rossi",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-hannah",
+     "displayName": "Hannah Lowe",
+     "active": true
+    },
+    "created": "2025-09-08T10:15:00.000+0100",
+    "updated": "2025-10-18T14:17:00.000+0100",
+    "duedate": null,
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [
+     "customer-reported",
+     "tech-debt"
+    ],
+    "components": [
+     {
+      "id": "201",
+      "name": "Search"
+     }
+    ],
+    "fixVersions": [],
+    "parent": {
+     "id": "5000",
+     "key": "SHOP-1"
+    },
+    "customfield_10016": 3
+   }
+  },
+  {
+   "id": "20018",
+   "key": "SHOP-20",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20018",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Story",
+     "subtask": false
+    },
+    "summary": "Account page times out for large orders",
+    "status": {
+     "name": "In Review",
+     "statusCategory": {
+      "key": "inprogress",
+      "name": "In Progress"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": {
+     "accountId": "acc-sam",
+     "displayName": "Sam Whitfield",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-priya",
+     "displayName": "Priya Natarajan",
+     "active": true
+    },
+    "created": "2025-09-10T11:15:00.000+0100",
+    "updated": "2025-10-19T14:18:00.000+0100",
+    "duedate": "2025-11-19",
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [],
+    "components": [
+     {
+      "id": "202",
+      "name": "Accounts"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": null
+   }
+  },
+  {
+   "id": "20019",
+   "key": "SHOP-21",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20019",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Bug",
+     "subtask": false
+    },
+    "summary": "Collect consent for marketing e-mails",
+    "status": {
+     "name": "Done",
+     "statusCategory": {
+      "key": "done",
+      "name": "Done"
+     }
+    },
+    "priority": {
+     "name": "High"
+    },
+    "assignee": {
+     "accountId": "acc-hannah",
+     "displayName": "Hannah Lowe",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-tom",
+     "displayName": "Tom Okafor",
+     "active": true
+    },
+    "created": "2025-09-12T12:15:00.000+0100",
+    "updated": "2025-10-20T14:19:00.000+0100",
+    "duedate": null,
+    "resolutiondate": "2025-10-20T16:00:00.000+0100",
+    "resolution": {
+     "name": "Done"
+    },
+    "labels": [],
+    "components": [
+     {
+      "id": "203",
+      "name": "Mobile app"
+     }
+    ],
+    "fixVersions": [],
+    "parent": null,
+    "customfield_10016": 8
+   }
+  },
+  {
+   "id": "20020",
+   "key": "SHOP-22",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20020",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Task",
+     "subtask": false
+    },
+    "summary": "Retry failed card payments",
+    "status": {
+     "name": "To Do",
+     "statusCategory": {
+      "key": "todo",
+      "name": "To Do"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": {
+     "accountId": "acc-priya",
+     "displayName": "Priya Natarajan",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-elena",
+     "displayName": "Elena Rossi",
+     "active": true
+    },
+    "created": "2025-09-14T13:15:00.000+0100",
+    "updated": "2025-10-21T14:20:00.000+0100",
+    "duedate": null,
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [],
+    "components": [
+     {
+      "id": "200",
+      "name": "Checkout"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": 1
+   }
+  },
+  {
+   "id": "20021",
+   "key": "SHOP-23",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20021",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Story",
+     "subtask": false
+    },
+    "summary": "Basket total ignores voucher after page refresh (follow-up)",
+    "status": {
+     "name": "Done",
+     "statusCategory": {
+      "key": "done",
+      "name": "Done"
+     }
+    },
+    "priority": {
+     "name": "Low"
+    },
+    "assignee": {
+     "accountId": "acc-tom",
+     "displayName": "Tom Okafor",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-sam",
+     "displayName": "Sam Whitfield",
+     "active": true
+    },
+    "created": "2025-09-16T14:15:00.000+0100",
+    "updated": "2025-10-22T14:21:00.000+0100",
+    "duedate": "2025-11-22",
+    "resolutiondate": "2025-10-22T16:00:00.000+0100",
+    "resolution": {
+     "name": "Done"
+    },
+    "labels": [
+     "customer-reported"
+    ],
+    "components": [
+     {
+      "id": "201",
+      "name": "Search"
+     }
+    ],
+    "fixVersions": [],
+    "parent": null,
+    "customfield_10016": null
+   }
+  },
+  {
+   "id": "20022",
+   "key": "SHOP-24",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20022",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Bug",
+     "subtask": false
+    },
+    "summary": "Add postcode lookup to delivery form (follow-up)",
+    "status": {
+     "name": "In Review",
+     "statusCategory": {
+      "key": "inprogress",
+      "name": "In Progress"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": null,
+    "reporter": {
+     "accountId": "acc-hannah",
+     "displayName": "Hannah Lowe",
+     "active": true
+    },
+    "created": "2025-09-18T15:15:00.000+0100",
+    "updated": "2025-10-23T14:22:00.000+0100",
+    "duedate": null,
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [
+     "tech-debt"
+    ],
+    "components": [
+     {
+      "id": "202",
+      "name": "Accounts"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": 3
+   }
+  },
+  {
+   "id": "20023",
+   "key": "SHOP-25",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20023",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Task",
+     "subtask": false
+    },
+    "summary": "Search results slow for long queries (follow-up)",
+    "status": {
+     "name": "Done",
+     "statusCategory": {
+      "key": "done",
+      "name": "Done"
+     }
+    },
+    "priority": {
+     "name": "High"
+    },
+    "assignee": {
+     "accountId": "acc-sam",
+     "displayName": "Sam Whitfield",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-priya",
+     "displayName": "Priya Natarajan",
+     "active": true
+    },
+    "created": "2025-09-20T16:15:00.000+0100",
+    "updated": "2025-10-24T14:23:00.000+0100",
+    "duedate": null,
+    "resolutiondate": "2025-10-24T16:00:00.000+0100",
+    "resolution": {
+     "name": "Done"
+    },
+    "labels": [],
+    "components": [
+     {
+      "id": "203",
+      "name": "Mobile app"
+     }
+    ],
+    "fixVersions": [],
+    "parent": {
+     "id": "5000",
+     "key": "SHOP-1"
+    },
+    "customfield_10016": 5
+   }
+  },
+  {
+   "id": "20024",
+   "key": "SHOP-26",
+   "self": "https://example.atlassian.net/rest/api/2/issue/20024",
+   "fields": {
+    "project": {
+     "id": "10001",
+     "key": "SHOP",
+     "name": "Web Shop"
+    },
+    "issuetype": {
+     "name": "Story",
+     "subtask": false
+    },
+    "summary": "Password reset e-mail goes to spam (follow-up)",
+    "status": {
+     "name": "To Do",
+     "statusCategory": {
+      "key": "todo",
+      "name": "To Do"
+     }
+    },
+    "priority": {
+     "name": "Highest"
+    },
+    "assignee": {
+     "accountId": "acc-hannah",
+     "displayName": "Hannah Lowe",
+     "active": true
+    },
+    "reporter": {
+     "accountId": "acc-tom",
+     "displayName": "Tom Okafor",
+     "active": true
+    },
+    "created": "2025-09-22T09:15:00.000+0100",
+    "updated": "2025-10-25T14:24:00.000+0100",
+    "duedate": "2025-11-25",
+    "resolutiondate": null,
+    "resolution": null,
+    "labels": [],
+    "components": [
+     {
+      "id": "200",
+      "name": "Checkout"
+     }
+    ],
+    "fixVersions": [
+     {
+      "id": "300",
+      "name": "2025.11"
+     }
+    ],
+    "parent": null,
+    "customfield_10016": null
+   }
+  }
+ ],
+ "nextPageToken": "page-2-token",
+ "isLast": false
+}

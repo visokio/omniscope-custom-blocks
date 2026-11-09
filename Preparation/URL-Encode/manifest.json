@@ -11,22 +11,25 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": null,
-    "description": "URL encode strings in a field using the UTF-8 encoding scheme",
+    "icon": "data:image/png;base64,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",
+    "description": "Percent-encodes the text in a field (UTF-8) into a new field, so it can go into a link, a query string or a web request.",
     "category": "Preparation",
     "subcategory": null,
     "tags": [
-        "URL",
+        "url",
         "quote",
-        "encode"
+        "encode",
+        "percent-encoding",
+        "link",
+        "query string"
     ],
-    "introductoryText": "### URL encode strings in a field using the UTF-8 encoding scheme",
+    "introductoryText": "Percent-encodes the text in one field into a new field, using UTF-8: spaces, accented letters, currency signs and characters with a meaning in URLs (`?`, `&`, `=`, `#`, `+`) become `%` codes, so the text can be put into a link or a web request safely. Letters, digits and `_ . - ~` are left as they are.\n\n**How to set it up**: choose the field to encode and a name for the new field.\n\n- **Encode slashes**: tick when the text goes into one part of a path or a query value that must not contain `/` (unticked, `/` is kept, so whole paths stay readable).\n- **Spaces as +**: tick for form-style query strings (`a+b` rather than `a%20b`).\n\nMissing values stay missing.",
     "dependencies": "",
     "options": [
         {
             "name": "fieldName",
             "title": "Text to encode",
-            "description": "Select the field that contains the text to encode",
+            "description": "The text field to encode.",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
@@ -36,15 +39,43 @@
             "fieldTypes": [
                 "STRING"
             ]
+        },
+        {
+            "name": "outputField",
+            "title": "Encoded field name",
+            "description": "Name of the new field holding the encoded text. Use the name of the field being encoded to replace it.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Quoted text"
+        },
+        {
+            "name": "encodeSlashes",
+            "title": "Encode slashes",
+            "description": "Encode / as %2F too. Unticked, / is kept.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "spacesAsPlus",
+            "title": "Spaces as +",
+            "description": "Encode spaces as + (form style) instead of %20.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
         }
     ],
     "blockOutputs": [
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
+            "label": "Encoded",
+            "displayName": "Records with encoded text",
+            "tooltip": "The input records with the encoded text in a new field."
         }
     ],
     "docker": {

@@ -1,0 +1,370 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Time Series Anomaly Detection",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Flags spikes and dips per series against a robust rolling median and MAD baseline with weekday effects, centred or trailing.",
+    "category": "Analytics",
+    "subcategory": "Time Series",
+    "tags": [
+        "anomaly detection",
+        "outliers",
+        "time series",
+        "monitoring",
+        "robust z-score",
+        "MAD",
+        "alerts",
+        "data quality",
+        "visokio-agents"
+    ],
+    "introductoryText": "Flags **unusual days, weeks or months** in one or many time series (per store, product, region, sensor, account) against a robust baseline.\n\n- Optionally **aggregates** rows to day, week or month (sum, mean or count of rows); empty periods count as zero for sums and counts, so a missing day of data shows up\n- For daily data, a **weekday effect** is allowed for, so a quiet Sunday or a busy Saturday is not an anomaly (automatic, always, or off)\n- **Baseline**: rolling median of the series, **centred** for reviewing history or **trailing** (past only) to mimic live monitoring\n- **Robust z-score**: (value - expected) / (1.4826 x rolling MAD). The median and MAD are not pulled about by the anomalies themselves\n- |z| above the threshold (3.5 by default) is a **spike** or a **dip**; lower and upper bounds are included for charting a band\n\nOutputs: every period with expected value, bounds, z and flag; the anomalies ranked by severity; and a summary per series with the latest status.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "date_field",
+            "title": "Date field",
+            "description": "Date of each value.",
+            "groupTitle": "Series",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Value field",
+            "description": "Not needed when counting rows.",
+            "groupTitle": "Series",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "series_fields",
+            "title": "One series per (optional)",
+            "description": "For example Region or Store.",
+            "groupTitle": "Series",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "period",
+            "title": "Period",
+            "description": null,
+            "groupTitle": "Series",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Day",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DAY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Week",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WEEK",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Month",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "As in the data",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "DAY"
+        },
+        {
+            "name": "aggregation",
+            "title": "Aggregate by",
+            "description": null,
+            "groupTitle": "Series",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Sum",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SUM",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Mean",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MEAN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Count rows",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "COUNT",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "None (one row per period)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "SUM"
+        },
+        {
+            "name": "seasonality",
+            "title": "Weekday effect (daily data)",
+            "description": "Allows for regular weekday patterns, so a busy Saturday is not flagged. Automatic tests whether the pattern is there.",
+            "groupTitle": "Detection",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Automatic",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "AUTO",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Always",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WEEKLY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "None",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "AUTO"
+        },
+        {
+            "name": "mode",
+            "title": "Baseline",
+            "description": "Centred uses periods on both sides, for reviewing history. Trailing uses only earlier ones, as a live check would.",
+            "groupTitle": "Detection",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Centred (review history)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CENTRED",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Trailing (as if live)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TRAILING",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "CENTRED"
+        },
+        {
+            "name": "window",
+            "title": "Window (periods)",
+            "description": "For example 28 days.",
+            "groupTitle": "Detection",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 5,
+            "numMax": 10000,
+            "mandatory": true,
+            "defaultValue": 28,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_history",
+            "title": "Minimum periods to score",
+            "description": null,
+            "groupTitle": "Detection",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 3,
+            "numMax": 10000,
+            "mandatory": true,
+            "defaultValue": 14,
+            "showAsSlider": false
+        },
+        {
+            "name": "threshold",
+            "title": "Threshold (robust z)",
+            "description": "3.5 is a common choice; lower flags more.",
+            "groupTitle": "Detection",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.5,
+            "numMax": 100,
+            "mandatory": true,
+            "defaultValue": 3.5,
+            "showAsSlider": false
+        },
+        {
+            "name": "direction",
+            "title": "Flag",
+            "description": null,
+            "groupTitle": "Detection",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Spikes and dips",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "BOTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Spikes only",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "UP",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Dips only",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DOWN",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "BOTH"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "series",
+            "label": "Series",
+            "displayName": "Series",
+            "tooltip": "Every period: value, expected, bounds, weekday effect, robust z, anomaly flag, deviation."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "anomalies",
+            "label": "Anomalies",
+            "displayName": "Anomalies",
+            "tooltip": "Spikes and dips ranked by severity."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Per series: periods, spikes, dips, latest value and status, largest z."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

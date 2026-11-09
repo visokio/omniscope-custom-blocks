@@ -1,0 +1,23 @@
+Resource,Product,Usage Per Unit,Sense,Capacity
+Carpentry hours,Dining Table,6.0,<=,800
+Carpentry hours,Chair,1.5,<=,800
+Carpentry hours,Bookcase,4.0,<=,800
+Carpentry hours,Desk,5.0,<=,800
+Carpentry hours,Cabinet,5.0,<=,800
+Finishing hours,Dining Table,3.0,<=,420
+Finishing hours,Chair,1.0,<=,420
+Finishing hours,Bookcase,2.0,<=,420
+Finishing hours,Desk,2.5,<=,420
+Finishing hours,Cabinet,3.0,<=,420
+Oak timber (m3),Dining Table,0.12,<=,14
+Oak timber (m3),Chair,0.02,<=,14
+Oak timber (m3),Bookcase,0.08,<=,14
+Oak timber (m3),Desk,0.09,<=,14
+Oak timber (m3),Cabinet,0.1,<=,14
+Assembly bay hours,Dining Table,1.0,<=,190
+Assembly bay hours,Chair,0.25,<=,190
+Assembly bay hours,Bookcase,1.0,<=,190
+Assembly bay hours,Desk,1.0,<=,190
+Assembly bay hours,Cabinet,1.5,<=,190
+Tables need 4 chairs,Chair,1.0,>=,0
+Tables need 4 chairs,Dining Table,-4.0,>=,0

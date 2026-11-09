@@ -1,0 +1,230 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "A/B Test",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Tests whether variants differ from the control on conversion rate (z-test) or mean (Welch's t-test), with lift, confidence intervals, p-values, verdicts and required sample size.",
+    "category": "Analytics",
+    "subcategory": "Statistics",
+    "tags": [
+        "a/b test",
+        "experiment",
+        "significance",
+        "t-test",
+        "z-test",
+        "conversion",
+        "lift",
+        "visokio-agents"
+    ],
+    "introductoryText": "Tells you whether a variant really beat the control, or whether the difference could be chance.\n\n- **Conversion rates** (did the visitor buy, click, sign up?): two-proportion z-test\n- **Means** (order value, time on page, basket size): Welch's t-test, which does not assume equal variances\n- Each variant is compared with the **control**: difference, **relative lift**, **confidence interval**, **p-value**, *Significant* yes / no and a **plain-language verdict**\n- **Sample size needed** per variant to confirm an effect of the observed size at the chosen power\n- Optional **segments** (device, country, channel) with a **Bonferroni correction** for running many comparisons\n- Data either **one row per visitor** (variant and outcome; outcomes such as Yes / No, 1 / 0, true / false are understood) or **one row per variant** (visitors and conversions)\n\nThe second output gives each variant's sample size, rate or mean and its confidence interval.\n\nCompares two groups on rates or means in one step. Pure Python: no packages to install.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "layout",
+            "title": "Data layout",
+            "description": "Raw rows with one outcome each, or a summary with trials and successes per variant.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "One row per visitor / observation",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ROWS",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "One row per variant (trials and successes)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SUMMARY",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "ROWS"
+        },
+        {
+            "name": "variant_field",
+            "title": "Variant field",
+            "description": "Field naming the variant, such as A / B or Control / New checkout.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "metric_field",
+            "title": "Outcome field (one row per visitor)",
+            "description": "Converted (Yes / No, 1 / 0, true / false) for rates; a number for means.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "trials_field",
+            "title": "Trials field (one row per variant)",
+            "description": "For example Visitors.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "successes_field",
+            "title": "Successes field (one row per variant)",
+            "description": "For example Conversions.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "metric_type",
+            "title": "Compare",
+            "description": "A rate (converted or not) is tested with a z-test; a mean with Welch's t-test.",
+            "groupTitle": "Test",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Conversion rate (proportion)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CONVERSION",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Mean of a number",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MEAN",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "CONVERSION"
+        },
+        {
+            "name": "control",
+            "title": "Control variant",
+            "description": "Value of the variant field for the control. Leave empty to use the first in alphabetical order.",
+            "groupTitle": "Test",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "confidence",
+            "title": "Confidence level",
+            "description": "0.95 means a 5% chance of calling a difference that is really chance.",
+            "groupTitle": "Test",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.5,
+            "numMax": 0.999,
+            "mandatory": true,
+            "defaultValue": 0.95,
+            "showAsSlider": false
+        },
+        {
+            "name": "power",
+            "title": "Power for sample size",
+            "description": "Chance of detecting a real effect of the observed size; 0.8 is the usual choice.",
+            "groupTitle": "Test",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.5,
+            "numMax": 0.99,
+            "mandatory": true,
+            "defaultValue": 0.8,
+            "showAsSlider": false
+        },
+        {
+            "name": "segment_fields",
+            "title": "Test separately for each (optional)",
+            "description": "For example Device or Country.",
+            "groupTitle": "Options",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "bonferroni",
+            "title": "Bonferroni correction",
+            "description": "Divide the significance threshold by the number of comparisons, to protect against false positives when testing many variants or segments.",
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "results",
+            "label": "Results",
+            "displayName": "Test results",
+            "tooltip": "One row per variant (and segment) compared with the control: difference, lift, confidence interval, p-value, significance, sample size needed, verdict."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "variants",
+            "label": "Variants",
+            "displayName": "Variant statistics",
+            "tooltip": "One row per variant (and segment): sample size, rate or mean, standard deviation, confidence interval."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

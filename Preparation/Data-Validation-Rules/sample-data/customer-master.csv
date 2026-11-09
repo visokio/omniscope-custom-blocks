@@ -1,0 +1,801 @@
+Customer ID,Name,Customer Type,Country,Postcode,Email,Date Opened,Credit Limit,Balance,Status,VAT Number
+C20000,Noah Evans,Personal,FR,,noah.evans0@example.com,2021-05-13,1000.0,263.08,Active,
+C20001,Oscar Taylor,Business,IE,,oscar.taylor1@example.com,2018-10-29,500.0,475.0,Active,GB686643095
+C20002,Oliver Patel,Personal,UK,DE1 2FS,oliver.patel2@example.com,2025-05-27,500.0,475.0,Active,
+C20003,Ivy Davies,Personal,UK,EX4 3SR,ivy.davies3@example.com,2019-10-09,5000.0,1011.84,Closed,
+C20004,Leo Davies,Business,IE,,leo.davies4@example.com,2020-04-14,500.0,136.99,Active,GB878841991
+C20005,Freya Walker,Personal,UK,NR2 1BD,freya.walker5@example.com,2023-01-25,5000.0,1147.11,Active,
+C20006,Oscar Evans,Personal,UK,SW1A 1AA,oscar.evans6@example.com,2024-11-07,5000.0,610.62,Active,
+C20007,Ivy Walker,Personal,IE,,ivy.walker7@example.com,2019-07-19,500.0,617.05,Active,
+C20008,Amelia Smith,Personal,UK,BA1 1LZ,amelia.smith8@example.com,2023-03-09,1000.0,190.49,Active,
+C20009,Arthur Williams,Personal,UK,CF10 3AT,arthur.williams9@example.com,2023-02-20,1000.0,467.2,Active,
+C20010,Ivy Williams,Personal,IE,,ivy.williams10@example.com,2022-10-09,500.0,475.0,Dormant,
+C20011,Freya Smith,Personal,IE,,no email,2023-12-16,1000.0,172.39,Active,
+C20012,Ivy Smith,Business,IE,,ivy.smith12@example.com,2025-03-05,1000.0,128.82,Active,GB762274162
+C20013,Oliver Evans,Business,FR,,oliver.evans13@example.com,2018-02-26,5000.0,1072.26,Active,GB855545056
+C20014,George Walker,Business,FR,,george.walker14@example.com,2020-12-11,1000.0,770.42,Active,GB987088995
+C20015,Ava Davies,Personal,IE,,ava.davies15@example.com,2020-11-27,5000.0,1104.99,Active,
+C20016,Oscar Brown,Personal,UK,G2 1DY,oscar.brown16@example.com,2024-09-09,500.0,475.0,Active,
+C20017,Oscar Davies,Personal,UK,YO1 7HH,oscar.davies17@example.com,2018-03-05,500.0,121.18,Active,
+C20018,Oscar Taylor,Business,UK,LS1 4AP,oscar.taylor18@example.com,2024-05-06,1000.0,111.64,Active,
+C20019,Mia Davies,Personal,UK,DE1 2FS,mia.davies19@example.com,2023-11-18,500.0,293.57,Active,
+C20020,Oscar Taylor,Personal,UK,DE1 2FS,oscar.taylor20@example.com,2024-01-05,500.0,177.61,Dormant,
+C20021,Noah Davies,Personal,IE,,noah.davies21@example.com,2020-08-21,2500.0,68.81,Dormant,
+C20022,Freya Walker,Personal,UK,LS1 4AP,freya.walker22@example.com,2020-10-29,500.0,475.0,Active,
+C20023,Isla Walker,Business,UK,M1 1AE,isla.walker23@example.com,2024-11-28,5000.0,171.74,Active,
+C20024,Oliver Evans,Personal,IE,,oliver.evans24@example.com,2023-06-13,500.0,214.56,Active,
+C20025,Freya Walker,Personal,UK,G2 1DY,freya.walker25@example.com,2024-04-06,500.0,475.0,Active,
+C20026,Freya Davies,Business,IE,,freya.davies26@example.com,2019-02-20,1000.0,474.04,Active,GB144528101
+C20027,Mia Wilson,Personal,UK,CF10 3AT,mia.wilson27@example.com,2024-05-26,5000.0,721.56,Dormant,
+C20028,Amelia Walker,Personal,UK,BA1 1LZ,amelia.walker28@example.com,2024-02-16,1000.0,602.88,Closed ,
+C20029,Oscar Smith,Personal,UK,YO1-7HH,oscar.smith29@example.com,2021-11-20,1000.0,950.0,Dormant,
+C20030,Leo Brown,Personal,FR,,leo.brown30@example.com,2024-07-30,1000.0,244.6,Active,
+C20031,Ivy Patel,Business,UK,YO1 7HH,ivy.patel31@example.com,2024-03-18,500.0,337.08,Active,
+C20032,Leo Williams,Business,UK,M1 1AE,leo.williams32@example.com,2023-07-07,500.0,475.0,Active,
+C20033,Oliver Davies,Personal,UK,EX4 3SR,oliver.davies33@example.com,2022-10-05,500.0,475.0,Active,
+C20034,Freya Jones,Personal,FR,,freya.jones34@example.com,2023-07-21,5000.0,226.76,Dormant,
+C20035,Noah Smith,Personal,UK,CF10 3AT,noah.smith35@example.com,2020-09-20,1000.0,338.05,Dormant,
+C20036,Noah Jones,Business,IE,,noah.jones36@example.com,2020-08-18,1000.0,126.56,Active,GB571716049
+C20037,Ava Walker,Personal,UK,DE1 2FS,ava.walker37@example.com,2020-07-13,5000.0,1419.67,Active,
+C20038,Oliver Jones,Personal,FR,,oliver.jones38@example.com,2018-07-05,1000.0,479.36,Dormant,
+C20039,Ivy Taylor,Personal,UK,OX1 3BG,ivy.taylor39@example.com,2024-06-29,5000.0,120.4,Dormant,
+C20040,Amelia Brown,Business,UK,M1 1AE,amelia.brown40@example.com,2020-08-28,500.0,475.0,Active,
+C20041,Isla Patel,Personal,IE,,isla.patel41@example.com,2023-05-24,2500.0,843.92,Active,
+C20042,Mia Davies,Personal,UK,YO1 7HH,mia.davies42@example.com,2019-09-30,500.0,341.76,Active,
+C20043,Leo Smith,Business,UK,YO1 7HH,leo.smith43@example.com,2021-04-02,500.0,474.58,Active,
+C20044,Amelia Walker,Personal,UK,M1 1AE,amelia.walker44@example.com,2020-05-02,2500.0,353.95,Active,
+C20045,Ivy Davies,Business,UK,DE1 2FS,ivy.davies45@example.com,2022-11-09,1000.0,559.52,Dormant,
+C20046,Arthur Brown,Personal,UK,BS8 1TH,arthur.brown46@example.com,2024-02-28,1000.0,322.58,Active,
+C20047,Mia Jones,Business,UK,BA1 1LZ,mia.jones47@example.com,2020-08-13,1000.0,293.7,Active,GB142081124
+C20048,Amelia Wilson,Personal,UK,OX1 3BG,amelia.wilson48@example.com,2023-11-04,500.0,475.0,Active,
+C20049,Isla Wilson,Personal,UK,BS8 1TH,isla.wilson49@example.com,2024-03-13,2500.0,436.66,Active,
+C20050,Freya Taylor,Personal,UK,NR2 1BD,freya.taylor50@example.com,2021-02-09,5000.0,995.1,Active,
+C20051,George Jones,Business,UK,CF10 3AT,george.jones51@example.com,2022-09-07,1000.0,394.6,Active,GB406797439
+C20052,George Davies,Personal,IE,,george.davies52@example.com,2018-10-21,1000.0,95.81,Active,
+C20053,Leo Patel,Personal,FR,,leo.patel53@example.com,2023-03-05,500.0,475.0,Active,
+C20054,Amelia Evans,Personal,UK,BA1 1LZ,amelia.evans54@example.com,2025-04-01,5000.0,440.56,Active,
+C20055,Ivy Taylor,Business,UK,SW1A 1AA,ivy.taylor55@example.com,2025-06-02,1000.0,170.53,Dormant,GB196825373
+C20056,Leo Davies,Personal,UK,CF10 3AT,leo.davies56@example.com,2024-02-10,5000.0,183.79,Dormant,
+C20057,Amelia Smith,Business,FR,,amelia.smith57@example.com,2022-06-24,500.0,28.53,Dormant,GB736154910
+C20058,Isla Smith,Personal,FR,,isla.smith58@example.com,2019-07-08,1000.0,655.32,Active,
+C20059,Leo Jones,Personal,UK,BA1 1LZ,leo.jones59@example.com,2020-04-29,5000.0,1346.16,Active,
+C20060,Mia Davies,Personal,IE,,mia.davies60@example.com,2019-07-09,1000.0,84.09,Active,
+C20061,George Wilson,Business,UK,M1 1AE,george.wilson61@example.com,2019-10-17,5000.0,216.73,Active,GB922467869
+C20062,Leo Patel,Business,UK,DE1 2FS,leo.patel62@example.com,2020-12-18,5000.0,1292.72,Dormant,GB296490855
+C20063,George Wilson,Personal,UK,OX1 3BG,george.wilson63@example.com,2024-01-06,500.0,339.42,Active,
+C20064,Isla Patel,Business,FR,,isla.patel64@example.com,2018-01-31,500.0,475.0,Active,GB249212969
+C20065,George Brown,Personal,UK,BA1 1LZ,george.brown65@example.com,2024-07-25,5000.0,361.03,Active,
+C20066,Oscar Davies,Personal,UK,G2 1DY,oscar.davies66@example.com,2018-05-20,2500.0,1275.63,Dormant,
+C20067,Oliver Smith,Personal,UK,YO1 7HH,oliver.smith67@example.com,not known,1000.0,219.4,Active,
+C20068,Oliver Brown,Personal,UK,M1 1AE,oliver.brown68@example.com,2021-11-30,500.0,375.69,Closed,
+C20069,Freya Smith,Personal,IE,,freya.smith69@example.com,2019-06-27,1000.0,138.72,Closed,
+C20070,Oliver Jones,Business,FR,,oliver.jones70@example.com,2020-11-19,5000.0,359.96,Dormant,GB538747067
+C20071,George Walker,Personal,UK,G2 1DY,george.walker71@example.com,2018-06-26,5000.0,373.36,Active,
+C20072,George Patel,Personal,UK,BS8 1TH,george.patel72@example.com,2018-10-13,500.0,475.0,Closed,
+C20073,Amelia Davies,Personal,FR,,amelia.davies73@example.com,2022-03-25,1000.0,518.53,Active,
+C20074,Mia Patel,Business,UK,LS1 4AP,mia.patel74@example.com,2024-11-10,500.0,475.0,Active,GB589997426
+C20075,Oscar Wilson,Personal,IE,,oscar.wilson75@example.com,2022-09-01,2500.0,382.26,Active,
+C20076,Amelia Davies,Personal,FR,,amelia.davies76@example.com,2022-04-22,2500.0,569.51,Dormant,
+C20077,Mia Patel,Business,UK,M1 1AE,mia.patel77@example.com,2018-09-26,5000.0,316.92,Active,GB114025343
+C20078,Amelia Wilson,Personal,UK,EX4 3SR,amelia.wilson78@example.com,2019-06-28,1000.0,170.73,Dormant,
+C20079,Freya Wilson,Personal,FR,,freya.wilson79@example.com,2019-07-18,500.0,475.0,Active,
+C20080,Ava Wilson,Personal,FR,,ava.wilson80@example.com,2024-10-24,1000.0,449.78,Active,
+C20081,Amelia Brown,Business,UK,G2 1DY,amelia.brown81@example.com,2021-03-15,500.0,475.0,Active,GB834584171
+C20082,Freya Patel,Personal,UK,BS8 1TH,freya.patel82@example.com,2025-05-16,500.0,475.0,Dormant,
+C20083,George Williams,Business,UK,G2 1DY,george.williams83@example.com,2023-10-27,5000.0,788.99,Active,GB593081292
+C20084,Amelia Patel,Business,UK,CF10 3AT,amelia.patel84@example.com,2018-02-11,5000.0,590.66,Active,GB259427673
+C20085,Arthur Williams,Personal,FR,,arthur.williams85@example.com,2020-07-20,5000.0,449.74,Active,
+C20086,Leo Davies,Personal,FR,,leo.davies86@example.com,2024-02-07,1000.0,1486.86,Dormant,
+C20087,Arthur Patel,Personal,UK,SW1A 1AA,arthur.patel87@example.com,2024-09-22,5000.0,441.41,Active,
+C20088,Ivy Smith,Personal,UK,EX4 3SR,ivy.smith88@example.com,2024-05-31,500.0,475.0,Active,
+C20089,George Davies,Business,IE,,george.davies89@example.com,2021-11-18,2500.0,424.94,Active,GB885428903
+C20090,Arthur Evans,Personal,UK,NR2 1BD,arthur.evans90@example.com,2020-01-19,500.0,475.0,Dormant,
+C20091,George Brown,Personal,IE,,george.brown91@example.com,2022-06-30,5000.0,246.73,Closed,
+C20092,Oscar Davies,Personal,UK,SW1A 1AA,oscar.davies92@example.com,2022-11-16,1000.0,905.52,Dormant,
+C20093,Amelia Evans,Personal,UK,G2 1DY,amelia.evans93@example.com,2020-12-24,500.0,289.82,Active,
+C20094,George Williams,Personal,UK,YO1 7HH,george.williams94@example.com,2022-11-25,2500.0,36.6,Active,
+C20095,Arthur Jones,Business,FR,,arthur.jones95@example.com,2018-06-28,5000.0,466.12,Active,GB572442965
+C20096,Leo Davies,Business,FR,,leo.davies96@example.com,2023-05-09,500.0,392.26,Active,GB330536534
+C20097,Leo Evans,Business,IE,,leo.evans97@example.com,2022-09-04,5000.0,722.51,Closed,GB291802403
+C20098,Oscar Brown,Business,UK,EX4 3SR,oscar.brown98@example.com,2019-01-19,1000.0,436.62,Dormant,GB673966876
+C20099,Oliver Taylor,Personal,UK,EX4 3SR,oliver.taylor99@example.com,2023-03-24,500.0,184.59,Dormant,
+C20100,Noah Davies,Personal,IE,,noah.davies100@example.com,2023-05-02,1000.0,773.31,Active,
+C20101,Mia Wilson,Personal,IE,,mia.wilson101@example.com,2019-04-11,2500.0,1328.08,Active,
+C20102,Freya Smith,Personal,IE,,freya.smith102@example.com,2018-03-29,2500.0,681.84,Active,
+C20103,Freya Jones,Personal,UK,CF10 3AT,freya.jones103@example.com,2019-02-07,2500.0,863.77,Active,
+C20104,Freya Taylor,Personal,FR,,freya.taylor104@example.com,2020-11-20,500.0,139.67,Active,
+C20105,Arthur Wilson,Personal,FR,,arthur.wilson105@example.com,2019-11-29,2500.0,299.6,Suspended,
+C20106,Mia Wilson,Personal,UK,DE1 2FS,mia.wilson106@example.com,2018-12-08,5000.0,67.77,Dormant,
+C20107,Arthur Wilson,Personal,UK,EX4 3SR,arthur.wilson107@example.com,2021-01-27,1000.0,922.26,Active,
+C20108,Amelia Brown,Personal,FR,,amelia.brown108@example.com,2023-06-01,2500.0,301.69,Active,
+C20109,Leo Brown,Business,UK,SW1A 1AA,leo.brown109@example.com,2019-12-26,5000.0,554.97,Dormant,GB636220947
+C20110,Oliver Wilson,Business,FR,,oliver.wilson110@example.com,2018-10-10,500.0,475.0,Active,GB222910011
+C20111,Oliver Wilson,Personal,UK,DE1 2FS,oliver.wilson111@example.com,2023-04-21,1000.0,567.04,Active,
+C20112,Mia Wilson,Personal,UK,M1 1AE,mia.wilson112@example.com,2025-02-23,1000.0,518.95,Closed,
+C20113,Arthur Davies,Business,UK,,arthur.davies113@example.com,2018-11-13,2500.0,489.41,Active,GB902309036
+C20114,Mia Walker,Personal,UK,YO1 7HH,mia.walker114@example.com,2019-06-16,500.0,475.0,Active,
+C20115,Arthur Davies,Business,UK,YO1 7HH,arthur.davies115@example.com,2020-09-12,1000.0,850.45,Dormant,GB989020724
+C20116,Mia Williams,Personal,UK,EX4 3SR,mia.williams116@example.com,2023-05-02,2500.0,383.56,Active,
+C20117,Ivy Walker,Personal,IE,,ivy.walker117@example.com,2022-09-25,500.0,475.0,Dormant,
+C20118,Ivy Jones,Personal,UK,SW1A 1AA,ivy.jones118@example.com,2023-03-21,1000.0,950.0,Active,
+C20119,Arthur Walker,Personal,UK,EX4 3SR,arthur.walker119@example.com,2022-09-05,5000.0,7788.22,Active,
+C20120,George Wilson,Personal,UK,EX4 3SR,george.wilson120@example.com,2018-10-21,1000.0,450.96,Active,
+C20121,Freya Williams,Personal,UK,YO1 7HH,freya.williams121@example.com,2023-01-25,1000.0,474.9,Active,
+C20122,Isla Evans,Personal,IE,,isla.evans122@example.com,2020-03-28,500.0,475.0,Active,
+C20123,Amelia Patel,Personal,IE,,amelia.patel123@example.com,2025-04-21,5000.0,407.75,Active,
+C20124,Noah Evans,Business,IE,,noah.evans124@example.com,2020-01-01,1000.0,470.13,Active,GB115791651
+C20125,Oliver Brown,Personal,FR,,oliver.brown125@example.com,2020-10-07,1000.0,694.66,Active,
+C20126,Leo Wilson,Personal,UK,OX1 3BG,leo.wilson126@example.com,2021-04-04,5000.0,282.26,Active,
+C20127,Freya Patel,Personal,UK,OX1 3BG,freya.patel127@example.com,2023-11-28,1000.0,540.33,Active,
+C20128,Mia Taylor,Personal,UK,YO1 7HH,mia.taylor128@example.com,2018-03-08,5000.0,457.52,Active,
+C20129,Ivy Davies,Personal,UK,G2 1DY,ivy.davies129@example.com,2022-09-12,2500.0,593.49,Active,
+C20130,Leo Jones,Personal,UK,SW1A 1AA,leo.jones130@example.com,2024-08-04,5000.0,147.68,Active,
+C20131,Mia Jones,Personal,UK,EX4 3SR,mia.jones131@example.com,2022-09-04,500.0,193.82,Closed,
+C20132,Freya Taylor,Personal,UK,NR2 1BD,freya.taylor132@example.com,2023-02-21,2500.0,2892.97,Active,
+C20133,Noah Evans,Personal,UK,NR2 1BD,noah.evans133@example.com,2025-05-07,1000.0,340.39,Dormant,
+C20134,Oliver Williams,Personal,UK,EX4 3SR,oliver.williams134@example.com,2022-05-03,1000.0,950.0,Active,
+C20135,Ivy Smith,Personal,UK,DE1 2FS,ivy.smith135@example.com,2021-07-06,1000.0,254.3,Active,
+C20136,Oscar Jones,Business,UK,BS8 1TH,oscar.jones136@example.com,2018-05-05,500.0,460.48,Active,GB551596159
+C20137,Mia Wilson,Personal,UK,CF10 3AT,mia.wilson137@example.com,2021-04-13,1000.0,619.18,Active,
+C20138,Leo Smith,Personal,FR,,leo.smith138@example.com,2022-04-28,500.0,475.0,Active,
+C20139,Oscar Brown,Personal,UK,OX1 3BG,oscar.brown139@example.com,2018-06-17,5000.0,304.64,Active,
+C20140,Mia Taylor,Personal,IE,,mia.taylor140@example.com,2019-07-27,500.0,475.0,Active,
+C20141,Oscar Patel,Personal,UK,OX1 3BG,oscar.patel141@example.com,2022-07-16,2500.0,608.47,Active,
+C20142,Oliver Jones,Personal,IE,,oliver.jones142@example.com,2023-01-24,500.0,475.0,Active,
+C20143,Arthur Brown,Personal,IE,,arthur.brown143@example.com,2023-09-18,2500.0,209.27,Active,
+C20144,George Williams,Personal,FR,,george.williams144@example.com,2025-03-04,5000.0,243.46,Dormant,
+C20145,George Walker,Personal,UK,BS8 1TH,george.walker145@example.com,2022-02-11,1000.0,378.23,Active,
+C20146,Noah Williams,Business,IE,,noah.williams146@example.com,2020-03-29,5000.0,374.17,Active,GB182425778
+C20147,George Jones,Personal,IE,,george.jones147@example.com,2025-06-12,500.0,475.0,Active,
+C20148,Freya Williams,Personal,IE,,freya.williams148@example.com,2019-11-07,2500.0,735.78,Active,
+C20149,Leo Brown,Personal,IE,,leo.brown149@example.com,2021-12-26,500.0,81.58,Active,
+C20150,Arthur Wilson,Personal,UK,OX1 3BG,arthur.wilson150@example.com,2023-03-16,2500.0,247.55,Active,
+C20151,Oliver Jones,Personal,UK,YO1 7HH,oliver.jones151@example.com,2022-05-05,500.0,410.58,Dormant,
+C20152,Arthur Williams,Business,UK,G2 1DY,arthur.williams152@example.com,2020-04-02,5000.0,367.05,Active,GB523901429
+C20153,Isla Patel,Personal,UK,NR2 1BD,isla.patel153@example.com,2018-07-04,1000.0,406.69,Active,
+C20154,Leo Williams,Personal,UK,DE1 2FS,leo.williams154@example.com,2024-12-26,1000.0,65.71,Active,
+C20155,Isla Walker,Personal,UK,OX1 3BG,isla.walker155@example.com,2019-09-26,2500.0,1170.82,Active,
+C20156,Arthur Brown,Business,UK,BA1 1LZ,arthur.brown156@example.com,2018-07-28,2500.0,437.93,Active,GB977498539
+C20157,Noah Evans,Personal,UK,G2 1DY,noah.evans157@example.com,2020-02-11,500.0,475.0,Active,
+C20158,Leo Brown,Personal,UK,DE1 2FS,leo.brown158@example.com,2020-08-04,500.0,475.0,Closed,
+C20159,Isla Brown,Personal,UK,NR2 1BD,isla.brown159@example.com,2020-10-18,5000.0,369.93,Active,
+C20160,George Davies,Personal,UK,DE1 2FS,george.davies160@example.com,2020-04-18,2500.0,380.81,Active,
+C20161,Isla Wilson,Business,UK,M1 1AE,isla.wilson161@example.com,2022-01-24,5000.0,821.26,Dormant,GB549851623
+C20162,Isla Walker,Personal,UK,SW1A 1AA,isla.walker162@example.com,2020-11-05,1000.0,385.55,Dormant,
+C20163,Ava Evans,Business,UK,OX1 3BG,ava.evans163@example.com,2021-12-13,500.0,221.91,Active,GB814216259
+C20164,Oliver Taylor,Business,UK,LS1 4AP,oliver.taylor164@example.com,2019-08-04,2500.0,649.31,Active,GB918334404
+C20165,Ivy Brown,Business,UK,EX4 3SR,ivy.brown165@example.com,2024-04-13,5000.0,285.98,Closed,GB653916445
+C20166,Ava Patel,Business,UK,BS8 1TH,ava.patel166@example.com,2020-06-17,5000.0,873.84,Active,GB521269826
+C20167,Oscar Davies,Business,UK,CF10 3AT,oscar.davies167@example.com,2025-01-07,2500.0,99.05,Closed,GB270274245
+C20168,Freya Jones,Personal,UK,M1 1AE,freya.jones168@example.com,2019-08-24,5000.0,138.14,Active,
+C20169,Arthur Walker,Personal,UK,M1 1AE,arthur.walker169@example.com,2018-01-25,500.0,402.71,Dormant,
+C20170,Freya Brown,Business,UK,M1 1AE,freya.brown170@example.com,2018-07-28,500.0,475.0,Active,GB809030876
+C20171,Ivy Jones,Business,FR,,ivy.jones171@example.com,2022-03-27,2500.0,57.77,Dormant,GB623009574
+C20172,Arthur Taylor,Personal,UK,CF10 3AT,arthur.taylor172@example.com,2022-06-24,500.0,475.0,Active,
+C20173,Ava Davies,Personal,UK,LS1 4AP,ava.davies173@example.com,2021-08-04,500.0,475.0,Active,
+C20174,Ivy Taylor,Personal,FR,,ivy.taylor174@example.com,2025-03-09,5000.0,458.56,Closed,
+C20175,Isla Jones,Business,FR,,isla.jones175@example.com,2025-07-27,5000.0,244.77,Active,GB885829182
+C20176,Leo Wilson,Personal,IE,,leo.wilson176@example.com,2024-02-27,2500.0,442.75,Active,
+C20177,Isla Walker,Personal,UK,G2 1DY,isla.walker177@example.com,2024-06-03,5000.0,124.01,Active,
+C20178,Mia Brown,Personal,IE,,mia.brown178@example.com,2019-01-23,5000.0,166.28,Active,
+C20179,Arthur Wilson,Business,UK,YO1 7HH,arthur.wilson179@example.com,2025-07-07,2500.0,173.24,Active,GB777130112
+C20180,Leo Brown,Personal,IE,,leo.brown180@example.com,2022-01-27,500.0,475.0,Dormant,
+C20181,Freya Walker,Business,IE,,freya.walker181@example.com,2018-12-14,500.0,311.49,Active,GB973547371
+C20182,Mia Evans,Personal,FR,SW1A1AA,mia.evans182@example.com,2020-04-10,500.0,475.0,Active,
+C20183,Freya Williams,Personal,UK,LS1 4AP,freya.williams183@example.com,2018-03-15,1000.0,950.0,Active,
+C20184,Isla Walker,Personal,UK,OX1 3BG,isla.walker184@example.com,2022-01-27,2500.0,226.06,Active,
+C20185,Noah Taylor,Personal,IE,,noah.taylor185@example.com,2019-01-13,500.0,193.65,Active,
+C20186,Ava Williams,Business,UK,BA1 1LZ,ava.williams186@example.com,2021-08-18,1000.0,445.74,Active,GB180361795
+C20187,Ivy Wilson,Personal,UK,EX4 3SR,ivy.wilson187@example.com,2022-08-13,500.0,242.75,Active,
+C20188,Freya Davies,Personal,UK,SW1A 1AA,freya.davies188@example.com,2024-04-14,500.0,164.77,Dormant,
+C20189,Leo Davies,Business,UK,NR2 1BD,leo.davies189@example.com,2022-03-19,500.0,475.0,Active,GB966230601
+C20190,Ava Williams,Business,IE,,ava.williams190@example.com,2018-02-02,500.0,330.04,Active,GB625232583
+C20191,Oliver Walker,Personal,UK,DE1 2FS,oliver.walker191@example.com,2020-01-02,2500.0,111.18,Active,
+C20192,Amelia Walker,Personal,IE,,amelia.walker192@example.com,2018-12-19,1000.0,762.89,Dormant,
+C20193,Oliver Evans,Personal,UK,SW1A 1AA,oliver.evans193@example.com,2024-05-21,2500.0,693.18,Active,
+C20194,Mia Williams,Personal,FR,,mia.williams194@example.com,2019-01-23,500.0,112.71,Active,
+C20195,Amelia Evans,Personal,UK,NR2 1BD,amelia.evans195@example.com,2019-07-21,2500.0,352.58,Active,
+C20196,Arthur Taylor,Personal,FR,,arthur.taylor196@example.com,2025-01-05,5000.0,121.21,Active,
+C20197,Oscar Jones,Business,UK,G2 1DY,oscar.jones197@example.com,2019-05-19,1000.0,344.56,Dormant,GB904091201
+C20198,Oliver Smith,Personal,UK,M1 1AE,oliver.smith198@example.com,2022-07-05,2500.0,1712.98,Active,
+C20199,Noah Evans,Personal,UK,BA1 1LZ,noah.evans199@example.com,2018-10-28,1000.0,447.64,Active,
+C20200,Amelia Walker,Business,IE,,amelia.walker200@example.com,2024-11-06,2500.0,1033.04,Active,GB792064910
+C20201,George Taylor,Personal,UK,M1 1AE,george.taylor201@example.com,2019-08-17,2500.0,275.64,Active,
+C20202,Mia Davies,Personal,UK,NR2 1BD,mia.davies202@example.com,2020-09-16,2500.0,1108.82,Dormant,
+C20203,George Taylor,Personal,FR,,george.taylor203@example.com,2021-06-11,5000.0,1003.99,Active,
+C20204,Isla Davies,Business,UK,DE1 2FS,isla.davies204@example.com,2018-11-29,2500.0,359.5,Active,GB682393501
+C20205,Oscar Jones,Personal,FR,,oscar.jones205@example.com,2018-03-18,5000.0,254.17,Active,
+C20206,Isla Wilson,Personal,UK,BS8 1TH,isla.wilson206@example.com,2021-05-19,500.0,475.0,Active,
+C20207,Ava Davies,Personal,UK,CF10 3AT,ava.davies207@example.com,2019-01-10,5000.0,247.27,Active,
+C20208,George Walker,Personal,UK,ex4 3sr,george.walker208@example.com,2024-02-05,2500.0,107.44,Active,
+C20209,Ivy Patel,Personal,UK,BS8 1TH,ivy.patel209@example.com,2019-01-04,500.0,475.0,Active,
+C20210,Leo Patel,Personal,IE,,leo.patel210@example.com,2018-02-12,5000.0,106.67,Active,
+C20211,Ivy Williams,Personal,UK,SW1A 1AA,ivy.williams211@example.com,2021-01-27,2500.0,895.06,Dormant,
+C20212,Ivy Jones,Personal,IE,,ivy.jones212@example.com,2024-07-08,500.0,475.0,Active,
+C20213,Ivy Evans,Personal,UK,BA1 1LZ,ivy.evans213@example.com,2019-08-25,500.0,233.93,Active,
+C20214,Ivy Smith,Personal,UK,OX1 3BG,ivy.smith214@example.com,2018-09-22,2500.0,103.54,Active,
+C20215,Amelia Davies,Personal,UK,BA1 1LZ,amelia.davies215@example.com,2019-05-02,5000.0,1695.18,Active,
+C20216,George Brown,Personal,IE,,george.brown216@example.com,2022-02-06,5000.0,435.32,Dormant,
+C20217,Mia Smith,Personal,UK,BS8 1TH,mia.smith217@example.com,2023-10-09,5000.0,702.12,Active,
+C20218,Noah Jones,Personal,UK,NR2 1BD,noah.jones218@example.com,2018-07-24,5000.0,228.13,Active,
+C20219,Arthur Wilson,Personal,IE,,arthur.wilson219@example.com,2024-01-17,500.0,310.75,Active,
+C20220,Leo Brown,Personal,IE,123 456,leo.brown220@example.com,2023-08-19,5000.0,274.5,Active,
+C20221,Isla Jones,Personal,UK,G2 1DY,isla.jones221@example.com,2022-03-10,5000.0,118.02,Active,
+C20222,Arthur Brown,Personal,UK,NR2 1BD,arthur.brown222@example.com,2019-09-23,500.0,475.0,Dormant,
+C20223,Mia Davies,Personal,UK,DE1 2FS,mia.davies223@example.com,2018-04-28,1000.0,935.03,Closed,
+C20224,Leo Davies,Business,UK,NR2 1BD,leo.davies224@example.com,2024-06-09,1000.0,204.4,Dormant,GB828119098
+C20225,Isla Williams,Personal,UK,CF10 3AT,isla.williams225@example.com,2022-07-28,1000.0,648.47,Active,
+C20226,Leo Brown,Personal,UK,DE1 2FS,leo.brown226@example.com,2018-06-29,1000.0,321.77,Active,
+C20227,Noah Walker,Business,FR,,noah.walker227@example.com,2019-05-11,1000.0,950.0,Dormant,GB515924385
+C20228,Amelia Wilson,Personal,IE,,amelia.wilson228@example.com,2019-11-30,1000.0,950.0,Dormant,
+C20229,Mia Patel,Personal,UK,DE1 2FS,mia.patel229@example.com,2022-10-02,2500.0,733.88,Dormant,
+C20230,Oliver Evans,Personal,FR,,oliver.evans230@example.com,2021-01-23,2500.0,680.87,Active,
+C20231,Oscar Wilson,Personal,UK,NR2 1BD,oscar.wilson231@example.com,2022-12-21,5000.0,1165.91,Active,
+C20232,Freya Patel,Business,FR,,freya.patel232@example.com,2023-01-30,500.0,128.92,Active,GB545159843
+C20233,Ava Williams,Personal,UK,EX4 3SR,ava.williams233@example.com,2018-02-09,2500.0,574.89,Active,
+C20234,Oliver Evans,Personal,UK,M1 1AE,oliver.evans234@example.com,2024-10-02,500.0,475.0,Active,
+C20235,Mia Davies,Personal,FR,,mia.davies235@example.com,2022-11-03,1000.0,698.58,Active,
+C20236,Leo Williams,Business,UK,LS1 4AP,leo.williams236@example.com,2023-09-07,500.0,475.0,Active,GB177638753
+C20237,Leo Evans,Business,IE,,leo.evans237@example.com,2022-09-25,500.0,447.8,Active,GB890150102
+C20238,Oliver Taylor,Personal,UK,OX1 3BG,oliver.taylor238@example.com,2019-03-27,500.0,219.19,Active,
+C20239,,Business,IE,,ivy.brown239@example.com,2018-08-09,1000.0,950.0,Active,GB224411255
+C20240,Ava Patel,Personal,UK,EX4 3SR,ava.patel240@example.com,2024-09-13,500.0,236.0,Active,
+C20241,Amelia Jones,Personal,UK,BS8 1TH,amelia.jones241@example.com,2018-05-26,1000.0,339.42,Active,
+C20242,Leo Walker,Business,UK,YO1 7HH,leo.walker242@example.com,2023-09-22,5000.0,367.2,Active,GB903970277
+C20243,Amelia Smith,Personal,IE,,amelia.smith243@example.com,2021-11-22,500.0,475.0,Dormant,
+C20244,Oliver Walker,Personal,UK,M1 1AE,oliver.walker244@example.com,2025-05-30,1000.0,423.62,Active,
+C20245,Isla Taylor,Personal,UK,EX4 3SR,isla.taylor245@example.com,2019-08-05,500.0,359.27,Dormant,
+C20246,Ivy Evans,Personal,IE,,isla@@example.com,2018-05-13,1000.0,950.0,Active,
+C20247,Oscar Brown,Personal,UK,M1 1AE,oscar.brown247@example.com,2018-01-15,1000.0,247.89,Dormant,
+C20248,Noah Davies,Business,IE,,noah.davies248@example.com,2018-01-18,2500.0,435.62,Active,GB525350954
+C20249,Oscar Wilson,Personal,FR,,oscar.wilson249@example.com,2019-10-29,500.0,306.86,Active,
+C20250,Leo Williams,Personal,UK,SW1A 1AA,leo.williams250@example.com,2023-07-08,2500.0,470.84,Active,
+C20251,Arthur Wilson,Business,FR,,arthur.wilson251@example.com,2019-06-25,5000.0,671.92,Active,GB300076966
+C20252,Mia Walker,Business,UK,G2 1DY,mia.walker252@example.com,2022-08-11,1000.0,389.16,Active,GB703232432
+C20253,Isla Evans,Business,UK,LS1 4AP,isla.evans253@example.com,2018-12-21,2500.0,521.24,Dormant,GB923315075
+C20254,Isla Brown,Personal,UK,CF10 3AT,isla.brown254@example.com,2025-06-08,1000.0,950.0,Active,
+C20255,Oscar Taylor,Personal,UK,YO1 7HH,oscar.taylor255@example.com,2031-02-01,500.0,475.0,Active,
+C20256,George Walker,Personal,FR,,george.walker256@example.com,2020-11-18,5000.0,487.57,Closed,
+C20257,Ava Jones,Business,IE,,ava.jones257@example.com,2025-08-22,1000.0,950.0,Active,GB635040825
+C20258,Isla Smith,Personal,IE,,george.brown.example.com,2022-08-10,5000.0,820.68,Active,
+C20259,Noah Patel,Personal,UK,M1 1AE,noah.patel259@example.com,2020-10-13,2500.0,374.13,Active,
+C20260,Freya Jones,Personal,UK,LS1 4AP,freya.jones260@example.com,2023-11-23,2500.0,188.83,Active,
+C20261,Freya Smith,Business,FR,,freya.smith261@example.com,2024-06-19,5000.0,1036.63,Active,GB440201686
+C20262,Mia Patel,Personal,FR,,mia.patel262@example.com,2022-02-25,500.0,395.68,Dormant,
+C20263,Arthur Jones,Personal,UK,LS1 4AP,arthur.jones263@example.com,2018-07-31,2500.0,581.98,Dormant,
+C20264,Mia Taylor,Personal,UK,YO1 7HH,mia.taylor264@example.com,2025-08-04,5000.0,1130.85,Active,
+C20265,Oliver Davies,Personal,UK,EX4 3SR,oliver.davies265@example.com,2022-04-26,5000.0,438.83,Dormant,
+C20266,Amelia Walker,Personal,IE,,amelia.walker266@example.com,2025-04-27,500.0,369.08,Active,
+C20267,Arthur Williams,Personal,UK,BS8 1TH,arthur.williams267@example.com,2025-05-31,1000.0,416.68,Active,
+C20268,Arthur Williams,Business,UK,M1 1AE,arthur.williams268@example.com,2020-04-21,5000.0,189.85,Active,GB334079490
+C20269,Amelia Smith,Personal,UK,CF10 3AT,amelia.smith269@example.com,2022-07-03,2500.0,503.14,Closed,
+C20270,Noah Wilson,Personal,IE,,noah.wilson270@example.com,2019-02-04,1000.0,243.51,Active,
+C20271,Noah Jones,Personal,UK,CF10 3AT,noah.jones271@example.com,2025-03-03,1000.0,220.39,Active,
+C20272,Oscar Wilson,Personal,UK,OX1 3BG,oscar.wilson272@example.com,2023-06-17,500.0,221.09,Active,
+C20273,Freya Jones,Business,UK,NR2 1BD,freya.jones273@example.com,2019-05-06,1000.0,216.69,Active,GB745120163
+C20274,Oliver Taylor,Personal,UK,BS8 1TH,oliver.taylor274@example.com,2025-05-27,5000.0,685.59,Active,
+C20275,Ivy Evans,Personal,IE,,ivy.evans275@example.com,2022-11-28,1000.0,167.44,Closed,
+C20276,Oscar Brown,Personal,FR,,oscar.brown276@example.com,2021-02-26,500.0,475.0,Active,
+C20277,Amelia Evans,Personal,UK,SW1A 1AA,amelia.evans277@example.com,2021-05-07,500.0,342.99,Active,
+C20278,Noah Patel,Personal,UK,SW1A 1AA,noah.patel278@example.com,2018-10-14,2500.0,426.26,Dormant,
+C20279,Isla Jones,Personal,UK,NR2 1BD,isla.jones279@example.com,2024-06-15,500.0,475.0,Active,
+C20280,Mia Williams,Business,IE,,mia.williams280@example.com,2020-10-23,1000.0,950.0,Active,GB576650405
+C20281,George Wilson,Business,UK,DE1 2FS,george.wilson281@example.com,2019-12-23,5000.0,637.42,Active,GB869093320
+C20282,Noah Williams,Business,UK,EX4 3SR,noah.williams282@example.com,2021-02-06,5000.0,743.36,Active,GB393396413
+C20283,Noah Jones,Personal,UK,LS1 4AP,noah.jones283@example.com,2023-09-02,5000.0,703.55,Dormant,
+C20284,Leo Brown,Personal,UK,M1 1AE,leo.brown284@example.com,2021-04-18,1000.0,626.82,Active,
+C20285,Noah Davies,Personal,UK,EX4 3SR,noah.davies285@example.com,2019-08-21,2500.0,281.61,Active,
+C20286,Ivy Wilson,Personal,UK,OX1 3BG,ivy.wilson286@example.com,2018-02-03,1000.0,883.53,Active,
+C20287,Noah Williams,Personal,UK,OX1 3BG,noah.williams287@example.com,2023-06-25,500.0,475.0,Active,
+C20288,Mia Williams,Business,UK,OX1 3BG,mia.williams288@example.com,2024-06-15,2500.0,1007.6,Active,GB587777475
+C20289,Ava Williams,Personal,UK,EX4 3SR,ava.williams289@example.com,2025-08-16,5000.0,205.1,Active,
+C20290,Oscar Williams,Personal,FR,,oscar.williams290@example.com,2023-05-07,500.0,139.17,Dormant,
+C20291,Ava Wilson,Business,UK,EX4 3SR,ava.wilson291@example.com,2020-01-22,500.0,224.92,Active,GB986744509
+C20292,Noah Walker,Personal,FR,,noah.walker292@example.com,2025-05-24,2500.0,712.44,Dormant,
+C20293,Isla Smith,Personal,IE,,isla.smith293@example.com,2020-05-31,5000.0,892.23,Active,
+C20294,Freya Patel,Personal,UK,OX1 3BG,freya.patel294@example.com,2018-10-13,500.0,241.52,Dormant,
+C20295,Arthur Smith,Business,FR,,arthur.smith295@example.com,2021-06-26,5000.0,707.22,Active,GB353485967
+C20296,Arthur Smith,Personal,IE,,arthur.smith296@example.com,2020-09-17,2500.0,802.73,Active,
+C20297,George Walker,Personal,UK,EX4 3SR,george.walker297@example.com,2021-06-14,500.0,475.0,Active,
+C20298,Amelia Patel,Personal,UK,CF10 3AT,amelia.patel298@example.com,2023-10-08,500.0,475.0,Dormant,
+C20299,Leo Wilson,Personal,FR,,leo.wilson299@example.com,2020-04-28,500.0,475.0,Active,
+C20300,George Evans,Personal,UK,NR2 1BD,george.evans300@example.com,2020-02-16,2500.0,690.26,Active,
+C20301,George Wilson,Personal,IE,,george.wilson301@example.com,2022-11-28,500.0,475.0,Active,
+C20302,George Evans,Personal,UK,G2 1DY,george.evans302@example.com,2018-11-19,2500.0,305.46,Active,
+C20303,Amelia Evans,Personal,UK,BS8 1TH,amelia.evans303@example.com,2020-08-29,1000.0,124.62,Active,
+C20304,Arthur Walker,Personal,IE,,arthur.walker304@example.com,2023-05-18,1000.0,950.0,Dormant,
+C20305,Oliver Smith,Personal,UK,YO1 7HH,oliver.smith305@example.com,2020-01-26,2500.0,742.06,Active,
+C20306,Ivy Brown,Personal,UK,YO1 7HH,ivy.brown306@example.com,2019-11-27,2500.0,336.54,Active,
+C20307,Leo Jones,Personal,UK,LS1 4AP,leo.jones307@example.com,2022-03-23,5000.0,635.21,Active,
+C20308,Isla Davies,Personal,UK,BA1 1LZ,isla.davies308@example.com,2020-08-06,2500.0,941.89,Active,
+C20309,Isla Patel,Personal,IE,,isla.patel309@example.com,31/02/2024,500.0,475.0,Active,
+C20310,Oliver Brown,Personal,UK,NR2 1BD,oliver.brown310@example.com,2018-02-05,2500.0,683.48,Active,
+C20311,Oscar Jones,Business,UK,BS8 1TH,oscar.jones311@example.com,2021-09-01,500.0,226.68,Dormant,GB948827924
+C20312,George Wilson,Personal,IE,,george.wilson312@example.com,2023-12-29,5000.0,3.3,Dormant,
+C20313,Amelia Jones,Business,IE,,amelia.jones313@example.com,2019-01-21,5000.0,710.95,Active,GB394839275
+C20314,Mia Davies,Personal,UK,OX1 3BG,mia.davies314@example.com,2020-07-15,1000.0,550.82,Active,
+C20315,George Williams,Business,FR,,george.williams315@example.com,2021-12-12,1000.0,393.2,Active,GB303279101
+C20316,Freya Smith,Business,UK,LS1 4AP,freya.smith316@example.com,2021-09-24,1000.0,950.0,Active,GB301953980
+C20317,George Davies,Personal,UK,NR2 1BD,george.davies317@example.com,2023-11-06,500.0,475.0,Active,
+C20318,George Taylor,Personal,UK,DE1 2FS,george.taylor318@example.com,2024-07-15,2500.0,1748.77,Active,
+C20319,George Wilson,Personal,UK,G2 1DY,george.wilson319@example.com,2024-11-29,2500.0,3701.11,Active,
+C20320,Leo Davies,Personal,FR,,leo.davies320@example.com,2020-12-21,2500.0,2122.04,Active,
+C20321,George Brown,Personal,FR,,george.brown321@example.com,2023-08-30,5000.0,206.37,Active,
+C20322,Arthur Taylor,Personal,FR,,arthur.taylor322@example.com,2021-12-17,5000.0,1002.12,Active,
+C20323,Oliver Wilson,Business,UK,EX4 3SR,oliver.wilson323@example.com,2023-08-02,2500.0,136.35,Active,GB868476189
+C20324,Noah Davies,Personal,UK,BS8 1TH,noah.davies324@example.com,2019-02-23,500.0,475.0,Active,
+C20325,Noah Evans,Personal,UK,SW1A 1AA,noah.evans325@example.com,2019-12-16,5000.0,219.36,Active,
+C20326,Amelia Jones,Business,IE,,amelia.jones326@example.com,2018-03-03,1000.0,405.36,Active,GB532147988
+C20327,Leo Williams,Business,UK,YO1 7HH,leo.williams327@example.com,2022-06-06,500.0,360.14,Active,GB698547542
+C20328,Oliver Davies,Personal,UK,CF10 3AT,oliver.davies328@example.com,2024-07-28,2500.0,345.61,Active,
+C20329,Oscar Jones,Personal,UK,YO1 7HH,oscar.jones329@example.com,2020-11-04,2500.0,541.97,Active,
+C20330,Freya Smith,Personal,UK,M1 1AE,freya.smith330@example.com,2025-06-27,500.0,475.0,Active,
+C20331,Ivy Evans,Personal,UK,CF10 3AT,ivy.evans331@example.com,2021-08-14,2500.0,354.85,Active,
+C20332,Oliver Brown,Personal,IE,,oliver.brown332@example.com,2024-04-27,2500.0,937.05,Active,
+C20333,Leo Evans,Business,UK,BA1 1LZ,leo.evans333@example.com,2021-05-20,1000.0,273.38,Active,GB259446042
+C20334,Leo Evans,Personal,UK,YO1 7HH,leo.evans334@example.com,2022-04-24,5000.0,1251.44,Active,
+C20335,Arthur Patel,Personal,UK,CF10 3AT,arthur.patel335@example.com,2024-11-17,1000.0,354.58,Active,
+C20336,Leo Walker,Personal,UK,SW1A 1AA,leo.walker336@example.com,2023-06-02,500.0,198.27,Active,
+C20337,Oliver Taylor,Personal,FR,,oliver.taylor337@example.com,2020-11-10,500.0,212.13,Active,
+C20338,Ivy Williams,Personal,IE,,ivy.williams338@example.com,2019-06-20,500.0,475.0,Dormant,
+C20339,Noah Taylor,Personal,FR,,noah.taylor339@example.com,2023-08-30,2500.0,602.54,Dormant,
+C20340,George Jones,Business,UK,BS8 1TH,george.jones340@example.com,2024-07-06,2500.0,664.26,Active,GB845760517
+C20341,Ava Taylor,Personal,UK,CF10 3AT,ava.taylor341@example.com,2024-04-10,5000.0,7853.3,Dormant,
+C20342,Noah Brown,Personal,IE,,noah.brown342@example.com,2018-01-29,500.0,475.0,Active,
+C20343,Ava Jones,Business,UK,OX1 3BG,ava.jones343@example.com,2022-04-10,5000.0,568.18,Active,GB311908987
+C20344,Oliver Wilson,Personal,FR,LS1,oliver.wilson344@example.com,2022-01-25,500.0,259.1,Dormant,
+C20345,Leo Evans,Personal,UK,OX1 3BG,leo.evans345@example.com,2023-04-18,500.0,475.0,Active,
+C20346,Ava Wilson,Personal,UK,YO1 7HH,ava.wilson346@example.com,2023-01-06,2500.0,537.35,Active,
+C20347,Mia Jones,Business,IE,,mia.jones347@example.com,2023-03-24,5000.0,784.48,Active,GB124689101
+C20348,Oscar Jones,Personal,FR,,oscar.jones348@example.com,2025-01-03,500.0,166.47,Closed,
+C20349,Amelia Davies,Business,UK,EX4 3SR,amelia.davies349@example.com,2018-02-02,1000.0,124.51,Dormant,GB463685593
+C20350,Oscar Brown,Business,UK,G2 1DY,oscar.brown350@example.com,2019-07-22,5000.0,385.49,Active,GB904519952
+C20351,George Smith,Personal,UK,CF10 3AT,george.smith351@example.com,2023-12-19,2500.0,373.37,Active,
+C20352,Leo Evans,Personal,UK,M1 1AE,leo.evans352@example.com,2022-01-05,2500.0,1092.7,Active,
+C20353,Noah Walker,Personal,IE,,noah.walker353@example.com,2021-03-27,5000.0,382.74,Dormant,
+C20354,Ivy Wilson,Personal,UK,LS1 4AP,ivy.wilson354@example.com,2025-08-18,1000.0,837.42,Active,
+C20355,Isla Smith,Personal,UK,YO1 7HH,isla.smith355@example.com,2025-01-09,2500.0,528.53,Active,
+C20356,Oscar Taylor,Business,UK,EX4 3SR,oscar.taylor356@example.com,2022-09-29,1000.0,450.93,Dormant,GB237283616
+C20357,Isla Davies,Business,IE,,isla.davies357@example.com,2019-12-10,5000.0,1876.34,Active,GB787715832
+C20358,Oliver Davies,Personal,UK,M1 1AE,oliver.davies358@example.com,2020-05-11,1000.0,692.43,Active,
+C20359,Amelia Smith,Business,UK,EX4 3SR,amelia.smith359@example.com,2020-06-23,2500.0,322.76,Active,GB407746805
+C20360,George Walker,Personal,UK,YO1 7HH,george.walker360@example.com,2024-01-25,500.0,475.0,Active,
+C20361,George Jones,Personal,IE,,george.jones361@example.com,2021-02-21,5000.0,2017.68,Active,
+C20362,Leo Walker,Personal,FR,,leo.walker362@example.com,2021-03-02,5000.0,1623.08,Active,
+C20363,George Patel,Personal,FR,,george.patel363@example.com,2021-01-25,5000.0,875.24,Active,
+C20364,Arthur Williams,Personal,FR,,arthur.williams364@example.com,2020-08-09,5000.0,543.94,Active,
+C20365,George Evans,Business,UK,BS8 1TH,george.evans365@example.com,2025-03-13,1000.0,950.0,Dormant,GB806409751
+C20366,Ivy Evans,Personal,FR,,ivy.evans366@example.com,2022-12-06,500.0,475.0,Active,
+C20367,Amelia Jones,Personal,FR,,amelia.jones367@example.com,2018-04-08,1000.0,133.84,Active,
+C20368,Amelia Jones,Personal,UK,M1 1AE,amelia.jones368@example.com,2022-05-10,5000.0,6883.57,Active,
+C20369,Amelia Walker,Business,UK,NR2 1BD,amelia.walker369@example.com,2021-06-16,5000.0,484.36,Active,GB471499942
+C20370,Ava Walker,Personal,UK,NR2 1BD,ava.walker370@example.com,2023-09-11,500.0,475.0,Active,
+C20371,Freya Evans,Business,FR,,freya.evans371@example.com,2018-11-22,1000.0,174.41,Active,GB491315884
+C20372,Leo Smith,Personal,UK,CF10 3AT,leo.smith372@example.com,2020-06-30,2500.0,497.43,Dormant,
+C20373,George Wilson,Personal,UK,YO1 7HH,george.wilson373@example.com,2022-11-04,5000.0,1358.96,Active,
+C20374,Isla Taylor,Personal,UK,SW1A 1AA,isla.taylor374@example.com,2023-12-15,1000.0,229.37,Active,
+C20375,Oliver Wilson,Personal,UK,NR2 1BD,oliver.wilson375@example.com,2024-08-16,5000.0,1454.27,Active,
+C20376,Oscar Jones,Personal,IE,,oscar.jones376@example.com,2023-04-08,500.0,214.09,Active,
+C20377,George Davies,Personal,UK,SW1A 1AA,george.davies377@example.com,2024-12-17,500.0,475.0,Active,
+C20378,Leo Jones,Business,UK,CF10 3AT,leo.jones378@example.com,2021-04-27,5000.0,227.75,Active,GB802181407
+C20379,George Taylor,Personal,UK,LS1 4AP,george.taylor379@example.com,2023-06-19,2500.0,1235.02,Active,
+C20380,Isla Taylor,Personal,UK,EX4 3SR,isla.taylor380@example.com,2022-10-06,1000.0,904.5,Active,
+C20381,Arthur Evans,Personal,UK,SW1A 1AA,arthur.evans381@example.com,2024-12-20,500.0,439.62,Active,
+C20382,Oscar Brown,Personal,UK,G2 1DY,oscar.brown382@example.com,2024-07-21,2500.0,590.06,Active,
+C20383,Freya Taylor,Personal,IE,,freya.taylor383@example.com,2023-03-07,1000.0,932.3,Active,
+C20384,Arthur Brown,Personal,UK,LS1 4AP,arthur.brown384@example.com,2019-04-20,1000.0,120.18,Active,
+C20385,Oliver Williams,Personal,UK,BA1 1LZ,oliver.williams385@example.com,2021-08-18,500.0,437.76,Active,
+C20386,Isla Wilson,Personal,UK,G2 1DY,isla.wilson386@example.com,2020-01-28,5000.0,503.08,Dormant,
+C20387,Ivy Patel,Personal,IE,,ivy.patel387@example.com,2025-01-12,5000.0,584.34,Active,
+C20388,Isla Brown,Personal,IE,,isla.brown388@example.com,2022-12-21,1000.0,154.83,Active,
+C20389,Mia Patel,Personal,UK,G2 1DY,mia.patel389@example.com,2022-06-07,2500.0,707.1,Active,
+C20390,Leo Patel,Personal,FR,,leo.patel390@example.com,2023-08-17,1000.0,517.2,Active,
+C20391,Oliver Williams,Business,UK,NR2 1BD,oliver.williams391@example.com,2018-06-13,500.0,475.0,Active,GB241446312
+C20392,George Taylor,Personal,UK,BS8 1TH,george.taylor392@example.com,2025-02-21,500.0,475.0,Active,
+C20393,Ivy Evans,Personal,UK,OX1 3BG,ivy.evans393@example.com,2023-02-22,1000.0,483.1,Dormant,
+C20394,Isla Williams,Business,UK,DE1 2FS,isla.williams394@example.com,2019-03-25,500.0,475.0,Active,GB873268402
+C20395,Noah Williams,Personal,UK,CF10 3AT,noah.williams395@example.com,2022-11-06,5000.0,212.41,Active,
+C20436,Isla Williams,Business,IE,,isla.williams396@example.com,2018-04-23,2500.0,919.34,Active,GB606792259
+C20397,Ava Evans,Personal,IE,,ava.evans397@example.com,2023-11-25,1000.0,950.0,Active,
+C20398,Mia Davies,Personal,FR,,mia.davies398@example.com,2021-02-13,2500.0,408.15,Active,
+C20399,George Walker,Personal,UK,LS1 4AP,george.walker399@example.com,2019-02-21,1000.0,308.76,Active,
+C20400,Leo Smith,Personal,IE,,leo.smith400@example.com,2024-05-05,5000.0,995.18,active,
+C20401,George Taylor,Business,FR,,george.taylor401@example.com,2024-02-12,500.0,475.0,Active,GB187408784
+C20402,Ivy Williams,Personal,IE,,ivy.williams402@example.com,2023-11-07,500.0,475.0,Dormant,
+C20403,Amelia Brown,Personal,UK,BS8 1TH,amelia.brown403@example.com,2021-10-07,2500.0,648.46,Active,
+C20404,Leo Evans,Business,IE,,leo.evans404@example.com,2019-10-05,500.0,303.2,Active,GB699109495
+C20405,Isla Smith,Personal,UK,YO1 7HH,isla.smith405@example.com,2021-06-30,500.0,461.55,Active,
+C20406,Mia Jones,Business,UK,SW1A 1AA,mia.jones406@example.com,2024-12-08,500.0,475.0,Active,GB613474975
+C20407,Oscar Evans,Business,IE,,oscar.evans407@example.com,2018-08-26,2500.0,467.58,Active,GB505739286
+C20408,Oscar Jones,Personal,IE,,oscar.jones408@example.com,2019-05-29,2500.0,1041.1,Active,
+C20409,Oscar Walker,Business,UK,DE1 2FS,oscar.walker409@example.com,2020-01-16,2500.0,641.82,Active,GB858323871
+C20410,Amelia Williams,Personal,UK,CF10 3AT,amelia.williams410@example.com,2024-01-07,1000.0,950.0,Active,
+C20411,Leo Walker,Personal,UK,BS8 1TH,leo.walker411@example.com,2022-12-14,5000.0,802.32,Active,
+C20412,Noah Davies,Business,UK,NR2 1BD,noah.davies412@example.com,2024-08-04,5000.0,517.9,Active,GB115433084
+C20413,Leo Patel,Personal,UK,CF10 3AT,leo.patel413@example.com,2020-04-07,1000.0,950.0,Active,
+C20414,Mia Taylor,Personal,FR,,mia.taylor414@example.com,2019-07-20,2500.0,528.23,Closed,
+C20415,Ivy Davies,Personal,UK,DE1 2FS,ivy.davies415@example.com,2021-10-17,2500.0,440.67,Active,
+C20416,Leo Taylor,Personal,UK,SW1A 1AA,leo.taylor416@example.com,2022-04-02,500.0,475.0,Active,
+C20417,Isla Smith,Business,IE,,isla.smith417@example.com,2024-03-04,2500.0,536.06,Active,GB131126798
+C20418,Freya Brown,Personal,UK,YO1 7HH,freya.brown418@example.com,2024-12-26,500.0,475.0,Closed,
+C20419,Ava Williams,Personal,UK,G2 1DY,ava.williams419@example.com,2024-10-24,2500.0,218.38,Active,
+C20420,Oliver Smith,Personal,UK,NR2 1BD,oliver.smith420@example.com,2024-09-17,1000.0,467.95,Active,
+C20421,Ava Williams,Personal,UK,LS1 4AP,ava.williams421@example.com,2022-11-05,2500.0,453.55,Active,
+C20422,Oscar Wilson,Personal,FR,,oscar.wilson422@example.com,2022-12-25,5000.0,1799.71,Active,
+C20423,Freya Patel,Personal,UK,G2 1DY,freya.patel423@example.com,2019-05-12,5000.0,280.24,Active,
+C20424,Oscar Patel,Business,UK,LS1 4AP,oscar.patel424@example.com,2022-02-22,1000.0,950.0,Active,GB586367759
+C20425,Noah Smith,Personal,FR,,noah.smith425@example.com,2023-06-21,2500.0,233.39,Active,
+C20426,Isla Davies,Personal,FR,,isla.davies426@example.com,2020-01-18,1000.0,222.67,Dormant,
+C20427,Oliver Smith,Business,UK,OX1 3BG,oliver.smith427@example.com,2018-09-07,1000.0,950.0,Active,GB734410652
+C20428,Mia Williams,Business,IE,,mia.williams428@example.com,2021-10-31,2500.0,951.98,Closed,GB532139949
+C20429,Freya Smith,Personal,UK,DE1 2FS,freya.smith429@example.com,2024-01-30,5000.0,1087.09,Active,
+C20430,Oscar Williams,Personal,FR,,oscar.williams430@example.com,2023-11-03,1000.0,555.08,Active,
+C20431,Leo Jones,Personal,UK,SW1A 1AA,leo.jones431@example.com,2020-09-20,1000.0,311.19,Active,
+C20432,Ivy Evans,Personal,UK,OX1 3BG,ivy.evans432@example.com,2025-05-21,500.0,448.29,Active,
+C20433,Arthur Evans,Personal,FR,,arthur.evans433@example.com,2022-04-22,2500.0,716.38,Closed,
+C20434,Mia Taylor,Business,UK,CF10 3AT,mia.taylor434@example.com,2024-02-21,2500.0,1421.29,Active,GB618939189
+C20435,Mia Smith,Personal,FR,,mia.smith435@example.com,2019-09-16,2500.0,325.97,Active,
+C20436,Amelia Wilson,Personal,FR,,oliver.jones@example,2020-05-03,1000.0,544.75,Dormant,
+C20437,Amelia Patel,Business,UK,CF10 3AT,amelia.patel437@example.com,2024-11-16,500.0,475.0,Active,GB116260711
+C20438,Ivy Patel,Personal,FR,,ivy.patel438@example.com,2022-04-11,5000.0,108.27,Active,
+C20439,Oscar Taylor,Business,IE,,oscar.taylor439@example.com,2019-06-23,1000.0,782.69,Closed,GB550336520
+C20440,Mia Evans,Personal,FR,,mia.evans440@example.com,2019-05-12,500.0,475.0,Active,
+C20441,Noah Smith,Business,IE,,noah.smith441@example.com,2018-05-19,1000.0,950.0,Active,GB857498800
+C20442,Amelia Taylor,Personal,IE,,amelia.taylor442@example.com,2022-05-09,5000.0,382.18,Active,
+C20443,Ava Walker,Personal,IE,,ava.walker443@example.com,2020-08-30,2500.0,412.67,Dormant,
+C20444,Noah Jones,Personal,UK,DE1 2FS,noah.jones444@example.com,2022-11-24,1000.0,603.55,Active,
+C20445,Ivy Taylor,Personal,UK,BS8 1TH,ivy.taylor445@example.com,2018-07-01,1000.0,249.3,Active,
+C20446,Oscar Davies,Personal,UK,BS8 1TH,oscar.davies446@example.com,2020-04-29,500.0,475.0,Active,
+C20447,Arthur Taylor,Personal,UK,SW1A 1AA,arthur.taylor447@example.com,2022-06-10,2500.0,555.39,Active,
+C20448,Ivy Davies,Personal,FR,,ivy.davies448@example.com,2024-08-19,5000.0,146.01,Active,
+C20449,Noah Smith,Business,UK,BS8 1TH,noah.smith449@example.com,2024-05-04,500.0,475.0,Active,GB831818652
+C20450,George Brown,Personal,IE,,george.brown450@example.com,2023-02-08,2500.0,663.56,Active,
+C20451,Freya Evans,Personal,FR,,freya.evans451@example.com,2023-08-10,2500.0,154.66,Closed,
+C20452,Isla Patel,Personal,UK,G2 1DY,isla.patel452@example.com,2023-02-26,500.0,452.86,Active,
+C20453,Leo Wilson,Business,IE,,leo.wilson453@example.com,2022-05-20,500.0,475.0,Active,GB878993642
+C20454,Ivy Evans,Personal,FR,,ivy.evans454@example.com,2018-05-10,2500.0,95.67,Active,
+C20455,Isla Jones,Business,UK,LS1 4AP,isla.jones455@example.com,2018-12-16,500.0,278.3,Active,GB874581890
+C20456,Noah Taylor,Personal,UK,OX1 3BG,noah.taylor456@example.com,2024-07-26,2500.0,399.19,Active,
+C20457,Mia Taylor,Personal,UK,BA1 1LZ,mia.taylor457@example.com,2022-11-16,1000.0,950.0,Active,
+C20458,Ivy Jones,Personal,UK,BA1 1LZ,ivy.jones458@example.com,2020-03-17,1000.0,232.17,Active,
+C20459,Oliver Taylor,Personal,UK,YO1 7HH,oliver.taylor459@example.com,2020-04-18,2500.0,428.22,Closed,
+C20460,Isla Patel,Personal,FR,,isla.patel460@example.com,2023-12-22,2500.0,786.8,Dormant,
+C20461,Noah Brown,Personal,UK,OX1 3BG,noah.brown461@example.com,2019-06-08,1000.0,71.42,Active,
+C20462,Oscar Evans,Personal,IE,,oscar.evans462@example.com,2018-04-16,1000.0,737.18,Dormant,
+C20463,Freya Taylor,Personal,UK,G2 1DY,freya.taylor463@example.com,2022-08-19,1000.0,126.35,Dormant,
+C20464,Freya Williams,Personal,FR,,freya.williams464@example.com,2021-05-10,5000.0,201.12,Active,
+C20465,Arthur Davies,Personal,IE,,arthur.davies465@example.com,2020-07-12,1000.0,432.24,Active,
+C20466,Noah Brown,Personal,UK,DE1 2FS,noah.brown466@example.com,2023-04-11,2500.0,124.95,Active,
+C20467,Ivy Patel,Business,UK,EX4 3SR,ivy.patel467@example.com,2020-04-03,500.0,475.0,Active,GB948035286
+C20468,Amelia Patel,Business,UK,BS8 1TH,amelia.patel468@example.com,2019-08-16,500.0,475.0,Active,GB545685329
+C20469,Oscar Davies,Personal,FR,,oscar.davies469@example.com,2023-05-30,500.0,237.6,Dormant,
+C20470,Oscar Smith,Personal,UK,EX4 3SR,oscar.smith470@example.com,2020-05-28,500.0,382.47,Active,
+C20471,Isla Davies,Business,FR,,isla.davies471@example.com,2022-06-02,1000.0,84.43,Active,GB723756301
+C20472,Amelia Taylor,Business,FR,,amelia.taylor472@example.com,2021-10-07,500.0,475.0,Active,GB538714755
+C20473,Isla Smith,Personal,IE,,isla.smith473@example.com,2023-06-22,500.0,475.0,Active,
+C20474,Isla Jones,Personal,UK,SW1A 1AA,isla.jones474@example.com,2024-11-05,5000.0,598.02,Active,
+C20475,Ava Patel,Business,UK,BA1 1LZ,ava.patel475@example.com,2020-01-21,5000.0,1253.53,Active,GB991708497
+C20476,Isla Jones,Personal,UK,G2 1DY,isla.jones476@example.com,2021-05-11,2500.0,1989.83,Active,
+C20477,Oscar Patel,Personal,FR,,oscar.patel477@example.com,2024-07-01,500.0,475.0,Active,
+C20478,Oliver Patel,Personal,UK,DE1 2FS,oliver.patel478@example.com,2019-07-07,500.0,475.0,Closed,
+C20479,Oliver Taylor,Personal,UK,LS1 4AP,oliver.taylor479@example.com,2025-08-28,500.0,475.0,Dormant,
+C20480,Mia Walker,Personal,UK,SW1A 1AA,mia.walker480@example.com,2020-09-22,500.0,365.85,Active,
+C20481,Oscar Jones,Personal,IE,,oscar.jones481@example.com,2023-03-25,5000.0,144.22,Dormant,
+C20482,Leo Davies,Personal,FR,,leo.davies482@example.com,2025-05-09,1000.0,711.47,Active,
+C20483,Noah Williams,Personal,UK,BA1 1LZ,noah.williams483@example.com,2019-06-18,5000.0,633.27,Dormant,
+C20484,George Wilson,Personal,FR,,george.wilson484@example.com,2025-02-20,2500.0,117.26,Active,
+C20485,Isla Evans,Personal,UK,OX1 3BG,isla.evans485@example.com,2019-09-15,500.0,335.42,Closed,
+C20486,Amelia Williams,Personal,UK,BA1 1LZ,amelia.williams486@example.com,2024-02-11,5000.0,272.06,Active,
+C20487,X,Personal,FR,,noah.davies487@example.com,2018-04-07,2500.0,261.29,Active,
+C20488,Isla Jones,Personal,UK,BS8 1TH,isla.jones488@example.com,2024-03-13,2500.0,608.39,Active,
+C20489,Leo Brown,Personal,UK,BA1 1LZ,leo.brown489@example.com,2019-04-30,2500.0,455.63,Active,
+C20490,George Evans,Personal,IE,,george.evans490@example.com,2018-08-13,5000.0,492.09,Active,
+C20491,Leo Taylor,Personal,FR,,leo.taylor491@example.com,2020-11-26,5000.0,1206.26,Active,
+C20492,Ivy Evans,Personal,UK,LS1 4AP,ivy.evans492@example.com,2019-01-27,5000.0,1183.87,Active,
+C20493,Freya Patel,Personal,UK,SW1A 1AA,freya.patel493@example.com,2022-05-08,1000.0,236.03,Active,
+C20494,Arthur Brown,Personal,UK,EX4 3SR,arthur.brown494@example.com,2018-05-18,500.0,475.0,Dormant,
+C20495,Isla Davies,Business,IE,,isla.davies495@example.com,2021-12-20,2500.0,275.95,Active,GB962383361
+C20496,Mia Brown,Business,FR,,mia.brown496@example.com,2020-08-07,5000.0,538.37,Active,GB423629789
+C20497,Freya Brown,Personal,UK,CF10 3AT,freya.brown497@example.com,2024-05-01,2500.0,1388.24,Active,
+C20498,Freya Patel,Business,FR,,freya.patel498@example.com,2021-05-04,1000.0,950.0,Active,GB981278703
+C20499,Oliver Williams,Business,UK,YO1 7HH,oliver.williams499@example.com,2019-11-14,5000.0,122.21,Active,GB259260510
+C20500,Freya Taylor,Business,UK,EX4 3SR,freya.taylor500@example.com,2019-10-26,5000.0,160.79,Active,GB207460828
+C20501,Leo Brown,Personal,UK,YO1 7HH,leo.brown501@example.com,2021-10-12,2500.0,152.67,Active,
+C20502,Leo Williams,Business,UK,G2 1DY,leo.williams502@example.com,2020-06-14,2500.0,278.42,Active,GB289988449
+C20503,Amelia Taylor,Personal,UK,OX1 3BG,amelia.taylor503@example.com,2018-09-18,250000.0,78.25,Active,
+C20504,Oscar Taylor,Personal,UK,G2 1DY,oscar.taylor504@example.com,2022-08-16,5000.0,619.39,Dormant,
+C20505,Oliver Taylor,Personal,FR,,oliver.taylor505@example.com,2024-07-12,2500.0,566.86,Active,
+C20506,Oliver Evans,Business,UK,DE1 2FS,oliver.evans506@example.com,2020-08-21,1000.0,935.31,Active,GB756159787
+C20507,,Personal,UK,BS8 1TH,freya.smith507@example.com,2023-12-22,5000.0,195.85,Active,
+C20508,Mia Patel,Personal,UK,DE1 2FS,mia.patel508@example.com,2023-04-09,5000.0,412.31,Active,
+C20509,Freya Brown,Personal,UK,NR2 1BD,freya.brown509@example.com,2020-07-07,500.0,66.16,Active,
+C20510,Ivy Evans,Personal,UK,G2 1DY,ivy.evans510@example.com,2019-10-14,-500.0,416.59,Active,
+C20511,Leo Jones,Personal,IE,,leo.jones511@example.com,2023-08-16,1000.0,358.36,Active,
+C20512,Arthur Jones,Personal,FR,,arthur.jones512@example.com,2023-07-14,2500.0,534.22,Active,
+C20513,Oscar Evans,Business,FR,,oscar.evans513@example.com,2021-07-02,2500.0,1078.7,Dormant,GB868032389
+C20514,George Patel,Business,FR,,george.patel514@example.com,2019-09-10,500.0,475.0,Active,GB468357180
+C20515,Arthur Patel,Business,IE,,arthur.patel515@example.com,2018-03-06,5000.0,443.26,Dormant,GB435420926
+C20516,George Patel,Personal,UK,EX4 3SR,george.patel516@example.com,2022-10-22,1000.0,146.04,Active,
+C20517,Arthur Patel,Personal,UK,M1 1AE,arthur.patel517@example.com,2022-06-08,2500.0,509.25,Active,
+C20518,Amelia Taylor,Business,UK,BA1 1LZ,amelia.taylor518@example.com,2025-04-21,1000.0,950.0,Active,GB443938249
+C20519,George Davies,Personal,UK,YO1 7HH,george.davies519@example.com,2022-09-02,2500.0,447.1,Active,
+C20520,Leo Smith,Personal,UK,YO1 7HH,leo.smith520@example.com,2018-08-29,2500.0,84.57,Active,
+C20521,Amelia Brown,Personal,UK,G2 1DY,amelia.brown521@example.com,2024-09-09,1000.0,591.96,Active,
+C20522,Mia Williams,Business,UK,G2 1DY,mia.williams522@example.com,2024-08-10,2500.0,615.36,Active,GB791320993
+C20523,Oscar Brown,Business,UK,NR2 1BD,oscar.brown523@example.com,2022-07-28,5000.0,398.38,Active,GB990208261
+C20524,Freya Smith,Personal,IE,,freya.smith524@example.com,2024-06-26,5000.0,345.68,Closed,
+C20525,Isla Smith,Personal,UK,YO1 7HH,isla.smith525@example.com,2019-02-03,500.0,102.0,Active,
+C20526,Freya Wilson,Personal,UK,YO1 7HH,freya.wilson526@example.com,2025-08-27,1000.0,880.3,Active,
+C20527,Leo Patel,Personal,UK,DE1 2FS,leo.patel527@example.com,2025-05-12,500.0,475.0,Active,
+C20528,Mia Wilson,Personal,UK,BS8 1TH,mia.wilson528@example.com,2020-04-28,5000.0,203.01,Active,
+C20529,Amelia Williams,Personal,UK,YO1 7HH,amelia.williams529@example.com,2021-05-03,500.0,475.0,Active,
+C20530,Freya Taylor,Personal,FR,,freya.taylor530@example.com,2022-04-10,2500.0,486.67,Active,
+C20531,Oliver Brown,Personal,IE,,oliver.brown531@example.com,2022-03-14,5000.0,175.26,Active,
+C20532,Ava Davies,Business,UK,BA1 1LZ,ava.davies532@example.com,2019-09-20,5000.0,212.96,Active,GB654396460
+C20533,Amelia Evans,Personal,UK,LS1 4AP,amelia.evans533@example.com,2025-04-11,5000.0,300.54,Active,
+C20534,Arthur Brown,Personal,UK,BS8 1TH,arthur.brown534@example.com,2024-07-24,1000.0,268.58,Dormant,
+C20535,Leo Davies,Personal,UK,YO1 7HH,leo.davies535@example.com,2022-03-18,5000.0,660.23,Closed,
+C20536,Mia Smith,Personal,IE,,mia.smith536@example.com,2018-04-24,2500.0,730.39,Dormant,
+C20537,Isla Taylor,Business,UK,NR2 1BD,isla.taylor537@example.com,2021-05-13,500.0,392.67,Active,GB905842415
+C20538,Ivy Williams,Personal,UK,BS8 1TH,ivy.williams538@example.com,2022-03-14,500.0,475.0,Active,
+C20539,Arthur Davies,Personal,UK,YO1 7HH,arthur.davies539@example.com,2023-01-27,5000.0,393.33,Active,
+C20540,Leo Evans,Personal,UK,YO1 7HH,leo.evans540@example.com,2023-01-28,2500.0,357.52,Active,
+C20541,George Brown,Personal,UK,M1 1AE,george.brown541@example.com,2023-11-12,1000.0,472.4,Active,
+C20542,Freya Jones,Personal,FR,,freya.jones542@example.com,2024-07-26,5000.0,453.56,Active,
+C20543,Leo Evans,Business,UK,G2 1DY,leo.evans543@example.com,2023-02-05,2500.0,462.84,Active,GB937580021
+C20544,Mia Davies,Personal,IE,,mia.davies544@example.com,2018-01-31,500.0,475.0,Active,
+C20545,Amelia Davies,Personal,FR,,amelia.davies545@example.com,2022-09-27,5000.0,202.96,Active,
+C20546,Oliver Jones,Personal,UK,BA1 1LZ,oliver.jones546@example.com,2022-10-23,500.0,355.89,Active,
+C20547,Amelia Walker,Personal,UK,LS1 4AP,amelia.walker547@example.com,2019-03-25,2500.0,312.25,Dormant,
+C20548,Isla Davies,Personal,UK,SW1A 1AA,isla.davies548@example.com,2023-11-03,1000.0,262.01,Active,
+C20549,Ava Patel,Personal,UK,SW1A 1AA,ava.patel549@example.com,2024-05-03,5000.0,1503.84,Active,
+C20550,Freya Brown,Personal,UK,BS8 1TH,freya.brown550@example.com,2018-04-25,500.0,475.0,Active,
+C20551,Amelia Brown,Business,UK,CF10 3AT,amelia.brown551@example.com,2023-05-13,5000.0,529.35,Active,GB849837818
+C20552,George Davies,Personal,FR,,george.davies552@example.com,2018-02-04,2500.0,965.56,Active,
+C20553,Ava Wilson,Business,UK,G2 1DY,ava.wilson553@example.com,2019-11-06,5000.0,737.02,Active,GB839394342
+C20554,Leo Smith,Personal,UK,DE1 2FS,leo.smith554@example.com,2019-10-03,1000.0,949.88,Active,
+C20555,Mia Evans,Personal,UK,G2 1DY,mia.evans555@example.com,2024-02-11,500.0,246.67,Active,
+C20556,Ivy Williams,Business,UK,NR2 1BD,ivy.williams556@example.com,2024-08-29,2500.0,580.07,Active,GB554851439
+C20557,Freya Taylor,Personal,FR,,freya.taylor557@example.com,2020-07-12,500.0,475.0,Active,
+C20558,Oscar Evans,Personal,UK,M1 1AE,oscar.evans558@example.com,2022-03-20,5000.0,7864.7,Active,
+C20559,Arthur Smith,Personal,UK,NR2 1BD,arthur.smith559@example.com,2019-07-21,1000.0,21.64,Closed,
+C20560,Ivy Patel,Personal,IE,,ivy.patel560@example.com,2025-08-23,1000.0,311.07,Active,
+C20561,Arthur Taylor,Personal,UK,EX4 3SR,arthur.taylor561@example.com,2024-12-11,500.0,183.13,Active,
+C20562,Arthur Brown,Personal,UK,M1 1AE,arthur.brown562@example.com,2021-06-23,1000.0,950.0,Active,
+C20563,Leo Davies,Personal,IE,,leo.davies563@example.com,2020-08-31,5000.0,365.99,Active,
+C20564,Mia Williams,Business,UK,OX1 3BG,mia.williams564@example.com,2020-08-08,2500.0,181.29,Active,GB748731533
+C20565,Arthur Walker,Personal,UK,NR2 1BD,arthur.walker565@example.com,2023-03-14,5000.0,219.24,Active,
+C20566,Noah Davies,Personal,IE,,noah.davies566@example.com,2020-06-30,2500.0,307.64,Active,
+C20567,Arthur Evans,Business,UK,OX1 3BG,arthur.evans567@example.com,2023-07-11,5000.0,617.81,Active,GB267898137
+C20568,Leo Walker,Personal,UK,LS1 4AP,leo.walker568@example.com,2018-08-01,2500.0,1112.1,Closed,
+C20569,Arthur Wilson,Business,UK,LS1 4AP,arthur.wilson569@example.com,2023-11-27,500.0,311.98,Dormant,GB621758121
+C20570,George Patel,Personal,UK,EX4 3SR,george.patel570@example.com,2019-06-20,2500.0,2726.83,Active,
+C20571,Noah Williams,Personal,UK,EX4 3SR,noah.williams571@example.com,2020-08-17,1000.0,628.12,Active,
+C20572,Ivy Williams,Personal,FR,,ivy.williams572@example.com,2018-12-21,5000.0,462.28,Active,
+C20573,Oscar Taylor,Personal,UK,CF10 3AT,oscar.taylor573@example.com,2018-11-06,5000.0,1405.18,Active,
+C20574,Arthur Smith,Personal,UK,SW1A 1AA,arthur.smith574@example.com,2025-05-28,500.0,300.39,Active,
+C20575,George Brown,Personal,UK,M1 1AE,george.brown575@example.com,2021-08-01,500.0,475.0,Active,
+C20576,Arthur Walker,Business,UK,BA1 1LZ,arthur.walker576@example.com,2023-05-17,5000.0,406.8,Active,GB762065776
+C20577,Oliver Wilson,Business,UK,CF10 3AT,oliver.wilson577@example.com,2019-10-22,5000.0,174.12,Active,GB226646671
+C20578,Ivy Evans,Business,IE,,ivy.evans578@example.com,2022-09-24,5000.0,383.97,Dormant,GB798520795
+C20579,Mia Evans,Personal,UK,CF10 3AT,mia.evans579@example.com,2025-02-08,1000.0,249.75,Active,
+C20580,Amelia Patel,Personal,UK,CF10 3AT,amelia.patel580@example.com,2018-04-18,1000.0,91.92,Active,
+C20581,Isla Jones,Business,UK,G2 1DY,isla.jones581@example.com,2021-03-16,1000.0,510.65,Active,GB333413650
+C20582,Ava Taylor,Personal,IE,N/A,ava.taylor582@example.com,2022-06-17,5000.0,130.85,Active,
+C20583,Amelia Davies,Personal,UK,SW1A 1AA,amelia.davies583@example.com,2024-08-16,2500.0,589.97,Active,
+C20584,Amelia Evans,Personal,FR,,amelia.evans584@example.com,2018-12-20,2500.0,250.75,Active,
+C20585,Noah Walker,Personal,UK,LS1 4AP,noah.walker585@example.com,2024-12-15,1000.0,233.98,Active,
+C20586,Amelia Brown,Personal,UK,OX1 3BG,x y@example.com,2021-06-22,5000.0,1000.53,Active,
+C20587,Amelia Smith,Personal,UK,YO1 7HH,amelia.smith587@example.com,2022-11-25,2500.0,727.93,Active,
+C20588,Isla Walker,Personal,FR,,isla.walker588@example.com,2019-06-26,5000.0,244.46,Active,
+C20589,Isla Patel,Personal,UK,G2 1DY,isla.patel589@example.com,2024-09-05,500.0,268.07,Active,
+C20590,Leo Williams,Personal,IE,,leo.williams590@example.com,2023-09-18,500.0,475.0,Active,
+C20591,Oscar Jones,Personal,UK,NR2 1BD,oscar.jones591@example.com,2018-10-18,500.0,475.0,Active,
+C20592,Oscar Jones,Personal,UK,BA1 1LZ,oscar.jones592@example.com,2019-03-04,500.0,475.0,Closed,
+C20593,Isla Taylor,Personal,UK,NR2 1BD,isla.taylor593@example.com,2019-10-26,2500.0,1046.76,Active,
+C20594,Oliver Davies,Personal,IE,,oliver.davies594@example.com,2021-01-28,500.0,371.24,Active,
+C20595,George Davies,Personal,IE,,george.davies595@example.com,2019-03-31,500.0,54.85,Active,
+C20596,George Williams,Personal,UK,M1 1AE,george.williams596@example.com,2020-10-28,5000.0,1161.18,Dormant,
+C20597,Isla Walker,Personal,UK,SW1A 1AA,isla.walker597@example.com,2023-03-10,1000.0,950.0,Active,
+C20598,Mia Evans,Business,FR,BS81TH ,mia.evans598@example.com,2023-03-11,1000.0,772.93,Active,GB147102303
+C20599,George Jones,Personal,UK,YO1 7HH,george.jones599@example.com,2023-11-08,500.0,335.9,Dormant,
+C20600,Ava Evans,Personal,UK,G2 1DY,ava.evans600@example.com,2020-04-25,5000.0,667.43,Closed,
+C20601,Leo Brown,Personal,FR,,leo.brown601@example.com,2020-04-25,2500.0,467.42,Active,
+C20602,Arthur Davies,Business,UK,G2 1DY,arthur.davies602@example.com,2019-03-02,500.0,475.0,Active,GB838441606
+C20603,Oscar Patel,Personal,UK,NR2 1BD,oscar.patel603@example.com,2019-09-27,2500.0,355.28,Dormant,
+C20604,Oscar Smith,Personal,UK,M1 1AE,oscar.smith604@example.com,2020-03-10,5000.0,686.03,Live,
+C20605,Isla Taylor,Personal,UK,EX4 3SR,isla.taylor605@example.com,2022-01-04,500.0,237.92,Active,
+C20606,Amelia Walker,Personal,IE,,amelia.walker606@example.com,2018-02-19,500.0,38.01,Active,
+C20607,Ava Jones,Personal,UK,BS8 1TH,ava.jones607@example.com,2021-06-17,5000.0,995.07,Active,
+C20608,Oliver Wilson,Personal,IE,,oliver.wilson608@example.com,2025-05-12,1000.0,641.59,Active,
+C20609,Freya Patel,Business,UK,OX1 3BG,freya.patel609@example.com,2019-08-04,5000.0,682.7,Active,GB887683293
+C20610,Leo Walker,Personal,UK,M1 1AE,leo.walker610@example.com,2024-10-06,500.0,279.16,Dormant,
+C20611,Ava Taylor,Personal,UK,LS1 4AP,ava.taylor611@example.com,2022-02-12,5000.0,301.48,Active,
+C20612,Ivy Patel,Personal,UK,SW1A 1AA,ivy.patel612@example.com,2021-05-17,2500.0,859.14,Active,
+C20613,Leo Taylor,Personal,UK,M1 1AE,leo.taylor613@example.com,2025-02-18,2500.0,1080.39,Active,
+C20614,Oliver Brown,Personal,UK,BA1 1LZ,oliver.brown614@example.com,2027-11-30,5000.0,692.38,Active,
+C20615,Noah Evans,Personal,UK,CF10 3AT,noah.evans615@example.com,2024-02-08,1000.0,64.3,Active,
+C20616,Freya Taylor,Personal,UK,NR2 1BD,freya.taylor616@example.com,2024-04-15,5000.0,805.77,Closed,
+C20617,Oscar Davies,Personal,UK,SW1A 1AA,oscar.davies617@example.com,2019-09-23,1000.0,936.4,Active,
+C20618,Oscar Evans,Business,UK,EX4 3SR,oscar.evans618@example.com,2018-10-09,0.0,1257.05,Active,GB957963836
+C20619,George Williams,Business,UK,EX4 3SR,george.williams619@example.com,2019-07-15,2500.0,422.82,Active,GB498728819
+C20620,Oscar Brown,Personal,UK,BS8 1TH,oscar.brown620@example.com,2023-08-03,2500.0,548.82,Active,
+C20621,Arthur Evans,Personal,IE,,arthur.evans621@example.com,2025-07-03,5000.0,553.81,Active,
+C20622,Ava Brown,Personal,IE,,ava.brown622@example.com,2022-02-22,1000.0,124.48,Active,
+C20647,Noah Walker,Personal,UK,BA1 1LZ,noah.walker623@example.com,2019-09-11,500.0,298.59,Active,
+C20624,Ivy Taylor,Personal,IE,,ivy.taylor624@example.com,2022-02-14,1000.0,950.0,Closed,
+C20625,Isla Wilson,Personal,FR,,isla.wilson625@example.com,2018-06-29,1000.0,712.19,Active,
+C20626,Isla Wilson,Personal,UK,M1 1AE,isla.wilson626@example.com,2023-02-12,500.0,236.18,Active,
+C20627,Ivy Brown,Personal,UK,SW1A 1AA,ivy.brown627@example.com,2022-04-28,5000.0,601.89,Active,
+C20628,Arthur Jones,Business,UK,G2 1DY,arthur.jones628@example.com,2025-02-14,2500.0,479.35,Active,GB648889468
+C20629,Leo Brown,Personal,IE,,leo.brown629@example.com,2019-05-24,1000.0,196.41,Active,
+C20630,Leo Taylor,Personal,UK,BA1 1LZ,leo.taylor630@example.com,2023-02-28,1000.0,950.0,Active,
+C20631,Ava Taylor,Personal,UK,EX4 3SR,ava.taylor631@example.com,2023-02-10,5000.0,608.49,Active,
+C20632,Ivy Smith,Personal,UK,M1 1AE,ivy.smith632@example.com,2020-01-01,5000.0,68.72,Active,
+C20633,George Patel,Personal,UK,G2 1DY,george.patel633@example.com,2023-03-31,500.0,475.0,,
+C20634,Noah Brown,Business,UK,G2 1DY,noah.brown634@example.com,2018-09-13,2500.0,792.74,Active,GB539205367
+C20635,Leo Walker,Personal,UK,NR2 1BD,leo.walker635@example.com,2024-10-21,5000.0,673.93,Active,
+C20636,Arthur Taylor,Personal,UK,LS1 4AP,arthur.taylor636@example.com,2020-05-18,5000.0,589.41,Active,
+C20637,Oscar Taylor,Personal,UK,EX4 3SR,oscar.taylor637@example.com,2022-06-27,500.0,475.0,Active,
+C20638,George Williams,Personal,UK,NR2 1BD,george.williams638@example.com,2021-11-08,5000.0,807.91,Active,
+C20639,Noah Smith,Personal,FR,,noah.smith639@example.com,2021-06-14,500.0,327.93,Active,
+C20640,George Brown,Personal,UK,YO1 7HH,george.brown640@example.com,2020-07-24,1000.0,146.71,Active,
+C20641,Ava Jones,Personal,UK,G2 1DY,ava.jones641@example.com,2025-02-23,5000.0,1617.04,Active,
+C20642,Leo Smith,Personal,FR,,leo.smith642@example.com,2022-12-07,5000.0,660.9,Active,
+C20643,Leo Smith,Personal,UK,G2 1DY,leo.smith643@example.com,2019-05-03,1000.0,258.44,Active,
+C20644,Oscar Taylor,Personal,FR,,oscar.taylor644@example.com,2023-10-27,2500.0,1137.37,Active,
+C20645,Arthur Smith,Personal,UK,SW1A 1AA,arthur.smith645@example.com,2025-02-23,500.0,475.0,Dormant,
+C20646,Noah Brown,Personal,FR,,noah.brown646@example.com,2022-06-01,1000.0,154.03,Active,
+C20647,Amelia Evans,Personal,FR,,amelia.smith@,2021-05-02,1000.0,334.52,Active,
+C20648,Noah Jones,Personal,IE,,noah.jones648@example.com,2022-06-15,2500.0,248.46,Active,
+C20649,Noah Jones,Business,IE,,noah.jones649@example.com,2023-02-12,500.0,176.17,Active,GB684351508
+C20650,Leo Williams,Business,FR,,leo.williams650@example.com,2019-06-08,2500.0,359.57,Dormant,GB637506717
+C20651,Leo Wilson,Personal,IE,,leo.wilson651@example.com,2022-03-01,2500.0,157.56,Active,
+C20652,Leo Evans,Personal,FR,,leo.evans652@example.com,2024-04-27,5000.0,665.71,Active,
+C20653,Ava Williams,Personal,UK,NR2 1BD,ava.williams653@example.com,2018-06-25,2500.0,888.99,Active,
+C20654,Mia Evans,Business,IE,,mia.evans654@example.com,2022-11-21,1000.0,950.0,Closed,GB204334266
+C20655,Oliver Jones,Personal,FR,,oliver.jones655@example.com,2020-04-22,500.0,475.0,Active,
+C20656,Noah Smith,Personal,FR,,noah.smith656@example.com,2021-07-05,2500.0,874.57,Active,
+C20657,Mia Evans,Business,UK,BA1 1LZ,mia.evans657@example.com,2023-08-21,500.0,422.82,Active,GB647154476
+C20658,Oscar Wilson,Personal,UK,YO1 7HH,oscar.wilson658@example.com,2022-03-07,5000.0,872.42,Active,
+C20659,Leo Taylor,Personal,UK,NR2 1BD,leo.taylor659@example.com,2024-05-09,500.0,4.37,Dormant,
+C20660,Freya Davies,Personal,UK,LS1 4AP,freya.davies660@example.com,2022-03-01,1000.0,449.23,Active,
+C20661,Arthur Smith,Business,FR,,arthur.smith661@example.com,2020-07-03,500.0,462.01,Active,GB740479963
+C20662,Ava Williams,Personal,UK,OX1 3BG,ava.williams662@example.com,2022-08-26,2500.0,821.05,Active,
+C20663,Oliver Williams,Personal,UK,LS1 4AP,oliver.williams663@example.com,2023-01-09,5000.0,480.06,Active,
+C20664,Noah Jones,Personal,FR,,noah.jones664@example.com,2021-03-04,5000.0,751.61,Active,
+C20665,Leo Williams,Personal,UK,NR2 1BD,leo.williams665@example.com,2023-09-08,500.0,475.0,Active,
+C20666,Ava Brown,Personal,UK,NR2 1BD,ava.brown666@example.com,2021-11-03,1000.0,950.0,Closed,
+C20667,Leo Davies,Personal,UK,OX1 3BG,leo.davies667@example.com,2023-04-13,500.0,528.73,Dormant,
+C20668,Noah Wilson,Business,UK,YO1 7HH,noah.wilson668@example.com,2020-04-12,5000.0,606.61,Closed,GB877059021
+C20669,Mia Davies,Personal,UK,YO1 7HH,mia.davies669@example.com,2019-07-12,2500.0,304.05,Active,
+C20670,Freya Jones,Personal,IE,,freya.jones670@example.com,2022-08-27,500.0,184.68,Active,
+C20671,Ivy Smith,Business,FR,,ivy.smith671@example.com,2025-06-09,1000.0,950.0,Active,GB562064223
+C20672,Oscar Brown,Personal,IE,,oscar.brown672@example.com,2019-06-21,1000.0,950.0,Active,
+C20673,Mia Wilson,Business,UK,LS1 4AP,mia.wilson673@example.com,2023-03-04,2500.0,671.44,Active,GB879938995
+C20674,  ,Business,UK,NR2 1BD,george.williams674@example.com,2021-11-01,500.0,425.04,Active,GB556932067
+C20675,Mia Smith,Business,UK,CF10 3AT,mia.smith675@example.com,2019-02-05,1000.0,125.05,Active,GB448743891
+C20676,Leo Jones,Business,UK,OX1 3BG,leo.jones676@example.com,2022-02-28,1000.0,223.69,Active,GB668334138
+C20677,Leo Smith,Personal,UK,M1 1AE,leo.smith677@example.com,2018-12-24,1000.0,413.58,Active,
+C20678,George Walker,Personal,UK,EX4 3SR,george.walker678@example.com,2021-08-22,500.0,190.63,Active,
+C20679,Oscar Williams,Business,UK,SW1A 1AA,oscar.williams679@example.com,2020-12-06,2500.0,35.22,Active,GB110292897
+C20680,Freya Patel,Business,IE,,freya.patel680@example.com,2018-08-27,500.0,475.0,Active,GB275087921
+C20681,Oliver Davies,Personal,IE,,oliver.davies681@example.com,2022-06-13,5000.0,1044.48,Active,
+C20682,Oscar Smith,Personal,IE,,oscar.smith682@example.com,2021-09-09,5000.0,812.07,Active,
+C20683,Ava Jones,Business,UK,YO1 7HH,ava.jones683@example.com,2025-05-06,5000.0,142.11,Active,GB232050116
+C20684,Oliver Patel,Business,IE,,oliver.patel684@example.com,2019-11-01,1000.0,339.59,Dormant,GB519450278
+C20685,George Brown,Business,IE,,george.brown685@example.com,2023-10-09,1000.0,99.96,Dormant,GB144096522
+C20686,Leo Taylor,Personal,FR,,leo.taylor686@example.com,2022-04-15,5000.0,762.21,Active,
+C20687,Leo Taylor,Personal,FR,,leo.taylor687@example.com,2023-08-19,5000.0,202.0,Dormant,
+C20688,Mia Smith,Personal,UK,DE1 2FS,mia.smith688@example.com,2018-02-27,2500.0,341.14,Dormant,
+C20689,Mia Brown,Business,UK,CF10 3AT,mia.brown689@example.com,2022-09-30,500.0,475.0,Active,GB915037047
+C20690,Mia Taylor,Personal,UK,DE1 2FS,mia.taylor690@example.com,2024-10-09,500.0,93.34,Active,
+C20691,Arthur Brown,Business,UK,G2 1DY,arthur.brown691@example.com,2021-08-06,1000.0,258.01,Active,GB378902056
+C20692,Freya Taylor,Business,UK,M1 1AE,freya.taylor692@example.com,2021-11-24,2500.0,892.67,Active,GB535189342
+C20693,George Patel,Personal,UK,CF10 3AT,george.patel693@example.com,2023-03-31,5000.0,719.74,Active,
+C20694,Mia Patel,Personal,UK,G2 1DY,mia.patel694@example.com,2024-12-11,500.0,401.99,Active,
+C20695,Oscar Brown,Personal,IE,,oscar.brown695@example.com,2025-07-03,2500.0,1517.18,Active,
+C20696,Leo Williams,Business,UK,BA1 1LZ,leo.williams696@example.com,2024-02-08,2500.0,453.35,Active,GB740266808
+C20697,Freya Williams,Personal,IE,,freya.williams697@example.com,2018-03-04,500.0,285.17,Active,
+C20698,Ivy Wilson,Personal,UK,EX4 3SR,ivy.wilson698@example.com,2025-05-02,2500.0,830.4,Active,
+C20699,Freya Williams,Personal,IE,,freya.williams699@example.com,2023-01-06,5000.0,431.65,Active,
+C20700,Isla Brown,Personal,IE,,isla.brown700@example.com,2023-11-20,2500.0,1057.3,Active,
+C20701,Freya Evans,Business,UK,M1 1AE,freya.evans701@example.com,2020-10-18,2500.0,1373.88,Active,GB319610570
+C20702,Leo Evans,Personal,UK,M1 1AE,leo.evans702@example.com,2021-03-24,2500.0,245.78,Active,
+C20703,Noah Wilson,Personal,FR,,noah.wilson703@example.com,2019-08-31,5000.0,1604.78,Active,
+C20704,Oliver Davies,Personal,UK,M1 1AE,oliver.davies704@example.com,2019-03-14,5000.0,765.58,Dormant,
+C20705,Ava Davies,Personal,UK,DE1 2FS,ava.davies705@example.com,2021-10-14,5000.0,235.69,Active,
+C20706,Amelia Evans,Personal,UK,SW1A 1AA,amelia.evans706@example.com,2018-12-26,2500.0,1095.28,Dormant,
+C20707,Mia Davies,Personal,UK,SW1A 1AA,mia.davies707@example.com,2022-09-26,500.0,100.89,Active,
+C20708,Mia Brown,Personal,IE,,mia.brown708@example.com,2019-09-24,1000.0,199.85,Active,
+C20709,Arthur Williams,Personal,UK,LS1 4AP,arthur.williams709@example.com,2020-02-14,2500.0,580.79,Active,
+C20710,Oscar Evans,Personal,IE,,oscar.evans710@example.com,2024-12-28,5000.0,866.4,Active,
+C20711,Noah Patel,Personal,UK,YO1 7HH,noah.patel711@example.com,2024-05-25,5000.0,858.26,Active,
+C20011,Oscar Davies,Personal,UK,G2 1DY,oscar.davies712@example.com,2021-02-27,1000.0,516.09,Active,
+C20713,Amelia Davies,Personal,UK,SW1A 1AA,amelia.davies713@example.com,2024-05-08,5000.0,828.17,Active,
+C20714,Noah Wilson,Personal,UK,DE1 2FS,noah.wilson714@example.com,2021-01-02,2500.0,670.65,Dormant,
+C20715,Noah Brown,Personal,UK,M1 1AEE,noah.brown715@example.com,2019-05-22,2500.0,1253.09,Dormant,
+C20716,Mia Davies,Personal,UK,NR2 1BD,mia.davies716@example.com,2022-12-01,5000.0,272.85,Dormant,
+C20717,George Evans,Business,UK,BA1 1LZ,george.evans717@example.com,2019-12-03,1000.0,615.44,Active,GB413236866
+C20718,Arthur Patel,Personal,FR,,arthur.patel718@example.com,2025-05-18,2500.0,319.25,Active,
+C20719,Ivy Williams,Personal,UK,M1 1AE,ivy.williams719@example.com,2019-06-09,5000.0,129.09,Active,
+C20720,Ivy Taylor,Business,UK,NR2 1BD,ivy.taylor720@example.com,2025-02-06,2500.0,722.38,Active,GB644764382
+C20721,Oscar Jones,Business,FR,,oscar.jones721@example.com,2024-05-27,1000.0,950.0,Active,GB430060291
+C20722,Leo Davies,Personal,UK,LS1 4AP,leo.davies722@example.com,2018-12-31,2500.0,740.53,Active,
+C20723,Ivy Brown,Personal,UK,G2 1DY,ivy.brown723@example.com,2024-08-17,5000.0,207.09,Active,
+C20724,Oscar Brown,Personal,UK,OX1 3BG,oscar.brown724@example.com,2022-03-13,1000.0,371.85,Active,
+C20725,Arthur Evans,Personal,IE,,arthur.evans725@example.com,2021-10-13,2500.0,1387.56,Active,
+C20726,Amelia Brown,Business,UK,CF10 3AT,amelia.brown726@example.com,2019-07-13,500.0,475.0,Active,GB203899058
+C20727,George Williams,Personal,FR,,george.williams727@example.com,2025-07-03,5000.0,369.08,Active,
+C20728,Noah Williams,Personal,UK,BS8 1TH,noah.williams728@example.com,2019-06-01,1000.0,222.87,Active,
+C20729,Ava Davies,Personal,UK,NR2 1BD,ava.davies729@example.com,2023-01-27,1000.0,50.29,Active,
+C20730,Mia Evans,Personal,FR,,mia.evans730@example.com,2021-11-08,1000.0,62.36,Closed,
+C20731,Leo Wilson,Personal,UK,M1 1AE,leo.wilson731@example.com,2019-07-20,5000.0,1208.08,Dormant,
+C20732,Amelia Patel,Personal,UK,BS8 1TH,amelia.patel732@example.com,2025-07-15,1000.0,950.0,Dormant,
+C20733,Arthur Davies,Personal,UK,OX1 3BG,arthur.davies733@example.com,2021-07-20,1000.0,296.43,Active,
+C20734,Freya Brown,Personal,FR,,freya.brown734@example.com,2021-10-06,5000.0,759.35,Active,
+C20735,Oscar Williams,Personal,UK,OX1 3BG,oscar.williams735@example.com,2021-09-17,5000.0,114.9,Active,
+C20736,Oscar Davies,Personal,UK,YO1 7HH,oscar.davies736@example.com,2023-04-12,2500.0,710.22,Active,
+C20737,Leo Smith,Personal,FR,,leo.smith737@example.com,2019-06-09,1000.0,950.0,Active,
+C20738,Isla Smith,Personal,UK,CF10 3AT,isla.smith738@example.com,2018-04-28,500.0,168.95,Active,
+C20739,Freya Taylor,Personal,UK,M1 1AE,freya.taylor739@example.com,2019-07-06,5000.0,785.06,Dormant,
+C20740,Ava Brown,Personal,IE,,ava.brown740@example.com,2024-02-18,5000.0,1458.98,Active,
+C20741,Ivy Jones,Business,UK,DE1 2FS,ivy.jones741@example.com,2020-10-28,500.0,475.0,Active,GB118466224
+C20742,Noah Smith,Business,UK,EX4 3SR,noah.smith742@example.com,2023-11-13,2500.0,364.26,Active,GB801959536
+C20743,Leo Taylor,Personal,UK,DE1 2FS,leo.taylor743@example.com,2021-05-19,2500.0,192.07,Active,
+C20744,Leo Patel,Business,IE,,leo.patel744@example.com,2023-09-28,500.0,475.0,Active,GB220329120
+C20745,Oliver Jones,Personal,UK,LS1 4AP,oliver.jones745@example.com,2019-05-12,5000.0,557.85,Active,
+C20746,Isla Williams,Personal,UK,DE1 2FS,isla.williams746@example.com,2018-02-13,2500.0,570.43,Dormant,
+C20747,Oliver Patel,Personal,FR,,oliver.patel747@example.com,2024-10-21,500.0,350.6,Dormant,
+C20748,Oscar Wilson,Personal,UK,M1 1AE,oscar.wilson748@example.com,2020-05-11,500.0,555.55,Active,
+C20749,Noah Brown,Personal,UK,LS1 4AP,noah.brown749@example.com,2021-05-22,2500.0,182.93,Active,
+C20750,Freya Davies,Personal,IE,,freya.davies750@example.com,2019-09-28,500.0,292.51,Active,
+C20751,Freya Davies,Business,UK,BA1 1LZ,freya.davies751@example.com,2023-04-21,500.0,318.08,Active,GB511763481
+C20752,Freya Jones,Personal,UK,BA1 1LZ,freya.jones752@example.com,2023-06-08,5000.0,368.06,Active,
+C20753,Mia Walker,Personal,UK,EX4 3SR,mia.walker753@example.com,2023-04-18,5000.0,478.18,Active,
+C20754,Arthur Davies,Personal,UK,BA1 1LZ,arthur.davies754@example.com,2021-05-01,1000.0,203.2,Active,
+C20755,Arthur Brown,Business,FR,,arthur.brown755@example.com,2021-05-22,5000.0,302.73,Active,GB282946875
+C20756,Arthur Patel,Personal,UK,BS8 1TH,arthur.patel756@example.com,2019-03-23,1000.0,413.4,Dormant,
+C20757,Oscar Taylor,Personal,UK,SW1A 1AA,oscar.taylor757@example.com,2023-12-11,2500.0,49.22,Active,
+C20758,George Jones,Personal,UK,SW1A 1AA,george.jones758@example.com,2023-03-30,5000.0,622.85,Active,
+C20759,Oliver Patel,Personal,UK,EX4 3SR,oliver.patel759@example.com,2024-05-27,2500.0,1255.5,Active,
+C20760,Ava Taylor,Personal,FR,,ava.taylor760@example.com,2023-12-19,2500.0,66.61,Active,
+C20761,Noah Evans,Personal,IE,,noah.evans761@example.com,2021-06-08,2500.0,371.74,Active,
+C20762,Leo Brown,Personal,UK,LS1 4AP,leo.brown762@example.com,2022-06-03,2500.0,517.16,Active,
+C20763,Freya Walker,Personal,UK,OX1 3BG,freya.walker763@example.com,2024-03-22,500.0,243.72,Dormant,
+C20764,Freya Williams,Personal,FR,,freya.williams764@example.com,2021-10-15,5000.0,109.82,Active,
+C20765,Isla Brown,Personal,FR,,isla.brown765@example.com,2022-01-02,2500.0,747.63,Active,
+C20766,Ivy Williams,Personal,FR,,ivy.williams766@example.com,2018-03-10,1000.0,370.35,Dormant,
+C20767,Ivy Walker,Personal,UK,DE1 2FS,ivy.walker767@example.com,2025-07-26,500.0,475.0,Active,
+C20768,Ava Jones,Personal,UK,LS1 4AP,ava.jones768@example.com,2020-07-28,500.0,105.63,Active,
+C20769,Arthur Williams,Personal,UK,M1 1AE,arthur.williams769@example.com,2022-12-01,2500.0,774.1,Active,
+C20770,Ava Williams,Personal,UK,SW1A 1AA,ava.williams770@example.com,2025-03-24,1000.0,766.64,Dormant,
+C20771,Isla Wilson,Personal,UK,OX1 3BG,isla.wilson771@example.com,2021-09-25,1000.0,566.51,Active,
+C20772,Ava Patel,Business,UK,DE1 2FS,ava.patel772@example.com,2023-11-29,5000.0,464.78,Active,GB876542204
+C20773,Noah Patel,Business,UK,BA1 1LZ,noah.patel773@example.com,2018-06-22,5000.0,1469.52,Active,GB531696474
+C20774,Mia Williams,Personal,UK,NR2 1BD,mia.williams774@example.com,2021-06-19,5000.0,148.63,Active,
+C20775,George Williams,Personal,UK,DE1 2FS,george.williams775@example.com,2025-01-25,1000.0,363.25,Dormant,
+C20776,Leo Walker,Business,UK,YO1 7HH,leo.walker776@example.com,2021-03-15,5000.0,1148.15,Active,GB859921291
+C20777,Isla Davies,Personal,FR,,isla.davies777@example.com,2021-02-28,5000.0,682.29,Active,
+C20778,Noah Patel,Personal,UK,YO1 7HH,noah.patel778@example.com,2024-10-23,500.0,379.94,Active,
+C20779,Noah Jones,Business,UK,CF10 3AT,noah.jones779@example.com,2023-09-15,500.0,475.0,Active,GB620867419
+C20780,Ava Williams,Personal,UK,M1 1AE,ava.williams780@example.com,2021-11-10,5000.0,752.68,Active,
+C20781,Oscar Evans,Personal,UK,EX4 3SR,oscar.evans781@example.com,2024-01-09,1000.0,778.16,Dormant,
+C20782,Noah Wilson,Personal,UK,LS1 4AP,noah.wilson782@example.com,2024-10-22,2500.0,1014.35,Active,
+C20783,Arthur Williams,Business,UK,BS8 1TH,arthur.williams783@example.com,2024-03-02,1000.0,445.31,Active,GB362963162
+C20784,George Patel,Personal,UK,CF10 3AT,george.patel784@example.com,2021-11-06,2500.0,1784.68,Active,
+C20785,Isla Jones,Personal,UK,SW1A 1AA,isla.jones785@example.com,2021-11-26,1000.0,421.47,Active,
+C20786,Ivy Williams,Business,IE,,ivy.williams786@example.com,2023-07-31,500.0,475.0,Active,GB777076873
+C20787,Ivy Taylor,Personal,UK,BS8 1TH,ivy.taylor787@example.com,2024-11-09,500.0,741.02,Closed,
+C20788,Mia Evans,Personal,IE,,mia.evans788@example.com,2025-01-31,500.0,475.0,Active,
+C20789,Oliver Walker,Personal,UK,EX4 3SR,oliver.walker789@example.com,2024-01-05,500.0,475.0,Active,
+C20790,Noah Evans,Personal,UK,YO1 7HH,noah.evans790@example.com,2022-10-08,5000.0,658.87,Active,
+C20791,Ava Brown,Personal,UK,LS1 4AP,ava.brown791@example.com,2022-07-22,2500.0,513.67,Dormant,
+C20792,Ivy Walker,Business,UK,M1 1AE,ivy.walker792@example.com,2024-02-16,1000.0,656.38,Active,GB818867101
+C20793,Oliver Jones,Personal,IE,,oliver.jones793@example.com,2019-07-07,5000.0,1279.54,Active,
+C20794,Ivy Smith,Personal,UK,M1 1AE,ivy.smith794@example.com,2021-12-26,500.0,414.53,Active,
+C20795,Ava Jones,Personal,UK,M1 1AE,ava.jones795@example.com,2019-04-12,1000.0,948.22,Closed,
+C20796,Ivy Williams,Personal,UK,SW1A 1AA,ivy.williams796@example.com,2023-10-04,2500.0,305.96,Active,
+C20797,Oliver Williams,Personal,UK,CF10 3AT,oliver.williams797@example.com,2022-06-16,500.0,109.76,Active,
+C20798,Freya Jones,Personal,UK,BA1 1LZ,freya.jones798@example.com,2022-12-29,1000.0,194.21,Active,
+C20799,Leo Walker,Personal,IE,,leo.walker799@example.com,2020-03-22,5000.0,99.62,Active,

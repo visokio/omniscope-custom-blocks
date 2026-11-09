@@ -1,0 +1,186 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Stock Run-Out Projection",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Projects stock day by day from on-hand, demand and open purchase orders to give run-out dates, shortfalls and what to expedite.",
+    "category": "Analytics",
+    "subcategory": "Supply Chain",
+    "tags": [
+        "stock projection",
+        "run-out",
+        "inventory",
+        "purchase orders",
+        "shortage",
+        "days of cover",
+        "supply chain",
+        "visokio-agents"
+    ],
+    "introductoryText": "Projects each item's stock **day by day** from stock on hand, expected **demand** (forecast or orders) and expected **receipts** (open purchase orders, transfers), and reports **when it runs out**.\n\n- **Input 1**: one row per item with stock on hand, and optionally a safety stock and a steady daily demand\n- **Input 2** (optional): dated future movements per item with a quantity and a type; types containing *receipt, PO, purchase, transfer in, supply* or *inbound* (your own list) are receipts, anything else is demand\n- Per item: **run-out date**, days until run-out, days of cover, first day below **safety stock**, lowest projected stock and **shortfall**, next receipt, and a **status**: *Runs out before next receipt*, *Runs out (receipts too small or late)*, *Below safety stock* or *OK*, sorted with the urgent ones first\n- The daily projection (opening, demand, receipts, closing) for charts\n\nPairs with Safety Stock and Reorder Point (the levels) and Holt-Winters Forecast (the demand).",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "item_field",
+            "title": "Item field",
+            "description": "Identifies the item, such as a SKU.",
+            "groupTitle": "Items (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "stock_field",
+            "title": "Stock on hand",
+            "description": "Units on hand at the start date.",
+            "groupTitle": "Items (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "safety_field",
+            "title": "Safety stock (optional)",
+            "description": "Level to keep in reserve; days below it are flagged.",
+            "groupTitle": "Items (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "daily_demand_field",
+            "title": "Daily demand (optional)",
+            "description": "Steady demand per day, added to any dated demand.",
+            "groupTitle": "Items (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "move_item_field",
+            "title": "Item field",
+            "description": "Item of each movement, matched to input 1.",
+            "groupTitle": "Movements (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "move_date_field",
+            "title": "Date",
+            "description": "Date of each demand or receipt.",
+            "groupTitle": "Movements (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "move_qty_field",
+            "title": "Quantity",
+            "description": "Units in each movement.",
+            "groupTitle": "Movements (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "move_type_field",
+            "title": "Type (optional)",
+            "description": "Receipts vs demand; without it all movements are demand.",
+            "groupTitle": "Movements (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "receipt_words",
+            "title": "Words that mark a receipt",
+            "description": null,
+            "groupTitle": "Movements (input 2, optional)",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "receipt, po, purchase, transfer in, supply, inbound"
+        },
+        {
+            "name": "start_date",
+            "title": "Start date (optional)",
+            "description": "Default: the first movement date, or today.",
+            "groupTitle": "Projection",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "horizon_days",
+            "title": "Horizon (days)",
+            "description": "Number of days to project.",
+            "groupTitle": "Projection",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 3660,
+            "mandatory": true,
+            "defaultValue": 90,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "items",
+            "label": "Items",
+            "displayName": "Items",
+            "tooltip": "Per item: stock, safety stock, demand and receipts, cover, run-out date, below safety stock, shortfall, next receipt, status."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "projection",
+            "label": "Projection",
+            "displayName": "Projection",
+            "tooltip": "Per item and day: opening stock, demand, receipts, closing stock."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

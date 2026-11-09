@@ -1,0 +1,132 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Basket Affinity Matrix",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAFI0lEQVR42u2dTWxVRRiGn+8q7iiQagQUVIwrlVWlLozGpTb+EuLKmvgT3bgxKnHpwlhi4oK4cEEwgZ0SiZaVm1poU4pUFJBFVQIKEv+QolYE7Lg4gyh6K/fe+ebOLe+T3E3T883c9z3fzJwz3zkXhBBCCCGEEEIIIYQQYu5juRsMISwB7gKWAtfGPx8BvgGGzexYyYKFELqAFcCC+AGYip+DZnZyzhkYQrgCeBLoB24DanX+dQbYBWwCNpjZmUJMuwzoBXqAZbPoFoCvgAlg3Mz+6HgDQwirgXXAjQ0e+gXwopltbbN5K4E+oLvBQ38AtpnZ/o40MJ61rwBrWwy1Hngux9l8Qf9rwD3A3S2GGgHeN7OZjjEwmvcO8FCikO8Ca7xEqGNeP3BLopD7gE1mFlL3teakwbqE5gE8DLyaMQH7EpoHcCtwb0dkYJzztjgJ+6CZvZdhzut3Cv+WmX1WbAaGEObF7PPi9bii9Zy3+xz7f39so9gh9KkmVpuNsAJ43DF+bxOrzUboBlaVbOBjGeanfsfYPRn631OkgSGEpfEi3ZveEMILoQ6z9O/NOofs/tsdlmUZ+r88tlVcBt5Jnjs7NeAmp+E5R/8NuKFEA3OcvedY5BBzYcb+LyzRwCUZBVjgELMrY/+LHEJnMgoQOiSme1spDcy5DTTlEDPnNtDJEg08mlGAEx1yUri3ldLAoUzD6Aww6RD3y0zDaAAOplzSputZCGPA7c4CjJrZHS7KhvAscJ1z/w+Z2RslZiBUO+nebHaMPZGh/0nbSG3gBuBzxy8/CWx0jD9OtZPuxfdUJSNlGhhrWNY6ffkAPO9ZJxN3/bc59n8wdWVBzUGErcBrDgIMmNmg9/gWa1g+dAg9ZGYHkvfXaTFQA94GVicKuQV4JGNJhQGPAisThdwLbO6Ykooo9Brg5QTh1uc0L/Y/xMXSBwnCjXiZ55aBF5zND8QhtdEdhMk45w3SRkIINwP3AVc2sWAZ9Bg2sxoYRZgHPEG1GdvL7IW9O+PlyMbCCntXUW3GLmf2wt7D8VJh15wo7P0PMRZzvrT+3BbU11S34obN7FsKJoQwn6pspIvz20InOF9a/zNCCCGEEEIIIYQQQgghhBBzhoa3k0IIh/CvnbxUOWxm1zdyQDMlFdulsxvDjR5Qy9GIkIEyMNUcGOfBI8A10jspx8xsaY4M1Dzow1AzB8nActie00DNgwXMf63MgUb1SPXV0j0J3wGLm6nebioDY0M7pHu67Gu29L6WO+Vn4WmrA/BMB8dx1bIkAzX/ZTZwP/CjtG+Z48CB7AbGMXtE+rd++dDKo3O1dqW+SKOhDLzEDfwUn7cmXSpMUT1+3R4D4wOMo/KhaXa0+hBoimfkdV+0jdqlMFDzYBu1S2HgBKDHihvnF2BP2w00s7PAmPxomNEUL3GolTIUaPiUgTKwBT4CpuXJRTMN7C7GQDM7TfWCHnFxjEXNislAXQ+2SauUBmoebINWKQ3cCZySN//L7yR8a28yA83sVFzMiNkZN7PfSsxADaNt0Ci1gVrIZNYotYGjwGl5VJczJL7tmPqt9dPAx/KpLrvN7NekmqfuYQhhAL+fHuh0BszspZKHUC1kMmvjkYHzqWodL5df/+As0G1mJ4vOwPjO6E/k17/Yk9o8ryFUlxMZNfEyUPNgJk28fnpnEdWvgNXkG1D9HsZVZna8IzLQzH4C9sm3v9jrYR7OGaJhNIMWMrCDFzBCCCGEEEIIIYQQQgghhBD+/AmZ6o8jVbRwpAAAAABJRU5ErkJggg==",
+    "description": "Measures how often every pair of items is bought together (support, confidence, lift, Jaccard) from basket data, with each item's strongest partners.",
+    "category": "Analytics",
+    "subcategory": "Retail",
+    "tags": [
+        "market basket",
+        "affinity",
+        "lift",
+        "cross-sell",
+        "co-occurrence",
+        "retail",
+        "visokio-agents"
+    ],
+    "introductoryText": "Which products are bought together, and how much more often than chance? From transaction lines (one row per basket and item), the block measures **every pair** of the most common items:\n\n- **Baskets with both**, **support** (share of all baskets containing both)\n- **Confidence** in both directions: of baskets with A, the share that also have B (and the reverse)\n- **Lift**: how many times more often the pair occurs than if the items were independent (above 1 = bought together, below 1 = bought apart)\n- **Jaccard** similarity, and an association label\n\nThe item summary lists each item's baskets, support and its **strongest partners by lift**. Items are limited to the most frequent ones (50 by default) so the matrix stays readable; pairs below a minimum number of shared baskets are left out to avoid noisy lifts.\n\nA compact, all-pairs view for range, layout and cross-sell decisions; Omniscope's native Basket Analysis block produces association rules for larger item sets.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "basket_field",
+            "title": "Basket / order ID",
+            "description": "Identifies a basket: rows with the same value were bought together.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "item_field",
+            "title": "Item / product",
+            "description": "The item in each row, such as a product name or SKU.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "max_items",
+            "title": "Most frequent items to include",
+            "description": "Only this many of the most often bought items are paired, which keeps the output readable.",
+            "groupTitle": "Filters",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 2,
+            "numMax": 2000,
+            "mandatory": true,
+            "defaultValue": 50,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_item_baskets",
+            "title": "Minimum baskets per item",
+            "description": null,
+            "groupTitle": "Filters",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 5,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_pair_baskets",
+            "title": "Minimum baskets per pair",
+            "description": "Pairs seen together fewer times are left out.",
+            "groupTitle": "Filters",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 3,
+            "showAsSlider": false
+        },
+        {
+            "name": "top_partners",
+            "title": "Partners listed per item",
+            "description": null,
+            "groupTitle": "Filters",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 20,
+            "mandatory": true,
+            "defaultValue": 3,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "pairs",
+            "label": "Pairs",
+            "displayName": "Item pairs",
+            "tooltip": "One row per item pair: baskets with both, support, confidence both ways, lift, Jaccard, association."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "items",
+            "label": "Items",
+            "displayName": "Item summary",
+            "tooltip": "Per item: baskets, support and strongest partners by lift."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

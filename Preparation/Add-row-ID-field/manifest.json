@@ -11,32 +11,62 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": null,
-    "description": "Adds a Row ID field with a sequential number.",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEfElEQVR42u2dTYgcRRiGn29jQIhEFhSzBFfFaH5AEIIBJQkaCHjQgx6MiCLqwRw8So7i1ezZi4JIiJCIeEkui2AOUUT05E92jBuiCxEFD7uiHtzd+TzMCKtmqmumq39q+31uSxdfV/XT1V1VU/0tCCGEEEIIIYQQQoh6sKoCu/sh4PHhn+fM7GKTccR4F/2k/5+TTcURY/YYH82huuNsdqYqiPlE4NhjDcTZ1NxQQcx9iW6YfVXceO5+K3AMmK3oBk5BH1gEzprZSt09cG/g2GIDcf7LMeDOFsv7x8u9wFO1PkLdfRtwe6BIr844I5jN6Am5q+534O6CqUmv5jh1PXUaG6OkbkzosbdsZr/UHEej0DHZEzh2qYE4EphQYK+BOBKY8BHaayCO5oEbRoY7gR2BIlYwanJ33x9xqknjrJjZogReX9wp4EjJc80lqvNcoK4LwPNm9oUeoYMLsgU4n0BeXewF5t39NgkccBi4P7M2TQPPSWB+qxax9V7OqB2/lRX4TaYCvw4cOwesZ9AGB+ZjRnxFg5gPCf+00zZ6wH4z+zPQpluAu4AtLW1DH1gys5/L3wbuN7r7G+7+k7ebZXc/5e47NDscX/LDgQvbd/eb6oyjlZjxCS19LZnZ7zXHkcCEArUGmoHA0NrlQgNxJFA9sCMCM9lGsWmxgou6B3gamAkUu5nBRqFRnIlZUSgRZ4UO79i2gLxngXeArZm0Zc7MTkT29plhb2/r/ph14KqZ/TqRwOFKxQ/AtsxuyMNFPdHdHwSepMLvQhJKfM/MvprkHXgkQ3kQt2P7aAbyYLDMV9ieKbrH9ozqOj2pwI+BPzKUc17TCGD48jwOrGbUlrkujkRH7okxs9Pu/mXBNGIXo7db/AW8G1mPMnE6PY0Ibmoysx7wemBEdyJw4S+b2cuRw/okcbpI2UFMaOlroYE4EphQoNZAJVACKxM43LowXfbCp4ojgWl7nwOXa44Ty3pGfvpNCWzzNoorGQn8sUqBdyd67KWKE8vZYa/ut7znXQXeLzUPLNG9LzUQJ4ph1oe3Ov/yVEKfzSFRKbUaxlL0RJTUTgghhBBCCCGEaNdE3t13M9hqf4DJ11DXgAvAC2Z2reB8OWTWrYrojL3jCPwUeChRBefN7NGC873CILNul/nOzN4OFRjnzj6QsGKPRJSZRSTN2JsyQXrMF09T8ld/xl7RNsNCAoUECgmUQCGBQgLF5AKXEp73WkSZZekpn7F3I6+S5pPrPoGPRjeQS2bdqkiTsfdfEd3vAQ4yefKfNeBzM/s28nxtz6xbFeky9gohhBBCCJGccacR9wEPMPmv86vAJ2b2feT52p7XsyrK5QsdcTGPA28muJirwDNm9kHB+XLJ61mlxInzhV6P1xL1hK3E/S/Box2WBxXkC51JWLk7IspsR0ynFChaiARKoJBAIYESKCRQSKCoUGDKf0GwFlFmXXrS5gu9kLBin0WUuSJ/afOFvgh8FNl7Qj3vIvBSRNkc8npW2fOi8oUKIYQQQgghhBBCCCFEF/gbuSMBgkF6woMAAAAASUVORK5CYII=",
+    "description": "Adds a field numbering the records 1, 2, 3 and so on, in the order they arrive, working through the data in chunks so large inputs never have to fit in memory.",
     "category": "Preparation",
     "subcategory": null,
-    "tags": ["row", "ID", "sequence"],
-    "introductoryText": "### Adds a new column with a sequential numeric ID",
+    "tags": [
+        "row",
+        "id",
+        "sequence",
+        "record number",
+        "index",
+        "key",
+        "streaming"
+    ],
+    "introductoryText": "Adds a field that numbers the records in the order they arrive: 1 for the first record, 2 for the second, and so on. Use it to keep the original order before a sort, join or aggregate, or to give records without a key one that the rest of the workflow can refer to.\n\n**How to set it up**: name the new field (default **Row ID**), choose the first number (default 1), and tick **Put the ID field first** to make it the first field rather than the last.\n\nIf the input already has a field with that name, its values are replaced by the numbers. The numbers follow the order of the input, so sort before this block if the order matters. The block streams: the count carries on from one chunk of records to the next, so the numbers run on without gaps over the whole input.\n\nThe core **Row ID** block does the same job without Python, and `CURRENTROW()` in a Field Organiser formula gives the record number too.",
     "dependencies": "",
     "options": [
         {
             "name": "fieldName",
-            "title": "Row ID field name",
-            "description": null,
+            "title": "ID field name",
+            "description": "Name of the new field. Left empty, it is Row ID. An existing field of this name is replaced.",
             "groupTitle": null,
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": false,
             "defaultValue": "Row ID"
+        },
+        {
+            "name": "startAt",
+            "title": "Start at",
+            "description": "The number given to the first record.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 1,
+            "showAsSlider": false
+        },
+        {
+            "name": "putFirst",
+            "title": "Put the ID field first",
+            "description": "Make the ID the first field. Unticked, it is added as the last field.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
         }
     ],
     "blockOutputs": [
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
+            "label": "Numbered",
+            "displayName": "Numbered records",
+            "tooltip": "The input records with the ID field added."
         }
     ],
     "docker": {

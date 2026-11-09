@@ -22,7 +22,6 @@ join.type = get.option(omni.api, "joinType")
 
 
 library(data.table)
-library(plyr)
 
 possible.joins <- c("left", "right", "left+right")
 
@@ -30,7 +29,7 @@ possible.joins <- c("left", "right", "left+right")
 if (is.null(input.data)) abort(omni.api, "No 'left' input data")
 if (is.null(input.data.2)) abort(omni.api, "No 'right' input data")
 if (".index" %in% names(input.data) || ".index.x" %in% names(input.data) || ".index.y" %in% names(input.data)) abort(omni.api, "first input must not contain a field with name .index, .index.x or .index.y")
-if (".index" %in% names(input.data.2) || ".index.x" %in% names(input.data.2) || ".index.y" %in% names(input.data.2)) abort(omni.api, "first input must not contain a field with name .index, .index.x or .index.y")
+if (".index" %in% names(input.data.2) || ".index.x" %in% names(input.data.2) || ".index.y" %in% names(input.data.2)) abort(omni.api, "second input must not contain a field with name .index, .index.x or .index.y")
 if (!(join.type %in% possible.joins)) abort(omni.api, "invalid join type")
 if (!is.character(input.data[, input.field.1])) abort(omni.api, "\"Left field\" must be of type text")
 if (!is.character(input.data.2[, input.field.2])) abort(omni.api, "\"Right field\" must be of type text")
@@ -55,7 +54,8 @@ split.into.terms <- function(x) {
 }
 
 trim.terms <- function(x) {
-  tolower(x[nchar(x) > 1])
+  # missing text has no terms (otherwise missing values on both sides would match each other)
+  tolower(x[!is.na(x) & nchar(x) > 1])
 }
 
 create.terms <- function(data) {
@@ -63,7 +63,7 @@ create.terms <- function(data) {
   trimmed.terms <- lapply(split.terms, trim.terms)
 
   terms <- unlist(trimmed.terms)
-  counts <- laply(trimmed.terms, length)
+  counts <- lengths(trimmed.terms)
 
   list(terms = terms, counts = counts)
 }
@@ -75,13 +75,13 @@ create.indexes <- function(indexes.old, index.counts) {
 
 # create data table of terms
 create.term.table <- function(data) {
-  data <- unlist(lapply(data, as.character))
+  data <- as.character(unlist(lapply(data, as.character)))
   terms <- create.terms(data)
-  index <- 1:length(data)
+  index <- seq_along(data)
 
   index <- create.indexes(index, terms$counts)
 
-  data.table(index = index, term = terms$terms)
+  data.table(index = index, term = as.character(terms$terms))
 }
 
 # calculate inverse document frequencies
@@ -120,8 +120,8 @@ if (left.join) setnames(bf.1, c("index.x", "index.y"), c(".index.x", ".index.y")
 if (right.join) setnames(bf.2, c("index.x", "index.y"), c(".index.x", ".index.y"))
 
 # create indexes for merging
-input.data$.index <- 1:nrow(input.data)
-input.data.2$.index <- 1:nrow(input.data.2)
+input.data$.index <- seq_len(nrow(input.data))
+input.data.2$.index <- seq_len(nrow(input.data.2))
 
 # merge
 if (left.join) data.x = merge(input.data, bf.1, by.x = ".index", by.y = ".index.x")
@@ -133,7 +133,10 @@ if (left.join) {
   data.x.merged[, .index.y := NULL]
 }
 if (right.join) {
-  data.y.merged <- merge(data.y, input.data, by.x = ".index.x", by.y = ".index")
+  # In Left + Right, name clashes get the same suffixes as in the left join (.x for the first input, .y for
+  # the second), so the two halves stack field by field. A Right join on its own keeps its original suffixes.
+  clash.suffixes <- if (left.join) c(".y", ".x") else c(".x", ".y")
+  data.y.merged <- merge(data.y, input.data, by.x = ".index.x", by.y = ".index", suffixes = clash.suffixes)
   data.y.merged[, .index.x := NULL]
 }
 

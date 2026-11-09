@@ -1,0 +1,18 @@
+{
+  "id": "msg_canned0001",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-haiku-5-5",
+  "content": [
+    {
+      "type": "text",
+      "text": "__REPLY__"
+    }
+  ],
+  "stop_reason": "__FINISH__",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 58,
+    "output_tokens": 3
+  }
+}

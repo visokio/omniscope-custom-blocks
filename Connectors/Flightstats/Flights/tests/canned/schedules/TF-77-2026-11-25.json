@@ -1,0 +1,65 @@
+{
+ "request": {
+  "departing": true,
+  "url": "https://api.flightstats.com/flex/schedules/rest/v1/json/flight/TF/77/departing/2026/11/25",
+  "airline": {
+   "requestedCode": "TF",
+   "fsCode": "TF"
+  },
+  "flight": {
+   "requested": "77",
+   "interpreted": "77"
+  },
+  "date": {
+   "year": "2026",
+   "month": "11",
+   "day": "25",
+   "interpreted": "2026-11-25"
+  }
+ },
+ "scheduledFlights": [
+  {
+   "carrierFsCode": "TF",
+   "flightNumber": "77",
+   "departureAirportFsCode": "RBK",
+   "arrivalAirportFsCode": "TFD",
+   "stops": 0,
+   "departureTime": "2026-11-25T06:50:00.000",
+   "arrivalTime": "2026-11-25T07:25:00.000",
+   "flightEquipmentIataCode": "DH4",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "1"
+  },
+  {
+   "carrierFsCode": "TF",
+   "flightNumber": "77",
+   "departureAirportFsCode": "TFD",
+   "arrivalAirportFsCode": "HBL",
+   "stops": 0,
+   "departureTime": "2026-11-25T08:05:00.000",
+   "arrivalTime": "2026-11-25T09:35:00.000",
+   "flightEquipmentIataCode": "DH4",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "2"
+  }
+ ],
+ "appendix": {
+  "airlines": [],
+  "airports": [],
+  "equipments": []
+ }
+}

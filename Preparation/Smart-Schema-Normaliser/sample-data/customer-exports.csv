@@ -1,0 +1,13 @@
+Customer ID,customer_id,Name,Sign-up Date,Monthly Spend,monthly-spend,Orders,Active,Region
+C-001,,Ashdown Bakery,2024-01-15,120.50,,14,yes,South East
+C-002,,Brindle and Co,15/02/2024,89.00,,9,no,North West
+,C-003,Corve Valley Farm,2024-03-02,,240.00,22,Y,West Midlands
+,C-004,Dunmore Joinery,04/03/2024,,56.25,unknown,N,Scotland
+C-005,,Elmstead Florist,2024-03-28,75.00,,7,yes,East of England
+,C-006,Fenwick Cycles,12/04/2024,,132.40,11,no,North East
+C-007,C-007,Glenrock Outdoor,2024-05-06,198.00,198.00,19,yes,Wales
+C-008,,Hollin Tea Rooms,,64.80,,5,,Yorkshire
+,C-009,Ivybridge Print,2024-06-21,,,3,n,South West
+C-010,,Juniper Kitchens,30/06/2024,310.00,,26,Yes,London
+,C-011,Kelso Garden Supplies,2024-07-08,,95.10,10,no,Scotland
+C-012,,Larkspur Studio,08/07/2024,142.00,,13,yes,South East

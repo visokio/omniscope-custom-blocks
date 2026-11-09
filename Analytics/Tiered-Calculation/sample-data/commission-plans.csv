@@ -1,0 +1,7 @@
+Plan,From,To,Rate
+Standard,0,50000,3%
+Standard,50000,150000,5%
+Standard,150000,,8%
+Senior,0,100000,4%
+Senior,100000,250000,7%
+Senior,250000,,10%

@@ -1,0 +1,61 @@
+{
+ "request": {
+  "departing": true,
+  "url": "https://api.flightstats.com/flex/schedules/rest/v1/json/flight/ZQ/214/departing/2026/11/16",
+  "airline": {
+   "requestedCode": "ZQ",
+   "fsCode": "ZQ"
+  },
+  "flight": {
+   "requested": "214",
+   "interpreted": "214"
+  },
+  "date": {
+   "year": "2026",
+   "month": "11",
+   "day": "16",
+   "interpreted": "2026-11-16"
+  }
+ },
+ "scheduledFlights": [
+  {
+   "carrierFsCode": "ZQ",
+   "flightNumber": "214",
+   "departureAirportFsCode": "KQB",
+   "arrivalAirportFsCode": "NMR",
+   "stops": 0,
+   "departureTime": "2026-11-16T07:10:00.000",
+   "arrivalTime": "2026-11-16T08:05:00.000",
+   "flightEquipmentIataCode": "AT7",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "Y",
+    "J"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "XK",
+     "flightNumber": "5214",
+     "serviceType": "J",
+     "serviceClasses": [
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "Q"
+     ],
+     "referenceCode": 1000
+    }
+   ],
+   "referenceCode": "0",
+   "departureTerminal": "1"
+  }
+ ],
+ "appendix": {
+  "airlines": [],
+  "airports": [],
+  "equipments": []
+ }
+}

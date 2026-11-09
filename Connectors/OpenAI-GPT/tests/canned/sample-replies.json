@@ -1,0 +1,15 @@
+{
+  "_note": "Invented replies to the sample prompts, used by the tests and placeholder.csv.",
+  "replies": {
+    "Brilliant beam and it lasted a whole weekend of night walks on one charge.": "battery life",
+    "The strap stretched after a week and now it slips down my forehead.": "strap durability",
+    "Keeps tea hot all day, though the lid is fiddly with gloves on.": "lid design",
+    "Arrived dented and the box was soaked. Took nine days to come.": "delivery damage",
+    "Packs down tiny and boils half a litre in about three minutes.": "size and speed",
+    "Works fine but the instructions are confusing and miss a step.": "instructions",
+    "Stayed dry in a downpour; the hood could be a bit bigger.": "waterproofing",
+    "Sizes run very small. I had to send it back for the next size up.": "sizing",
+    "Light, sturdy and the clamps never slipped on a steep descent.": "build quality",
+    "Good poles, but more expensive than the same pair elsewhere.": "price"
+  }
+}

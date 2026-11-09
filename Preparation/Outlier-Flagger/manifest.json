@@ -1,0 +1,180 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Outlier Flagger",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAFJ0lEQVR42u2dS28cRRSFvxvHLAMoITwkFmDjBYQliYJBImSfBImEFVsk8oOACCS2JJYFhnWIlQDBWSIhBZkJLyEesU3C1jGXhctoRGxPV3V3dbXnHGkWtnu6p+ube6ruvTUekCRJkiRJkiRJkiRJkiRJkqQhufuMu8+7+9/hMe/uMxqZ/sBb8/u1Joj9ADjv+XVx1OsyoakM8C5wIOMlV4DnzOzP3Q7aJzSVdSDz9c6PgieA5eqSmc1VOVAWWt1CvSTrVASWq/NV4Qlgj61TFlqehUZZpyKw59YpgD23TlloORaaZJ2KwJ5bpwDuEclCy7DQI2b2hyKwnzoEXJCF9lun3f2sLLT/iXy0lSoCe26lAthzK5WFlmOhSVaqCOy5lQpgz61UFlqehUZZqSKw51a6X+PUjMysEzdTBPZcAiiAkgBKAiiAkgBKAigJoABKAigJoCSAAigJoCSAkgAKoCSAkgBKArjXlH1XmrtPAg+HH/8ys3Vh6AFAd38GOAFMARPh1xvuPgA+N7PvhSNelgHcPuAM8OKIQ78EFszsnxIHatTO7L28L7QKPIBZ4JRiqiCA7j5VEd6WXgpWKxUSgScTnvOKsBQA0N0fCAuWWE2HlarUcQQ+OLTajNEE8JDQFJoHVg1g5ZHdA7wDbCRE4QZwV3lkxwDNbD0MbuyXYiwPR9WIPHIinH/G3YvOI/u6Cr2c8JxF5ZEZAbr7pLsfDo/J/0XhgM0KS1VdG7ZC5ZEtWmjEnLQwFCG7wgM+ayiPXBbAncGlzEkfu/s3wKvA9DDwMNhXQrQ2lkeOy+o0JQJj5iQHPhmy00Gw2a08784uA103j7ytOfD+6Ks9J5nZupndDo+2osQZE8UuYnLWNrfyyFhtm0eOPcDctc0QnYOE6y2PU3UmJgK7qG02kUcKYFdzUt08spEX7m7u/kaF4865u5UMsKs5aaEixO3yyLrwpoAl4KMKh18Evnb3p3MCtMgbeov42uZNM/tgt0oOFboLYTAr55ENwJsNb56DkU9dBU6Z2VclApwC3o68xnvb2dpOlZywcNmxuxCRR9aB91SIvEcST7EGHMvRIbGEm3uN0WWx4TlpIaKSM6xOugthHlsCXqh5qiXguJm1mpOmLGLqzkkxlZwuugvnGoAHcAx4vbgIrDMnJVrwBTNbzhiBV4GXGzrdopmdKBJgypyUuAj6zszezwTvEPB7Yr67ne4Bj5nZarF5YNXaZtOVnN36kDX0fIPwYLNZcKTNN13OTU2NdBda3hvzeAv3/USvALa0a8wz7Y1pY8XovQA4KjKAn6i3Sy1m9fpfHzJSv7Uwxr+WvoiJyesOA7F7Vm4CV3KsXltaxDxqZmvFLmIiIyPlDbNIpj6kma0AXzQ4vlfbhFcbYEKHfhq4FXH8NeBn8n7G4p0Gx/fdtleGdSPwZKKtxFRycvch54AbDYztdWC+bYB1thWm5nVTwIdApV1qNb+yKPrJZuah/3eD9GL2KvBm23XQuqvQWpERsUvtDg1+xqIixB/d/QzwKfHtpBU220kDMqirfzPiVSs5Xe2NCf28o2x2FWJs86iZXc81kHUAbkUGGSKjk70xZnYLOM5mh2Jxh/u9F9Kcs8Csmf2QMxL217i5Rj59VPFag1BhielDNtJMDfPYHDDn7geBZ4Enw59/Ab5tO1VosxJzOQFgamTU+YwFDcFcDecvRk1UYmp16BNzz2x7Y0pXU6W001Ujo6ktEjn2xowFQEXGHgGoyJAkSZIkSZKkcdG/tHAOJUC2pE8AAAAASUVORK5CYII=",
+    "description": "Flags low and high outliers in many numeric fields at once, within groups, by IQR, z-score or robust MAD, with bounds and optional capping.",
+    "category": "Preparation",
+    "subcategory": "Data quality",
+    "tags": [
+        "outliers",
+        "IQR",
+        "z-score",
+        "MAD",
+        "winsorise",
+        "data quality",
+        "anomalies",
+        "audit",
+        "visokio-agents"
+    ],
+    "introductoryText": "Flags **unusually low or high values** in many numeric fields at once, optionally **within groups** (per product, category, region, machine), by a standard rule:\n\n- **IQR** (Tukey's fences): outside Q1 - k x IQR to Q3 + k x IQR, k = 1.5 by default\n- **Z-score**: more than k standard deviations from the mean, k = 3\n- **MAD** (robust z, Iglewicz and Hoaglin): 0.6745 x (value - median) / MAD above k = 3.5; not distorted by the outliers themselves\n\nGroups with fewer values than the minimum are not tested. Optionally adds **capped** (winsorised) copies of the fields, clipped to the bounds.\n\nOutputs: the rows with a Low / High / No flag per field, a count and a list; one row per outlying value with its bound, score and distance beyond the bound; and the bounds used per field and group.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fields",
+            "title": "Numeric fields",
+            "description": "Leave empty to check every numeric field.",
+            "groupTitle": null,
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Within groups (optional)",
+            "description": "For example Category.",
+            "groupTitle": null,
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "key_fields",
+            "title": "Key fields for the outlier list",
+            "description": "For example Claim ID.",
+            "groupTitle": null,
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "method",
+            "title": "Method",
+            "description": "IQR and MAD resist the outliers they look for; z-score suits roughly normal data.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "IQR (Tukey's fences)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "IQR",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Z-score",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ZSCORE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "MAD (robust z)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MAD",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "IQR"
+        },
+        {
+            "name": "k",
+            "title": "Multiplier",
+            "description": "0 = the method's default (1.5, 3 or 3.5).",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_group_size",
+            "title": "Smallest group to test",
+            "description": "Groups with fewer values are not tested.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 3,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 10,
+            "showAsSlider": false
+        },
+        {
+            "name": "add_capped",
+            "title": "Add capped (winsorised) fields",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "rows",
+            "label": "Rows",
+            "displayName": "Rows",
+            "tooltip": "The input with an outlier flag per field, Outlier Count and Outlier Fields (and capped fields if chosen)."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "outliers",
+            "label": "Outliers",
+            "displayName": "Outliers",
+            "tooltip": "One row per outlying value: row number, keys, group, field, value, direction, bound, score."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "bounds",
+            "label": "Bounds",
+            "displayName": "Bounds",
+            "tooltip": "Per field and group: values, bounds, low and high counts, share, minimum, median, maximum."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

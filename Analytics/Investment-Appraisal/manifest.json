@@ -1,0 +1,173 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Investment Appraisal",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAABqUlEQVR42u3av2pTYRzG8eeITmI1g4MWpCg4eAHSvXgj7i7q4hUU1AtxkIKzuQBdHb0GpfXPpODjkknT1vQoJ8TPZwx5OcnvS07eNyQBAAAAAAAA4Ddt77R919V9aHvfBKcP+Kpn963t1bGv4ZwMo2yPWHshyQ0B/3MCCoiACCggAiIgAgqIgAj4F7V92PZwxR+bf7R923ZHwGnjXUvyLMmVFZcOSe4meSrgtK6PfJ83BURABBQQAdnUgG1nbedtv694Xvva9rmA03uQZC/J+RXXXUzyqO2egNPaHrn+loAIiIAIKCACIiACCoiACMgxhmUPtr2dZD/JvSSXjGlSX5K8TvJkGIb3pwZcxHuTZGZ2a+Uwye6vEZfdQvfFW0uzRZtTP4GfkmyZ11r6PAzDZZuYDd+Fzo1lbc1tYjZ9E7N4wm6Sg8UWlumPEQfL4h17DjzJ2H+ADcPwWJN/+x2IgAiIgAIiIAIioIAIiIAIKCACIiACCoiACCggAiIgAgqIgAiIgAIiIAIioIAIyJoF/DjiekdGPn3AF2eMeJTkpZEDAAAAAAAA/Jmf1C0wDl4RuIQAAAAASUVORK5CYII=",
+    "description": "NPV, IRR / XIRR, MIRR, payback, discounted payback and profitability index per project from cash flows, with NPV profiles and multiple-IRR warnings.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "NPV",
+        "IRR",
+        "XIRR",
+        "MIRR",
+        "payback",
+        "capital budgeting",
+        "business case",
+        "discounted cash flow",
+        "visokio-agents"
+    ],
+    "introductoryText": "Compares **projects, capital requests or business cases** from their cash flows.\n\n- **NPV** at the discount rate (one rate for all, or a rate field per project)\n- **IRR** (or **XIRR** on actual dates) and **MIRR** (finance and reinvestment at the discount rate)\n- **Payback** and **discounted payback**, interpolated within the period\n- **Profitability index** (PV of inflows / PV of outflows), totals, rank by NPV and an accept / reject flag\n- Projects whose cash flows change sign more than once can have **several IRRs**: they are flagged and all IRRs found are listed\n\nTiming is by **period number** (0 = now, 1 = end of year 1...) or by **date** (XNPV / XIRR: annual rate, actual days / 365, discounted to each project's first date). Several rows for the same project and time are added together.\n\nOutputs: one row per project, the discounted cash flows with cumulative totals, and an **NPV profile** (NPV at rates from 0% to the maximum) for charts.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "project_field",
+            "title": "Project field",
+            "description": "Names the project each cash flow belongs to.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "time_field",
+            "title": "Period or date field",
+            "description": "Period number (0 = today) or the date of each cash flow, to match Timing.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "amount_field",
+            "title": "Cash flow field",
+            "description": "Outflows negative, inflows positive.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "timing",
+            "title": "Timing",
+            "description": "Period numbers for NPV and IRR; dates for XNPV and XIRR on actual days.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Period numbers (0, 1, 2...)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PERIOD",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Dates (XNPV / XIRR)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DATE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "PERIOD"
+        },
+        {
+            "name": "discount_rate",
+            "title": "Discount rate",
+            "description": "Per period, or annual for dates. For example 0.08.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": -0.99,
+            "numMax": 10,
+            "mandatory": true,
+            "defaultValue": 0.08,
+            "showAsSlider": false
+        },
+        {
+            "name": "rate_field",
+            "title": "Rate per project (optional)",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "profile_max_rate",
+            "title": "NPV profile up to rate",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.01,
+            "numMax": 5,
+            "mandatory": true,
+            "defaultValue": 0.3,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "projects",
+            "label": "Projects",
+            "displayName": "Projects",
+            "tooltip": "Per project: rate, flows, NPV, IRR, MIRR, profitability index, payback, discounted payback, notes, decision, rank."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "cashflows",
+            "label": "Cash flows",
+            "displayName": "Cash flows",
+            "tooltip": "Per project and time: cash flow, discount factor, present value, cumulative cash flow and present value."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "npv_profile",
+            "label": "NPV profile",
+            "displayName": "NPV profile",
+            "tooltip": "Per project: NPV at rates from 0% to the maximum in 1% steps."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

@@ -1,0 +1,11 @@
+url,text,title,h1,depth,status,content_type,final_url,error
+https://www.example.com/,"Skip to content About us Products Contact Stock list Welcome to Fernhill Pots, compost and tools for gardens of every size. Follow us: Social or write to hello@example.com. Last year's offers",Fernhill Garden Supplies,Welcome to Fernhill,0,200,text/html,https://www.example.com/,
+https://www.example.com/about/,About us A family business since 1987. Our team See our products Home,About Fernhill,About us,1,200,text/html,https://www.example.com/about/,
+https://www.example.com/products/index.html,Products Pots Hand tools All tools Download the catalogue,Products,Products,1,200,text/html,https://www.example.com/products/index.html,
+https://www.example.com/contact,Contact us Call 01632 960000.,Contact,Contact us,1,200,text/html,https://www.example.com/contact/,
+https://www.example.com/old-offers.html,,,,1,404,text/html,https://www.example.com/old-offers.html,HTTP 404 Not Found
+https://www.example.com/about/team.html,Our team Six people who love plants. Back to About us,Our team,Our team,2,200,text/html,https://www.example.com/about/team.html,
+https://www.example.com/products/pots.html,Terracotta pots From 10 cm to 60 cm.,Pots,Terracotta pots,2,200,text/html,https://www.example.com/products/pots.html,
+https://www.example.com/products/tools.html,Tools Trowels Hand trowels and forks. Spades,Tools,Tools,2,200,text/html,https://www.example.com/products/tools.html,
+https://www.example.com/products/catalogue.pdf,,,,2,200,application/pdf,https://www.example.com/products/catalogue.pdf,
+https://www.example.com/products/deep/spades.html,Spades Border and digging spades.,Spades,Spades,3,200,text/html,https://www.example.com/products/deep/spades.html,

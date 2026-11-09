@@ -1,0 +1,8 @@
+{
+ "error": {
+  "httpStatusCode": 403,
+  "errorId": "00000000-0000-0000-0000-000000000000",
+  "errorMessage": "application is not active",
+  "errorCode": "AUTH_FAILURE"
+ }
+}

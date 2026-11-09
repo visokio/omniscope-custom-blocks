@@ -1,0 +1,21 @@
+Customer ID,Name,Email,City,Segment,Signup Date,Orders,Lifetime Spend
+C-1001,Harriet Ellison,h.ellison@example.com,Leeds,Retail,2023-02-14,12,1840.50
+C-1002,Owen Pritchard,owen.pritchard@example.net,Cardiff,Trade,2022-11-03,38,9625.00
+C-1003,Priya Raman,priya.r@example.org,Leicester,Retail,2024-05-21,3,212.75
+C-1004,Callum Fraser,cfraser@example.com,Glasgow,Retail,2023-08-09,7,655.20
+C-1005,Megan Doyle,megan.doyle@example.net,Belfast,Trade,2021-06-30,54,14210.40
+C-1006,Tomasz Nowak,t.nowak@example.org,Leeds,Retail,2024-01-17,1,48.99
+C-1007,Grace Adebayo,grace.adebayo@example.com,London,Trade,2022-03-12,26,7120.00
+C-1008,Harriet Ellison,harriet.e@example.net,Bristol,Retail,2024-09-02,2,131.60
+C-1009,Rhys Morgan,rhys.morgan@example.com,Cardiff,Retail,2023-04-25,9,1022.35
+C-1010,Aisha Karim,a.karim@example.org,Manchester,Trade,2021-12-08,41,11380.90
+C-1011,Daniel Whitlock,d.whitlock@example.com,Norwich,Retail,2024-07-19,4,389.00
+C-1012,Fiona MacLeod,fiona.macleod@example.net,Inverness,Retail,2022-10-27,15,2210.15
+C-1013,Samuel Okafor,s.okafor@example.com,London,Trade,2023-01-05,33,8045.70
+C-1014,Lucy Hargreaves,,Leeds,Retail,2024-03-11,6,540.80
+C-1015,Ben Carlisle,ben.carlisle@example.org,York,Retail,2023-06-22,,
+C-1016,Niamh Byrne,niamh.byrne@example.com,Belfast,Trade,2022-08-15,29,6790.25
+C-1017,George Pell,g.pell@example.net,Bristol,Retail,,5,402.10
+C-1018,Hannah Lowe,hannah.lowe@example.com,Manchester,Retail,2024-10-30,2,96.40
+C-1019,Imran Siddiqui,i.siddiqui@example.org,Leicester,Trade,2021-09-14,47,12655.00
+C-1020,Ellen Rowe,ellen.rowe@example.com,York,Retail,2023-11-28,11,1490.65

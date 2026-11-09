@@ -1,0 +1,281 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Weighted Scoring",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Multi-criteria scorecards: normalise criteria, apply weights, rank alternatives, apply must-pass thresholds and test how sensitive the winner is to the weights.",
+    "category": "Analytics",
+    "subcategory": "Decision support",
+    "tags": [
+        "weighted scoring",
+        "scorecard",
+        "multi-criteria",
+        "MCDA",
+        "supplier selection",
+        "tender evaluation",
+        "site selection",
+        "ranking",
+        "visokio-agents"
+    ],
+    "introductoryText": "A **multi-criteria scorecard** for choosing between alternatives: suppliers in a tender, sites for a new store, bids, projects, candidates.\n\n- Each criterion is put on a **0-100 scale** (min-max, percent of best, rank or z-score); price, distance, risk and other *lower is better* criteria are turned round\n- **Weights** are multiplied in and summed to a 0-100 total; alternatives are **ranked**, within groups if chosen (for example per lot)\n- Optional **thresholds** (minimum and maximum per criterion) knock out alternatives that fail a must-have, with the reason\n- Missing values score as worst, as average, or the weights are spread over the criteria the alternative has\n- **Sensitivity**: for each criterion, how far its weight would have to move to change the leader, and who would lead instead\n\nWeights can be typed in (for example `Price: 35, Quality: 25, Lead time: 10`) or come from a **criteria table on input 2** with one row per criterion: name, weight, and optionally direction (*Higher* / *Lower*), minimum and maximum.\n\nOutputs: scores and ranks per alternative, the criteria with weights and sensitivity, and the points per alternative and criterion in long form for stacked bar charts.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "name_field",
+            "title": "Alternative name field",
+            "description": "Names each option being scored, such as a supplier.",
+            "groupTitle": "Alternatives (input 1)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "criteria_fields",
+            "title": "Criteria fields",
+            "description": "Numeric fields to score on. Not needed when input 2 lists the criteria.",
+            "groupTitle": "Alternatives (input 1)",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "lower_better_fields",
+            "title": "Lower is better",
+            "description": "Criteria where a lower value is better, such as price or risk.",
+            "groupTitle": "Alternatives (input 1)",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Rank within (optional)",
+            "description": "For example a lot or category.",
+            "groupTitle": "Alternatives (input 1)",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "weights",
+            "title": "Weights",
+            "description": "'Field: weight' pairs, or numbers in criteria order. Empty = equal weights. Weights are scaled to sum to 100%.",
+            "groupTitle": "Scoring",
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "method",
+            "title": "Normalisation",
+            "description": "How each criterion is put on a common 0 to 100 scale before weighting.",
+            "groupTitle": "Scoring",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Min-max (worst 0, best 100)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MIN_MAX",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Percent of best",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PERCENT_OF_BEST",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Rank",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "RANK",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Z-score (mean 50)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "Z_SCORE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MIN_MAX"
+        },
+        {
+            "name": "missing",
+            "title": "Missing values",
+            "description": "How an option with no value for a criterion is scored.",
+            "groupTitle": "Scoring",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Score as worst (0)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WORST",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Score as average (50)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "AVERAGE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Spread weight over available criteria",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "REWEIGHT",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "WORST"
+        },
+        {
+            "name": "crit_name_field",
+            "title": "Criterion name",
+            "description": "Must match a field of input 1.",
+            "groupTitle": "Criteria table (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "crit_weight_field",
+            "title": "Weight",
+            "description": "Weight of each criterion; scaled to sum to 100%.",
+            "groupTitle": "Criteria table (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "crit_direction_field",
+            "title": "Better when (Higher / Lower)",
+            "description": "Higher or Lower: which way is better for the criterion.",
+            "groupTitle": "Criteria table (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "crit_min_field",
+            "title": "Minimum (must pass)",
+            "description": "Lowest acceptable value; options below it fail.",
+            "groupTitle": "Criteria table (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "crit_max_field",
+            "title": "Maximum (must pass)",
+            "description": "Highest acceptable value; options above it fail.",
+            "groupTitle": "Criteria table (input 2, optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 1,
+            "defaultValue": null,
+            "fieldTypes": []
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "scores",
+            "label": "Scores",
+            "displayName": "Scores",
+            "tooltip": "Per alternative: 0-100 score and weighted points per criterion, total, thresholds passed, rank, gap to leader."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "criteria",
+            "label": "Criteria",
+            "displayName": "Criteria",
+            "tooltip": "Per criterion: weight, share, direction, thresholds, averages and the weight change that would change the leader."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "contributions",
+            "label": "Contributions",
+            "displayName": "Contributions",
+            "tooltip": "Long form: alternative, criterion, points; for stacked bar charts."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

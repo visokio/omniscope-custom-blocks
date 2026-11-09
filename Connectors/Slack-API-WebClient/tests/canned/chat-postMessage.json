@@ -1,0 +1,16 @@
+{
+ "ok": true,
+ "channel": "C01000EXAMPLE",
+ "ts": "1735732800.000100",
+ "message": {
+  "type": "message",
+  "text": "Weekly sales report is ready",
+  "user": "U0BOT",
+  "ts": "1735732800.000100",
+  "blocks": [
+   {
+    "type": "rich_text"
+   }
+  ]
+ }
+}

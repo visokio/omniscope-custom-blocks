@@ -1,0 +1,12 @@
+{
+    "ok": true,
+    "channel": "C0123ABCD",
+    "ts": "1741000000.000100",
+    "message": {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "(the text as posted)",
+        "ts": "1741000000.000100",
+        "bot_id": "B0123ABCD"
+    }
+}

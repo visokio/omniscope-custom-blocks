@@ -1,0 +1,5 @@
+Step,Description,Command
+1,Check the Python version,python --version
+2,Print a greeting,"python -c ""print('Hello from the server')"""
+3,Add two numbers,"python -c ""print(2 + 2)"""
+4,Not filled in yet,

@@ -11,24 +11,27 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": "data:image/png;base64,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",
-    "description": "Execute queries and retrieve blockchain data from any public query on dune.com, as well as any personal private queries your Dune account has access to",
+    "icon": "data:image/png;base64,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",
+    "description": "Loads the result of a saved Dune query, public or your own: its latest stored result, or a fresh execution. Every page of rows is read, with numbers and dates typed from Dune's column types.",
     "category": "Connectors",
     "subcategory": null,
     "tags": [
         "dune",
         "crypto",
         "analytics",
-        "blockchain"
+        "blockchain",
+        "sql",
+        "ethereum",
+        "on-chain"
     ],
-    "introductoryText": "![Dune](data:image/png;base64,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\n)\n### Dune connector\n#### Execute queries and retrieve blockchain data from any public query on dune.com, as well as any personal private queries your Dune account has access to.\n##### To get the query ID, when navigating to a query, it’s the first number after “/queries/” in the URL. For example in https://dune.com/queries/241/388, \"241\" is the query id.",
+    "introductoryText": "![Dune](data:image/png;base64,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\n)\n\nLoads the result of a saved query on **Dune** (dune.com), any public query or a private one your account can see.\n\n**How to set it up**\n1. Create an API key in your Dune account's API settings and enter it.\n2. Enter the query ID: the number after `/queries/` in the query's address (`241` for https://dune.com/queries/241/388), or paste the whole address.\n3. Choose **Retrieve latest query results** (reads the result Dune last stored, no new run) or **Execute and retrieve latest results** (runs the query now and waits for it).\n\nThe **Results** output holds the rows, with Dune's number, date and true/false columns typed; the **Execution** output is one record about the run (state, times, row count). Executions and results use Dune credits.",
     "dependencies": "requests",
     "options": [
         {
             "name": "duneApiKey",
             "title": "Dune API key",
-            "description": null,
-            "groupTitle": null,
+            "description": "An API key from your Dune account's API settings. The block can read the queries this key's account can see.",
+            "groupTitle": "Authentication",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
             "mandatory": true
@@ -36,8 +39,8 @@
         {
             "name": "queryId",
             "title": "Query ID",
-            "description": "To get the query ID, when navigating to a query, it’s the first number after “/queries/” in the URL. For example in https://dune.com/queries/241/388, \"241\" is the query id.",
-            "groupTitle": null,
+            "description": "The number after /queries/ in the query's address (241 for https://dune.com/queries/241/388), or the whole address.",
+            "groupTitle": "Query",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
@@ -46,8 +49,8 @@
         {
             "name": "mode",
             "title": "Query mode",
-            "description": null,
-            "groupTitle": null,
+            "description": "Retrieve: read the result Dune last stored for the query (fails if it was never run, has changed since, or the result has expired). Execute: run the query now, wait for it, then read the result.",
+            "groupTitle": "Query",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
             "mandatory": true,
@@ -55,7 +58,7 @@
                 {
                     "name": null,
                     "title": "Execute and retrieve latest results",
-                    "description": null,
+                    "description": "Runs the query now (uses execution credits) and waits for it to finish.",
                     "groupTitle": null,
                     "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
@@ -65,7 +68,7 @@
                 {
                     "name": null,
                     "title": "Retrieve latest query results",
-                    "description": null,
+                    "description": "Reads the result Dune stored from the last run; no new execution.",
                     "groupTitle": null,
                     "width": null,
                     "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
@@ -76,22 +79,66 @@
             "isDropdown": true,
             "choicesLayoutType": "LIST",
             "defaultValue": "retrieveLatest"
+        },
+        {
+            "name": "performance",
+            "title": "Engine size",
+            "description": "For Execute only: the Dune engine to run on. Medium is Dune's default; Large has more resources for heavy queries and can use more credits.",
+            "groupTitle": "Query",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Small",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "small",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Medium",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "medium",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Large",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "large",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "medium"
         }
     ],
     "blockOutputs": [
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "Execution Result",
-            "displayName": "Execution Result",
-            "tooltip": null
+            "label": "Execution",
+            "displayName": "Execution details",
+            "tooltip": "One record about the run: Execution ID, Query ID, State, Submitted, Started, Ended, Expires, Rows."
         },
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data 2",
-            "label": "Data",
-            "displayName": "Data",
-            "tooltip": null
+            "label": "Results",
+            "displayName": "Query results",
+            "tooltip": "The query's rows, every page, with the columns in Dune's order and typed from Dune's column types."
         }
     ],
     "docker": {

@@ -1,0 +1,9 @@
+Note ID,Contact Email,Note
+N01,jane.smith@example.com,"Order #A-10234 shipped 2025-03-04 via DHL, tracking JD014600006281. Card ending 4242 charged £129.99 for SKU-1182 and SKU-2201."
+N02,m.ali@example,"Order #B-55102 shipped 2025-03-05 via Royal Mail, tracking RM123456789GB. Paid £54.00 (SKU-3310)."
+N03,priya@example.co.uk,"Customer called about order #A-10240: not yet shipped. Refund £12.50 agreed. SKU-1182 out of stock."
+N04,tom@@example.com,"Order #C-00981 shipped 2025-03-07 via DPD, tracking 15501234567890. SKU-4410, SKU-4411, SKU-4412 in one parcel."
+N05,fiona.macleod@example.com,"Gift order #A-10255 shipped 2025-03-08 via DHL, tracking JD014600006399. Message card included."
+N06,,"No order reference. General enquiry about opening hours."
+N07,ahmed.h@example.com,"Order #b-55120 shipped 2025-03-09 via Royal Mail, tracking RM987654321GB. Paid £8.75 for SKU-0007."
+N08,chloe@example.com,"Replacement for order #C-00990 shipped 2025-03-10 via DPD, tracking 15509876543210. Card ending 1881 not charged."

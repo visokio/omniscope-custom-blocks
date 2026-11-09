@@ -1,0 +1,70 @@
+{
+ "encoding": "UTF-8",
+ "maxBatchSize": 200,
+ "sobjects": [
+  {
+   "name": "Account",
+   "label": "Account",
+   "labelPlural": "Accounts",
+   "keyPrefix": "001",
+   "queryable": true,
+   "retrieveable": true,
+   "searchable": true,
+   "createable": true,
+   "updateable": true,
+   "deletable": true,
+   "custom": false,
+   "urls": {
+    "sobject": "/services/data/v62.0/sobjects/Account"
+   }
+  },
+  {
+   "name": "Contact",
+   "label": "Contact",
+   "labelPlural": "Contacts",
+   "keyPrefix": "003",
+   "queryable": true,
+   "retrieveable": true,
+   "searchable": true,
+   "createable": true,
+   "updateable": true,
+   "deletable": true,
+   "custom": false,
+   "urls": {
+    "sobject": "/services/data/v62.0/sobjects/Contact"
+   }
+  },
+  {
+   "name": "Opportunity",
+   "label": "Opportunity",
+   "labelPlural": "Opportunities",
+   "keyPrefix": "006",
+   "queryable": true,
+   "retrieveable": true,
+   "searchable": true,
+   "createable": true,
+   "updateable": true,
+   "deletable": true,
+   "custom": false,
+   "urls": {
+    "sobject": "/services/data/v62.0/sobjects/Opportunity"
+   }
+  },
+  {
+   "name": "Delivery_Route__c",
+   "label": "Delivery Route",
+   "labelPlural": "Delivery Routes",
+   "keyPrefix": "a01",
+   "queryable": true,
+   "retrieveable": true,
+   "searchable": true,
+   "createable": true,
+   "updateable": true,
+   "deletable": true,
+   "custom": true,
+   "urls": {
+    "sobject": "/services/data/v62.0/sobjects/Delivery_Route__c"
+   }
+  }
+ ]
+}

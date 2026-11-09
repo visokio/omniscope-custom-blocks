@@ -1,0 +1,41 @@
+Order,Order Date,Region,Product,Quantity,Unit Price,Status
+ORD-3101,2025-04-19,South West,Whiteboard markers (8),22,11.9,Shipped
+ORD-3102,2025-04-26,Midlands,Sticky notes (12),6,7.6,Shipped
+ORD-3103,2025-04-09,South East,Ballpoint pens (50),21,9.8,Cancelled
+ORD-3104,2025-04-15,South West,A4 paper (box),20,21.5,Shipped
+ORD-3105,2025-04-04,Wales,Sticky notes (12),12,7.6,Cancelled
+ORD-3106,2025-04-11,North,Ballpoint pens (50),7,9.8,Pending
+ORD-3107,2025-04-30,Midlands,Ballpoint pens (50),11,9.8,Shipped
+ORD-3108,2025-04-18,South East,Desk stapler,13,12.4,Cancelled
+ORD-3109,2025-04-24,South West,Sticky notes (12),17,7.6,Pending
+ORD-3110,2025-04-30,Wales,Lever-arch file,12,3.2,Shipped
+ORD-3111,2025-04-05,North,Whiteboard markers (8),21,11.9,Pending
+ORD-3112,2025-04-02,Midlands,A4 paper (box),11,21.5,Shipped
+ORD-3113,2025-04-16,South East,A4 paper (box),24,21.5,Shipped
+ORD-3114,2025-04-28,South West,Sticky notes (12),20,7.6,Pending
+ORD-3115,2025-04-16,Midlands,Lever-arch file,12,3.2,Shipped
+ORD-3116,2025-04-30,North,Ballpoint pens (50),1,9.8,Shipped
+ORD-3117,2025-04-30,Midlands,Ballpoint pens (50),17,9.8,Cancelled
+ORD-3118,2025-04-22,South East,Ballpoint pens (50),9,9.8,Shipped
+ORD-3119,2025-04-19,South West,A4 paper (box),20,21.5,Pending
+ORD-3120,2025-04-17,Wales,A4 paper (box),7,21.5,Cancelled
+ORD-3121,2025-04-06,North,Whiteboard markers (8),13,11.9,Cancelled
+ORD-3122,2025-04-22,South West,Whiteboard markers (8),2,11.9,Pending
+ORD-3123,2025-04-03,South East,Lever-arch file,6,3.2,Shipped
+ORD-3124,2025-04-16,South West,Sticky notes (12),15,7.6,Cancelled
+ORD-3125,2025-04-11,Wales,Sticky notes (12),16,7.6,Shipped
+ORD-3126,2025-04-02,North,A4 paper (box),16,21.5,Shipped
+ORD-3127,2025-04-10,Midlands,Desk stapler,6,12.4,Shipped
+ORD-3128,2025-04-25,South East,Lever-arch file,10,3.2,Shipped
+ORD-3129,2025-04-30,Midlands,Desk stapler,15,12.4,Shipped
+ORD-3130,2025-04-14,Wales,Desk stapler,16,12.4,Shipped
+ORD-3131,2025-04-29,North,Sticky notes (12),4,7.6,Shipped
+ORD-3132,2025-04-11,Midlands,Lever-arch file,6,3.2,Shipped
+ORD-3133,2025-04-25,South East,Lever-arch file,3,3.2,Shipped
+ORD-3134,2025-04-29,South West,Whiteboard markers (8),6,11.9,Shipped
+ORD-3135,2025-04-01,Wales,Sticky notes (12),8,7.6,Shipped
+ORD-3136,2025-04-03,South West,Whiteboard markers (8),13,11.9,Shipped
+ORD-3137,2025-04-26,Midlands,Whiteboard markers (8),12,11.9,Cancelled
+ORD-3138,2025-04-28,South East,Desk stapler,24,12.4,Shipped
+ORD-3139,2025-04-05,South West,Ballpoint pens (50),14,9.8,Shipped
+ORD-3140,2025-04-28,Wales,Sticky notes (12),6,7.6,Shipped

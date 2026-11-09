@@ -1,0 +1,213 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "ABC Classification",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEoUlEQVR42u2dS2gdVRyHvxOTFk1qEvtIESOWCiq1FqHUaFRUKrjwAWlBtC4sujCLuuiqWfhAF3UluHThRkRcSAWlglRINxrUYpHSCrGK8VFp05CmpokmNj8X96DXUNMzN6+Zub8PhpOZnDPJ/L97XpOTGTDGGGOMMcYYU08Eh2B+SLoCWBu3dcBqoA1oB1rj1hbTlbFYe0xXAlfFr1uBBqAJaAF+Bw4BfSGEQQusTc4aoBO4LqbXxrQT6IjS1ixyHEeBrv+TGCxJq4BNwM3ARuDGqq0tJ7/mgRDCjroXKOl6YBtwG7A5phsKEIfzIYTWS32jscSyGqKku4HumHaW7TobSyatCbgf6AEeA9aX5NI+LfUgRtK9wLPAw1UjvLJQzkFMrG07gb3A1hL2AuWcRkhqAXqBPTnq00aBM8Bw3EaAsVnbOeBCzH8OEDBVdew8cBGYDiGMl24iL6kReAZ4eQn7tmlgCPgZ+CWmp4CfgF+B08BwCGHKd2Lmlncn8GYcVS4Gp4BjwLfAybh9D/wYQvgrz7EJORe3CngNeI7KbaaF4Dvgc+BolPZNCGEEs/C1TtJJzZ/jkl6X1COpw5Fdggm4pBckTdcobEbSV5L6JN3kiC6tvKslHahR3J+S3pZ0qyO5PPJukTRYg7hhSS9JWucoLp+8u6KIrDXuDUmtjuDyytsl6Y+M8j6WtMHRW355vZIuZhA3KmmXI5cPeXvjiDGVfkmdjlw+5O3LOC3YH9eemBzIez6DvHFJOxy1/Mh7OkOz+ZukrY5afuTtzDBgOSHpBkdtYQX0SZpI7LP6JTVXlb1H0mSivKOS1jriCy9wIuNc7amqOywjiWWOSFrtaKeTZVHTlRnP3RxlHASuSch/BNgeQhizlnQaFvHcAXiHyrrLy3EMeMjyFrcJzconifkG/Xe6+dWSZIFZnSec/yzQPdeqK7O8TehcTAKPWl5+Bc7FDPBECGHACvLbB87Fi45ocQV+GP/xxOR8EHMpBoFtni4Usw8cB3osr5gCBewOIRx3yIvZB77qCBZXYL8HLcUdxIwBW0IIQw51MfvAXssrbhP6haNW7Br4nsNbbIETDm+5JvLGAo0FWqCpO4GS2iUNJK7KHpe0x2ryVQMfAbpIu/PTDOy3mnwJzLym1GrcB1qgsUBjgcYCLdBYoLFAY4EWaCzQWKCxwJJQiFfvSNoEPM6/79qbi2HgrRDCWdfA/HBfojyovNOv201ovmha5PwWaCzQWKAFGgs0FmgssF5oLPsFSgrAk8CWhA/sDPBlCOF918D80AHcnnitDUBXkd7DVA8Ca7krs8ICjQUaC/QotN6RtB7YDaS8DmEceHcpn0LsGnh57kiUB9ACbHcTWuxR7AoLNO4Dc9SHPgA8mFCTBfxAZT3PlGtgfkiRB5XnB2wENrsJraM+1AI9kTcWaJZEYNbHR1bnv5Cx7OSs/emM5avzT9UQl+kF+tm1lJ9aLIH7MogYAD6q2v8AOByHyinyXpl17BCV21QpjAD/PC04hHA67s8klJ0BvgbOVB37jMpy/dQP7eFZxw5mkDIEnHC7YowxxhhjjDHGGGOMMf/lbzokT1rlpIFhAAAAAElFTkSuQmCC",
+    "description": "Classifies items into A, B and C by cumulative share of value (Pareto), optionally within groups, plus XYZ demand-variability classes for ABC-XYZ inventory analysis.",
+    "category": "Analytics",
+    "subcategory": "Supply Chain",
+    "tags": [
+        "abc analysis",
+        "pareto",
+        "xyz",
+        "inventory",
+        "classification",
+        "80/20",
+        "supply chain",
+        "visokio-agents"
+    ],
+    "introductoryText": "The Pareto principle as a block: rank items (products, customers, suppliers) by value and classify them by **cumulative share of the total**:\n\n- **A**: the items that together make the first 80% of value (usually a small share of items)\n- **B**: the next 15% (up to 95%)\n- **C**: the remaining 5% (usually most items)\n\nThresholds are options, and classes can be computed **within groups** (per warehouse, category or region). Sales lines are aggregated per item first, so you can feed transactions directly.\n\nAdd a **date field** and the block also performs **XYZ analysis**: per item, the coefficient of variation of demand across weeks, months or quarters (periods with no sales count as zero). **X** = steady (CV up to 0.5), **Y** = variable (up to 1.0), **Z** = erratic. Combined classes such as *AX* (high value, steady: automate replenishment) or *CZ* (low value, erratic: consider make-to-order or delisting) are the basis of many inventory policies.\n\nThe second output summarises each class: items, value, shares and a suggested policy.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "item_field",
+            "title": "Item field",
+            "description": "Product, SKU, customer or supplier.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "value_field",
+            "title": "Value field",
+            "description": "Value to rank by, such as sales value or margin. Summed per item.",
+            "groupTitle": "Data",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Classify within (optional)",
+            "description": "For example Warehouse or Category.",
+            "groupTitle": "Data",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "a_share",
+            "title": "A class up to",
+            "description": "Cumulative share of value covered by class A.",
+            "groupTitle": "ABC",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.01,
+            "numMax": 0.99,
+            "mandatory": true,
+            "defaultValue": 0.8,
+            "showAsSlider": false
+        },
+        {
+            "name": "b_share",
+            "title": "B class up to",
+            "description": "Cumulative share covered by classes A and B together.",
+            "groupTitle": "ABC",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.01,
+            "numMax": 0.999,
+            "mandatory": true,
+            "defaultValue": 0.95,
+            "showAsSlider": false
+        },
+        {
+            "name": "date_field",
+            "title": "Date field (enables XYZ)",
+            "description": "Date of each sales line; demand is summed per period.",
+            "groupTitle": "XYZ (optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "xyz_field",
+            "title": "Demand field for XYZ",
+            "description": "Quantity to measure variability on, such as Units. Leave empty to use the value field.",
+            "groupTitle": "XYZ (optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "period",
+            "title": "Period",
+            "description": "Period that demand is summed over before its variability (CV) is measured.",
+            "groupTitle": "XYZ (optional)",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Month",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Week",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WEEK",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Quarter",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "QUARTER",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MONTH"
+        },
+        {
+            "name": "x_cv",
+            "title": "X class up to CV",
+            "description": null,
+            "groupTitle": "XYZ (optional)",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.01,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 0.5,
+            "showAsSlider": false
+        },
+        {
+            "name": "y_cv",
+            "title": "Y class up to CV",
+            "description": null,
+            "groupTitle": "XYZ (optional)",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.01,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 1.0,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "items",
+            "label": "Items",
+            "displayName": "Classified items",
+            "tooltip": "Per item: total value, value share, cumulative share, rank, ABC class; with a date field also periods, average per period, coefficient of variation, XYZ class and ABC-XYZ."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "classes",
+            "label": "Classes",
+            "displayName": "Class summary",
+            "tooltip": "Per (group and) class: items, value, share of items, share of value, suggested policy."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

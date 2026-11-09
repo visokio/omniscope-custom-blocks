@@ -1,0 +1,1501 @@
+Customer ID,Region,Contract,Broadband,Lines,Tenure Months,Support Calls (last 90 days),Monthly Spend,Churned
+T100000,North,Monthly,Copper,3,3,0,43.98,Yes
+T100001,Midlands,Monthly,Fibre,3,50,2,65.22,No
+T100002,Midlands,Monthly,Fibre,3,30,1,60.0,No
+T100003,North,One year,Copper,2,46,0,44.3,Yes
+T100004,Wales,Monthly,Fibre,3,19,1,60.01,No
+T100005,Wales,Monthly,Fibre,4,10,1,65.12,Yes
+T100006,Scotland,Monthly,Fibre,2,44,2,55.89,Yes
+T100007,Wales,Two year,Fibre,1,9,3,43.08,Yes
+T100008,South,Monthly,Fibre,3,9,3,63.57,No
+T100009,North,Monthly,Fibre,2,47,1,63.6,No
+T100010,Midlands,One year,Copper,3,47,1,54.32,No
+T100011,Wales,One year,Fibre,3,61,1,57.68,No
+T100012,Wales,One year,Fibre,4,32,3,76.47,No
+T100013,North,Monthly,Fibre,2,15,2,64.83,Yes
+T100014,South,Monthly,Fibre,2,15,0,49.37,No
+T100015,Wales,Monthly,Copper,4,16,2,,Yes
+T100016,South,Monthly,Fibre,1,8,1,36.36,No
+T100017,Scotland,One year,Fibre,1,51,0,58.81,Yes
+T100018,Scotland,One year,Fibre,1,55,2,50.16,No
+T100019,Midlands,Monthly,Copper,1,34,4,33.28,Yes
+T100020,Wales,Monthly,Fibre,4,49,2,83.91,No
+T100021,Wales,Two year,Fibre,3,30,1,51.96,No
+T100022,South,One year,Fibre,1,52,2,52.27,No
+T100023,Scotland,Two year,Fibre,2,25,1,45.36,No
+T100024,North,One year,Copper,2,35,3,53.49,No
+T100025,Wales,Monthly,Copper,3,5,1,44.67,No
+T100026,North,Monthly,Fibre,1,14,2,32.49,Yes
+T100027,South,Two year,Fibre,1,33,0,32.69,No
+T100028,Scotland,Monthly,Copper,3,11,5,42.55,Yes
+T100029,Scotland,Monthly,Fibre,1,22,1,42.85,No
+T100030,Midlands,Monthly,Fibre,2,2,3,49.83,Yes
+T100031,Wales,Monthly,Fibre,2,28,3,58.45,No
+T100032,South,Monthly,Fibre,2,10,0,41.28,No
+T100033,Wales,Monthly,Copper,2,39,0,38.96,No
+T100034,Midlands,Monthly,Fibre,4,24,1,67.37,No
+T100035,Scotland,Monthly,Fibre,1,49,3,47.38,No
+T100036,Midlands,One year,Fibre,2,6,0,45.5,No
+T100037,Wales,Monthly,Copper,3,45,0,44.38,No
+T100038,Midlands,Monthly,Fibre,4,4,2,69.51,No
+T100039,North,Monthly,Copper,4,53,1,63.2,No
+T100040,Wales,Monthly,Fibre,4,21,1,72.78,No
+T100041,South,Monthly,Copper,2,2,0,37.11,No
+T100042,Wales,Two year,Fibre,2,20,2,51.84,No
+T100043,North,Monthly,Copper,4,47,1,57.38,No
+T100044,North,Two year,Copper,4,21,2,58.93,No
+T100045,South,One year,Copper,4,39,1,52.14,No
+T100046,Wales,Monthly,Fibre,2,68,0,51.98,No
+T100047,North,Monthly,Copper,4,61,1,61.0,No
+T100048,Midlands,One year,Copper,1,8,1,34.88,No
+T100049,Scotland,Monthly,Fibre,1,67,1,50.35,No
+T100050,Wales,Monthly,Copper,4,34,2,61.82,No
+T100051,South,Two year,Copper,1,1,1,28.59,No
+T100052,South,Two year,Fibre,2,16,1,51.25,No
+T100053,North,Monthly,Copper,2,59,1,42.72,No
+T100054,North,Monthly,Copper,4,56,2,68.27,Yes
+T100055,Scotland,Monthly,Copper,2,18,2,33.73,No
+T100056,Midlands,One year,Copper,2,13,3,43.85,Yes
+T100057,Scotland,Monthly,Copper,2,45,0,34.7,No
+T100058,Wales,Monthly,Copper,1,33,2,40.78,No
+T100059,Wales,Monthly,Fibre,3,55,1,64.24,No
+T100060,Wales,Monthly,Copper,2,1,3,42.31,Yes
+T100061,Wales,Monthly,Fibre,1,61,0,44.3,No
+T100062,North,One year,Fibre,2,42,0,54.51,No
+T100063,Midlands,Monthly,Fibre,2,67,1,65.39,No
+T100064,Midlands,One year,Fibre,3,3,0,61.42,No
+T100065,South,One year,Copper,2,46,0,49.6,Yes
+T100066,South,Monthly,Fibre,3,7,0,61.53,No
+T100067,South,One year,Copper,4,62,0,68.26,No
+T100068,South,Monthly,Fibre,2,60,1,69.04,No
+T100069,North,One year,Fibre,1,36,2,51.58,No
+T100070,Wales,Monthly,Fibre,3,12,0,66.1,No
+T100071,Midlands,Two year,Copper,1,17,2,33.68,No
+T100072,South,One year,Copper,3,41,2,51.93,Yes
+T100073,South,Monthly,Fibre,4,12,2,77.18,No
+T100074,Wales,Monthly,Fibre,4,40,1,66.11,Yes
+T100075,Wales,One year,Fibre,1,36,4,44.82,No
+T100076,North,Monthly,Copper,2,56,5,40.09,Yes
+T100077,Scotland,Monthly,Fibre,1,53,3,40.64,No
+T100078,North,Monthly,Copper,3,69,1,52.11,No
+T100079,Wales,Two year,Fibre,2,32,1,52.07,No
+T100080,North,Monthly,Copper,3,30,1,49.48,No
+T100081,Scotland,One year,Fibre,3,49,2,72.06,No
+T100082,North,One year,Fibre,4,19,1,69.38,No
+T100083,Scotland,Monthly,Copper,2,9,1,31.78,No
+T100084,Scotland,Two year,Fibre,3,25,2,66.64,No
+T100085,Wales,Two year,Copper,1,69,1,42.28,No
+T100086,Scotland,One year,Fibre,4,70,1,73.45,No
+T100087,Wales,One year,Copper,4,34,0,50.79,No
+T100088,Wales,Monthly,Fibre,3,59,3,69.05,No
+T100089,Scotland,One year,Fibre,2,59,2,61.24,No
+T100090,Midlands,Monthly,Fibre,4,4,3,68.75,Yes
+T100091,Midlands,Monthly,Copper,2,52,0,48.45,No
+T100092,North,One year,Fibre,4,3,1,70.8,No
+T100093,South,Monthly,Fibre,3,56,1,66.3,No
+T100094,Midlands,Monthly,Fibre,2,7,1,52.21,Yes
+T100095,North,Monthly,Copper,3,28,2,44.68,No
+T100096,North,One year,Copper,1,69,2,37.51,No
+T100097,South,Monthly,Fibre,4,8,1,66.05,No
+T100098,North,Two year,Fibre,1,5,0,40.79,No
+T100099,Scotland,Monthly,Fibre,4,33,1,68.99,No
+T100100,Midlands,Monthly,Copper,2,43,3,34.43,No
+T100101,North,One year,Fibre,1,24,1,39.38,No
+T100102,North,One year,Copper,1,26,1,24.28,No
+T100103,North,One year,Copper,3,29,0,35.98,No
+T100104,Scotland,One year,Copper,3,14,0,49.54,No
+T100105,South,Two year,Copper,4,71,2,58.53,No
+T100106,South,Monthly,Fibre,1,20,2,51.12,No
+T100107,Scotland,One year,Fibre,3,22,1,70.23,No
+T100108,Midlands,One year,Fibre,4,17,4,73.69,No
+T100109,Wales,Monthly,Copper,3,56,3,56.68,Yes
+T100110,South,One year,Fibre,2,51,3,58.23,No
+T100111,Scotland,Two year,Fibre,3,12,0,53.66,No
+T100112,South,Monthly,Copper,2,63,1,44.58,No
+T100113,Scotland,One year,Fibre,1,43,2,44.6,No
+T100114,North,Monthly,Copper,2,39,1,45.13,No
+T100115,Wales,Monthly,Fibre,2,25,2,53.56,No
+T100116,Scotland,One year,Fibre,3,7,1,60.49,No
+T100117,Scotland,Monthly,Fibre,1,18,2,41.76,No
+T100118,North,Two year,Fibre,4,3,1,67.31,No
+T100119,Scotland,Monthly,Fibre,3,28,2,61.35,No
+T100120,Scotland,Two year,Copper,1,27,1,20.33,No
+T100121,Wales,One year,Fibre,4,67,4,83.34,No
+T100122,Scotland,Monthly,Copper,1,13,2,30.05,No
+T100123,Wales,One year,Copper,2,42,1,49.92,No
+T100124,Wales,Monthly,Copper,2,44,1,41.91,No
+T100125,Scotland,Monthly,Fibre,3,37,1,65.87,No
+T100126,Midlands,One year,Copper,4,37,1,57.46,No
+T100127,South,Monthly,Copper,4,58,0,71.95,No
+T100128,South,Monthly,Fibre,2,64,0,52.57,No
+T100129,North,Monthly,Fibre,2,36,1,63.56,No
+T100130,Wales,Monthly,Copper,1,26,3,16.23,Yes
+T100131,Wales,Monthly,Fibre,1,8,0,45.91,No
+T100132,South,Monthly,Copper,2,28,1,35.35,No
+T100133,Scotland,Monthly,Fibre,1,10,0,23.31,No
+T100134,South,One year,Copper,2,34,2,35.31,No
+T100135,Scotland,One year,Fibre,1,52,1,52.99,No
+T100136,Midlands,Monthly,Copper,2,62,3,48.94,No
+T100137,Midlands,One year,Copper,4,34,0,58.7,No
+T100138,South,Monthly,Copper,3,58,1,50.92,No
+T100139,North,One year,Fibre,3,15,1,62.68,No
+T100140,Wales,Monthly,Copper,3,36,2,55.82,Yes
+T100141,Scotland,Two year,Copper,2,69,1,36.99,No
+T100142,Wales,Monthly,Fibre,1,28,3,44.97,No
+T100143,South,Two year,Fibre,3,20,1,60.73,No
+T100144,South,Monthly,Fibre,4,1,2,67.74,Yes
+T100145,Midlands,Monthly,Fibre,1,56,1,51.33,No
+T100146,North,One year,Fibre,4,20,3,77.35,Yes
+T100147,Midlands,Monthly,Fibre,1,23,0,50.13,No
+T100148,Scotland,One year,Copper,1,40,1,39.9,No
+T100149,South,Monthly,Copper,1,53,1,40.27,No
+T100150,Scotland,One year,Fibre,4,31,3,68.43,Yes
+T100151,Scotland,Monthly,Fibre,1,38,2,43.77,No
+T100152,Midlands,One year,Copper,3,64,4,59.76,No
+T100153,North,Monthly,Copper,1,3,1,24.22,Yes
+T100154,Wales,One year,Fibre,3,8,0,62.4,No
+T100155,North,Monthly,Copper,4,51,1,62.59,No
+T100156,Scotland,Monthly,Copper,1,54,0,30.71,No
+T100157,Wales,One year,Fibre,4,21,0,79.84,No
+T100158,Midlands,Monthly,Fibre,3,61,1,65.5,Yes
+T100159,North,Monthly,Fibre,3,31,0,67.68,No
+T100160,Scotland,Monthly,Fibre,2,71,0,59.08,No
+T100161,Midlands,One year,Copper,2,51,1,36.62,Yes
+T100162,Scotland,Two year,Copper,2,66,1,37.63,No
+T100163,South,Monthly,Fibre,4,71,3,73.31,No
+T100164,South,One year,Fibre,1,66,2,51.72,No
+T100165,South,Monthly,Copper,4,32,4,65.07,Yes
+T100166,Midlands,Two year,Copper,3,2,1,52.73,No
+T100167,Wales,Two year,Copper,3,48,2,49.37,Yes
+T100168,South,Monthly,Copper,3,11,0,38.83,No
+T100169,South,Monthly,Fibre,2,35,1,54.44,Yes
+T100170,South,One year,Copper,1,56,0,40.89,No
+T100171,North,Two year,Copper,1,48,1,28.7,No
+T100172,South,Two year,Copper,3,58,0,,No
+T100173,Wales,One year,Copper,2,12,2,40.58,No
+T100174,Scotland,Monthly,Fibre,3,1,4,45.19,No
+T100175,North,Monthly,Fibre,1,71,1,54.2,No
+T100176,Midlands,One year,Fibre,4,41,1,80.05,No
+T100177,Midlands,Monthly,Fibre,1,11,0,35.81,No
+T100178,Wales,One year,Copper,4,7,1,58.48,No
+T100179,Wales,Two year,Copper,3,48,2,63.51,No
+T100180,South,Two year,Fibre,3,44,2,62.8,No
+T100181,Wales,One year,Copper,2,5,2,33.25,No
+T100182,Midlands,Two year,Fibre,3,52,3,74.82,No
+T100183,North,Two year,Fibre,4,7,2,66.36,No
+T100184,North,Monthly,Fibre,3,12,0,61.31,No
+T100185,South,Monthly,Fibre,3,63,1,66.21,No
+T100186,South,Two year,Copper,2,37,1,40.14,No
+T100187,Midlands,Monthly,Copper,1,54,0,38.02,No
+T100188,Midlands,Monthly,Fibre,1,5,2,35.74,No
+T100189,North,Monthly,Fibre,3,7,2,63.96,Yes
+T100190,Scotland,Monthly,Fibre,2,5,2,56.96,Yes
+T100191,South,Monthly,Copper,3,20,2,44.77,No
+T100192,South,Two year,Copper,1,31,2,31.61,No
+T100193,Midlands,Monthly,Copper,2,5,3,37.91,Yes
+T100194,Midlands,Monthly,Fibre,2,12,2,58.18,No
+T100195,North,One year,Copper,1,67,0,30.17,No
+T100196,Midlands,Monthly,Fibre,1,32,4,49.01,Yes
+T100197,North,Monthly,Fibre,3,61,2,63.97,No
+T100198,North,Monthly,Fibre,3,23,2,56.29,No
+T100199,Wales,Monthly,Fibre,1,56,2,38.0,Yes
+T100200,Wales,Monthly,Fibre,4,64,4,,No
+T100201,Scotland,Monthly,Fibre,4,50,1,78.03,No
+T100202,Scotland,One year,Fibre,1,6,1,35.82,No
+T100203,Wales,Monthly,Fibre,3,48,3,74.17,No
+T100204,Midlands,Two year,Copper,2,70,2,,No
+T100205,South,One year,Fibre,1,3,1,44.49,Yes
+T100206,Wales,Monthly,Fibre,4,57,0,79.25,No
+T100207,Midlands,Monthly,Copper,2,5,1,31.06,No
+T100208,South,Two year,Fibre,2,60,0,52.46,No
+T100209,South,One year,Fibre,2,22,0,57.45,No
+T100210,North,One year,Fibre,3,28,0,62.16,No
+T100211,Wales,One year,Fibre,3,41,1,69.59,No
+T100212,Midlands,Two year,Fibre,1,24,3,34.99,No
+T100213,Wales,Monthly,Fibre,2,59,2,59.73,No
+T100214,Midlands,Monthly,Fibre,2,64,1,57.52,No
+T100215,Wales,One year,Fibre,3,32,1,70.43,No
+T100216,North,Monthly,Fibre,3,53,2,66.78,Yes
+T100217,Midlands,Two year,Fibre,2,18,0,44.46,No
+T100218,North,Two year,Copper,4,50,1,50.01,No
+T100219,Scotland,Monthly,Fibre,1,46,0,44.85,No
+T100220,Wales,Two year,Copper,1,67,4,34.78,No
+T100221,South,Two year,Fibre,2,68,1,53.93,No
+T100222,Wales,Monthly,Copper,2,56,1,44.5,Yes
+T100223,Wales,Monthly,Copper,3,35,2,44.1,No
+T100224,Wales,One year,Fibre,1,23,2,40.99,No
+T100225,South,Monthly,Fibre,1,40,1,55.82,Yes
+T100226,Midlands,Monthly,Fibre,4,5,5,67.64,Yes
+T100227,North,Monthly,Fibre,1,21,2,43.8,No
+T100228,Midlands,Monthly,Fibre,4,31,0,70.51,No
+T100229,Scotland,Two year,Copper,1,54,1,27.75,No
+T100230,Scotland,Monthly,Copper,2,59,2,47.49,No
+T100231,Scotland,Two year,Copper,3,11,0,36.55,No
+T100232,Scotland,Monthly,Fibre,3,3,0,65.9,No
+T100233,South,Monthly,Fibre,2,48,2,69.96,No
+T100234,Scotland,One year,Fibre,4,55,0,81.29,No
+T100235,Wales,Monthly,Copper,1,16,3,31.13,Yes
+T100236,Scotland,One year,Copper,2,44,1,52.68,Yes
+T100237,North,Two year,Fibre,1,48,3,42.53,No
+T100238,South,Monthly,Fibre,2,58,2,65.22,No
+T100239,Scotland,Monthly,Copper,4,36,2,58.94,No
+T100240,Wales,Monthly,Fibre,1,18,1,37.17,No
+T100241,Scotland,One year,Fibre,1,59,2,49.92,No
+T100242,South,Monthly,Copper,1,22,3,29.67,Yes
+T100243,Wales,Monthly,Copper,4,41,1,73.18,No
+T100244,Midlands,Monthly,Copper,1,3,2,27.14,No
+T100245,Wales,Monthly,Copper,2,65,0,31.87,No
+T100246,Scotland,One year,Fibre,4,67,2,79.78,No
+T100247,South,One year,Fibre,4,33,2,64.55,No
+T100248,South,One year,Copper,1,10,1,15.52,No
+T100249,North,Monthly,Fibre,3,2,1,56.93,Yes
+T100250,Midlands,Monthly,Copper,4,55,1,69.49,No
+T100251,South,Monthly,Fibre,1,70,4,46.27,No
+T100252,North,Monthly,Copper,1,17,3,33.82,No
+T100253,North,Monthly,Fibre,2,55,2,60.79,Yes
+T100254,Scotland,One year,Copper,4,31,3,66.19,No
+T100255,North,One year,Fibre,1,59,3,47.04,No
+T100256,South,Monthly,Copper,1,16,0,24.8,Yes
+T100257,Scotland,Two year,Fibre,3,59,3,65.36,No
+T100258,Midlands,One year,Fibre,3,48,1,70.01,No
+T100259,Midlands,One year,Fibre,1,9,2,45.71,No
+T100260,Scotland,Monthly,Copper,1,65,4,45.42,No
+T100261,North,One year,Fibre,4,63,2,73.67,No
+T100262,Midlands,Monthly,Fibre,4,64,0,74.45,No
+T100263,North,Two year,Fibre,1,6,2,43.51,No
+T100264,Midlands,One year,Copper,2,29,3,46.83,No
+T100265,Wales,Monthly,Copper,4,22,0,49.76,Yes
+T100266,Midlands,Two year,Fibre,3,62,3,64.8,No
+T100267,Midlands,Monthly,Copper,4,12,3,69.53,No
+T100268,North,Two year,Copper,1,43,0,21.92,No
+T100269,Wales,Monthly,Copper,2,35,0,36.42,No
+T100270,Scotland,Two year,Copper,4,24,0,45.83,No
+T100271,Midlands,One year,Fibre,3,14,0,54.55,No
+T100272,Wales,Monthly,Fibre,2,70,1,55.93,No
+T100273,North,Monthly,Fibre,1,15,1,47.63,Yes
+T100274,North,Monthly,Fibre,3,36,1,69.76,No
+T100275,North,Monthly,Fibre,2,42,3,58.64,No
+T100276,South,Two year,Fibre,2,35,1,44.42,No
+T100277,Scotland,Monthly,Fibre,1,12,2,46.95,Yes
+T100278,North,Two year,Copper,4,61,5,56.98,No
+T100279,North,Monthly,Fibre,2,35,1,53.99,No
+T100280,North,Monthly,Fibre,3,71,2,54.91,No
+T100281,Midlands,Monthly,Fibre,3,50,0,64.63,No
+T100282,Midlands,One year,Fibre,4,65,2,81.91,No
+T100283,South,Monthly,Copper,1,2,0,35.23,No
+T100284,South,One year,Copper,4,26,1,55.08,No
+T100285,Scotland,Monthly,Fibre,4,63,2,87.49,No
+T100286,Scotland,Two year,Copper,1,43,2,23.87,No
+T100287,Wales,Monthly,Copper,1,54,0,40.31,No
+T100288,North,Monthly,Fibre,1,20,1,43.27,Yes
+T100289,Wales,Monthly,Fibre,4,54,0,71.58,No
+T100290,North,Monthly,Copper,1,1,2,31.49,No
+T100291,North,Monthly,Copper,3,52,2,50.09,No
+T100292,Scotland,One year,Fibre,2,24,0,37.92,No
+T100293,Wales,Monthly,Copper,3,69,1,57.98,No
+T100294,Scotland,One year,Fibre,1,26,1,36.6,No
+T100295,North,Monthly,Fibre,2,11,2,52.1,Yes
+T100296,Midlands,Monthly,Copper,3,9,4,47.39,Yes
+T100297,North,Monthly,Copper,2,6,1,38.51,Yes
+T100298,North,Two year,Fibre,2,15,1,50.34,No
+T100299,North,Monthly,Fibre,1,53,1,64.23,No
+T100300,Midlands,Monthly,Fibre,4,9,0,65.46,No
+T100301,Scotland,Monthly,Copper,4,2,1,57.54,No
+T100302,Midlands,One year,Fibre,4,65,1,83.03,No
+T100303,Wales,Monthly,Copper,3,45,2,40.88,No
+T100304,North,One year,Fibre,2,21,1,60.14,No
+T100305,Scotland,Monthly,Copper,3,45,3,50.74,Yes
+T100306,South,Monthly,Fibre,4,13,0,68.26,No
+T100307,South,Monthly,Copper,3,66,0,54.64,No
+T100308,South,Two year,Fibre,3,40,2,52.55,No
+T100309,North,Two year,Copper,4,7,0,47.45,No
+T100310,Wales,Monthly,Copper,3,66,1,63.98,No
+T100311,Scotland,Monthly,Fibre,2,25,3,58.93,No
+T100312,Wales,Monthly,Fibre,3,54,2,82.15,Yes
+T100313,Scotland,Monthly,Copper,1,54,1,32.7,No
+T100314,Scotland,Monthly,Fibre,1,7,1,44.4,No
+T100315,South,Monthly,Fibre,2,25,0,54.79,No
+T100316,Midlands,One year,Fibre,3,45,0,63.61,No
+T100317,North,Monthly,Fibre,4,21,4,75.82,Yes
+T100318,Scotland,One year,Copper,1,68,1,37.24,No
+T100319,Midlands,Monthly,Copper,2,13,1,44.47,Yes
+T100320,Wales,Monthly,Fibre,1,50,3,44.13,Yes
+T100321,Midlands,One year,Fibre,1,2,2,49.74,No
+T100322,Scotland,Monthly,Copper,2,8,3,35.99,No
+T100323,Midlands,Monthly,Copper,4,38,0,49.95,No
+T100324,Wales,One year,Fibre,3,42,2,62.27,No
+T100325,Midlands,Monthly,Fibre,1,5,2,50.19,No
+T100326,North,Monthly,Fibre,2,11,0,57.52,No
+T100327,Wales,One year,Copper,1,34,0,29.47,No
+T100328,North,Monthly,Copper,2,33,0,44.74,Yes
+T100329,Wales,One year,Fibre,1,53,0,45.13,No
+T100330,Midlands,One year,Fibre,3,52,1,69.88,No
+T100331,South,Two year,Fibre,4,30,1,69.0,No
+T100332,Scotland,Two year,Fibre,4,4,3,74.32,Yes
+T100333,South,One year,Copper,4,44,1,57.05,No
+T100334,Midlands,Monthly,Fibre,1,57,3,53.17,Yes
+T100335,Midlands,One year,Copper,2,68,1,41.42,No
+T100336,Wales,Monthly,Fibre,3,54,0,72.46,Yes
+T100337,South,Monthly,Fibre,2,13,1,46.35,Yes
+T100338,North,Monthly,Fibre,3,13,5,53.87,No
+T100339,North,Monthly,Fibre,4,46,0,73.68,No
+T100340,North,One year,Copper,1,29,4,45.27,Yes
+T100341,Wales,One year,Fibre,1,48,1,44.99,No
+T100342,Wales,Monthly,Fibre,3,20,0,56.66,No
+T100343,Midlands,Monthly,Copper,4,37,4,62.61,No
+T100344,Midlands,Monthly,Fibre,1,2,0,41.83,Yes
+T100345,South,Monthly,Fibre,1,25,0,35.37,No
+T100346,North,Monthly,Fibre,3,66,2,67.41,Yes
+T100347,Wales,Monthly,Fibre,3,12,1,58.77,No
+T100348,North,Two year,Copper,1,32,2,30.98,No
+T100349,Scotland,Monthly,Fibre,1,27,3,42.6,Yes
+T100350,Scotland,Two year,Copper,4,3,0,44.13,No
+T100351,North,One year,Fibre,4,40,3,75.87,Yes
+T100352,North,Monthly,Fibre,3,3,0,78.85,No
+T100353,Scotland,Monthly,Fibre,1,70,0,49.2,No
+T100354,Wales,One year,Fibre,1,26,0,42.19,No
+T100355,Midlands,Monthly,Fibre,3,20,2,66.77,Yes
+T100356,Midlands,One year,Fibre,3,44,1,73.39,No
+T100357,Midlands,Monthly,Fibre,1,61,1,59.61,No
+T100358,Midlands,Monthly,Fibre,1,61,2,45.03,No
+T100359,South,One year,Fibre,2,56,2,58.99,No
+T100360,Midlands,Monthly,Fibre,1,48,1,30.49,No
+T100361,Scotland,Monthly,Fibre,3,27,2,65.07,Yes
+T100362,Wales,Monthly,Fibre,3,70,0,65.12,Yes
+T100363,North,One year,Copper,4,41,1,54.51,Yes
+T100364,North,One year,Fibre,4,56,0,69.0,No
+T100365,South,Monthly,Fibre,3,2,3,60.21,No
+T100366,North,Monthly,Fibre,2,17,0,53.23,No
+T100367,Wales,Two year,Fibre,4,70,1,77.04,No
+T100368,North,Two year,Copper,1,64,0,21.61,No
+T100369,Midlands,Two year,Fibre,2,35,0,41.77,No
+T100370,Scotland,Monthly,Fibre,4,13,1,64.31,No
+T100371,Scotland,Monthly,Fibre,4,11,3,69.62,Yes
+T100372,Midlands,One year,Copper,4,71,0,62.71,No
+T100373,Scotland,Two year,Fibre,1,57,3,47.34,No
+T100374,North,One year,Fibre,2,8,2,51.14,No
+T100375,Wales,Monthly,Copper,4,62,3,64.67,Yes
+T100376,South,Monthly,Copper,1,44,2,31.58,Yes
+T100377,South,Monthly,Copper,4,53,1,57.63,No
+T100378,Wales,One year,Fibre,3,55,1,65.39,No
+T100379,Wales,Monthly,Fibre,1,70,1,59.55,No
+T100380,Midlands,Monthly,Copper,2,2,2,33.29,No
+T100381,Midlands,Monthly,Copper,2,20,1,54.77,No
+T100382,Midlands,Two year,Copper,3,37,1,44.95,No
+T100383,South,Monthly,Fibre,1,40,2,35.42,No
+T100384,Midlands,One year,Copper,3,67,3,60.73,No
+T100385,Midlands,Monthly,Copper,1,32,2,28.33,Yes
+T100386,South,Monthly,Fibre,4,10,1,77.17,No
+T100387,South,Monthly,Copper,2,46,3,43.93,No
+T100388,Wales,Monthly,Copper,1,51,0,38.15,Yes
+T100389,Scotland,One year,Copper,1,20,1,33.54,No
+T100390,Scotland,Monthly,Fibre,2,37,1,62.92,No
+T100391,North,Monthly,Fibre,3,49,0,60.54,No
+T100392,Wales,One year,Copper,3,8,2,47.17,No
+T100393,Wales,One year,Copper,1,34,3,35.93,No
+T100394,North,Monthly,Copper,3,26,1,48.65,No
+T100395,Wales,One year,Fibre,1,28,2,53.47,No
+T100396,Scotland,Two year,Fibre,4,11,0,67.74,No
+T100397,Scotland,Monthly,Copper,3,50,2,50.75,No
+T100398,Wales,Monthly,Fibre,3,17,2,56.1,No
+T100399,North,One year,Copper,1,20,2,27.62,No
+T100400,Midlands,Monthly,Copper,2,36,0,44.32,No
+T100401,Midlands,Monthly,Fibre,3,24,0,73.65,No
+T100402,North,Monthly,Fibre,4,60,1,75.52,Yes
+T100403,Midlands,Monthly,Fibre,1,71,1,56.61,No
+T100404,Midlands,Monthly,Fibre,4,28,3,70.26,No
+T100405,Midlands,Monthly,Fibre,2,28,0,43.7,No
+T100406,South,Monthly,Copper,1,5,2,25.62,No
+T100407,Midlands,Two year,Fibre,2,25,4,57.77,No
+T100408,South,Monthly,Fibre,3,6,1,61.19,No
+T100409,North,One year,Fibre,2,69,0,58.16,No
+T100410,South,One year,Fibre,3,1,0,65.48,No
+T100411,North,One year,Fibre,2,67,2,59.15,No
+T100412,Midlands,Monthly,Fibre,2,53,1,53.29,No
+T100413,North,Monthly,Fibre,1,66,3,52.86,No
+T100414,South,Two year,Fibre,3,53,2,57.19,No
+T100415,South,One year,Fibre,2,7,2,58.02,No
+T100416,North,One year,Copper,4,6,2,52.0,Yes
+T100417,North,Monthly,Fibre,3,58,0,73.28,No
+T100418,Scotland,Two year,Copper,1,67,0,25.32,No
+T100419,Wales,Monthly,Fibre,3,15,0,60.4,Yes
+T100420,North,Monthly,Fibre,1,23,1,35.49,No
+T100421,Wales,Monthly,Fibre,2,47,0,59.68,No
+T100422,North,Two year,Copper,4,42,3,54.45,No
+T100423,North,Monthly,Fibre,1,61,1,49.08,No
+T100424,South,Monthly,Fibre,1,34,2,36.59,Yes
+T100425,Scotland,Monthly,Fibre,1,54,4,47.43,Yes
+T100426,North,One year,Fibre,2,29,1,54.54,No
+T100427,Midlands,One year,Fibre,3,5,0,55.95,Yes
+T100428,South,Monthly,Fibre,2,28,2,51.42,No
+T100429,Midlands,Monthly,Copper,3,43,2,53.91,Yes
+T100430,Wales,Monthly,Fibre,2,63,3,66.91,Yes
+T100431,Midlands,Two year,Fibre,3,13,4,59.93,No
+T100432,North,Two year,Copper,3,8,0,55.76,No
+T100433,North,One year,Fibre,1,59,2,40.36,No
+T100434,North,One year,Copper,4,40,0,56.65,No
+T100435,North,Monthly,Copper,2,17,0,32.72,No
+T100436,Midlands,Monthly,Fibre,3,36,3,75.36,Yes
+T100437,Wales,Two year,Fibre,1,15,1,40.24,No
+T100438,North,Monthly,Fibre,3,69,0,65.87,No
+T100439,Midlands,One year,Copper,3,26,2,60.29,Yes
+T100440,Wales,Monthly,Copper,2,14,0,41.28,Yes
+T100441,Midlands,Monthly,Copper,2,40,3,28.17,Yes
+T100442,Scotland,Monthly,Copper,4,28,1,50.12,No
+T100443,North,Monthly,Fibre,2,65,1,65.84,No
+T100444,North,Two year,Fibre,4,35,0,69.32,No
+T100445,Scotland,Monthly,Copper,4,13,2,47.54,No
+T100446,South,Monthly,Fibre,1,7,4,36.67,Yes
+T100447,North,One year,Fibre,3,60,1,70.95,No
+T100448,Scotland,Monthly,Copper,3,65,3,52.26,No
+T100449,Midlands,One year,Fibre,1,30,1,50.05,No
+T100450,South,One year,Copper,4,69,0,59.06,No
+T100451,South,Monthly,Fibre,1,71,0,43.21,No
+T100452,Wales,Monthly,Fibre,2,7,1,54.51,No
+T100453,Midlands,Monthly,Copper,4,46,2,73.87,No
+T100454,Midlands,Monthly,Fibre,2,21,2,59.07,Yes
+T100455,Scotland,Monthly,Copper,1,16,2,34.43,No
+T100456,Scotland,Monthly,Copper,2,38,2,38.37,No
+T100457,Wales,Monthly,Copper,1,37,2,21.4,No
+T100458,South,Monthly,Copper,4,19,2,66.54,Yes
+T100459,South,Monthly,Fibre,4,53,2,80.08,No
+T100460,Midlands,One year,Fibre,1,66,1,48.29,No
+T100461,North,Two year,Copper,4,60,0,56.27,No
+T100462,Wales,Monthly,Fibre,2,26,1,60.94,No
+T100463,Wales,Monthly,Fibre,4,34,0,67.71,No
+T100464,Midlands,Monthly,Fibre,1,29,2,39.98,Yes
+T100465,South,One year,Fibre,2,27,4,53.2,No
+T100466,Wales,Monthly,Copper,1,2,0,24.19,No
+T100467,Midlands,Two year,Copper,4,53,4,58.78,No
+T100468,North,Monthly,Fibre,1,14,2,42.54,Yes
+T100469,Wales,One year,Fibre,1,8,0,43.05,No
+T100470,Wales,Monthly,Fibre,2,28,5,48.98,Yes
+T100471,South,Monthly,Copper,2,51,4,34.98,No
+T100472,Wales,One year,Fibre,2,28,0,53.9,No
+T100473,North,One year,Copper,2,29,0,35.3,No
+T100474,South,One year,Copper,4,41,2,66.0,No
+T100475,Scotland,Two year,Fibre,2,50,0,50.94,No
+T100476,Scotland,Monthly,Copper,3,21,3,44.17,No
+T100477,North,One year,Fibre,1,7,1,40.89,No
+T100478,South,Monthly,Fibre,1,70,0,48.85,No
+T100479,Scotland,Monthly,Fibre,3,18,0,57.57,No
+T100480,Wales,One year,Copper,2,24,2,34.91,Yes
+T100481,Wales,One year,Fibre,4,21,0,68.96,No
+T100482,Wales,Monthly,Fibre,1,63,2,40.17,No
+T100483,Midlands,Two year,Fibre,3,22,0,59.36,No
+T100484,North,Two year,Fibre,3,3,2,52.99,No
+T100485,Wales,One year,Fibre,4,69,3,78.46,No
+T100486,Scotland,Monthly,Fibre,2,49,2,49.66,No
+T100487,Wales,One year,Copper,4,61,1,61.79,No
+T100488,South,Monthly,Copper,2,30,1,36.19,No
+T100489,Midlands,One year,Fibre,3,7,3,67.03,Yes
+T100490,North,One year,Copper,2,21,4,43.1,Yes
+T100491,North,Monthly,Fibre,4,41,0,74.17,No
+T100492,Wales,Monthly,Fibre,3,13,1,72.7,No
+T100493,South,Two year,Fibre,3,68,2,58.15,No
+T100494,North,Monthly,Copper,2,20,2,44.65,Yes
+T100495,Wales,Monthly,Copper,2,58,1,45.05,No
+T100496,South,One year,Copper,2,6,1,48.8,No
+T100497,Wales,Monthly,Fibre,3,4,3,43.3,Yes
+T100498,South,One year,Copper,1,57,1,44.98,No
+T100499,North,Monthly,Fibre,4,53,3,68.08,No
+T100500,Scotland,Two year,Fibre,3,11,0,65.34,No
+T100501,Midlands,Monthly,Fibre,3,56,0,59.55,No
+T100502,South,One year,Copper,3,61,3,57.55,No
+T100503,South,One year,Fibre,3,65,2,67.55,No
+T100504,South,Two year,Fibre,2,2,2,57.69,No
+T100505,Wales,One year,Copper,1,42,1,24.21,No
+T100506,Scotland,Monthly,Copper,1,18,2,21.18,No
+T100507,Midlands,Monthly,Fibre,3,32,1,67.99,No
+T100508,North,Monthly,Copper,3,1,3,50.14,Yes
+T100509,Wales,Two year,Copper,1,14,0,16.1,No
+T100510,Midlands,Monthly,Copper,1,50,4,32.65,No
+T100511,Wales,One year,Fibre,2,43,3,56.87,No
+T100512,Scotland,Monthly,Copper,1,23,2,31.25,Yes
+T100513,South,Two year,Fibre,3,20,1,54.92,No
+T100514,Scotland,Monthly,Copper,3,16,2,52.44,Yes
+T100515,Scotland,One year,Fibre,3,21,0,70.78,Yes
+T100516,North,One year,Fibre,4,30,1,66.43,No
+T100517,South,Monthly,Fibre,1,38,0,54.29,No
+T100518,Wales,One year,Fibre,2,54,0,52.72,No
+T100519,South,Monthly,Fibre,1,6,1,42.92,No
+T100520,Wales,One year,Fibre,3,8,2,59.4,No
+T100521,South,Monthly,Copper,3,35,2,52.06,Yes
+T100522,North,Monthly,Fibre,3,56,3,60.73,No
+T100523,Scotland,Monthly,Fibre,2,18,2,52.2,No
+T100524,Midlands,Two year,Fibre,4,2,2,69.33,No
+T100525,Scotland,Monthly,Fibre,4,33,0,72.39,No
+T100526,South,Monthly,Copper,3,3,3,55.68,Yes
+T100527,Wales,Two year,Copper,3,14,1,38.82,No
+T100528,Wales,Monthly,Fibre,1,54,0,46.47,No
+T100529,Scotland,One year,Fibre,1,53,1,46.36,No
+T100530,North,Two year,Copper,1,16,1,28.56,Yes
+T100531,Scotland,Monthly,Fibre,2,62,1,53.47,No
+T100532,Wales,Monthly,Fibre,3,57,2,61.85,Yes
+T100533,Midlands,One year,Copper,2,50,0,45.19,No
+T100534,Midlands,Two year,Fibre,3,45,0,62.91,No
+T100535,Scotland,Monthly,Fibre,4,64,2,,Yes
+T100536,Midlands,Monthly,Copper,2,3,4,41.21,Yes
+T100537,Scotland,Two year,Fibre,4,63,3,74.84,No
+T100538,North,Two year,Fibre,2,45,1,54.37,No
+T100539,North,Monthly,Fibre,4,42,1,77.93,No
+T100540,South,One year,Copper,1,35,1,42.58,No
+T100541,North,Monthly,Fibre,4,54,3,87.18,No
+T100542,Scotland,One year,Fibre,4,58,3,80.96,No
+T100543,Midlands,Two year,Copper,1,11,0,13.15,No
+T100544,North,One year,Copper,3,13,1,44.78,No
+T100545,Wales,Monthly,Copper,2,40,1,49.41,No
+T100546,North,Two year,Copper,3,22,0,51.24,No
+T100547,South,Two year,Fibre,4,69,4,70.46,No
+T100548,South,Two year,Fibre,2,43,3,53.1,No
+T100549,Midlands,Monthly,Fibre,3,53,2,72.09,Yes
+T100550,Scotland,Monthly,Fibre,3,69,1,68.2,Yes
+T100551,Wales,Monthly,Fibre,1,69,1,50.92,No
+T100552,North,Two year,Fibre,4,67,1,72.52,No
+T100553,Wales,One year,Fibre,1,23,0,44.91,No
+T100554,Scotland,One year,Copper,3,24,0,47.62,No
+T100555,North,Two year,Fibre,1,11,1,45.36,No
+T100556,South,Monthly,Fibre,3,42,0,64.3,No
+T100557,Wales,Monthly,Copper,2,5,2,36.72,Yes
+T100558,South,Monthly,Copper,1,49,0,37.76,Yes
+T100559,Midlands,Monthly,Copper,1,2,3,27.49,Yes
+T100560,Scotland,Monthly,Copper,2,50,1,43.37,No
+T100561,Midlands,Monthly,Fibre,3,43,1,55.76,No
+T100562,Scotland,Monthly,Copper,2,34,1,41.91,No
+T100563,Scotland,Monthly,Fibre,3,51,2,67.2,No
+T100564,Scotland,Two year,Copper,1,27,3,35.3,No
+T100565,Midlands,One year,Fibre,1,13,2,38.5,No
+T100566,Scotland,Monthly,Fibre,4,54,1,75.7,Yes
+T100567,South,One year,Fibre,3,68,2,74.07,No
+T100568,Midlands,One year,Copper,2,30,0,38.82,No
+T100569,South,Monthly,Fibre,2,20,1,47.06,No
+T100570,South,One year,Copper,2,36,0,40.03,No
+T100571,Wales,One year,Fibre,1,17,2,50.15,No
+T100572,North,Two year,Fibre,3,20,0,61.46,No
+T100573,South,One year,Copper,3,51,0,61.23,No
+T100574,Midlands,One year,Copper,2,4,0,51.08,No
+T100575,South,One year,Copper,4,2,1,52.84,No
+T100576,Scotland,Monthly,Copper,2,71,0,48.3,No
+T100577,Wales,One year,Copper,1,34,1,29.76,No
+T100578,North,One year,Copper,1,55,1,29.36,No
+T100579,Scotland,Two year,Copper,2,48,1,42.06,No
+T100580,Scotland,Monthly,Copper,2,21,1,26.96,Yes
+T100581,North,Two year,Fibre,1,40,0,48.97,No
+T100582,Scotland,Two year,Copper,2,41,3,35.86,No
+T100583,Midlands,One year,Fibre,4,17,3,75.84,No
+T100584,Wales,Monthly,Copper,2,11,0,40.53,No
+T100585,Wales,Monthly,Fibre,2,58,1,53.08,No
+T100586,South,One year,Fibre,4,20,0,69.92,No
+T100587,Scotland,Monthly,Copper,3,40,1,63.69,No
+T100588,Wales,One year,Fibre,3,24,2,52.26,No
+T100589,Scotland,Monthly,Copper,4,41,5,62.51,No
+T100590,Scotland,Two year,Fibre,3,1,1,61.1,No
+T100591,North,Monthly,Fibre,4,28,3,63.3,Yes
+T100592,Scotland,One year,Fibre,3,7,1,52.42,No
+T100593,Midlands,Monthly,Copper,1,70,2,32.38,No
+T100594,Midlands,One year,Fibre,2,15,0,56.66,No
+T100595,Scotland,Monthly,Copper,3,5,2,47.43,Yes
+T100596,Scotland,Two year,Fibre,2,27,1,50.37,No
+T100597,South,Monthly,Fibre,3,18,3,61.94,Yes
+T100598,Wales,Monthly,Fibre,4,48,1,83.45,No
+T100599,North,Two year,Fibre,2,51,1,58.01,No
+T100600,Wales,Monthly,Fibre,3,23,2,61.11,No
+T100601,Wales,One year,Copper,4,22,2,55.77,Yes
+T100602,South,Monthly,Copper,1,48,0,38.03,No
+T100603,Wales,Monthly,Fibre,2,54,2,53.18,No
+T100604,South,Monthly,Fibre,4,19,0,76.84,No
+T100605,Scotland,Monthly,Copper,2,54,1,36.84,No
+T100606,North,One year,Fibre,3,69,1,64.35,No
+T100607,Wales,Two year,Fibre,3,30,1,64.34,No
+T100608,Midlands,Monthly,Copper,2,23,2,39.71,No
+T100609,North,Monthly,Fibre,1,60,1,48.47,No
+T100610,South,One year,Fibre,3,70,1,62.92,No
+T100611,North,Monthly,Fibre,4,50,2,79.11,No
+T100612,Midlands,Monthly,Copper,1,25,2,18.75,No
+T100613,Scotland,One year,Fibre,3,48,1,65.98,No
+T100614,Midlands,One year,Fibre,4,3,1,61.16,No
+T100615,Scotland,Monthly,Fibre,1,39,3,40.66,No
+T100616,South,Monthly,Copper,3,11,1,44.0,Yes
+T100617,Wales,Monthly,Fibre,3,41,2,57.13,No
+T100618,Midlands,Two year,Fibre,3,1,2,54.59,No
+T100619,Midlands,One year,Fibre,4,66,2,75.89,No
+T100620,Midlands,Two year,Copper,4,45,2,60.03,No
+T100621,Scotland,Two year,Fibre,2,59,1,57.47,No
+T100622,Midlands,Monthly,Fibre,3,27,2,65.6,No
+T100623,Midlands,One year,Fibre,2,18,0,62.47,No
+T100624,Wales,Two year,Fibre,1,52,1,33.47,No
+T100625,Scotland,One year,Fibre,2,64,2,58.61,No
+T100626,Scotland,Monthly,Fibre,2,55,1,57.22,No
+T100627,Midlands,Two year,Fibre,1,44,1,31.4,Yes
+T100628,Wales,One year,Copper,1,9,2,27.72,Yes
+T100629,North,One year,Copper,2,34,1,34.75,No
+T100630,North,Monthly,Fibre,4,34,1,73.31,No
+T100631,South,Monthly,Copper,1,39,2,26.2,No
+T100632,North,Two year,Fibre,2,62,4,57.23,No
+T100633,Scotland,Two year,Fibre,1,39,0,39.9,No
+T100634,North,One year,Fibre,1,43,1,50.58,No
+T100635,North,Monthly,Copper,4,35,2,48.35,No
+T100636,South,One year,Fibre,4,33,2,72.08,No
+T100637,North,Two year,Copper,3,69,3,37.4,No
+T100638,North,One year,Fibre,4,3,1,82.34,No
+T100639,South,Monthly,Copper,4,54,0,54.34,No
+T100640,North,Monthly,Fibre,4,25,1,69.87,No
+T100641,South,One year,Fibre,1,8,2,45.69,No
+T100642,Scotland,Monthly,Copper,2,47,0,40.89,No
+T100643,Scotland,Monthly,Fibre,2,21,2,55.79,Yes
+T100644,South,Monthly,Copper,4,45,2,58.05,No
+T100645,North,Monthly,Copper,4,27,2,58.95,Yes
+T100646,North,Two year,Copper,1,58,2,31.32,No
+T100647,South,Monthly,Fibre,1,70,1,45.01,No
+T100648,South,One year,Fibre,4,67,0,69.61,No
+T100649,Midlands,Monthly,Copper,3,40,1,43.47,Yes
+T100650,South,One year,Fibre,3,23,2,61.06,Yes
+T100651,Midlands,Monthly,Fibre,1,45,2,47.17,No
+T100652,South,One year,Fibre,1,11,3,48.06,Yes
+T100653,North,One year,Fibre,3,68,1,71.15,No
+T100654,Scotland,Monthly,Fibre,4,29,2,68.18,Yes
+T100655,Midlands,Monthly,Copper,1,59,0,30.78,No
+T100656,Midlands,Two year,Copper,4,60,2,70.92,No
+T100657,Midlands,Monthly,Fibre,4,17,1,69.17,No
+T100658,Midlands,Two year,Copper,2,60,2,41.86,No
+T100659,Wales,Monthly,Fibre,4,19,1,78.98,No
+T100660,Wales,Monthly,Copper,3,69,1,51.21,No
+T100661,Midlands,Monthly,Fibre,4,43,5,63.92,Yes
+T100662,Wales,Monthly,Fibre,3,66,3,85.28,No
+T100663,Wales,Monthly,Fibre,1,36,0,50.5,Yes
+T100664,Scotland,Monthly,Copper,4,40,2,58.93,No
+T100665,Midlands,Monthly,Fibre,1,2,4,38.46,Yes
+T100666,Midlands,Monthly,Copper,1,54,3,33.95,No
+T100667,Scotland,Monthly,Fibre,1,39,1,43.77,No
+T100668,South,Monthly,Copper,3,71,2,47.92,No
+T100669,Scotland,Two year,Fibre,2,67,5,47.49,No
+T100670,Wales,One year,Fibre,4,4,1,60.69,No
+T100671,South,Monthly,Fibre,3,49,1,63.53,Yes
+T100672,Wales,Monthly,Fibre,3,16,0,71.01,No
+T100673,North,Monthly,Fibre,3,10,1,61.59,No
+T100674,South,Monthly,Copper,2,2,1,32.54,No
+T100675,Scotland,Monthly,Fibre,2,50,3,46.95,Yes
+T100676,Scotland,One year,Fibre,1,39,1,44.44,No
+T100677,Scotland,One year,Fibre,1,13,1,40.96,No
+T100678,Scotland,Monthly,Copper,2,17,3,31.15,Yes
+T100679,Midlands,Monthly,Fibre,3,70,4,69.27,No
+T100680,North,Monthly,Copper,3,29,3,39.82,Yes
+T100681,South,Two year,Fibre,2,39,1,53.06,No
+T100682,Midlands,One year,Copper,1,54,0,29.21,No
+T100683,Wales,One year,Copper,3,64,1,52.34,No
+T100684,North,Two year,Fibre,3,44,1,62.61,Yes
+T100685,South,Monthly,Fibre,3,55,1,72.4,No
+T100686,Wales,One year,Fibre,3,29,0,54.2,No
+T100687,North,Monthly,Fibre,1,69,1,47.56,No
+T100688,South,Monthly,Copper,4,51,0,57.97,No
+T100689,Wales,Monthly,Copper,3,37,0,47.07,No
+T100690,Wales,One year,Fibre,1,39,1,52.86,No
+T100691,South,Monthly,Fibre,2,36,1,56.36,No
+T100692,Wales,Monthly,Fibre,4,29,1,76.06,No
+T100693,Scotland,Monthly,Fibre,3,5,1,55.72,No
+T100694,North,One year,Copper,1,62,0,40.84,No
+T100695,Wales,One year,Fibre,4,48,2,73.43,No
+T100696,South,One year,Fibre,4,65,1,69.98,No
+T100697,Midlands,Monthly,Fibre,2,18,0,51.12,Yes
+T100698,Midlands,One year,Copper,4,19,4,48.64,Yes
+T100699,Scotland,Monthly,Fibre,4,19,2,81.87,Yes
+T100700,North,Monthly,Copper,4,22,2,50.38,Yes
+T100701,Scotland,Monthly,Fibre,4,42,2,75.7,No
+T100702,North,One year,Copper,4,57,2,67.32,No
+T100703,South,Monthly,Fibre,4,48,2,75.13,No
+T100704,South,Monthly,Fibre,4,68,4,69.75,No
+T100705,Scotland,Monthly,Copper,4,9,1,,Yes
+T100706,Wales,Monthly,Copper,2,26,3,37.38,No
+T100707,South,Monthly,Fibre,1,38,1,37.91,No
+T100708,Midlands,Monthly,Fibre,1,49,1,49.17,No
+T100709,Scotland,Two year,Fibre,3,1,5,56.92,No
+T100710,Midlands,Monthly,Fibre,1,29,0,47.12,No
+T100711,Wales,Monthly,Copper,3,3,3,40.76,Yes
+T100712,Midlands,Monthly,Copper,4,31,1,69.76,No
+T100713,Midlands,One year,Fibre,4,41,3,76.94,No
+T100714,South,Two year,Copper,1,14,4,32.02,No
+T100715,Midlands,Monthly,Copper,2,50,2,47.89,No
+T100716,Scotland,Two year,Fibre,1,49,1,49.94,No
+T100717,Midlands,One year,Copper,4,31,1,55.82,No
+T100718,Wales,One year,Fibre,2,25,2,57.73,No
+T100719,Scotland,Monthly,Copper,3,45,2,48.2,No
+T100720,Wales,Monthly,Fibre,4,57,1,82.62,No
+T100721,Scotland,One year,Fibre,1,60,0,51.04,No
+T100722,North,Monthly,Copper,1,54,1,25.86,No
+T100723,South,Monthly,Copper,2,39,5,47.27,Yes
+T100724,North,One year,Copper,1,58,1,38.17,No
+T100725,Wales,One year,Fibre,2,63,3,65.04,Yes
+T100726,Wales,One year,Fibre,3,6,0,60.68,No
+T100727,South,Monthly,Fibre,1,34,2,41.54,No
+T100728,Wales,Monthly,Fibre,1,16,1,39.64,No
+T100729,Wales,Two year,Fibre,2,59,1,63.52,No
+T100730,Midlands,One year,Copper,3,28,1,44.31,No
+T100731,North,Monthly,Fibre,3,47,0,67.92,No
+T100732,Scotland,Monthly,Fibre,2,43,1,62.53,No
+T100733,Scotland,Monthly,Fibre,1,45,2,56.8,No
+T100734,South,Monthly,Copper,4,42,0,48.05,No
+T100735,Wales,Two year,Fibre,3,35,0,62.36,No
+T100736,South,Monthly,Fibre,4,44,1,82.72,Yes
+T100737,Midlands,Two year,Copper,4,57,3,70.15,No
+T100738,Wales,One year,Copper,2,49,0,45.91,No
+T100739,Scotland,Monthly,Copper,2,45,1,39.3,No
+T100740,Midlands,One year,Copper,3,58,1,46.03,No
+T100741,Scotland,Monthly,Fibre,2,62,2,55.17,No
+T100742,South,Monthly,Fibre,1,5,0,47.05,Yes
+T100743,Wales,Monthly,Copper,1,61,0,27.33,No
+T100744,Midlands,Monthly,Copper,1,31,0,34.99,No
+T100745,North,Monthly,Copper,1,48,0,26.76,No
+T100746,North,Monthly,Copper,1,30,1,33.39,No
+T100747,Midlands,Monthly,Fibre,3,26,0,60.48,No
+T100748,Wales,One year,Fibre,3,64,4,76.31,No
+T100749,North,Monthly,Copper,4,68,1,63.07,No
+T100750,Midlands,Two year,Copper,2,33,4,,No
+T100751,North,Two year,Fibre,2,45,3,42.79,No
+T100752,South,Monthly,Copper,2,44,1,50.41,No
+T100753,Scotland,Monthly,Fibre,4,20,1,73.35,Yes
+T100754,Scotland,Monthly,Fibre,1,47,0,43.71,No
+T100755,North,Monthly,Fibre,3,59,1,67.63,No
+T100756,Scotland,Monthly,Fibre,4,10,2,74.95,No
+T100757,Scotland,Monthly,Fibre,3,17,4,65.78,Yes
+T100758,North,Monthly,Fibre,3,39,2,64.34,No
+T100759,South,Monthly,Fibre,3,1,1,59.63,No
+T100760,Midlands,One year,Copper,4,48,3,61.07,Yes
+T100761,South,One year,Fibre,2,64,0,63.47,No
+T100762,Scotland,Two year,Copper,1,41,2,27.88,No
+T100763,Midlands,One year,Fibre,1,18,1,43.34,No
+T100764,Wales,Two year,Fibre,1,22,0,37.43,No
+T100765,South,Monthly,Fibre,3,26,0,68.91,Yes
+T100766,Wales,Monthly,Fibre,1,38,2,48.77,No
+T100767,Scotland,Two year,Fibre,2,34,1,51.35,No
+T100768,Wales,Monthly,Copper,3,28,1,53.76,No
+T100769,South,Monthly,Copper,3,8,3,49.89,Yes
+T100770,South,Monthly,Fibre,4,9,1,69.82,No
+T100771,Scotland,One year,Fibre,4,36,1,70.01,No
+T100772,Scotland,One year,Copper,2,70,2,44.12,No
+T100773,South,Two year,Copper,1,28,1,28.41,No
+T100774,Scotland,One year,Fibre,1,49,2,39.68,No
+T100775,Midlands,Two year,Copper,2,3,1,24.63,No
+T100776,Scotland,Monthly,Copper,1,6,3,26.88,Yes
+T100777,Scotland,Monthly,Fibre,1,26,2,39.32,No
+T100778,Wales,Monthly,Fibre,1,8,0,39.27,No
+T100779,Midlands,One year,Copper,4,49,2,55.85,No
+T100780,South,Monthly,Copper,2,8,0,47.36,Yes
+T100781,North,Monthly,Fibre,2,66,3,72.43,Yes
+T100782,South,Monthly,Fibre,2,42,1,64.28,No
+T100783,South,Two year,Fibre,4,44,1,81.23,No
+T100784,Wales,Monthly,Fibre,1,9,1,42.66,Yes
+T100785,Midlands,Monthly,Fibre,2,69,0,68.65,No
+T100786,North,Monthly,Copper,4,2,0,45.38,Yes
+T100787,Midlands,Monthly,Copper,2,44,1,25.4,Yes
+T100788,Scotland,Two year,Fibre,2,41,1,49.57,No
+T100789,North,Two year,Fibre,4,28,3,64.2,No
+T100790,South,Monthly,Fibre,4,31,5,78.01,No
+T100791,Scotland,Monthly,Fibre,2,45,3,56.43,Yes
+T100792,South,Two year,Copper,1,38,0,27.79,No
+T100793,North,Monthly,Fibre,4,45,1,72.6,No
+T100794,Midlands,Monthly,Copper,4,36,3,58.87,No
+T100795,North,Monthly,Copper,2,58,0,43.53,No
+T100796,Wales,Monthly,Copper,1,12,2,28.96,No
+T100797,Scotland,Monthly,Copper,4,35,1,69.4,No
+T100798,Scotland,Two year,Copper,4,46,1,66.61,No
+T100799,South,Two year,Copper,4,58,3,61.4,No
+T100800,South,Monthly,Copper,1,59,0,32.21,No
+T100801,Scotland,Monthly,Copper,2,16,0,34.26,Yes
+T100802,Scotland,Monthly,Copper,3,5,3,43.78,Yes
+T100803,Scotland,Monthly,Copper,2,22,1,35.73,No
+T100804,North,Monthly,Fibre,2,10,3,43.6,Yes
+T100805,Scotland,Monthly,Copper,3,31,2,45.78,No
+T100806,Midlands,Two year,Copper,1,4,3,28.15,Yes
+T100807,North,Monthly,Fibre,3,19,2,58.4,Yes
+T100808,Scotland,Monthly,Copper,2,71,1,41.63,No
+T100809,Scotland,Monthly,Copper,4,22,3,55.21,No
+T100810,Wales,Monthly,Fibre,4,14,1,68.64,No
+T100811,Scotland,Monthly,Copper,4,25,0,61.0,No
+T100812,Scotland,Monthly,Copper,1,53,1,31.01,No
+T100813,Midlands,Monthly,Copper,2,54,2,42.52,Yes
+T100814,Midlands,Monthly,Fibre,4,63,2,85.05,No
+T100815,North,One year,Copper,3,34,2,50.75,No
+T100816,North,One year,Copper,3,64,1,62.62,No
+T100817,Wales,Two year,Copper,2,17,0,29.66,No
+T100818,Wales,Two year,Copper,4,3,1,43.38,Yes
+T100819,North,One year,Fibre,1,6,0,42.43,No
+T100820,Wales,Monthly,Copper,1,16,4,31.71,Yes
+T100821,North,One year,Fibre,3,62,5,,No
+T100822,Midlands,Monthly,Copper,4,55,1,64.35,No
+T100823,Midlands,One year,Fibre,3,51,3,61.78,No
+T100824,South,Monthly,Fibre,4,27,0,78.79,No
+T100825,Midlands,Two year,Fibre,4,49,2,64.77,No
+T100826,North,Monthly,Fibre,2,29,0,54.82,No
+T100827,North,Monthly,Copper,1,6,0,29.41,No
+T100828,Midlands,One year,Fibre,4,12,3,69.15,Yes
+T100829,Midlands,Two year,Copper,3,2,0,41.75,No
+T100830,Scotland,Monthly,Fibre,1,48,1,58.7,No
+T100831,Midlands,Two year,Fibre,4,23,3,64.3,Yes
+T100832,South,One year,Fibre,1,43,0,57.81,No
+T100833,Scotland,Monthly,Fibre,3,3,0,66.33,No
+T100834,South,Two year,Copper,2,7,2,35.25,No
+T100835,Wales,Two year,Fibre,4,15,1,72.19,No
+T100836,North,Monthly,Fibre,1,13,1,53.15,No
+T100837,Scotland,Two year,Fibre,4,70,1,65.47,No
+T100838,Midlands,Monthly,Copper,1,39,1,31.66,No
+T100839,South,Monthly,Fibre,1,32,5,43.37,No
+T100840,Scotland,Monthly,Copper,2,59,0,44.64,No
+T100841,Midlands,One year,Copper,3,54,2,55.44,No
+T100842,North,One year,Copper,4,5,3,51.61,Yes
+T100843,Wales,Monthly,Copper,4,65,2,64.97,No
+T100844,Wales,Monthly,Fibre,4,31,0,71.12,No
+T100845,South,Monthly,Fibre,4,36,2,63.84,Yes
+T100846,Midlands,Monthly,Copper,3,52,3,44.98,No
+T100847,Wales,Monthly,Copper,4,56,3,54.56,No
+T100848,Wales,Two year,Fibre,3,66,5,53.13,No
+T100849,Scotland,Monthly,Fibre,1,43,2,50.71,No
+T100850,North,Monthly,Fibre,1,37,1,47.03,No
+T100851,North,Monthly,Fibre,2,33,0,49.39,Yes
+T100852,Scotland,Monthly,Fibre,4,41,3,85.96,No
+T100853,Scotland,Monthly,Fibre,1,56,0,43.11,No
+T100854,South,Two year,Fibre,1,40,1,39.94,No
+T100855,North,Monthly,Fibre,1,14,1,41.32,No
+T100856,Wales,Monthly,Copper,4,35,2,55.22,No
+T100857,Midlands,Monthly,Copper,2,18,1,33.55,No
+T100858,Wales,One year,Copper,2,46,2,49.46,No
+T100859,Scotland,Monthly,Copper,4,42,1,55.62,No
+T100860,South,Monthly,Fibre,2,42,1,54.51,No
+T100861,South,Two year,Copper,2,18,1,35.94,No
+T100862,Wales,Monthly,Fibre,2,14,0,58.68,Yes
+T100863,South,Monthly,Fibre,1,9,2,41.23,Yes
+T100864,Scotland,Monthly,Copper,1,44,0,32.89,No
+T100865,North,One year,Fibre,3,41,0,69.11,No
+T100866,Midlands,Monthly,Fibre,4,36,0,87.05,Yes
+T100867,South,Monthly,Fibre,2,49,0,49.7,No
+T100868,Wales,Two year,Fibre,3,51,1,61.23,No
+T100869,North,Monthly,Fibre,3,27,2,67.82,No
+T100870,Scotland,Monthly,Fibre,1,14,0,43.86,Yes
+T100871,Wales,Monthly,Copper,2,29,1,29.36,No
+T100872,Scotland,One year,Copper,2,71,0,52.14,No
+T100873,Midlands,One year,Fibre,1,44,2,50.54,No
+T100874,North,One year,Copper,2,40,3,41.33,No
+T100875,Wales,Two year,Fibre,4,21,0,76.22,No
+T100876,Midlands,Monthly,Fibre,4,60,0,85.66,Yes
+T100877,Wales,One year,Fibre,2,24,1,50.57,No
+T100878,Wales,Monthly,Copper,2,27,2,42.35,Yes
+T100879,Scotland,Monthly,Copper,2,13,4,30.12,Yes
+T100880,South,One year,Fibre,4,69,0,72.53,No
+T100881,Wales,Monthly,Fibre,3,51,0,58.57,No
+T100882,South,One year,Fibre,1,58,2,45.29,Yes
+T100883,South,Monthly,Copper,4,34,2,50.65,No
+T100884,Midlands,One year,Copper,2,18,1,49.14,No
+T100885,Wales,Monthly,Fibre,2,55,2,57.53,No
+T100886,Midlands,Monthly,Fibre,2,65,3,55.74,No
+T100887,South,Monthly,Fibre,4,38,4,71.7,No
+T100888,South,Two year,Copper,1,30,1,21.68,No
+T100889,South,Monthly,Fibre,2,59,1,52.34,No
+T100890,South,Monthly,Copper,2,11,2,31.48,No
+T100891,North,Monthly,Fibre,2,47,2,63.13,Yes
+T100892,North,One year,Fibre,2,26,0,51.49,No
+T100893,South,Monthly,Fibre,2,34,4,59.13,No
+T100894,North,One year,Fibre,2,1,1,52.22,Yes
+T100895,South,Two year,Fibre,4,45,0,73.85,No
+T100896,Midlands,Two year,Fibre,3,59,2,65.99,No
+T100897,Midlands,Monthly,Fibre,1,48,2,39.12,No
+T100898,South,Monthly,Fibre,4,14,1,82.67,No
+T100899,Midlands,Monthly,Fibre,1,13,1,45.91,Yes
+T100900,South,Monthly,Copper,1,52,1,39.29,Yes
+T100901,Scotland,One year,Fibre,3,33,2,68.85,No
+T100902,South,Monthly,Fibre,2,71,2,72.42,No
+T100903,Wales,Two year,Fibre,4,11,0,65.36,No
+T100904,South,One year,Fibre,4,32,5,60.19,No
+T100905,Wales,Monthly,Copper,1,53,2,25.7,No
+T100906,Wales,One year,Copper,4,27,1,55.52,No
+T100907,Wales,Monthly,Copper,4,38,1,62.11,No
+T100908,South,One year,Fibre,2,27,2,58.49,No
+T100909,Midlands,Monthly,Copper,1,60,3,40.53,No
+T100910,Wales,One year,Fibre,2,47,2,57.81,No
+T100911,South,Two year,Copper,4,27,1,46.5,No
+T100912,South,One year,Fibre,3,47,1,69.37,No
+T100913,South,One year,Fibre,3,62,1,64.88,No
+T100914,Midlands,Monthly,Fibre,2,5,0,49.07,Yes
+T100915,Scotland,Monthly,Copper,4,5,1,46.77,No
+T100916,North,Two year,Copper,2,17,2,29.64,No
+T100917,Wales,Monthly,Fibre,3,6,0,63.75,Yes
+T100918,North,Monthly,Fibre,3,41,0,62.58,No
+T100919,North,One year,Fibre,4,24,2,60.74,No
+T100920,Wales,Monthly,Copper,1,20,2,24.06,Yes
+T100921,North,Monthly,Copper,2,17,2,45.07,No
+T100922,South,Monthly,Copper,1,50,5,25.56,No
+T100923,North,Two year,Fibre,1,34,1,32.5,No
+T100924,South,One year,Fibre,1,50,1,41.06,No
+T100925,Scotland,Monthly,Fibre,4,20,1,79.39,No
+T100926,Scotland,One year,Copper,2,55,1,37.08,No
+T100927,Scotland,Monthly,Fibre,4,51,0,68.4,No
+T100928,Scotland,Monthly,Fibre,1,58,1,53.18,No
+T100929,North,Monthly,Fibre,1,58,1,53.37,No
+T100930,North,Monthly,Fibre,4,8,0,65.59,Yes
+T100931,Wales,One year,Fibre,4,57,2,79.62,No
+T100932,Wales,Monthly,Fibre,4,53,3,74.68,No
+T100933,Scotland,Monthly,Fibre,3,59,2,72.21,No
+T100934,Wales,Monthly,Fibre,3,40,1,61.46,No
+T100935,North,One year,Fibre,1,10,0,40.03,No
+T100936,Wales,One year,Fibre,1,70,0,49.43,No
+T100937,Scotland,One year,Fibre,1,16,1,43.7,No
+T100938,Midlands,Monthly,Fibre,1,7,3,41.68,Yes
+T100939,North,Monthly,Fibre,1,63,3,54.26,Yes
+T100940,Midlands,Monthly,Copper,1,46,5,39.93,No
+T100941,North,Monthly,Copper,4,65,1,59.14,No
+T100942,North,One year,Fibre,4,35,2,80.65,No
+T100943,Midlands,Two year,Fibre,1,70,1,47.4,No
+T100944,Scotland,Monthly,Fibre,3,11,2,59.08,Yes
+T100945,Midlands,Monthly,Copper,4,66,1,65.97,No
+T100946,North,Monthly,Fibre,4,56,2,64.38,Yes
+T100947,Midlands,Monthly,Fibre,4,37,3,75.04,Yes
+T100948,South,One year,Fibre,2,56,1,56.39,No
+T100949,North,One year,Fibre,4,20,2,71.88,No
+T100950,South,One year,Fibre,4,69,1,84.44,No
+T100951,North,Two year,Fibre,1,3,0,26.82,No
+T100952,Wales,One year,Fibre,2,14,2,52.81,No
+T100953,Scotland,Monthly,Copper,3,36,2,50.84,No
+T100954,North,Monthly,Fibre,2,14,0,50.36,Yes
+T100955,South,Monthly,Fibre,2,4,0,43.82,No
+T100956,Scotland,Two year,Fibre,3,36,0,61.67,No
+T100957,Wales,Two year,Copper,3,41,1,48.13,No
+T100958,Scotland,Monthly,Fibre,1,39,3,47.82,No
+T100959,South,One year,Copper,4,9,2,68.98,No
+T100960,North,One year,Copper,1,29,0,32.56,No
+T100961,South,Two year,Copper,3,13,1,35.31,No
+T100962,South,Monthly,Copper,1,53,1,19.66,No
+T100963,Midlands,One year,Fibre,4,17,0,60.17,Yes
+T100964,Scotland,Monthly,Copper,4,32,0,56.42,Yes
+T100965,Midlands,Two year,Fibre,2,35,0,45.3,No
+T100966,South,Monthly,Copper,1,34,1,28.79,No
+T100967,Scotland,Monthly,Fibre,3,16,0,65.84,Yes
+T100968,Wales,Monthly,Fibre,2,50,1,56.41,No
+T100969,North,One year,Fibre,3,29,2,59.78,No
+T100970,South,Two year,Fibre,2,29,3,49.21,No
+T100971,Scotland,Two year,Copper,3,65,1,53.28,No
+T100972,Scotland,Monthly,Copper,3,2,3,54.37,Yes
+T100973,North,Monthly,Fibre,2,30,2,60.99,No
+T100974,Scotland,Monthly,Copper,4,54,1,48.72,No
+T100975,Scotland,Monthly,Fibre,4,62,4,79.63,No
+T100976,Scotland,One year,Fibre,2,17,1,57.21,No
+T100977,Wales,Two year,Fibre,3,29,1,67.09,No
+T100978,Midlands,Monthly,Fibre,4,42,0,80.76,No
+T100979,North,Two year,Fibre,1,13,0,40.41,No
+T100980,Wales,Monthly,Copper,2,28,1,38.47,No
+T100981,Scotland,Two year,Copper,1,25,1,28.87,No
+T100982,South,Two year,Copper,4,69,5,68.56,No
+T100983,Midlands,One year,Copper,3,62,5,65.17,No
+T100984,North,One year,Fibre,1,2,0,45.16,No
+T100985,Scotland,Monthly,Copper,1,43,2,32.1,No
+T100986,Wales,One year,Copper,2,32,1,44.27,No
+T100987,Scotland,One year,Fibre,2,26,1,48.96,No
+T100988,North,One year,Fibre,2,49,3,55.15,No
+T100989,Wales,Monthly,Fibre,1,16,2,38.6,No
+T100990,South,Monthly,Fibre,1,45,1,43.52,No
+T100991,Scotland,Monthly,Fibre,3,47,0,63.49,No
+T100992,North,Monthly,Fibre,3,59,4,66.39,No
+T100993,South,One year,Copper,3,29,1,51.24,No
+T100994,Scotland,Monthly,Fibre,1,36,1,47.1,Yes
+T100995,Midlands,Two year,Fibre,1,58,3,45.16,No
+T100996,South,One year,Copper,2,20,2,25.29,No
+T100997,North,Monthly,Fibre,3,12,0,62.13,No
+T100998,Midlands,One year,Copper,3,37,4,45.31,No
+T100999,Wales,Two year,Fibre,2,66,0,64.16,No
+T101000,South,Monthly,Fibre,4,60,1,79.05,No
+T101001,South,Two year,Fibre,4,55,1,67.13,No
+T101002,North,Two year,Fibre,2,26,1,53.58,No
+T101003,Midlands,Two year,Copper,3,56,1,39.6,No
+T101004,Wales,Monthly,Copper,3,24,1,52.57,No
+T101005,Midlands,One year,Fibre,4,39,0,70.17,No
+T101006,Midlands,Monthly,Copper,4,24,2,61.54,No
+T101007,North,Monthly,Copper,1,49,0,25.54,No
+T101008,Wales,Monthly,Copper,1,66,0,36.22,No
+T101009,South,Monthly,Fibre,2,15,0,50.48,No
+T101010,Scotland,Monthly,Copper,2,5,0,39.61,No
+T101011,Wales,Monthly,Copper,4,38,4,56.94,No
+T101012,Midlands,One year,Copper,2,13,1,43.39,No
+T101013,Wales,Monthly,Copper,1,44,1,39.98,No
+T101014,Midlands,One year,Fibre,1,12,3,46.0,No
+T101015,Wales,One year,Fibre,1,27,2,49.78,Yes
+T101016,Scotland,One year,Copper,1,36,2,42.63,No
+T101017,Midlands,Two year,Fibre,2,39,2,42.97,No
+T101018,South,Monthly,Fibre,2,5,0,42.73,No
+T101019,North,One year,Copper,2,65,1,43.62,No
+T101020,Scotland,One year,Copper,4,13,3,54.78,Yes
+T101021,Scotland,Two year,Fibre,4,30,1,72.05,No
+T101022,Wales,One year,Fibre,4,10,4,72.32,No
+T101023,Wales,Monthly,Copper,2,22,0,33.88,Yes
+T101024,Midlands,One year,Fibre,2,7,4,44.03,No
+T101025,Midlands,Monthly,Copper,1,32,2,37.91,No
+T101026,North,Monthly,Copper,3,67,4,60.0,Yes
+T101027,Midlands,Monthly,Copper,3,63,0,46.07,No
+T101028,Wales,Two year,Copper,4,58,2,60.36,No
+T101029,South,Monthly,Fibre,4,11,1,80.36,Yes
+T101030,Scotland,Monthly,Copper,3,20,1,52.55,No
+T101031,North,One year,Fibre,1,32,0,49.63,No
+T101032,North,Two year,Fibre,3,27,0,61.17,No
+T101033,Scotland,Two year,Fibre,3,49,1,56.47,No
+T101034,Wales,One year,Copper,4,40,2,58.94,No
+T101035,Scotland,Monthly,Copper,4,21,2,54.15,No
+T101036,South,Monthly,Fibre,4,32,2,79.85,No
+T101037,Wales,Monthly,Fibre,2,37,3,54.4,No
+T101038,Wales,Two year,Fibre,2,61,1,51.41,No
+T101039,Scotland,Monthly,Copper,3,64,1,58.48,No
+T101040,Wales,Monthly,Copper,1,12,2,28.16,Yes
+T101041,South,Two year,Fibre,2,23,0,50.47,No
+T101042,Scotland,Monthly,Fibre,2,36,2,44.05,No
+T101043,Wales,One year,Fibre,3,32,1,67.71,No
+T101044,South,One year,Fibre,1,47,0,44.65,No
+T101045,South,Two year,Fibre,4,5,3,67.47,No
+T101046,Wales,One year,Fibre,3,43,1,67.26,No
+T101047,South,Two year,Fibre,4,46,3,67.76,No
+T101048,Wales,One year,Copper,4,15,1,52.23,No
+T101049,Wales,Monthly,Fibre,1,8,3,35.84,Yes
+T101050,South,Two year,Copper,4,54,1,59.8,No
+T101051,North,Two year,Fibre,3,9,1,54.07,No
+T101052,South,Monthly,Fibre,3,63,0,71.7,No
+T101053,South,One year,Copper,4,46,0,56.35,Yes
+T101054,North,Two year,Copper,1,46,1,33.74,No
+T101055,Scotland,One year,Fibre,1,40,2,,No
+T101056,Midlands,One year,Fibre,1,2,1,44.33,Yes
+T101057,Wales,Monthly,Copper,1,56,3,42.33,No
+T101058,Scotland,Two year,Fibre,1,35,1,32.48,No
+T101059,North,Monthly,Fibre,2,16,4,38.6,Yes
+T101060,North,Two year,Fibre,4,61,0,79.61,No
+T101061,Scotland,Monthly,Fibre,3,2,1,67.46,No
+T101062,Wales,One year,Copper,2,29,0,35.38,No
+T101063,Wales,Two year,Fibre,3,61,1,63.26,No
+T101064,South,Two year,Fibre,1,10,3,36.83,No
+T101065,South,Two year,Copper,1,60,0,40.95,No
+T101066,Scotland,Monthly,Fibre,2,44,2,54.51,No
+T101067,North,One year,Fibre,4,28,0,78.16,No
+T101068,North,Monthly,Fibre,1,16,1,33.84,No
+T101069,Midlands,Monthly,Copper,1,13,3,41.16,Yes
+T101070,Midlands,Monthly,Copper,2,65,3,43.0,Yes
+T101071,South,Monthly,Copper,4,47,3,61.28,No
+T101072,South,Monthly,Copper,1,6,2,32.85,Yes
+T101073,Midlands,Monthly,Fibre,4,39,2,83.79,Yes
+T101074,South,Two year,Fibre,3,9,1,59.4,No
+T101075,Scotland,Monthly,Fibre,4,37,2,64.95,No
+T101076,North,Monthly,Fibre,4,56,1,69.53,No
+T101077,Midlands,Monthly,Copper,3,6,1,42.22,No
+T101078,Wales,Monthly,Copper,2,40,3,46.76,Yes
+T101079,Scotland,Monthly,Copper,4,10,2,49.29,Yes
+T101080,South,One year,Fibre,4,28,2,80.53,Yes
+T101081,Midlands,Two year,Fibre,4,25,3,64.91,No
+T101082,Scotland,Two year,Copper,3,38,0,56.22,No
+T101083,North,Monthly,Copper,4,25,2,62.63,No
+T101084,Scotland,One year,Copper,3,27,2,47.08,No
+T101085,South,Two year,Fibre,2,61,2,54.9,No
+T101086,Midlands,Two year,Fibre,4,62,3,81.55,No
+T101087,North,Monthly,Fibre,2,9,0,50.31,No
+T101088,South,Two year,Copper,3,50,0,62.37,No
+T101089,Wales,Monthly,Fibre,4,56,2,89.39,Yes
+T101090,Midlands,Two year,Fibre,3,50,1,57.58,No
+T101091,North,Monthly,Fibre,2,11,4,38.9,No
+T101092,South,Two year,Fibre,3,71,0,75.77,No
+T101093,North,Monthly,Copper,4,41,5,56.23,Yes
+T101094,South,Monthly,Fibre,2,4,2,46.6,Yes
+T101095,Midlands,Two year,Fibre,1,64,3,33.17,No
+T101096,South,Monthly,Copper,4,14,1,58.53,No
+T101097,Scotland,Monthly,Copper,2,7,4,41.98,Yes
+T101098,Midlands,One year,Fibre,2,17,2,51.2,Yes
+T101099,Scotland,Monthly,Fibre,4,62,1,70.24,No
+T101100,Wales,Two year,Copper,3,53,2,54.14,No
+T101101,South,Monthly,Fibre,1,51,2,38.85,No
+T101102,Scotland,Monthly,Fibre,1,29,1,40.95,No
+T101103,Midlands,One year,Copper,3,51,2,53.92,No
+T101104,North,One year,Fibre,3,34,2,60.5,No
+T101105,South,One year,Fibre,1,36,2,53.36,No
+T101106,Midlands,Monthly,Fibre,3,41,1,78.81,Yes
+T101107,South,Monthly,Fibre,1,6,1,33.56,No
+T101108,South,Monthly,Copper,1,39,2,45.62,Yes
+T101109,Midlands,Two year,Fibre,3,61,2,63.89,No
+T101110,South,One year,Fibre,3,5,1,63.49,Yes
+T101111,Midlands,Monthly,Fibre,2,63,1,72.07,No
+T101112,South,Monthly,Copper,2,1,3,38.51,No
+T101113,Midlands,Monthly,Fibre,1,8,1,45.54,No
+T101114,South,Monthly,Copper,3,27,1,49.8,No
+T101115,Midlands,One year,Fibre,2,39,4,58.61,No
+T101116,North,Monthly,Copper,2,18,1,38.28,No
+T101117,Wales,Two year,Fibre,1,17,0,54.86,No
+T101118,Midlands,One year,Copper,2,50,1,47.5,No
+T101119,Scotland,One year,Copper,3,58,3,53.93,No
+T101120,Scotland,One year,Fibre,2,62,2,58.75,No
+T101121,Wales,Monthly,Fibre,2,18,3,46.87,No
+T101122,Wales,One year,Fibre,2,70,2,62.02,No
+T101123,Midlands,One year,Fibre,4,30,4,79.25,No
+T101124,North,One year,Copper,3,2,2,49.28,No
+T101125,North,Monthly,Copper,4,54,3,66.56,Yes
+T101126,Wales,Two year,Fibre,4,61,1,60.71,No
+T101127,North,Two year,Copper,4,23,1,48.4,No
+T101128,Scotland,Monthly,Copper,2,35,2,44.67,No
+T101129,Scotland,Two year,Fibre,2,6,2,42.89,No
+T101130,Midlands,Monthly,Fibre,4,2,1,69.32,Yes
+T101131,South,Monthly,Copper,3,20,1,51.89,Yes
+T101132,South,Two year,Fibre,2,2,2,42.0,No
+T101133,Scotland,One year,Copper,4,24,1,57.37,No
+T101134,North,Monthly,Fibre,2,10,1,40.33,No
+T101135,Wales,Monthly,Fibre,1,8,1,31.73,No
+T101136,North,Two year,Copper,3,16,0,45.85,No
+T101137,South,Monthly,Fibre,2,61,2,49.41,No
+T101138,North,One year,Fibre,2,32,1,51.09,No
+T101139,Scotland,One year,Fibre,2,28,2,49.47,No
+T101140,Wales,Monthly,Fibre,1,61,3,44.74,No
+T101141,Scotland,Monthly,Fibre,4,23,3,75.72,No
+T101142,Scotland,One year,Copper,3,44,1,48.22,No
+T101143,Midlands,Monthly,Copper,2,47,0,38.75,No
+T101144,North,Two year,Copper,3,12,2,44.99,No
+T101145,North,Two year,Fibre,3,23,2,56.05,No
+T101146,Midlands,Two year,Copper,2,8,2,27.42,No
+T101147,Midlands,Monthly,Copper,1,43,1,33.24,No
+T101148,South,One year,Copper,1,11,0,32.36,Yes
+T101149,Midlands,Monthly,Fibre,1,51,3,56.19,Yes
+T101150,North,One year,Fibre,3,33,1,65.18,No
+T101151,Midlands,Monthly,Fibre,1,42,1,46.42,No
+T101152,Midlands,Monthly,Copper,3,7,1,42.07,Yes
+T101153,Midlands,Two year,Fibre,1,5,2,32.71,No
+T101154,South,Monthly,Copper,1,43,3,28.22,No
+T101155,South,Monthly,Fibre,4,68,4,67.0,No
+T101156,Wales,Monthly,Fibre,1,30,0,35.88,No
+T101157,Midlands,Monthly,Fibre,4,69,5,82.89,No
+T101158,Scotland,Monthly,Fibre,1,3,1,48.1,Yes
+T101159,South,Monthly,Copper,2,34,1,37.73,No
+T101160,South,One year,Copper,3,8,0,54.26,No
+T101161,Midlands,Monthly,Copper,1,31,1,40.25,No
+T101162,Midlands,Two year,Fibre,2,12,1,54.87,No
+T101163,North,One year,Fibre,3,47,2,71.8,No
+T101164,Wales,Monthly,Copper,2,24,1,42.29,No
+T101165,North,One year,Fibre,4,28,0,70.05,No
+T101166,Wales,Monthly,Copper,4,59,1,63.45,No
+T101167,North,One year,Copper,1,22,0,28.3,No
+T101168,South,Monthly,Copper,1,70,0,39.99,No
+T101169,Wales,One year,Fibre,2,21,0,60.58,No
+T101170,Scotland,Two year,Fibre,1,11,2,40.46,Yes
+T101171,North,One year,Fibre,2,6,1,48.26,No
+T101172,Wales,Two year,Fibre,3,12,2,66.89,No
+T101173,South,Two year,Fibre,3,62,2,61.49,No
+T101174,Scotland,One year,Fibre,1,60,1,46.0,No
+T101175,Wales,Two year,Copper,3,7,0,57.85,No
+T101176,Scotland,Two year,Copper,2,10,1,26.77,No
+T101177,Wales,Monthly,Fibre,3,22,2,62.66,Yes
+T101178,North,One year,Copper,2,14,1,29.17,No
+T101179,North,One year,Fibre,1,59,2,47.38,No
+T101180,Wales,Monthly,Copper,1,66,3,28.4,No
+T101181,Scotland,Monthly,Fibre,1,55,5,58.62,No
+T101182,Midlands,Monthly,Fibre,3,56,0,73.39,No
+T101183,Scotland,Monthly,Fibre,1,62,1,48.14,Yes
+T101184,Scotland,Monthly,Copper,3,31,1,51.19,No
+T101185,South,Monthly,Fibre,4,1,1,72.22,No
+T101186,North,One year,Copper,2,64,1,45.73,No
+T101187,Scotland,One year,Fibre,1,24,0,38.59,No
+T101188,Scotland,Monthly,Fibre,1,31,1,42.7,Yes
+T101189,Wales,One year,Fibre,3,34,1,64.59,No
+T101190,Scotland,Monthly,Fibre,4,45,3,75.5,No
+T101191,Wales,Two year,Fibre,2,46,1,53.61,No
+T101192,Scotland,Monthly,Copper,4,22,1,49.6,No
+T101193,North,Two year,Copper,1,22,3,45.55,No
+T101194,Scotland,Monthly,Copper,4,35,2,62.3,No
+T101195,South,Monthly,Fibre,3,33,3,68.97,No
+T101196,Wales,Monthly,Fibre,3,17,3,54.76,Yes
+T101197,Scotland,Two year,Fibre,3,70,1,63.0,No
+T101198,Scotland,One year,Fibre,4,60,3,88.95,No
+T101199,Wales,One year,Fibre,3,28,1,59.74,No
+T101200,Scotland,Two year,Copper,1,21,3,22.33,No
+T101201,North,Monthly,Fibre,3,60,0,62.74,No
+T101202,South,Two year,Fibre,1,14,2,34.34,No
+T101203,Wales,Two year,Fibre,4,40,1,60.59,No
+T101204,Scotland,Monthly,Fibre,2,35,0,49.4,No
+T101205,Wales,Monthly,Fibre,2,69,0,52.92,No
+T101206,South,Two year,Fibre,4,31,1,61.32,No
+T101207,North,Monthly,Copper,4,53,2,61.12,No
+T101208,Midlands,Monthly,Fibre,2,18,5,44.57,Yes
+T101209,Scotland,Two year,Fibre,1,8,0,36.23,No
+T101210,South,Monthly,Copper,1,53,1,34.4,Yes
+T101211,Midlands,Monthly,Fibre,1,51,4,45.54,No
+T101212,North,Two year,Copper,4,68,3,61.74,No
+T101213,South,One year,Fibre,1,47,0,50.37,No
+T101214,Scotland,Monthly,Fibre,1,8,3,47.42,No
+T101215,Wales,Monthly,Fibre,3,63,0,83.16,No
+T101216,South,Monthly,Fibre,3,66,4,67.25,No
+T101217,North,Two year,Fibre,1,35,2,,No
+T101218,North,Monthly,Fibre,4,69,3,80.37,No
+T101219,Wales,Monthly,Fibre,1,14,3,39.58,No
+T101220,North,Monthly,Fibre,3,9,1,53.4,No
+T101221,North,Monthly,Copper,2,67,0,45.02,No
+T101222,Midlands,Monthly,Fibre,3,33,0,62.41,No
+T101223,North,One year,Fibre,2,15,1,68.48,No
+T101224,South,One year,Copper,3,16,0,46.32,No
+T101225,Scotland,One year,Copper,4,22,1,51.1,No
+T101226,Wales,Monthly,Copper,4,56,1,68.32,No
+T101227,North,Monthly,Fibre,2,22,0,50.24,No
+T101228,Scotland,Two year,Copper,4,3,4,49.73,No
+T101229,North,Two year,Copper,4,30,4,51.47,No
+T101230,North,Monthly,Copper,1,42,0,35.62,No
+T101231,Scotland,One year,Copper,2,30,0,41.93,No
+T101232,Midlands,One year,Copper,3,29,1,49.97,No
+T101233,South,Monthly,Copper,3,31,0,46.67,No
+T101234,North,Monthly,Fibre,2,15,1,48.66,No
+T101235,Wales,Two year,Copper,1,39,4,17.54,No
+T101236,North,One year,Fibre,4,22,1,76.29,No
+T101237,South,One year,Fibre,1,60,2,38.31,No
+T101238,South,Monthly,Fibre,3,15,1,49.0,No
+T101239,South,Monthly,Fibre,3,65,2,60.47,No
+T101240,South,Monthly,Fibre,3,38,1,77.13,No
+T101241,South,Monthly,Copper,2,33,3,42.23,No
+T101242,South,Monthly,Copper,2,10,0,41.42,No
+T101243,Midlands,Two year,Copper,1,26,0,23.66,No
+T101244,Midlands,Monthly,Copper,3,26,1,45.02,No
+T101245,Scotland,Monthly,Copper,2,19,1,32.55,No
+T101246,South,Monthly,Copper,1,40,4,37.29,No
+T101247,Midlands,One year,Copper,2,48,2,43.17,Yes
+T101248,Wales,One year,Fibre,2,41,2,58.28,No
+T101249,North,Monthly,Copper,1,61,0,45.7,Yes
+T101250,Wales,One year,Fibre,1,15,0,32.48,No
+T101251,Scotland,Monthly,Copper,2,37,1,40.29,No
+T101252,Midlands,Monthly,Copper,2,26,0,35.4,No
+T101253,Midlands,Monthly,Fibre,2,57,1,,No
+T101254,Scotland,Two year,Fibre,4,20,4,70.55,No
+T101255,Scotland,One year,Copper,2,21,1,39.29,No
+T101256,Midlands,Two year,Copper,3,20,3,40.32,Yes
+T101257,Midlands,Two year,Copper,4,44,1,49.85,No
+T101258,Midlands,Monthly,Fibre,2,28,2,48.51,Yes
+T101259,Scotland,Monthly,Fibre,3,7,0,56.2,No
+T101260,South,Monthly,Copper,2,53,0,42.62,No
+T101261,Scotland,Monthly,Fibre,4,32,5,,Yes
+T101262,South,Two year,Fibre,2,37,4,61.67,Yes
+T101263,Midlands,Two year,Fibre,3,26,0,72.52,No
+T101264,South,Monthly,Fibre,4,14,3,69.56,No
+T101265,South,One year,Copper,1,36,1,36.31,No
+T101266,South,One year,Fibre,4,66,3,79.42,No
+T101267,North,Monthly,Fibre,1,22,0,44.83,No
+T101268,North,Monthly,Fibre,4,25,2,72.03,No
+T101269,Midlands,Monthly,Fibre,3,37,3,59.93,No
+T101270,Wales,One year,Fibre,3,36,0,63.19,No
+T101271,Wales,Monthly,Fibre,1,25,1,53.79,No
+T101272,Midlands,Monthly,Fibre,2,47,1,53.22,No
+T101273,Scotland,Monthly,Fibre,4,16,8,75.75,Yes
+T101274,Midlands,One year,Fibre,1,9,2,37.86,Yes
+T101275,South,Monthly,Fibre,2,13,3,56.95,No
+T101276,Scotland,Monthly,Fibre,1,62,2,45.39,No
+T101277,Wales,Two year,Fibre,2,18,1,47.9,Yes
+T101278,Wales,Monthly,Copper,1,50,1,32.02,No
+T101279,South,Monthly,Fibre,3,56,2,54.31,No
+T101280,Wales,Monthly,Copper,1,48,2,35.85,No
+T101281,Scotland,One year,Fibre,1,31,0,41.43,No
+T101282,South,Two year,Fibre,1,22,1,35.36,No
+T101283,Midlands,Monthly,Fibre,4,18,0,79.58,No
+T101284,South,One year,Copper,1,52,1,37.52,No
+T101285,Midlands,Monthly,Copper,2,54,0,38.55,No
+T101286,North,Monthly,Fibre,4,35,1,76.72,Yes
+T101287,Midlands,Two year,Fibre,4,44,0,64.52,No
+T101288,Midlands,Monthly,Fibre,4,40,0,69.06,No
+T101289,Scotland,Monthly,Fibre,1,39,0,54.16,No
+T101290,Scotland,Monthly,Copper,1,66,4,22.5,No
+T101291,Scotland,Monthly,Copper,4,66,1,65.53,No
+T101292,North,Two year,Copper,2,50,0,53.89,No
+T101293,Midlands,Two year,Fibre,2,42,3,54.02,No
+T101294,North,Two year,Fibre,4,58,1,70.23,No
+T101295,Wales,Monthly,Fibre,3,48,2,64.23,No
+T101296,South,Two year,Fibre,4,20,0,73.14,No
+T101297,Midlands,One year,Copper,3,38,2,46.31,No
+T101298,North,Monthly,Copper,4,8,2,59.28,No
+T101299,South,One year,Copper,2,8,2,45.19,No
+T101300,North,Monthly,Copper,3,45,2,51.5,No
+T101301,Wales,Monthly,Fibre,4,26,1,72.52,Yes
+T101302,Wales,Two year,Fibre,2,37,1,52.11,No
+T101303,South,Monthly,Copper,4,57,2,64.28,No
+T101304,North,Monthly,Fibre,4,48,0,79.12,No
+T101305,Scotland,Two year,Fibre,2,65,1,53.28,No
+T101306,South,Monthly,Fibre,4,64,1,85.96,No
+T101307,Midlands,Monthly,Fibre,4,20,2,66.74,Yes
+T101308,North,Monthly,Copper,1,36,1,34.37,No
+T101309,Midlands,One year,Fibre,1,13,2,41.98,No
+T101310,Wales,Monthly,Fibre,4,59,4,87.56,Yes
+T101311,North,Monthly,Fibre,4,38,3,71.68,No
+T101312,North,Monthly,Fibre,4,54,3,73.56,No
+T101313,Midlands,Two year,Copper,2,47,2,35.59,No
+T101314,Wales,Two year,Copper,1,41,1,25.21,No
+T101315,South,Monthly,Fibre,1,64,0,39.64,No
+T101316,Midlands,Monthly,Fibre,1,20,2,45.84,No
+T101317,North,Monthly,Fibre,4,11,0,73.65,Yes
+T101318,South,Monthly,Copper,4,38,1,58.85,No
+T101319,Scotland,Monthly,Fibre,4,64,2,74.85,Yes
+T101320,Wales,One year,Fibre,2,70,3,55.01,No
+T101321,Scotland,Two year,Fibre,1,70,1,41.66,No
+T101322,South,Two year,Copper,2,51,1,34.24,No
+T101323,South,Two year,Copper,4,67,4,64.43,No
+T101324,Scotland,Monthly,Fibre,3,58,2,75.43,No
+T101325,South,Monthly,Copper,3,18,0,47.94,Yes
+T101326,Midlands,Monthly,Fibre,1,6,3,42.12,No
+T101327,North,Two year,Copper,4,42,1,47.35,No
+T101328,South,Two year,Fibre,2,30,1,54.62,No
+T101329,Wales,Monthly,Fibre,4,24,4,76.29,Yes
+T101330,North,One year,Fibre,1,58,2,35.94,No
+T101331,Midlands,Two year,Copper,4,50,3,59.65,No
+T101332,Scotland,Two year,Fibre,4,2,2,62.15,No
+T101333,North,Two year,Fibre,3,9,2,48.83,No
+T101334,Wales,One year,Fibre,2,60,1,64.51,No
+T101335,Wales,Two year,Copper,4,55,0,62.07,No
+T101336,Wales,Monthly,Fibre,2,41,2,48.42,No
+T101337,Scotland,Monthly,Fibre,4,14,4,65.58,No
+T101338,South,Monthly,Fibre,3,52,3,61.86,Yes
+T101339,Midlands,Two year,Fibre,4,7,2,72.82,No
+T101340,North,Monthly,Copper,4,6,1,49.49,No
+T101341,Midlands,One year,Fibre,2,8,1,54.19,No
+T101342,North,Monthly,Copper,3,7,2,47.01,Yes
+T101343,North,Monthly,Fibre,3,6,1,66.12,No
+T101344,Wales,Monthly,Copper,1,68,3,31.71,No
+T101345,Scotland,One year,Copper,2,23,1,36.62,No
+T101346,South,One year,Copper,2,53,2,42.92,No
+T101347,North,One year,Fibre,1,24,1,47.32,No
+T101348,Wales,Monthly,Fibre,1,65,0,52.39,No
+T101349,South,Two year,Fibre,2,61,2,40.39,No
+T101350,Scotland,Two year,Fibre,1,40,1,37.7,No
+T101351,South,Monthly,Fibre,4,27,2,70.89,No
+T101352,Wales,Monthly,Copper,2,43,2,48.57,No
+T101353,Wales,One year,Copper,2,52,2,46.63,No
+T101354,South,Monthly,Copper,3,28,1,40.84,Yes
+T101355,Midlands,Two year,Copper,1,16,2,30.96,No
+T101356,North,One year,Copper,4,35,1,52.0,No
+T101357,South,Monthly,Copper,4,21,0,52.06,No
+T101358,North,Monthly,Fibre,4,36,3,71.34,Yes
+T101359,South,Monthly,Fibre,3,49,1,75.88,No
+T101360,Scotland,One year,Fibre,4,15,1,74.16,Yes
+T101361,North,Two year,Copper,4,16,1,53.49,No
+T101362,South,One year,Fibre,2,53,1,56.1,No
+T101363,Wales,Monthly,Copper,2,71,0,47.36,No
+T101364,North,Monthly,Copper,1,52,3,41.5,Yes
+T101365,South,Two year,Fibre,4,19,3,70.73,No
+T101366,Midlands,Two year,Fibre,1,60,4,48.19,No
+T101367,South,Monthly,Fibre,2,55,2,69.69,No
+T101368,Midlands,Monthly,Fibre,1,62,1,58.15,No
+T101369,South,Monthly,Copper,1,70,2,37.45,No
+T101370,Scotland,Monthly,Copper,1,31,1,21.9,No
+T101371,Midlands,Two year,Copper,4,21,0,49.08,No
+T101372,Midlands,Monthly,Fibre,4,7,2,65.74,Yes
+T101373,Scotland,Monthly,Fibre,4,25,2,67.59,Yes
+T101374,South,Monthly,Fibre,2,19,1,54.91,Yes
+T101375,Scotland,One year,Copper,1,36,1,34.82,No
+T101376,South,Monthly,Copper,1,45,1,29.4,No
+T101377,North,Two year,Fibre,1,48,1,43.16,No
+T101378,North,Two year,Fibre,3,62,2,64.94,No
+T101379,Wales,One year,Copper,2,67,0,41.29,No
+T101380,Scotland,Monthly,Fibre,3,30,0,70.28,Yes
+T101381,Scotland,One year,Copper,1,13,1,34.04,No
+T101382,North,Monthly,Fibre,4,66,1,84.49,Yes
+T101383,Wales,Monthly,Copper,3,56,0,52.63,No
+T101384,North,One year,Fibre,1,45,2,44.53,No
+T101385,Midlands,Monthly,Copper,3,69,0,57.27,No
+T101386,Scotland,Monthly,Fibre,3,18,1,55.19,No
+T101387,South,Monthly,Fibre,1,3,1,48.08,No
+T101388,Wales,Monthly,Fibre,2,43,2,64.22,No
+T101389,Wales,One year,Copper,3,16,3,51.18,No
+T101390,Midlands,Monthly,Copper,4,28,3,51.88,Yes
+T101391,South,Two year,Fibre,4,25,2,70.19,No
+T101392,North,One year,Copper,1,31,1,31.65,No
+T101393,Midlands,Monthly,Copper,1,66,1,37.66,No
+T101394,Scotland,One year,Fibre,1,67,0,54.6,No
+T101395,Scotland,Two year,Copper,3,6,1,47.13,Yes
+T101396,Scotland,Monthly,Fibre,2,64,2,49.63,No
+T101397,Scotland,Monthly,Fibre,2,26,0,60.73,No
+T101398,Wales,Monthly,Fibre,3,62,4,63.77,No
+T101399,Wales,Two year,Copper,4,48,2,68.73,No
+T101400,Midlands,Monthly,Fibre,4,26,1,67.95,Yes
+T101401,Wales,Monthly,Copper,3,49,0,48.55,No
+T101402,North,Monthly,Copper,1,15,2,34.52,No
+T101403,Midlands,One year,Fibre,4,40,1,64.62,No
+T101404,Wales,Two year,Fibre,3,22,1,53.43,No
+T101405,North,Monthly,Fibre,3,71,0,68.78,No
+T101406,South,Monthly,Copper,2,68,3,39.55,No
+T101407,North,Two year,Fibre,2,22,1,46.68,No
+T101408,Midlands,One year,Copper,4,49,2,52.84,No
+T101409,South,Two year,Fibre,3,13,2,61.11,No
+T101410,South,Two year,Copper,2,12,2,25.37,No
+T101411,Scotland,Monthly,Fibre,2,22,1,52.49,Yes
+T101412,Scotland,One year,Copper,1,33,3,34.26,Yes
+T101413,North,One year,Fibre,1,5,1,40.83,No
+T101414,North,Monthly,Fibre,1,50,1,45.94,No
+T101415,Midlands,One year,Fibre,2,7,2,52.07,Yes
+T101416,North,Monthly,Copper,2,35,2,47.94,No
+T101417,North,One year,Fibre,1,21,2,40.97,No
+T101418,South,Monthly,Fibre,4,47,0,73.54,No
+T101419,Scotland,Monthly,Fibre,1,48,1,42.59,No
+T101420,Scotland,One year,Copper,3,9,0,53.48,Yes
+T101421,South,Two year,Fibre,2,8,0,49.75,No
+T101422,Scotland,Two year,Fibre,3,3,2,56.58,No
+T101423,South,Monthly,Fibre,2,46,2,56.75,No
+T101424,Scotland,Two year,Fibre,4,41,1,75.13,No
+T101425,Wales,One year,Fibre,3,40,1,73.35,No
+T101426,Midlands,Two year,Copper,1,36,4,33.45,No
+T101427,Midlands,Monthly,Copper,2,32,3,49.08,No
+T101428,Scotland,Monthly,Fibre,4,11,1,72.68,No
+T101429,North,Monthly,Fibre,4,60,2,77.16,No
+T101430,North,Two year,Fibre,1,26,2,47.05,No
+T101431,Wales,Monthly,Copper,4,41,2,70.0,Yes
+T101432,Wales,Two year,Fibre,1,3,2,49.54,No
+T101433,Wales,Monthly,Fibre,2,1,2,51.69,Yes
+T101434,Wales,Monthly,Fibre,2,9,2,52.25,No
+T101435,South,Monthly,Fibre,1,61,1,47.96,No
+T101436,North,Monthly,Fibre,2,65,1,60.6,No
+T101437,Midlands,One year,Fibre,1,57,1,38.46,No
+T101438,Midlands,Two year,Copper,3,22,0,40.4,No
+T101439,Midlands,Monthly,Fibre,1,13,4,45.37,No
+T101440,Wales,Monthly,Fibre,1,3,1,50.19,No
+T101441,Scotland,Monthly,Fibre,2,35,2,53.2,Yes
+T101442,Wales,Monthly,Copper,2,63,0,38.56,No
+T101443,North,Two year,Copper,3,26,1,47.77,No
+T101444,North,Monthly,Copper,3,2,2,56.34,Yes
+T101445,Wales,Monthly,Copper,4,43,0,56.67,No
+T101446,South,Two year,Fibre,1,40,3,39.35,No
+T101447,Midlands,Monthly,Copper,2,71,0,49.56,No
+T101448,North,Monthly,Copper,3,71,0,47.06,No
+T101449,Scotland,Monthly,Copper,1,41,0,38.26,No
+T101450,North,Two year,Fibre,1,3,2,25.39,No
+T101451,Wales,Monthly,Copper,4,2,2,58.22,Yes
+T101452,South,Monthly,Fibre,1,30,2,38.49,No
+T101453,Scotland,Monthly,Copper,2,11,3,30.47,No
+T101454,Wales,Monthly,Fibre,3,19,2,59.47,Yes
+T101455,Wales,Monthly,Copper,3,69,2,56.16,No
+T101456,Midlands,One year,Copper,2,25,1,35.92,No
+T101457,Scotland,Monthly,Copper,1,67,2,37.87,No
+T101458,North,One year,Fibre,2,70,2,59.25,No
+T101459,North,Two year,Copper,2,34,3,39.03,No
+T101460,North,Monthly,Fibre,4,42,0,83.4,Yes
+T101461,Midlands,One year,Fibre,3,70,2,73.58,No
+T101462,South,One year,Fibre,3,35,1,74.91,No
+T101463,Midlands,Monthly,Copper,2,4,0,43.85,No
+T101464,North,Monthly,Fibre,2,44,0,48.39,No
+T101465,South,Monthly,Fibre,2,63,0,60.51,No
+T101466,Scotland,One year,Fibre,4,39,2,80.16,No
+T101467,South,Monthly,Fibre,1,67,2,53.67,No
+T101468,North,Two year,Fibre,3,49,2,69.97,No
+T101469,Scotland,Monthly,Copper,4,57,3,65.27,Yes
+T101470,Scotland,Monthly,Copper,4,35,3,61.48,No
+T101471,North,Monthly,Fibre,2,31,1,66.95,No
+T101472,Scotland,Monthly,Copper,2,19,0,30.02,No
+T101473,North,One year,Fibre,1,56,2,50.24,No
+T101474,Wales,One year,Fibre,1,15,3,56.25,Yes
+T101475,North,Monthly,Copper,3,47,0,50.1,No
+T101476,Midlands,Two year,Fibre,1,25,1,37.2,No
+T101477,Wales,One year,Fibre,1,35,3,58.57,No
+T101478,Midlands,One year,Fibre,1,7,4,42.72,Yes
+T101479,North,Monthly,Fibre,4,32,2,65.87,No
+T101480,Scotland,Monthly,Fibre,4,66,1,94.07,No
+T101481,South,Monthly,Fibre,2,66,1,55.36,No
+T101482,South,Two year,Fibre,3,16,2,56.6,No
+T101483,Scotland,One year,Copper,4,44,1,66.59,No
+T101484,North,One year,Fibre,3,56,1,65.29,No
+T101485,Midlands,Two year,Fibre,3,7,1,59.52,No
+T101486,Wales,Monthly,Copper,4,36,3,58.59,No
+T101487,North,Two year,Fibre,4,53,1,78.95,No
+T101488,Midlands,Monthly,Copper,4,21,3,57.28,No
+T101489,Midlands,Monthly,Fibre,1,48,1,53.96,No
+T101490,Scotland,Two year,Fibre,2,23,3,50.82,No
+T101491,Wales,Two year,Fibre,3,17,1,53.71,No
+T101492,Scotland,Monthly,Fibre,2,70,1,46.03,Yes
+T101493,Midlands,Monthly,Fibre,1,39,3,38.33,Yes
+T101494,South,Two year,Copper,3,62,1,50.43,No
+T101495,Wales,Monthly,Fibre,3,25,0,72.53,Yes
+T101496,North,Monthly,Copper,3,39,2,54.53,No
+T101497,South,Two year,Fibre,2,11,1,32.0,No
+T101498,South,Monthly,Copper,1,37,0,27.23,No
+T101499,Scotland,Monthly,Copper,3,6,3,58.38,Yes

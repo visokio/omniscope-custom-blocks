@@ -1,0 +1,49 @@
+{
+ "request": {
+  "departing": true,
+  "url": "https://api.flightstats.com/flex/schedules/rest/v1/json/flight/OY/2210/departing/2026/11/20",
+  "airline": {
+   "requestedCode": "OY",
+   "fsCode": "OY"
+  },
+  "flight": {
+   "requested": "2210",
+   "interpreted": "2210"
+  },
+  "date": {
+   "year": "2026",
+   "month": "11",
+   "day": "20",
+   "interpreted": "2026-11-20"
+  }
+ },
+ "scheduledFlights": [
+  {
+   "carrierFsCode": "OY",
+   "flightNumber": "2210",
+   "departureAirportFsCode": "ORB",
+   "arrivalAirportFsCode": "NMR",
+   "stops": 0,
+   "departureTime": "2026-11-20T08:30:00.000",
+   "arrivalTime": "2026-11-20T10:05:00.000",
+   "flightEquipmentIataCode": "73H",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "Y",
+    "W",
+    "J"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "0",
+   "arrivalTerminal": "2"
+  }
+ ],
+ "appendix": {
+  "airlines": [],
+  "airports": [],
+  "equipments": []
+ }
+}

@@ -1,0 +1,25 @@
+id,name,is_channel,is_private,is_archived,is_general,created,creator,num_members,previous_names,topic.value,topic.creator,topic.last_set,purpose.value,purpose.creator,purpose.last_set
+C01000EXAMPLE,general,True,False,False,True,1704067200,U0100EXAMPLE,212,[],,,0,Talk about general,,0
+C01001EXAMPLE,random,True,False,False,False,1704844800,U0101EXAMPLE,198,[],About #random,,0,Talk about random,,0
+C01002EXAMPLE,sales-uk,True,False,False,False,1705622400,U0102EXAMPLE,14,"[""sales""]",About #sales-uk,,0,Talk about sales uk,,0
+C01003EXAMPLE,sales-europe,True,False,False,False,1706400000,U0103EXAMPLE,11,[],,,0,Talk about sales europe,,0
+C01004EXAMPLE,support,True,False,False,False,1707177600,U0100EXAMPLE,37,[],About #support,,0,Talk about support,,0
+C01005EXAMPLE,support-escalations,True,False,False,False,1707955200,U0101EXAMPLE,9,[],About #support-escalations,,0,Talk about support escalations,,0
+C01006EXAMPLE,marketing,True,False,False,False,1708732800,U0102EXAMPLE,22,[],,,0,Talk about marketing,,0
+C01007EXAMPLE,product-updates,True,False,False,False,1709510400,U0103EXAMPLE,140,[],About #product-updates,,0,Talk about product updates,,0
+C01008EXAMPLE,release-notes,True,False,False,False,1710288000,U0100EXAMPLE,61,[],About #release-notes,,0,Talk about release notes,,0
+C01009EXAMPLE,office-leeds,True,False,True,False,1711065600,U0101EXAMPLE,0,[],,,0,Talk about office leeds,,0
+C01010EXAMPLE,office-london,True,False,False,False,1711843200,U0102EXAMPLE,48,[],About #office-london,,0,Talk about office london,,0
+C01011EXAMPLE,events,True,False,False,False,1712620800,U0103EXAMPLE,73,[],About #events,,0,Talk about events,,0
+C01012EXAMPLE,hiring,True,True,False,False,1713398400,U0100EXAMPLE,6,[],,,0,Talk about hiring,,0
+C01013EXAMPLE,finance,True,True,False,False,1714176000,U0101EXAMPLE,8,[],About #finance,,0,Talk about finance,,0
+C01014EXAMPLE,it-help,True,False,False,False,1714953600,U0102EXAMPLE,95,[],About #it-help,,0,Talk about it help,,0
+C01015EXAMPLE,social,True,False,False,False,1715731200,U0103EXAMPLE,120,[],,,0,Talk about social,,0
+C01016EXAMPLE,customer-feedback,True,False,False,False,1716508800,U0100EXAMPLE,31,[],About #customer-feedback,,0,Talk about customer feedback,,0
+C01017EXAMPLE,partners,True,False,False,False,1717286400,U0101EXAMPLE,12,[],About #partners,,0,Talk about partners,,0
+C01018EXAMPLE,data-team,True,False,False,False,1718064000,U0102EXAMPLE,17,[],,,0,Talk about data team,,0
+C01019EXAMPLE,announcements,True,False,False,False,1718841600,U0103EXAMPLE,212,[],About #announcements,,0,Talk about announcements,,0
+C01020EXAMPLE,standups,True,False,False,False,1719619200,U0100EXAMPLE,44,[],About #standups,,0,Talk about standups,,0
+C01021EXAMPLE,design,True,False,False,False,1720396800,U0101EXAMPLE,19,[],,,0,Talk about design,,0
+C01022EXAMPLE,warehouse,True,False,False,False,1721174400,U0102EXAMPLE,26,[],About #warehouse,,0,Talk about warehouse,,0
+C01023EXAMPLE,deliveries,True,False,False,False,1721952000,U0103EXAMPLE,15,[],About #deliveries,,0,Talk about deliveries,,0

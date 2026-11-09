@@ -1,0 +1,21 @@
+Package,Line Item,Low (GBP k),Most Likely (GBP k),High (GBP k),Probability
+Design,Architecture and design,180,210,290,
+Design,Planning and surveys,45,55,80,
+Design,Specialist consultants,60,75,120,
+Build,Groundworks,420,480,690,
+Build,Structure,1150,1260,1520,
+Build,Envelope and roofing,610,660,820,
+Build,Mechanical and electrical,880,950,1300,
+Build,Fit-out,540,590,700,
+Build,External works,160,190,260,
+IT and equipment,Network and data,140,155,190,
+IT and equipment,AV and security systems,90,105,150,
+IT and equipment,Furniture and equipment,210,230,260,
+Management,Project management,260,290,360,
+Management,Commissioning and handover,70,80,110,
+Management,Legal and fees,50,55,70,
+Risks,Ground contamination found,80,150,400,0.25
+Risks,Steel price rise,60,120,220,0.4
+Risks,Planning condition changes,20,45,90,0.3
+Risks,Programme delay (3 months),150,220,350,0.2
+Risks,Utility connection upgrade,40,70,130,0.35

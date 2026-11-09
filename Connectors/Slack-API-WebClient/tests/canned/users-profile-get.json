@@ -1,0 +1,12 @@
+{
+ "ok": true,
+ "profile": {
+  "real_name": "Ada Example",
+  "display_name": "ada",
+  "title": "Analyst",
+  "email": "ada@example.com",
+  "status_text": "In the office",
+  "status_emoji": ":office:",
+  "fields": {}
+ }
+}

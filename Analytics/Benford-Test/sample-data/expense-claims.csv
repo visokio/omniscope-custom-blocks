@@ -1,0 +1,3401 @@
+Claim ID,Department,Employee,Category,Amount
+EXP-02040,Operations,E123,Meals,25.16
+EXP-01365,Marketing,E146,Hotel,8.49
+EXP-02665,Finance,E155,Supplies,34.11
+EXP-01516,Marketing,E150,Meals,6.36
+EXP-02039,Operations,E152,Supplies,52.91
+EXP-00251,Sales,E113,Meals,66.47
+EXP-03059,Field Engineering,E142,Hotel,31.02
+EXP-03357,Field Engineering,E122,Supplies,61.32
+EXP-01236,Marketing,E126,Travel,387.03
+EXP-01225,Marketing,E156,Hotel,31.51
+EXP-00809,Sales,E106,Hotel,4.73
+EXP-02929,Field Engineering,E104,Meals,48.77
+EXP-00425,Sales,E113,Supplies,13.73
+EXP-03143,Field Engineering,E152,Meals,9.09
+EXP-01991,Operations,E139,Supplies,31.91
+EXP-01158,Marketing,E134,Supplies,15.82
+EXP-01156,Marketing,E119,Hotel,102.93
+EXP-01748,Operations,E127,Meals,51.87
+EXP-00423,Sales,E150,Travel,26.35
+EXP-02200,Operations,E104,Travel,20.53
+EXP-03088,Field Engineering,E126,Meals,14.05
+EXP-01021,Marketing,E145,Supplies,12.65
+EXP-01497,Marketing,E144,Travel,34.12
+EXP-03023,Field Engineering,E154,Meals,482.5
+EXP-02801,Field Engineering,E103,Meals,41.44
+EXP-02520,Finance,E117,Travel,29.42
+EXP-01980,Operations,E152,Meals,17.26
+EXP-02456,Finance,E118,Meals,244.3
+EXP-01949,Operations,E120,Travel,187.92
+EXP-01732,Operations,E136,Supplies,52.19
+EXP-02725,Finance,E112,Travel,20.43
+EXP-02932,Field Engineering,E110,Travel,40.15
+EXP-01383,Marketing,E121,Supplies,89.59
+EXP-01589,Marketing,E131,Supplies,2.52
+EXP-00512,Sales,E139,Supplies,10.43
+EXP-01913,Operations,E140,Hotel,33.9
+EXP-02954,Field Engineering,E108,Hotel,49.66
+EXP-01349,Marketing,E144,Supplies,58.46
+EXP-00303,Sales,E140,Travel,28.31
+EXP-01201,Marketing,E129,Hotel,125.19
+EXP-00223,Sales,E138,Supplies,688.2
+EXP-00694,Sales,E129,Meals,33.55
+EXP-02554,Finance,E120,Meals,75.2
+EXP-02671,Finance,E135,Travel,6.46
+EXP-02818,Field Engineering,E141,Travel,44.81
+EXP-00500,Sales,E138,Meals,34.99
+EXP-01438,Marketing,E118,Supplies,14.48
+EXP-01066,Marketing,E108,Travel,19.67
+EXP-00216,Sales,E104,Supplies,32.26
+EXP-02145,Operations,E151,Travel,239.62
+EXP-00195,Sales,E109,Travel,36.08
+EXP-01042,Marketing,E120,Hotel,7.03
+EXP-02181,Operations,E156,Hotel,24.83
+EXP-02172,Operations,E159,Hotel,132.71
+EXP-01792,Operations,E122,Supplies,25.13
+EXP-00558,Sales,E140,Travel,35.05
+EXP-00404,Sales,E119,Supplies,57.54
+EXP-02368,Operations,E152,Hotel,99.23
+EXP-03179,Field Engineering,E133,Hotel,110.0
+EXP-00891,Sales,E140,Meals,200.82
+EXP-00227,Sales,E126,Travel,61.38
+EXP-00319,Sales,E147,Hotel,19.99
+EXP-01229,Marketing,E127,Hotel,10.43
+EXP-01632,Operations,E124,Meals,46.19
+EXP-02772,Finance,E151,Travel,51.38
+EXP-02250,Operations,E140,Travel,286.3
+EXP-02257,Operations,E101,Supplies,28.68
+EXP-00650,Sales,E155,Hotel,65.83
+EXP-00537,Sales,E153,Hotel,188.78
+EXP-02687,Finance,E148,Supplies,58.3
+EXP-00448,Sales,E117,Travel,162.72
+EXP-00641,Sales,E148,Hotel,124.63
+EXP-00935,Marketing,E105,Supplies,29.34
+EXP-03207,Field Engineering,E147,Meals,43.69
+EXP-02870,Field Engineering,E156,Meals,47.04
+EXP-00518,Sales,E114,Travel,4.7
+EXP-01339,Marketing,E156,Supplies,54.22
+EXP-01100,Marketing,E125,Hotel,11.04
+EXP-01172,Marketing,E127,Travel,67.63
+EXP-02378,Operations,E152,Travel,20.75
+EXP-00318,Sales,E131,Meals,160.49
+EXP-00390,Sales,E114,Meals,64.57
+EXP-00399,Sales,E132,Meals,15.78
+EXP-00323,Sales,E127,Travel,8.68
+EXP-00912,Marketing,E104,Hotel,25.66
+EXP-00229,Sales,E102,Hotel,14.15
+EXP-03227,Field Engineering,E121,Supplies,52.66
+EXP-00530,Sales,E130,Hotel,14.74
+EXP-01445,Marketing,E141,Meals,157.3
+EXP-02190,Operations,E125,Supplies,220.8
+EXP-00821,Sales,E154,Meals,8.69
+EXP-01417,Marketing,E139,Travel,26.98
+EXP-02152,Operations,E115,Supplies,51.63
+EXP-01850,Operations,E139,Travel,109.43
+EXP-01060,Marketing,E115,Hotel,113.19
+EXP-00324,Sales,E146,Meals,45.01
+EXP-00822,Sales,E104,Hotel,132.4
+EXP-03300,Field Engineering,E159,Meals,38.07
+EXP-01891,Operations,E134,Meals,146.64
+EXP-02226,Operations,E100,Supplies,46.75
+EXP-00815,Sales,E113,Meals,91.2
+EXP-02704,Finance,E116,Meals,93.5
+EXP-01749,Operations,E151,Meals,8.88
+EXP-02491,Finance,E113,Supplies,4.23
+EXP-00378,Sales,E137,Supplies,158.63
+EXP-02788,Finance,E117,Meals,98.26
+EXP-02191,Operations,E113,Supplies,381.84
+EXP-00916,Marketing,E149,Travel,139.35
+EXP-00633,Sales,E126,Travel,115.81
+EXP-00193,Sales,E130,Supplies,7.16
+EXP-01232,Marketing,E149,Hotel,76.27
+EXP-03166,Field Engineering,E120,Travel,11.69
+EXP-02251,Operations,E136,Travel,63.08
+EXP-01676,Operations,E158,Meals,8.75
+EXP-00415,Sales,E155,Meals,417.41
+EXP-01204,Marketing,E121,Meals,27.4
+EXP-02969,Field Engineering,E156,Hotel,34.39
+EXP-02850,Field Engineering,E128,Supplies,43.48
+EXP-03184,Field Engineering,E130,Hotel,110.42
+EXP-01699,Operations,E127,Supplies,9.13
+EXP-00028,Sales,E125,Hotel,160.62
+EXP-02106,Operations,E127,Travel,1086.01
+EXP-01137,Marketing,E120,Supplies,10.65
+EXP-03014,Field Engineering,E149,Meals,57.67
+EXP-01994,Operations,E135,Supplies,108.96
+EXP-00801,Sales,E101,Hotel,51.38
+EXP-01375,Marketing,E108,Supplies,61.81
+EXP-01254,Marketing,E155,Hotel,255.5
+EXP-02903,Field Engineering,E100,Meals,49.6
+EXP-03043,Field Engineering,E141,Travel,8.58
+EXP-02419,Finance,E118,Meals,29.76
+EXP-02411,Finance,E107,Travel,20.42
+EXP-00031,Sales,E140,Hotel,105.64
+EXP-01298,Marketing,E158,Travel,5.69
+EXP-02769,Finance,E101,Supplies,49.86
+EXP-00211,Sales,E111,Hotel,8.21
+EXP-02318,Operations,E103,Travel,154.07
+EXP-01741,Operations,E129,Hotel,65.09
+EXP-00923,Marketing,E100,Meals,16.43
+EXP-01205,Marketing,E156,Supplies,23.42
+EXP-01873,Operations,E106,Hotel,16.41
+EXP-03353,Field Engineering,E118,Meals,19.0
+EXP-01661,Operations,E124,Travel,31.99
+EXP-00274,Sales,E149,Travel,26.44
+EXP-01224,Marketing,E126,Hotel,87.74
+EXP-02237,Operations,E109,Hotel,8.59
+EXP-01112,Marketing,E150,Hotel,33.77
+EXP-00902,Marketing,E125,Supplies,452.99
+EXP-00141,Sales,E133,Supplies,26.43
+EXP-02073,Operations,E146,Hotel,63.9
+EXP-00850,Sales,E143,Meals,9.56
+EXP-00088,Sales,E121,Travel,194.63
+EXP-00446,Sales,E103,Supplies,168.43
+EXP-01960,Operations,E127,Hotel,52.76
+EXP-00853,Sales,E154,Travel,11.75
+EXP-00071,Sales,E115,Supplies,343.76
+EXP-02373,Operations,E156,Supplies,38.13
+EXP-00472,Sales,E140,Travel,31.43
+EXP-03297,Field Engineering,E126,Travel,148.72
+EXP-02408,Finance,E134,Supplies,11.94
+EXP-02481,Finance,E129,Travel,144.55
+EXP-02262,Operations,E123,Hotel,33.22
+EXP-01496,Marketing,E107,Meals,52.54
+EXP-02320,Operations,E118,Supplies,165.43
+EXP-01168,Marketing,E104,Travel,119.68
+EXP-00288,Sales,E158,Travel,82.52
+EXP-01972,Operations,E142,Supplies,12.65
+EXP-02678,Finance,E130,Supplies,35.23
+EXP-01369,Marketing,E131,Meals,197.03
+EXP-02336,Operations,E133,Travel,34.94
+EXP-02938,Field Engineering,E106,Hotel,203.01
+EXP-01495,Marketing,E136,Travel,264.83
+EXP-02909,Field Engineering,E157,Travel,40.71
+EXP-03318,Field Engineering,E109,Travel,10.98
+EXP-00438,Sales,E101,Supplies,84.17
+EXP-01424,Marketing,E148,Travel,8.25
+EXP-02771,Finance,E103,Travel,140.43
+EXP-02240,Operations,E107,Supplies,9.09
+EXP-02012,Operations,E151,Travel,36.47
+EXP-01278,Marketing,E128,Supplies,231.6
+EXP-01027,Marketing,E157,Travel,27.75
+EXP-01587,Marketing,E146,Meals,28.67
+EXP-03248,Field Engineering,E159,Supplies,32.22
+EXP-03021,Field Engineering,E144,Meals,65.25
+EXP-02824,Field Engineering,E146,Hotel,48.5
+EXP-03047,Field Engineering,E113,Supplies,89.66
+EXP-01923,Operations,E119,Hotel,7.57
+EXP-01708,Operations,E147,Travel,17.29
+EXP-02010,Operations,E115,Hotel,5.81
+EXP-02349,Operations,E126,Meals,30.12
+EXP-01289,Marketing,E137,Meals,8.96
+EXP-01407,Marketing,E153,Meals,51.4
+EXP-00217,Sales,E126,Meals,142.24
+EXP-02836,Field Engineering,E158,Supplies,44.18
+EXP-01131,Marketing,E139,Hotel,46.7
+EXP-02792,Finance,E100,Meals,18.65
+EXP-03259,Field Engineering,E114,Supplies,8.66
+EXP-01244,Marketing,E131,Supplies,75.96
+EXP-03175,Field Engineering,E155,Meals,137.23
+EXP-03291,Field Engineering,E110,Supplies,13.13
+EXP-03305,Field Engineering,E109,Hotel,227.64
+EXP-03024,Field Engineering,E138,Supplies,36.39
+EXP-00326,Sales,E127,Meals,70.44
+EXP-03108,Field Engineering,E138,Travel,18.74
+EXP-02341,Operations,E138,Supplies,39.65
+EXP-00884,Sales,E106,Supplies,51.14
+EXP-00915,Marketing,E155,Travel,24.41
+EXP-00998,Marketing,E108,Meals,95.32
+EXP-03183,Field Engineering,E122,Supplies,83.23
+EXP-00174,Sales,E120,Meals,60.35
+EXP-02103,Operations,E153,Supplies,83.28
+EXP-01170,Marketing,E104,Travel,95.78
+EXP-01931,Operations,E143,Hotel,43.61
+EXP-02544,Finance,E126,Travel,39.97
+EXP-00533,Sales,E109,Travel,112.7
+EXP-02588,Finance,E114,Supplies,562.52
+EXP-02944,Field Engineering,E111,Hotel,23.16
+EXP-01355,Marketing,E104,Travel,43.23
+EXP-02547,Finance,E157,Meals,5.29
+EXP-03178,Field Engineering,E151,Meals,74.22
+EXP-00347,Sales,E110,Supplies,15.65
+EXP-03276,Field Engineering,E137,Hotel,141.2
+EXP-03330,Field Engineering,E104,Meals,11.81
+EXP-02542,Finance,E141,Travel,15.5
+EXP-01534,Marketing,E107,Hotel,41.46
+EXP-02583,Finance,E105,Supplies,3.89
+EXP-02287,Operations,E159,Hotel,15.39
+EXP-02315,Operations,E131,Hotel,15.1
+EXP-03395,Field Engineering,E153,Travel,301.01
+EXP-01916,Operations,E158,Hotel,159.62
+EXP-01152,Marketing,E158,Supplies,180.36
+EXP-03266,Field Engineering,E153,Meals,40.77
+EXP-01817,Operations,E136,Supplies,74.48
+EXP-01294,Marketing,E142,Travel,20.73
+EXP-01261,Marketing,E109,Meals,206.96
+EXP-00870,Sales,E119,Hotel,21.86
+EXP-01572,Marketing,E113,Travel,4.84
+EXP-02281,Operations,E129,Hotel,50.54
+EXP-02531,Finance,E150,Supplies,65.45
+EXP-01829,Operations,E126,Supplies,67.69
+EXP-00158,Sales,E136,Meals,3.29
+EXP-02575,Finance,E108,Hotel,9.55
+EXP-02742,Finance,E147,Supplies,21.76
+EXP-02280,Operations,E138,Supplies,73.44
+EXP-03377,Field Engineering,E152,Hotel,58.46
+EXP-01621,Operations,E105,Meals,13.45
+EXP-00022,Sales,E154,Meals,24.84
+EXP-02216,Operations,E134,Hotel,37.43
+EXP-00582,Sales,E131,Travel,147.67
+EXP-01076,Marketing,E115,Supplies,138.77
+EXP-00372,Sales,E104,Hotel,3.93
+EXP-01618,Operations,E159,Supplies,12.3
+EXP-02094,Operations,E101,Meals,108.85
+EXP-01421,Marketing,E142,Meals,154.81
+EXP-00589,Sales,E150,Hotel,10.56
+EXP-02695,Finance,E110,Meals,37.12
+EXP-00839,Sales,E123,Supplies,33.12
+EXP-02721,Finance,E111,Travel,38.45
+EXP-03258,Field Engineering,E135,Supplies,26.61
+EXP-02830,Field Engineering,E123,Meals,46.02
+EXP-00262,Sales,E118,Supplies,142.58
+EXP-00981,Marketing,E105,Hotel,6.86
+EXP-01304,Marketing,E131,Hotel,17.18
+EXP-01211,Marketing,E154,Meals,7.79
+EXP-00165,Sales,E146,Hotel,20.94
+EXP-00618,Sales,E106,Supplies,426.86
+EXP-03210,Field Engineering,E148,Hotel,30.46
+EXP-03086,Field Engineering,E101,Travel,37.15
+EXP-00603,Sales,E146,Meals,53.1
+EXP-02967,Field Engineering,E120,Meals,7.37
+EXP-00655,Sales,E124,Supplies,38.1
+EXP-01410,Marketing,E142,Meals,4.27
+EXP-01090,Marketing,E142,Hotel,43.5
+EXP-02055,Operations,E105,Meals,20.7
+EXP-02720,Finance,E119,Hotel,19.7
+EXP-00329,Sales,E116,Meals,18.73
+EXP-02046,Operations,E108,Hotel,94.45
+EXP-01562,Marketing,E105,Travel,12.51
+EXP-00846,Sales,E130,Travel,40.69
+EXP-00389,Sales,E154,Travel,113.37
+EXP-02949,Field Engineering,E149,Supplies,16.5
+EXP-02496,Finance,E106,Meals,15.38
+EXP-02615,Finance,E112,Hotel,1.93
+EXP-01652,Operations,E101,Hotel,6.93
+EXP-00592,Sales,E103,Meals,48.61
+EXP-01163,Marketing,E154,Meals,26.12
+EXP-00267,Sales,E110,Travel,13.78
+EXP-01785,Operations,E138,Supplies,4.49
+EXP-00885,Sales,E128,Supplies,30.63
+EXP-00943,Marketing,E154,Meals,52.76
+EXP-00819,Sales,E127,Meals,31.65
+EXP-02706,Finance,E121,Hotel,15.03
+EXP-03396,Field Engineering,E102,Supplies,18.13
+EXP-03127,Field Engineering,E156,Supplies,10.54
+EXP-01623,Operations,E141,Meals,18.76
+EXP-02789,Finance,E144,Hotel,72.47
+EXP-03113,Field Engineering,E131,Travel,6.01
+EXP-00059,Sales,E117,Supplies,4.42
+EXP-02295,Operations,E132,Travel,24.61
+EXP-00973,Marketing,E138,Meals,23.42
+EXP-03220,Field Engineering,E122,Meals,160.31
+EXP-01393,Marketing,E118,Hotel,579.44
+EXP-00203,Sales,E145,Travel,158.0
+EXP-00886,Sales,E144,Meals,33.02
+EXP-00247,Sales,E100,Hotel,13.23
+EXP-01886,Operations,E127,Hotel,49.91
+EXP-02153,Operations,E106,Meals,180.16
+EXP-02227,Operations,E132,Hotel,31.03
+EXP-02942,Field Engineering,E144,Travel,106.44
+EXP-01851,Operations,E154,Meals,30.92
+EXP-02988,Field Engineering,E109,Travel,15.13
+EXP-01284,Marketing,E104,Hotel,17.79
+EXP-00697,Sales,E124,Supplies,23.09
+EXP-02999,Field Engineering,E137,Supplies,29.22
+EXP-03069,Field Engineering,E100,Hotel,6.21
+EXP-02603,Finance,E102,Supplies,46.21
+EXP-01556,Marketing,E121,Hotel,15.02
+EXP-00270,Sales,E113,Supplies,26.34
+EXP-01009,Marketing,E111,Hotel,30.02
+EXP-02526,Finance,E158,Travel,15.5
+EXP-01687,Operations,E140,Travel,16.71
+EXP-01106,Marketing,E127,Meals,153.81
+EXP-03327,Field Engineering,E102,Supplies,42.52
+EXP-01169,Marketing,E125,Supplies,145.11
+EXP-01441,Marketing,E108,Travel,41.18
+EXP-02705,Finance,E156,Supplies,215.77
+EXP-02537,Finance,E124,Hotel,59.23
+EXP-01635,Operations,E134,Hotel,60.83
+EXP-02680,Finance,E127,Hotel,60.42
+EXP-02264,Operations,E105,Meals,75.87
+EXP-01786,Operations,E150,Travel,13.36
+EXP-00470,Sales,E111,Supplies,26.81
+EXP-00155,Sales,E102,Supplies,19.91
+EXP-01053,Marketing,E115,Hotel,14.74
+EXP-01380,Marketing,E145,Hotel,21.56
+EXP-02984,Field Engineering,E135,Meals,12.34
+EXP-01610,Operations,E147,Meals,32.99
+EXP-02571,Finance,E116,Supplies,25.95
+EXP-02404,Finance,E155,Hotel,45.32
+EXP-00237,Sales,E134,Hotel,42.97
+EXP-02846,Field Engineering,E128,Meals,46.97
+EXP-02634,Finance,E114,Supplies,62.37
+EXP-01444,Marketing,E143,Meals,12.15
+EXP-02563,Finance,E127,Hotel,31.75
+EXP-01029,Marketing,E118,Supplies,18.29
+EXP-02611,Finance,E108,Supplies,2.95
+EXP-01212,Marketing,E150,Travel,34.24
+EXP-01941,Operations,E106,Supplies,39.68
+EXP-02599,Finance,E140,Hotel,61.07
+EXP-01401,Marketing,E143,Meals,25.47
+EXP-02946,Field Engineering,E131,Travel,71.98
+EXP-01778,Operations,E109,Travel,7.32
+EXP-02402,Finance,E139,Supplies,4.65
+EXP-01770,Operations,E107,Travel,177.2
+EXP-02489,Finance,E144,Travel,20.64
+EXP-00232,Sales,E101,Travel,30.67
+EXP-01033,Marketing,E100,Meals,13.66
+EXP-03349,Field Engineering,E110,Supplies,78.94
+EXP-01359,Marketing,E145,Meals,25.09
+EXP-02718,Finance,E118,Hotel,8.72
+EXP-01209,Marketing,E114,Supplies,7.68
+EXP-02107,Operations,E124,Travel,16.26
+EXP-02820,Field Engineering,E114,Meals,45.42
+EXP-02231,Operations,E140,Hotel,259.08
+EXP-00896,Sales,E131,Supplies,65.72
+EXP-02952,Field Engineering,E150,Supplies,421.99
+EXP-02872,Field Engineering,E148,Meals,49.06
+EXP-01332,Marketing,E116,Meals,26.04
+EXP-03237,Field Engineering,E129,Travel,11.83
+EXP-00991,Marketing,E151,Supplies,27.54
+EXP-00171,Sales,E118,Meals,10.45
+EXP-00039,Sales,E132,Meals,85.23
+EXP-01334,Marketing,E100,Hotel,20.09
+EXP-03173,Field Engineering,E115,Hotel,8.56
+EXP-01366,Marketing,E105,Travel,19.03
+EXP-02786,Finance,E100,Hotel,56.28
+EXP-02930,Field Engineering,E159,Hotel,42.66
+EXP-00333,Sales,E139,Supplies,114.77
+EXP-02208,Operations,E132,Hotel,12.82
+EXP-01807,Operations,E115,Supplies,26.95
+EXP-01288,Marketing,E155,Travel,31.66
+EXP-00455,Sales,E113,Supplies,47.12
+EXP-00109,Sales,E145,Supplies,99.45
+EXP-02902,Field Engineering,E114,Supplies,48.98
+EXP-01093,Marketing,E149,Meals,19.22
+EXP-01808,Operations,E125,Meals,8.46
+EXP-02761,Finance,E124,Meals,49.43
+EXP-03004,Field Engineering,E114,Travel,8.39
+EXP-03027,Field Engineering,E118,Travel,20.29
+EXP-01368,Marketing,E128,Travel,36.17
+EXP-02719,Finance,E155,Hotel,30.76
+EXP-03157,Field Engineering,E145,Hotel,4.01
+EXP-01124,Marketing,E145,Supplies,56.3
+EXP-01541,Marketing,E106,Meals,3.36
+EXP-00058,Sales,E141,Meals,20.63
+EXP-00440,Sales,E124,Travel,17.46
+EXP-03376,Field Engineering,E139,Meals,147.23
+EXP-01701,Operations,E121,Travel,63.44
+EXP-01844,Operations,E115,Meals,92.12
+EXP-02971,Field Engineering,E111,Travel,73.12
+EXP-01549,Marketing,E114,Meals,158.03
+EXP-02799,Finance,E124,Meals,1.47
+EXP-00060,Sales,E148,Meals,10.06
+EXP-03204,Field Engineering,E101,Hotel,190.02
+EXP-00857,Sales,E117,Supplies,897.5
+EXP-01301,Marketing,E120,Travel,3.31
+EXP-02234,Operations,E158,Hotel,5.32
+EXP-00892,Sales,E122,Travel,54.6
+EXP-02561,Finance,E127,Supplies,138.87
+EXP-01956,Operations,E134,Meals,388.02
+EXP-02886,Field Engineering,E141,Supplies,45.98
+EXP-01987,Operations,E109,Travel,15.11
+EXP-00871,Sales,E125,Supplies,70.38
+EXP-01794,Operations,E146,Meals,41.38
+EXP-02425,Finance,E147,Hotel,43.93
+EXP-01801,Operations,E104,Meals,46.3
+EXP-03212,Field Engineering,E148,Supplies,11.03
+EXP-01684,Operations,E117,Travel,37.38
+EXP-02164,Operations,E122,Meals,90.22
+EXP-03117,Field Engineering,E105,Supplies,204.44
+EXP-01098,Marketing,E147,Travel,23.82
+EXP-01012,Marketing,E158,Travel,36.47
+EXP-02795,Finance,E122,Supplies,13.68
+EXP-03192,Field Engineering,E108,Meals,192.03
+EXP-01780,Operations,E120,Hotel,66.9
+EXP-02299,Operations,E107,Supplies,65.56
+EXP-00371,Sales,E110,Hotel,33.23
+EXP-00782,Sales,E139,Travel,14.73
+EXP-01854,Operations,E136,Supplies,89.08
+EXP-03312,Field Engineering,E120,Hotel,11.65
+EXP-01585,Marketing,E157,Travel,13.73
+EXP-01362,Marketing,E102,Supplies,41.75
+EXP-00331,Sales,E131,Hotel,24.62
+EXP-00893,Sales,E120,Travel,15.49
+EXP-01644,Operations,E144,Hotel,56.43
+EXP-00405,Sales,E153,Supplies,33.16
+EXP-01605,Operations,E103,Hotel,22.27
+EXP-00459,Sales,E141,Hotel,51.35
+EXP-00070,Sales,E155,Travel,19.47
+EXP-00073,Sales,E105,Meals,107.22
+EXP-00913,Marketing,E110,Hotel,55.33
+EXP-01038,Marketing,E109,Meals,25.26
+EXP-03387,Field Engineering,E126,Travel,117.17
+EXP-02230,Operations,E124,Meals,45.36
+EXP-01707,Operations,E105,Hotel,44.25
+EXP-01944,Operations,E146,Meals,33.24
+EXP-00007,Sales,E124,Hotel,22.12
+EXP-01326,Marketing,E103,Meals,22.35
+EXP-01915,Operations,E137,Travel,83.46
+EXP-01264,Marketing,E146,Supplies,20.02
+EXP-00563,Sales,E129,Supplies,69.85
+EXP-02712,Finance,E118,Hotel,7.34
+EXP-00585,Sales,E151,Hotel,38.93
+EXP-00550,Sales,E129,Hotel,122.86
+EXP-00482,Sales,E134,Hotel,41.38
+EXP-03094,Field Engineering,E151,Hotel,60.44
+EXP-02609,Finance,E124,Travel,209.59
+EXP-01293,Marketing,E105,Meals,60.41
+EXP-03125,Field Engineering,E136,Travel,7.02
+EXP-01015,Marketing,E156,Travel,193.39
+EXP-02219,Operations,E150,Travel,351.36
+EXP-03013,Field Engineering,E132,Hotel,171.1
+EXP-00982,Marketing,E147,Meals,100.52
+EXP-01898,Operations,E138,Meals,9.4
+EXP-00121,Sales,E106,Hotel,24.12
+EXP-03068,Field Engineering,E143,Hotel,15.31
+EXP-02668,Finance,E109,Meals,41.06
+EXP-00693,Sales,E152,Travel,22.59
+EXP-02182,Operations,E136,Hotel,10.27
+EXP-00491,Sales,E134,Meals,182.84
+EXP-00698,Sales,E107,Supplies,4.34
+EXP-00974,Marketing,E135,Hotel,36.05
+EXP-03236,Field Engineering,E132,Travel,19.74
+EXP-02119,Operations,E145,Hotel,54.12
+EXP-00637,Sales,E158,Supplies,26.47
+EXP-02664,Finance,E146,Travel,33.93
+EXP-02396,Operations,E130,Hotel,42.93
+EXP-02869,Field Engineering,E116,Meals,48.62
+EXP-02477,Finance,E123,Supplies,59.26
+EXP-00374,Sales,E144,Supplies,9.53
+EXP-01834,Operations,E158,Hotel,74.92
+EXP-02906,Field Engineering,E110,Supplies,44.36
+EXP-01198,Marketing,E102,Supplies,8.53
+EXP-00598,Sales,E106,Hotel,17.96
+EXP-02068,Operations,E126,Meals,62.69
+EXP-03286,Field Engineering,E129,Supplies,22.23
+EXP-00917,Marketing,E137,Supplies,64.9
+EXP-00711,Sales,E126,Meals,67.36
+EXP-01162,Marketing,E135,Meals,177.76
+EXP-01595,Marketing,E157,Hotel,17.61
+EXP-02278,Operations,E142,Travel,44.03
+EXP-01691,Operations,E145,Travel,18.61
+EXP-02174,Operations,E104,Meals,73.13
+EXP-00176,Sales,E149,Travel,66.66
+EXP-00941,Marketing,E155,Hotel,25.11
+EXP-00726,Sales,E135,Travel,68.18
+EXP-00872,Sales,E147,Travel,80.89
+EXP-00612,Sales,E155,Meals,58.36
+EXP-02063,Operations,E116,Hotel,54.21
+EXP-01193,Marketing,E159,Travel,78.36
+EXP-00340,Sales,E110,Travel,54.19
+EXP-02674,Finance,E101,Hotel,45.3
+EXP-02758,Finance,E133,Meals,34.73
+EXP-02604,Finance,E155,Travel,40.55
+EXP-00210,Sales,E149,Supplies,49.25
+EXP-00529,Sales,E141,Hotel,28.88
+EXP-02875,Field Engineering,E102,Meals,43.4
+EXP-00212,Sales,E154,Meals,11.11
+EXP-03063,Field Engineering,E119,Meals,8.2
+EXP-02472,Finance,E117,Travel,66.01
+EXP-00004,Sales,E115,Travel,77.86
+EXP-03201,Field Engineering,E138,Hotel,6.58
+EXP-00001,Sales,E104,Hotel,40.07
+EXP-01091,Marketing,E155,Supplies,28.43
+EXP-01892,Operations,E131,Supplies,82.88
+EXP-01327,Marketing,E144,Travel,168.95
+EXP-00661,Sales,E112,Travel,7.39
+EXP-01746,Operations,E133,Supplies,33.11
+EXP-01037,Marketing,E126,Hotel,55.0
+EXP-01993,Operations,E138,Travel,61.23
+EXP-00710,Sales,E114,Supplies,23.79
+EXP-00720,Sales,E126,Supplies,29.18
+EXP-02120,Operations,E110,Meals,11.02
+EXP-01533,Marketing,E158,Travel,89.48
+EXP-00026,Sales,E103,Hotel,6.89
+EXP-00348,Sales,E114,Supplies,24.32
+EXP-03080,Field Engineering,E158,Travel,42.62
+EXP-03390,Field Engineering,E148,Travel,37.38
+EXP-02738,Finance,E107,Supplies,38.87
+EXP-00161,Sales,E113,Travel,82.45
+EXP-01799,Operations,E127,Travel,6.53
+EXP-01010,Marketing,E156,Meals,69.84
+EXP-03360,Field Engineering,E140,Travel,81.49
+EXP-00184,Sales,E154,Hotel,8.44
+EXP-01189,Marketing,E118,Hotel,142.18
+EXP-02541,Finance,E115,Meals,12.49
+EXP-02076,Operations,E109,Hotel,21.32
+EXP-02521,Finance,E116,Hotel,30.49
+EXP-02620,Finance,E101,Supplies,43.03
+EXP-00629,Sales,E134,Meals,56.9
+EXP-00992,Marketing,E143,Travel,80.48
+EXP-02614,Finance,E120,Supplies,62.39
+EXP-02052,Operations,E128,Meals,112.28
+EXP-00023,Sales,E140,Meals,76.71
+EXP-01979,Operations,E144,Supplies,73.04
+EXP-02471,Finance,E109,Supplies,46.56
+EXP-01032,Marketing,E109,Meals,6.22
+EXP-01918,Operations,E102,Meals,8.92
+EXP-02586,Finance,E102,Hotel,16.0
+EXP-03251,Field Engineering,E125,Meals,91.47
+EXP-01876,Operations,E128,Supplies,487.42
+EXP-03358,Field Engineering,E120,Supplies,17.98
+EXP-02279,Operations,E148,Meals,11.29
+EXP-01733,Operations,E142,Hotel,29.27
+EXP-01640,Operations,E153,Meals,93.99
+EXP-00858,Sales,E132,Hotel,22.4
+EXP-02565,Finance,E115,Meals,6.53
+EXP-02213,Operations,E138,Hotel,85.24
+EXP-00578,Sales,E153,Supplies,39.26
+EXP-01505,Marketing,E126,Meals,16.92
+EXP-01049,Marketing,E129,Hotel,112.3
+EXP-00631,Sales,E109,Travel,3.95
+EXP-02823,Field Engineering,E124,Supplies,48.66
+EXP-01835,Operations,E142,Travel,17.9
+EXP-00410,Sales,E100,Meals,7.69
+EXP-01344,Marketing,E126,Hotel,63.3
+EXP-02941,Field Engineering,E133,Travel,260.19
+EXP-01210,Marketing,E120,Travel,97.3
+EXP-01178,Marketing,E150,Supplies,17.35
+EXP-01282,Marketing,E123,Meals,235.54
+EXP-02602,Finance,E113,Meals,89.2
+EXP-02735,Finance,E158,Travel,5.57
+EXP-03124,Field Engineering,E155,Meals,37.56
+EXP-02905,Field Engineering,E120,Supplies,44.67
+EXP-02925,Field Engineering,E121,Meals,45.5
+EXP-01405,Marketing,E158,Supplies,9.48
+EXP-00335,Sales,E145,Supplies,69.92
+EXP-03191,Field Engineering,E154,Supplies,52.7
+EXP-03189,Field Engineering,E140,Meals,5.87
+EXP-00552,Sales,E105,Hotel,33.66
+EXP-01477,Marketing,E144,Supplies,56.28
+EXP-03282,Field Engineering,E101,Travel,140.74
+EXP-01545,Marketing,E128,Travel,57.2
+EXP-00564,Sales,E152,Travel,117.99
+EXP-01260,Marketing,E129,Supplies,37.65
+EXP-00978,Marketing,E111,Hotel,20.19
+EXP-01157,Marketing,E137,Meals,11.51
+EXP-00823,Sales,E151,Supplies,8.43
+EXP-03332,Field Engineering,E152,Meals,16.21
+EXP-01070,Marketing,E155,Travel,72.18
+EXP-00241,Sales,E142,Hotel,61.1
+EXP-02791,Finance,E130,Supplies,24.53
+EXP-01543,Marketing,E154,Travel,46.86
+EXP-02480,Finance,E117,Travel,4.74
+EXP-02333,Operations,E136,Supplies,17.67
+EXP-00545,Sales,E123,Hotel,17.14
+EXP-02810,Field Engineering,E131,Supplies,48.39
+EXP-00199,Sales,E148,Meals,11.54
+EXP-02630,Finance,E124,Travel,457.26
+EXP-00868,Sales,E139,Hotel,62.17
+EXP-03368,Field Engineering,E101,Supplies,23.77
+EXP-01183,Marketing,E116,Supplies,364.46
+EXP-00209,Sales,E155,Hotel,27.42
+EXP-03122,Field Engineering,E117,Supplies,10.24
+EXP-00127,Sales,E110,Supplies,49.15
+EXP-01348,Marketing,E101,Travel,8.62
+EXP-02736,Finance,E135,Travel,380.0
+EXP-00393,Sales,E140,Meals,40.38
+EXP-01132,Marketing,E130,Hotel,71.3
+EXP-01997,Operations,E117,Supplies,55.64
+EXP-02245,Operations,E154,Hotel,53.81
+EXP-02476,Finance,E106,Meals,767.0
+EXP-01387,Marketing,E128,Travel,134.26
+EXP-01953,Operations,E145,Travel,25.61
+EXP-02549,Finance,E114,Meals,56.31
+EXP-00541,Sales,E151,Supplies,22.73
+EXP-01547,Marketing,E144,Supplies,22.74
+EXP-00313,Sales,E108,Meals,5.9
+EXP-00125,Sales,E125,Meals,5.55
+EXP-02660,Finance,E141,Travel,11.45
+EXP-02033,Operations,E132,Supplies,20.73
+EXP-00167,Sales,E104,Hotel,86.43
+EXP-02420,Finance,E137,Supplies,33.95
+EXP-00351,Sales,E122,Travel,19.48
+EXP-01678,Operations,E158,Hotel,28.65
+EXP-02399,Operations,E151,Hotel,16.14
+EXP-01692,Operations,E159,Meals,36.35
+EXP-01208,Marketing,E108,Hotel,177.97
+EXP-00662,Sales,E157,Meals,54.28
+EXP-01442,Marketing,E153,Hotel,65.21
+EXP-02582,Finance,E144,Hotel,58.59
+EXP-03319,Field Engineering,E116,Travel,8.64
+EXP-02693,Finance,E117,Meals,18.92
+EXP-01089,Marketing,E132,Travel,22.62
+EXP-01843,Operations,E140,Hotel,34.81
+EXP-01653,Operations,E131,Meals,75.45
+EXP-03198,Field Engineering,E123,Travel,71.29
+EXP-01073,Marketing,E138,Hotel,14.96
+EXP-00087,Sales,E158,Travel,141.11
+EXP-02666,Finance,E111,Meals,114.6
+EXP-00806,Sales,E157,Supplies,9.93
+EXP-02414,Finance,E124,Supplies,107.68
+EXP-02979,Field Engineering,E106,Hotel,49.58
+EXP-01452,Marketing,E117,Meals,133.41
+EXP-02367,Operations,E130,Supplies,83.68
+EXP-00604,Sales,E126,Meals,27.42
+EXP-02737,Finance,E117,Travel,11.28
+EXP-02856,Field Engineering,E120,Travel,47.67
+EXP-02767,Finance,E158,Hotel,48.16
+EXP-01757,Operations,E152,Supplies,10.23
+EXP-01371,Marketing,E113,Meals,65.41
+EXP-02292,Operations,E131,Travel,92.92
+EXP-03298,Field Engineering,E102,Travel,79.55
+EXP-01313,Marketing,E109,Supplies,6.91
+EXP-00117,Sales,E113,Meals,104.53
+EXP-00124,Sales,E115,Travel,52.77
+EXP-01084,Marketing,E104,Supplies,40.51
+EXP-02889,Field Engineering,E120,Supplies,49.56
+EXP-01860,Operations,E140,Travel,17.66
+EXP-02446,Finance,E130,Hotel,76.36
+EXP-02827,Field Engineering,E104,Meals,41.84
+EXP-03335,Field Engineering,E124,Supplies,100.5
+EXP-02163,Operations,E110,Travel,11.85
+EXP-00180,Sales,E103,Hotel,106.71
+EXP-02400,Operations,E131,Supplies,85.62
+EXP-01171,Marketing,E102,Hotel,134.29
+EXP-02499,Finance,E142,Meals,46.83
+EXP-02065,Operations,E114,Supplies,3.44
+EXP-02306,Operations,E158,Travel,102.79
+EXP-00895,Sales,E130,Travel,58.63
+EXP-01578,Marketing,E136,Travel,60.32
+EXP-01781,Operations,E125,Hotel,11.27
+EXP-01711,Operations,E107,Supplies,19.79
+EXP-00236,Sales,E118,Supplies,66.37
+EXP-01647,Operations,E158,Travel,40.25
+EXP-01751,Operations,E149,Meals,83.95
+EXP-02734,Finance,E113,Hotel,226.84
+EXP-00605,Sales,E146,Travel,6.31
+EXP-01674,Operations,E155,Hotel,29.21
+EXP-03029,Field Engineering,E136,Hotel,79.56
+EXP-00066,Sales,E143,Hotel,53.66
+EXP-00719,Sales,E136,Travel,98.69
+EXP-01108,Marketing,E151,Hotel,93.0
+EXP-02876,Field Engineering,E107,Hotel,48.66
+EXP-00265,Sales,E142,Meals,198.36
+EXP-02617,Finance,E156,Supplies,34.98
+EXP-02885,Field Engineering,E115,Meals,46.53
+EXP-00006,Sales,E159,Meals,233.43
+EXP-00594,Sales,E151,Supplies,28.29
+EXP-03159,Field Engineering,E107,Meals,182.87
+EXP-02180,Operations,E115,Travel,67.28
+EXP-00112,Sales,E150,Hotel,2.36
+EXP-02000,Operations,E126,Meals,28.33
+EXP-00309,Sales,E136,Supplies,242.06
+EXP-01943,Operations,E150,Hotel,126.47
+EXP-02532,Finance,E156,Hotel,21.44
+EXP-01607,Operations,E155,Meals,25.81
+EXP-02667,Finance,E128,Hotel,48.63
+EXP-01744,Operations,E147,Meals,3.14
+EXP-00473,Sales,E142,Hotel,16.97
+EXP-00829,Sales,E114,Hotel,408.87
+EXP-03215,Field Engineering,E105,Meals,51.09
+EXP-02276,Operations,E134,Hotel,64.68
+EXP-00042,Sales,E100,Meals,184.65
+EXP-00253,Sales,E143,Meals,17.06
+EXP-03288,Field Engineering,E103,Supplies,39.3
+EXP-01818,Operations,E102,Travel,29.56
+EXP-00302,Sales,E125,Meals,282.38
+EXP-01197,Marketing,E134,Supplies,36.62
+EXP-02923,Field Engineering,E142,Supplies,47.2
+EXP-02189,Operations,E114,Hotel,189.4
+EXP-00934,Marketing,E112,Meals,303.93
+EXP-03393,Field Engineering,E116,Travel,205.52
+EXP-02403,Finance,E131,Supplies,308.55
+EXP-01546,Marketing,E104,Hotel,52.34
+EXP-03206,Field Engineering,E107,Hotel,67.64
+EXP-01821,Operations,E136,Hotel,8.29
+EXP-02427,Finance,E128,Supplies,113.36
+EXP-01036,Marketing,E108,Meals,378.73
+EXP-00457,Sales,E110,Travel,194.12
+EXP-00157,Sales,E135,Hotel,36.5
+EXP-01418,Marketing,E141,Hotel,37.95
+EXP-03336,Field Engineering,E150,Meals,20.93
+EXP-02913,Field Engineering,E119,Hotel,46.8
+EXP-01664,Operations,E109,Supplies,231.22
+EXP-01228,Marketing,E120,Travel,46.64
+EXP-01272,Marketing,E109,Hotel,22.35
+EXP-00411,Sales,E100,Travel,10.1
+EXP-00825,Sales,E101,Travel,9.55
+EXP-01318,Marketing,E123,Meals,69.88
+EXP-00460,Sales,E107,Hotel,264.94
+EXP-00584,Sales,E156,Supplies,18.98
+EXP-02691,Finance,E134,Supplies,39.46
+EXP-00104,Sales,E155,Supplies,59.45
+EXP-03089,Field Engineering,E155,Supplies,28.04
+EXP-00742,Sales,E143,Meals,152.58
+EXP-01219,Marketing,E129,Supplies,53.01
+EXP-01166,Marketing,E147,Meals,83.43
+EXP-00653,Sales,E100,Meals,4.55
+EXP-01819,Operations,E101,Travel,81.27
+EXP-02379,Operations,E111,Hotel,17.8
+EXP-01832,Operations,E101,Hotel,1.79
+EXP-01055,Marketing,E148,Hotel,33.05
+EXP-00881,Sales,E117,Hotel,90.95
+EXP-03020,Field Engineering,E110,Hotel,8.0
+EXP-01877,Operations,E154,Hotel,80.82
+EXP-01673,Operations,E139,Hotel,20.31
+EXP-02658,Finance,E120,Supplies,51.13
+EXP-03123,Field Engineering,E154,Supplies,40.64
+EXP-01730,Operations,E123,Travel,67.31
+EXP-01118,Marketing,E134,Supplies,27.41
+EXP-02808,Field Engineering,E100,Supplies,49.16
+EXP-01990,Operations,E158,Hotel,213.75
+EXP-03200,Field Engineering,E159,Supplies,20.0
+EXP-00967,Marketing,E117,Hotel,11.13
+EXP-01599,Marketing,E128,Travel,39.23
+EXP-00444,Sales,E135,Travel,55.9
+EXP-03057,Field Engineering,E151,Hotel,25.96
+EXP-02434,Finance,E147,Meals,265.07
+EXP-02484,Finance,E125,Supplies,415.05
+EXP-01737,Operations,E151,Travel,51.02
+EXP-02996,Field Engineering,E109,Meals,366.53
+EXP-02739,Finance,E128,Travel,78.35
+EXP-00035,Sales,E140,Travel,316.41
+EXP-00271,Sales,E136,Supplies,1.15
+EXP-01047,Marketing,E115,Travel,128.33
+EXP-01903,Operations,E139,Hotel,28.08
+EXP-03347,Field Engineering,E139,Travel,140.32
+EXP-01329,Marketing,E157,Travel,100.28
+EXP-00587,Sales,E113,Meals,39.54
+EXP-01456,Marketing,E126,Hotel,8.73
+EXP-00363,Sales,E112,Hotel,9.36
+EXP-01611,Operations,E143,Meals,72.65
+EXP-01959,Operations,E130,Travel,25.68
+EXP-03240,Field Engineering,E143,Travel,31.43
+EXP-02308,Operations,E107,Supplies,6.47
+EXP-00968,Marketing,E133,Supplies,30.17
+EXP-00297,Sales,E135,Travel,11.25
+EXP-02733,Finance,E117,Travel,13.94
+EXP-01352,Marketing,E153,Meals,5.99
+EXP-03078,Field Engineering,E106,Supplies,25.21
+EXP-03230,Field Engineering,E111,Hotel,50.95
+EXP-02235,Operations,E143,Supplies,241.92
+EXP-00132,Sales,E118,Travel,10.75
+EXP-01563,Marketing,E119,Meals,53.03
+EXP-01735,Operations,E148,Travel,7.63
+EXP-03197,Field Engineering,E143,Travel,39.22
+EXP-01992,Operations,E118,Supplies,94.15
+EXP-02175,Operations,E124,Hotel,5.09
+EXP-02642,Finance,E136,Travel,11.03
+EXP-03077,Field Engineering,E145,Supplies,691.77
+EXP-02192,Operations,E118,Supplies,5.61
+EXP-03344,Field Engineering,E156,Meals,60.74
+EXP-02844,Field Engineering,E128,Supplies,42.51
+EXP-00730,Sales,E116,Meals,38.3
+EXP-01914,Operations,E140,Meals,12.15
+EXP-02195,Operations,E137,Meals,64.91
+EXP-02118,Operations,E143,Supplies,74.56
+EXP-02779,Finance,E109,Travel,15.61
+EXP-01372,Marketing,E102,Travel,182.06
+EXP-03351,Field Engineering,E136,Hotel,52.03
+EXP-00686,Sales,E112,Supplies,11.8
+EXP-00559,Sales,E107,Hotel,2.66
+EXP-00264,Sales,E125,Supplies,118.04
+EXP-02197,Operations,E118,Meals,154.75
+EXP-00696,Sales,E133,Hotel,12.79
+EXP-02124,Operations,E143,Meals,85.8
+EXP-00294,Sales,E100,Travel,21.43
+EXP-00909,Marketing,E157,Travel,11.31
+EXP-00878,Sales,E106,Travel,26.96
+EXP-01768,Operations,E132,Hotel,30.52
+EXP-02018,Operations,E113,Hotel,18.92
+EXP-01345,Marketing,E142,Travel,13.86
+EXP-03315,Field Engineering,E150,Travel,65.52
+EXP-02297,Operations,E102,Meals,327.25
+EXP-00304,Sales,E115,Hotel,1005.32
+EXP-02694,Finance,E119,Travel,98.53
+EXP-02822,Field Engineering,E101,Hotel,43.04
+EXP-02176,Operations,E122,Meals,39.85
+EXP-01028,Marketing,E158,Travel,7.71
+EXP-02707,Finance,E150,Meals,29.78
+EXP-03180,Field Engineering,E152,Meals,52.4
+EXP-02337,Operations,E139,Hotel,14.37
+EXP-00392,Sales,E144,Hotel,13.76
+EXP-02331,Operations,E111,Travel,16.76
+EXP-00084,Sales,E118,Meals,16.22
+EXP-02288,Operations,E130,Meals,43.53
+EXP-00959,Marketing,E145,Travel,11.44
+EXP-00362,Sales,E101,Travel,10.91
+EXP-00357,Sales,E120,Hotel,16.07
+EXP-00092,Sales,E158,Hotel,41.47
+EXP-01756,Operations,E152,Hotel,26.93
+EXP-02968,Field Engineering,E138,Travel,3.82
+EXP-01043,Marketing,E144,Hotel,82.6
+EXP-00074,Sales,E108,Supplies,66.51
+EXP-00230,Sales,E127,Supplies,336.92
+EXP-01803,Operations,E119,Supplies,16.75
+EXP-01213,Marketing,E156,Hotel,61.15
+EXP-02470,Finance,E113,Travel,282.24
+EXP-02053,Operations,E142,Travel,72.56
+EXP-03343,Field Engineering,E128,Supplies,21.79
+EXP-00083,Sales,E147,Travel,45.07
+EXP-01606,Operations,E152,Meals,34.82
+EXP-02173,Operations,E158,Travel,43.0
+EXP-00273,Sales,E128,Meals,9.1
+EXP-02459,Finance,E154,Supplies,85.35
+EXP-01338,Marketing,E149,Travel,142.69
+EXP-01175,Marketing,E137,Travel,249.82
+EXP-02492,Finance,E120,Meals,62.48
+EXP-02338,Operations,E150,Supplies,13.78
+EXP-02353,Operations,E142,Hotel,11.3
+EXP-01870,Operations,E144,Supplies,20.41
+EXP-01983,Operations,E113,Supplies,67.12
+EXP-02017,Operations,E127,Hotel,28.57
+EXP-00322,Sales,E110,Travel,95.55
+EXP-00574,Sales,E157,Meals,52.85
+EXP-01403,Marketing,E132,Travel,6.28
+EXP-00447,Sales,E125,Meals,6.09
+EXP-00842,Sales,E124,Travel,37.9
+EXP-01048,Marketing,E116,Supplies,35.16
+EXP-01946,Operations,E145,Meals,5.96
+EXP-02864,Field Engineering,E122,Travel,45.72
+EXP-01971,Operations,E154,Travel,200.49
+EXP-00017,Sales,E136,Hotel,13.94
+EXP-02640,Finance,E141,Hotel,32.22
+EXP-03140,Field Engineering,E150,Meals,30.76
+EXP-02215,Operations,E147,Travel,38.97
+EXP-01116,Marketing,E103,Meals,18.66
+EXP-01970,Operations,E120,Hotel,19.13
+EXP-00769,Sales,E119,Travel,13.67
+EXP-02498,Finance,E111,Supplies,146.72
+EXP-02649,Finance,E141,Supplies,33.04
+EXP-02977,Field Engineering,E119,Meals,14.25
+EXP-02825,Field Engineering,E117,Supplies,40.49
+EXP-02122,Operations,E118,Travel,27.81
+EXP-02277,Operations,E143,Meals,8.56
+EXP-02947,Field Engineering,E147,Supplies,140.77
+EXP-00187,Sales,E157,Hotel,14.81
+EXP-02682,Finance,E102,Travel,28.25
+EXP-03194,Field Engineering,E155,Meals,3.12
+EXP-01245,Marketing,E108,Travel,40.38
+EXP-00449,Sales,E108,Supplies,121.08
+EXP-00213,Sales,E157,Meals,75.75
+EXP-03126,Field Engineering,E105,Meals,270.65
+EXP-01921,Operations,E137,Meals,112.43
+EXP-01723,Operations,E103,Meals,187.66
+EXP-01493,Marketing,E122,Travel,74.46
+EXP-03304,Field Engineering,E125,Supplies,59.93
+EXP-02426,Finance,E114,Meals,23.8
+EXP-00494,Sales,E135,Hotel,7.75
+EXP-01056,Marketing,E147,Travel,10.46
+EXP-03083,Field Engineering,E159,Travel,47.79
+EXP-02802,Field Engineering,E106,Travel,46.05
+EXP-03354,Field Engineering,E148,Meals,31.04
+EXP-02412,Finance,E134,Meals,8.28
+EXP-02218,Operations,E149,Supplies,19.59
+EXP-03100,Field Engineering,E147,Hotel,7.11
+EXP-03400,Field Engineering,E106,Meals,81.95
+EXP-01411,Marketing,E131,Meals,6.88
+EXP-01214,Marketing,E145,Hotel,26.27
+EXP-00441,Sales,E131,Travel,32.99
+EXP-01001,Marketing,E112,Meals,13.3
+EXP-02943,Field Engineering,E156,Meals,0.96
+EXP-03076,Field Engineering,E158,Meals,3.58
+EXP-02981,Field Engineering,E110,Supplies,26.18
+EXP-01962,Operations,E155,Hotel,103.42
+EXP-02829,Field Engineering,E133,Supplies,43.3
+EXP-02286,Operations,E156,Travel,244.21
+EXP-02978,Field Engineering,E103,Travel,54.73
+EXP-00751,Sales,E118,Supplies,157.66
+EXP-01337,Marketing,E147,Hotel,32.56
+EXP-00408,Sales,E114,Supplies,5.26
+EXP-02142,Operations,E138,Supplies,153.11
+EXP-02187,Operations,E112,Meals,31.34
+EXP-01110,Marketing,E107,Travel,63.56
+EXP-00744,Sales,E150,Travel,37.8
+EXP-02206,Operations,E154,Travel,46.89
+EXP-01738,Operations,E113,Meals,28.64
+EXP-01121,Marketing,E123,Hotel,7.56
+EXP-02314,Operations,E103,Meals,17.09
+EXP-02048,Operations,E110,Supplies,26.61
+EXP-00786,Sales,E107,Supplies,42.57
+EXP-02659,Finance,E134,Hotel,22.23
+EXP-00764,Sales,E115,Supplies,4.22
+EXP-01910,Operations,E142,Meals,16.1
+EXP-00336,Sales,E104,Meals,7.45
+EXP-02268,Operations,E129,Meals,42.35
+EXP-01062,Marketing,E101,Meals,155.36
+EXP-03144,Field Engineering,E153,Supplies,145.33
+EXP-00286,Sales,E147,Hotel,101.93
+EXP-02835,Field Engineering,E132,Supplies,45.55
+EXP-01922,Operations,E124,Hotel,18.67
+EXP-01932,Operations,E155,Travel,156.57
+EXP-00593,Sales,E128,Travel,7.31
+EXP-01539,Marketing,E105,Supplies,72.05
+EXP-01575,Marketing,E155,Supplies,71.38
+EXP-01626,Operations,E112,Supplies,135.82
+EXP-00750,Sales,E106,Travel,85.89
+EXP-01413,Marketing,E110,Hotel,3.41
+EXP-02662,Finance,E125,Supplies,24.85
+EXP-01612,Operations,E127,Hotel,3.01
+EXP-01265,Marketing,E107,Meals,35.23
+EXP-03339,Field Engineering,E108,Hotel,8.33
+EXP-00672,Sales,E142,Meals,91.53
+EXP-00659,Sales,E155,Supplies,154.08
+EXP-01512,Marketing,E148,Hotel,13.08
+EXP-01639,Operations,E113,Hotel,30.4
+EXP-02867,Field Engineering,E135,Supplies,46.78
+EXP-02201,Operations,E123,Travel,28.56
+EXP-01553,Marketing,E132,Hotel,137.97
+EXP-00350,Sales,E132,Travel,4.91
+EXP-00731,Sales,E108,Travel,36.4
+EXP-00838,Sales,E143,Hotel,23.32
+EXP-03040,Field Engineering,E113,Hotel,231.71
+EXP-01234,Marketing,E131,Supplies,80.43
+EXP-03261,Field Engineering,E109,Hotel,13.42
+EXP-01602,Operations,E126,Supplies,9.25
+EXP-02115,Operations,E113,Travel,27.61
+EXP-02590,Finance,E109,Supplies,43.01
+EXP-01889,Operations,E101,Travel,69.65
+EXP-02519,Finance,E101,Meals,8.2
+EXP-02652,Finance,E127,Supplies,30.72
+EXP-01722,Operations,E146,Hotel,72.63
+EXP-03348,Field Engineering,E116,Hotel,154.85
+EXP-02126,Operations,E104,Travel,198.91
+EXP-01999,Operations,E156,Supplies,181.58
+EXP-00707,Sales,E132,Hotel,6.57
+EXP-02146,Operations,E133,Travel,64.64
+EXP-00972,Marketing,E107,Travel,158.1
+EXP-01731,Operations,E130,Travel,19.49
+EXP-02329,Operations,E101,Supplies,48.69
+EXP-02887,Field Engineering,E154,Travel,43.83
+EXP-01967,Operations,E122,Travel,1.72
+EXP-02645,Finance,E109,Meals,50.01
+EXP-00169,Sales,E152,Meals,63.49
+EXP-02031,Operations,E143,Meals,113.55
+EXP-01302,Marketing,E146,Hotel,43.43
+EXP-02301,Operations,E134,Supplies,274.94
+EXP-00407,Sales,E123,Travel,29.82
+EXP-02776,Finance,E114,Meals,23.37
+EXP-00899,Sales,E102,Hotel,12.06
+EXP-00320,Sales,E116,Meals,368.84
+EXP-00516,Sales,E134,Hotel,19.08
+EXP-03165,Field Engineering,E158,Supplies,6.19
+EXP-00511,Sales,E127,Hotel,28.77
+EXP-01045,Marketing,E125,Travel,45.25
+EXP-02762,Finance,E107,Hotel,14.36
+EXP-01649,Operations,E133,Supplies,72.16
+EXP-03392,Field Engineering,E131,Travel,19.52
+EXP-02494,Finance,E146,Travel,20.81
+EXP-00627,Sales,E125,Hotel,16.02
+EXP-02826,Field Engineering,E122,Travel,43.46
+EXP-00245,Sales,E105,Supplies,14.61
+EXP-02095,Operations,E115,Hotel,16.27
+EXP-02135,Operations,E115,Travel,11.81
+EXP-00356,Sales,E103,Hotel,39.82
+EXP-01374,Marketing,E130,Travel,18.78
+EXP-02675,Finance,E142,Meals,90.25
+EXP-00051,Sales,E139,Supplies,37.05
+EXP-03034,Field Engineering,E158,Travel,138.0
+EXP-02605,Finance,E117,Supplies,28.94
+EXP-00063,Sales,E150,Hotel,194.88
+EXP-00465,Sales,E145,Hotel,70.06
+EXP-00062,Sales,E158,Travel,41.22
+EXP-00929,Marketing,E157,Supplies,79.83
+EXP-03071,Field Engineering,E125,Travel,55.77
+EXP-02034,Operations,E142,Supplies,28.81
+EXP-02635,Finance,E117,Travel,42.42
+EXP-00198,Sales,E102,Hotel,24.03
+EXP-03302,Field Engineering,E150,Hotel,25.0
+EXP-02726,Finance,E137,Supplies,24.71
+EXP-01704,Operations,E101,Travel,32.07
+EXP-02892,Field Engineering,E115,Meals,42.62
+EXP-00616,Sales,E145,Travel,75.74
+EXP-02812,Field Engineering,E143,Hotel,47.7
+EXP-02193,Operations,E156,Hotel,128.09
+EXP-00900,Sales,E120,Hotel,55.25
+EXP-03028,Field Engineering,E144,Supplies,69.23
+EXP-01457,Marketing,E158,Travel,17.29
+EXP-00413,Sales,E145,Hotel,87.1
+EXP-00534,Sales,E139,Supplies,51.42
+EXP-01120,Marketing,E102,Travel,41.2
+EXP-01866,Operations,E107,Meals,33.22
+EXP-02804,Field Engineering,E139,Hotel,43.36
+EXP-00824,Sales,E149,Meals,71.32
+EXP-01377,Marketing,E146,Supplies,26.35
+EXP-00591,Sales,E159,Hotel,105.04
+EXP-02993,Field Engineering,E123,Meals,84.84
+EXP-03002,Field Engineering,E111,Supplies,39.77
+EXP-02907,Field Engineering,E107,Hotel,43.33
+EXP-01451,Marketing,E118,Hotel,7.08
+EXP-01624,Operations,E154,Hotel,166.02
+EXP-01511,Marketing,E113,Travel,17.44
+EXP-01433,Marketing,E103,Supplies,56.64
+EXP-02202,Operations,E139,Meals,7.62
+EXP-00670,Sales,E141,Hotel,18.79
+EXP-02522,Finance,E157,Supplies,24.85
+EXP-02003,Operations,E139,Meals,59.05
+EXP-00401,Sales,E102,Supplies,79.68
+EXP-01513,Marketing,E159,Supplies,46.74
+EXP-00614,Sales,E134,Hotel,52.98
+EXP-01550,Marketing,E149,Hotel,34.5
+EXP-02130,Operations,E132,Supplies,21.07
+EXP-02298,Operations,E139,Meals,3.83
+EXP-01507,Marketing,E134,Hotel,38.79
+EXP-01560,Marketing,E122,Supplies,44.2
+EXP-02372,Operations,E157,Hotel,12.54
+EXP-00246,Sales,E136,Travel,9.27
+EXP-01082,Marketing,E148,Hotel,6.83
+EXP-00375,Sales,E115,Travel,24.67
+EXP-01361,Marketing,E150,Supplies,78.33
+EXP-01350,Marketing,E143,Supplies,34.52
+EXP-01814,Operations,E102,Travel,124.23
+EXP-02915,Field Engineering,E138,Travel,44.22
+EXP-01276,Marketing,E157,Supplies,154.31
+EXP-01114,Marketing,E136,Meals,18.91
+EXP-00647,Sales,E154,Travel,22.27
+EXP-02657,Finance,E138,Supplies,138.8
+EXP-01925,Operations,E119,Supplies,178.16
+EXP-03203,Field Engineering,E107,Hotel,6.13
+EXP-00756,Sales,E119,Travel,7.98
+EXP-01686,Operations,E110,Hotel,72.22
+EXP-00903,Marketing,E148,Meals,44.23
+EXP-03307,Field Engineering,E126,Travel,11.68
+EXP-00803,Sales,E111,Hotel,5.78
+EXP-02442,Finance,E134,Travel,319.27
+EXP-02113,Operations,E105,Meals,20.97
+EXP-02672,Finance,E112,Meals,96.93
+EXP-00752,Sales,E147,Meals,19.46
+EXP-00379,Sales,E134,Meals,63.09
+EXP-03051,Field Engineering,E125,Meals,1.78
+EXP-00606,Sales,E141,Hotel,7.14
+EXP-00290,Sales,E114,Supplies,21.66
+EXP-00567,Sales,E148,Meals,75.71
+EXP-00980,Marketing,E126,Supplies,36.0
+EXP-02045,Operations,E157,Meals,35.91
+EXP-02937,Field Engineering,E142,Hotel,3.1
+EXP-01537,Marketing,E135,Travel,132.4
+EXP-01672,Operations,E149,Supplies,34.76
+EXP-02089,Operations,E137,Supplies,9.85
+EXP-02454,Finance,E121,Hotel,8.7
+EXP-01461,Marketing,E134,Travel,122.66
+EXP-01342,Marketing,E140,Meals,156.37
+EXP-02883,Field Engineering,E133,Meals,46.11
+EXP-01548,Marketing,E121,Meals,2.95
+EXP-00725,Sales,E126,Supplies,45.61
+EXP-00483,Sales,E149,Travel,189.53
+EXP-01128,Marketing,E152,Meals,122.22
+EXP-00962,Marketing,E126,Supplies,30.95
+EXP-02987,Field Engineering,E151,Travel,25.47
+EXP-01008,Marketing,E143,Supplies,97.89
+EXP-00555,Sales,E150,Meals,25.89
+EXP-01788,Operations,E110,Hotel,16.99
+EXP-00911,Marketing,E101,Hotel,74.85
+EXP-03174,Field Engineering,E102,Supplies,85.18
+EXP-00638,Sales,E120,Supplies,109.16
+EXP-03151,Field Engineering,E148,Hotel,26.13
+EXP-02246,Operations,E108,Meals,72.91
+EXP-02056,Operations,E139,Supplies,24.69
+EXP-01885,Operations,E130,Supplies,25.71
+EXP-02511,Finance,E131,Hotel,40.68
+EXP-02008,Operations,E159,Hotel,119.82
+EXP-02405,Finance,E116,Hotel,21.91
+EXP-01509,Marketing,E106,Supplies,3.85
+EXP-03033,Field Engineering,E144,Meals,5.72
+EXP-03018,Field Engineering,E104,Supplies,12.98
+EXP-02852,Field Engineering,E138,Supplies,47.41
+EXP-00082,Sales,E130,Travel,33.79
+EXP-00851,Sales,E117,Meals,32.3
+EXP-02376,Operations,E141,Hotel,36.1
+EXP-01660,Operations,E116,Supplies,104.6
+EXP-02918,Field Engineering,E118,Meals,44.59
+EXP-02110,Operations,E126,Meals,191.39
+EXP-00107,Sales,E144,Supplies,52.45
+EXP-02156,Operations,E130,Meals,40.76
+EXP-02815,Field Engineering,E158,Supplies,49.43
+EXP-01840,Operations,E141,Supplies,23.54
+EXP-00426,Sales,E131,Supplies,9.98
+EXP-01669,Operations,E154,Travel,222.0
+EXP-03341,Field Engineering,E124,Travel,161.16
+EXP-03223,Field Engineering,E106,Hotel,74.99
+EXP-02840,Field Engineering,E142,Travel,44.39
+EXP-01800,Operations,E130,Meals,31.32
+EXP-01724,Operations,E143,Supplies,5.81
+EXP-03260,Field Engineering,E137,Meals,53.41
+EXP-01848,Operations,E102,Meals,169.58
+EXP-01083,Marketing,E121,Travel,264.0
+EXP-00464,Sales,E156,Hotel,47.13
+EXP-00257,Sales,E103,Meals,15.22
+EXP-02626,Finance,E140,Travel,39.47
+EXP-01771,Operations,E107,Travel,46.53
+EXP-00342,Sales,E114,Hotel,147.23
+EXP-00196,Sales,E145,Hotel,16.63
+EXP-01939,Operations,E108,Supplies,143.62
+EXP-00291,Sales,E122,Meals,13.39
+EXP-02252,Operations,E126,Meals,56.91
+EXP-01631,Operations,E125,Meals,99.15
+EXP-00933,Marketing,E100,Supplies,7.36
+EXP-01381,Marketing,E128,Meals,33.96
+EXP-00029,Sales,E111,Meals,44.52
+EXP-02935,Field Engineering,E110,Meals,38.08
+EXP-00601,Sales,E120,Supplies,16.43
+EXP-02803,Field Engineering,E129,Travel,41.85
+EXP-00394,Sales,E132,Hotel,63.15
+EXP-00766,Sales,E148,Supplies,13.63
+EXP-03035,Field Engineering,E130,Meals,54.88
+EXP-00632,Sales,E108,Supplies,9.28
+EXP-02698,Finance,E151,Meals,84.87
+EXP-00689,Sales,E153,Travel,13.58
+EXP-01883,Operations,E124,Supplies,31.91
+EXP-02370,Operations,E103,Supplies,11.69
+EXP-01598,Marketing,E140,Supplies,106.24
+EXP-00113,Sales,E108,Travel,14.58
+EXP-02382,Operations,E121,Supplies,11.83
+EXP-00205,Sales,E138,Travel,44.85
+EXP-00301,Sales,E154,Travel,3.0
+EXP-01912,Operations,E106,Travel,58.02
+EXP-02558,Finance,E141,Hotel,33.32
+EXP-02463,Finance,E148,Meals,21.44
+EXP-03273,Field Engineering,E103,Supplies,17.34
+EXP-01825,Operations,E133,Meals,11.89
+EXP-02247,Operations,E132,Supplies,371.4
+EXP-01207,Marketing,E129,Hotel,32.03
+EXP-00854,Sales,E124,Meals,38.75
+EXP-01312,Marketing,E150,Meals,31.64
+EXP-02980,Field Engineering,E124,Supplies,20.64
+EXP-02066,Operations,E158,Hotel,30.06
+EXP-03186,Field Engineering,E119,Meals,10.3
+EXP-03031,Field Engineering,E153,Supplies,53.34
+EXP-00129,Sales,E126,Supplies,49.92
+EXP-03003,Field Engineering,E124,Hotel,12.11
+EXP-01052,Marketing,E130,Travel,32.69
+EXP-00852,Sales,E140,Meals,41.38
+EXP-00793,Sales,E132,Meals,29.84
+EXP-00877,Sales,E157,Hotel,8.36
+EXP-01779,Operations,E150,Travel,4.66
+EXP-01656,Operations,E159,Hotel,17.92
+EXP-00569,Sales,E113,Supplies,24.18
+EXP-00164,Sales,E158,Travel,6.03
+EXP-02260,Operations,E150,Hotel,9.83
+EXP-01133,Marketing,E113,Hotel,128.34
+EXP-01353,Marketing,E145,Meals,11.16
+EXP-00738,Sales,E105,Meals,34.25
+EXP-01142,Marketing,E154,Hotel,28.47
+EXP-02743,Finance,E135,Travel,92.15
+EXP-02350,Operations,E155,Travel,28.73
+EXP-00222,Sales,E116,Meals,6.67
+EXP-02633,Finance,E132,Hotel,75.98
+EXP-03265,Field Engineering,E125,Travel,38.15
+EXP-00461,Sales,E133,Meals,181.99
+EXP-00489,Sales,E141,Hotel,42.51
+EXP-02787,Finance,E100,Travel,34.22
+EXP-01465,Marketing,E134,Meals,22.91
+EXP-02901,Field Engineering,E146,Supplies,47.13
+EXP-00688,Sales,E101,Supplies,13.88
+EXP-03011,Field Engineering,E147,Hotel,25.82
+EXP-00150,Sales,E123,Supplies,16.91
+EXP-01791,Operations,E135,Meals,8.9
+EXP-02108,Operations,E146,Meals,6.36
+EXP-00487,Sales,E129,Hotel,63.78
+EXP-00299,Sales,E104,Travel,71.27
+EXP-00889,Sales,E158,Supplies,49.04
+EXP-00256,Sales,E100,Supplies,153.29
+EXP-03317,Field Engineering,E109,Supplies,26.43
+EXP-00098,Sales,E142,Travel,35.9
+EXP-01709,Operations,E135,Travel,94.94
+EXP-00508,Sales,E146,Travel,69.48
+EXP-00765,Sales,E149,Travel,37.09
+EXP-01875,Operations,E141,Hotel,90.25
+EXP-02423,Finance,E156,Hotel,137.04
+EXP-00687,Sales,E157,Meals,111.62
+EXP-01399,Marketing,E115,Hotel,38.18
+EXP-00032,Sales,E150,Supplies,83.59
+EXP-01274,Marketing,E123,Travel,60.66
+EXP-01853,Operations,E136,Supplies,290.9
+EXP-02841,Field Engineering,E145,Supplies,45.12
+EXP-00240,Sales,E101,Hotel,22.93
+EXP-03310,Field Engineering,E112,Hotel,189.8
+EXP-00185,Sales,E108,Hotel,11.14
+EXP-00797,Sales,E134,Supplies,9.25
+EXP-02632,Finance,E110,Supplies,95.84
+EXP-01412,Marketing,E109,Travel,27.63
+EXP-02475,Finance,E142,Meals,23.99
+EXP-00904,Marketing,E152,Meals,500.37
+EXP-01331,Marketing,E157,Hotel,58.61
+EXP-01655,Operations,E135,Supplies,39.05
+EXP-01071,Marketing,E157,Supplies,50.2
+EXP-01223,Marketing,E139,Meals,30.82
+EXP-02500,Finance,E145,Hotel,18.36
+EXP-02757,Finance,E146,Meals,11.4
+EXP-02723,Finance,E159,Hotel,133.89
+EXP-02849,Field Engineering,E153,Hotel,43.04
+EXP-00701,Sales,E145,Meals,4.2
+EXP-00479,Sales,E142,Hotel,24.48
+EXP-00344,Sales,E126,Meals,5.01
+EXP-02114,Operations,E106,Supplies,20.36
+EXP-02150,Operations,E124,Travel,8.84
+EXP-03098,Field Engineering,E146,Hotel,25.18
+EXP-02171,Operations,E145,Hotel,8.76
+EXP-02079,Operations,E122,Hotel,42.14
+EXP-03104,Field Engineering,E140,Supplies,12.83
+EXP-01126,Marketing,E139,Travel,303.24
+EXP-02038,Operations,E126,Travel,29.18
+EXP-02897,Field Engineering,E140,Travel,41.8
+EXP-00939,Marketing,E137,Travel,52.81
+EXP-02253,Operations,E144,Supplies,98.57
+EXP-00358,Sales,E147,Supplies,45.65
+EXP-02273,Operations,E117,Hotel,65.33
+EXP-03366,Field Engineering,E145,Hotel,305.69
+EXP-03185,Field Engineering,E149,Hotel,49.9
+EXP-00536,Sales,E103,Hotel,6.59
+EXP-01502,Marketing,E149,Meals,42.76
+EXP-02964,Field Engineering,E136,Hotel,52.99
+EXP-03142,Field Engineering,E140,Travel,7.35
+EXP-01123,Marketing,E151,Supplies,45.66
+EXP-03017,Field Engineering,E147,Supplies,125.03
+EXP-02340,Operations,E122,Supplies,20.99
+EXP-01404,Marketing,E139,Supplies,10.9
+EXP-03253,Field Engineering,E135,Supplies,21.89
+EXP-02483,Finance,E127,Hotel,2.69
+EXP-00233,Sales,E156,Travel,125.12
+EXP-00681,Sales,E131,Supplies,19.29
+EXP-02044,Operations,E143,Travel,100.32
+EXP-02528,Finance,E128,Meals,25.04
+EXP-00312,Sales,E156,Meals,76.37
+EXP-01044,Marketing,E120,Meals,22.07
+EXP-01564,Marketing,E143,Supplies,196.96
+EXP-01935,Operations,E123,Meals,75.11
+EXP-03256,Field Engineering,E108,Supplies,10.26
+EXP-00380,Sales,E114,Supplies,157.86
+EXP-00690,Sales,E113,Supplies,18.51
+EXP-03295,Field Engineering,E151,Travel,134.65
+EXP-02985,Field Engineering,E149,Hotel,20.02
+EXP-01238,Marketing,E131,Meals,16.45
+EXP-01184,Marketing,E129,Travel,2.91
+EXP-00664,Sales,E154,Supplies,28.03
+EXP-02088,Operations,E129,Supplies,84.85
+EXP-02746,Finance,E140,Meals,198.18
+EXP-01280,Marketing,E115,Travel,13.4
+EXP-00950,Marketing,E123,Supplies,17.4
+EXP-02503,Finance,E146,Hotel,54.87
+EXP-00514,Sales,E119,Supplies,366.78
+EXP-03039,Field Engineering,E140,Hotel,33.16
+EXP-02585,Finance,E133,Hotel,17.01
+EXP-01041,Marketing,E103,Meals,89.6
+EXP-02385,Operations,E138,Travel,144.43
+EXP-02224,Operations,E109,Travel,5.68
+EXP-00918,Marketing,E122,Hotel,33.63
+EXP-03219,Field Engineering,E133,Meals,47.21
+EXP-01188,Marketing,E135,Hotel,5.38
+EXP-00714,Sales,E133,Hotel,74.27
+EXP-01370,Marketing,E121,Supplies,22.94
+EXP-02002,Operations,E108,Supplies,73.06
+EXP-01772,Operations,E117,Hotel,33.49
+EXP-01039,Marketing,E108,Hotel,47.58
+EXP-02732,Finance,E141,Travel,29.17
+EXP-00908,Marketing,E120,Supplies,29.51
+EXP-02557,Finance,E155,Hotel,106.08
+EXP-00572,Sales,E104,Travel,43.57
+EXP-00315,Sales,E156,Hotel,17.2
+EXP-01195,Marketing,E135,Supplies,39.66
+EXP-01831,Operations,E148,Travel,99.18
+EXP-02360,Operations,E138,Travel,29.77
+EXP-00442,Sales,E120,Meals,35.79
+EXP-02030,Operations,E123,Supplies,222.19
+EXP-01911,Operations,E105,Travel,28.25
+EXP-00615,Sales,E141,Hotel,8.4
+EXP-02618,Finance,E103,Travel,76.69
+EXP-00282,Sales,E116,Hotel,48.93
+EXP-00163,Sales,E132,Travel,30.43
+EXP-00101,Sales,E114,Meals,35.69
+EXP-01460,Marketing,E131,Meals,29.48
+EXP-02982,Field Engineering,E129,Supplies,175.47
+EXP-02831,Field Engineering,E114,Meals,46.59
+EXP-03128,Field Engineering,E134,Hotel,122.9
+EXP-00409,Sales,E104,Hotel,49.38
+EXP-01454,Marketing,E130,Supplies,35.07
+EXP-00403,Sales,E116,Meals,82.99
+EXP-00994,Marketing,E100,Hotel,265.29
+EXP-01481,Marketing,E119,Meals,12.3
+EXP-01490,Marketing,E134,Meals,71.46
+EXP-01235,Marketing,E118,Supplies,6.82
+EXP-02342,Operations,E109,Supplies,15.2
+EXP-00044,Sales,E148,Travel,138.69
+EXP-03345,Field Engineering,E109,Hotel,23.18
+EXP-00140,Sales,E108,Supplies,109.72
+EXP-02458,Finance,E132,Hotel,175.59
+EXP-00249,Sales,E130,Supplies,28.94
+EXP-00961,Marketing,E114,Hotel,12.65
+EXP-02703,Finance,E141,Hotel,47.73
+EXP-02681,Finance,E111,Travel,293.43
+EXP-01536,Marketing,E109,Supplies,168.07
+EXP-03064,Field Engineering,E139,Hotel,74.36
+EXP-02170,Operations,E131,Supplies,43.51
+EXP-02533,Finance,E125,Meals,21.25
+EXP-02296,Operations,E137,Meals,21.72
+EXP-00771,Sales,E136,Hotel,15.46
+EXP-02450,Finance,E136,Supplies,44.74
+EXP-00562,Sales,E106,Meals,27.0
+EXP-01776,Operations,E137,Supplies,177.84
+EXP-02424,Finance,E106,Travel,12.58
+EXP-01200,Marketing,E125,Meals,5.44
+EXP-02777,Finance,E151,Hotel,40.88
+EXP-00519,Sales,E133,Meals,9.65
+EXP-01202,Marketing,E147,Hotel,31.59
+EXP-00012,Sales,E132,Meals,143.87
+EXP-02381,Operations,E132,Travel,35.76
+EXP-01058,Marketing,E141,Travel,7.1
+EXP-01841,Operations,E104,Meals,26.69
+EXP-00041,Sales,E151,Hotel,23.47
+EXP-00284,Sales,E155,Supplies,28.04
+EXP-02931,Field Engineering,E153,Supplies,46.58
+EXP-02763,Finance,E155,Meals,7.15
+EXP-00709,Sales,E153,Supplies,11.97
+EXP-01388,Marketing,E152,Supplies,39.23
+EXP-01415,Marketing,E147,Travel,17.05
+EXP-00760,Sales,E108,Meals,83.81
+EXP-01905,Operations,E104,Hotel,11.46
+EXP-02022,Operations,E107,Hotel,56.5
+EXP-00206,Sales,E120,Hotel,93.32
+EXP-00120,Sales,E118,Travel,60.73
+EXP-01616,Operations,E103,Travel,33.58
+EXP-03129,Field Engineering,E141,Supplies,90.96
+EXP-00027,Sales,E146,Meals,14.21
+EXP-02013,Operations,E107,Supplies,45.17
+EXP-00816,Sales,E104,Meals,16.43
+EXP-00086,Sales,E129,Travel,9.36
+EXP-02781,Finance,E111,Meals,27.68
+EXP-01917,Operations,E122,Travel,8.52
+EXP-02407,Finance,E145,Meals,43.14
+EXP-01622,Operations,E158,Supplies,11.35
+EXP-00080,Sales,E106,Supplies,15.57
+EXP-00876,Sales,E132,Supplies,147.81
+EXP-00148,Sales,E146,Travel,40.29
+EXP-03365,Field Engineering,E149,Supplies,18.58
+EXP-01094,Marketing,E142,Meals,58.56
+EXP-02236,Operations,E137,Meals,149.21
+EXP-03380,Field Engineering,E156,Hotel,64.08
+EXP-00528,Sales,E153,Hotel,100.78
+EXP-02293,Operations,E136,Supplies,59.68
+EXP-03195,Field Engineering,E116,Meals,19.11
+EXP-01577,Marketing,E135,Hotel,21.44
+EXP-00800,Sales,E116,Supplies,50.28
+EXP-00566,Sales,E143,Meals,51.17
+EXP-03232,Field Engineering,E152,Supplies,29.13
+EXP-01088,Marketing,E126,Meals,77.03
+EXP-00311,Sales,E147,Meals,111.5
+EXP-01880,Operations,E156,Supplies,178.52
+EXP-00382,Sales,E115,Meals,63.84
+EXP-01483,Marketing,E101,Meals,33.41
+EXP-02239,Operations,E103,Hotel,32.45
+EXP-02099,Operations,E125,Supplies,38.74
+EXP-02037,Operations,E107,Supplies,10.05
+EXP-01103,Marketing,E157,Supplies,24.34
+EXP-00597,Sales,E126,Meals,9.52
+EXP-01086,Marketing,E144,Meals,23.41
+EXP-03060,Field Engineering,E104,Travel,20.22
+EXP-00493,Sales,E118,Hotel,40.71
+EXP-00579,Sales,E119,Hotel,108.85
+EXP-01463,Marketing,E158,Hotel,29.01
+EXP-02138,Operations,E134,Hotel,16.31
+EXP-02047,Operations,E111,Supplies,72.13
+EXP-02248,Operations,E107,Hotel,7.79
+EXP-02361,Operations,E153,Travel,17.53
+EXP-01697,Operations,E128,Hotel,232.31
+EXP-02430,Finance,E102,Hotel,26.11
+EXP-02650,Finance,E100,Meals,15.49
+EXP-01688,Operations,E141,Supplies,76.61
+EXP-02488,Finance,E125,Meals,17.71
+EXP-03389,Field Engineering,E130,Hotel,52.45
+EXP-02366,Operations,E104,Meals,26.0
+EXP-02754,Finance,E117,Meals,24.69
+EXP-01651,Operations,E107,Supplies,72.51
+EXP-01797,Operations,E135,Hotel,14.6
+EXP-00521,Sales,E137,Hotel,15.38
+EXP-02474,Finance,E133,Travel,3.5
+EXP-01517,Marketing,E138,Travel,21.06
+EXP-03222,Field Engineering,E146,Travel,13.43
+EXP-03056,Field Engineering,E129,Supplies,122.82
+EXP-02035,Operations,E128,Meals,113.84
+EXP-02469,Finance,E113,Travel,16.0
+EXP-00921,Marketing,E107,Supplies,23.89
+EXP-02862,Field Engineering,E100,Supplies,45.74
+EXP-00451,Sales,E122,Travel,27.64
+EXP-01948,Operations,E146,Meals,248.71
+EXP-02100,Operations,E119,Supplies,97.45
+EXP-03182,Field Engineering,E115,Supplies,19.56
+EXP-00434,Sales,E119,Travel,5.0
+EXP-00395,Sales,E137,Travel,4.47
+EXP-02805,Field Engineering,E123,Meals,43.51
+EXP-00759,Sales,E154,Travel,53.45
+EXP-02083,Operations,E155,Meals,19.85
+EXP-02990,Field Engineering,E139,Meals,24.65
+EXP-00983,Marketing,E123,Travel,5.46
+EXP-02912,Field Engineering,E126,Supplies,41.27
+EXP-01061,Marketing,E122,Travel,19.01
+EXP-02117,Operations,E143,Travel,73.24
+EXP-01904,Operations,E114,Supplies,92.45
+EXP-03022,Field Engineering,E102,Meals,53.41
+EXP-02991,Field Engineering,E158,Supplies,7.73
+EXP-00207,Sales,E105,Meals,198.87
+EXP-01836,Operations,E155,Meals,55.94
+EXP-02566,Finance,E122,Travel,176.29
+EXP-01182,Marketing,E133,Hotel,4.37
+EXP-00749,Sales,E104,Supplies,42.27
+EXP-01478,Marketing,E103,Hotel,65.49
+EXP-00949,Marketing,E128,Supplies,12.42
+EXP-00928,Marketing,E102,Meals,41.12
+EXP-02616,Finance,E151,Travel,33.56
+EXP-03148,Field Engineering,E115,Supplies,72.96
+EXP-01323,Marketing,E125,Meals,57.56
+EXP-02959,Field Engineering,E152,Travel,631.63
+EXP-02154,Operations,E155,Supplies,182.0
+EXP-00021,Sales,E127,Meals,80.95
+EXP-00869,Sales,E108,Supplies,43.67
+EXP-02975,Field Engineering,E102,Hotel,32.94
+EXP-00122,Sales,E104,Hotel,159.21
+EXP-00635,Sales,E106,Hotel,52.76
+EXP-00200,Sales,E115,Hotel,4.29
+EXP-02020,Operations,E119,Travel,10.67
+EXP-00704,Sales,E143,Hotel,18.92
+EXP-02598,Finance,E136,Supplies,22.1
+EXP-00580,Sales,E143,Supplies,24.32
+EXP-03041,Field Engineering,E138,Travel,270.62
+EXP-00745,Sales,E126,Meals,448.97
+EXP-03054,Field Engineering,E129,Hotel,154.68
+EXP-00037,Sales,E118,Supplies,6.49
+EXP-00305,Sales,E141,Travel,34.87
+EXP-01050,Marketing,E128,Meals,9.25
+EXP-00522,Sales,E135,Hotel,26.27
+EXP-00019,Sales,E109,Travel,55.7
+EXP-00665,Sales,E109,Hotel,197.81
+EXP-02890,Field Engineering,E137,Hotel,40.91
+EXP-02014,Operations,E147,Hotel,17.16
+EXP-01758,Operations,E144,Travel,13.55
+EXP-00047,Sales,E149,Supplies,23.87
+EXP-01164,Marketing,E101,Hotel,41.48
+EXP-01146,Marketing,E124,Hotel,49.26
+EXP-00613,Sales,E138,Travel,14.05
+EXP-01742,Operations,E152,Travel,153.43
+EXP-02080,Operations,E100,Hotel,40.78
+EXP-01775,Operations,E123,Meals,16.75
+EXP-00486,Sales,E121,Meals,16.68
+EXP-02644,Finance,E115,Travel,63.4
+EXP-03139,Field Engineering,E137,Meals,88.9
+EXP-02398,Operations,E159,Hotel,7.62
+EXP-02753,Finance,E118,Hotel,52.41
+EXP-00523,Sales,E109,Hotel,246.27
+EXP-01625,Operations,E159,Supplies,72.08
+EXP-01095,Marketing,E121,Travel,61.87
+EXP-03132,Field Engineering,E128,Hotel,40.09
+EXP-02755,Finance,E148,Meals,32.27
+EXP-00079,Sales,E113,Hotel,22.38
+EXP-03280,Field Engineering,E123,Travel,53.13
+EXP-01199,Marketing,E125,Travel,50.72
+EXP-01504,Marketing,E116,Travel,10.27
+EXP-01568,Marketing,E152,Travel,24.32
+EXP-03115,Field Engineering,E115,Travel,158.65
+EXP-01503,Marketing,E105,Meals,70.27
+EXP-01177,Marketing,E150,Supplies,18.27
+EXP-03146,Field Engineering,E105,Meals,88.24
+EXP-02989,Field Engineering,E118,Meals,226.35
+EXP-02821,Field Engineering,E157,Hotel,47.03
+EXP-02741,Finance,E126,Meals,188.67
+EXP-02313,Operations,E137,Hotel,243.4
+EXP-01218,Marketing,E110,Hotel,27.41
+EXP-00505,Sales,E124,Supplies,15.13
+EXP-03092,Field Engineering,E124,Meals,41.39
+EXP-03032,Field Engineering,E137,Supplies,26.23
+EXP-01586,Marketing,E119,Supplies,13.38
+EXP-03384,Field Engineering,E123,Supplies,26.58
+EXP-03030,Field Engineering,E107,Supplies,39.49
+EXP-01727,Operations,E157,Travel,13.68
+EXP-00543,Sales,E147,Supplies,110.36
+EXP-03090,Field Engineering,E138,Travel,41.16
+EXP-03245,Field Engineering,E103,Meals,79.93
+EXP-00538,Sales,E151,Travel,22.59
+EXP-01590,Marketing,E142,Hotel,42.94
+EXP-02928,Field Engineering,E142,Travel,42.93
+EXP-02326,Operations,E101,Travel,47.11
+EXP-01973,Operations,E148,Hotel,93.73
+EXP-00753,Sales,E153,Supplies,23.38
+EXP-00244,Sales,E150,Travel,40.89
+EXP-02545,Finance,E106,Travel,215.12
+EXP-01600,Marketing,E105,Hotel,34.8
+EXP-02882,Field Engineering,E137,Meals,48.33
+EXP-02957,Field Engineering,E104,Hotel,16.16
+EXP-02524,Finance,E155,Hotel,22.53
+EXP-02848,Field Engineering,E147,Meals,40.76
+EXP-01928,Operations,E136,Meals,8.14
+EXP-02914,Field Engineering,E136,Hotel,49.23
+EXP-02543,Finance,E152,Hotel,7.95
+EXP-00289,Sales,E158,Hotel,27.56
+EXP-00894,Sales,E127,Travel,42.45
+EXP-01523,Marketing,E115,Travel,90.88
+EXP-02199,Operations,E147,Supplies,16.75
+EXP-01837,Operations,E127,Meals,204.26
+EXP-03303,Field Engineering,E125,Travel,9.61
+EXP-02464,Finance,E139,Hotel,45.5
+EXP-02087,Operations,E152,Supplies,117.91
+EXP-00003,Sales,E129,Supplies,38.69
+EXP-02346,Operations,E109,Supplies,10.37
+EXP-00568,Sales,E150,Hotel,40.6
+EXP-01068,Marketing,E146,Travel,85.74
+EXP-00400,Sales,E134,Travel,29.26
+EXP-00181,Sales,E127,Supplies,13.57
+EXP-00147,Sales,E154,Travel,18.45
+EXP-00630,Sales,E113,Meals,172.21
+EXP-00761,Sales,E158,Hotel,94.08
+EXP-00402,Sales,E139,Supplies,65.37
+EXP-00414,Sales,E106,Supplies,30.2
+EXP-01105,Marketing,E137,Supplies,117.42
+EXP-00860,Sales,E119,Hotel,12.13
+EXP-00607,Sales,E118,Hotel,21.35
+EXP-01976,Operations,E125,Travel,14.99
+EXP-02580,Finance,E125,Meals,7.14
+EXP-00173,Sales,E115,Meals,163.28
+EXP-00668,Sales,E117,Supplies,62.3
+EXP-02312,Operations,E122,Travel,40.37
+EXP-00228,Sales,E133,Hotel,55.7
+EXP-02392,Operations,E135,Travel,21.27
+EXP-00476,Sales,E154,Hotel,38.22
+EXP-01924,Operations,E103,Travel,61.3
+EXP-00488,Sales,E121,Hotel,75.0
+EXP-03274,Field Engineering,E139,Travel,4.41
+EXP-00643,Sales,E153,Meals,47.87
+EXP-01252,Marketing,E119,Travel,23.02
+EXP-00576,Sales,E112,Travel,8.86
+EXP-03158,Field Engineering,E140,Supplies,51.27
+EXP-02371,Operations,E109,Supplies,40.95
+EXP-01390,Marketing,E146,Hotel,67.11
+EXP-03329,Field Engineering,E159,Supplies,25.3
+EXP-01005,Marketing,E123,Hotel,106.2
+EXP-00204,Sales,E142,Travel,128.18
+EXP-00412,Sales,E115,Supplies,20.93
+EXP-00259,Sales,E103,Meals,178.28
+EXP-03170,Field Engineering,E128,Travel,47.19
+EXP-02881,Field Engineering,E154,Meals,43.68
+EXP-02344,Operations,E112,Supplies,9.84
+EXP-01524,Marketing,E106,Hotel,37.76
+EXP-01945,Operations,E135,Supplies,33.5
+EXP-03371,Field Engineering,E135,Supplies,142.03
+EXP-00792,Sales,E154,Meals,75.31
+EXP-00531,Sales,E119,Travel,73.37
+EXP-02625,Finance,E121,Supplies,10.08
+EXP-02837,Field Engineering,E120,Supplies,47.0
+EXP-03190,Field Engineering,E108,Travel,31.95
+EXP-02756,Finance,E120,Meals,17.12
+EXP-02847,Field Engineering,E145,Hotel,47.13
+EXP-00966,Marketing,E159,Meals,6.19
+EXP-02641,Finance,E107,Meals,63.97
+EXP-00834,Sales,E151,Hotel,62.85
+EXP-01396,Marketing,E147,Supplies,45.36
+EXP-03352,Field Engineering,E129,Hotel,23.84
+EXP-01434,Marketing,E139,Hotel,134.67
+EXP-02009,Operations,E137,Travel,4.68
+EXP-00551,Sales,E109,Supplies,16.25
+EXP-02619,Finance,E108,Meals,20.1
+EXP-02001,Operations,E127,Travel,96.77
+EXP-01681,Operations,E150,Hotel,215.21
+EXP-03046,Field Engineering,E147,Meals,20.69
+EXP-02778,Finance,E149,Meals,537.95
+EXP-00804,Sales,E109,Meals,55.15
+EXP-01638,Operations,E112,Hotel,85.72
+EXP-01145,Marketing,E125,Supplies,64.69
+EXP-02270,Operations,E141,Meals,158.54
+EXP-02388,Operations,E106,Supplies,69.41
+EXP-00388,Sales,E141,Hotel,11.29
+EXP-03275,Field Engineering,E111,Travel,102.57
+EXP-01755,Operations,E116,Hotel,30.35
+EXP-01747,Operations,E139,Supplies,345.28
+EXP-03346,Field Engineering,E101,Hotel,45.53
+EXP-03199,Field Engineering,E137,Supplies,5.76
+EXP-02410,Finance,E131,Supplies,44.1
+EXP-02623,Finance,E102,Supplies,80.04
+EXP-01798,Operations,E138,Hotel,71.72
+EXP-02217,Operations,E151,Supplies,191.49
+EXP-03397,Field Engineering,E135,Hotel,8.66
+EXP-02684,Finance,E120,Travel,94.65
+EXP-02639,Finance,E108,Hotel,5.48
+EXP-02722,Finance,E144,Travel,129.7
+EXP-01702,Operations,E113,Supplies,9.23
+EXP-02622,Finance,E132,Supplies,9.23
+EXP-02592,Finance,E117,Hotel,18.08
+EXP-00703,Sales,E143,Meals,1.93
+EXP-02655,Finance,E153,Travel,57.08
+EXP-03000,Field Engineering,E152,Hotel,80.79
+EXP-01297,Marketing,E130,Supplies,13.98
+EXP-01436,Marketing,E159,Travel,3.04
+EXP-00780,Sales,E149,Supplies,54.22
+EXP-01391,Marketing,E145,Meals,27.54
+EXP-00676,Sales,E100,Travel,18.52
+EXP-00422,Sales,E151,Meals,43.65
+EXP-02304,Operations,E130,Meals,44.62
+EXP-03239,Field Engineering,E117,Supplies,117.78
+EXP-00520,Sales,E147,Supplies,67.47
+EXP-02839,Field Engineering,E106,Supplies,42.68
+EXP-01488,Marketing,E109,Meals,6.66
+EXP-02285,Operations,E155,Hotel,13.94
+EXP-00611,Sales,E106,Supplies,97.57
+EXP-01315,Marketing,E128,Hotel,52.43
+EXP-00038,Sales,E121,Supplies,92.15
+EXP-00475,Sales,E128,Meals,11.05
+EXP-00560,Sales,E148,Travel,11.67
+EXP-01002,Marketing,E133,Meals,13.57
+EXP-01680,Operations,E117,Supplies,17.18
+EXP-00905,Marketing,E132,Meals,82.74
+EXP-02074,Operations,E131,Supplies,33.06
+EXP-01580,Marketing,E159,Hotel,188.13
+EXP-00634,Sales,E134,Supplies,344.41
+EXP-00145,Sales,E118,Travel,128.15
+EXP-02751,Finance,E152,Supplies,26.48
+EXP-03226,Field Engineering,E121,Hotel,86.89
+EXP-03012,Field Engineering,E153,Travel,33.81
+EXP-02833,Field Engineering,E151,Supplies,47.99
+EXP-00383,Sales,E126,Travel,39.76
+EXP-01074,Marketing,E156,Hotel,1.24
+EXP-03385,Field Engineering,E128,Travel,12.7
+EXP-01671,Operations,E112,Hotel,26.62
+EXP-03311,Field Engineering,E138,Hotel,51.19
+EXP-01140,Marketing,E113,Travel,56.72
+EXP-02495,Finance,E107,Travel,32.31
+EXP-01395,Marketing,E123,Meals,24.29
+EXP-02473,Finance,E155,Supplies,6.64
+EXP-02728,Finance,E138,Hotel,22.15
+EXP-02564,Finance,E111,Travel,14.75
+EXP-01151,Marketing,E103,Hotel,88.83
+EXP-01458,Marketing,E114,Supplies,14.64
+EXP-01425,Marketing,E118,Travel,86.25
+EXP-00770,Sales,E107,Supplies,83.92
+EXP-01500,Marketing,E108,Travel,3.75
+EXP-00298,Sales,E151,Supplies,57.09
+EXP-02945,Field Engineering,E142,Hotel,88.94
+EXP-01259,Marketing,E138,Travel,1182.49
+EXP-01822,Operations,E126,Hotel,9.97
+EXP-01134,Marketing,E123,Travel,410.38
+EXP-00005,Sales,E155,Hotel,5.3
+EXP-02819,Field Engineering,E119,Meals,45.47
+EXP-01670,Operations,E107,Meals,98.83
+EXP-00250,Sales,E107,Hotel,1.84
+EXP-01180,Marketing,E120,Travel,46.86
+EXP-01143,Marketing,E127,Meals,28.96
+EXP-02765,Finance,E154,Travel,6.93
+EXP-00102,Sales,E141,Hotel,163.24
+EXP-00437,Sales,E128,Supplies,42.06
+EXP-01092,Marketing,E147,Hotel,28.09
+EXP-00610,Sales,E116,Hotel,59.37
+EXP-02800,Finance,E123,Meals,315.41
+EXP-01310,Marketing,E133,Travel,16.63
+EXP-01155,Marketing,E100,Meals,103.68
+EXP-00732,Sales,E111,Supplies,12.97
+EXP-01489,Marketing,E135,Travel,38.55
+EXP-01728,Operations,E144,Hotel,35.17
+EXP-00735,Sales,E143,Hotel,3.15
+EXP-02284,Operations,E155,Hotel,198.85
+EXP-02898,Field Engineering,E138,Supplies,49.57
+EXP-02958,Field Engineering,E109,Supplies,17.69
+EXP-00468,Sales,E110,Travel,44.47
+EXP-01796,Operations,E138,Travel,31.02
+EXP-01736,Operations,E103,Travel,61.13
+EXP-02355,Operations,E139,Travel,42.26
+EXP-01016,Marketing,E158,Hotel,33.63
+EXP-03386,Field Engineering,E107,Supplies,1929.77
+EXP-01080,Marketing,E114,Travel,5.5
+EXP-00657,Sales,E148,Travel,81.68
+EXP-03172,Field Engineering,E149,Travel,50.25
+EXP-01111,Marketing,E118,Hotel,19.51
+EXP-02339,Operations,E156,Supplies,28.08
+EXP-02553,Finance,E110,Meals,53.42
+EXP-03169,Field Engineering,E135,Supplies,24.62
+EXP-00671,Sales,E118,Hotel,17.76
+EXP-03208,Field Engineering,E108,Meals,25.93
+EXP-01222,Marketing,E128,Travel,6.75
+EXP-02041,Operations,E141,Meals,111.11
+EXP-01099,Marketing,E132,Hotel,4.31
+EXP-02259,Operations,E156,Meals,23.12
+EXP-00757,Sales,E138,Supplies,17.83
+EXP-02899,Field Engineering,E112,Supplies,43.75
+EXP-01494,Marketing,E111,Meals,76.27
+EXP-00702,Sales,E154,Meals,25.76
+EXP-00285,Sales,E103,Supplies,561.0
+EXP-00116,Sales,E128,Travel,19.88
+EXP-01968,Operations,E137,Supplies,23.1
+EXP-00043,Sales,E151,Travel,16.07
+EXP-03161,Field Engineering,E154,Travel,29.8
+EXP-00636,Sales,E135,Travel,39.33
+EXP-02209,Operations,E111,Travel,48.43
+EXP-03150,Field Engineering,E112,Meals,52.85
+EXP-00266,Sales,E102,Travel,220.74
+EXP-03038,Field Engineering,E105,Travel,41.09
+EXP-00194,Sales,E116,Travel,75.15
+EXP-02401,Finance,E119,Supplies,4.14
+EXP-02759,Finance,E145,Supplies,246.31
+EXP-00783,Sales,E119,Hotel,94.37
+EXP-03255,Field Engineering,E128,Meals,6.29
+EXP-01127,Marketing,E127,Travel,20.6
+EXP-01867,Operations,E126,Meals,177.41
+EXP-03116,Field Engineering,E153,Supplies,63.88
+EXP-00734,Sales,E105,Supplies,73.44
+EXP-03373,Field Engineering,E117,Travel,451.1
+EXP-00712,Sales,E157,Hotel,207.76
+EXP-00947,Marketing,E113,Hotel,83.5
+EXP-00736,Sales,E136,Hotel,64.72
+EXP-00812,Sales,E150,Hotel,70.27
+EXP-00628,Sales,E132,Meals,41.58
+EXP-02669,Finance,E107,Supplies,52.78
+EXP-01753,Operations,E120,Supplies,19.25
+EXP-03009,Field Engineering,E155,Travel,8.12
+EXP-01809,Operations,E127,Travel,30.46
+EXP-00123,Sales,E142,Travel,78.1
+EXP-02478,Finance,E108,Travel,14.09
+EXP-00811,Sales,E104,Supplies,13.06
+EXP-02548,Finance,E157,Meals,164.64
+EXP-02510,Finance,E139,Meals,67.41
+EXP-02271,Operations,E144,Travel,27.7
+EXP-01406,Marketing,E121,Travel,28.22
+EXP-01754,Operations,E111,Meals,6.22
+EXP-01675,Operations,E149,Travel,1.21
+EXP-01777,Operations,E130,Hotel,10.53
+EXP-01295,Marketing,E144,Hotel,105.36
+EXP-02054,Operations,E108,Supplies,17.6
+EXP-01492,Marketing,E155,Travel,21.4
+EXP-01694,Operations,E129,Meals,136.94
+EXP-03019,Field Engineering,E103,Travel,76.05
+EXP-02527,Finance,E119,Supplies,95.75
+EXP-00106,Sales,E134,Meals,5.78
+EXP-01440,Marketing,E120,Meals,31.31
+EXP-00182,Sales,E136,Travel,7.27
+EXP-02282,Operations,E122,Supplies,43.23
+EXP-00875,Sales,E129,Travel,5.9
+EXP-01256,Marketing,E119,Meals,44.47
+EXP-03097,Field Engineering,E158,Supplies,42.74
+EXP-01283,Marketing,E156,Hotel,25.93
+EXP-01378,Marketing,E144,Hotel,15.41
+EXP-00867,Sales,E133,Travel,52.99
+EXP-03382,Field Engineering,E122,Hotel,43.4
+EXP-02775,Finance,E151,Travel,12.2
+EXP-02636,Finance,E124,Supplies,11.91
+EXP-00907,Marketing,E116,Hotel,81.44
+EXP-03042,Field Engineering,E151,Supplies,28.17
+EXP-01782,Operations,E119,Meals,31.84
+EXP-00680,Sales,E114,Travel,193.42
+EXP-01869,Operations,E109,Travel,9.0
+EXP-02873,Field Engineering,E135,Supplies,46.22
+EXP-01154,Marketing,E118,Hotel,313.24
+EXP-00960,Marketing,E126,Supplies,30.89
+EXP-03388,Field Engineering,E102,Travel,9.97
+EXP-03105,Field Engineering,E155,Hotel,43.61
+EXP-02132,Operations,E145,Meals,134.08
+EXP-03217,Field Engineering,E116,Hotel,49.91
+EXP-02465,Finance,E141,Hotel,298.96
+EXP-03228,Field Engineering,E126,Hotel,16.92
+EXP-01942,Operations,E152,Travel,6.86
+EXP-00964,Marketing,E133,Supplies,9.63
+EXP-01522,Marketing,E139,Supplies,8.36
+EXP-01428,Marketing,E137,Supplies,47.78
+EXP-03048,Field Engineering,E118,Meals,29.49
+EXP-00272,Sales,E124,Hotel,107.09
+EXP-00100,Sales,E143,Travel,45.82
+EXP-00170,Sales,E117,Hotel,5.31
+EXP-02097,Operations,E103,Hotel,44.05
+EXP-01864,Operations,E149,Hotel,67.31
+EXP-02004,Operations,E130,Travel,214.65
+EXP-01569,Marketing,E101,Travel,14.29
+EXP-01734,Operations,E137,Supplies,12.53
+EXP-01054,Marketing,E117,Meals,21.26
+EXP-01328,Marketing,E127,Hotel,163.91
+EXP-01666,Operations,E123,Hotel,44.54
+EXP-01583,Marketing,E111,Travel,4.75
+EXP-00669,Sales,E104,Travel,8.11
+EXP-00510,Sales,E114,Hotel,34.16
+EXP-02651,Finance,E139,Hotel,75.7
+EXP-00248,Sales,E111,Supplies,35.22
+EXP-00746,Sales,E145,Supplies,91.59
+EXP-00700,Sales,E109,Hotel,55.09
+EXP-01765,Operations,E100,Hotel,35.95
+EXP-00428,Sales,E108,Travel,19.36
+EXP-02577,Finance,E150,Meals,36.17
+EXP-01958,Operations,E135,Hotel,1.85
+EXP-01508,Marketing,E142,Supplies,23.23
+EXP-00154,Sales,E126,Travel,224.53
+EXP-02387,Operations,E101,Hotel,14.62
+EXP-02134,Operations,E130,Meals,173.77
+EXP-00360,Sales,E103,Supplies,14.01
+EXP-00011,Sales,E125,Supplies,76.9
+EXP-02104,Operations,E132,Supplies,9.17
+EXP-00826,Sales,E130,Supplies,105.65
+EXP-01364,Marketing,E143,Supplies,106.13
+EXP-00808,Sales,E116,Supplies,13.16
+EXP-00977,Marketing,E127,Meals,86.96
+EXP-02141,Operations,E118,Meals,45.62
+EXP-00341,Sales,E116,Supplies,3.21
+EXP-00922,Marketing,E120,Supplies,98.82
+EXP-00830,Sales,E147,Meals,28.88
+EXP-02417,Finance,E122,Meals,71.96
+EXP-01501,Marketing,E132,Hotel,106.41
+EXP-01476,Marketing,E121,Meals,11.76
+EXP-02363,Operations,E115,Meals,8.78
+EXP-01573,Marketing,E156,Supplies,27.28
+EXP-02203,Operations,E102,Hotel,93.94
+EXP-00963,Marketing,E153,Hotel,15.96
+EXP-01258,Marketing,E130,Meals,45.7
+EXP-01637,Operations,E154,Supplies,21.6
+EXP-00844,Sales,E124,Hotel,7.3
+EXP-03249,Field Engineering,E120,Travel,34.41
+EXP-00421,Sales,E108,Hotel,63.28
+EXP-01712,Operations,E147,Hotel,27.98
+EXP-00499,Sales,E122,Supplies,179.65
+EXP-00417,Sales,E130,Hotel,41.48
+EXP-00621,Sales,E111,Supplies,54.36
+EXP-02436,Finance,E155,Hotel,23.4
+EXP-03337,Field Engineering,E119,Travel,41.55
+EXP-02874,Field Engineering,E131,Supplies,46.83
+EXP-00361,Sales,E112,Meals,1.13
+EXP-01532,Marketing,E146,Travel,43.28
+EXP-01014,Marketing,E138,Supplies,128.46
+EXP-00847,Sales,E140,Travel,24.96
+EXP-02747,Finance,E110,Hotel,44.37
+EXP-02166,Operations,E122,Hotel,159.88
+EXP-02724,Finance,E147,Meals,101.64
+EXP-02934,Field Engineering,E146,Meals,299.66
+EXP-03216,Field Engineering,E145,Supplies,19.34
+EXP-00469,Sales,E101,Travel,8.48
+EXP-03205,Field Engineering,E117,Travel,14.55
+EXP-01530,Marketing,E126,Hotel,8.96
+EXP-01955,Operations,E156,Hotel,16.35
+EXP-00138,Sales,E100,Hotel,1.66
+EXP-02352,Operations,E144,Meals,94.58
+EXP-01466,Marketing,E102,Hotel,71.99
+EXP-02858,Field Engineering,E131,Supplies,49.46
+EXP-00841,Sales,E115,Travel,9.18
+EXP-01491,Marketing,E144,Travel,38.28
+EXP-02673,Finance,E126,Meals,39.08
+EXP-01117,Marketing,E113,Supplies,73.01
+EXP-01594,Marketing,E113,Travel,34.13
+EXP-01075,Marketing,E131,Travel,93.58
+EXP-01957,Operations,E147,Supplies,11.65
+EXP-03102,Field Engineering,E134,Supplies,52.08
+EXP-00692,Sales,E141,Meals,58.35
+EXP-02648,Finance,E113,Hotel,8.13
+EXP-01839,Operations,E126,Travel,27.8
+EXP-01845,Operations,E106,Meals,148.42
+EXP-01291,Marketing,E148,Hotel,21.89
+EXP-01894,Operations,E100,Hotel,4.72
+EXP-00225,Sales,E145,Supplies,113.62
+EXP-01617,Operations,E120,Travel,63.02
+EXP-01603,Operations,E113,Travel,13.84
+EXP-03007,Field Engineering,E112,Supplies,432.36
+EXP-02686,Finance,E142,Hotel,29.31
+EXP-01947,Operations,E153,Supplies,9.23
+EXP-02517,Finance,E131,Meals,83.21
+EXP-01574,Marketing,E154,Meals,55.43
+EXP-01459,Marketing,E135,Travel,106.18
+EXP-00996,Marketing,E105,Hotel,9.9
+EXP-02948,Field Engineering,E132,Travel,131.89
+EXP-02050,Operations,E116,Meals,69.0
+EXP-02211,Operations,E110,Meals,45.36
+EXP-02011,Operations,E140,Supplies,13.88
+EXP-02077,Operations,E155,Meals,153.02
+EXP-02697,Finance,E152,Meals,46.94
+EXP-00081,Sales,E131,Hotel,33.5
+EXP-01176,Marketing,E144,Supplies,110.02
+EXP-01895,Operations,E116,Meals,18.19
+EXP-00034,Sales,E108,Meals,18.04
+EXP-01356,Marketing,E130,Hotel,436.84
+EXP-01064,Marketing,E137,Hotel,13.89
+EXP-03072,Field Engineering,E102,Supplies,83.85
+EXP-01241,Marketing,E119,Travel,9.05
+EXP-01902,Operations,E119,Travel,21.56
+EXP-01657,Operations,E111,Meals,175.52
+EXP-02005,Operations,E107,Meals,43.88
+EXP-02444,Finance,E135,Hotel,29.35
+EXP-01000,Marketing,E126,Hotel,5.34
+EXP-02194,Operations,E116,Supplies,96.94
+EXP-02316,Operations,E135,Travel,15.15
+EXP-01714,Operations,E115,Travel,28.52
+EXP-00805,Sales,E136,Supplies,14.69
+EXP-00135,Sales,E115,Hotel,38.88
+EXP-00325,Sales,E135,Hotel,16.23
+EXP-02962,Field Engineering,E123,Travel,12.23
+EXP-02019,Operations,E130,Hotel,32.23
+EXP-00880,Sales,E140,Travel,22.24
+EXP-01729,Operations,E121,Hotel,32.28
+EXP-00914,Marketing,E105,Supplies,11.62
+EXP-01113,Marketing,E121,Supplies,18.22
+EXP-02922,Field Engineering,E143,Hotel,46.87
+EXP-01408,Marketing,E136,Supplies,97.7
+EXP-01628,Operations,E114,Hotel,71.04
+EXP-00882,Sales,E145,Supplies,23.76
+EXP-01453,Marketing,E117,Travel,24.34
+EXP-02513,Finance,E121,Hotel,41.73
+EXP-01544,Marketing,E157,Hotel,9.02
+EXP-02950,Field Engineering,E139,Meals,145.58
+EXP-02375,Operations,E127,Supplies,15.13
+EXP-02785,Finance,E125,Meals,220.51
+EXP-02730,Finance,E116,Travel,43.44
+EXP-01346,Marketing,E144,Travel,165.34
+EXP-00864,Sales,E101,Travel,69.77
+EXP-00024,Sales,E135,Meals,42.72
+EXP-00149,Sales,E154,Travel,13.97
+EXP-00093,Sales,E153,Hotel,39.22
+EXP-02129,Operations,E103,Travel,13.13
+EXP-03213,Field Engineering,E139,Hotel,35.83
+EXP-03364,Field Engineering,E146,Travel,45.86
+EXP-01416,Marketing,E120,Supplies,6.47
+EXP-02451,Finance,E155,Meals,44.57
+EXP-01646,Operations,E127,Travel,121.81
+EXP-00931,Marketing,E115,Meals,43.07
+EXP-02422,Finance,E124,Meals,20.83
+EXP-00280,Sales,E122,Supplies,6.75
+EXP-02158,Operations,E130,Meals,102.2
+EXP-00077,Sales,E142,Hotel,9.2
+EXP-01358,Marketing,E129,Hotel,30.63
+EXP-02992,Field Engineering,E151,Supplies,93.72
+EXP-02183,Operations,E124,Travel,77.49
+EXP-02986,Field Engineering,E154,Hotel,19.07
+EXP-02380,Operations,E120,Travel,11.22
+EXP-03006,Field Engineering,E144,Travel,17.23
+EXP-01067,Marketing,E131,Meals,10.11
+EXP-02136,Operations,E134,Hotel,21.32
+EXP-00547,Sales,E118,Supplies,7.52
+EXP-02439,Finance,E127,Hotel,10.34
+EXP-00501,Sales,E143,Supplies,123.07
+EXP-02160,Operations,E107,Travel,55.96
+EXP-02365,Operations,E150,Travel,368.59
+EXP-00506,Sales,E115,Hotel,91.41
+EXP-03111,Field Engineering,E151,Meals,46.54
+EXP-03374,Field Engineering,E119,Meals,34.35
+EXP-02578,Finance,E110,Meals,47.45
+EXP-02460,Finance,E110,Meals,7.01
+EXP-02752,Finance,E154,Hotel,48.91
+EXP-02121,Operations,E145,Travel,8.78
+EXP-00958,Marketing,E101,Meals,158.84
+EXP-02714,Finance,E115,Hotel,28.77
+EXP-00166,Sales,E105,Meals,147.24
+EXP-01450,Marketing,E126,Supplies,19.74
+EXP-00202,Sales,E148,Hotel,48.5
+EXP-02151,Operations,E127,Meals,141.82
+EXP-00239,Sales,E155,Travel,7.55
+EXP-01978,Operations,E143,Hotel,64.45
+EXP-01051,Marketing,E135,Travel,68.96
+EXP-00986,Marketing,E112,Hotel,227.04
+EXP-00553,Sales,E111,Meals,17.87
+EXP-02663,Finance,E112,Supplies,10.47
+EXP-02377,Operations,E104,Travel,48.46
+EXP-02770,Finance,E158,Travel,52.47
+EXP-02834,Field Engineering,E107,Supplies,43.36
+EXP-02438,Finance,E118,Hotel,3.52
+EXP-02265,Operations,E141,Supplies,20.48
+EXP-01820,Operations,E124,Meals,80.87
+EXP-00990,Marketing,E150,Hotel,18.58
+EXP-03292,Field Engineering,E102,Supplies,37.89
+EXP-01645,Operations,E103,Travel,48.19
+EXP-01196,Marketing,E150,Hotel,8.65
+EXP-02429,Finance,E116,Supplies,16.21
+EXP-01281,Marketing,E122,Supplies,5.75
+EXP-01400,Marketing,E158,Hotel,14.98
+EXP-00624,Sales,E127,Hotel,22.14
+EXP-00049,Sales,E122,Meals,92.7
+EXP-02148,Operations,E155,Supplies,18.04
+EXP-02782,Finance,E154,Travel,109.8
+EXP-02764,Finance,E128,Meals,37.39
+EXP-03202,Field Engineering,E156,Travel,42.47
+EXP-03058,Field Engineering,E108,Supplies,20.08
+EXP-02908,Field Engineering,E159,Travel,45.27
+EXP-00115,Sales,E131,Meals,32.9
+EXP-02926,Field Engineering,E135,Meals,44.03
+EXP-01379,Marketing,E121,Supplies,27.48
+EXP-00791,Sales,E123,Hotel,17.46
+EXP-03252,Field Engineering,E129,Supplies,35.58
+EXP-01893,Operations,E156,Supplies,14.35
+EXP-00741,Sales,E139,Hotel,21.75
+EXP-00897,Sales,E159,Supplies,23.17
+EXP-01097,Marketing,E154,Meals,117.95
+EXP-01827,Operations,E118,Supplies,73.88
+EXP-01920,Operations,E112,Meals,34.68
+EXP-02628,Finance,E113,Hotel,24.96
+EXP-01194,Marketing,E107,Travel,29.45
+EXP-01773,Operations,E103,Travel,56.35
+EXP-00221,Sales,E138,Travel,11.86
+EXP-01929,Operations,E159,Supplies,80.59
+EXP-01784,Operations,E102,Travel,29.82
+EXP-00515,Sales,E127,Meals,244.53
+EXP-00151,Sales,E143,Travel,44.6
+EXP-01740,Operations,E151,Travel,13.01
+EXP-01432,Marketing,E114,Travel,49.63
+EXP-00716,Sales,E137,Meals,53.31
+EXP-01700,Operations,E139,Meals,9.0
+EXP-01484,Marketing,E116,Supplies,131.51
+EXP-03187,Field Engineering,E158,Hotel,71.04
+EXP-01129,Marketing,E137,Travel,7.22
+EXP-03044,Field Engineering,E132,Supplies,15.82
+EXP-02638,Finance,E142,Supplies,55.09
+EXP-01096,Marketing,E113,Meals,170.61
+EXP-00954,Marketing,E103,Hotel,242.14
+EXP-01861,Operations,E114,Travel,21.93
+EXP-01636,Operations,E102,Hotel,34.82
+EXP-00863,Sales,E148,Travel,17.86
+EXP-03369,Field Engineering,E115,Hotel,49.81
+EXP-01810,Operations,E116,Hotel,100.6
+EXP-03283,Field Engineering,E105,Meals,132.96
+EXP-03238,Field Engineering,E144,Travel,25.64
+EXP-02699,Finance,E107,Travel,76.66
+EXP-01696,Operations,E126,Meals,65.97
+EXP-02595,Finance,E130,Hotel,21.79
+EXP-00189,Sales,E111,Meals,60.43
+EXP-01554,Marketing,E152,Travel,33.73
+EXP-00924,Marketing,E146,Supplies,84.66
+EXP-02435,Finance,E115,Meals,185.29
+EXP-02311,Operations,E128,Supplies,59.85
+EXP-03084,Field Engineering,E118,Supplies,124.59
+EXP-03055,Field Engineering,E123,Travel,72.57
+EXP-01658,Operations,E137,Supplies,18.62
+EXP-00269,Sales,E142,Hotel,65.52
+EXP-02242,Operations,E106,Meals,31.78
+EXP-03284,Field Engineering,E139,Supplies,17.81
+EXP-02133,Operations,E145,Hotel,22.89
+EXP-01243,Marketing,E108,Meals,55.06
+EXP-01648,Operations,E154,Meals,35.63
+EXP-02431,Finance,E151,Meals,12.43
+EXP-00108,Sales,E102,Hotel,42.18
+EXP-01938,Operations,E110,Travel,80.2
+EXP-01414,Marketing,E138,Hotel,70.06
+EXP-01257,Marketing,E134,Meals,143.79
+EXP-02589,Finance,E148,Travel,32.24
+EXP-00458,Sales,E139,Travel,91.23
+EXP-03103,Field Engineering,E100,Hotel,144.2
+EXP-00817,Sales,E110,Hotel,23.44
+EXP-02196,Operations,E158,Meals,38.82
+EXP-03250,Field Engineering,E122,Hotel,70.04
+EXP-00856,Sales,E147,Travel,137.41
+EXP-01026,Marketing,E136,Travel,11.15
+EXP-00143,Sales,E117,Supplies,33.39
+EXP-03137,Field Engineering,E148,Meals,10.23
+EXP-01474,Marketing,E129,Hotel,124.05
+EXP-02646,Finance,E141,Meals,84.67
+EXP-00862,Sales,E139,Supplies,1.27
+EXP-00617,Sales,E152,Hotel,22.03
+EXP-02086,Operations,E144,Travel,37.41
+EXP-02243,Operations,E153,Hotel,337.3
+EXP-00571,Sales,E118,Hotel,57.16
+EXP-00932,Marketing,E123,Meals,4.86
+EXP-00328,Sales,E110,Supplies,126.64
+EXP-01815,Operations,E151,Hotel,14.08
+EXP-03313,Field Engineering,E106,Supplies,19.52
+EXP-01402,Marketing,E130,Hotel,332.72
+EXP-02879,Field Engineering,E126,Supplies,41.36
+EXP-01579,Marketing,E123,Travel,19.24
+EXP-00926,Marketing,E140,Travel,10.83
+EXP-00952,Marketing,E145,Hotel,66.74
+EXP-02186,Operations,E106,Hotel,15.4
+EXP-00788,Sales,E105,Meals,14.24
+EXP-00855,Sales,E115,Supplies,13.23
+EXP-02161,Operations,E151,Travel,11.21
+EXP-03147,Field Engineering,E147,Meals,18.52
+EXP-02317,Operations,E107,Supplies,59.74
+EXP-02857,Field Engineering,E111,Travel,43.74
+EXP-01833,Operations,E113,Travel,197.64
+EXP-03152,Field Engineering,E109,Hotel,36.38
+EXP-01125,Marketing,E144,Travel,67.65
+EXP-03008,Field Engineering,E154,Supplies,148.53
+EXP-01031,Marketing,E111,Meals,175.84
+EXP-01319,Marketing,E107,Hotel,2.1
+EXP-00057,Sales,E108,Supplies,19.3
+EXP-00845,Sales,E133,Meals,35.34
+EXP-02507,Finance,E107,Meals,61.13
+EXP-00772,Sales,E109,Hotel,53.22
+EXP-01354,Marketing,E152,Supplies,253.36
+EXP-02904,Field Engineering,E107,Hotel,40.52
+EXP-03085,Field Engineering,E112,Meals,92.02
+EXP-01812,Operations,E101,Travel,149.45
+EXP-00339,Sales,E155,Hotel,52.17
+EXP-01429,Marketing,E148,Travel,47.09
+EXP-02607,Finance,E122,Meals,58.64
+EXP-03241,Field Engineering,E155,Supplies,16.16
+EXP-00316,Sales,E133,Travel,63.21
+EXP-00208,Sales,E102,Hotel,17.04
+EXP-01443,Marketing,E118,Travel,38.43
+EXP-03287,Field Engineering,E117,Meals,284.27
+EXP-01382,Marketing,E141,Travel,36.89
+EXP-01035,Marketing,E118,Hotel,13.93
+EXP-02501,Finance,E143,Supplies,76.83
+EXP-00906,Marketing,E145,Hotel,17.93
+EXP-00179,Sales,E122,Travel,10.85
+EXP-01007,Marketing,E112,Supplies,36.64
+EXP-00609,Sales,E110,Meals,8.84
+EXP-00002,Sales,E134,Travel,21.96
+EXP-03263,Field Engineering,E115,Meals,287.61
+EXP-01641,Operations,E139,Supplies,16.52
+EXP-02332,Operations,E100,Meals,118.08
+EXP-01423,Marketing,E102,Supplies,27.93
+EXP-00649,Sales,E131,Supplies,137.57
+EXP-01003,Marketing,E120,Supplies,8.19
+EXP-02229,Operations,E102,Hotel,80.05
+EXP-00188,Sales,E143,Meals,13.76
+EXP-03209,Field Engineering,E109,Travel,11.86
+EXP-01311,Marketing,E142,Travel,16.54
+EXP-01613,Operations,E140,Meals,68.72
+EXP-00775,Sales,E120,Meals,288.88
+EXP-01273,Marketing,E121,Hotel,110.05
+EXP-02637,Finance,E109,Hotel,9.41
+EXP-01717,Operations,E112,Supplies,16.85
+EXP-02514,Finance,E140,Meals,9.64
+EXP-01250,Marketing,E102,Hotel,55.32
+EXP-00353,Sales,E104,Meals,24.01
+EXP-00565,Sales,E153,Travel,72.12
+EXP-00387,Sales,E150,Supplies,7.2
+EXP-02177,Operations,E121,Hotel,35.09
+EXP-02028,Operations,E129,Supplies,46.41
+EXP-01514,Marketing,E109,Travel,78.36
+EXP-02551,Finance,E110,Supplies,16.62
+EXP-02258,Operations,E148,Meals,60.76
+EXP-01659,Operations,E129,Hotel,24.45
+EXP-00679,Sales,E148,Hotel,137.64
+EXP-00075,Sales,E117,Supplies,63.69
+EXP-00599,Sales,E136,Supplies,45.17
+EXP-01726,Operations,E133,Hotel,211.31
+EXP-00317,Sales,E151,Hotel,12.39
+EXP-00938,Marketing,E118,Travel,18.59
+EXP-01469,Marketing,E105,Hotel,55.12
+EXP-01455,Marketing,E132,Meals,12.1
+EXP-01148,Marketing,E132,Meals,28.97
+EXP-01307,Marketing,E158,Meals,51.58
+EXP-02597,Finance,E122,Meals,75.35
+EXP-02574,Finance,E159,Meals,18.56
+EXP-01846,Operations,E101,Supplies,19.37
+EXP-01268,Marketing,E113,Hotel,30.36
+EXP-01286,Marketing,E147,Meals,85.46
+EXP-01473,Marketing,E121,Supplies,8.98
+EXP-02910,Field Engineering,E113,Meals,40.79
+EXP-00287,Sales,E141,Hotel,142.54
+EXP-00956,Marketing,E150,Supplies,52.19
+EXP-00153,Sales,E129,Travel,17.57
+EXP-02449,Finance,E146,Hotel,24.61
+EXP-00762,Sales,E120,Hotel,45.19
+EXP-00478,Sales,E124,Supplies,219.32
+EXP-00985,Marketing,E107,Supplies,49.78
+EXP-00263,Sales,E132,Travel,74.02
+EXP-00430,Sales,E147,Supplies,55.65
+EXP-02015,Operations,E108,Supplies,81.85
+EXP-03350,Field Engineering,E106,Supplies,10.45
+EXP-03168,Field Engineering,E150,Meals,57.23
+EXP-00020,Sales,E126,Supplies,22.25
+EXP-00807,Sales,E130,Hotel,6.69
+EXP-01510,Marketing,E123,Travel,17.98
+EXP-02036,Operations,E108,Meals,53.72
+EXP-00343,Sales,E139,Meals,310.56
+EXP-00354,Sales,E102,Supplies,36.62
+EXP-00016,Sales,E134,Travel,102.39
+EXP-03052,Field Engineering,E124,Supplies,50.41
+EXP-02690,Finance,E124,Supplies,10.27
+EXP-00843,Sales,E153,Supplies,60.95
+EXP-03224,Field Engineering,E126,Supplies,46.66
+EXP-03378,Field Engineering,E107,Meals,220.1
+EXP-00052,Sales,E110,Travel,23.2
+EXP-02327,Operations,E125,Hotel,118.24
+EXP-01498,Marketing,E151,Travel,15.02
+EXP-00832,Sales,E155,Supplies,45.77
+EXP-01324,Marketing,E147,Supplies,5.2
+EXP-02534,Finance,E116,Supplies,92.77
+EXP-01856,Operations,E113,Supplies,116.35
+EXP-02091,Operations,E123,Hotel,14.94
+EXP-03141,Field Engineering,E112,Supplies,17.51
+EXP-01906,Operations,E108,Supplies,15.21
+EXP-03264,Field Engineering,E135,Travel,37.26
+EXP-01384,Marketing,E127,Meals,47.15
+EXP-02032,Operations,E139,Hotel,18.05
+EXP-02843,Field Engineering,E113,Supplies,42.91
+EXP-00431,Sales,E135,Meals,257.67
+EXP-00076,Sales,E135,Supplies,12.66
+EXP-00639,Sales,E106,Travel,36.02
+EXP-03163,Field Engineering,E141,Meals,63.14
+EXP-02096,Operations,E137,Travel,9.88
+EXP-00156,Sales,E140,Hotel,35.45
+EXP-02920,Field Engineering,E101,Supplies,41.4
+EXP-01868,Operations,E146,Travel,135.99
+EXP-02043,Operations,E155,Supplies,14.27
+EXP-00695,Sales,E113,Supplies,112.79
+EXP-00814,Sales,E150,Hotel,9.59
+EXP-02168,Operations,E155,Travel,40.42
+EXP-02998,Field Engineering,E134,Meals,17.77
+EXP-02383,Operations,E102,Travel,68.72
+EXP-00159,Sales,E114,Supplies,650.67
+EXP-00747,Sales,E146,Meals,35.89
+EXP-00190,Sales,E158,Hotel,124.14
+EXP-02467,Finance,E153,Meals,116.5
+EXP-00957,Marketing,E139,Travel,32.32
+EXP-02102,Operations,E145,Supplies,55.48
+EXP-02539,Finance,E145,Hotel,31.06
+EXP-02853,Field Engineering,E146,Hotel,44.38
+EXP-02394,Operations,E159,Meals,7.93
+EXP-01226,Marketing,E144,Meals,53.14
+EXP-02612,Finance,E117,Hotel,56.83
+EXP-02406,Finance,E109,Travel,140.13
+EXP-02790,Finance,E141,Supplies,61.96
+EXP-00065,Sales,E119,Supplies,40.47
+EXP-01802,Operations,E134,Hotel,17.99
+EXP-03290,Field Engineering,E131,Travel,116.72
+EXP-00524,Sales,E121,Travel,29.8
+EXP-00955,Marketing,E134,Travel,221.53
+EXP-02670,Finance,E116,Hotel,29.79
+EXP-01215,Marketing,E125,Meals,36.67
+EXP-01419,Marketing,E149,Supplies,54.47
+EXP-01385,Marketing,E132,Travel,110.92
+EXP-02900,Field Engineering,E140,Supplies,41.49
+EXP-02536,Finance,E108,Supplies,233.86
+EXP-00887,Sales,E146,Meals,117.98
+EXP-00840,Sales,E156,Supplies,101.05
+EXP-01239,Marketing,E126,Hotel,67.26
+EXP-02384,Operations,E148,Hotel,51.69
+EXP-00588,Sales,E104,Meals,6.8
+EXP-00064,Sales,E131,Hotel,49.2
+EXP-01122,Marketing,E139,Supplies,62.32
+EXP-01308,Marketing,E143,Meals,3.56
+EXP-00678,Sales,E122,Travel,202.35
+EXP-01022,Marketing,E108,Supplies,9.67
+EXP-01321,Marketing,E115,Supplies,208.19
+EXP-02572,Finance,E148,Travel,29.52
+EXP-02144,Operations,E152,Travel,6.1
+EXP-00443,Sales,E107,Supplies,34.17
+EXP-01555,Marketing,E157,Supplies,15.51
+EXP-02021,Operations,E128,Travel,199.35
+EXP-02212,Operations,E151,Travel,25.52
+EXP-02606,Finance,E153,Hotel,6.0
+EXP-01422,Marketing,E152,Meals,13.15
+EXP-01761,Operations,E128,Hotel,126.65
+EXP-01220,Marketing,E105,Supplies,20.18
+EXP-01072,Marketing,E153,Hotel,100.08
+EXP-02497,Finance,E148,Supplies,25.01
+EXP-00133,Sales,E130,Meals,106.09
+EXP-03164,Field Engineering,E143,Supplies,107.28
+EXP-01609,Operations,E128,Meals,16.12
+EXP-00144,Sales,E153,Travel,212.05
+EXP-02515,Finance,E108,Hotel,43.33
+EXP-02081,Operations,E153,Supplies,22.68
+EXP-02940,Field Engineering,E133,Supplies,23.79
+EXP-02760,Finance,E139,Supplies,15.42
+EXP-00381,Sales,E151,Supplies,26.86
+EXP-00802,Sales,E118,Hotel,80.87
+EXP-03181,Field Engineering,E159,Supplies,54.01
+EXP-00255,Sales,E143,Supplies,15.66
+EXP-00721,Sales,E143,Hotel,108.8
+EXP-01279,Marketing,E113,Supplies,29.06
+EXP-00920,Marketing,E153,Supplies,6.25
+EXP-01018,Marketing,E132,Hotel,5.15
+EXP-02179,Operations,E112,Hotel,32.32
+EXP-00008,Sales,E149,Supplies,18.99
+EXP-01878,Operations,E108,Supplies,29.77
+EXP-02165,Operations,E134,Hotel,46.67
+EXP-03160,Field Engineering,E150,Meals,31.82
+EXP-00979,Marketing,E119,Meals,52.45
+EXP-01571,Marketing,E134,Meals,53.46
+EXP-01263,Marketing,E129,Meals,26.84
+EXP-02127,Operations,E155,Travel,173.05
+EXP-01764,Operations,E145,Travel,63.89
+EXP-01389,Marketing,E100,Hotel,210.68
+EXP-01141,Marketing,E144,Supplies,10.56
+EXP-01683,Operations,E128,Meals,14.58
+EXP-01464,Marketing,E101,Supplies,1.9
+EXP-00549,Sales,E131,Hotel,16.85
+EXP-00925,Marketing,E153,Travel,182.35
+EXP-02222,Operations,E106,Meals,43.82
+EXP-00548,Sales,E100,Hotel,9.82
+EXP-02116,Operations,E111,Supplies,55.74
+EXP-03131,Field Engineering,E105,Meals,8.91
+EXP-02871,Field Engineering,E114,Hotel,49.71
+EXP-01690,Operations,E113,Supplies,252.93
+EXP-02960,Field Engineering,E120,Hotel,27.22
+EXP-03270,Field Engineering,E138,Supplies,85.93
+EXP-01248,Marketing,E112,Travel,4.43
+EXP-02159,Operations,E123,Travel,33.65
+EXP-00238,Sales,E139,Hotel,37.04
+EXP-02300,Operations,E127,Travel,49.73
+EXP-03119,Field Engineering,E110,Travel,16.45
+EXP-00748,Sales,E111,Meals,96.75
+EXP-00096,Sales,E104,Hotel,14.08
+EXP-02845,Field Engineering,E101,Hotel,49.25
+EXP-00046,Sales,E157,Meals,236.77
+EXP-00728,Sales,E125,Travel,8.87
+EXP-03235,Field Engineering,E113,Supplies,49.49
+EXP-02007,Operations,E135,Travel,3.32
+EXP-03306,Field Engineering,E112,Meals,23.32
+EXP-00898,Sales,E154,Supplies,30.09
+EXP-00953,Marketing,E131,Meals,106.22
+EXP-00818,Sales,E101,Supplies,26.02
+EXP-00191,Sales,E122,Travel,81.79
+EXP-01752,Operations,E141,Travel,126.7
+EXP-01019,Marketing,E104,Supplies,14.13
+EXP-02263,Operations,E143,Hotel,253.5
+EXP-02255,Operations,E159,Hotel,38.73
+EXP-01705,Operations,E155,Hotel,67.85
+EXP-02140,Operations,E103,Travel,10.55
+EXP-01940,Operations,E123,Supplies,27.32
+EXP-02570,Finance,E149,Hotel,18.22
+EXP-01437,Marketing,E149,Travel,49.4
+EXP-00763,Sales,E136,Meals,132.77
+EXP-00503,Sales,E146,Travel,12.79
+EXP-03036,Field Engineering,E132,Meals,96.47
+EXP-00586,Sales,E128,Travel,17.29
+EXP-03120,Field Engineering,E130,Supplies,209.99
+EXP-03026,Field Engineering,E143,Hotel,27.29
+EXP-02409,Finance,E115,Supplies,46.57
+EXP-00424,Sales,E152,Meals,63.13
+EXP-02058,Operations,E110,Meals,73.91
+EXP-03321,Field Engineering,E125,Supplies,222.23
+EXP-02643,Finance,E100,Hotel,54.67
+EXP-02933,Field Engineering,E143,Hotel,53.19
+EXP-02997,Field Engineering,E137,Travel,109.37
+EXP-02656,Finance,E158,Supplies,57.14
+EXP-01267,Marketing,E123,Travel,60.84
+EXP-03294,Field Engineering,E137,Hotel,30.88
+EXP-02345,Operations,E112,Hotel,34.64
+EXP-03361,Field Engineering,E141,Travel,48.93
+EXP-02006,Operations,E100,Hotel,24.48
+EXP-03342,Field Engineering,E134,Meals,10.89
+EXP-03133,Field Engineering,E112,Supplies,27.82
+EXP-02328,Operations,E153,Travel,64.79
+EXP-01475,Marketing,E125,Travel,204.64
+EXP-01871,Operations,E133,Supplies,140.83
+EXP-00540,Sales,E101,Supplies,5.16
+EXP-01285,Marketing,E148,Hotel,228.26
+EXP-02223,Operations,E126,Travel,104.39
+EXP-00946,Marketing,E113,Travel,11.8
+EXP-00575,Sales,E104,Supplies,484.31
+EXP-00119,Sales,E105,Hotel,8.92
+EXP-00787,Sales,E102,Travel,80.15
+EXP-01227,Marketing,E120,Supplies,56.16
+EXP-03154,Field Engineering,E159,Hotel,15.54
+EXP-02139,Operations,E126,Meals,66.81
+EXP-00110,Sales,E106,Supplies,10.3
+EXP-02796,Finance,E155,Meals,32.15
+EXP-00784,Sales,E136,Hotel,6.54
+EXP-01952,Operations,E132,Supplies,220.07
+EXP-02505,Finance,E157,Travel,65.4
+EXP-02207,Operations,E102,Travel,26.19
+EXP-02916,Field Engineering,E151,Hotel,40.26
+EXP-03073,Field Engineering,E142,Hotel,132.14
+EXP-01119,Marketing,E133,Supplies,28.25
+EXP-02555,Finance,E152,Meals,129.08
+EXP-00215,Sales,E156,Travel,60.25
+EXP-00779,Sales,E124,Hotel,51.27
+EXP-01551,Marketing,E106,Supplies,99.06
+EXP-02591,Finance,E117,Supplies,19.34
+EXP-00310,Sales,E117,Hotel,62.57
+EXP-01161,Marketing,E113,Supplies,141.28
+EXP-02970,Field Engineering,E125,Travel,40.82
+EXP-00219,Sales,E158,Meals,42.37
+EXP-00429,Sales,E113,Supplies,20.89
+EXP-02963,Field Engineering,E114,Hotel,2.77
+EXP-00713,Sales,E137,Supplies,18.62
+EXP-02416,Finance,E143,Hotel,9.88
+EXP-02860,Field Engineering,E129,Travel,45.83
+EXP-00009,Sales,E118,Supplies,11.57
+EXP-02884,Field Engineering,E146,Supplies,47.74
+EXP-01662,Operations,E157,Meals,148.05
+EXP-01221,Marketing,E152,Meals,61.11
+EXP-02974,Field Engineering,E148,Travel,38.4
+EXP-00596,Sales,E157,Hotel,31.07
+EXP-02661,Finance,E155,Supplies,9.42
+EXP-01472,Marketing,E118,Supplies,2.13
+EXP-03234,Field Engineering,E122,Supplies,115.21
+EXP-02518,Finance,E159,Travel,66.5
+EXP-00517,Sales,E116,Travel,141.75
+EXP-01588,Marketing,E151,Meals,43.16
+EXP-02016,Operations,E135,Hotel,21.61
+EXP-02321,Operations,E109,Hotel,4.22
+EXP-02766,Finance,E108,Travel,25.94
+EXP-01663,Operations,E149,Meals,68.81
+EXP-02188,Operations,E153,Supplies,95.51
+EXP-01874,Operations,E129,Supplies,263.79
+EXP-01217,Marketing,E154,Travel,21.47
+EXP-01806,Operations,E128,Hotel,133.99
+EXP-01333,Marketing,E110,Hotel,21.68
+EXP-00675,Sales,E110,Hotel,41.59
+EXP-00820,Sales,E151,Travel,62.09
+EXP-00432,Sales,E134,Meals,298.96
+EXP-03293,Field Engineering,E106,Travel,88.38
+EXP-01069,Marketing,E159,Meals,105.84
+EXP-01774,Operations,E128,Travel,69.75
+EXP-02506,Finance,E140,Travel,84.8
+EXP-00314,Sales,E127,Supplies,73.61
+EXP-02601,Finance,E111,Supplies,27.39
+EXP-03096,Field Engineering,E133,Supplies,40.7
+EXP-00061,Sales,E127,Travel,17.44
+EXP-02540,Finance,E147,Travel,149.28
+EXP-01963,Operations,E155,Supplies,16.41
+EXP-00683,Sales,E154,Hotel,130.53
+EXP-02325,Operations,E103,Travel,158.62
+EXP-01908,Operations,E133,Hotel,42.89
+EXP-03130,Field Engineering,E146,Travel,57.25
+EXP-02291,Operations,E137,Hotel,122.1
+EXP-01153,Marketing,E134,Hotel,19.62
+EXP-00890,Sales,E111,Meals,30.22
+EXP-00945,Marketing,E131,Supplies,28.99
+EXP-02057,Operations,E149,Supplies,19.07
+EXP-01336,Marketing,E148,Travel,30.23
+EXP-01862,Operations,E104,Supplies,46.34
+EXP-00645,Sales,E122,Travel,11.49
+EXP-03053,Field Engineering,E102,Supplies,293.74
+EXP-01887,Operations,E121,Hotel,22.94
+EXP-00527,Sales,E154,Supplies,74.77
+EXP-00507,Sales,E101,Travel,121.92
+EXP-01231,Marketing,E103,Meals,53.68
+EXP-03314,Field Engineering,E120,Meals,23.11
+EXP-00717,Sales,E145,Supplies,34.27
+EXP-02024,Operations,E122,Hotel,39.39
+EXP-01842,Operations,E144,Travel,36.71
+EXP-02319,Operations,E139,Hotel,21.55
+EXP-01017,Marketing,E119,Supplies,69.96
+EXP-01969,Operations,E113,Supplies,61.24
+EXP-00055,Sales,E117,Hotel,26.55
+EXP-00050,Sales,E147,Travel,25.63
+EXP-00767,Sales,E134,Hotel,28.1
+EXP-02794,Finance,E111,Meals,101.04
+EXP-02238,Operations,E108,Supplies,32.61
+EXP-02157,Operations,E121,Travel,6.34
+EXP-00810,Sales,E129,Supplies,19.01
+EXP-02071,Operations,E118,Hotel,124.65
+EXP-00377,Sales,E142,Hotel,43.86
+EXP-00737,Sales,E120,Meals,28.69
+EXP-02919,Field Engineering,E156,Supplies,43.99
+EXP-00595,Sales,E144,Meals,153.56
+EXP-00349,Sales,E101,Hotel,29.04
+EXP-02254,Operations,E125,Supplies,16.68
+EXP-00094,Sales,E158,Hotel,135.96
+EXP-01249,Marketing,E122,Supplies,70.5
+EXP-03153,Field Engineering,E126,Travel,109.22
+EXP-03262,Field Engineering,E124,Travel,43.94
+EXP-02855,Field Engineering,E121,Meals,46.19
+EXP-02685,Finance,E137,Meals,29.41
+EXP-02832,Field Engineering,E110,Meals,49.87
+EXP-01682,Operations,E104,Supplies,229.77
+EXP-02587,Finance,E114,Supplies,27.57
+EXP-00136,Sales,E119,Supplies,105.38
+EXP-03196,Field Engineering,E132,Travel,33.35
+EXP-00936,Marketing,E148,Travel,77.1
+EXP-01715,Operations,E138,Meals,38.99
+EXP-03356,Field Engineering,E101,Travel,61.58
+EXP-02854,Field Engineering,E103,Travel,47.89
+EXP-00778,Sales,E100,Hotel,30.63
+EXP-01135,Marketing,E110,Travel,139.74
+EXP-01679,Operations,E150,Supplies,5.9
+EXP-03379,Field Engineering,E123,Hotel,25.88
+EXP-01665,Operations,E114,Travel,30.73
+EXP-00708,Sales,E127,Meals,53.92
+EXP-00561,Sales,E148,Hotel,89.56
+EXP-00654,Sales,E134,Travel,14.44
+EXP-02709,Finance,E153,Supplies,18.16
+EXP-01271,Marketing,E143,Meals,53.08
+EXP-03176,Field Engineering,E121,Hotel,86.11
+EXP-00418,Sales,E109,Meals,4.14
+EXP-01879,Operations,E114,Meals,15.65
+EXP-00987,Marketing,E137,Supplies,70.58
+EXP-02386,Operations,E157,Hotel,9.25
+EXP-02868,Field Engineering,E126,Travel,42.97
+EXP-00131,Sales,E119,Meals,14.67
+EXP-00848,Sales,E104,Supplies,29.83
+EXP-01150,Marketing,E138,Travel,154.71
+EXP-00025,Sales,E131,Travel,60.87
+EXP-02440,Finance,E117,Hotel,15.63
+EXP-02391,Operations,E147,Supplies,49.43
+EXP-01805,Operations,E131,Hotel,107.25
+EXP-01890,Operations,E110,Travel,28.88
+EXP-01528,Marketing,E127,Hotel,64.44
+EXP-02455,Finance,E106,Hotel,11.39
+EXP-02204,Operations,E125,Supplies,3.24
+EXP-03308,Field Engineering,E138,Travel,11.82
+EXP-02573,Finance,E156,Hotel,15.86
+EXP-02343,Operations,E110,Travel,59.24
+EXP-01023,Marketing,E139,Hotel,25.1
+EXP-00873,Sales,E106,Meals,7.44
+EXP-01567,Marketing,E147,Hotel,17.32
+EXP-00226,Sales,E111,Supplies,13.84
+EXP-02023,Operations,E139,Hotel,147.08
+EXP-01470,Marketing,E150,Travel,67.88
+EXP-01462,Marketing,E147,Travel,155.21
+EXP-01057,Marketing,E148,Meals,6.74
+EXP-03171,Field Engineering,E132,Supplies,61.07
+EXP-02917,Field Engineering,E157,Hotel,43.98
+EXP-02228,Operations,E144,Travel,34.56
+EXP-00948,Marketing,E149,Travel,29.38
+EXP-01909,Operations,E144,Hotel,107.13
+EXP-02059,Operations,E157,Travel,60.03
+EXP-00355,Sales,E142,Supplies,48.79
+EXP-00068,Sales,E139,Supplies,38.6
+EXP-01698,Operations,E103,Meals,118.62
+EXP-00722,Sales,E132,Hotel,207.54
+EXP-00146,Sales,E126,Supplies,57.61
+EXP-00416,Sales,E113,Meals,86.0
+EXP-02441,Finance,E145,Meals,20.47
+EXP-01531,Marketing,E142,Meals,59.9
+EXP-03340,Field Engineering,E100,Hotel,69.68
+EXP-00172,Sales,E117,Meals,66.73
+EXP-02486,Finance,E140,Meals,158.99
+EXP-00727,Sales,E125,Supplies,43.96
+EXP-01896,Operations,E107,Meals,41.24
+EXP-00056,Sales,E124,Supplies,53.55
+EXP-00139,Sales,E122,Travel,181.28
+EXP-03362,Field Engineering,E136,Travel,41.87
+EXP-02244,Operations,E123,Travel,11.55
+EXP-00450,Sales,E125,Hotel,37.47
+EXP-01998,Operations,E152,Hotel,9.17
+EXP-00989,Marketing,E133,Meals,27.54
+EXP-00970,Marketing,E101,Meals,42.16
+EXP-00137,Sales,E153,Hotel,246.29
+EXP-02487,Finance,E126,Travel,13.3
+EXP-01897,Operations,E121,Travel,53.84
+EXP-00175,Sales,E145,Hotel,68.44
+EXP-02303,Operations,E136,Travel,20.91
+EXP-01966,Operations,E120,Hotel,46.5
+EXP-00386,Sales,E121,Meals,9.71
+EXP-01725,Operations,E111,Hotel,61.51
+EXP-03101,Field Engineering,E127,Meals,48.7
+EXP-00445,Sales,E125,Hotel,30.97
+EXP-01102,Marketing,E107,Travel,16.62
+EXP-03177,Field Engineering,E152,Supplies,14.39
+EXP-01828,Operations,E114,Supplies,18.73
+EXP-03309,Field Engineering,E151,Hotel,32.75
+EXP-01884,Operations,E149,Travel,51.69
+EXP-01290,Marketing,E110,Supplies,21.86
+EXP-01582,Marketing,E156,Travel,23.76
+EXP-00090,Sales,E147,Supplies,58.56
+EXP-02768,Finance,E150,Travel,12.12
+EXP-01306,Marketing,E137,Supplies,13.8
+EXP-02101,Operations,E139,Travel,146.21
+EXP-02049,Operations,E129,Hotel,87.38
+EXP-02178,Operations,E130,Hotel,19.7
+EXP-01030,Marketing,E103,Hotel,8.06
+EXP-01330,Marketing,E110,Travel,9.65
+EXP-00040,Sales,E141,Travel,89.6
+EXP-01013,Marketing,E124,Supplies,347.97
+EXP-00944,Marketing,E150,Supplies,42.46
+EXP-00666,Sales,E115,Hotel,56.78
+EXP-02627,Finance,E107,Hotel,132.63
+EXP-00453,Sales,E148,Hotel,21.73
+EXP-00781,Sales,E156,Meals,47.97
+EXP-03383,Field Engineering,E125,Supplies,10.34
+EXP-01149,Marketing,E127,Hotel,293.92
+EXP-00178,Sales,E142,Hotel,62.12
+EXP-02185,Operations,E117,Hotel,52.27
+EXP-00337,Sales,E126,Supplies,12.51
+EXP-01919,Operations,E156,Travel,20.51
+EXP-02167,Operations,E128,Hotel,50.36
+EXP-03375,Field Engineering,E128,Meals,19.41
+EXP-01557,Marketing,E109,Supplies,60.0
+EXP-03271,Field Engineering,E117,Travel,19.82
+EXP-01601,Operations,E106,Hotel,5.62
+EXP-01642,Operations,E159,Travel,22.3
+EXP-00352,Sales,E134,Meals,9.33
+EXP-00625,Sales,E155,Travel,14.15
+EXP-02241,Operations,E134,Hotel,93.34
+EXP-02842,Field Engineering,E112,Supplies,44.93
+EXP-02798,Finance,E120,Supplies,26.47
+EXP-01552,Marketing,E143,Travel,26.62
+EXP-02184,Operations,E137,Meals,88.0
+EXP-03268,Field Engineering,E131,Supplies,156.95
+EXP-02509,Finance,E127,Hotel,53.51
+EXP-02090,Operations,E110,Meals,45.74
+EXP-00724,Sales,E142,Travel,42.08
+EXP-00699,Sales,E103,Supplies,74.13
+EXP-00359,Sales,E122,Meals,338.77
+EXP-03272,Field Engineering,E121,Supplies,214.31
+EXP-01322,Marketing,E151,Travel,5.88
+EXP-01614,Operations,E114,Supplies,37.09
+EXP-03067,Field Engineering,E143,Travel,17.61
+EXP-02895,Field Engineering,E153,Hotel,42.9
+EXP-01526,Marketing,E108,Meals,29.9
+EXP-00619,Sales,E144,Supplies,88.81
+EXP-00466,Sales,E147,Meals,99.43
+EXP-01435,Marketing,E144,Meals,15.26
+EXP-03091,Field Engineering,E122,Travel,71.58
+EXP-01420,Marketing,E120,Travel,185.74
+EXP-02817,Field Engineering,E152,Meals,49.94
+EXP-01703,Operations,E118,Hotel,17.97
+EXP-02128,Operations,E120,Travel,712.7
+EXP-01988,Operations,E117,Hotel,170.42
+EXP-00492,Sales,E148,Meals,25.01
+EXP-03247,Field Engineering,E134,Travel,6.4
+EXP-02576,Finance,E104,Hotel,74.17
+EXP-01766,Operations,E107,Supplies,182.53
+EXP-02793,Finance,E114,Hotel,13.96
+EXP-03391,Field Engineering,E127,Meals,128.51
+EXP-02415,Finance,E142,Meals,67.09
+EXP-01789,Operations,E103,Hotel,68.11
+EXP-03326,Field Engineering,E139,Hotel,176.38
+EXP-01482,Marketing,E137,Supplies,40.43
+EXP-03005,Field Engineering,E136,Travel,71.81
+EXP-01136,Marketing,E157,Hotel,15.75
+EXP-01936,Operations,E135,Travel,247.13
+EXP-02688,Finance,E157,Hotel,21.91
+EXP-01581,Marketing,E109,Supplies,47.3
+EXP-00480,Sales,E143,Supplies,175.65
+EXP-02266,Operations,E105,Hotel,9.64
+EXP-00103,Sales,E140,Meals,29.77
+EXP-01479,Marketing,E101,Travel,24.98
+EXP-00743,Sales,E133,Travel,352.18
+EXP-02953,Field Engineering,E158,Travel,38.09
+EXP-02976,Field Engineering,E118,Hotel,54.04
+EXP-00054,Sales,E136,Meals,78.05
+EXP-00988,Marketing,E142,Meals,22.15
+EXP-02727,Finance,E122,Hotel,90.33
+EXP-00069,Sales,E108,Supplies,14.08
+EXP-03138,Field Engineering,E141,Supplies,22.8
+EXP-00718,Sales,E157,Travel,13.49
+EXP-01101,Marketing,E104,Travel,12.6
+EXP-00334,Sales,E147,Meals,53.49
+EXP-02731,Finance,E102,Supplies,6.48
+EXP-01392,Marketing,E144,Hotel,38.62
+EXP-01240,Marketing,E146,Hotel,4.86
+EXP-00785,Sales,E101,Supplies,25.92
+EXP-01174,Marketing,E121,Travel,223.98
+EXP-01159,Marketing,E138,Hotel,95.2
+EXP-01316,Marketing,E129,Travel,41.85
+EXP-01138,Marketing,E134,Supplies,96.65
+EXP-02594,Finance,E113,Hotel,144.84
+EXP-00128,Sales,E151,Travel,18.03
+EXP-01584,Marketing,E139,Supplies,13.78
+EXP-01975,Operations,E152,Hotel,43.81
+EXP-02538,Finance,E123,Hotel,36.17
+EXP-02468,Finance,E137,Meals,13.9
+EXP-01262,Marketing,E137,Hotel,19.36
+EXP-02891,Field Engineering,E132,Travel,40.58
+EXP-02508,Finance,E134,Hotel,46.0
+EXP-01107,Marketing,E149,Supplies,50.17
+EXP-00951,Marketing,E125,Hotel,158.9
+EXP-02123,Operations,E115,Travel,68.81
+EXP-01130,Marketing,E117,Hotel,89.68
+EXP-03281,Field Engineering,E148,Travel,23.48
+EXP-01559,Marketing,E142,Hotel,20.42
+EXP-00462,Sales,E127,Supplies,30.33
+EXP-02433,Finance,E153,Meals,60.02
+EXP-00640,Sales,E143,Meals,12.61
+EXP-02504,Finance,E129,Meals,79.98
+EXP-02567,Finance,E114,Hotel,17.19
+EXP-00758,Sales,E152,Travel,36.99
+EXP-02983,Field Engineering,E109,Supplies,25.07
+EXP-00930,Marketing,E112,Travel,84.39
+EXP-00231,Sales,E110,Meals,188.97
+EXP-02461,Finance,E122,Meals,46.79
+EXP-01320,Marketing,E156,Meals,45.01
+EXP-00556,Sales,E133,Supplies,44.14
+EXP-00544,Sales,E138,Supplies,25.48
+EXP-03323,Field Engineering,E104,Meals,90.02
+EXP-02809,Field Engineering,E120,Travel,48.04
+EXP-02713,Finance,E128,Meals,11.2
+EXP-02807,Field Engineering,E132,Supplies,44.13
+EXP-00099,Sales,E157,Meals,15.21
+EXP-01431,Marketing,E129,Hotel,73.44
+EXP-01251,Marketing,E142,Hotel,32.4
+EXP-01888,Operations,E144,Supplies,14.37
+EXP-01900,Operations,E154,Supplies,123.74
+EXP-01006,Marketing,E152,Meals,31.82
+EXP-02445,Finance,E136,Hotel,27.12
+EXP-01471,Marketing,E131,Hotel,53.16
+EXP-02896,Field Engineering,E126,Hotel,48.01
+EXP-02061,Operations,E148,Travel,43.55
+EXP-02310,Operations,E114,Travel,38.43
+EXP-00295,Sales,E138,Meals,35.33
+EXP-02716,Finance,E132,Hotel,16.44
+EXP-03025,Field Engineering,E109,Travel,66.94
+EXP-03155,Field Engineering,E140,Meals,19.87
+EXP-02354,Operations,E122,Meals,49.0
+EXP-00160,Sales,E154,Travel,19.42
+EXP-01237,Marketing,E118,Hotel,46.26
+EXP-00651,Sales,E108,Travel,89.11
+EXP-03087,Field Engineering,E110,Hotel,129.33
+EXP-00910,Marketing,E128,Meals,138.63
+EXP-03188,Field Engineering,E108,Hotel,33.79
+EXP-02432,Finance,E143,Travel,11.43
+EXP-03278,Field Engineering,E126,Meals,72.31
+EXP-01558,Marketing,E113,Hotel,329.67
+EXP-00321,Sales,E140,Meals,24.89
+EXP-00015,Sales,E105,Travel,52.53
+EXP-00976,Marketing,E109,Hotel,3.6
+EXP-02774,Finance,E111,Supplies,5.79
+EXP-01447,Marketing,E138,Supplies,19.3
+EXP-00463,Sales,E108,Supplies,44.14
+EXP-03334,Field Engineering,E112,Supplies,214.32
+EXP-01693,Operations,E100,Meals,36.29
+EXP-01720,Operations,E120,Hotel,10.09
+EXP-00644,Sales,E122,Supplies,34.24
+EXP-00620,Sales,E129,Hotel,83.09
+EXP-00652,Sales,E139,Travel,59.68
+EXP-00254,Sales,E116,Travel,61.04
+EXP-01882,Operations,E150,Meals,87.57
+EXP-00874,Sales,E114,Supplies,59.1
+EXP-00467,Sales,E102,Supplies,57.43
+EXP-00754,Sales,E148,Meals,137.82
+EXP-02951,Field Engineering,E153,Hotel,22.49
+EXP-00942,Marketing,E108,Travel,23.85
+EXP-00883,Sales,E159,Meals,14.59
+EXP-00292,Sales,E107,Hotel,37.9
+EXP-00234,Sales,E102,Meals,134.95
+EXP-03333,Field Engineering,E117,Hotel,30.81
+EXP-01305,Marketing,E100,Hotel,31.12
+EXP-01767,Operations,E101,Travel,17.8
+EXP-01519,Marketing,E141,Travel,78.47
+EXP-02272,Operations,E135,Supplies,6.7
+EXP-02939,Field Engineering,E114,Hotel,42.78
+EXP-02098,Operations,E152,Travel,4.88
+EXP-02418,Finance,E153,Travel,64.7
+EXP-02026,Operations,E154,Meals,207.02
+EXP-01486,Marketing,E118,Supplies,61.03
+EXP-01242,Marketing,E135,Travel,80.06
+EXP-00535,Sales,E130,Travel,79.57
+EXP-02677,Finance,E123,Hotel,14.4
+EXP-02629,Finance,E116,Hotel,139.66
+EXP-00526,Sales,E120,Meals,30.6
+EXP-01426,Marketing,E101,Supplies,31.46
+EXP-01081,Marketing,E119,Meals,97.5
+EXP-02448,Finance,E112,Meals,5.79
+EXP-03037,Field Engineering,E139,Hotel,27.55
+EXP-00590,Sales,E148,Travel,8.09
+EXP-00674,Sales,E124,Travel,52.57
+EXP-02865,Field Engineering,E126,Travel,43.76
+EXP-02155,Operations,E124,Travel,52.05
+EXP-01347,Marketing,E154,Supplies,195.35
+EXP-01376,Marketing,E150,Travel,34.01
+EXP-00836,Sales,E146,Travel,76.76
+EXP-00252,Sales,E150,Meals,211.05
+EXP-00667,Sales,E137,Supplies,58.0
+EXP-02210,Operations,E140,Travel,202.18
+EXP-01872,Operations,E117,Hotel,17.58
+EXP-00391,Sales,E139,Travel,111.88
+EXP-01468,Marketing,E146,Travel,139.63
+EXP-02878,Field Engineering,E113,Hotel,49.93
+EXP-01363,Marketing,E158,Supplies,66.25
+EXP-00795,Sales,E114,Supplies,6.42
+EXP-01985,Operations,E100,Meals,100.03
+EXP-01934,Operations,E125,Meals,126.69
+EXP-02105,Operations,E136,Travel,58.5
+EXP-02717,Finance,E110,Hotel,120.68
+EXP-00682,Sales,E107,Hotel,72.55
+EXP-01206,Marketing,E145,Meals,41.68
+EXP-01078,Marketing,E145,Hotel,58.86
+EXP-03277,Field Engineering,E146,Travel,6.97
+EXP-02395,Operations,E126,Hotel,16.34
+EXP-00152,Sales,E143,Meals,31.79
+EXP-01525,Marketing,E149,Hotel,49.95
+EXP-03135,Field Engineering,E150,Hotel,16.56
+EXP-00828,Sales,E100,Meals,25.03
+EXP-01255,Marketing,E132,Hotel,65.9
+EXP-00525,Sales,E136,Meals,73.31
+EXP-01266,Marketing,E101,Travel,43.12
+EXP-02070,Operations,E155,Meals,8.06
+EXP-00406,Sales,E105,Hotel,65.41
+EXP-00258,Sales,E152,Hotel,30.06
+EXP-03211,Field Engineering,E143,Travel,50.31
+EXP-02749,Finance,E149,Supplies,30.22
+EXP-02437,Finance,E141,Hotel,19.34
+EXP-00186,Sales,E108,Travel,40.93
+EXP-02092,Operations,E112,Hotel,172.6
+EXP-00474,Sales,E152,Hotel,24.36
+EXP-00813,Sales,E130,Travel,415.49
+EXP-02389,Operations,E127,Supplies,38.71
+EXP-01167,Marketing,E103,Travel,210.07
+EXP-02880,Field Engineering,E115,Meals,43.03
+EXP-00365,Sales,E159,Supplies,19.1
+EXP-03324,Field Engineering,E148,Hotel,33.48
+EXP-01859,Operations,E122,Meals,73.13
+EXP-02621,Finance,E139,Travel,53.7
+EXP-01351,Marketing,E119,Hotel,38.91
+EXP-02364,Operations,E154,Travel,18.73
+EXP-00330,Sales,E148,Supplies,9.93
+EXP-00513,Sales,E122,Travel,131.63
+EXP-00663,Sales,E120,Hotel,19.41
+EXP-00346,Sales,E113,Travel,83.62
+EXP-01604,Operations,E131,Supplies,96.63
+EXP-00833,Sales,E156,Travel,75.19
+EXP-00684,Sales,E145,Supplies,167.5
+EXP-02972,Field Engineering,E159,Supplies,30.51
+EXP-01677,Operations,E117,Travel,165.86
+EXP-03338,Field Engineering,E125,Hotel,36.23
+EXP-00773,Sales,E114,Travel,11.46
+EXP-00067,Sales,E133,Supplies,7.83
+EXP-01951,Operations,E135,Hotel,63.09
+EXP-03061,Field Engineering,E116,Hotel,82.49
+EXP-01716,Operations,E153,Meals,125.58
+EXP-03331,Field Engineering,E114,Travel,24.75
+EXP-02421,Finance,E122,Travel,18.79
+EXP-02692,Finance,E108,Supplies,18.15
+EXP-00235,Sales,E108,Meals,70.12
+EXP-00646,Sales,E113,Hotel,37.98
+EXP-02466,Finance,E126,Supplies,53.65
+EXP-02348,Operations,E122,Meals,17.46
+EXP-01667,Operations,E124,Meals,16.99
+EXP-01823,Operations,E112,Travel,153.08
+EXP-02078,Operations,E131,Meals,42.03
+EXP-01139,Marketing,E149,Hotel,52.04
+EXP-00542,Sales,E130,Hotel,11.97
+EXP-01314,Marketing,E104,Hotel,25.92
+EXP-03279,Field Engineering,E126,Hotel,4.29
+EXP-00201,Sales,E144,Supplies,55.01
+EXP-01964,Operations,E145,Meals,21.37
+EXP-01296,Marketing,E125,Travel,129.47
+EXP-02362,Operations,E142,Travel,42.89
+EXP-00307,Sales,E128,Travel,22.34
+EXP-01309,Marketing,E153,Hotel,44.83
+EXP-00130,Sales,E145,Travel,50.87
+EXP-00396,Sales,E125,Meals,23.27
+EXP-03242,Field Engineering,E144,Supplies,147.51
+EXP-01930,Operations,E155,Meals,46.36
+EXP-00327,Sales,E114,Travel,184.16
+EXP-00192,Sales,E131,Hotel,98.31
+EXP-00723,Sales,E102,Supplies,20.71
+EXP-01855,Operations,E152,Supplies,33.46
+EXP-00308,Sales,E143,Travel,73.59
+EXP-01065,Marketing,E131,Travel,9.22
+EXP-01398,Marketing,E140,Hotel,55.4
+EXP-00496,Sales,E100,Hotel,5.81
+EXP-00385,Sales,E131,Travel,101.15
+EXP-02894,Field Engineering,E120,Hotel,45.05
+EXP-02701,Finance,E139,Travel,38.8
+EXP-00583,Sales,E100,Hotel,66.99
+EXP-00398,Sales,E118,Meals,47.46
+EXP-03320,Field Engineering,E135,Travel,21.97
+EXP-03355,Field Engineering,E143,Supplies,69.94
+EXP-03363,Field Engineering,E147,Travel,48.61
+EXP-02773,Finance,E122,Hotel,45.51
+EXP-02581,Finance,E144,Meals,7.62
+EXP-02811,Field Engineering,E102,Hotel,40.36
+EXP-01630,Operations,E146,Hotel,24.64
+EXP-00162,Sales,E146,Hotel,3.44
+EXP-01335,Marketing,E123,Travel,14.36
+EXP-03081,Field Engineering,E141,Supplies,135.74
+EXP-01104,Marketing,E159,Meals,98.52
+EXP-00937,Marketing,E100,Travel,294.42
+EXP-01040,Marketing,E100,Supplies,39.7
+EXP-01367,Marketing,E150,Meals,18.79
+EXP-01275,Marketing,E112,Hotel,40.67
+EXP-03109,Field Engineering,E116,Hotel,19.11
+EXP-01927,Operations,E119,Meals,63.22
+EXP-01950,Operations,E118,Travel,16.38
+EXP-02069,Operations,E115,Meals,9.62
+EXP-00570,Sales,E118,Hotel,78.91
+EXP-01160,Marketing,E129,Hotel,103.32
+EXP-01561,Marketing,E158,Supplies,66.44
+EXP-01592,Marketing,E116,Travel,17.41
+EXP-02702,Finance,E113,Meals,17.51
+EXP-02745,Finance,E156,Travel,61.14
+EXP-01881,Operations,E128,Meals,26.7
+EXP-02530,Finance,E154,Travel,40.56
+EXP-02082,Operations,E103,Hotel,94.57
+EXP-00048,Sales,E150,Hotel,78.73
+EXP-00030,Sales,E158,Meals,33.47
+EXP-01596,Marketing,E146,Travel,66.15
+EXP-01926,Operations,E119,Supplies,132.4
+EXP-00502,Sales,E108,Meals,189.13
+EXP-01847,Operations,E142,Travel,85.54
+EXP-02502,Finance,E114,Meals,13.82
+EXP-03118,Field Engineering,E152,Meals,4.2
+EXP-01186,Marketing,E107,Travel,111.08
+EXP-01269,Marketing,E155,Meals,118.71
+EXP-02559,Finance,E139,Supplies,20.85
+EXP-01857,Operations,E126,Supplies,9.82
+EXP-02579,Finance,E104,Supplies,47.63
+EXP-01863,Operations,E151,Travel,91.12
+EXP-01795,Operations,E114,Meals,46.21
+EXP-02995,Field Engineering,E135,Meals,14.95
+EXP-02550,Finance,E120,Meals,35.6
+EXP-00433,Sales,E151,Meals,95.62
+EXP-02302,Operations,E131,Supplies,94.1
+EXP-00997,Marketing,E117,Travel,13.57
+EXP-03231,Field Engineering,E112,Meals,137.18
+EXP-03156,Field Engineering,E110,Hotel,86.92
+EXP-03049,Field Engineering,E157,Meals,33.41
+EXP-02828,Field Engineering,E123,Travel,48.82
+EXP-00367,Sales,E133,Hotel,33.18
+EXP-01077,Marketing,E152,Hotel,25.42
+EXP-01079,Marketing,E112,Hotel,22.51
+EXP-02729,Finance,E159,Travel,191.83
+EXP-00261,Sales,E100,Hotel,25.87
+EXP-02861,Field Engineering,E155,Travel,46.27
+EXP-02784,Finance,E152,Meals,6.65
+EXP-02347,Operations,E111,Travel,98.69
+EXP-00557,Sales,E139,Hotel,7.86
+EXP-02624,Finance,E148,Supplies,22.46
+EXP-02067,Operations,E140,Travel,30.17
+EXP-00573,Sales,E113,Supplies,193.51
+EXP-03299,Field Engineering,E141,Meals,29.89
+EXP-02274,Operations,E140,Meals,143.48
+EXP-00600,Sales,E155,Meals,130.57
+EXP-03062,Field Engineering,E149,Hotel,12.29
+EXP-02042,Operations,E105,Hotel,35.56
+EXP-00420,Sales,E133,Supplies,67.06
+EXP-02137,Operations,E140,Hotel,57.98
+EXP-01303,Marketing,E127,Supplies,38.79
+EXP-01247,Marketing,E149,Meals,166.84
+EXP-01233,Marketing,E136,Meals,23.28
+EXP-01449,Marketing,E111,Supplies,99.81
+EXP-02267,Operations,E125,Travel,52.57
+EXP-02356,Operations,E106,Meals,9.6
+EXP-02205,Operations,E146,Hotel,83.04
+EXP-01813,Operations,E127,Supplies,32.27
+EXP-02220,Operations,E129,Meals,41.31
+EXP-01467,Marketing,E129,Hotel,17.58
+EXP-00276,Sales,E120,Travel,24.91
+EXP-00706,Sales,E131,Meals,5.03
+EXP-02335,Operations,E146,Travel,8.69
+EXP-00454,Sales,E145,Hotel,72.91
+EXP-00114,Sales,E114,Hotel,22.72
+EXP-00072,Sales,E159,Hotel,279.25
+EXP-02029,Operations,E107,Hotel,21.57
+EXP-02131,Operations,E102,Travel,25.13
+EXP-02927,Field Engineering,E151,Meals,46.75
+EXP-03398,Field Engineering,E115,Travel,14.77
+EXP-02064,Operations,E117,Hotel,22.29
+EXP-01826,Operations,E156,Hotel,12.41
+EXP-02584,Finance,E144,Hotel,100.87
+EXP-02290,Operations,E146,Travel,49.57
+EXP-00919,Marketing,E143,Meals,28.3
+EXP-00452,Sales,E112,Meals,79.86
+EXP-02965,Field Engineering,E106,Meals,16.13
+EXP-02453,Finance,E120,Hotel,71.18
+EXP-02696,Finance,E117,Meals,49.28
+EXP-01515,Marketing,E142,Travel,13.15
+EXP-02393,Operations,E114,Travel,18.97
+EXP-01566,Marketing,E111,Supplies,10.51
+EXP-00740,Sales,E122,Travel,27.99
+EXP-02413,Finance,E143,Travel,4.59
+EXP-01654,Operations,E146,Supplies,295.85
+EXP-00105,Sales,E156,Supplies,3.09
+EXP-01858,Operations,E131,Meals,39.82
+EXP-03193,Field Engineering,E105,Meals,225.02
+EXP-03267,Field Engineering,E102,Supplies,78.82
+EXP-03110,Field Engineering,E128,Meals,57.51
+EXP-02710,Finance,E130,Hotel,12.96
+EXP-00242,Sales,E110,Hotel,27.88
+EXP-02479,Finance,E107,Travel,11.64
+EXP-02863,Field Engineering,E125,Meals,47.71
+EXP-01989,Operations,E152,Meals,249.03
+EXP-01570,Marketing,E118,Supplies,22.85
+EXP-01620,Operations,E129,Hotel,88.57
+EXP-02679,Finance,E149,Supplies,91.92
+EXP-00097,Sales,E119,Meals,39.97
+EXP-02516,Finance,E135,Hotel,49.17
+EXP-01191,Marketing,E131,Hotel,7.21
+EXP-00085,Sales,E117,Travel,37.3
+EXP-02750,Finance,E114,Supplies,27.75
+EXP-01719,Operations,E116,Travel,280.17
+EXP-00010,Sales,E116,Meals,102.0
+EXP-02653,Finance,E115,Hotel,3.06
+EXP-00879,Sales,E148,Supplies,55.16
+EXP-01340,Marketing,E124,Hotel,80.1
+EXP-00774,Sales,E107,Meals,62.96
+EXP-01386,Marketing,E125,Supplies,20.93
+EXP-00277,Sales,E120,Travel,72.78
+EXP-01409,Marketing,E145,Hotel,23.59
+EXP-01593,Marketing,E141,Hotel,68.05
+EXP-01373,Marketing,E149,Travel,4.11
+EXP-00089,Sales,E142,Hotel,10.86
+EXP-00091,Sales,E155,Supplies,28.7
+EXP-02814,Field Engineering,E100,Meals,45.54
+EXP-00281,Sales,E131,Meals,25.32
+EXP-01907,Operations,E151,Travel,264.07
+EXP-02700,Finance,E138,Hotel,212.71
+EXP-01485,Marketing,E145,Hotel,126.44
+EXP-01824,Operations,E156,Hotel,15.11
+EXP-01325,Marketing,E157,Meals,159.71
+EXP-01427,Marketing,E157,Meals,44.21
+EXP-00993,Marketing,E114,Hotel,14.48
+EXP-00366,Sales,E153,Hotel,13.83
+EXP-02072,Operations,E106,Meals,9.6
+EXP-00677,Sales,E115,Travel,180.23
+EXP-02027,Operations,E124,Meals,5.17
+EXP-00999,Marketing,E114,Hotel,42.61
+EXP-01190,Marketing,E154,Hotel,21.36
+EXP-02359,Operations,E134,Travel,62.42
+EXP-02689,Finance,E114,Supplies,53.49
+EXP-01760,Operations,E116,Hotel,255.88
+EXP-02289,Operations,E143,Hotel,6.18
+EXP-02715,Finance,E103,Supplies,123.03
+EXP-01343,Marketing,E142,Travel,37.91
+EXP-00095,Sales,E112,Hotel,67.26
+EXP-01287,Marketing,E120,Travel,20.01
+EXP-02147,Operations,E152,Supplies,44.15
+EXP-00168,Sales,E159,Meals,72.38
+EXP-00497,Sales,E119,Supplies,138.75
+EXP-01750,Operations,E127,Travel,38.29
+EXP-02324,Operations,E128,Supplies,43.52
+EXP-00715,Sales,E152,Meals,366.77
+EXP-01540,Marketing,E107,Supplies,59.31
+EXP-02816,Field Engineering,E121,Meals,47.81
+EXP-00332,Sales,E138,Hotel,11.46
+EXP-00220,Sales,E122,Hotel,26.99
+EXP-02482,Finance,E103,Supplies,81.36
+EXP-03325,Field Engineering,E112,Hotel,41.76
+EXP-03136,Field Engineering,E116,Hotel,127.03
+EXP-02535,Finance,E144,Travel,3.15
+EXP-01538,Marketing,E131,Travel,17.44
+EXP-00532,Sales,E120,Meals,10.05
+EXP-01865,Operations,E116,Supplies,15.25
+EXP-03162,Field Engineering,E110,Hotel,26.64
+EXP-02309,Operations,E131,Travel,22.92
+EXP-01981,Operations,E153,Hotel,70.69
+EXP-02859,Field Engineering,E158,Meals,45.41
+EXP-00306,Sales,E127,Supplies,66.16
+EXP-03112,Field Engineering,E107,Meals,20.89
+EXP-01650,Operations,E100,Travel,4.65
+EXP-00197,Sales,E120,Travel,26.26
+EXP-01165,Marketing,E135,Meals,243.57
+EXP-01619,Operations,E144,Travel,17.17
+EXP-01147,Marketing,E154,Supplies,4.72
+EXP-00495,Sales,E128,Travel,35.36
+EXP-00111,Sales,E138,Hotel,26.75
+EXP-01109,Marketing,E135,Hotel,30.14
+EXP-01270,Marketing,E144,Hotel,280.89
+EXP-02562,Finance,E104,Travel,585.24
+EXP-02740,Finance,E131,Travel,101.31
+EXP-00370,Sales,E148,Travel,73.46
+EXP-00794,Sales,E117,Supplies,168.21
+EXP-00927,Marketing,E154,Hotel,29.14
+EXP-02322,Operations,E142,Supplies,25.7
+EXP-01816,Operations,E103,Supplies,17.8
+EXP-00397,Sales,E115,Travel,52.45
+EXP-01179,Marketing,E124,Hotel,52.25
+EXP-02838,Field Engineering,E141,Travel,43.88
+EXP-01216,Marketing,E129,Travel,13.34
+EXP-00798,Sales,E135,Meals,5.64
+EXP-01299,Marketing,E129,Meals,28.28
+EXP-01063,Marketing,E148,Supplies,28.14
+EXP-03010,Field Engineering,E157,Hotel,4.33
+EXP-00419,Sales,E137,Travel,89.04
+EXP-00376,Sales,E148,Travel,4.0
+EXP-02512,Finance,E148,Hotel,0.93
+EXP-00471,Sales,E149,Supplies,23.9
+EXP-01542,Marketing,E120,Travel,51.29
+EXP-02608,Finance,E123,Hotel,45.5
+EXP-02351,Operations,E107,Travel,12.15
+EXP-02631,Finance,E124,Travel,34.89
+EXP-03359,Field Engineering,E148,Supplies,17.29
+EXP-01762,Operations,E159,Supplies,128.18
+EXP-00799,Sales,E140,Travel,136.7
+EXP-02060,Operations,E155,Hotel,29.52
+EXP-03114,Field Engineering,E133,Supplies,26.69
+EXP-01487,Marketing,E116,Travel,30.26
+EXP-00539,Sales,E115,Hotel,23.31
+EXP-02676,Finance,E100,Supplies,10.25
+EXP-02330,Operations,E111,Hotel,44.67
+EXP-00984,Marketing,E145,Hotel,9.14
+EXP-00481,Sales,E118,Travel,32.88
+EXP-01480,Marketing,E157,Hotel,15.07
+EXP-00224,Sales,E144,Travel,51.76
+EXP-00673,Sales,E130,Supplies,30.41
+EXP-03015,Field Engineering,E125,Supplies,98.07
+EXP-01394,Marketing,E150,Meals,5.89
+EXP-03381,Field Engineering,E106,Travel,8.37
+EXP-00995,Marketing,E140,Meals,63.46
+EXP-00581,Sales,E136,Meals,175.41
+EXP-01046,Marketing,E105,Supplies,49.95
+EXP-00078,Sales,E120,Hotel,52.89
+EXP-02596,Finance,E112,Meals,61.38
+EXP-03394,Field Engineering,E121,Hotel,36.61
+EXP-02797,Finance,E110,Supplies,18.29
+EXP-01759,Operations,E129,Travel,32.64
+EXP-00827,Sales,E107,Travel,37.22
+EXP-00126,Sales,E132,Hotel,18.55
+EXP-01253,Marketing,E111,Supplies,87.05
+EXP-02806,Field Engineering,E108,Hotel,44.89
+EXP-01961,Operations,E148,Supplies,80.48
+EXP-03134,Field Engineering,E108,Supplies,19.08
+EXP-01597,Marketing,E126,Hotel,47.89
+EXP-00577,Sales,E141,Hotel,111.81
+EXP-01576,Marketing,E105,Meals,14.49
+EXP-00622,Sales,E129,Meals,181.82
+EXP-00768,Sales,E139,Supplies,133.77
+EXP-01230,Marketing,E116,Hotel,24.35
+EXP-01341,Marketing,E112,Meals,10.53
+EXP-00660,Sales,E148,Meals,18.76
+EXP-03079,Field Engineering,E143,Supplies,18.59
+EXP-03229,Field Engineering,E133,Travel,22.01
+EXP-02851,Field Engineering,E132,Travel,41.24
+EXP-03269,Field Engineering,E130,Supplies,37.01
+EXP-02893,Field Engineering,E139,Supplies,45.31
+EXP-01518,Marketing,E143,Supplies,50.03
+EXP-03121,Field Engineering,E147,Travel,12.39
+EXP-03370,Field Engineering,E100,Travel,324.0
+EXP-03149,Field Engineering,E141,Travel,33.34
+EXP-00260,Sales,E144,Travel,102.5
+EXP-00283,Sales,E139,Travel,106.35
+EXP-02683,Finance,E144,Hotel,47.47
+EXP-01615,Operations,E122,Travel,143.17
+EXP-01185,Marketing,E142,Meals,136.31
+EXP-01974,Operations,E150,Meals,19.95
+EXP-02523,Finance,E151,Hotel,31.18
+EXP-00456,Sales,E101,Travel,14.42
+EXP-02369,Operations,E104,Supplies,159.14
+EXP-00435,Sales,E144,Hotel,158.55
+EXP-02936,Field Engineering,E123,Hotel,175.72
+EXP-00300,Sales,E130,Supplies,51.53
+EXP-01763,Operations,E157,Supplies,43.82
+EXP-02485,Finance,E109,Supplies,32.02
+EXP-03243,Field Engineering,E132,Supplies,370.23
+EXP-01933,Operations,E104,Hotel,2.4
+EXP-00439,Sales,E112,Travel,11.9
+EXP-02374,Operations,E119,Hotel,43.81
+EXP-02025,Operations,E111,Meals,17.11
+EXP-02452,Finance,E151,Travel,282.11
+EXP-02613,Finance,E103,Supplies,159.17
+EXP-01627,Operations,E116,Meals,435.64
+EXP-00293,Sales,E111,Travel,1.29
+EXP-01838,Operations,E119,Hotel,50.04
+EXP-00279,Sales,E130,Travel,25.89
+EXP-00656,Sales,E115,Travel,28.38
+EXP-01059,Marketing,E157,Meals,65.45
+EXP-00733,Sales,E128,Supplies,14.51
+EXP-00554,Sales,E118,Supplies,10.1
+EXP-02143,Operations,E146,Supplies,88.23
+EXP-03301,Field Engineering,E129,Hotel,196.71
+EXP-01901,Operations,E146,Hotel,8.98
+EXP-02294,Operations,E136,Travel,108.63
+EXP-02994,Field Engineering,E126,Hotel,42.27
+EXP-01192,Marketing,E128,Meals,11.6
+EXP-01527,Marketing,E120,Travel,3.4
+EXP-01996,Operations,E152,Travel,125.58
+EXP-01357,Marketing,E124,Supplies,76.38
+EXP-01695,Operations,E112,Hotel,31.82
+EXP-00776,Sales,E138,Meals,68.67
+EXP-00427,Sales,E143,Travel,121.62
+EXP-01787,Operations,E130,Supplies,63.96
+EXP-01187,Marketing,E125,Travel,158.21
+EXP-02198,Operations,E139,Hotel,21.48
+EXP-02275,Operations,E144,Supplies,23.66
+EXP-00866,Sales,E143,Hotel,72.55
+EXP-03016,Field Engineering,E117,Supplies,190.31
+EXP-01710,Operations,E117,Meals,26.04
+EXP-03167,Field Engineering,E107,Hotel,109.32
+EXP-01793,Operations,E138,Hotel,69.57
+EXP-01246,Marketing,E135,Meals,47.73
+EXP-00901,Marketing,E122,Travel,23.11
+EXP-02748,Finance,E122,Travel,21.61
+EXP-01529,Marketing,E121,Travel,16.6
+EXP-00602,Sales,E148,Travel,4.04
+EXP-01292,Marketing,E145,Meals,33.33
+EXP-03107,Field Engineering,E103,Hotel,18.87
+EXP-00218,Sales,E149,Hotel,49.5
+EXP-03145,Field Engineering,E121,Hotel,137.04
+EXP-02866,Field Engineering,E112,Travel,43.9
+EXP-02269,Operations,E113,Supplies,17.86
+EXP-00214,Sales,E126,Hotel,22.78
+EXP-00036,Sales,E116,Meals,78.24
+EXP-02956,Field Engineering,E113,Travel,101.9
+EXP-02443,Finance,E134,Meals,35.07
+EXP-00368,Sales,E103,Travel,61.43
+EXP-02973,Field Engineering,E127,Meals,93.86
+EXP-00013,Sales,E144,Hotel,97.75
+EXP-00477,Sales,E122,Supplies,9.94
+EXP-01721,Operations,E158,Meals,91.51
+EXP-02283,Operations,E146,Hotel,29.24
+EXP-02744,Finance,E125,Hotel,58.91
+EXP-01085,Marketing,E132,Meals,13.02
+EXP-03289,Field Engineering,E119,Supplies,73.88
+EXP-01633,Operations,E151,Travel,57.87
+EXP-00014,Sales,E150,Travel,48.88
+EXP-02112,Operations,E138,Meals,81.76
+EXP-02783,Finance,E154,Hotel,147.74
+EXP-01024,Marketing,E128,Hotel,107.88
+EXP-00965,Marketing,E151,Meals,155.33
+EXP-00608,Sales,E130,Meals,6.41
+EXP-02062,Operations,E157,Meals,6.77
+EXP-02888,Field Engineering,E140,Hotel,41.64
+EXP-00436,Sales,E107,Travel,240.32
+EXP-00018,Sales,E128,Meals,34.8
+EXP-02813,Field Engineering,E133,Hotel,48.6
+EXP-01783,Operations,E129,Meals,6.15
+EXP-01804,Operations,E145,Hotel,96.92
+EXP-02397,Operations,E157,Hotel,239.68
+EXP-02256,Operations,E104,Travel,66.42
+EXP-01115,Marketing,E125,Meals,46.27
+EXP-02390,Operations,E159,Travel,40.72
+EXP-01954,Operations,E146,Supplies,5.42
+EXP-00345,Sales,E148,Supplies,13.76
+EXP-03218,Field Engineering,E133,Hotel,14.21
+EXP-03254,Field Engineering,E104,Meals,37.53
+EXP-02600,Finance,E146,Travel,39.11
+EXP-02647,Finance,E140,Travel,7.54
+EXP-01718,Operations,E138,Meals,30.47
+EXP-00033,Sales,E107,Meals,34.76
+EXP-00373,Sales,E128,Hotel,6.66
+EXP-00658,Sales,E116,Supplies,17.76
+EXP-02221,Operations,E111,Hotel,71.34
+EXP-01087,Marketing,E138,Meals,48.74
+EXP-03221,Field Engineering,E136,Meals,49.86
+EXP-02457,Finance,E128,Supplies,223.06
+EXP-03099,Field Engineering,E139,Hotel,27.33
+EXP-03316,Field Engineering,E131,Meals,23.89
+EXP-02249,Operations,E147,Travel,83.81
+EXP-01317,Marketing,E113,Meals,18.27
+EXP-00861,Sales,E134,Travel,25.91
+EXP-01608,Operations,E116,Meals,106.56
+EXP-00045,Sales,E137,Hotel,50.49
+EXP-01535,Marketing,E113,Hotel,7.85
+EXP-03214,Field Engineering,E108,Supplies,62.67
+EXP-03257,Field Engineering,E155,Travel,70.25
+EXP-03082,Field Engineering,E108,Supplies,50.85
+EXP-03367,Field Engineering,E128,Supplies,52.05
+EXP-00490,Sales,E141,Supplies,20.14
+EXP-00504,Sales,E146,Supplies,20.22
+EXP-02261,Operations,E144,Travel,31.41
+EXP-00134,Sales,E108,Travel,38.6
+EXP-02109,Operations,E136,Meals,395.44
+EXP-00691,Sales,E152,Meals,115.15
+EXP-02075,Operations,E116,Supplies,209.94
+EXP-02149,Operations,E128,Supplies,22.22
+EXP-00975,Marketing,E158,Meals,7.03
+EXP-03399,Field Engineering,E114,Meals,41.56
+EXP-00777,Sales,E116,Meals,16.79
+EXP-00789,Sales,E117,Travel,69.08
+EXP-02569,Finance,E147,Travel,13.35
+EXP-00364,Sales,E155,Hotel,5.11
+EXP-02358,Operations,E111,Hotel,93.79
+EXP-00796,Sales,E121,Meals,19.99
+EXP-01937,Operations,E126,Supplies,5.76
+EXP-02877,Field Engineering,E139,Supplies,48.46
+EXP-01629,Operations,E110,Supplies,48.74
+EXP-01277,Marketing,E118,Supplies,72.25
+EXP-02593,Finance,E113,Meals,6.9
+EXP-00940,Marketing,E111,Travel,14.16
+EXP-01506,Marketing,E124,Travel,39.44
+EXP-02490,Finance,E132,Meals,19.84
+EXP-00648,Sales,E105,Hotel,94.68
+EXP-01004,Marketing,E132,Hotel,67.48
+EXP-02525,Finance,E153,Travel,24.5
+EXP-03095,Field Engineering,E126,Meals,336.18
+EXP-02111,Operations,E150,Hotel,121.99
+EXP-01173,Marketing,E102,Supplies,60.15
+EXP-00484,Sales,E141,Travel,30.72
+EXP-03075,Field Engineering,E125,Hotel,58.39
+EXP-01811,Operations,E144,Travel,12.71
+EXP-00053,Sales,E104,Supplies,61.93
+EXP-00243,Sales,E110,Travel,123.51
+EXP-03246,Field Engineering,E158,Hotel,81.49
+EXP-02084,Operations,E117,Travel,172.44
+EXP-01986,Operations,E123,Meals,24.4
+EXP-01203,Marketing,E103,Travel,28.49
+EXP-00739,Sales,E134,Supplies,6.77
+EXP-02169,Operations,E112,Meals,61.49
+EXP-03328,Field Engineering,E127,Meals,17.45
+EXP-01300,Marketing,E109,Travel,7.08
+EXP-01020,Marketing,E100,Supplies,28.78
+EXP-02093,Operations,E145,Travel,46.4
+EXP-00837,Sales,E112,Travel,9.51
+EXP-02125,Operations,E139,Meals,7.77
+EXP-01745,Operations,E129,Hotel,53.97
+EXP-00369,Sales,E102,Travel,524.45
+EXP-02955,Field Engineering,E113,Supplies,29.54
+EXP-03285,Field Engineering,E119,Travel,176.11
+EXP-00268,Sales,E102,Meals,14.64
+EXP-00729,Sales,E124,Meals,31.63
+EXP-02493,Finance,E147,Travel,25.88
+EXP-02552,Finance,E138,Supplies,9.88
+EXP-01520,Marketing,E121,Hotel,165.41
+EXP-03106,Field Engineering,E140,Meals,53.51
+EXP-01034,Marketing,E147,Travel,41.11
+EXP-01713,Operations,E114,Travel,81.14
+EXP-03233,Field Engineering,E101,Hotel,81.17
+EXP-02334,Operations,E133,Meals,6.01
+EXP-00296,Sales,E145,Supplies,7.88
+EXP-01849,Operations,E119,Travel,8.49
+EXP-00626,Sales,E131,Hotel,66.02
+EXP-00278,Sales,E117,Hotel,5.0
+EXP-00498,Sales,E153,Supplies,70.38
+EXP-00485,Sales,E105,Meals,279.52
+EXP-01521,Marketing,E138,Travel,28.85
+EXP-00183,Sales,E117,Meals,42.17
+EXP-00971,Marketing,E118,Travel,48.32
+EXP-01852,Operations,E150,Meals,100.91
+EXP-02225,Operations,E107,Supplies,49.71
+EXP-00685,Sales,E114,Supplies,7.67
+EXP-01769,Operations,E131,Meals,24.39
+EXP-03372,Field Engineering,E118,Hotel,14.39
+EXP-02085,Operations,E108,Meals,74.66
+EXP-01181,Marketing,E141,Travel,23.24
+EXP-02051,Operations,E130,Meals,3.32
+EXP-00755,Sales,E116,Hotel,16.36
+EXP-00509,Sales,E142,Meals,11.68
+EXP-02546,Finance,E126,Supplies,39.28
+EXP-02357,Operations,E128,Hotel,33.03
+EXP-01982,Operations,E104,Hotel,9.64
+EXP-01439,Marketing,E152,Supplies,21.57
+EXP-01446,Marketing,E126,Meals,42.71
+EXP-00142,Sales,E131,Meals,133.97
+EXP-03296,Field Engineering,E101,Supplies,4.93
+EXP-00865,Sales,E138,Meals,13.16
+EXP-02232,Operations,E100,Meals,84.36
+EXP-02323,Operations,E111,Supplies,11.64
+EXP-01011,Marketing,E157,Supplies,20.61
+EXP-02961,Field Engineering,E109,Supplies,216.11
+EXP-00849,Sales,E120,Meals,17.88
+EXP-02560,Finance,E129,Hotel,41.29
+EXP-02780,Finance,E117,Meals,112.59
+EXP-03045,Field Engineering,E116,Meals,391.41
+EXP-01995,Operations,E137,Meals,39.23
+EXP-00888,Sales,E122,Hotel,7.55
+EXP-00118,Sales,E152,Supplies,7.44
+EXP-03074,Field Engineering,E115,Meals,23.86
+EXP-02162,Operations,E138,Meals,35.26
+EXP-00546,Sales,E159,Meals,133.7
+EXP-01790,Operations,E140,Meals,14.24
+EXP-02214,Operations,E139,Travel,105.42
+EXP-01977,Operations,E149,Meals,63.22
+EXP-02233,Operations,E125,Travel,344.41
+EXP-01984,Operations,E132,Meals,23.82
+EXP-01397,Marketing,E131,Hotel,122.1
+EXP-00275,Sales,E105,Supplies,17.26
+EXP-03050,Field Engineering,E118,Meals,7.79
+EXP-00705,Sales,E128,Travel,57.84
+EXP-01025,Marketing,E131,Supplies,41.79
+EXP-01591,Marketing,E135,Meals,208.96
+EXP-01565,Marketing,E130,Hotel,32.81
+EXP-01743,Operations,E119,Travel,44.45
+EXP-00384,Sales,E123,Meals,77.09
+EXP-01430,Marketing,E138,Travel,4.29
+EXP-02610,Finance,E109,Supplies,47.81
+EXP-02911,Field Engineering,E106,Meals,44.5
+EXP-03093,Field Engineering,E115,Meals,266.23
+EXP-01830,Operations,E140,Hotel,203.67
+EXP-00177,Sales,E151,Travel,78.92
+EXP-01360,Marketing,E149,Meals,47.74
+EXP-02428,Finance,E136,Meals,27.08
+EXP-03244,Field Engineering,E156,Meals,9.13
+EXP-03065,Field Engineering,E152,Hotel,8.66
+EXP-02568,Finance,E102,Travel,31.68
+EXP-00831,Sales,E107,Meals,19.22
+EXP-02556,Finance,E129,Supplies,63.2
+EXP-03225,Field Engineering,E121,Hotel,57.34
+EXP-01643,Operations,E124,Hotel,64.35
+EXP-02462,Finance,E148,Supplies,31.96
+EXP-01634,Operations,E139,Supplies,186.45
+EXP-00623,Sales,E108,Meals,20.24
+EXP-02921,Field Engineering,E128,Travel,49.78
+EXP-00859,Sales,E101,Hotel,234.09
+EXP-00642,Sales,E144,Hotel,12.66
+EXP-02307,Operations,E104,Supplies,117.04
+EXP-00835,Sales,E146,Meals,113.17
+EXP-02711,Finance,E154,Hotel,25.11
+EXP-01499,Marketing,E108,Meals,23.44
+EXP-00338,Sales,E127,Supplies,12.62
+EXP-02447,Finance,E112,Supplies,9.53
+EXP-01448,Marketing,E159,Hotel,29.38
+EXP-02654,Finance,E152,Travel,42.65
+EXP-01965,Operations,E150,Supplies,60.51
+EXP-01685,Operations,E116,Meals,23.03
+EXP-02529,Finance,E131,Travel,3.49
+EXP-01144,Marketing,E149,Supplies,7.39
+EXP-02966,Field Engineering,E112,Meals,164.31
+EXP-01706,Operations,E155,Travel,4.5
+EXP-03066,Field Engineering,E122,Travel,109.22
+EXP-02924,Field Engineering,E145,Supplies,45.79
+EXP-01739,Operations,E130,Meals,165.6
+EXP-02708,Finance,E128,Supplies,36.44
+EXP-03070,Field Engineering,E104,Meals,20.93
+EXP-00790,Sales,E155,Supplies,244.2
+EXP-02305,Operations,E113,Meals,42.42
+EXP-00969,Marketing,E119,Hotel,92.79
+EXP-03001,Field Engineering,E137,Travel,70.51
+EXP-01668,Operations,E141,Hotel,15.52
+EXP-03322,Field Engineering,E140,Travel,23.29
+EXP-01689,Operations,E122,Travel,38.22
+EXP-01899,Operations,E154,Meals,8.97

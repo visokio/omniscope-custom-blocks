@@ -1,0 +1,252 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Data Cleansing",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Removes empty rows and fields, fixes missing values, strips unwanted characters and changes case in one step, with a report of what changed.",
+    "category": "Preparation",
+    "subcategory": "Cleansing",
+    "tags": [
+        "cleansing",
+        "clean",
+        "trim",
+        "whitespace",
+        "nulls",
+        "case",
+        "visokio-agents"
+    ],
+    "introductoryText": "The everyday clean-up steps in one block, as a single checklist:\n\n- **Remove empty rows** (every field empty) and **empty fields** (no values at all)\n- **Treat placeholders as missing**: list values such as `NULL, N/A, -` and they become real missing values\n- **Replace missing values**: blank for text fields, 0 for number fields\n- **Remove unwanted characters**: leading and trailing spaces; tabs, line breaks and repeated spaces; all spaces; letters; digits; punctuation; invisible characters such as zero-width and non-breaking spaces\n- **Change case**: UPPER, lower or Title Case, optionally only for some fields\n- **Convert number text to numbers** once placeholders and symbols are gone (fields with leading zeros, such as phone numbers and codes, stay text)\n\nChoose the fields to cleanse, or leave empty for all fields. The second output reports, per field, how many values changed, so the clean-up is auditable.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fields",
+            "title": "Fields to cleanse",
+            "description": "Leave empty to cleanse every field.",
+            "groupTitle": "Fields",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "remove_null_rows",
+            "title": "Remove empty rows",
+            "description": "Drop rows where every field is empty or a placeholder.",
+            "groupTitle": "Missing values",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "remove_null_columns",
+            "title": "Remove empty fields",
+            "description": "Drop cleansed fields that have no values at all.",
+            "groupTitle": "Missing values",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "null_tokens",
+            "title": "Placeholders to treat as missing",
+            "description": "Comma-separated values that mean 'no value', such as NULL, N/A, #N/A, -. Matched ignoring case and surrounding spaces.",
+            "groupTitle": "Missing values",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "replace_null_text",
+            "title": "Replace missing text with blank",
+            "description": "Text fields: missing values become empty text. Inside Omniscope empty text and missing look the same; this matters when exporting to systems that tell them apart.",
+            "groupTitle": "Missing values",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "replace_null_numbers",
+            "title": "Replace missing numbers with 0",
+            "description": "Number fields: missing values become 0.",
+            "groupTitle": "Missing values",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "trim",
+            "title": "Leading and trailing whitespace",
+            "description": "Removes spaces at the start and end of text.",
+            "groupTitle": "Unwanted characters",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "collapse_whitespace",
+            "title": "Tabs, line breaks and repeated spaces",
+            "description": "Replaced by a single space.",
+            "groupTitle": "Unwanted characters",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "remove_all_whitespace",
+            "title": "All whitespace",
+            "description": null,
+            "groupTitle": "Unwanted characters",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "remove_letters",
+            "title": "Letters",
+            "description": null,
+            "groupTitle": "Unwanted characters",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "remove_numbers",
+            "title": "Digits",
+            "description": null,
+            "groupTitle": "Unwanted characters",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "remove_punctuation",
+            "title": "Punctuation",
+            "description": null,
+            "groupTitle": "Unwanted characters",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "remove_invisible",
+            "title": "Invisible and non-printable characters",
+            "description": "Zero-width spaces, control characters and byte-order marks are removed; non-breaking spaces become normal spaces.",
+            "groupTitle": "Unwanted characters",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        },
+        {
+            "name": "modify_case",
+            "title": "Change case",
+            "description": "Changes the case of text, in every cleansed text field or only those chosen below.",
+            "groupTitle": "Case and types",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Leave as is",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "UPPER CASE",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "UPPER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "lower case",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LOWER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Title Case",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TITLE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "NONE"
+        },
+        {
+            "name": "case_fields",
+            "title": "Change case only in",
+            "description": "Leave empty to change case in every cleansed text field.",
+            "groupTitle": "Case and types",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "convert_numbers",
+            "title": "Convert number text to numbers",
+            "description": "After cleansing, a text field whose values are all numbers (currency symbols and thousands separators allowed) becomes a number field. Values with leading zeros keep the field as text.",
+            "groupTitle": "Case and types",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "cleansed",
+            "label": "Cleansed",
+            "displayName": "Cleansed data",
+            "tooltip": "The input after cleansing."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "report",
+            "label": "Report",
+            "displayName": "Cleansing report",
+            "tooltip": "One row per cleansed field: values changed, placeholders set to missing, missing values filled, and whether the field was removed or converted."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

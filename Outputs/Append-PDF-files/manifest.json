@@ -11,45 +11,50 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": "data:image/png;base64,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",
-    "description": "Append multiple PDF files combining them into one PDF file.",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADUUlEQVR42u3czYtNcRzH8fdXFwsR2UnZzYYSZmHrYUGzQxayklIeF7MY/gIPeZiwUBM7lMxYkYXYSs3CQslCsSALyVNR+Fi4StM4P8rD73zP512zmfOb23Rf8zv3nt898wPnnHPOOeecc84592+K0gBJx//y73AnIq7X9sRI0l966KMRcfBPPdiMCp6rNZKGOjRpRiQdyQRoxASARkwAaMQEgEZMAGjEBIBGTABoxASARkwAaMQEgEZMAAiwhm5VRJyBazWiAVuCaMCkGdCAzoDOgAZscZIGJI1LetP/Gpc00AXAXgY84C6w4Idvb+Lbys3qiHjkGVh3h6fgfW8BcMKn0Ppb33BsSNJSA7a3AIYNWHe3C8e3SVpkwHo7Uzg+G9hnwFrPkRG3gXuFYbslzTNgvY0Wjs8Ddhiw3q4AjwtjhiXNNGCdp9HPv/BauBjYYsB6GwNeFsaMSAoD1jkL3/cRm1pOsvtqsl3IjwIfSq+FBqx3Fr4ALheGbZS03ID1dgz40uQMHDBgvbPwIXCzMGy7pMUGrLfSx0gzgT0GrHcWdmZ5LfPHSaOF4ymW1zIDdmJ5LS1gV5bXIvEMRNIc4AmwsGHYfWBFRGjKz6qyP8hprXqZASPivaQxoGlrq+/La1M/2R/EVTELF0n6oOau+ZmqG/FCAfC138Q451Po79frgOF+vt2Z1tTpaeBXVfaGbLKLlxFzgafA/IZhkxExOM3P5riMaPmOvTsLeADH2/xHmnbHXkk9yp/7PQGuGrBOxK3AksKYUxHxyYB1IpbufXkFnG/763zKHXslrQNWFoadi4h3BqwTsTT7PlL+pMKA/wNR0jJgQ2HYxYh4bsA6EYcL17cCTma51k21Y2//Hzm3FYbdiIgHBqwTcT8wqzAm1cYHaXbs7S+b7So8zmRE3DFgnYjpl83aDgg/+c+iriybZQD8WZ1YNssM2Ills5SAXVo2yzoD9xaOfwTOkrQMgGsLxy9FxDMDtvQMS/IdCzMA3mo4dj3TsllWwEP9d5nTvfNMvVNhCsD+jryrgQngbf9rAki/Wy8kuS+0D7WZDuZb6w3oDOgMaEBnQGdAZ0ADOgM6AzoDGtAZ0BnQGdCAzoDOgM4555xzzjnnnHPO/be+AouGvR9GoHzuAAAAAElFTkSuQmCC",
+    "description": "Combines the PDF files listed in the input records, in record order, into one PDF file, with an optional bookmark for each file.",
     "category": "Outputs",
     "subcategory": "PDF",
     "tags": [
         "pdf",
         "append",
-        "combine"
+        "combine",
+        "merge",
+        "bookmarks",
+        "report pack"
     ],
-    "introductoryText": "### Append multiple PDF files into one",
-    "dependencies": "PyPDF2",
+    "introductoryText": "Combines several PDF files on the Omniscope server into one, in the order of the input records, and writes the combined file to a folder.\n\n**How to set it up**: connect records with one PDF file name each (for example from a File block with a list, or a folder listing), choose that field and the folder the files are in. Optionally choose a field of bookmark titles: each file then gets a bookmark in the combined PDF. Choose the output folder (empty: the input folder) and the file name.\n\n**Output**: the input records with the combined file's path, each file's page count and the page it starts on in the combined file.",
+    "dependencies": "pypdf",
     "options": [
         {
             "name": "input_folder",
-            "title": "Input folder",
-            "description": null,
+            "title": "Folder of the PDF files",
+            "description": "The folder holding the PDF files (choosing a file inside it also works). Empty if the file name field holds full paths.",
             "groupTitle": "Input",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
-            "mandatory": true,
+            "mandatory": false,
             "defaultValue": null,
             "readOnly": true
         },
         {
             "name": "pdf_file_names",
-            "title": "Input PDF file names",
-            "description": "A field containing the filenames of the pdf files contained within the input folder",
+            "title": "PDF file names",
+            "description": "The field with one PDF file name per record, such as report.pdf, or a full path. The files are combined in record order.",
             "groupTitle": "Input",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
             "mandatory": true,
             "inputIndex": 0,
             "defaultValue": null,
-            "fieldTypes": []
+            "fieldTypes": [
+                "STRING"
+            ]
         },
         {
             "name": "title",
-            "title": "Titles",
-            "description": "A field containing a title for each PDF. Used to create table of contents. If missing, no table of contents entries will be created.",
+            "title": "Bookmark titles",
+            "description": "Optional: a field with a bookmark title for each file. Records with an empty title get no bookmark; leave the option empty for no bookmarks.",
             "groupTitle": "Input",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
@@ -61,18 +66,18 @@
         {
             "name": "output_folder",
             "title": "Output folder",
-            "description": "The path to the folder to write the output PDF within.",
+            "description": "The folder to write the combined PDF to. Empty: the folder of the PDF files.",
             "groupTitle": "Output",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
-            "mandatory": true,
+            "mandatory": false,
             "defaultValue": null,
             "readOnly": false
         },
         {
             "name": "file_name",
-            "title": "Output PDF filename",
-            "description": "The combined PDF file name to create, e.g. \"MyDocument.pdf\"",
+            "title": "Combined PDF file name",
+            "description": "The name of the combined file, such as board-pack.pdf (.pdf is added if missing). An existing file of that name is replaced.",
             "groupTitle": "Output",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -84,9 +89,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
+            "label": "Combined",
+            "displayName": "Combined files",
+            "tooltip": "The input records with the combined PDF's path (Combined PDF), each file's page count (Pages) and the page it starts on in the combined file (First page)."
         }
     ],
     "docker": {

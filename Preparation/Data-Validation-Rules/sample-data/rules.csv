@@ -1,0 +1,15 @@
+Rule Name,Field,Check,Value,Severity
+Customer ID present,Customer ID,NOT_EMPTY,,Error
+Customer ID unique,Customer ID,UNIQUE,,Error
+Name present,Name,NOT_EMPTY,,Error
+Name at least 2 letters,Name,MIN_LENGTH,2,Warning
+Valid email,Email,EMAIL,,Error
+UK postcode format,Postcode,UK_POSTCODE,,Warning
+Postcode required in the UK,Postcode,REQUIRED_IF,Country = UK,Error
+Opened date is a date,Date Opened,IS_DATE,,Error
+Opened date not in future,Date Opened,NOT_FUTURE,,Error
+Credit limit in range,Credit Limit,BETWEEN,100..50000,Error
+Balance within credit limit,Balance,COMPARE,<= Credit Limit,Warning
+Status from the list,Status,ALLOWED,Active|Dormant|Closed,Error
+VAT number for UK businesses,VAT Number,REQUIRED_IF,Customer Type = Business,Warning
+VAT number format,VAT Number,PATTERN,GB[0-9]{9},Error

@@ -1,0 +1,125 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Name Parser",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Splits full names into title, first, middle, last and suffix, tidies capitalisation, flags organisations and builds salutations.",
+    "category": "Preparation",
+    "subcategory": "Parse",
+    "tags": [
+        "name parsing",
+        "salutation",
+        "data cleansing",
+        "contacts",
+        "CRM",
+        "mailing",
+        "deduplication",
+        "visokio-agents"
+    ],
+    "introductoryText": "Splits full names into **title, first name, middle names, last name and suffix**, and builds **initials, a tidy name and a salutation** for mailings and matching.\n\n- Handles titles (*Dr, Prof, Sir, Mx, Cllr, Rt Hon*...), suffixes and honours (*Jr, III, OBE, PhD*...), initials (*A. B. Patel*), and names written **Last, First** (*SMITH, JOHN*)\n- Keeps surname particles with the surname (*van der Berg, da Silva, de la Cruz*)\n- Optionally **tidies capitalisation**: *mcdonald* becomes *McDonald*, *o'brien* becomes *O'Brien*, hyphenated names keep both capitals\n- Flags values that look like **organisations** (*Ltd, plc, LLP, Trust, & Sons*...) instead of splitting them\n- Salutations: formal (*Dear Dr Smith-Jones*) or informal (*Dear Amelia*), falling back sensibly when parts are missing\n\nA *Parse Note* explains unusual cases (single word, initial only, Last, First order). Names are hard; check the notes before a large mailing.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "name_field",
+            "title": "Full name field",
+            "description": "The whole name as one piece of text.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "fix_case",
+            "title": "Tidy capitalisation",
+            "description": "Corrects all-capital or all-lower-case names, keeping forms such as McDonald and O'Brien.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "salutation_style",
+            "title": "Salutation",
+            "description": "Title and surname, or first name only.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Formal (Dear Dr Smith)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FORMAL",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Informal (Dear Amelia)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "INFORMAL",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "FORMAL"
+        },
+        {
+            "name": "greeting",
+            "title": "Greeting",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Dear"
+        },
+        {
+            "name": "prefix",
+            "title": "Prefix for new fields (optional)",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "parsed",
+            "label": "Parsed",
+            "displayName": "Parsed names",
+            "tooltip": "The input with Name Type, Title, First Name, Middle Names, Last Name, Suffix, Initials, Tidy Name, Salutation, Parse Note."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

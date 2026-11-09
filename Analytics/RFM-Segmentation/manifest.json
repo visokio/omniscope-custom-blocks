@@ -1,0 +1,137 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "RFM Segmentation",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Scores customers on recency, frequency and monetary value from transactions and assigns named segments such as Champions, At Risk and Lost, with a segment summary.",
+    "category": "Analytics",
+    "subcategory": "Marketing",
+    "tags": [
+        "rfm",
+        "segmentation",
+        "customers",
+        "crm",
+        "marketing",
+        "retention",
+        "churn",
+        "visokio-agents"
+    ],
+    "introductoryText": "Turns a transactions table into a **customer segmentation** marketers can act on, using the classic RFM method:\n\n- **Recency**: days since the customer last bought (relative to an analysis date, by default the day after the latest transaction)\n- **Frequency**: number of orders (distinct order IDs, or rows if no order field is chosen)\n- **Monetary**: total spend\n\nEach is scored 1 to 5 (or 1 to N) by percentile, where 5 is best (most recent, most frequent, highest spend), giving an RFM score such as *543*. Customers are then placed in one of ten named segments:\n\n*Champions, Loyal Customers, Potential Loyalists, New Customers, Need Attention, About to Sleep, At Risk, Can't Lose Them, Hibernating, Lost*\n\nbased on their recency score and the average of their frequency and monetary scores. The second output summarises each segment (customers, revenue, shares, averages) with a description and a suggested action.\n\nThe segment rules are a widely used starting point, not a standard: the scores are in the output, so you can define your own segments with a formula.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "customer_field",
+            "title": "Customer field",
+            "description": "Identifies a customer.",
+            "groupTitle": "Transactions",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "date_field",
+            "title": "Order date field",
+            "description": "Date of each order, for recency.",
+            "groupTitle": "Transactions",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "amount_field",
+            "title": "Order value field",
+            "description": "Value of each order, summed for the monetary score.",
+            "groupTitle": "Transactions",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "order_field",
+            "title": "Order ID field (optional)",
+            "description": "Frequency counts distinct order IDs. Leave empty to count rows (one row per order).",
+            "groupTitle": "Transactions",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "analysis_date",
+            "title": "Analysis date",
+            "description": "Recency is measured to this date, such as 2025-12-31. Leave empty for the day after the latest transaction.",
+            "groupTitle": "Scoring",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "bins",
+            "title": "Score bands",
+            "description": "5 gives scores 1 to 5 (quintiles).",
+            "groupTitle": "Scoring",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 2,
+            "numMax": 10,
+            "mandatory": true,
+            "defaultValue": 5,
+            "showAsSlider": false
+        },
+        {
+            "name": "day_first",
+            "title": "Text dates are day first",
+            "description": "Read 03/04/2025 as 3 April.",
+            "groupTitle": "Scoring",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "customers",
+            "label": "Customers",
+            "displayName": "Customer scores",
+            "tooltip": "One row per customer: recency, frequency, monetary, average order value, R / F / M scores, RFM score, segment."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "segments",
+            "label": "Segments",
+            "displayName": "Segment summary",
+            "tooltip": "One row per segment: customers, revenue, shares, averages, description, suggested action."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

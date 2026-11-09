@@ -1,0 +1,111 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Principal Component Analysis",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "PCA on numeric fields: explained variance, loadings and correlations, automatic or fixed number of components, and scores per row.",
+    "category": "Analytics",
+    "subcategory": "Statistics",
+    "tags": [
+        "PCA",
+        "principal components",
+        "dimension reduction",
+        "index",
+        "segmentation",
+        "factor analysis",
+        "statistics",
+        "visokio-agents"
+    ],
+    "introductoryText": "**Principal Component Analysis** summarises many correlated numeric fields with a few components: for building indices, segmentation, score plots of similar items, and reducing predictors before modelling.\n\n- **Standardised** (correlation) PCA by default, so fields in different units count equally; or covariance PCA on centred values\n- Components kept: a **fixed number**, or automatically (eigenvalue above 1 for standardised data, otherwise enough for a target share of variance)\n- **Loadings** with each field's correlation with each component, ranked, and a short label of the main fields per component\n- **Scores** for every row, plus an *unexplained distance* showing rows the kept components describe poorly (unusual profiles)\n- Signs are fixed (largest loading positive) so results are repeatable\n\nRows with a missing value in a chosen field are left out of the fit and get no score.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fields",
+            "title": "Numeric fields",
+            "description": "Leave empty to use every numeric field.",
+            "groupTitle": null,
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "standardise",
+            "title": "Standardise fields (correlation PCA)",
+            "description": "Scales each field to unit variance first, so fields in large units do not dominate. Untick for covariance PCA.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "components",
+            "title": "Components to keep",
+            "description": "0 = automatic.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 1000,
+            "mandatory": false,
+            "defaultValue": 0,
+            "showAsSlider": false
+        },
+        {
+            "name": "variance_target",
+            "title": "Variance to explain (covariance PCA, automatic)",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.1,
+            "numMax": 1.0,
+            "mandatory": true,
+            "defaultValue": 0.8,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "components",
+            "label": "Components",
+            "displayName": "Components",
+            "tooltip": "Per component: eigenvalue, share and cumulative share of variance, kept."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "loadings",
+            "label": "Loadings",
+            "displayName": "Loadings",
+            "tooltip": "Per kept component and field: loading, correlation with the component, rank, main fields."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "scores",
+            "label": "Scores",
+            "displayName": "Scores",
+            "tooltip": "The input with a score per kept component and the unexplained distance."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

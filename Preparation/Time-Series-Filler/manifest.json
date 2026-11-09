@@ -1,0 +1,302 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Time Series Filler",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Inserts missing days, weeks, months or other periods in each time series and fills values with zero, the previous value or interpolation, with a gap report.",
+    "category": "Preparation",
+    "subcategory": "Date",
+    "tags": [
+        "time series",
+        "gaps",
+        "fill",
+        "calendar",
+        "zero fill",
+        "interpolate",
+        "visokio-agents"
+    ],
+    "introductoryText": "Transaction extracts only contain the days something happened: a product with no sales on Tuesday simply has no Tuesday row. Averages, charts and forecasts then silently skip the zero days.\n\nTime Series Filler inserts the **missing periods** in each series (per product, store, sensor...) so every series has one row per hour, day, week, month, quarter or year, then fills the value fields:\n\n- **Zero**: no row means nothing happened (sales, transactions, incidents)\n- **Previous value**: the last known value carries forward (prices, balances, stock levels)\n- **Linear interpolation**: straight line between known values (readings, temperatures)\n- **Leave empty**: insert the rows, keep the values missing\n\nEach series runs from its own first to last period, from the overall first to last period (so all series line up), or over a custom range. Inserted rows are flagged (*Is Inserted* = 1) and other fields can be carried forward. The second output reports, per series, expected and present periods, how many were inserted and the longest gap.\n\nWeeks run Monday to Sunday.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "date_field",
+            "title": "Date field",
+            "description": "Date or date-time of each record.",
+            "groupTitle": "Series",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Series (optional)",
+            "description": "One series per combination of these fields, such as Product or Store and Product.",
+            "groupTitle": "Series",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "frequency",
+            "title": "One row per",
+            "description": "The period to insert missing rows at.",
+            "groupTitle": "Series",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Hour",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "HOUR",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Day",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "DAY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Week (Monday to Sunday)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "WEEK",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Month",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTH",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Quarter",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "QUARTER",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Year",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "YEAR",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "DAY"
+        },
+        {
+            "name": "value_fields",
+            "title": "Value fields to fill",
+            "description": "Fields to fill in inserted rows.",
+            "groupTitle": "Filling",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "fill_method",
+            "title": "Fill with",
+            "description": "What the value fields get in inserted rows.",
+            "groupTitle": "Filling",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Zero",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ZERO",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Previous value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PREVIOUS",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Linear interpolation",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LINEAR",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Leave empty",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LEAVE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "ZERO"
+        },
+        {
+            "name": "carry_other",
+            "title": "Carry other fields forward",
+            "description": "Copy the remaining fields (such as Category) from the previous row into inserted rows.",
+            "groupTitle": "Filling",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "span",
+            "title": "Each series runs",
+            "description": "Where each series starts and ends: its own data, the whole dataset or a custom range.",
+            "groupTitle": "Range",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "From its own first to last period",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SERIES",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "From the overall first to last period",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ALL",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Over a custom range",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CUSTOM",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "SERIES"
+        },
+        {
+            "name": "range_start",
+            "title": "Custom range start",
+            "description": "For example 2025-01-01.",
+            "groupTitle": "Range",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "range_end",
+            "title": "Custom range end",
+            "description": "For example 2025-12-31.",
+            "groupTitle": "Range",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "day_first",
+            "title": "Text dates are day first",
+            "description": "Read 03/04/2025 as 3 April.",
+            "groupTitle": "Range",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "filled",
+            "label": "Filled",
+            "displayName": "Filled series",
+            "tooltip": "Every series with one row per period; Period label and Is Inserted flag added."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "gaps",
+            "label": "Gaps",
+            "displayName": "Gap report",
+            "tooltip": "Per series: first and last period, expected and present periods, inserted periods, longest gap, completeness."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

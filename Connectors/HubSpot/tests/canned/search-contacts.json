@@ -1,0 +1,20 @@
+{
+ "total": 1,
+ "results": [
+  {
+   "id": "503",
+   "properties": {
+    "email": "elena.rossi@brookside-allotments.example",
+    "firstname": "Elena",
+    "lastname": "Rossi",
+    "lifecyclestage": "customer",
+    "createdate": "2025-01-12T08:00:00.000Z",
+    "lastmodifieddate": "2025-02-12T08:00:00.000Z",
+    "hs_object_id": "503"
+   },
+   "createdAt": "2025-01-12T08:00:00.000Z",
+   "updatedAt": "2025-02-12T08:00:00.000Z",
+   "archived": false
+  }
+ ]
+}

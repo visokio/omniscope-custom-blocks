@@ -1,0 +1,46 @@
+{
+ "request": {
+  "departing": true,
+  "url": "https://api.flightstats.com/flex/schedules/rest/v1/json/flight/LP/6/departing/2026/11/18",
+  "airline": {
+   "requestedCode": "LP",
+   "fsCode": "LP"
+  },
+  "flight": {
+   "requested": "6",
+   "interpreted": "6"
+  },
+  "date": {
+   "year": "2026",
+   "month": "11",
+   "day": "18",
+   "interpreted": "2026-11-18"
+  }
+ },
+ "scheduledFlights": [
+  {
+   "carrierFsCode": "LP",
+   "flightNumber": "6",
+   "departureAirportFsCode": "LWX",
+   "arrivalAirportFsCode": "KQB",
+   "stops": 0,
+   "departureTime": "2026-11-18T16:00:00.000",
+   "arrivalTime": "2026-11-18T16:45:00.000",
+   "flightEquipmentIataCode": "SF3",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "0"
+  }
+ ],
+ "appendix": {
+  "airlines": [],
+  "airports": [],
+  "equipments": []
+ }
+}

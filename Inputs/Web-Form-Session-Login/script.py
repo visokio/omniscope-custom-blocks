@@ -27,6 +27,8 @@ omniscope_api = OmniscopeApi()
 login_url = omniscope_api.get_option("url")
 username = omniscope_api.get_option("username")
 password = omniscope_api.get_option("password")
+check_login = omniscope_api.get_option("checkLogin")
+check_login = True if check_login is None else bool(check_login)
 
 if not login_url:
     omniscope_api.abort(message="The Login URL option is required.")
@@ -130,22 +132,35 @@ def collect_response_headers(stage, response):
     return rows
 
 
+def has_password_input(form):
+    return any(
+        str(element.get("type", "")).lower() == "password"
+        for element in form.find_all("input")
+    )
+
+
 def find_login_form(html, page_url):
     """
-    Locate the first POST form. Fall back to the first form if its method
-    is omitted but it contains a password input.
+    Locate the login form: the first form with a password field (a POST
+    one first). A search or newsletter form earlier in the page is not
+    a login form. Fall back to the first POST form.
     """
     soup = BeautifulSoup(html, "html.parser")
     forms = soup.find_all("form")
 
-    for form in forms:
-        method = str(form.get("method", "get")).lower()
+    def is_post(form):
+        return str(form.get("method", "get")).lower() == "post"
 
-        if method == "post":
+    for form in forms:
+        if has_password_input(form) and is_post(form):
             return form
 
     for form in forms:
-        if form.find("input", attrs={"type": "password"}):
+        if has_password_input(form):
+            return form
+
+    for form in forms:
+        if is_post(form):
             return form
 
     return None
@@ -214,9 +229,13 @@ def build_login_payload(form, username_value, password_value):
         if input_type == "hidden":
             payload[field_name] = input_element.get("value", "")
 
-    password_element = form.find(
-        "input",
-        attrs={"type": "password"},
+    password_element = next(
+        (
+            element
+            for element in form.find_all("input")
+            if str(element.get("type", "")).lower() == "password"
+        ),
+        None,
     )
 
     if password_element is None or not password_element.get("name"):
@@ -285,10 +304,12 @@ def cookie_rows_from_session(session):
                 "Domain": str(cookie.domain or ""),
                 "Path": str(cookie.path or ""),
                 "Secure": bool(cookie.secure),
+                # Seconds since 1970 in the cookie jar; a date (UTC) in the output.
+                # Session cookies (no expiry) are empty.
                 "Expires": (
-                    int(cookie.expires)
+                    pd.Timestamp(int(cookie.expires), unit="s")
                     if cookie.expires is not None
-                    else None
+                    else pd.NaT
                 ),
                 "Additional attributes": json.dumps(
                     getattr(cookie, "_rest", {}),
@@ -415,6 +436,26 @@ try:
         ],
     )
 
+    if check_login:
+        if login_response.status_code >= 400:
+            raise RuntimeError(
+                f"The site answered the login with status "
+                f"{login_response.status_code} {login_response.reason or ''}"
+                f"; the login failed. Untick 'Stop if the login fails' "
+                f"to see the headers."
+            )
+
+        final_page = BeautifulSoup(login_response.text, "html.parser")
+        if any(has_password_input(form) for form in final_page.find_all("form")):
+            raise RuntimeError(
+                "After logging in, the site still shows a form with a "
+                "password field, so the login probably failed (wrong "
+                "user name or password, or a form this block cannot "
+                f"fill in). Fields used: {username_field}, "
+                f"{password_field}. Untick 'Stop if the login fails' "
+                "to see the headers anyway."
+            )
+
     cookie_rows = cookie_rows_from_session(session)
 
     cookies_df = pd.DataFrame(
@@ -429,6 +470,7 @@ try:
             "Additional attributes",
         ],
     )
+    cookies_df["Expires"] = pd.to_datetime(cookies_df["Expires"])
 
     # Output 1: every header from every request/redirect response.
     omniscope_api.write_output(

@@ -1,0 +1,155 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Path Analysis",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAFGUlEQVR42u2dvU4cVxTHfwcWxAawgwFhyThNpERJFTmy5BRp/QRu3OUBXERyihSpUyXyC+QJ0kR08SukSp0o8gfGAQccIJhdWOCmmDNwWe2y37Mzu/+fdDSXYWZ29v7n3ntm5py7IIQQQgghhBBCCCGywVQFlwkhTABzwKwv0/JstK4MTAEl323G69L8fwCTwLSZfRMd+zbwBLgPzDc5hT3gF+BbM9uSgM1FWgSW3OLygld+f1qIC+ji/Q7caHPXv4A7ZrZ/1UalMRCrDNwEVoEVL9/yFpQlTzoQD+BD4Hvg0Vi0wBDCJLDsIq24YKvAtaGOURctcP+KbrMZb81scWRaoIu0EHV3cfe3CEzk+PTnu9inZYstZVTx09G4Uo4G/JnoPKb8f42chtipmEB0JmCb3lNDLyqE8IOqeYgCduE9XQe+Ar4MIdxRFQ+WdrqjTr2nei9KDFnA+z0c/6GqePgCzvdw/Buq4uELKCSgkIBCAkpAIQGFBBQSUAIKCSgkoJCAElBIQCEBJaAYOOtd7LMnAfPDWhf7PJWA+eE74I8Ott8BHkvAnGBme8Bd4Cdg94pN94Gfgc/M7FXL47baIIQQejz3Hwtc74feEvaB/9wOgHdAFTiKrAqcpdVmZtUsTrCktnF+1b+O7A1JXkI17yc+jgIeAM+BF8AG8NrMDor6ZUpj0rqeuWjPgA0zC6Py5UZRwJ1IrD/NbGeUr86iC3jgY9aGd4nPi9wdjrKAVeCtOxfnzkar9GMJ2H8R0rHnrIkb/s5bVeqy7wM7ZnYoR3lI94FmppkwBoiexKgLbdmCHzRYfQLUmuxyBJx6+Tgq13y/I19Wo3UVoGZmNQnYf+5l9WW8t69GQh/XiV1rUK7ftuKHq0SHrtSN5WfNLj4zO5MX2hvpxAlzw/jwepdh0DM16VlodsK2O9fApTkGWt0qyYnJjm5napIXmhO6mWvgoQTMDwOZqUkC6kZeSEAhASWgkIBCAgoJmFuUG1FwlBtRcJQbUWSUG9Ef0he2VV82szQAK315e9RgedrkM47N7DSrL1S094FnbVR+pZlIoxhykUUL/CIqx6GFlz6Gi7CFNM4lXtaAk3GMeRm6gAorLHgXGkJYTceGunFjbCPJijYGft1C4HMxSRIq0+js1P512wV2s3QQJGD7lN1a/VDVaQhhF9iKbBPYNLMTCZh/Jkl+5GoR+LRO2A3gJckjqxdmti0BiyXsB25p13xIknIWi1qRgMXhPeATt9Sh3nZBXwKvgK0i5MGPq4CNbpmW3T6PWmo6pv5Nkn+4CWwXJaVNkdnwvtvHdd5xjSSpdJckVzH2jg/9tijOs6hEDyk0zUgOmOLi51y7uf9NH2QoN2IUUG5E8VFuRMFRbkTBUW6EkIASUEhAIQGFBJSAoigCrvdw/D1V8fAFXOvh+E9VxcMXsNOY/pS2YvvFgAXsIKY/paPYftEbmQTdhhCmSeJWIIk+M7d0XrMSyfu3MskcZ7ORzUXr5ormeKXvA7sNkG4VGF3K6EscR39WergQJoEFYCmyxWg5dl51qWBX8ymw7dZI3GUu3qKvul3LyemvA7f77cWPzBt5F3fTLRa2DNx0MVe8fMu77CxZAx7124sfy8STEMJE1PUu1ZUXovG6n2PgdeA34KMOvPiWjuBYxsT4rLr/uDUSd66BAxU7VWVvwWn9zUSOWdnXTQLTsTcfQrhLkvD6gCQSrpkX/yvwWF68EEIIIYQQQgghRJ74H+gOzuuQFHsQAAAAAElFTkSuQmCC",
+    "description": "The most common event sequences per user or session, step-numbered transitions for Sankey charts, and next-step probabilities.",
+    "category": "Analytics",
+    "subcategory": "Marketing",
+    "tags": [
+        "path analysis",
+        "user journeys",
+        "clickstream",
+        "Sankey",
+        "Markov",
+        "process mining",
+        "sequences",
+        "visokio-agents"
+    ],
+    "introductoryText": "Finds the **most common sequences of events** per user or session (web pages, app screens, case or claim stages, patient pathways, machine states) and the **transitions** between steps.\n\n- Events are ordered by time within each path; **repeated consecutive events** can be collapsed (*home > home > product* becomes *home > product*)\n- Paths can **start** at the first occurrence of an event (for example *product*) and **stop** at the first of your **end events** (for example *purchase*)\n- Paths are cut to a **maximum number of steps**, with *...* marking longer ones\n\nOutputs:\n- **Paths**: the top paths with counts, share, cumulative share, how many reach an end event and the median duration\n- **Transitions**: step-numbered links (*1. home* to *2. product*), with *(exit)* where paths stop: ready for a Sankey chart\n- **Next step**: the probability of each next event after each event (a Markov transition table), including leaving",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "path_field",
+            "title": "User or session field",
+            "description": "Identifies one path: all events with the same value form a sequence.",
+            "groupTitle": "Events",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "event_field",
+            "title": "Event field",
+            "description": "The page, screen or step recorded in each event.",
+            "groupTitle": "Events",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "time_field",
+            "title": "Time field (optional)",
+            "description": "Orders the events; without it, input order is used.",
+            "groupTitle": "Events",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "max_steps",
+            "title": "Maximum steps",
+            "description": "Paths are cut after this many steps, so long journeys group together.",
+            "groupTitle": "Paths",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 1,
+            "numMax": 50,
+            "mandatory": true,
+            "defaultValue": 5,
+            "showAsSlider": false
+        },
+        {
+            "name": "top_n",
+            "title": "Top paths",
+            "description": "0 = all.",
+            "groupTitle": "Paths",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 50,
+            "showAsSlider": false
+        },
+        {
+            "name": "collapse_repeats",
+            "title": "Collapse repeated consecutive events",
+            "description": "Treats the same event several times in a row (such as page reloads) as one step.",
+            "groupTitle": "Paths",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "start_event",
+            "title": "Start at event (optional)",
+            "description": "Paths start at its first occurrence; paths without it are left out.",
+            "groupTitle": "Paths",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "end_events",
+            "title": "End events (optional)",
+            "description": "Comma-separated; a path stops at the first one, for example: purchase",
+            "groupTitle": "Paths",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "paths",
+            "label": "Paths",
+            "displayName": "Paths",
+            "tooltip": "Top paths: rank, path, steps, count, share, cumulative share, first / last event, reached end event, median minutes."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "transitions",
+            "label": "Transitions",
+            "displayName": "Transitions",
+            "tooltip": "Step-numbered From / To links with counts, for Sankey charts."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "next_step",
+            "label": "Next step",
+            "displayName": "Next step",
+            "tooltip": "From event, to event (or exit), transitions and probability."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

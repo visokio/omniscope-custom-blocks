@@ -11,8 +11,8 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": "data:image/png;base64,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",
-    "description": "Prints Report tabs to PDF files for each record of the input data.",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADY0lEQVR42u2dsU5UQRSG/4ObmJiIRhMobBSDJRQmlGqUxgbjm9jpI2hhYakvYq3Exk4rBFkt7GCXFRMLm2PBSDYE1r17596Z2f2+5AYoWGC+e85/ZtnsSAAAAAAAAAAAAAAAAAAwrVjqX8DdPZO1eGFmz0oTOMc9fMxTd3+OQCQiEIkInBmJDDGjeWVmTxBYrkBJeifptaRvkr6Y2QECyxIoSR8lbYbPe5K+5yK0k0DYRUlLkm5Iul5IJq6Fj5uSrobrdvh7hoVum1l/qgQOCVsO0hYLHWyGJQ5zUuhhkLnThtBOA8Lmg6jShVWROMy8pNVwNS60g7BGJI4S2pP03sw+JBE4g8JiSDzZcjfcfdvM9hoXiLBGJJ6T9FjSm+gC3d1CIN8M1xVcjZS4OeH33nL3FTP7HFWgmbm735e0gJ/G2XD3LTP7M+kDnPVc6C5r2wqXJT2o8wAITM89d1+ILbDLurbGv4EmnkAzO5S0x9q2xrK7r8SsQEn6yrq2yiN3Px9TIG20XS5NMtCMEsgg0z53qw40ZwokB8sYaP73mhiqMM1As4rAstkYd6BBYL4DzXptgeRgUu64+2LdCmQ7kXagWYshkDaajh8xBPKMTDq6tQWGHNxnLVtnz8x+xqhA2mgaxlpzBM6IQHIww/wbWyA52Dr74+RflQqkjWbYPqsKZENfuEBysGSBoSf3WNt88q9qBZKDmVUfAgvePkwqkBwsuQLJwVbyb9BkBdJGM6o+BBaefwicxQoMPZocjE+vav5NWoFUYSbVV0cgz4sWLpD9YMkCQ6/us+Zp869OBZKDGVQfAgve/8UQSA6WXIHkYNT8O0hRgbTRxO0zhkD2gwnbZwyBO6x/wQLJwdr0677n9lzqO4jqq0cMgeRg4QKpwJIFhjfxPsBFZQYxzpyYy+VOmkGiTPAILHQDj8ApyL9oAsnBifKvn1MFUoXViPafnJgC2Q8muNmpQAQe52CPHGw3/6T4p5d1FY5hq8DLE19ndcDiKecdXlO9gzOjvpKh00BrqCowK2GndJZfkj6FK4bQbu4CixbWgtDdbAWaWc/dBzo6UuY0YVuTvv5xSoQOwqwQ7+c3kBkPJV0Id1o3vEnQzBKO71vS0Ulwv83sLXMcAAAAAAAAAAAAAAAAAAAAQKP8BVXnRMqKvbnIAAAAAElFTkSuQmCC",
+    "description": "Prints one Report tab once per scenario of a multi-tenant configuration, saving a PDF file per scenario in a folder.",
     "category": "Outputs",
     "subcategory": "PDF",
     "tags": [
@@ -22,15 +22,17 @@
         "report",
         "print",
         "tab",
-        "convert"
+        "multi-tenant",
+        "scenario",
+        "export"
     ],
-    "introductoryText": "## Multi-tenant Report to PDF batch output\n#### This block will produce a PDF of a Report tab for each multi-tenant config row, saving the PDF files in a specified output folder, with filenames equal to the Report name + scenario ID.\n#### Connect a Multi-tenant report configuration to this block with the \"scenario\" field configured, set the base Report URL pointing to the tab you want to print (copy it from your browser address bar or from the Report Sharing dialog). \n### Setup\n#### The best way to use this block is within a Docker system. For more information check this article [Docker setup](https://help.visokio.com/support/solutions/articles/42000071133-setting-up-the-custom-block)\n#### If you are not using Docker, then Chrome has to be installed on the host machine.\n### Authentication\nIf Basic Authentication is set up either for the report itself or the folder in which it is located, and Local Desktop Experience is turned off in the admin app, or the report is only accessible via its public IP, then you need to specify a username and password in order for the block to print properly.\n### Troubleshooting\n#### *In case you experience errors running this block, please ensure the following:*\n#### 1. Make sure you are using the newest Multi-tenant Report to PDF batch output block. If in doubt, replace this one with a fresh one from the block palette.\n#### 2. If you are using Docker, make sure you are using the newest Docker image. If in doubt, simply remove all Visokio related Docker images\n#### 3. If *not* running Docker, make sure Chrome is installed and is on the newest version.\n#### 4. It's possible that your version of Omniscope is too old and has become incompatible with the other parts of the printing system. Please switch to the newest Rock, or the newest Release Candidate.",
+    "introductoryText": "Prints the same Report tab once for each scenario of a multi-tenant Report configuration, so each customer, region or user gets their own PDF of their own data.\n\n**How to set it up**: connect the multi-tenant configuration (one record per scenario) and choose the field holding the scenario IDs (a field called `scenario` is used by default). Enter the address of the tab to print, copied from the browser's address bar or the Report's sharing dialog, such as `http://127.0.0.1:24679/Folder/Project.iox/r/Report/#Tab`, without a scenario. The Report must use the same multi-tenant configuration.\n\nFor each scenario the block prints `.../r/Report/s/<scenario>/` and saves `<Report>-<scenario>.pdf` in the output folder. The output has one record per PDF: the scenario, the tab's address for that scenario, the file name and the full path. Records with an empty scenario are skipped.\n\n**What it needs.** Chrome, driven by the `visokio-omniprint` Python package (installed on first run). On a server that runs custom blocks in Docker, the block uses its own image with Chrome included ([Docker setup](https://help.visokio.com/support/solutions/articles/42000071133-setting-up-the-custom-block)); otherwise Chrome must be installed on the machine running Omniscope. The Report must be reachable from that machine at the address given.\n\n**Authentication.** If the Report or its folder needs a login that the server's own browser session doesn't have (for example Basic Authentication, with Local Desktop Experience turned off), enter a username and password. They are used only to open the page; they are not written to the output.\n\n**If it fails**: replace the block with a fresh one from the block picker, update Chrome (or the Docker image), and raise the loading delay if pages come out half drawn.",
     "dependencies": "visokio-omniprint",
     "options": [
         {
             "name": "report",
-            "title": "Report Tab URL",
-            "description": "e.g. http://127.0.0.1:24679/Folder/Project.iox/r/Report/#TabName",
+            "title": "Report tab URL",
+            "description": "The address of the tab to print, without a scenario, such as http://127.0.0.1:24679/Folder/Project.iox/r/Report/#Tab.",
             "groupTitle": "Configuration",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -38,11 +40,23 @@
             "defaultValue": null
         },
         {
-            "name": "outputFolder",
-            "title": "PDF Output folder",
-            "description": "Where Omniscope will save the PDF files",
+            "name": "scenarioField",
+            "title": "Scenario field",
+            "description": "The field holding the scenario IDs, one per record. Empty: the field called scenario.",
             "groupTitle": "Configuration",
-            "width": "TWO",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": "scenario",
+            "fieldTypes": []
+        },
+        {
+            "name": "outputFolder",
+            "title": "Output folder",
+            "description": "The folder the PDF files are saved in, on the machine running Omniscope. Created if missing; files with the same name are replaced.",
+            "groupTitle": "Configuration",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
             "mandatory": true,
             "defaultValue": null,
@@ -50,8 +64,8 @@
         },
         {
             "name": "pageWidth",
-            "title": "Page Width (pixels)",
-            "description": "Optional page width to override default A4 size or Report fixed size.",
+            "title": "Page width (pixels)",
+            "description": "Optional. Overrides the Report's page size (A4, or the Report's fixed size).",
             "groupTitle": "Page Size",
             "width": "HALF",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
@@ -63,8 +77,8 @@
         },
         {
             "name": "pageHeight",
-            "title": "Page Height (pixels)",
-            "description": "Optional page height to override default A4 size or Report fixed size.",
+            "title": "Page height (pixels)",
+            "description": "Optional. Overrides the Report's page size (A4, or the Report's fixed size).",
             "groupTitle": "Page Size",
             "width": "HALF",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
@@ -76,12 +90,12 @@
         },
         {
             "name": "chromeDelay",
-            "title": "Chrome loading delay (seconds)",
-            "description": "Delay (seconds) to allow Chrome loading the page before printing to PDF",
+            "title": "Loading delay (seconds)",
+            "description": "Extra seconds to wait after the Report has finished drawing, before printing. Raise it if charts come out half drawn.",
             "groupTitle": "Advanced",
             "width": "HALF",
             "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
-            "numMin": null,
+            "numMin": 0,
             "numMax": null,
             "mandatory": false,
             "defaultValue": 3,
@@ -90,7 +104,7 @@
         {
             "name": "auth_username",
             "title": "Username",
-            "description": null,
+            "description": "Optional. For a Report behind Basic Authentication.",
             "groupTitle": "Authentication",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
@@ -100,7 +114,7 @@
         {
             "name": "auth_password",
             "title": "Password",
-            "description": null,
+            "description": "Optional. Used only to open the page; not written to the output.",
             "groupTitle": "Authentication",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
@@ -111,9 +125,9 @@
         {
             "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
             "id": "Output Data",
-            "label": "1",
-            "displayName": "Output 1",
-            "tooltip": null
+            "label": "PDFs",
+            "displayName": "PDF files written",
+            "tooltip": "One record per PDF written: Scenario, URL, PDF filename, PDF path."
         }
     ],
     "docker": {

@@ -1,0 +1,7 @@
+order no,date ordered,client,product code,units,price,is paid,Channel
+S-2001,2025-02-03,Harbour View Gardens,TP-30,10,4.50,true,Web
+S-2002,2025-02-04,Seaton Hardware,CP-50,25,6.75,false,Phone
+S-2003,2025-02-04,Coombe Allotments,CN-10,50,2.20,true,Web
+S-2004,2025-02-07,Harbour View Gardens,HT-02,3,3.10,,Web
+S-2005,2025-02-11,Linton Landscapes,NT-04,12,1.95,true,Trade counter
+S-2006,2025-02-12,Seaton Hardware,HR-01,2,18.00,true,Phone

@@ -1,0 +1,246 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Monte Carlo Cost Risk",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Simulates three-point estimates and risk events to give P10 / P50 / P80 / P90 totals, contingency, the probability of exceeding a budget, and the drivers of uncertainty.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "Monte Carlo",
+        "cost risk",
+        "simulation",
+        "PERT",
+        "contingency",
+        "risk register",
+        "P80",
+        "project estimate",
+        "visokio-agents"
+    ],
+    "introductoryText": "Turns **three-point estimates** (low, most likely, high) for each line of a project estimate, budget, bid or forecast into a probability distribution of the total, by Monte Carlo simulation.\n\n- Each line is sampled from a **PERT** (default), triangular or uniform distribution\n- **Risk events** from a risk register occur with their probability (0-1 or %); lines with no probability always occur\n- Optional **correlation** between lines (a single rank correlation, applied with the Iman-Conover method): treating lines as independent usually understates the risk\n- **P10, P50, P80, P90, P95** of the total and of each group, the **contingency** needed above the base estimate for each confidence level, and the chance of exceeding the base or a target\n- **Drivers**: which lines contribute most to the uncertainty (share of variance and rank correlation with the total), for a tornado chart\n- The **S-curve** of the total (histogram with cumulative probability)\n\nThe base estimate is the sum of the most likely values of the lines that always occur. A fixed random seed makes runs repeatable.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "name_field",
+            "title": "Line name",
+            "description": "Names each estimate line or risk.",
+            "groupTitle": "Estimate lines",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "low_field",
+            "title": "Low estimate",
+            "description": "Optimistic cost of the line.",
+            "groupTitle": "Estimate lines",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "likely_field",
+            "title": "Most likely estimate",
+            "description": "Most likely cost of the line.",
+            "groupTitle": "Estimate lines",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "high_field",
+            "title": "High estimate",
+            "description": "Pessimistic cost of the line.",
+            "groupTitle": "Estimate lines",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "probability_field",
+            "title": "Probability (optional)",
+            "description": "For risk events; empty = always occurs.",
+            "groupTitle": "Estimate lines",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_field",
+            "title": "Group (optional)",
+            "description": "For example work package.",
+            "groupTitle": "Estimate lines",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "distribution",
+            "title": "Distribution",
+            "description": "Shape of each line's range. PERT weights the most likely value; triangular gives more weight to the extremes.",
+            "groupTitle": "Simulation",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "PERT",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PERT",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Triangular",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "TRIANGULAR",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Uniform (low to high)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "UNIFORM",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "PERT"
+        },
+        {
+            "name": "iterations",
+            "title": "Iterations",
+            "description": "Number of simulated totals. More gives steadier percentiles.",
+            "groupTitle": "Simulation",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 100,
+            "numMax": 1000000,
+            "mandatory": true,
+            "defaultValue": 10000,
+            "showAsSlider": false
+        },
+        {
+            "name": "correlation",
+            "title": "Correlation between lines",
+            "description": "0 = independent; 0.3 to 0.5 is common for related costs.",
+            "groupTitle": "Simulation",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": 0.99,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "seed",
+            "title": "Random seed",
+            "description": "Fixes the random numbers, so a rerun gives the same results.",
+            "groupTitle": "Simulation",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 0,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 1,
+            "showAsSlider": false
+        },
+        {
+            "name": "target",
+            "title": "Target or budget (optional)",
+            "description": "Reports the chance of exceeding it.",
+            "groupTitle": "Simulation",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": null,
+            "showAsSlider": false
+        },
+        {
+            "name": "bins",
+            "title": "S-curve bins",
+            "description": null,
+            "groupTitle": "Simulation",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 5,
+            "numMax": 1000,
+            "mandatory": true,
+            "defaultValue": 50,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Summary",
+            "tooltip": "Total and per group: base, mean, P10-P95, contingency to P50 / P80 / P90, probability over base (and target)."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "drivers",
+            "label": "Drivers",
+            "displayName": "Drivers",
+            "tooltip": "Per line: inputs, simulated mean, spread, P10 / P90, rank correlation with the total, share of variance, rank."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "distribution",
+            "label": "S-curve",
+            "displayName": "S-curve",
+            "tooltip": "Histogram of the total with cumulative probability."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

@@ -1,0 +1,11 @@
+orders:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/orders.csv
+
+targets:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/region_targets.csv
+
+region_summary:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/region_summary.csv

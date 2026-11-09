@@ -1,0 +1,160 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Correlation Matrix",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Pearson and Spearman correlations with p-values for all pairs of numeric fields or against a target, per group, ranked, with a heat-map matrix.",
+    "category": "Analytics",
+    "subcategory": "Statistics",
+    "tags": [
+        "correlation",
+        "Pearson",
+        "Spearman",
+        "p-value",
+        "heat map",
+        "statistics",
+        "exploratory analysis",
+        "visokio-agents"
+    ],
+    "introductoryText": "**Pearson and Spearman correlations with p-values** for every pair of numeric fields, or for each field against one **target**, overall and per **group**.\n\n- Each pair uses all rows where both fields have values; pairs with fewer rows than the minimum are left blank\n- Spearman (rank) correlation catches monotonic relationships that are not straight lines and is less affected by outliers\n- **Strength** labels (negligible, weak, moderate, strong, very strong), direction and significance at your level\n- Pairs are **ranked** by strength, so the strongest relationships come first\n\nOutputs: one row per pair; the matrix in long form (row field, column field, correlation) for a heat map; and a wide matrix with one row per field. Correlation is not causation: use it to find relationships worth investigating.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fields",
+            "title": "Numeric fields",
+            "description": "Leave empty to use every numeric field.",
+            "groupTitle": null,
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "target_field",
+            "title": "Target (optional)",
+            "description": "Correlate every field with this one only.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_field",
+            "title": "Per group (optional)",
+            "description": null,
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "method",
+            "title": "Rank and label by",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Pearson",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PEARSON",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Spearman (rank)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "SPEARMAN",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "PEARSON"
+        },
+        {
+            "name": "significance",
+            "title": "Significance level",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": 0.0001,
+            "numMax": 0.5,
+            "mandatory": true,
+            "defaultValue": 0.05,
+            "showAsSlider": false
+        },
+        {
+            "name": "min_pairs",
+            "title": "Minimum rows per pair",
+            "description": null,
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.IntegerCustomBlockPublicOption",
+            "numMin": 3,
+            "numMax": null,
+            "mandatory": true,
+            "defaultValue": 10,
+            "showAsSlider": false
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "pairs",
+            "label": "Pairs",
+            "displayName": "Pairs",
+            "tooltip": "Per pair: rows, Pearson and Spearman with p-values, strength, direction, significant, rank."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "matrix",
+            "label": "Long matrix",
+            "displayName": "Matrix (long)",
+            "tooltip": "Row field, column field, correlation, p-value, rows: for heat maps."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "wide",
+            "label": "Wide matrix",
+            "displayName": "Matrix (wide)",
+            "tooltip": "One row per field, one column per field."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

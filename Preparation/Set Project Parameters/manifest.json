@@ -11,31 +11,53 @@
     "apiVersion": "VERSION_0",
     "isResourceIntensiveScript": false,
     "showPartitioning": false,
-    "icon": null,
-    "description": "The block updates project parameters using the input data",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADM0lEQVR42u2dv2oUURSHfxOFEDS4TQp1lV0hdja+hVGjL+L6DPoGprMQgqWdonkOwc7FVTCd1SaBEMxyLLygguy/2Zk598z3tQt3Zs6PO3PPznxcCQAAAAAAAAAAAAAAAACiUjR5cDO7KemRpPuSepK66adDSd8kvZf0tiiK70TlCDO7bmYvzezcZjMxszdm1qNyPsJ7bGbHtjhHZrZLBZsN72maUcsyMbMBlWxu5pUJ7+8QmYk1h9dd8rY57XZ6jcpKazUd57mkyyscb1PSM+KroY1IrcJI0oUVDz2R1CuK4rDNAV6cM4QtSTuSbktaX/AYdysIT2nMfTP7GCyTM0mfJR0URfGj9C00hTeQdGeJ8CSpX+HF3go4qdZTrQep9qWfgTuSNkqcUKfCi70S+O64kWpfOsDtkidyqcKL3Az+iNteRYCuOxTaiNkMSx7jpMLzPwmez3AVAR5IOi1xEuMKL3AcOLzTVPtyAaal7J6kT2mJuyijCi/yS8DgzlKt9+ZpI+po5G9I+lpBL3guqd/2Rr7yRUx6GbtfwdCv2h5efUvF3y9wj1b4Z/bYzK5S2XpDvDfnG/h5Xic9pKLNhDhYwQvdJ1Sy2RB3l7ydjs3sARX0EeKWmb0ws59zzrrXPPMaaiNmBNnVn88K+/r3s8KRpA+S3rHaBAAAAFeLmAxWy7gbmQaHu5FxeLgbGYeHu5H5zMPdyDS8bN2NNeKTlLG7UTD78nY36nAjvOPN3XDnRnjHm7vhzo3wTqfCscu4G27cCO94djfCuxHu10ge2ohh8CJ7djdcuBHe8epuuHEjvOPN3fDlRmTQyGftbrR+EYO7EWMW4m4ECBF3I0CIuBsBQsTdCBBiNu4GnxVODxJ3AwAAwClZL2JwF/INDnch4/BwFzIOD3ch85mHu5DrPyLsO/F/cnmhy74TubYR7DsxnRzciLbtOxHOjWjbvhPh3IhOhWN73ncijBvR5n0ncCNmPSHa0EY07Ua0ed+JEG5EW/edCONGtG3fiVhuBPtOZL6IwV2IsFTEXQgRIu5CgBBxFwKEiLsQIET2nciljZgRJO4CAAAAAAAAAAAAAAAAAITlF99fCcS6K/HwAAAAAElFTkSuQmCC",
+    "description": "Sets project parameters, often of the project it is in, from records holding a parameter name and a value; all values are set in one request.",
     "category": "Preparation",
-    "subcategory": null,
+    "subcategory": "Workflow",
     "tags": [
         "parameter",
-        "param"
+        "project parameters",
+        "param",
+        "rest api",
+        "orchestration"
     ],
-    "introductoryText": "## Set Project Parameters\nThis block sets project parameters by reading input data. It uses two options—one for the column containing the parameter names and another for the column with the parameter values—to build a list of updates. Finally, it sends a single update request to change the project parameters based on the input data.",
-    "dependencies": "",
+    "introductoryText": "Sets parameters of a project from the input: one record per parameter, with the parameter's name in one field and its new value in another. All the values go in one request, so either all are set or none.\n\n**Setting up**\n\n1. Give the project's address, ending in .iox. To change the parameters of this project, use its own address, for example `http://127.0.0.1:24679/Folder/Project.iox/`.\n2. Choose the name field and the value field.\n\nWhen a name appears twice, the later record's value is set. The user needs the *Project parameters access via APIs* permission. The **Set** output holds the records whose values were set.\n\nBlocks that read a parameter use its new value the next time they run.",
+    "dependencies": "urllib3",
     "options": [
         {
             "name": "Iox_File_Url",
-            "title": "IOX file URL",
-            "description": "The URL of the project to set the params",
-            "groupTitle": "File",
-            "width": "THREE",
+            "title": "Project address",
+            "description": "The address of the project whose parameters to set, ending in .iox. On the same server, the internal address such as http://127.0.0.1:24679/Folder/Project.iox/ avoids the public address and its certificate. A report or workflow address of the project is cut back to the project.",
+            "groupTitle": "Project",
+            "width": "ONE",
             "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
             "mandatory": true,
             "defaultValue": ""
         },
         {
+            "name": "username",
+            "title": "Username",
+            "description": "Optional. For a server that asks for sign-in with a list of users: sent with basic authentication, so use an https:// address unless it is the server's own 127.0.0.1 address. Leave empty when no sign-in is needed.",
+            "groupTitle": "Project",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": null
+        },
+        {
+            "name": "password",
+            "title": "Password",
+            "description": "Optional. The password for the username.",
+            "groupTitle": "Project",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+            "mandatory": false
+        },
+        {
             "name": "Params_Name",
-            "title": "Names",
-            "description": "The field containing the names of the parameter to change",
+            "title": "Name field",
+            "description": "The field holding the names of the parameters to set.",
             "groupTitle": "Parameters",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
@@ -46,8 +68,8 @@
         },
         {
             "name": "Params_Value",
-            "title": "Values",
-            "description": "The field containing the values to set in the parameters",
+            "title": "Value field",
+            "description": "The field holding the values to give them.",
             "groupTitle": "Parameters",
             "width": "ONE",
             "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
@@ -57,7 +79,15 @@
             "fieldTypes": []
         }
     ],
-    "blockOutputs": [],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "set",
+            "label": "Set",
+            "displayName": "Parameters set",
+            "tooltip": "The records whose values were set: one per parameter (for a name given twice, the later record)."
+        }
+    ],
     "docker": {
         "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
         "customBaseImage": null,

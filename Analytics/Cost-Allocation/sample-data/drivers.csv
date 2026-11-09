@@ -1,0 +1,25 @@
+Department,Driver,Value
+Sales,Headcount,84
+Sales,Users,91
+Sales,Floor Area,1250
+Sales,Invoices,11200
+Sales,Tickets,2100
+Marketing,Headcount,23
+Marketing,Users,25
+Marketing,Floor Area,410
+Marketing,Invoices,1800
+Operations,Headcount,162
+Operations,Users,118
+Operations,Floor Area,5200
+Operations,Invoices,6300
+Operations,Tickets,5300
+Product,Headcount,57
+Product,Users,61
+Product,Floor Area,820
+Product,Invoices,950
+Product,Tickets,900
+Support,Headcount,41
+Support,Users,44
+Support,Floor Area,560
+Support,Invoices,300
+Support,Tickets,11800

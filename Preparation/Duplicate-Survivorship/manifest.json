@@ -1,0 +1,171 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Duplicate Survivorship",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,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",
+    "description": "Finds duplicates within a dataset on several match keys, keeps a survivor per group by rules and fills its gaps from the duplicates.",
+    "category": "Preparation",
+    "subcategory": "Data quality",
+    "tags": [
+        "deduplication",
+        "survivorship",
+        "master data",
+        "golden record",
+        "duplicates",
+        "data quality",
+        "MDM",
+        "visokio-agents"
+    ],
+    "introductoryText": "Finds **duplicate records within one dataset** and keeps the **best record** of each group, the way data stewards de-duplicate customer, supplier and product masters.\n\n- **Match keys** tried in order, for example `Email; Name + Postcode; Phone`: records agreeing on any key (after ignoring case, spaces and punctuation) join the same group, and groups chain together\n- Fields can be compared on **digits only** (phone numbers, VAT numbers)\n- **Survivor rules**: most complete record, latest or earliest date, highest or lowest value, then first in the input\n- Optionally **fills gaps** in the survivor from the other records in its group, and says which fields were filled\n\nOutputs: every record with group, group size, survivor flag and the key that linked it; the de-duplicated table; and one row per duplicate group. For approximate matching (typos), run Fuzzy Match first.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "match_keys",
+            "title": "Match keys",
+            "description": "Keys separated by ';', fields within a key by '+', for example: Email; Name + Postcode",
+            "groupTitle": null,
+            "width": "THREE",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": true,
+            "defaultValue": ""
+        },
+        {
+            "name": "digits_only_fields",
+            "title": "Compare on digits only",
+            "description": "For example Phone.",
+            "groupTitle": null,
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "survivor_rule",
+            "title": "Keep",
+            "description": "Which record in each duplicate group is kept.",
+            "groupTitle": null,
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Most complete record",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "COMPLETE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Latest by a date",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LATEST",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Earliest by a date",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "EARLIEST",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Highest by a value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "HIGHEST",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Lowest by a value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "LOWEST",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "COMPLETE"
+        },
+        {
+            "name": "rule_field",
+            "title": "Date or value for the rule",
+            "description": "The date or number the Keep rule looks at, such as Last Updated.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "fill_gaps",
+            "title": "Fill gaps in the survivor from its duplicates",
+            "description": "Empty fields in the kept record take a value from its duplicates.",
+            "groupTitle": null,
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "records",
+            "label": "Records",
+            "displayName": "Records",
+            "tooltip": "Every record with Duplicate Group, Group Size, Survivor, Linked By and Filled Fields."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "survivors",
+            "label": "Survivors",
+            "displayName": "Survivors",
+            "tooltip": "One record per group (the de-duplicated table), with records merged and fields filled."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "groups",
+            "label": "Groups",
+            "displayName": "Groups",
+            "tooltip": "Per duplicate group: records, survivor row, keys that linked them."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

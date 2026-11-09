@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-canned-0001",
+  "object": "chat.completion",
+  "created": 1762430400,
+  "model": "LLaMA_CPP",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "__REPLY__",
+        "refusal": null
+      },
+      "logprobs": null,
+      "finish_reason": "__FINISH__"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 61,
+    "completion_tokens": 3,
+    "total_tokens": 64
+  }
+}

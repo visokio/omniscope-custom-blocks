@@ -1,0 +1,128 @@
+{
+ "options": {
+  "terms": [
+   {
+    "text": "newsletter"
+   }
+  ],
+  "modelTypes": [
+   "cards"
+  ]
+ },
+ "cards": [
+  {
+   "id": "64d0c0ffee000000000c0001",
+   "name": "March newsletter",
+   "desc": "",
+   "closed": false,
+   "idList": "64c0c0ffee00000000000l05",
+   "idBoard": "64b0c0ffee0000000000b001",
+   "due": "2025-03-06T09:00:00.000Z",
+   "dueComplete": true,
+   "start": null,
+   "dateLastActivity": "2025-03-02T11:30:00.000Z",
+   "labels": [
+    {
+     "id": "lbl-newsletter",
+     "idBoard": "64b0c0ffee0000000000b001",
+     "name": "Newsletter",
+     "color": "blue"
+    }
+   ],
+   "idMembers": [
+    "m3"
+   ],
+   "url": "https://trello.com/c/Card0001/1",
+   "shortUrl": "https://trello.com/c/Card0001",
+   "pos": 32768,
+   "badges": {
+    "checkItems": 0,
+    "checkItemsChecked": 0,
+    "comments": 1,
+    "attachments": 0,
+    "attachmentsByType": {
+     "trello": {
+      "board": 0,
+      "card": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "64d0c0ffee000000000c0005",
+   "name": "April newsletter",
+   "desc": "",
+   "closed": false,
+   "idList": "64c0c0ffee00000000000l03",
+   "idBoard": "64b0c0ffee0000000000b001",
+   "due": "2025-04-08T09:00:00.000Z",
+   "dueComplete": false,
+   "start": null,
+   "dateLastActivity": "2025-03-06T15:30:00.000Z",
+   "labels": [
+    {
+     "id": "lbl-newsletter",
+     "idBoard": "64b0c0ffee0000000000b001",
+     "name": "Newsletter",
+     "color": "blue"
+    }
+   ],
+   "idMembers": [
+    "m2"
+   ],
+   "url": "https://trello.com/c/Card0005/5",
+   "shortUrl": "https://trello.com/c/Card0005",
+   "pos": 98304,
+   "badges": {
+    "checkItems": 0,
+    "checkItemsChecked": 0,
+    "comments": 0,
+    "attachments": 0,
+    "attachmentsByType": {
+     "trello": {
+      "board": 0,
+      "card": 0
+     }
+    }
+   }
+  },
+  {
+   "id": "64d0c0ffee000000000c0011",
+   "name": "May newsletter",
+   "desc": "",
+   "closed": false,
+   "idList": "64c0c0ffee00000000000l01",
+   "idBoard": "64b0c0ffee0000000000b001",
+   "due": "2025-05-06T09:00:00.000Z",
+   "dueComplete": false,
+   "start": null,
+   "dateLastActivity": "2025-03-12T11:30:00.000Z",
+   "labels": [
+    {
+     "id": "lbl-newsletter",
+     "idBoard": "64b0c0ffee0000000000b001",
+     "name": "Newsletter",
+     "color": "blue"
+    }
+   ],
+   "idMembers": [
+    "m2"
+   ],
+   "url": "https://trello.com/c/Card0011/11",
+   "shortUrl": "https://trello.com/c/Card0011",
+   "pos": 196608,
+   "badges": {
+    "checkItems": 0,
+    "checkItemsChecked": 0,
+    "comments": 1,
+    "attachments": 0,
+    "attachmentsByType": {
+     "trello": {
+      "board": 0,
+      "card": 0
+     }
+    }
+   }
+  }
+ ]
+}

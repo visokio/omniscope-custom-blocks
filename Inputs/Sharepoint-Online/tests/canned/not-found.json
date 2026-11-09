@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "itemNotFound",
+    "message": "The resource could not be found."
+  }
+}

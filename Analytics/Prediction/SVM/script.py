@@ -1,73 +1,100 @@
-from omniscope.api import OmniscopeApi
-import pandas
-
-omniscope_api = OmniscopeApi()
-
-# read the records associated to the first block input
-input_data = omniscope_api.read_input_records(input_number=0)
-input_data_2 = omniscope_api.read_input_records(input_number=1)
-
-### Input fields
-
-# If you use fields_to_use, make sure to set use_all_numeric_fields = False
-fields_to_use = omniscope_api.get_option("fieldsToUse")
-
-field_to_predict = omniscope_api.get_option("fieldToPredict")
-
-
-### Parameters
-
-use_all_numeric_fields = omniscope_api.get_option("useAllNumericFields")
-
-### Script
-
-import sys
+"""Support Vector Machine: learns a category from the records on the first input and predicts it for the records
+on the second input (or, with no second input, for the first input's own records)."""
 import numpy as np
-from sklearn import svm
+import pandas as pd
+from omniscope.api import OmniscopeApi
 
-if input_data is None:
-	omniscope_api.abort("No input data")
+api = OmniscopeApi()
+
+training = api.read_input_records(input_number=0)
+to_predict = api.read_input_records(input_number=1)
+
+fields_to_use = api.get_option("fieldsToUse")
+field_to_predict = api.get_option("fieldToPredict")
+use_all_numeric_fields = api.get_option("useAllNumericFields")
+
+if training is None:
+    api.abort("Connect the records with a known category (the training data) to the first input.")
+if not field_to_predict:
+    api.abort("Choose the Field to predict.")
+if field_to_predict not in training.columns:
+    api.abort(f"The Field to predict, {field_to_predict}, is not in the first input.")
+
+
+def is_number(series):
+    return pd.api.types.is_numeric_dtype(series.dtype) and not pd.api.types.is_bool_dtype(series.dtype)
+
 
 if use_all_numeric_fields:
-    # Get the numeric fields from the input data
-    fields_to_use = [x for x in input_data.columns if (input_data[x].dtype == np.float64 or input_data[x].dtype == np.int64 or input_data[x].dtype == "Int64")]
+    # every numeric field except the one being predicted (using it would predict the answer from itself)
+    fields = [f for f in training.columns if f != field_to_predict and is_number(training[f])]
+    if not fields:
+        api.abort("The first input has no numeric fields to predict from, other than the Field to predict.")
+else:
+    if not fields_to_use:
+        api.abort("Choose the Fields to predict from, or tick \"Use all numeric fields\".")
+    fields = [f for f in fields_to_use if f != field_to_predict]
+    if not fields:
+        api.abort("The Fields to predict from must include a field other than the Field to predict.")
+    absent = [f for f in fields if f not in training.columns]
+    if absent:
+        api.abort("Not in the first input: " + ", ".join(absent))
+    text = [f for f in fields if not is_number(training[f])]
+    if text:
+        api.abort("Only numeric fields can be used to predict from. Not numeric: " + ", ".join(text))
 
-all_fields_to_use = fields_to_use + [field_to_predict]
+scoring_own_records = to_predict is None
+if scoring_own_records:
+    to_predict = training
+else:
+    absent = [f for f in fields if f not in to_predict.columns]
+    if absent:
+        api.abort("The second input needs the same fields to predict from. Not in the second input: "
+                  + ", ".join(absent))
+    text = [f for f in fields if not is_number(to_predict[f])]
+    if text:
+        api.abort("These fields are not numeric in the second input: " + ", ".join(text))
 
-# Remove invalid rows from the model creating data
-input_data = input_data.dropna(subset=all_fields_to_use)
+# Train on the records that have every value (the fields and the known category)
+complete_training = training.dropna(subset=fields + [field_to_predict])
+if len(complete_training) == 0:
+    api.abort("No record on the first input has the Field to predict and all the fields to predict from.")
+target = complete_training[field_to_predict]
+if target.nunique() < 2:
+    api.abort(f"The Field to predict needs at least two different values to learn from; "
+              f"the training records only have {target.iloc[0]!r}.")
 
-if input_data_2 is None:
-	input_data_2 = input_data
+from sklearn import svm  # noqa: E402  (imported here so the checks above report before a slow import)
+from sklearn.pipeline import make_pipeline  # noqa: E402
+from sklearn.preprocessing import StandardScaler  # noqa: E402
 
-# Remove invalid rows from the data to be used for prediction
-input_data_2 = input_data_2.dropna(subset=all_fields_to_use)
+x = complete_training[fields].astype("float64").to_numpy()
+if pd.api.types.is_bool_dtype(target.dtype):
+    y = target.to_numpy(dtype=bool)
+elif is_number(target):
+    y = target.to_numpy(dtype="float64")
+else:
+    y = target.astype(str).to_numpy(dtype=object)
+# Each field is standardised first, so a field measured in thousands doesn't drown out one measured in units
+model = make_pipeline(StandardScaler(), svm.SVC(kernel="rbf", C=1, gamma="auto")).fit(x, y)
 
+output = to_predict.copy()
+if "Prediction" in output.columns:
+    output = output.drop(columns="Prediction")
+can_predict = output[fields].notna().all(axis=1)
+# The Prediction field has the Field to predict's type, with room for empty values
+target_dtype = training[field_to_predict].dtype
+if pd.api.types.is_bool_dtype(target_dtype):
+    target_dtype = "boolean"
+elif pd.api.types.is_integer_dtype(target_dtype):
+    target_dtype = "Int64"
+prediction = pd.Series(pd.array([None] * len(output), dtype=target_dtype), index=output.index)
+if can_predict.any():
+    predicted = model.predict(output.loc[can_predict, fields].astype("float64").to_numpy())
+    prediction.loc[can_predict] = pd.array(predicted).astype(prediction.dtype)
+output["Prediction"] = prediction
 
-# Values to predict
-y = input_data[field_to_predict]
-
-# Data to predict with
-x = input_data[fields_to_use]
-
-if any(type != np.float64 and type != np.int64 and type != "Int64" for type in x.dtypes):
-	omniscope_api.abort("Only numeric fields in  \"Fields to use\" are supported")
-
-x = np.array(x, dtype=float)
-
-# Build the model
-svm_model = svm.SVC(kernel='rbf', C=1, gamma="auto").fit(x, np.ravel(y))
-
-# New data to predict with
-new_x = input_data_2[fields_to_use]
-
-# Make predictions
-predictions = pandas.DataFrame(svm_model.predict(new_x), columns=['Prediction'])
-
-# Output the results
-output_data = pandas.concat([input_data_2, predictions], axis=1)
-
-#write the output records in the first output
-if output_data is not None:
-    omniscope_api.write_output_records(output_data, output_number=0)
-omniscope_api.close()
+api.write_output(output, "Output Data")
+skipped = int((~can_predict).sum())
+api.commit(f"Trained on {len(complete_training)} records ({len(fields)} fields); predicted "
+           f"{int(can_predict.sum())} records" + (f", {skipped} left empty (missing values)." if skipped else "."))

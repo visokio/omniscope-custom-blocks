@@ -1,0 +1,307 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Loan Amortisation Schedule",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAADGklEQVR42u3dz4tOURzH8fd30KRkQwiFSDKUyM7WgoWyUlJYWlj5E+wtxJaFRCEkstMkSxY2WJAkyq/ya2GGORbPox4WnDPuvXNm5v3aTLfO97nPnM/cc8595s4ZkCRJkiRJkiRJkiRJkiRJ0kwQuQ1TSgeBzZnNJ4CbETHarx0GjgLLMuu/Aeci4nG/filwBFiQWf8JOB0R7/v1I8ABYF5m/ct+/Xi/fiewExjK6SrgQURcaKLv/mWoIOxNBW2HgC0Dx4sLwgMYBkYGjlcXhAewEFg3cLyhIDyAlcCSgeONBX0VwNYG+66xAKOLK73B+ibPORXvv/EANXk/CttP5Daca9924lZ/WIzM8EYNsKaVYm9BMtrGazuETnMGaIDKuIe+kvKNp5SOGWBd9ha0nQvsM8DK1jFttTdA50AZoAywZS8L27/u6o35SUyeK8A9YE7OXQPw1gBrWkJGpC6vKofQWcQrMGdMTGk7cCizvxJwLSJuG2A9TgA7Ctrvp/dUgENoJeYXtl/Q1RszQO8DZYAywH8Y66jG24iW3Ol/Hc5s/yoi3hhgJSLiC3DDIVRegVMlpbSx4H7u+a+/qzDAOsI7CpwsKHmfUlofER8cQuswUth+EbDGOVAGKAM0wBrWIR3VGGBLngIfC9p/Bp55H1iJiHgHHHfAdA40QDmElq9GUloGnOH3nSP+5hVweLp8HDbjAwR2A7sK2m8D9gBnHUKn7w/aPGYB50ADlAGq+gA/U7D70ECNaliFRsTHlNIpYHlmyRjw0Hgquo2IiBfAC7vcOVBTcQWmlHbQ23czxxfgckSMGVEFAaaUVtHb7K3kil+Lv4GoZghdPIlzrTAe50ADlAGqkgBb2/dZ3axCW9v3WR0E2Oa+z3IONEDN8ADb3PdZ3VyBre37rG4CbG3fZzkHGqAMUAYoAzRAGaAMUAZogDJAVRRg6b4r6T9q/6yZzOMZEw2e/3++9ybqGwnwfMELfweuDhw/Au4XnOsrvUc4frlD2T+geg3cHTi+Tu9p71wPgScDxxeB8YLOv9Rg30mSJEmSJEnSrPcTNCsB0ygzGDwAAAAASUVORK5CYII=",
+    "description": "Generates payment schedules for loans and leases (repayment, equal principal, interest only, with balloon), monthly, quarterly or annually, with a summary per loan.",
+    "category": "Analytics",
+    "subcategory": "Finance",
+    "tags": [
+        "amortisation",
+        "loan",
+        "mortgage",
+        "lease",
+        "finance",
+        "schedule",
+        "interest",
+        "visokio-agents"
+    ],
+    "introductoryText": "Generates the full **payment schedule** for every loan, lease or finance agreement in a table: one row per payment with opening balance, payment, interest, principal repaid, closing balance and cumulative interest, plus a summary per loan.\n\n- **Repayment** (annuity): level payments, the usual loan and mortgage structure\n- **Equal principal**: the same capital each period, so payments decline\n- **Interest only**: interest each period, capital repaid at the end\n- Optional **balloon** (residual value, as in PCP car finance or asset finance): level payments leave that amount to be repaid with the final payment\n- **Monthly, quarterly or annual** payments; term in months or years; rates as percentages (7.9) or fractions (0.079), detected automatically\n- The repayment type can come from a field per loan (values such as *Repayment*, *Equal principal*, *Interest only*) or be set for all\n\nLoans with missing or invalid values are listed in the summary with the reason instead of failing the block. Payment dates step on from the start date by whole months.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "loan_id_field",
+            "title": "Loan ID (optional)",
+            "description": "Names each loan in the schedule and summary.",
+            "groupTitle": "Loans",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "principal_field",
+            "title": "Principal",
+            "description": "Amount borrowed.",
+            "groupTitle": "Loans",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "rate_field",
+            "title": "Annual interest rate",
+            "description": "Percent (7.9) or fraction (0.079).",
+            "groupTitle": "Loans",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "term_field",
+            "title": "Term",
+            "description": "Length of the loan, in the unit set by Term is in.",
+            "groupTitle": "Loans",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": true,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "start_field",
+            "title": "Start date (optional)",
+            "description": "Payments fall one period after this date, then every period.",
+            "groupTitle": "Loans",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "balloon_field",
+            "title": "Balloon / residual (optional)",
+            "description": "Amount left to pay at the end, as in a lease or balloon loan.",
+            "groupTitle": "Loans",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "type_field",
+            "title": "Repayment type field (optional)",
+            "description": "Per-loan type; otherwise the default below is used.",
+            "groupTitle": "Loans",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.FieldCustomBlockPublicOption",
+            "mandatory": false,
+            "inputIndex": 0,
+            "defaultValue": null,
+            "fieldTypes": []
+        },
+        {
+            "name": "repayment_type",
+            "title": "Default repayment type",
+            "description": null,
+            "groupTitle": "Terms",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Repayment (annuity)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ANNUITY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Equal principal",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "STRAIGHT",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Interest only",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "INTEREST_ONLY",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "ANNUITY"
+        },
+        {
+            "name": "frequency",
+            "title": "Payment frequency",
+            "description": "How often payments fall due.",
+            "groupTitle": "Terms",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Monthly",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTHLY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Quarterly",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "QUARTERLY",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Annual",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "ANNUAL",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MONTHLY"
+        },
+        {
+            "name": "term_unit",
+            "title": "Term is in",
+            "description": "Whether the term field counts months or years.",
+            "groupTitle": "Terms",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Months",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MONTHS",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Years",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "YEARS",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MONTHS"
+        },
+        {
+            "name": "rate_format",
+            "title": "Rate format",
+            "description": null,
+            "groupTitle": "Terms",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Automatic",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "AUTO",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Percent (7.9 = 7.9%)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "PERCENT",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Fraction (0.079 = 7.9%)",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FRACTION",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "AUTO"
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "schedule",
+            "label": "Schedule",
+            "displayName": "Payment schedule",
+            "tooltip": "One row per loan and payment: date, opening balance, payment, interest, principal repaid, closing balance, cumulative interest."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Loan summary",
+            "tooltip": "One row per loan: type, status, payments, regular / first / final payment, total paid, total interest, final payment date."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

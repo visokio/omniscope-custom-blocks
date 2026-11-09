@@ -1,0 +1,31 @@
+{
+  "name": "omniscope-custom-blocks-tools",
+  "private": true,
+  "license": "MIT",
+  "description": "Build, test and gallery tools for the Omniscope custom blocks repository",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsx tools/build.ts",
+    "check:index": "tsx tools/build.ts --check",
+    "test": "npm run test:tools && npm run test:blocks",
+    "test:tools": "tsx --test tools/tests/*.test.ts",
+    "test:blocks": "python3 -m pytest -q",
+    "typecheck": "tsc --noEmit",
+    "serve": "tsx tools/serve.ts",
+    "bundle:demo-server": "tsx tools/bundle-demo-server.ts",
+    "publish:demo-server": "tsx tools/publish-demo-server.ts",
+    "check:demo-links": "tsx tools/check-demo-links.ts",
+    "slim-ioz": "tsx tools/slim-ioz.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "fflate": "^0.8.3",
+    "marked": "^15.0.0",
+    "playwright-core": "^1.49.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

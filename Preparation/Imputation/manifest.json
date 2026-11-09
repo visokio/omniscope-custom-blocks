@@ -1,0 +1,310 @@
+{
+    "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+    "name": "Imputation",
+    "scriptFilename": "script.py",
+    "language": "PYTHON",
+    "executableVersion": null,
+    "minVersions": [
+        null
+    ],
+    "optionsVersion": 1,
+    "apiVersion": "VERSION_0",
+    "isResourceIntensiveScript": false,
+    "showPartitioning": false,
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAEG0lEQVR42u2dXYgWVRyHn/+uZoYKuUZIrHsR0kVUIOGFSDd9EX1cRNteRhe1WJF90EVdRAQFQaEVIQlpBBXZJ5QXQd1IWEZREhQRgWkhyCq6hC5u+/66eEfwJnfm9e3d+c/8ntv3HOY387xnzpwzZ2bAGGOMMcYYY4wxxhhjTEokjUr6QNK06s9xSTslXdrLvkYT5QE/AiuTRf8dWBcR01UqDTWwAW5JKA/gcuB5t0BpGlieNP6xiBhpu0Blzh8RlZw08RTaKizQAo0FGgu0QGOBxgKNBVpgdk4mzj5rgfBN4uy/WCA8Bcwlzf5s6wVGxD5gHDieKPYp4JGI+LDy/ja1c5e0ErgeuLjmUU8AeyLisC/JjDFmsH1+g/vAm4Ebqf/yihPAJxGx13/HrrhhSW8rHy/ZXlfgE8rLROtPoZIOAGNJ4/8cEVe2XeBc4gmKTkQMt3omJvk+DbVpZ40FWqCxQGOBFmgs0FigsUAAtSl7EwX+mjj7EQuENxNnf7dqhSZOZi8CPgJuTxb9B+C6iPi71QILiQHcD9xFjlVpnwNbI+J0poM8JGlM0ipfS+ZqHcOSnpQ0ddad6G8lbfDRySFw+38sJ5gtxIaPUk37QEnrgX3zFNsN3BMRR/vQD64CltTcwUxETPVaedGAw95WosytwPeSJornHHqRt7a4gBnJ0IokHQZ2RcShuo8DV5QsNwbskfRwDwdjFLgvi7yC1cBk8TxHrQX+VKHsBcDLknZJWlGh3h1JJyguLLLXWuB7wF8V64wD30m6pmT50cTXJFf8b32gpDXARmDZeYb8DJisWGct8LWkhyJiR8369X6yuO8CJS0GthYHfXgBd24p8IakjcBkRMxiSp1CtwAPLLC8s7m3yGTmE1icNjfVMPemIpsFzvP7hppe0Q0V2SzQh6DZAvcCnRrm7hTZLPBcP0bEQWBbDXNvK7K1njJjpkfpTnov9DDiDDuLTKaMwGK89aCkF/o0kF/Xw0Aeui/DKTOQt8BznE7fOZ+NSVoGPN1D1d+A8YjYX6LsSeCipD5q/7K7CeCyinXeB64tKe+M7KwcrLvAqyqUPQ1sjoi7K35PaDcwk1BeB/i07gLLiviD7hK7V6puICKOAa9S/a7HQjIFbI+IPyvv7yBTDnJJRbG9EbqT4HVmBjgaETkeCfCipuR4WWFzRHphbx9o6tL6JcBjwE3keNndx8DrvdykbuLDLcuBr4Crk0X/ArglIv6p8zBiEDyXUB7ADcDjboHSEeCSpPEPRcSatgtM/Yh1RFQ6K/qOfPKLSgtMjgVaoLFAY4EWaCzQWKCxQDI/dtaxQNifOPsBC4QXE2d/zZ0CIOkZSXPJvpv0lqTKDarJn59bD9xJkpfdRcSXbnrGGGOMMcYYY4wxxhhjjKkf/wLzQluBLuLlzgAAAABJRU5ErkJggg==",
+    "description": "Fills missing values with the mean, median, mode, a constant, previous / next value or interpolation, optionally within groups, with indicator fields and a summary.",
+    "category": "Preparation",
+    "subcategory": "Cleansing",
+    "tags": [
+        "imputation",
+        "missing values",
+        "nulls",
+        "fill",
+        "median",
+        "interpolate",
+        "visokio-agents"
+    ],
+    "introductoryText": "Fills missing values so that totals, averages, charts and models are not thrown off by gaps.\n\n**Number fields**: mean, median, mode, a constant, the previous or next value, or linear interpolation between neighbours.\n**Text fields**: the most common value, a constant (such as *Unknown*), or the previous or next value.\n\n- **Within groups**: compute the fill value per group, such as the median floor area *per property type and region*, falling back to the overall value when a group has no data at all\n- **Order** for previous / next / interpolation, such as by date within each sensor\n- **Sentinel values** such as -999 or 9999 can be treated as missing too\n- **Indicator fields** (`<field> Was Imputed`, 1 or 0) so filled values stay visible and can be excluded later\n- Integer fields stay whole numbers\n\nThe second output summarises each field: method, missing before, imputed, still missing and the value used.",
+    "dependencies": "",
+    "options": [
+        {
+            "name": "fields",
+            "title": "Fields to impute",
+            "description": "Leave empty to impute every field (except group and order fields).",
+            "groupTitle": "Fields",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "group_fields",
+            "title": "Within groups (optional)",
+            "description": "Compute mean / median / mode, and fill previous / next, separately for each combination of these fields.",
+            "groupTitle": "Fields",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "order_fields",
+            "title": "Order by (for previous / next / interpolation)",
+            "description": "Row order used for previous value, next value and interpolation, usually a date.",
+            "groupTitle": "Fields",
+            "width": null,
+            "@visokiotype": "CustomBlockSchema.FieldsCustomBlockPublicOption",
+            "inputIndex": 0,
+            "defaultValue": null,
+            "mandatory": false,
+            "fieldTypes": []
+        },
+        {
+            "name": "numeric_method",
+            "title": "Number fields",
+            "description": "Median is robust to outliers and is the usual default.",
+            "groupTitle": "Method",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Median",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MEDIAN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Mean",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MEAN",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Most common value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MODE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Constant",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CONSTANT",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Previous value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FFILL",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Next value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "BFILL",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Linear interpolation",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "INTERPOLATE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Leave missing",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MEDIAN"
+        },
+        {
+            "name": "text_method",
+            "title": "Text fields",
+            "description": "How missing text is filled.",
+            "groupTitle": "Method",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+            "mandatory": true,
+            "choices": [
+                {
+                    "name": null,
+                    "title": "Most common value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "MODE",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Constant",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "CONSTANT",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Previous value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "FFILL",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Next value",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "BFILL",
+                    "isSpecial": false
+                },
+                {
+                    "name": null,
+                    "title": "Leave missing",
+                    "description": null,
+                    "groupTitle": null,
+                    "width": null,
+                    "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+                    "value": "NONE",
+                    "isSpecial": false
+                }
+            ],
+            "isDropdown": true,
+            "choicesLayoutType": "LIST",
+            "defaultValue": "MODE"
+        },
+        {
+            "name": "constant_number",
+            "title": "Constant for numbers",
+            "description": null,
+            "groupTitle": "Method",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.DoubleCustomBlockPublicOption",
+            "numMin": null,
+            "numMax": null,
+            "mandatory": false,
+            "defaultValue": 0.0,
+            "showAsSlider": false
+        },
+        {
+            "name": "constant_text",
+            "title": "Constant for text",
+            "description": null,
+            "groupTitle": "Method",
+            "width": "HALF",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": "Unknown"
+        },
+        {
+            "name": "extra_missing",
+            "title": "Also treat as missing",
+            "description": "Comma-separated sentinel values, such as -999, 9999, unknown.",
+            "groupTitle": "Options",
+            "width": "TWO",
+            "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+            "mandatory": false,
+            "defaultValue": ""
+        },
+        {
+            "name": "fallback_overall",
+            "title": "Fall back to the overall value",
+            "description": "When a group has no values at all (or interpolation has no neighbour on one side), use the overall statistic or the nearest value.",
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "add_flags",
+            "title": "Add 'Was Imputed' indicator fields",
+            "description": "Adds a Yes / No field per imputed field, so filled values stay visible.",
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        },
+        {
+            "name": "keep_integers",
+            "title": "Keep whole-number fields whole",
+            "description": "Round imputed values in integer fields.",
+            "groupTitle": "Options",
+            "width": "ONE",
+            "@visokiotype": "CustomBlockSchema.BooleanCustomBlockPublicOption",
+            "defaultValue": true
+        }
+    ],
+    "blockOutputs": [
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "imputed",
+            "label": "Imputed",
+            "displayName": "Imputed data",
+            "tooltip": "The input with missing values filled, plus '<field> Was Imputed' indicators."
+        },
+        {
+            "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+            "id": "summary",
+            "label": "Summary",
+            "displayName": "Imputation summary",
+            "tooltip": "Per field: method, missing before, imputed, still missing, value used."
+        }
+    ],
+    "docker": {
+        "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+        "customBaseImage": null,
+        "useCustomBaseImage": false,
+        "customSystemLibraries": null,
+        "installVisokioRepLibraries": false
+    },
+    "designLock": false,
+    "apiMode": "BATCH"
+}

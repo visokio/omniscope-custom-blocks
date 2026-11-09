@@ -1,0 +1,13 @@
+Supplier,Region,Annual Price (GBP k),Quality Score,Lead Time (days),On-Time Delivery %,Carbon (kg CO2e per unit),Financial Risk Score
+Supplier A,UK,412,8.1,6,96.5,1.9,22
+Supplier B,UK,398,7.4,8,93.0,2.4,35
+Supplier C,EU,365,6.9,14,89.5,2.8,48
+Supplier D,UK,441,8.8,5,98.0,1.6,18
+Supplier E,EU,372,7.7,12,94.5,2.2,30
+Supplier F,UK,405,7.9,7,95.0,2.0,74
+Supplier G,Asia,331,6.2,28,87.0,3.9,41
+Supplier H,EU,389,8.3,11,92.5,,27
+Supplier I,UK,428,8.5,6,97.0,1.8,25
+Supplier J,Asia,344,6.6,25,91.0,3.6,39
+Supplier K,EU,380,7.1,13,93.5,2.6,33
+Supplier L,UK,395,7.6,9,94.0,2.3,29
