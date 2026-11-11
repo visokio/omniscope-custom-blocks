@@ -20,7 +20,6 @@
         "append",
         "combine",
         "merge",
-        "bookmarks",
         "report pack"
     ],
     "introductoryText": "Combines several PDF files on the Omniscope server into one, in the order of the input records, and writes the combined file to a folder.\n\n**How to set it up**: connect records with one PDF file name each (for example from a File block with a list, or a folder listing), choose that field and the folder the files are in. Optionally choose a field of bookmark titles: each file then gets a bookmark in the combined PDF. Choose the output folder (empty: the input folder) and the file name.\n\n**Output**: the input records with the combined file's path, each file's page count and the page it starts on in the combined file.",

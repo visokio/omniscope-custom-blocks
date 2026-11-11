@@ -1833,7 +1833,6 @@
                 "append",
                 "combine",
                 "merge",
-                "bookmarks",
                 "report pack"
             ],
             "category": "Outputs",
