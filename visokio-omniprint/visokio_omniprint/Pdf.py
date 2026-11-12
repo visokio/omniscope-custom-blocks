@@ -21,14 +21,16 @@ class Pdf(DriverBase):
         print_options.page_width = 21.0
         print_options.page_height = 29.7
 
-        result = driver.print_page(print_options)
-        driver.get("about:blank") # Navigate away to ensure page is unloaded properly.
-        driver.quit()
+        try:
+            result = driver.print_page(print_options)
+            driver.get("about:blank") # Navigate away to ensure page is unloaded properly.
+        finally:
+            driver.quit() # Also when printing fails, so Chrome isn't left running
         return base64.b64decode(result)
 
 
     def write_pdf_to_path(self, path, pdf):
-        with open(file_path, "wb") as file:
+        with open(path, "wb") as file:
             file.write(pdf)
 
     def create_pdf_in_path(self, url, timeout, is_docker, path):
