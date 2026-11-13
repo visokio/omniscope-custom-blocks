@@ -75,6 +75,9 @@ class DriverBase:
 
     def get_driver_for_url(self, url, timeout, is_docker):
         driver = self.get_driver(is_docker)
+        # Omniscope's print mode calls window.print() itself; since Chrome 157 that blocks print_page()
+        # ("Page is already being printed"), so turn it off before the page loads.
+        driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {"source": "window.print = function () {};"})
         driver.get(url)  # Navigate to the specified URL
 
         # Wait for aria-busy=true to disappear. In pages that don't have it, it'll immediately be the case.
