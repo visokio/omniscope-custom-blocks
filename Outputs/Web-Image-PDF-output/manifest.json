@@ -26,7 +26,7 @@
         "report"
     ],
     "introductoryText": "Takes a screenshot of the web page at each input record's URL, such as a Report tab or any other page, and saves it as a PNG in the output folder (`screenshot_0.png`, `screenshot_1.png`, ... in input order). Optionally it also makes one PDF with a page per screenshot.\n\n**How to set it up**: choose the field with the URLs, the screenshot size and orientation, and the output folder. Tick Create PDF for the PDF; its file name defaults to `screenshots.pdf`. Each PDF page is the size of the screenshot (1 pixel = 1 point).\n\nThe output has one record per screenshot: the URL, the PNG's path and file name, and the PDF's path (empty without a PDF). Records with an empty URL are skipped. Files from an earlier run with the same names are replaced.\n\n**What it needs.** Chrome, driven by the `visokio-omniprint` Python package (installed on first run). On a server that runs custom blocks in Docker, the block uses its own image with Chrome included ([Docker setup](https://help.visokio.com/support/solutions/articles/42000071133-setting-up-the-custom-block)); otherwise Chrome must be installed on the machine running Omniscope. Each page must be reachable from that machine.\n\n**Authentication.** For pages behind Basic Authentication (for example a Report with Local Desktop Experience turned off), enter a username and password. They are used only to open the page; they are not written to the output.",
-    "dependencies": "visokio-omniprint",
+    "dependencies": "visokio-omniprint>=1.3.6",
     "options": [
         {
             "name": "url_field",
