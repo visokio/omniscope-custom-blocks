@@ -1,0 +1,35 @@
+name: Publish visokio-omniprint
+
+# Runs when a tag like omniprint-v1.3.6 is pushed, e.g. by creating a GitHub Release with that tag.
+# PyPI trusts this workflow through Trusted Publishing (project > Manage > Publishing), so no token is stored.
+on:
+  push:
+    tags: ["omniprint-v*"]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      contents: read
+      id-token: write # lets PyPI confirm this run comes from this repository and workflow
+    defaults:
+      run:
+        working-directory: visokio-omniprint
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check the tag matches the version in pyproject.toml
+        run: |
+          VERSION=$(python -c "import tomllib; print(tomllib.load(open('pyproject.toml', 'rb'))['project']['version'])")
+          if [ "omniprint-v$VERSION" != "$GITHUB_REF_NAME" ]; then
+            echo "Tag $GITHUB_REF_NAME does not match version $VERSION in pyproject.toml" >&2
+            exit 1
+          fi
+      - name: Build
+        run: pip install hatch && hatch build
+      - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: visokio-omniprint/dist/
