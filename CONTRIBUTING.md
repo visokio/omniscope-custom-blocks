@@ -37,7 +37,7 @@ optionally in a subfolder such as `Preparation/Join/`. Add a new category folder
   Keep its source as `icon.svg` (viewBox 0 0 28 28) and put a 112 x 112 PNG of it in the manifest as a
   `data:image/png;base64,...` URI.
   A block for a named service or product uses that brand's own logo recoloured white, never a redrawn imitation:
-  see "Brand logos as icons" below.
+  see "Brand logos as icons" below, including the permission exception.
 - **`description`** is one or two sentences (the picker and the gallery card show it). **`introductoryText`** is
   Markdown shown when the block is added to a workflow: what it does and how to set it up.
 - **Output labels.** Each entry in `blockOutputs` has three texts. `label` is what the workflow canvas draws beside
@@ -57,7 +57,13 @@ optionally in a subfolder such as `Preparation/Join/`. Add a new category folder
 A connector, input or output for a named service (Trello, Jira, OpenAI, BigQuery, ...) shows that service's logo,
 so people recognise it in the picker. Take the real logo (the brand's own one-colour version if it publishes one,
 otherwise its full-colour logo or the block's previous icon) and replace its colours with white, keeping every
-shape. Don't redraw it: hand-drawn imitations of logos come out inaccurate. How each kind of logo comes out right:
+shape. Don't redraw it: hand-drawn imitations of logos come out inaccurate.
+
+If permission to use the brand logo is unavailable or its terms prohibit the required modification, use a generic
+white glyph and identify the service in text. Record the reason in the block's README. The normal `icon.svg`,
+embedded PNG and actual block-tile `thumbnail.png` requirements still apply.
+
+How each kind of logo comes out right:
 
 | The logo | Do this | Examples |
 |---|---|---|

@@ -17,3 +17,7 @@ python-pptx
 opendp
 # Not listed: the AI providers' SDKs (openai, anthropic, google-genai), kedro and db-dtypes.
 # The tests that need them skip when they are missing.
+
+# NetSuite: token signing and lossless JSON numbers.
+PyJWT[crypto]>=2.10.1,<3
+simplejson>=3.20.1,<4

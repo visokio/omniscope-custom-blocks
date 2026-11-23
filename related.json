@@ -2322,6 +2322,16 @@
      "note": "A full calendar table with working-day flags and counts, to join to your data."
     }
    ]
+  },
+  "Connectors/NetSuite": {
+   "summary": "The core **Database** block is an alternative with an appropriate JDBC driver and account entitlement. **NetSuite Connector** uses REST and certificate authentication for an existing saved search or SuiteQL query; live-account validation remains outstanding.",
+   "overlaps": [
+    {
+     "coreBlock": "Database",
+     "note": "Use Database for a configured JDBC connection. This connector uses NetSuite REST and does not require a third-party driver."
+    }
+   ],
+   "seeAlso": []
   }
  }
 }
