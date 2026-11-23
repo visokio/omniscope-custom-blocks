@@ -1,0 +1,196 @@
+{
+  "@visokiotype": "CustomBlockSchema.CustomBlockManifest",
+  "name": "NetSuite Connector",
+  "scriptFilename": "script.py",
+  "language": "PYTHON",
+  "executableVersion": null,
+  "minVersions": [
+    null
+  ],
+  "optionsVersion": 1,
+  "apiVersion": "VERSION_0",
+  "isResourceIntensiveScript": false,
+  "showPartitioning": false,
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAYAAADG4PRLAAAABmJLR0QA/wD/AP+gvaeTAAAE30lEQVR4nO3d24tVZRjH8d9TGmkXapRFVNqB7oqwizQKNIK8qpn6AzqAf0Bh+C+I00V0oEIQLK/rIoKugvEmi7DTTVFhk4dRgpguclKpbxdrD0zSOO/aez/rXc/2+YDgxTv7/c3728e13rVHSimllFJKKaX4gClgFlgc/JsFpq6W+UMDZljZzKTPHxowfYXFWzI9qfOHBxwtWMCjkzr/MKx2gOWA85LWrTJs0czWT+L8w+hbgZSMMzOX3LXnH8Y1tQOk0WSBwWWBwWWBwWWBwWWBwWWBwWWBwWWBwWWBwWWBwWWBwWWBwWWBwWWBwWWBwWWBwWWBwXVSIP/dZ7miFrfnYkzzd7qP1H1vB81eyr3e8/TUq2b2iucErgXS7KH8wHOOAJ4xsw+9btz7KfQl59uPwHUNvB+BJfssJ53rPlLvAovfGEwyz32k+TEiuCwwuCwwuCwwuDW1A0j9ulikjT68SctHYHBZYHBZYHBZYHBZYHBZYHBZYHBZYHBZYHBZYHDeBRYdagLCHUoDri0c+o9nDu8CLxSOu8E1hY/SzIueIbwLXCgcd7NrCh+3FI4rXYOheBd4rnDcPa4pfNxdOK50DYbiXeBc4bj7XVP4eKBwXOkaDMW7wB8Kx+1wTeGjNPP3niG8C/ymcNyuFu/qqgPWStpZOPxbxyjuBX5ROO4mSY95BhmzXZI2FY495hnEtUAz+1HSqcLhzztGGbfnCsfNmdkvnkHcAQcLLw5aBDbXzrsa4DbgQuHv9LZ3ni4OpZVe2HG9pJc9g4zJXknXFY6Nf2EPsBY4V3iPPQ/cWTvzSoCtrHKN4zKn6eCNmfsj0MwuSTpcOHydpDcd44zqLTXPFCUOm9nfnmE6M7jnXiq85wK8UDvz5YA9LfJfBG6vnXmsgCMtFuBP4MHamZcA22ie3ksdqp157ID7BvfMUifpweshzbPH6Ra5LwClx0ljAd5osRAAP9UscVDezy0zv1YrrztgEzDfckFOUeHpFHiIdo88gDPAhq6zdgp4tuWiQPOa+GKHGffQ7jVvydNdZawKODTE4gB8BGxxzLUV+HjIbAe9cvUOsB74esiFOg8cAErPiJfkuZXm7waWfki/3HHg6voyB2ALcHbIBWOw2IeBxxniiAewBngCeB/4a4QcZ4A7PNaoRNXdYMA2SZ9KGvWF//fB7Xwm6TtJJyT9ZmZ/DObZIGmzpLvUnEnfoeZ83o0jzrsgaaeZlZ73HLvq2/mA7ZI+0egldm1B0m4z+7xmiOobe83smJoTpGdrZ2lhXs0jr2p5Ug8KlCQz+0rSdpVvwajpuKSHaz5tLteLAiXJzOYkPSKpz8cRD0p61MxO1g7SazR/TbrtERtPp4Gnaq9LKMBGmmOnbU5DjdtF4HVgY+31CIvmLMaRjou8BLwH3Fv7958YNIe5DjDah//VzAP76cFprIlFcwRlN/Au8OsYSpsD3gGeJNDm4iXVP8iPiubk6XY1R1j2Ff7YfjU7po+Z2QmvbF0IX+ByUPbdZVG/m+3/9OZzYBpOFhhcFhhcFhhcFhhcFhhcFhhcFhhcFhhcFhhcFhhcFhhcFhhcFhjcpBVY8tWOrl//2LVJK/DLMY1JNdBsR1zNdO2c6QpoLhNbyUztfKkAMAXM0lyCtjj4/1TtXCmllFJKKaXUA/8CTUHbwkZu7OEAAAAASUVORK5CYII=",
+  "description": "Read-only saved-search or SuiteQL extraction. Version 0.1.0.",
+  "category": "Connectors",
+  "subcategory": "NetSuite",
+  "tags": [
+    "netsuite",
+    "connector",
+    "suiteql",
+    "saved-search",
+    "oauth",
+    "visokio-agents"
+  ],
+  "introductoryText": "Read-only NetSuite connector v0.1.0. Start with Sample (up to 100 rows). Values are text or missing; empty strings become missing. Nested values are JSON text. Full mode requires fewer than 100,000 rows. A NetSuite administrator must configure OAuth client credentials and certificate access.",
+  "dependencies": "requests>=2.32.5,<3\nPyJWT[crypto]>=2.10.1,<3\nsimplejson>=3.20.1,<4",
+  "options": [
+    {
+      "name": "service_url",
+      "title": "SuiteTalk service URL",
+      "description": "Copy the HTTPS SuiteTalk origin from NetSuite Company Information > Company URLs.",
+      "groupTitle": "Connection",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+      "mandatory": true,
+      "defaultValue": null
+    },
+    {
+      "name": "client_id",
+      "title": "Application client ID",
+      "description": "Client ID of the OAuth 2.0 integration application.",
+      "groupTitle": "Connection",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+      "mandatory": true,
+      "defaultValue": null
+    },
+    {
+      "name": "certificate_id",
+      "title": "Certificate ID",
+      "description": "Certificate ID from the OAuth 2.0 Client Credentials (M2M) mapping.",
+      "groupTitle": "Connection",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+      "mandatory": true,
+      "defaultValue": null
+    },
+    {
+      "name": "private_key_file",
+      "title": "Private-key file",
+      "description": "Matching PEM RSA private key (3072 or 4096 bits). Select a file available to the execution machine.",
+      "groupTitle": "Connection",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.FileCustomBlockPublicOption",
+      "mandatory": true,
+      "defaultValue": null,
+      "readOnly": true
+    },
+    {
+      "name": "private_key_password",
+      "title": "Private-key password",
+      "description": "Optional passphrase for an encrypted PEM private key. Leave blank for an unencrypted key.",
+      "groupTitle": "Connection",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.PasswordCustomBlockPublicOption",
+      "mandatory": false
+    },
+    {
+      "name": "data_mode",
+      "title": "Data mode",
+      "description": "Choose which source to read.",
+      "groupTitle": "Data selection",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+      "mandatory": true,
+      "choices": [
+        {
+          "name": null,
+          "title": "Saved search",
+          "description": null,
+          "groupTitle": null,
+          "width": null,
+          "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+          "value": "saved_search",
+          "isSpecial": false
+        },
+        {
+          "name": null,
+          "title": "SuiteQL",
+          "description": null,
+          "groupTitle": null,
+          "width": null,
+          "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+          "value": "suiteql",
+          "isSpecial": false
+        }
+      ],
+      "isDropdown": true,
+      "choicesLayoutType": "LIST",
+      "defaultValue": "saved_search"
+    },
+    {
+      "name": "saved_search_id",
+      "title": "Saved-search ID (Saved search mode)",
+      "description": "Required for Saved search only. Internal ID or script ID; requires REST saved-search support (September 2026.2 or later).",
+      "groupTitle": "Data selection",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+      "mandatory": false,
+      "defaultValue": null
+    },
+    {
+      "name": "suiteql",
+      "title": "SuiteQL query (SuiteQL mode)",
+      "description": "Required for SuiteQL only. For Full, use deterministic ordering with a unique tie-breaker. Do not include secrets.",
+      "groupTitle": "Data selection",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+      "mandatory": false,
+      "defaultValue": null
+    },
+    {
+      "name": "extraction_mode",
+      "title": "Extraction mode",
+      "description": "Sample returns up to 100 rows. Full reads all pages within the documented size and time limits.",
+      "groupTitle": "Output",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.ChoiceCustomBlockPublicOption",
+      "mandatory": true,
+      "choices": [
+        {
+          "name": null,
+          "title": "Sample",
+          "description": null,
+          "groupTitle": null,
+          "width": null,
+          "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+          "value": "sample",
+          "isSpecial": false
+        },
+        {
+          "name": null,
+          "title": "Full",
+          "description": null,
+          "groupTitle": null,
+          "width": null,
+          "@visokiotype": "CustomBlockSchema.ChoiceMetaCustomBlockPublicOption",
+          "value": "full",
+          "isSpecial": false
+        }
+      ],
+      "isDropdown": true,
+      "choicesLayoutType": "LIST",
+      "defaultValue": "sample"
+    },
+    {
+      "name": "output_columns",
+      "title": "Output fields",
+      "description": "Leave blank for all returned fields. To select fields, enter comma-separated names in output order, e.g. id, name. For an empty result, supply field names to define the output.",
+      "groupTitle": "Output",
+      "width": "ONE",
+      "@visokiotype": "CustomBlockSchema.TextCustomBlockPublicOption",
+      "mandatory": false,
+      "defaultValue": null
+    }
+  ],
+  "blockOutputs": [
+    {
+      "@visokiotype": "CustomBlockSchema.BlockOutputPublicOption",
+      "id": "data",
+      "label": "Data",
+      "displayName": "Data",
+      "tooltip": "NetSuite rows as text or missing values. Empty strings become missing. Top-level links is omitted."
+    }
+  ],
+  "docker": {
+    "@visokiotype": "CustomBlockSchema.DockerCustomBlockPublicOption",
+    "customBaseImage": null,
+    "useCustomBaseImage": false,
+    "customSystemLibraries": null,
+    "installVisokioRepLibraries": false
+  },
+  "designLock": false,
+  "apiMode": "BATCH"
+}
