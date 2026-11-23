@@ -65,10 +65,11 @@ available. This connector instead uses NetSuite REST, certificate authentication
 
 ## Try it
 
-Before this contribution is merged, create a ZIP with only this folder's `manifest.json` and `script.py` at its root.
-In a test workflow use **Add > Import custom script** to import it, then follow the [setup guide](customer-setup.md).
-Importing the block does not require credentials; executing it does.
-After publication, it can also be added from the Connectors category in the block picker.
+In a test workflow, add **NetSuite Connector** from the Connectors category in the block picker,
+then follow the [setup guide](customer-setup.md). Adding the block does not require credentials; executing it does.
+
+Alternatively, create a ZIP with only this folder's `manifest.json` and `script.py` at its root,
+then use **Add > Import custom script** to import it.
 
 [sample-data/placeholder.csv](sample-data/placeholder.csv) contains invented output matching a harness test.
 It illustrates the output format, not a captured NetSuite response. Import identifier fields as text.

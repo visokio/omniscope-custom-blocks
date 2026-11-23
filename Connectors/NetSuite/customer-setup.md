@@ -52,7 +52,7 @@ entitlements remain an administrator check.
 
 Use Python 3.9 or later. The script uses `requests`, `PyJWT[crypto]`, `simplejson`, pandas and the Omniscope
 Python API. The ZIP declares the first three; Omniscope supplies its API and pandas as runtime components.
-The manifest records bounded dependency ranges. See the [README](README.md#libraries-and-licences) for dependency ranges.
+The manifest records bounded dependency ranges. See the [README](README.md#language-and-libraries) for dependency ranges.
 
 Select the private key with the **Private-key file** option. The script reads the runtime path returned by
 Omniscope. For Docker execution, this File option supplies the read-only mount; a text field containing
